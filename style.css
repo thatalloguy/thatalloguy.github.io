@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2f3542;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.neon {
+    position: absolute;
+    margin-top: 40%;
+    vertical-align: bottom;
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+    color: #8d0101;
+    text-shadow: 
+    0 0 20px #ff0000;
+
+}
+
+
+
+
+.neon span {
+    animation: flicker 1s linear infinite;
+}
+
+.neon .delay1 {
+    animation-delay: 0.8s;
+}
+
+@keyframes flicker {
+
+    0% {opacity:  0;}
+    10% {opacity: 1;}
+    20% {opacity: 0;}
+    40% {opacity: 1;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    80% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+
+.animated-text{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 280px;
+}
+
+.animated-text span{
+    position: relative;
+}
+
+.animated-text span::before{
+    content: "Youtuber";
+    color: #006a41;
+    animation: words 20s infinite;
+}
+
+.animated-text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: #2f3542;
+    border-left: 2px solid #006a41;
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+    to{
+        border-left: 2px solid #ff7f5000;
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: "Game dev";
+    }
+    21%,40%{
+        content: "Game Engine dev";
+    }
+    41%,60%{
+        content: "Developer";
+    }
+    61%,80%{
+        content: "Programmer";
+    }
+    81%,100%{
+        content: "person :)";
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
+}
