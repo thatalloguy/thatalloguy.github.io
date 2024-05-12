@@ -10,6 +10,35 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+.blog {
+    display:inline-block;
+    position: relative;
+    bottom: -80vh;
+    border-radius: 25px;
+    background: #444c5d;
+    padding: 20px; 
+    border-spacing: 10px;
+    margin: 1vw;
+}
+
+.blog .title :hover{
+    background: #67728b;
+}
+
+
+.blog .title {
+    color: #ffae00;
+    font-size: 120%;
+    font-style: italic;
+    text-decoration: underline;
+    
+}
+
+.blog .desc {
+    size: 0cm;
+    color:rgb(148, 173, 173);
+    width: 1vw;
+}
 
 .neon {
     position: absolute;
@@ -50,6 +79,7 @@ body{
 
 
 .animated-text{
+    position: absolute;
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
