@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #2f3542;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    font-family: "Montserrat", sans-serif;
+}
+
+.title {
+    position: absolute;
+    color: #ffae00;
+    font-weight: bold;
+    font-size: 3vw;
+    left: 10vw;
+    bottom: 82vh;
+}
+
+.content {
+    position: absolute;
+    margin: 4vw;
+    font-size: 1vw;
+    word-wrap: break-word;
+    color:#c6c6c6;
+}
