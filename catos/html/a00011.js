@@ -1,9 +1,6 @@
 var a00011 =
 [
-    [ "catos::Property", "a00056.html", "a00056" ],
-    [ "catos::PropertyImpl< T, U >", "a00060.html", "a00060" ],
-    [ "catos::MethodInvoker< ReturnType, ClassType, Args >", "a00064.html", "a00064" ],
-    [ "catos::Method", "a00068.html", "a00068" ],
-    [ "catos::TypeInfo", "a00072.html", "a00072" ],
-    [ "catos::Registry", "a00076.html", "a00076" ]
+    [ "catos::Scene", "a00059.html", "a00059" ],
+    [ "catos::GameConfig", "a00063.html", null ],
+    [ "catos::Game", "a00067.html", "a00067" ]
 ];

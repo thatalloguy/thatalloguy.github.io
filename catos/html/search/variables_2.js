@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['memberptr_0',['memberPtr',['../a00060.html#ab295885403ec42bdf4db7c50dacb6c4b',1,'catos::PropertyImpl']]],
-  ['memptr_1',['memPtr',['../a00064.html#a0a1005231c6d3687fd607b65a2771fb8',1,'catos::MethodInvoker']]],
-  ['methods_2',['methods',['../a00072.html#a9c4b2bf58d22a49d4e52dc27ff248ed2',1,'catos::TypeInfo']]]
+  ['desc_0',['desc',['../a00071.html#aabfc2935e5ce159303cdd8c760fe3e43',1,'catos::Property::desc'],['../a00083.html#a5621be029379a77b80f5fb6f7e91cf88',1,'catos::Method::desc']]]
 ];

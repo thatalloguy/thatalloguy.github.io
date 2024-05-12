@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): entity.h Source File</title>
+<title>Catos Engine (Source): application.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,91 +99,92 @@ $(function(){initNavTree('a00005_source.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">entity.h</div></div>
+  <div class="headertitle"><div class="title">application.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="a00005.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
+<a href="a00005.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by allos on 5/5/2024.</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;memory&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="a00014.html">types.h</a>&quot;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="a00017.html">type_utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="a00017.html">types.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="a00020.html">type_utils.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;unordered_map&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00023.html">catos</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00026.html">catos</a> {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">class </span>Entity;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="a00036.html">   20</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00036.html">Component</a> {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="a00036.html#a198b1c7d794d41af75f7f7ed5b069ea3">   23</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00036.html#a198b1c7d794d41af75f7f7ed5b069ea3">init</a>(<a class="code hl_class" href="a00040.html">Entity</a>&amp; entity) {};</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="a00036.html#a31a1133e9d321871ad9b3cca7f325e30">   24</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00036.html#a31a1133e9d321871ad9b3cca7f325e30">update</a>(<a class="code hl_class" href="a00040.html">Entity</a>&amp; entity) {};</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="a00036.html#acee6f0a181489892319a99d6b8ee813f">   25</a></span>        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="a00036.html#acee6f0a181489892319a99d6b8ee813f">destroy</a>(<a class="code hl_class" href="a00040.html">Entity</a>&amp; entity) {};</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    };</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="a00043.html">   17</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="a00043.html">AppCreationInfo</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="a00043.html#aa955f138a405ff0d97ca029e5a4bf4df">   19</a></span>        <a class="code hl_typedef" href="a00017.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a> <a class="code hl_variable" href="a00043.html#aa955f138a405ff0d97ca029e5a4bf4df">version</a> = 001;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="a00043.html#a2e1442b7894e8f50cf02926c312a83b4">   20</a></span>        <a class="code hl_typedef" href="a00017.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a> <a class="code hl_variable" href="a00043.html#a2e1442b7894e8f50cf02926c312a83b4">applicationTitle</a> = <span class="stringliteral">&quot;Catos Application&quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    };</div>
 </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="foldopen" id="foldopen00029" data-start="{" data-end="};">
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="a00040.html">   29</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00040.html">Entity</a> {</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="a00040.html#a0ec9adef499357ade7d76d33a4a611be">   32</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00040.html#a0ec9adef499357ade7d76d33a4a611be">setup</a>(<a class="code hl_typedef" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a> name) { _name = name; };</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="a00040.html#a3f0c4e9ced3c4caf83f05b37a103b704">   33</a></span>        <a class="code hl_function" href="a00040.html#a3f0c4e9ced3c4caf83f05b37a103b704">~Entity</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="};">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="a00047.html">   25</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00047.html">App</a> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="a00047.html#a20c936adde996793bc36c33650b12a23">   30</a></span>        <a class="code hl_function" href="a00047.html#a20c936adde996793bc36c33650b12a23">App</a>(<a class="code hl_struct" href="a00043.html">AppCreationInfo</a>* creationInfo);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="a00047.html#ae2beda1820f2fb8b3d2b690e9cd7742b">   31</a></span>        <a class="code hl_function" href="a00047.html#ae2beda1820f2fb8b3d2b690e9cd7742b">~App</a>();</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="a00047.html#ac7ee8e55850651b7549a64789904ea62">   34</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="a00047.html#ac7ee8e55850651b7549a64789904ea62">is_alive</a>();</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="a00040.html#a0219c97b8947c567c14f6a814ce2039f">   37</a></span>        <a class="code hl_class" href="a00036.html">Component</a>* <a class="code hl_function" href="a00040.html#a0219c97b8947c567c14f6a814ce2039f">get_component</a>(<a class="code hl_typedef" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a>&amp; name);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="foldopen" id="foldopen00040" data-start="{" data-end="}">
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="a00040.html#acb1a095017ec43da5c9fc4ff2971f27c">   40</a></span>         <span class="keywordtype">void</span> <a class="code hl_function" href="a00040.html#acb1a095017ec43da5c9fc4ff2971f27c">add_component</a>(<a class="code hl_class" href="a00036.html">Component</a>* component, <a class="code hl_typedef" href="a00014.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a> name){</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            std::string t = name;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            componentTable.emplace(t, component);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> A&gt;</div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="a00047.html#a5bd26fdeb5142a62fe81620461de1007">   41</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00047.html#a5bd26fdeb5142a62fe81620461de1007">bind</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* instance) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            _instance_register[<a class="code hl_function" href="a00027.html#a984a08d43e4be51d38568b267ed64092">type_utils::get_type_hash&lt;A&gt;</a>()] = instance;</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        };</div>
 </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="a00040.html#a812872b389e2e267268bf3b3ef0488fd">   46</a></span>        <a class="code hl_typedef" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a>&amp; <a class="code hl_function" href="a00040.html#a812872b389e2e267268bf3b3ef0488fd">get_name</a>() { <span class="keywordflow">return</span> _name; };</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="a00040.html#a1b980e6dd61f0b3d64683c4d8fc8640b">   51</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00040.html#a1b980e6dd61f0b3d64683c4d8fc8640b">init</a>();</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="a00040.html#a7e2c38a1a54cdee9427d519c6f544fbe">   53</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00040.html#a7e2c38a1a54cdee9427d519c6f544fbe">update</a>();</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="a00040.html#a332a9d20fefc7b8a610b89c9ad0b0d1d">   55</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00040.html#a332a9d20fefc7b8a610b89c9ad0b0d1d">destroy</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        std::unordered_map&lt;str, Component*&gt; componentTable;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <a class="code hl_typedef" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a> _name;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">template</span>&lt;<span class="keyword">typename</span> A&gt;</div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="a00047.html#a2d9f5a50cb0cf5a883d77d27068e3ad2">   47</a></span>        A* <a class="code hl_function" href="a00047.html#a2d9f5a50cb0cf5a883d77d27068e3ad2">get</a>() {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            <span class="keywordflow">return</span>  (A*) (_instance_register[<a class="code hl_function" href="a00027.html#a984a08d43e4be51d38568b267ed64092">type_utils::get_type_hash&lt;A&gt;</a>()]);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
 </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="a00047.html#aa075aafecc5843c6fbe3f1f7e8eacf39">   53</a></span>        <a class="code hl_struct" href="a00043.html">AppCreationInfo</a>* <a class="code hl_function" href="a00047.html#aa075aafecc5843c6fbe3f1f7e8eacf39">getAppInfo</a>();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordtype">void</span> init_registry();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <a class="code hl_struct" href="a00043.html">AppCreationInfo</a>* _info;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordtype">bool</span> _is_alive = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        std::unordered_map&lt;size_t, const void* &gt; _instance_register;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    };</div>
+</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
-<div class="ttc" id="aa00014_html"><div class="ttname"><a href="a00014.html">types.h</a></div></div>
-<div class="ttc" id="aa00014_html_a8fa5a7ddaf7b4d44d3dde63343d8d844"><div class="ttname"><a href="a00014.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></div><div class="ttdeci">const char * cstr</div><div class="ttdef"><b>Definition</b> types.h:13</div></div>
-<div class="ttc" id="aa00014_html_aabc01e4474ddca8d6c8ac3e5c7dfe4b7"><div class="ttname"><a href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a></div><div class="ttdeci">std::string_view str</div><div class="ttdef"><b>Definition</b> types.h:12</div></div>
-<div class="ttc" id="aa00017_html"><div class="ttname"><a href="a00017.html">type_utils.h</a></div></div>
-<div class="ttc" id="aa00023_html"><div class="ttname"><a href="a00023.html">catos</a></div><div class="ttdef"><b>Definition</b> application.h:13</div></div>
-<div class="ttc" id="aa00036_html"><div class="ttname"><a href="a00036.html">catos::Component</a></div><div class="ttdoc">Component is an abstract class that is the base for any component.</div><div class="ttdef"><b>Definition</b> entity.h:20</div></div>
-<div class="ttc" id="aa00036_html_a198b1c7d794d41af75f7f7ed5b069ea3"><div class="ttname"><a href="a00036.html#a198b1c7d794d41af75f7f7ed5b069ea3">catos::Component::init</a></div><div class="ttdeci">virtual void init(Entity &amp;entity)</div><div class="ttdef"><b>Definition</b> entity.h:23</div></div>
-<div class="ttc" id="aa00036_html_a31a1133e9d321871ad9b3cca7f325e30"><div class="ttname"><a href="a00036.html#a31a1133e9d321871ad9b3cca7f325e30">catos::Component::update</a></div><div class="ttdeci">virtual void update(Entity &amp;entity)</div><div class="ttdef"><b>Definition</b> entity.h:24</div></div>
-<div class="ttc" id="aa00036_html_acee6f0a181489892319a99d6b8ee813f"><div class="ttname"><a href="a00036.html#acee6f0a181489892319a99d6b8ee813f">catos::Component::destroy</a></div><div class="ttdeci">virtual void destroy(Entity &amp;entity)</div><div class="ttdef"><b>Definition</b> entity.h:25</div></div>
-<div class="ttc" id="aa00040_html"><div class="ttname"><a href="a00040.html">catos::Entity</a></div><div class="ttdoc">Entities hold components which do the logic.</div><div class="ttdef"><b>Definition</b> entity.h:29</div></div>
-<div class="ttc" id="aa00040_html_a0219c97b8947c567c14f6a814ce2039f"><div class="ttname"><a href="a00040.html#a0219c97b8947c567c14f6a814ce2039f">catos::Entity::get_component</a></div><div class="ttdeci">Component * get_component(str &amp;name)</div><div class="ttdoc">Get a component via name, returns a Component pointer.</div></div>
-<div class="ttc" id="aa00040_html_a0ec9adef499357ade7d76d33a4a611be"><div class="ttname"><a href="a00040.html#a0ec9adef499357ade7d76d33a4a611be">catos::Entity::setup</a></div><div class="ttdeci">void setup(str name)</div><div class="ttdef"><b>Definition</b> entity.h:32</div></div>
-<div class="ttc" id="aa00040_html_a1b980e6dd61f0b3d64683c4d8fc8640b"><div class="ttname"><a href="a00040.html#a1b980e6dd61f0b3d64683c4d8fc8640b">catos::Entity::init</a></div><div class="ttdeci">void init()</div><div class="ttdoc">Runs Component.init() on every registered component. (Init gets run at the start of the game)</div></div>
-<div class="ttc" id="aa00040_html_a332a9d20fefc7b8a610b89c9ad0b0d1d"><div class="ttname"><a href="a00040.html#a332a9d20fefc7b8a610b89c9ad0b0d1d">catos::Entity::destroy</a></div><div class="ttdeci">void destroy()</div><div class="ttdoc">Runs Component.destroy() on every registered component. ( Gets called at the end of the program).</div></div>
-<div class="ttc" id="aa00040_html_a3f0c4e9ced3c4caf83f05b37a103b704"><div class="ttname"><a href="a00040.html#a3f0c4e9ced3c4caf83f05b37a103b704">catos::Entity::~Entity</a></div><div class="ttdeci">~Entity()=default</div></div>
-<div class="ttc" id="aa00040_html_a7e2c38a1a54cdee9427d519c6f544fbe"><div class="ttname"><a href="a00040.html#a7e2c38a1a54cdee9427d519c6f544fbe">catos::Entity::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Runs Component.update() on every registered component. ( Gets called every tick)</div></div>
-<div class="ttc" id="aa00040_html_a812872b389e2e267268bf3b3ef0488fd"><div class="ttname"><a href="a00040.html#a812872b389e2e267268bf3b3ef0488fd">catos::Entity::get_name</a></div><div class="ttdeci">str &amp; get_name()</div><div class="ttdoc">Returns the name of the entity.</div><div class="ttdef"><b>Definition</b> entity.h:46</div></div>
-<div class="ttc" id="aa00040_html_acb1a095017ec43da5c9fc4ff2971f27c"><div class="ttname"><a href="a00040.html#acb1a095017ec43da5c9fc4ff2971f27c">catos::Entity::add_component</a></div><div class="ttdeci">void add_component(Component *component, cstr name)</div><div class="ttdoc">Add a component. Needs a type for the registry name.</div><div class="ttdef"><b>Definition</b> entity.h:40</div></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
+<div class="ttc" id="aa00017_html"><div class="ttname"><a href="a00017.html">types.h</a></div></div>
+<div class="ttc" id="aa00017_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="a00017.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition</b> types.h:14</div></div>
+<div class="ttc" id="aa00017_html_aabc01e4474ddca8d6c8ac3e5c7dfe4b7"><div class="ttname"><a href="a00017.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a></div><div class="ttdeci">std::string_view str</div><div class="ttdef"><b>Definition</b> types.h:12</div></div>
+<div class="ttc" id="aa00020_html"><div class="ttname"><a href="a00020.html">type_utils.h</a></div></div>
+<div class="ttc" id="aa00026_html"><div class="ttname"><a href="a00026.html">catos</a></div><div class="ttdoc">Note when calling a onUpdate function please use Unmanaged Method Thunks.!!!</div><div class="ttdef"><b>Definition</b> scriptingEngine.h:13</div></div>
+<div class="ttc" id="aa00027_html_a984a08d43e4be51d38568b267ed64092"><div class="ttname"><a href="a00027.html#a984a08d43e4be51d38568b267ed64092">catos::type_utils::get_type_hash</a></div><div class="ttdeci">size_t get_type_hash()</div><div class="ttdef"><b>Definition</b> type_utils.h:14</div></div>
+<div class="ttc" id="aa00043_html"><div class="ttname"><a href="a00043.html">catos::AppCreationInfo</a></div><div class="ttdoc">A struct that holds all info the application needs at launch.</div><div class="ttdef"><b>Definition</b> application.h:17</div></div>
+<div class="ttc" id="aa00043_html_a2e1442b7894e8f50cf02926c312a83b4"><div class="ttname"><a href="a00043.html#a2e1442b7894e8f50cf02926c312a83b4">catos::AppCreationInfo::applicationTitle</a></div><div class="ttdeci">str applicationTitle</div><div class="ttdef"><b>Definition</b> application.h:20</div></div>
+<div class="ttc" id="aa00043_html_aa955f138a405ff0d97ca029e5a4bf4df"><div class="ttname"><a href="a00043.html#aa955f138a405ff0d97ca029e5a4bf4df">catos::AppCreationInfo::version</a></div><div class="ttdeci">uint version</div><div class="ttdoc">MAJOR | MINOR | PATCH?</div><div class="ttdef"><b>Definition</b> application.h:19</div></div>
+<div class="ttc" id="aa00047_html"><div class="ttname"><a href="a00047.html">catos::App</a></div><div class="ttdoc">Main class that holds all information.</div><div class="ttdef"><b>Definition</b> application.h:25</div></div>
+<div class="ttc" id="aa00047_html_a20c936adde996793bc36c33650b12a23"><div class="ttname"><a href="a00047.html#a20c936adde996793bc36c33650b12a23">catos::App::App</a></div><div class="ttdeci">App(AppCreationInfo *creationInfo)</div><div class="ttdoc">Initializes the Application (Also registers all &quot;known&quot; class to the registry)</div></div>
+<div class="ttc" id="aa00047_html_a2d9f5a50cb0cf5a883d77d27068e3ad2"><div class="ttname"><a href="a00047.html#a2d9f5a50cb0cf5a883d77d27068e3ad2">catos::App::get</a></div><div class="ttdeci">A * get()</div><div class="ttdoc">Returns the registered instance.</div><div class="ttdef"><b>Definition</b> application.h:47</div></div>
+<div class="ttc" id="aa00047_html_a5bd26fdeb5142a62fe81620461de1007"><div class="ttname"><a href="a00047.html#a5bd26fdeb5142a62fe81620461de1007">catos::App::bind</a></div><div class="ttdeci">void bind(const void *instance)</div><div class="ttdoc">Used to bind an instance to an type.</div><div class="ttdef"><b>Definition</b> application.h:41</div></div>
+<div class="ttc" id="aa00047_html_aa075aafecc5843c6fbe3f1f7e8eacf39"><div class="ttname"><a href="a00047.html#aa075aafecc5843c6fbe3f1f7e8eacf39">catos::App::getAppInfo</a></div><div class="ttdeci">AppCreationInfo * getAppInfo()</div><div class="ttdoc">Returns a pointer to the info with what the application is made.</div></div>
+<div class="ttc" id="aa00047_html_ac7ee8e55850651b7549a64789904ea62"><div class="ttname"><a href="a00047.html#ac7ee8e55850651b7549a64789904ea62">catos::App::is_alive</a></div><div class="ttdeci">bool is_alive()</div><div class="ttdoc">Returns if the app is still running.</div></div>
+<div class="ttc" id="aa00047_html_ae2beda1820f2fb8b3d2b690e9cd7742b"><div class="ttname"><a href="a00047.html#ae2beda1820f2fb8b3d2b690e9cd7742b">catos::App::~App</a></div><div class="ttdeci">~App()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <p>

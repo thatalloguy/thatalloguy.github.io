@@ -97,8 +97,9 @@ $(function(){initNavTree('index.html',''); initResizable(); });
   <div class="headertitle"><div class="title">Catos Engine </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md__r_e_a_d_m_e"></a> </p><h5>modern lightweight ECS cpp game engine</h5>
-<p># </p>
+<div class="textblock"><p><a class="anchor" id="md__c_1_2_users_2allos_2source_2_catos_2_r_e_a_d_m_e"></a> </p><h5>modern lightweight ECS cpp game engine</h5>
+<p>(Wiki) <a href="https://github.com/thatalloguy/Catos/wiki">https://github.com/thatalloguy/Catos/wiki</a> </p><h5>Different one comming sometime 🤷‍♂️</h5>
+<p># # </p>
 <h3><a class="anchor" id="planned-features--todo"></a>
 Planned Features / ToDo</h3>
 <ul>
@@ -110,10 +111,14 @@ Planned Features / ToDo</h3>
 <li>- [x] Entity Creation.</li>
 <li>- [x] Central system for handling entities.</li>
 <li>- [x] Base component</li>
-<li>[ ] Python scripting (via pocketPy)</li>
-<li>- [x] Custom Component creation (in python)</li>
-<li>- [ ] get Info from cpp</li>
-<li>- [ ] change info that affects cpp (in python)</li>
+<li>[ ] C# scripting engine</li>
+<li>- [x] Creating instances of classes.</li>
+<li>- [x] Calling functions of instances.</li>
+<li>- [x] Getting and Setting fields.</li>
+<li>- [x] Calling Cpp from C#</li>
+<li>- [ ] Embedding intergration with the reflection system</li>
+<li>- [ ] Refactor.</li>
+<li>- [ ] Script Object.</li>
 <li>[ ] Resource manager</li>
 <li>[ ] Dynamic Editor (via the reflection)</li>
 <li>[ ] Atomus implementation. # </li>
@@ -124,17 +129,15 @@ EC system blueprint.</h2>
 <h2><a class="anchor" id="rendering-with"></a>
 Rendering with</h2>
 <p><a href="https://github.com/thatalloguy/Atomus">https://github.com/thatalloguy/Atomus</a></p>
-<h4><a class="anchor" id="ideas-for-the-engine"></a>
-Ideas for the engine</h4>
+<h3><a class="anchor" id="ideas-for-the-engine"></a>
+Ideas for the engine</h3>
 <h5>- Vulkan renderer (+ opengl):</h5>
 <p>After ive finished the asset manager i will continue dev on my personal vulkan renderer. After that I am hoping to write a RHI so that i can support multiple graphic api's.</p><ul>
 <li>UPDATE: I finished Atomus (vulkan renderer) and i dont think il create an RHI anytime soon 😅.</li>
 </ul>
-<h5><strike>- C# as scripting lang</strike> (Its python now)</h5>
-<p>I really like C# and i would like to have it as my scripting lang. However ive learned that implementing C# is a PITA, but im hoping that my new reflection system will make my life easier.</p><ul>
-<li>UPDATE: I started on a pocketpy implementation, will not be using C#. <h5>- Physics engine</h5>
-</li>
-</ul>
+<h5>- C# as scripting lang</h5>
+<p>I really like C# and i would like to have it as my scripting lang. However ive learned that implementing C# is a PITA, but im hoping that my new reflection system will make my life easier.</p>
+<h5>- Physics engine</h5>
 <p>In the past ive used PhysX, bullet and reactphysics3d. But i dislike all 3. I have heard lots of good stuff about Joltphysics and i might give it a try for this engine.</p>
 <h5>- Audio Engine</h5>
 <p>Ive never really done much with audio, but ive seen the steam audio api and im hoping to try it!</p>

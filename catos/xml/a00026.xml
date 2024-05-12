@@ -1,90 +1,84 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00026" kind="class" language="C++" prot="public">
-    <compoundname>catos::Component</compoundname>
-    <derivedcompoundref refid="a00034" prot="public" virt="non-virtual">catos::Script</derivedcompoundref>
-    <includes refid="a00002" local="no">entity.h</includes>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00026_1a198b1c7d794d41af75f7f7ed5b069ea3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>virtual void catos::Component::init</definition>
-        <argsstring>(Entity &amp;entity)</argsstring>
-        <name>init</name>
-        <qualifiedname>catos::Component::init</qualifiedname>
-        <reimplementedby refid="a00034_1afcc796104b9e715ff94299ed1242d908">init</reimplementedby>
-        <param>
-          <type><ref refid="a00030" kindref="compound">Entity</ref> &amp;</type>
-          <declname>entity</declname>
-        </param>
+  <compounddef id="a00026" kind="namespace" language="C++">
+    <compoundname>catos</compoundname>
+    <innerclass refid="a00047" prot="public">catos::App</innerclass>
+    <innerclass refid="a00043" prot="public">catos::AppCreationInfo</innerclass>
+    <innerclass refid="a00051" prot="public">catos::Component</innerclass>
+    <innerclass refid="a00035" prot="public">catos::Cpp</innerclass>
+    <innerclass refid="a00055" prot="public">catos::Entity</innerclass>
+    <innerclass refid="a00067" prot="public">catos::Game</innerclass>
+    <innerclass refid="a00063" prot="public">catos::GameConfig</innerclass>
+    <innerclass refid="a00083" prot="public">catos::Method</innerclass>
+    <innerclass refid="a00079" prot="public">catos::MethodInvoker</innerclass>
+    <innerclass refid="a00071" prot="public">catos::Property</innerclass>
+    <innerclass refid="a00075" prot="public">catos::PropertyImpl</innerclass>
+    <innerclass refid="a00091" prot="public">catos::Registry</innerclass>
+    <innerclass refid="a00059" prot="public">catos::Scene</innerclass>
+    <innerclass refid="a00031" prot="public">catos::ScriptContext</innerclass>
+    <innerclass refid="a00039" prot="public">catos::ScriptingEngine</innerclass>
+    <innerclass refid="a00087" prot="public">catos::TypeInfo</innerclass>
+    <innernamespace refid="a00027">catos::type_utils</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00026_1a38d4823f65e5fe29a2fd1bf38eeb077a" prot="public" static="no" strong="yes">
+        <type>uint8_t</type>
+        <name>FieldAccessibility</name>
+        <qualifiedname>catos::FieldAccessibility</qualifiedname>
+        <enumvalue id="a00026_1a38d4823f65e5fe29a2fd1bf38eeb077aa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00026_1a38d4823f65e5fe29a2fd1bf38eeb077aa47f9082fc380ca62d531096aa1d110f1" prot="public">
+          <name>Private</name>
+          <initializer>= (1 &lt;&lt; 0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00026_1a38d4823f65e5fe29a2fd1bf38eeb077aaafbf0897a5a83fdd873dfb032ec695d3" prot="public">
+          <name>Internal</name>
+          <initializer>= (1 &lt;&lt; 1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00026_1a38d4823f65e5fe29a2fd1bf38eeb077aa56f0605c9795b173abd2e34fab7fc164" prot="public">
+          <name>Protected</name>
+          <initializer>= (1 &lt;&lt; 2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00026_1a38d4823f65e5fe29a2fd1bf38eeb077aa3d067bedfe2f4677470dd6ccf64d05ed" prot="public">
+          <name>Public</name>
+          <initializer>= (1 &lt;&lt; 3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="27" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="27" bodyend="27"/>
-      </memberdef>
-      <memberdef kind="function" id="a00026_1a31a1133e9d321871ad9b3cca7f325e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>virtual void catos::Component::update</definition>
-        <argsstring>(Entity &amp;entity)</argsstring>
-        <name>update</name>
-        <qualifiedname>catos::Component::update</qualifiedname>
-        <reimplementedby refid="a00034_1a5bd21237de66721e4639a036b8cc614d">update</reimplementedby>
-        <param>
-          <type><ref refid="a00030" kindref="compound">Entity</ref> &amp;</type>
-          <declname>entity</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="28" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="28" bodyend="28"/>
-      </memberdef>
-      <memberdef kind="function" id="a00026_1acee6f0a181489892319a99d6b8ee813f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>virtual void catos::Component::destroy</definition>
-        <argsstring>(Entity &amp;entity)</argsstring>
-        <name>destroy</name>
-        <qualifiedname>catos::Component::destroy</qualifiedname>
-        <reimplementedby refid="a00034_1a8d2a95d044d01e0b8201a603a30af412">destroy</reimplementedby>
-        <param>
-          <type><ref refid="a00030" kindref="compound">Entity</ref> &amp;</type>
-          <declname>entity</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="29" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="29" bodyend="29"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="15" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="15" bodyend="21"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para><ref refid="a00026" kindref="compound">Component</ref> is an abstract class that is the base for any component. </para>
+<para>Note when calling a onUpdate function please use Unmanaged <ref refid="a00083" kindref="compound">Method</ref> Thunks.!!! </para>
     </briefdescription>
     <detaileddescription>
+<para>Created by allos on 4/30/2024. </para>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>catos::Component</label>
-        <link refid="a00026"/>
-      </node>
-      <node id="2">
-        <label>catos::Script</label>
-        <link refid="a00034"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="25" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="25" bodyend="30"/>
-    <listofallmembers>
-      <member refid="a00026_1acee6f0a181489892319a99d6b8ee813f" prot="public" virt="virtual"><scope>catos::Component</scope><name>destroy</name></member>
-      <member refid="a00026_1a198b1c7d794d41af75f7f7ed5b069ea3" prot="public" virt="virtual"><scope>catos::Component</scope><name>init</name></member>
-      <member refid="a00026_1a31a1133e9d321871ad9b3cca7f325e30" prot="public" virt="virtual"><scope>catos::Component</scope><name>update</name></member>
-    </listofallmembers>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="13" column="1"/>
   </compounddef>
 </doxygen>

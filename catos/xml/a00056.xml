@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="37" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="37" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="38" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="38" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="28" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="28" bodyend="28"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="29" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="29" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="a00056_1a658e2343fa5565207592286b665c82e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="a00056_1a2048e2c564639ddbe4b2632749f417da" kindref="member">void</ref> *</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="30" column="22"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="31" column="22"/>
       </memberdef>
       <memberdef kind="function" id="a00056_1ae2346543825d185fd3397262fd09d4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="a00056_1a2048e2c564639ddbe4b2632749f417da" kindref="member">const</ref> <ref refid="a00056_1a2048e2c564639ddbe4b2632749f417da" kindref="member">char</ref> *</type>
@@ -69,7 +69,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="31" column="28"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="32" column="28"/>
       </memberdef>
       <memberdef kind="function" id="a00056_1ade91b642390d463208dcc397143a1a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="a00056_1a2048e2c564639ddbe4b2632749f417da" kindref="member">const</ref> <ref refid="a00056_1a2048e2c564639ddbe4b2632749f417da" kindref="member">char</ref> *</type>
@@ -84,7 +84,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="32" column="28"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="33" column="28"/>
       </memberdef>
       <memberdef kind="function" id="a00056_1a2048e2c564639ddbe4b2632749f417da" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type>size_t &amp;</type>
@@ -99,7 +99,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="33" column="24"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="34" column="24"/>
       </memberdef>
       <memberdef kind="function" id="a00056_1a14c6ded73ec5e93149fda506c540a34f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
         <type><ref refid="a00056_1a2048e2c564639ddbe4b2632749f417da" kindref="member">void</ref></type>
@@ -118,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="35" column="22"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="36" column="22"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -138,7 +138,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="22" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="22" bodyend="38"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="23" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="23" bodyend="39"/>
     <listofallmembers>
       <member refid="a00056_1aabfc2935e5ce159303cdd8c760fe3e43" prot="public" virt="non-virtual"><scope>catos::Property</scope><name>desc</name></member>
       <member refid="a00056_1ae2346543825d185fd3397262fd09d4cf" prot="public" virt="pure-virtual"><scope>catos::Property</scope><name>get_name</name></member>

@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="101" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="101" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="102" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="102" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="102" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="102" bodyend="104"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="103" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="103" bodyend="105"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -78,7 +78,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="106" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="106" bodyend="108"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="107" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="107" bodyend="109"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -86,7 +86,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="97" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="97" bodyend="109"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="98" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="98" bodyend="110"/>
     <listofallmembers>
       <member refid="a00064_1adb068c5506bbbd26cf6e4362e680f380" prot="public" virt="non-virtual"><scope>catos::MethodInvoker</scope><name>callFunction</name></member>
       <member refid="a00064_1a0a1005231c6d3687fd607b65a2771fb8" prot="public" virt="non-virtual"><scope>catos::MethodInvoker</scope><name>memPtr</name></member>

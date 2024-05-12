@@ -20,7 +20,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="23" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="23" bodyend="23"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/entity.h" line="23" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/entity.h" bodystart="23" bodyend="23"/>
       </memberdef>
       <memberdef kind="function" id="a00036_1a31a1133e9d321871ad9b3cca7f325e30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -38,7 +38,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="24" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="24" bodyend="24"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/entity.h" line="24" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/entity.h" bodystart="24" bodyend="24"/>
       </memberdef>
       <memberdef kind="function" id="a00036_1acee6f0a181489892319a99d6b8ee813f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -56,7 +56,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="25" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="25" bodyend="25"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/entity.h" line="25" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/entity.h" bodystart="25" bodyend="25"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -64,7 +64,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="20" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="20" bodyend="26"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/core/entity.h" line="20" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/entity.h" bodystart="20" bodyend="26"/>
     <listofallmembers>
       <member refid="a00036_1acee6f0a181489892319a99d6b8ee813f" prot="public" virt="virtual"><scope>catos::Component</scope><name>destroy</name></member>
       <member refid="a00036_1a198b1c7d794d41af75f7f7ed5b069ea3" prot="public" virt="virtual"><scope>catos::Component</scope><name>init</name></member>

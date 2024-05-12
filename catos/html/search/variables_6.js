@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['type_5fhash_0',['type_hash',['../a00060.html#ac17e39e00f466c5e3ce27c204ebe7aa8',1,'catos::PropertyImpl::type_hash'],['../a00072.html#a9a4c20fb31a1759ef8aa1d5c8acfeabd',1,'catos::TypeInfo::type_hash']]],
-  ['type_5fname_1',['type_name',['../a00060.html#a220d2c57189b922ac43e74b7605ddfec',1,'catos::PropertyImpl']]]
+  ['returnname_0',['returnName',['../a00083.html#a0b06cd150b4dc8a0b35d356d6f134442',1,'catos::Method']]]
 ];

@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="322" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="322" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="416" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="416" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="a00076_1ab554c66d2f7b86c82e6d55ae3cc34b77" prot="private" static="no" mutable="no">
         <type>std::unordered_map&lt; size_t, const void * &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="323" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="323" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="417" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="417" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="233" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="233" bodyend="244"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="235" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="235" bodyend="246"/>
       </memberdef>
       <memberdef kind="function" id="a00076_1aa9d8e58c1258eebb008a292f8b8b1c44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -67,7 +67,23 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="248" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="248" bodyend="293"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="250" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="250" bodyend="295"/>
+      </memberdef>
+      <memberdef kind="function" id="a00076_1ad344d7a045a558fa8a24e4f1ce095a05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Registry::gen_cs_bindings_file</definition>
+        <argsstring>()</argsstring>
+        <name>gen_cs_bindings_file</name>
+        <qualifiedname>catos::Registry::gen_cs_bindings_file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO Arguments TODO <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="300" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="300" bodyend="387"/>
       </memberdef>
       <memberdef kind="function" id="a00076_1a03c494fdb9fb9daafaea972f273de633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -87,7 +103,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="299" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="299" bodyend="301"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="393" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="393" bodyend="395"/>
       </memberdef>
       <memberdef kind="function" id="a00076_1a3ff740e516ed706e2d202086df6f12b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -102,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="305" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="305" bodyend="316"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="399" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="399" bodyend="410"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -110,10 +126,11 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="225" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="225" bodyend="324"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" line="227" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/registry.h" bodystart="227" bodyend="418"/>
     <listofallmembers>
       <member refid="a00076_1ab554c66d2f7b86c82e6d55ae3cc34b77" prot="private" virt="non-virtual"><scope>catos::Registry</scope><name>_instance_register</name></member>
       <member refid="a00076_1a759718acff0cdb1cfd97bf13fd0700a6" prot="private" virt="non-virtual"><scope>catos::Registry</scope><name>_register</name></member>
+      <member refid="a00076_1ad344d7a045a558fa8a24e4f1ce095a05" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>gen_cs_bindings_file</name></member>
       <member refid="a00076_1aa9d8e58c1258eebb008a292f8b8b1c44" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>gen_python_bindings_file</name></member>
       <member refid="a00076_1a03c494fdb9fb9daafaea972f273de633" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>get_type</name></member>
       <member refid="a00076_1a3ff740e516ed706e2d202086df6f12b9" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>print_current_register</name></member>

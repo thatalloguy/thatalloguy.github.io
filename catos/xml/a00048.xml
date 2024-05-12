@@ -8,7 +8,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="47" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="47" bodyend="49"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="47" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/game.h" bodystart="47" bodyend="49"/>
     <listofallmembers>
     </listofallmembers>
   </compounddef>

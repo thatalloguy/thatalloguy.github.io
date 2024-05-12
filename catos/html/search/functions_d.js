@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['update_0',['update',['../a00026.html#a31a1133e9d321871ad9b3cca7f325e30',1,'catos::Component::update()'],['../a00030.html#a7e2c38a1a54cdee9427d519c6f544fbe',1,'catos::Entity::update()'],['../a00034.html#a5bd21237de66721e4639a036b8cc614d',1,'catos::Script::update()'],['../a00038.html#ab5bd5fc10504d63809dc807159d6effa',1,'catos::ScriptComponent::update()']]]
+  ['_7eapp_0',['~App',['../a00047.html#ae2beda1820f2fb8b3d2b690e9cd7742b',1,'catos::App']]],
+  ['_7eentity_1',['~Entity',['../a00055.html#a3f0c4e9ced3c4caf83f05b37a103b704',1,'catos::Entity']]],
+  ['_7egame_2',['~Game',['../a00067.html#a1b8a681b7b89244c5c626074c4690d4e',1,'catos::Game']]],
+  ['_7eproperty_3',['~Property',['../a00071.html#aadf32bd1d8c607a993f117ea2db3cadd',1,'catos::Property']]],
+  ['_7escene_4',['~Scene',['../a00059.html#a46a13b91b0e9eeeabffcf72a1f3879b6',1,'catos::Scene']]]
 ];

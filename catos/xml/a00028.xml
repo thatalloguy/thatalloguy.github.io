@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="19" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="19" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="19" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="a00028_1a2e1442b7894e8f50cf02926c312a83b4" prot="public" static="no" mutable="no">
         <type><ref refid="a00014_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref></type>
@@ -33,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="20" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="20" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="20" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="20" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -41,7 +41,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="17" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="17" bodyend="21"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="17" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="17" bodyend="21"/>
     <listofallmembers>
       <member refid="a00028_1a2e1442b7894e8f50cf02926c312a83b4" prot="public" virt="non-virtual"><scope>catos::AppCreationInfo</scope><name>applicationTitle</name></member>
       <member refid="a00028_1aa955f138a405ff0d97ca029e5a4bf4df" prot="public" virt="non-virtual"><scope>catos::AppCreationInfo</scope><name>version</name></member>
