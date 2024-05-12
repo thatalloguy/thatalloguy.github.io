@@ -138,20 +138,3 @@ body{
         width: calc(100% + 8px);
     }
 }
-
-::-webkit-scrollbar {
-    width: 0.75vw;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #2f3542;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #3f79a3;
-    border-radius: 40px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #4b96cc;
-  }
