@@ -10,13 +10,39 @@ body{
     font-family: "Montserrat", sans-serif;
 }
 
+.titlecard {
+    background-color: #232730;
+    width: 100vw;
+    height: 14vh;
+}
+
 .title {
     position: absolute;
     color: #ffae00;
     font-weight: bold;
     font-size: 3vw;
-    left: 10vw;
-    bottom: 82vh;
+    left: 4vw;
+    top: -4vh;
+    text-shadow: 7px 7px 15px #c18400;
+}
+
+
+
+.return {
+    position: absolute;
+    top: 4vh;
+    right: 2vw;
+    font-size: xx-large;
+}
+
+.return .name {
+    color:#515954;
+    text-shadow: 4px 4px 20px #4a8794;
+}
+
+.return .name:hover {
+    color:#6e7c73;
+    text-shadow: 2px 2px 18px #57e0ff;
 }
 
 .content {
@@ -24,5 +50,5 @@ body{
     margin: 4vw;
     font-size: 1vw;
     word-wrap: break-word;
-    color:#c6c6c6;
+    color:#76ce96;
 }
