@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00050" kind="class" language="C++" prot="public">
+    <compoundname>catos::Game</compoundname>
+    <includes refid="a00005" local="no">game.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00050_1a45eb4cd2d7aea3e0beb004a1f31a30b8" prot="private" static="no" mutable="no">
+        <type><ref refid="a00046" kindref="compound">GameConfig</ref></type>
+        <definition>GameConfig catos::Game::config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <qualifiedname>catos::Game::config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="94" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00050_1a6189d683dfc752941b3cd0939efa1758" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="a00011_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref>, std::shared_ptr&lt; <ref refid="a00042" kindref="compound">Scene</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;str, std::shared_ptr&lt;Scene&gt; &gt; catos::Game::sceneTable</definition>
+        <argsstring></argsstring>
+        <name>sceneTable</name>
+        <qualifiedname>catos::Game::sceneTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="97" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00050_1a7a1c9d5572c3cdb404044451457dd886" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::Game::Game</definition>
+        <argsstring>()=default</argsstring>
+        <name>Game</name>
+        <qualifiedname>catos::Game::Game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="58" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="a00050_1a1b8a681b7b89244c5c626074c4690d4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::Game::~Game</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Game</name>
+        <qualifiedname>catos::Game::~Game</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="59" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="a00050_1a89a1cedb2203b821034038d66e509b08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Game::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>catos::Game::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="61" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="a00050_1aa74a1aa80630a7ddc216e7ba28a2a3c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00046" kindref="compound">GameConfig</ref> &amp;</type>
+        <definition>GameConfig &amp; catos::Game::get_config</definition>
+        <argsstring>()</argsstring>
+        <name>get_config</name>
+        <qualifiedname>catos::Game::get_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="65" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="65" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="a00050_1a721f190ff4930ab710ea343e0ff5e594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="a00042" kindref="compound">Scene</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Scene &gt; catos::Game::create_scene</definition>
+        <argsstring>(cstr Game)</argsstring>
+        <name>create_scene</name>
+        <qualifiedname>catos::Game::create_scene</qualifiedname>
+        <param>
+          <type><ref refid="a00011_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+          <declname>Game</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="a00042" kindref="compound">Scene</ref> handling Creates a scene via a <ref refid="a00050" kindref="compound">Game</ref>, returns the newly created scene. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="69" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="a00050_1acbcd7e24ad697a2877da552932a02262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="a00042" kindref="compound">Scene</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Scene &gt; catos::Game::change_scene_name</definition>
+        <argsstring>(cstr oldGame, cstr newGame)</argsstring>
+        <name>change_scene_name</name>
+        <qualifiedname>catos::Game::change_scene_name</qualifiedname>
+        <param>
+          <type><ref refid="a00011_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+          <declname>oldGame</declname>
+        </param>
+        <param>
+          <type><ref refid="a00011_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+          <declname>newGame</declname>
+        </param>
+        <briefdescription>
+<para>Changes the <ref refid="a00050" kindref="compound">Game</ref> of a scene, returns the changed scene. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="71" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="a00050_1a49d74e76e9ecdcf368b9d85cfcc16cac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="a00042" kindref="compound">Scene</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; Scene &gt; catos::Game::get_scene</definition>
+        <argsstring>(cstr Game)</argsstring>
+        <name>get_scene</name>
+        <qualifiedname>catos::Game::get_scene</qualifiedname>
+        <param>
+          <type><ref refid="a00011_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+          <declname>Game</declname>
+        </param>
+        <briefdescription>
+<para>Returns the scene via the <ref refid="a00050" kindref="compound">Game</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="73" column="25"/>
+      </memberdef>
+      <memberdef kind="function" id="a00050_1a7d45a8e19170c3c6b16cce52c3ddb4e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::Game::operator==</definition>
+        <argsstring>(Game other)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>catos::Game::operator==</qualifiedname>
+        <param>
+          <type><ref refid="a00050" kindref="compound">Game</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="76" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="a00050_1ad14328333e83c598a4d8c7d04b76e099" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00050" kindref="compound">Game</ref> *</type>
+        <definition>Game * catos::Game::_</definition>
+        <argsstring>()</argsstring>
+        <name>_</name>
+        <qualifiedname>catos::Game::_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="80" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="80" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00050_1aae8c67ebd882d7462b94463a42f618b2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void catos::Game::_register</definition>
+        <argsstring>(VM *vm, PyObject *mod, PyObject *type)</argsstring>
+        <name>_register</name>
+        <qualifiedname>catos::Game::_register</qualifiedname>
+        <param>
+          <type>VM *</type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>PyObject *</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>PyObject *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="84" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="84" bodyend="91"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The <ref refid="a00050" kindref="compound">Game</ref> objects stores the scenes and other objects. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="54" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="54" bodyend="99"/>
+    <listofallmembers>
+      <member refid="a00050_1ad14328333e83c598a4d8c7d04b76e099" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>_</name></member>
+      <member refid="a00050_1aae8c67ebd882d7462b94463a42f618b2" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>_register</name></member>
+      <member refid="a00050_1acbcd7e24ad697a2877da552932a02262" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>change_scene_name</name></member>
+      <member refid="a00050_1a45eb4cd2d7aea3e0beb004a1f31a30b8" prot="private" virt="non-virtual"><scope>catos::Game</scope><name>config</name></member>
+      <member refid="a00050_1a721f190ff4930ab710ea343e0ff5e594" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>create_scene</name></member>
+      <member refid="a00050_1a7a1c9d5572c3cdb404044451457dd886" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>Game</name></member>
+      <member refid="a00050_1aa74a1aa80630a7ddc216e7ba28a2a3c8" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>get_config</name></member>
+      <member refid="a00050_1a49d74e76e9ecdcf368b9d85cfcc16cac" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>get_scene</name></member>
+      <member refid="a00050_1a89a1cedb2203b821034038d66e509b08" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>init</name></member>
+      <member refid="a00050_1a7d45a8e19170c3c6b16cce52c3ddb4e7" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>operator==</name></member>
+      <member refid="a00050_1a6189d683dfc752941b3cd0939efa1758" prot="private" virt="non-virtual"><scope>catos::Game</scope><name>sceneTable</name></member>
+      <member refid="a00050_1a1b8a681b7b89244c5c626074c4690d4e" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>~Game</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

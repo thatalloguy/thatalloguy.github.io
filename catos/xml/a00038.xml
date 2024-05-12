@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00038" kind="class" language="C++" prot="public">
+    <compoundname>catos::ScriptComponent</compoundname>
+    <includes refid="a00002" local="no">entity.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00038_1a59fd11feb2585311365db251344fb86b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptComponent::init</definition>
+        <argsstring>(Entity entity)</argsstring>
+        <name>init</name>
+        <qualifiedname>catos::ScriptComponent::init</qualifiedname>
+        <param>
+          <type><ref refid="a00030" kindref="compound">Entity</ref></type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="157" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="157" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="a00038_1ab5bd5fc10504d63809dc807159d6effa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptComponent::update</definition>
+        <argsstring>(Entity entity)</argsstring>
+        <name>update</name>
+        <qualifiedname>catos::ScriptComponent::update</qualifiedname>
+        <param>
+          <type><ref refid="a00030" kindref="compound">Entity</ref></type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="159" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="159" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="a00038_1a1ba64f6a82f68347885b28af6d2542ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptComponent::destroy</definition>
+        <argsstring>(Entity entity)</argsstring>
+        <name>destroy</name>
+        <qualifiedname>catos::ScriptComponent::destroy</qualifiedname>
+        <param>
+          <type><ref refid="a00030" kindref="compound">Entity</ref></type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="161" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="a00038_1a03171a81c324567a8f5e7304e0a0c532" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::ScriptComponent::operator==</definition>
+        <argsstring>(ScriptComponent other)</argsstring>
+        <name>operator==</name>
+        <qualifiedname>catos::ScriptComponent::operator==</qualifiedname>
+        <param>
+          <type><ref refid="a00038" kindref="compound">ScriptComponent</ref></type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="164" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="164" bodyend="166"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00038_1a06bcba5299802ba5303f3f8f77f1af4c" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void catos::ScriptComponent::_register</definition>
+        <argsstring>(VM *vm, PyObject *mod, PyObject *type)</argsstring>
+        <name>_register</name>
+        <qualifiedname>catos::ScriptComponent::_register</qualifiedname>
+        <param>
+          <type>VM *</type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>PyObject *</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>PyObject *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="168" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="168" bodyend="172"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A basic script template, made for python scripts to inherit from. NOT USABLE FOR CPP USERS! </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="154" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="154" bodyend="173"/>
+    <listofallmembers>
+      <member refid="a00038_1a06bcba5299802ba5303f3f8f77f1af4c" prot="public" virt="non-virtual"><scope>catos::ScriptComponent</scope><name>_register</name></member>
+      <member refid="a00038_1a1ba64f6a82f68347885b28af6d2542ce" prot="public" virt="non-virtual"><scope>catos::ScriptComponent</scope><name>destroy</name></member>
+      <member refid="a00038_1a59fd11feb2585311365db251344fb86b" prot="public" virt="non-virtual"><scope>catos::ScriptComponent</scope><name>init</name></member>
+      <member refid="a00038_1a03171a81c324567a8f5e7304e0a0c532" prot="public" virt="non-virtual"><scope>catos::ScriptComponent</scope><name>operator==</name></member>
+      <member refid="a00038_1ab5bd5fc10504d63809dc807159d6effa" prot="public" virt="non-virtual"><scope>catos::ScriptComponent</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

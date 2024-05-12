@@ -1,0 +1,195 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00032" kind="class" language="C++" prot="public">
+    <compoundname>catos::App</compoundname>
+    <includes refid="a00002" local="no">application.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00032_1ade360a10f6c158d74d0fdd9ed1659672" prot="private" static="no" mutable="no">
+        <type><ref refid="a00028" kindref="compound">AppCreationInfo</ref> *</type>
+        <definition>AppCreationInfo* catos::App::_info</definition>
+        <argsstring></argsstring>
+        <name>_info</name>
+        <qualifiedname>catos::App::_info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="62" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00032_1a86114b77047af86111dda9b2dcdc25a7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool catos::App::_is_alive</definition>
+        <argsstring></argsstring>
+        <name>_is_alive</name>
+        <qualifiedname>catos::App::_is_alive</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="63" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00032_1ae9535fe5bd3e21e1ee14b5fca23695c9" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; size_t, const void * &gt;</type>
+        <definition>std::unordered_map&lt;size_t, const void* &gt; catos::App::_instance_register</definition>
+        <argsstring></argsstring>
+        <name>_instance_register</name>
+        <qualifiedname>catos::App::_instance_register</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="65" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00032_1a20c936adde996793bc36c33650b12a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::App::App</definition>
+        <argsstring>(AppCreationInfo *creationInfo)</argsstring>
+        <name>App</name>
+        <qualifiedname>catos::App::App</qualifiedname>
+        <param>
+          <type><ref refid="a00028" kindref="compound">AppCreationInfo</ref> *</type>
+          <declname>creationInfo</declname>
+        </param>
+        <briefdescription>
+<para>Initializes the Application (Also registers all &quot;known&quot; class to the registry) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="30" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="a00032_1ae2beda1820f2fb8b3d2b690e9cd7742b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::App::~App</definition>
+        <argsstring>()</argsstring>
+        <name>~App</name>
+        <qualifiedname>catos::App::~App</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="31" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="a00032_1ac7ee8e55850651b7549a64789904ea62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::App::is_alive</definition>
+        <argsstring>()</argsstring>
+        <name>is_alive</name>
+        <qualifiedname>catos::App::is_alive</qualifiedname>
+        <briefdescription>
+<para>Returns if the app is still running. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="34" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00032_1a5bd26fdeb5142a62fe81620461de1007" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename A</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void catos::App::bind</definition>
+        <argsstring>(const void *instance)</argsstring>
+        <name>bind</name>
+        <qualifiedname>catos::App::bind</qualifiedname>
+        <param>
+          <type>const void *</type>
+          <declname>instance</declname>
+        </param>
+        <briefdescription>
+<para>Used to bind an instance to an type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="a00032_1a2d9f5a50cb0cf5a883d77d27068e3ad2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename A</type>
+          </param>
+        </templateparamlist>
+        <type>A *</type>
+        <definition>A * catos::App::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <qualifiedname>catos::App::get</qualifiedname>
+        <briefdescription>
+<para>Returns the registered instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="47" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="a00032_1aa075aafecc5843c6fbe3f1f7e8eacf39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00028" kindref="compound">AppCreationInfo</ref> *</type>
+        <definition>AppCreationInfo * catos::App::getAppInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getAppInfo</name>
+        <qualifiedname>catos::App::getAppInfo</qualifiedname>
+        <briefdescription>
+<para>Returns a pointer to the info with what the application is made. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="54" column="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00032_1aa95c160232eb5fe780bec480c5bea272" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::App::init_registry</definition>
+        <argsstring>()</argsstring>
+        <name>init_registry</name>
+        <qualifiedname>catos::App::init_registry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="59" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Main class that holds all information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="25" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="25" bodyend="66"/>
+    <listofallmembers>
+      <member refid="a00032_1ade360a10f6c158d74d0fdd9ed1659672" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_info</name></member>
+      <member refid="a00032_1ae9535fe5bd3e21e1ee14b5fca23695c9" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_instance_register</name></member>
+      <member refid="a00032_1a86114b77047af86111dda9b2dcdc25a7" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_is_alive</name></member>
+      <member refid="a00032_1a20c936adde996793bc36c33650b12a23" prot="public" virt="non-virtual"><scope>catos::App</scope><name>App</name></member>
+      <member refid="a00032_1a5bd26fdeb5142a62fe81620461de1007" prot="public" virt="non-virtual"><scope>catos::App</scope><name>bind</name></member>
+      <member refid="a00032_1a2d9f5a50cb0cf5a883d77d27068e3ad2" prot="public" virt="non-virtual"><scope>catos::App</scope><name>get</name></member>
+      <member refid="a00032_1aa075aafecc5843c6fbe3f1f7e8eacf39" prot="public" virt="non-virtual"><scope>catos::App</scope><name>getAppInfo</name></member>
+      <member refid="a00032_1aa95c160232eb5fe780bec480c5bea272" prot="private" virt="non-virtual"><scope>catos::App</scope><name>init_registry</name></member>
+      <member refid="a00032_1ac7ee8e55850651b7549a64789904ea62" prot="public" virt="non-virtual"><scope>catos::App</scope><name>is_alive</name></member>
+      <member refid="a00032_1ae2beda1820f2fb8b3d2b690e9cd7742b" prot="public" virt="non-virtual"><scope>catos::App</scope><name>~App</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

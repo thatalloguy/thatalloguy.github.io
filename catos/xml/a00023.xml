@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00023" kind="namespace" language="C++">
+    <compoundname>catos</compoundname>
+    <innerclass refid="a00032" prot="public">catos::App</innerclass>
+    <innerclass refid="a00028" prot="public">catos::AppCreationInfo</innerclass>
+    <innerclass refid="a00036" prot="public">catos::Component</innerclass>
+    <innerclass refid="a00040" prot="public">catos::Entity</innerclass>
+    <innerclass refid="a00052" prot="public">catos::Game</innerclass>
+    <innerclass refid="a00048" prot="public">catos::GameConfig</innerclass>
+    <innerclass refid="a00068" prot="public">catos::Method</innerclass>
+    <innerclass refid="a00064" prot="public">catos::MethodInvoker</innerclass>
+    <innerclass refid="a00056" prot="public">catos::Property</innerclass>
+    <innerclass refid="a00060" prot="public">catos::PropertyImpl</innerclass>
+    <innerclass refid="a00076" prot="public">catos::Registry</innerclass>
+    <innerclass refid="a00044" prot="public">catos::Scene</innerclass>
+    <innerclass refid="a00072" prot="public">catos::TypeInfo</innerclass>
+    <innernamespace refid="a00024">catos::type_utils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Created by allos on 4/30/2024. </para>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="13" column="1"/>
+  </compounddef>
+</doxygen>

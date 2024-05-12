@@ -1,0 +1,260 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00030" kind="class" language="C++" prot="public">
+    <compoundname>catos::Entity</compoundname>
+    <includes refid="a00002" local="no">entity.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00030_1ae90129d330dc382d2e4ae7474a9e3953" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float catos::Entity::test</definition>
+        <argsstring></argsstring>
+        <name>test</name>
+        <qualifiedname>catos::Entity::test</qualifiedname>
+        <initializer>= 3.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="48" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00030_1ab73fdbede12308d069966bc4ad48f766" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; <ref refid="a00011_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref>, <ref refid="a00026" kindref="compound">Component</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;str, Component*&gt; catos::Entity::componentTable</definition>
+        <argsstring></argsstring>
+        <name>componentTable</name>
+        <qualifiedname>catos::Entity::componentTable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="82" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00030_1a62899f6bb58ed862ee9f8ca2adb70b84" prot="private" static="no" mutable="no">
+        <type><ref refid="a00011_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref></type>
+        <definition>str catos::Entity::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <qualifiedname>catos::Entity::_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="83" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00030_1a0ec9adef499357ade7d76d33a4a611be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Entity::setup</definition>
+        <argsstring>(str name)</argsstring>
+        <name>setup</name>
+        <qualifiedname>catos::Entity::setup</qualifiedname>
+        <param>
+          <type><ref refid="a00011_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="38" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="a00030_1a3f0c4e9ced3c4caf83f05b37a103b704" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::Entity::~Entity</definition>
+        <argsstring>()=default</argsstring>
+        <name>~Entity</name>
+        <qualifiedname>catos::Entity::~Entity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="39" column="9"/>
+      </memberdef>
+      <memberdef kind="function" id="a00030_1a733fdc820e9c6e7ade666d6ec7d21bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Comp</type>
+          </param>
+        </templateparamlist>
+        <type>Comp *</type>
+        <definition>Comp * catos::Entity::get_component</definition>
+        <argsstring>()</argsstring>
+        <name>get_component</name>
+        <qualifiedname>catos::Entity::get_component</qualifiedname>
+        <briefdescription>
+<para>Get a component via its type. returns a pointer of that type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="43" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00030_1ae6260b7602e71d815db4fc5fe7a56195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00026" kindref="compound">Component</ref> *</type>
+        <definition>Component * catos::Entity::get_component</definition>
+        <argsstring>(str &amp;name)</argsstring>
+        <name>get_component</name>
+        <qualifiedname>catos::Entity::get_component</qualifiedname>
+        <param>
+          <type><ref refid="a00011_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref> &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Get a component via name, returns a <ref refid="a00026" kindref="compound">Component</ref> pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="46" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="a00030_1aca0617900d7cd2eefebde43c63e74123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class Comp</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void catos::Entity::add_component</definition>
+        <argsstring>(Component *component)</argsstring>
+        <name>add_component</name>
+        <qualifiedname>catos::Entity::add_component</qualifiedname>
+        <param>
+          <type><ref refid="a00026" kindref="compound">Component</ref> *</type>
+          <declname>component</declname>
+        </param>
+        <briefdescription>
+<para>Add a component. Needs a type for the registry name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="52" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00030_1a4d8e7705f088c6e512cfc259396912dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00011_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref> &amp;</type>
+        <definition>str &amp; catos::Entity::get_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_name</name>
+        <qualifiedname>catos::Entity::get_name</qualifiedname>
+        <briefdescription>
+<para>Returns the name of the entity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="55" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="a00030_1a1b980e6dd61f0b3d64683c4d8fc8640b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Entity::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>catos::Entity::init</qualifiedname>
+        <briefdescription>
+<para>Runs <ref refid="a00026_1a198b1c7d794d41af75f7f7ed5b069ea3" kindref="member">Component.init()</ref> on every registered component. (Init gets run at the start of the game) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="60" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00030_1a7e2c38a1a54cdee9427d519c6f544fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Entity::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>catos::Entity::update</qualifiedname>
+        <briefdescription>
+<para>Runs <ref refid="a00026_1a31a1133e9d321871ad9b3cca7f325e30" kindref="member">Component.update()</ref> on every registered component. ( Gets called every tick) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="62" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00030_1a332a9d20fefc7b8a610b89c9ad0b0d1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Entity::destroy</definition>
+        <argsstring>()</argsstring>
+        <name>destroy</name>
+        <qualifiedname>catos::Entity::destroy</qualifiedname>
+        <briefdescription>
+<para>Runs <ref refid="a00026_1acee6f0a181489892319a99d6b8ee813f" kindref="member">Component.destroy()</ref> on every registered component. ( Gets called at the end of the program). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="64" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00030_1acc2cdfa35f9fc6abacac8509e15242f7" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void catos::Entity::_register</definition>
+        <argsstring>(VM *vm, PyObject *mod, PyObject *type)</argsstring>
+        <name>_register</name>
+        <qualifiedname>catos::Entity::_register</qualifiedname>
+        <param>
+          <type>VM *</type>
+          <declname>vm</declname>
+        </param>
+        <param>
+          <type>PyObject *</type>
+          <declname>mod</declname>
+        </param>
+        <param>
+          <type>PyObject *</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="71" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="71" bodyend="78"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Entities hold components which do the logic. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/entity.h" line="33" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/entity.h" bodystart="33" bodyend="84"/>
+    <listofallmembers>
+      <member refid="a00030_1a62899f6bb58ed862ee9f8ca2adb70b84" prot="private" virt="non-virtual"><scope>catos::Entity</scope><name>_name</name></member>
+      <member refid="a00030_1acc2cdfa35f9fc6abacac8509e15242f7" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>_register</name></member>
+      <member refid="a00030_1aca0617900d7cd2eefebde43c63e74123" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>add_component</name></member>
+      <member refid="a00030_1ab73fdbede12308d069966bc4ad48f766" prot="private" virt="non-virtual"><scope>catos::Entity</scope><name>componentTable</name></member>
+      <member refid="a00030_1a332a9d20fefc7b8a610b89c9ad0b0d1d" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>destroy</name></member>
+      <member refid="a00030_1a733fdc820e9c6e7ade666d6ec7d21bbe" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>get_component</name></member>
+      <member refid="a00030_1ae6260b7602e71d815db4fc5fe7a56195" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>get_component</name></member>
+      <member refid="a00030_1a4d8e7705f088c6e512cfc259396912dd" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>get_name</name></member>
+      <member refid="a00030_1a1b980e6dd61f0b3d64683c4d8fc8640b" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>init</name></member>
+      <member refid="a00030_1a0ec9adef499357ade7d76d33a4a611be" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>setup</name></member>
+      <member refid="a00030_1ae90129d330dc382d2e4ae7474a9e3953" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>test</name></member>
+      <member refid="a00030_1a7e2c38a1a54cdee9427d519c6f544fbe" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>update</name></member>
+      <member refid="a00030_1a3f0c4e9ced3c4caf83f05b37a103b704" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>~Entity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

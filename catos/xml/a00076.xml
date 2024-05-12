@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00076" kind="class" language="C++" prot="public">
+    <compoundname>catos::Registry</compoundname>
+    <includes refid="a00011" local="no">registry.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00076_1a759718acff0cdb1cfd97bf13fd0700a6" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; size_t, <ref refid="a00072" kindref="compound">TypeInfo</ref> &gt;</type>
+        <definition>std::unordered_map&lt;size_t, TypeInfo&gt; catos::Registry::_register</definition>
+        <argsstring></argsstring>
+        <name>_register</name>
+        <qualifiedname>catos::Registry::_register</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="322" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00076_1ab554c66d2f7b86c82e6d55ae3cc34b77" prot="private" static="no" mutable="no">
+        <type>std::unordered_map&lt; size_t, const void * &gt;</type>
+        <definition>std::unordered_map&lt;size_t, const void* &gt; catos::Registry::_instance_register</definition>
+        <argsstring></argsstring>
+        <name>_instance_register</name>
+        <qualifiedname>catos::Registry::_instance_register</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="323" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00076_1a3c1a3c07e51224b5745cd9764407efff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename A</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="a00072" kindref="compound">TypeInfo</ref> &amp;</type>
+        <definition>TypeInfo &amp; catos::Registry::register_class</definition>
+        <argsstring>()</argsstring>
+        <name>register_class</name>
+        <qualifiedname>catos::Registry::register_class</qualifiedname>
+        <briefdescription>
+<para>With this function you register a class to the <ref refid="a00076" kindref="compound">Registry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="233" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="233" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="a00076_1aa9d8e58c1258eebb008a292f8b8b1c44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Registry::gen_python_bindings_file</definition>
+        <argsstring>()</argsstring>
+        <name>gen_python_bindings_file</name>
+        <qualifiedname>catos::Registry::gen_python_bindings_file</qualifiedname>
+        <briefdescription>
+<para>Deprecated!!! </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="248" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="248" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="a00076_1a03c494fdb9fb9daafaea972f273de633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename A</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="a00072" kindref="compound">TypeInfo</ref> &amp;</type>
+        <definition>TypeInfo &amp; catos::Registry::get_type</definition>
+        <argsstring>()</argsstring>
+        <name>get_type</name>
+        <qualifiedname>catos::Registry::get_type</qualifiedname>
+        <briefdescription>
+<para>Returns the registered Type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="299" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="299" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="a00076_1a3ff740e516ed706e2d202086df6f12b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Registry::print_current_register</definition>
+        <argsstring>()</argsstring>
+        <name>print_current_register</name>
+        <qualifiedname>catos::Registry::print_current_register</qualifiedname>
+        <briefdescription>
+<para>Prints out the items in the <ref refid="a00076" kindref="compound">Registry</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="305" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="305" bodyend="316"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>The registry is the core system and provides reflection to the rest of the engine. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="225" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="225" bodyend="324"/>
+    <listofallmembers>
+      <member refid="a00076_1ab554c66d2f7b86c82e6d55ae3cc34b77" prot="private" virt="non-virtual"><scope>catos::Registry</scope><name>_instance_register</name></member>
+      <member refid="a00076_1a759718acff0cdb1cfd97bf13fd0700a6" prot="private" virt="non-virtual"><scope>catos::Registry</scope><name>_register</name></member>
+      <member refid="a00076_1aa9d8e58c1258eebb008a292f8b8b1c44" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>gen_python_bindings_file</name></member>
+      <member refid="a00076_1a03c494fdb9fb9daafaea972f273de633" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>get_type</name></member>
+      <member refid="a00076_1a3ff740e516ed706e2d202086df6f12b9" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>print_current_register</name></member>
+      <member refid="a00076_1a3c1a3c07e51224b5745cd9764407efff" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>register_class</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00062" kind="class" language="C++" prot="public">
+    <compoundname>catos::MethodInvoker</compoundname>
+    <includes refid="a00008" local="no">registry.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename ReturnType</type>
+      </param>
+      <param>
+        <type>class ClassType</type>
+      </param>
+      <param>
+        <type>typename...</type>
+        <declname>Args</declname>
+        <defname>Args</defname>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00062_1a0a1005231c6d3687fd607b65a2771fb8" prot="public" static="no" mutable="no">
+        <type>ReturnType(ClassType::*</type>
+        <definition>ReturnType(ClassType::* catos::MethodInvoker&lt; ReturnType, ClassType, Args &gt;::memPtr) (Args...)</definition>
+        <argsstring>)(Args...)</argsstring>
+        <name>memPtr</name>
+        <qualifiedname>catos::MethodInvoker::memPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="103" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00062_1a1553e3e36fee4658a51d9f652d330928" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::MethodInvoker&lt; ReturnType, ClassType, Args &gt;::MethodInvoker</definition>
+        <argsstring>(ReturnType(ClassType::*ptr)(Args...))</argsstring>
+        <name>MethodInvoker</name>
+        <qualifiedname>catos::MethodInvoker::MethodInvoker</qualifiedname>
+        <param>
+          <type>ReturnType(ClassType::*)(Args...)</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="104" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="104" bodyend="106"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00062_1adb068c5506bbbd26cf6e4362e680f380" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ReturnType</type>
+        <definition>static ReturnType catos::MethodInvoker&lt; ReturnType, ClassType, Args &gt;::callFunction</definition>
+        <argsstring>(void *FuncInst, void *instance, Args... args)</argsstring>
+        <name>callFunction</name>
+        <qualifiedname>catos::MethodInvoker::callFunction</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>FuncInst</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Runs the function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="108" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="a00062" kindref="compound">MethodInvoker</ref> invokes the method (with args) given at creation. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="99" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="99" bodyend="111"/>
+    <listofallmembers>
+      <member refid="a00062_1adb068c5506bbbd26cf6e4362e680f380" prot="public" virt="non-virtual"><scope>catos::MethodInvoker</scope><name>callFunction</name></member>
+      <member refid="a00062_1a0a1005231c6d3687fd607b65a2771fb8" prot="public" virt="non-virtual"><scope>catos::MethodInvoker</scope><name>memPtr</name></member>
+      <member refid="a00062_1a1553e3e36fee4658a51d9f652d330928" prot="public" virt="non-virtual"><scope>catos::MethodInvoker</scope><name>MethodInvoker</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
