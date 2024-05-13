@@ -4,9 +4,10 @@
     <meta charset='utf-8'>
     <title>BLOG TEST</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-    <style>md-block { white-space: pre; font-family: monospace; }</style>
+    
     <link rel="stylesheet" href="style/main.css">
+    <script src="style/code/prism.js"></script>
+    <link rel="stylesheet" href="style/code/prism.css">
 </head>
 <body>
     <div class="titlecard">
@@ -23,17 +24,116 @@
         </a>
     </div>
 
-
-        <div class="content">
-            
-    
-            <md-block rendered="content">
-
-                # Comming soon!
+            <div class="content">
+                <h3 id="why-choose-ecs-over-ec-">Why choose ECS over EC?</h3>
+                <p>Originally i wanted to use ECS from the start for catos. However after finishing Atomus and the Reflection system I choose EC.</p>
+                <pre><code class="lang-cpp"><span class="hljs-comment"><span class="hljs-doctag">///</span> sudo code of how an component would function in an EC env.</span>
+                <span class="hljs-keyword">class</span> <span class="hljs-title">TransformComponent</span> : <span class="hljs-title">Component</span> {
                 
+                        <span class="hljs-keyword">public</span>:
+                            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">init</span>(<span class="hljs-params"></span>) <span class="hljs-keyword">override</span> </span>{};
+                            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">update</span>(<span class="hljs-params"></span>) <span class="hljs-keyword">override</span></span>{};
+                            <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">destroy</span>(<span class="hljs-params"></span>) <span class="hljs-keyword">override</span></span>{};
+                        <span class="hljs-keyword">private</span>:
+                            Vec3 position;
+                }
+                </code></pre>
+                <p>Now I really liked this syntax (and still do), but when starting on my scripting implementation I realized that I really disliked how to whole flow of: cashing a different component to use later, in the update function actually do logic.</p>
+                <h4 id="ec-is-error-prone-imo-">EC is error prone (IMO)</h4>
+                <p>Lets say you made an component for your player, in the <code>init</code> function you would need to cash <strong>all</strong> the components which you would need to do logic for the player. Now first off all you would need to check if the entity even has the components needed for the player component.
+                Now you could just do this check in the <code>init</code> function, but what if a component gets removed from the entity? Then you would be asking for data from a component that doesn&#39;t even exist!
+                Now you could go and give <strong>every</strong> entity the same base data, such as transforms, rigid bodies, etc (as seen in <a href="https://unidaystudio.github.io/CaveEngine-Docs/PythonAPI/Components/transform/" style="color:aqua">cave engine</a> ). But what if you want an entity that does not need all of that data, that would just be a waste of memory! </p>
+                <h3 id="so-what-does-ecs-do-different-">So what does ECS do different?</h3>
+                <p>To put it really simple: <code>ECS splits the data and logic of a component from the EC design.</code></p>
+                <p>So instead of doing what you would do with EC you would do:</p>
+                <pre><code class="lang-cpp"><span class="hljs-comment">// I use a struct here because I prefer using structs for structures that only hold fields.</span>
+                <span class="hljs-keyword">struct</span> TransformComponent {
+                    Vec3 position;
+                }
                 
-            
-            </md-block>
-        </div>
+                <span class="hljs-keyword">class</span> <span class="hljs-title">System</span> {
+                    <span class="hljs-keyword">public</span>:
+                        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">update</span>(<span class="hljs-params">TransformCompont&amp; tr, OtherComponent&amp; o</span>)</span>;
+                }
+                </code></pre>
+                <p>Now after defining the <code>TransformComponent</code> you can create different systems that loop over different components.</p>
+                <p>Lets go back to that example about the player component. Here you could just create a new system, then tell the scene that you would like to iterate over components like the rigid-body and transform component. Then when the scene is updated your system gets every entity that has a rigid-body and transform component. So now if a component gets removed that your system needs you would not get any issues since the scene does not pass the entity to your system since it does not meet your given requirements. </p>
+                <p>now this does <strong>not</strong> mean that ECS is better then EC. In fact I would argue that in allot of cases EC is the &quot;<em>better</em>&quot; choice, because lets be realistic: if you&#39;re just making a simple game you would probably be able to handle checking and managing if components exist or not. And then having to write a system for everything would really be a pain. Now that I&#39;ve said that I would still like to note that I prefer ECS (both because of the problems it solves and of the workflow it brings).
+                I love the games that are extremely flexible and I would like my engine to support that!</p>
+                <h2 id="lets-design-an-ecs-">Lets design an ECS!</h2>
+                <h4 id="my-concerns-for-my-ecs-implementation-">My concerns for my ECS implementation.</h4>
+                <ul>
+                <li>What about flow?
+                So lets say you have a render component and a physics component. How would you tell the ECS that you would want the physics to be first calculated and then the render gets ran.
+                Now the &quot;<em>solution</em>&quot; I came up is relatively simple: that wont happen!
+                What I mean is that in an update cycle before the ECS gets updated I could just update the Physics engine (which isn&#39;t part of the ECS) after the ECS update <strong>then</strong> I call the renderer (which is also not part of the ECS). Now when it comes to components and their order: the dev has to figure it out :) (This also counts for EC, since there you don&#39;t have control over it either)</li>
+                <li>Performance 
+                I know that when handling lots of components and entities ECS is faster then EC. But in EC the structure is really simple and easy to program, while with ECS they&#39;re many different ways of handling components and how to loop through them. And if I were to write a bad implementation it could end up being slower then EC!</li>
+                </ul>
+                <h3 id="what-catos-needs-from-ecs-">What Catos needs from ECS.</h3>
+                <ul>
+                <li>Not bound to C++
+                Catos has C# scripting (at the time of writing is the C# scripting engine still highly under development so things-might be out dated later on. ). I don&#39;t want the ECS the be not compatible with my scripting workflow, nor do I want it to make C# embedding more difficult. </li>
+                <li>Fast (as possible)
+                As I said in the performance section I want this to be fast, or better said: &quot; I don&#39;t want my ECS to be slow&quot;. Now this is very logical as a requirement, but I sometimes when i write big systems I get so focused on making it work that I forgot on making it fast. So here I want to give performance allot of attention.<ul>
+                <li>Fit into the family
+                Unlike Atomus (the renderer which Catos uses) I don&#39;t want to make my ECS a different lib/ecosystem. I want this to work flawless with the other system (which isn&#39;t allot right now.). 
+                For example: I should fully integrate and use the reflection system.</li>
+                </ul>
+                </li>
+                </ul>
+                <h4 id="the-workflow-">The Workflow!</h4>
+                <ul>
+                <li>The setup phase:
+                In this phase all of our components and systems should be defined. I would like to support adding new components and system at (mainloop) runtime, but its not a big priority for now.
+                It would somewhat look like:</li>
+                </ul>
+                <pre><code class="lang-cpp"><span class="hljs-comment">//Sudo Setup phase code</span>
+                
+                <span class="hljs-keyword">struct</span> TransformComponent {
+                    vec3 Position;
+                    vec4 Rotation;
+                    vec3 Scale;
+                }
+                
+                <span class="hljs-keyword">struct</span> LightComponent {
+                    vec3 <span class="hljs-built_in">position</span>;
+                    vec4 color;
+                    <span class="hljs-keyword">int</span> lightType;
+                }
+                
+                <span class="hljs-keyword">class</span> systemExample {
+                    <span class="hljs-keyword">public</span>:
+                        <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> update(TransformCompont&amp; t, LightComponent&amp; l) {
+                                l.<span class="hljs-built_in">position</span> = t.Position;
+                                <span class="hljs-comment">// other stuff</span>
+                        }
+                }
+                <span class="hljs-comment">/// World = Scene.</span>
+                World world;
+                
+                <span class="hljs-comment">///Note to self: this could be semi replaced with the help of the reflection system</span>
+                world.register_component&lt;TransformComponent&gt;();
+                world.register_component&lt;LightComponent &gt;();
+                
+                <span class="hljs-comment">/// Give it the components you want to modify.</span>
+                world.register_system&lt;TransformComponent, LightComponent&gt;(&amp;systemExample::update);
+                
+                <span class="hljs-comment">// entity is just an id</span>
+                Entity entity = world.new_entity();
+                </code></pre>
+                <ul>
+                <li>The Update phase
+                Since we already did most of the work in the setup phase, is the update phase is simple.</li>
+                </ul>
+                <pre><code class="lang-cpp"><span class="hljs-comment">// In the update loop of the application.</span>
+                world.update<span class="hljs-comment">()</span>; <span class="hljs-comment">// all we need ;)</span>
+                </code></pre>
+                <h3 id="closing-thoughts">Closing Thoughts</h3>
+                <p>First off all: thank you so much for reading! I don&#39;t except anyone to sit through this entire essay which is just an basic explanation of ECS. I mostly wrote this to get what I want and my reasons straight in my head. I would also like to say that I have small to none experience with actually writing an ECS, so lots of choices here are definitely subject to change! I also reckon I will write a new article when I actually finish the ECS with a more technical explanation on how it works behind the scenes.</p>
+                
+            </div>
 </body>
-</html>
+
+</html><script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag-GitHub.js"></script>
+
