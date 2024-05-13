@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_30489745e88fa65f13bcbf902e6ba319" kind="dir">
+    <compoundname>core</compoundname>
+    <innerfile refid="a00005">application.h</innerfile>
+    <innerfile refid="a00008">entity.h</innerfile>
+    <innerfile refid="a00011">game.h</innerfile>
+    <innerfile refid="a00014">registry.h</innerfile>
+    <innerfile refid="a00020">type_utils.h</innerfile>
+    <innerfile refid="a00017">types.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/core/"/>
+  </compounddef>
+</doxygen>

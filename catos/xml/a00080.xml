@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00080" kind="struct" language="C++" prot="public">
+    <compoundname>catos::ScriptContext</compoundname>
+    <includes refid="a00020" local="no">scriptingEngine.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00080_1a68bcaa5ebb80af89a4be06218ebcc359" prot="public" static="no" mutable="no">
+        <type>MonoDomain *</type>
+        <definition>MonoDomain* catos::ScriptContext::_rootDomain</definition>
+        <argsstring></argsstring>
+        <name>_rootDomain</name>
+        <qualifiedname>catos::ScriptContext::_rootDomain</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="25" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00080_1a54d29116a9c49156aaba942f248c4839" prot="public" static="no" mutable="no">
+        <type>MonoDomain *</type>
+        <definition>MonoDomain* catos::ScriptContext::_appDomain</definition>
+        <argsstring></argsstring>
+        <name>_appDomain</name>
+        <qualifiedname>catos::ScriptContext::_appDomain</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="26" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00080_1a06ce18d04d1c000ddfe37fe96eef8631" prot="public" static="no" mutable="no">
+        <type>MonoAssembly *</type>
+        <definition>MonoAssembly* catos::ScriptContext::_mainAssembly</definition>
+        <argsstring></argsstring>
+        <name>_mainAssembly</name>
+        <qualifiedname>catos::ScriptContext::_mainAssembly</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="28" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="24" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="24" bodyend="29"/>
+    <listofallmembers>
+      <member refid="a00080_1a54d29116a9c49156aaba942f248c4839" prot="public" virt="non-virtual"><scope>catos::ScriptContext</scope><name>_appDomain</name></member>
+      <member refid="a00080_1a06ce18d04d1c000ddfe37fe96eef8631" prot="public" virt="non-virtual"><scope>catos::ScriptContext</scope><name>_mainAssembly</name></member>
+      <member refid="a00080_1a68bcaa5ebb80af89a4be06218ebcc359" prot="public" virt="non-virtual"><scope>catos::ScriptContext</scope><name>_rootDomain</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

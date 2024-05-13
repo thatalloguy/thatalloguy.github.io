@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00043" kind="struct" language="C++" prot="public">
+    <compoundname>catos::AppCreationInfo</compoundname>
+    <includes refid="a00005" local="no">application.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00043_1aa955f138a405ff0d97ca029e5a4bf4df" prot="public" static="no" mutable="no">
+        <type><ref refid="a00017_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+        <definition>uint catos::AppCreationInfo::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>catos::AppCreationInfo::version</qualifiedname>
+        <initializer>= 001</initializer>
+        <briefdescription>
+<para>MAJOR | MINOR | PATCH? </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="19" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00043_1a2e1442b7894e8f50cf02926c312a83b4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00017_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref></type>
+        <definition>str catos::AppCreationInfo::applicationTitle</definition>
+        <argsstring></argsstring>
+        <name>applicationTitle</name>
+        <qualifiedname>catos::AppCreationInfo::applicationTitle</qualifiedname>
+        <initializer>= &quot;Catos Application&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="20" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A struct that holds all info the application needs at launch. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="17" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="17" bodyend="21"/>
+    <listofallmembers>
+      <member refid="a00043_1a2e1442b7894e8f50cf02926c312a83b4" prot="public" virt="non-virtual"><scope>catos::AppCreationInfo</scope><name>applicationTitle</name></member>
+      <member refid="a00043_1aa955f138a405ff0d97ca029e5a4bf4df" prot="public" virt="non-virtual"><scope>catos::AppCreationInfo</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

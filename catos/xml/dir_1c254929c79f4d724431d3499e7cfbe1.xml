@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_1c254929c79f4d724431d3499e7cfbe1" kind="dir">
+    <compoundname>include</compoundname>
+    <innerdir refid="dir_30489745e88fa65f13bcbf902e6ba319">core</innerdir>
+    <innerdir refid="dir_602e7285855b589dfe32787042b83647">scripting</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/"/>
+  </compounddef>
+</doxygen>

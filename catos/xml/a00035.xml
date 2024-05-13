@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00035" kind="struct" language="C++" prot="public">
+    <compoundname>catos::Cpp</compoundname>
+    <includes refid="a00002" local="no">scriptingEngine.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00035_1aae892ace78cdd0efb1f3a10c9a47009b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int catos::Cpp::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>catos::Cpp::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="32" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00035_1aac52d331422ca7e3baac69ba9efd8515" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Cpp::printCpp</definition>
+        <argsstring>(int age)</argsstring>
+        <name>printCpp</name>
+        <qualifiedname>catos::Cpp::printCpp</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>age</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="33" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="33" bodyend="36"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="31" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="31" bodyend="37"/>
+    <listofallmembers>
+      <member refid="a00035_1aae892ace78cdd0efb1f3a10c9a47009b" prot="public" virt="non-virtual"><scope>catos::Cpp</scope><name>name</name></member>
+      <member refid="a00035_1aac52d331422ca7e3baac69ba9efd8515" prot="public" virt="non-virtual"><scope>catos::Cpp</scope><name>printCpp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00039" kind="class" language="C++" prot="public">
+    <compoundname>catos::ScriptingEngine</compoundname>
+    <includes refid="a00002" local="no">scriptingEngine.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00039_1ae4fcddda662d137a2b38be007b14dfb2" prot="private" static="no" mutable="no">
+        <type><ref refid="a00031" kindref="compound">ScriptContext</ref> *</type>
+        <definition>ScriptContext* catos::ScriptingEngine::_context</definition>
+        <argsstring></argsstring>
+        <name>_context</name>
+        <qualifiedname>catos::ScriptingEngine::_context</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="66" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00039_1af57fee23c2e4a37f2dd7553673da2f91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>catos::ScriptingEngine::init</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="42" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1a7e2c751a6515aa0b4ddc75abe05480ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::clean_up</definition>
+        <argsstring>()</argsstring>
+        <name>clean_up</name>
+        <qualifiedname>catos::ScriptingEngine::clean_up</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="44" column="14"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00039_1a19fe157c37ba91a6de1899fa249cf4ac" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>auto</type>
+            <declname>Func</declname>
+            <defname>Func</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void catos::ScriptingEngine::static_function</definition>
+        <argsstring>(T &amp;instance, Args... args)</argsstring>
+        <name>static_function</name>
+        <qualifiedname>catos::ScriptingEngine::static_function</qualifiedname>
+        <param>
+          <type>T &amp;</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+<para>Test. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="51" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1a0b981b59a791b1da14a50c334c2d7578" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>auto</type>
+            <declname>Func</declname>
+            <defname>Func</defname>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>static void catos::ScriptingEngine::embed_function</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>embed_function</name>
+        <qualifiedname>catos::ScriptingEngine::embed_function</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>TODO intergrate this with the reflection system. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="58" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="58" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00039_1ad7ec943133be43d1112582952f2d0c6b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::init_mono</definition>
+        <argsstring>()</argsstring>
+        <name>init_mono</name>
+        <qualifiedname>catos::ScriptingEngine::init_mono</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="68" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1afb8b4ccd104d6a011a4536fb5c391090" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * catos::ScriptingEngine::read_bytes</definition>
+        <argsstring>(const std::string &amp;filepath, uint32_t *outSize)</argsstring>
+        <name>read_bytes</name>
+        <qualifiedname>catos::ScriptingEngine::read_bytes</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filepath</declname>
+        </param>
+        <param>
+          <type>uint32_t *</type>
+          <declname>outSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="71" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1a5e00ac6fa3c4f04ecf2db66cf9b56061" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MonoAssembly *</type>
+        <definition>MonoAssembly * catos::ScriptingEngine::load_assembly</definition>
+        <argsstring>(const std::string &amp;assemblyPath)</argsstring>
+        <name>load_assembly</name>
+        <qualifiedname>catos::ScriptingEngine::load_assembly</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>assemblyPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="72" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1a8f4a1eecd0d21971a8e2fd71458c227c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::print_assembly_types</definition>
+        <argsstring>(MonoAssembly *assembly)</argsstring>
+        <name>print_assembly_types</name>
+        <qualifiedname>catos::ScriptingEngine::print_assembly_types</qualifiedname>
+        <param>
+          <type>MonoAssembly *</type>
+          <declname>assembly</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="75" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1a2e2e804ae9c510f6ce993c7f40bfeb2a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::call_print_method</definition>
+        <argsstring>(MonoObject *objectInstance)</argsstring>
+        <name>call_print_method</name>
+        <qualifiedname>catos::ScriptingEngine::call_print_method</qualifiedname>
+        <param>
+          <type>MonoObject *</type>
+          <declname>objectInstance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="76" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1af6e448ef9f2b34864522544657f58442" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::ScriptingEngine::check_mono_error</definition>
+        <argsstring>(MonoError &amp;error)</argsstring>
+        <name>check_mono_error</name>
+        <qualifiedname>catos::ScriptingEngine::check_mono_error</qualifiedname>
+        <param>
+          <type>MonoError &amp;</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="77" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1a5b387bbe94c70bb7a6dca8bfd04ca888" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string catos::ScriptingEngine::mono_string_to_string</definition>
+        <argsstring>(MonoString *monoString)</argsstring>
+        <name>mono_string_to_string</name>
+        <qualifiedname>catos::ScriptingEngine::mono_string_to_string</qualifiedname>
+        <param>
+          <type>MonoString *</type>
+          <declname>monoString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="78" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1a302c9eb739cd4c95828d143292c11721" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MonoClass *</type>
+        <definition>MonoClass * catos::ScriptingEngine::get_class_in_assembly</definition>
+        <argsstring>(MonoAssembly *assembly, const char *namespaceName, const char *className)</argsstring>
+        <name>get_class_in_assembly</name>
+        <qualifiedname>catos::ScriptingEngine::get_class_in_assembly</qualifiedname>
+        <param>
+          <type>MonoAssembly *</type>
+          <declname>assembly</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>namespaceName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>className</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="81" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ad245c330ebe782c6a98c4c8ca8b71227" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>MonoObject *</type>
+        <definition>MonoObject * catos::ScriptingEngine::instantiate_class</definition>
+        <argsstring>(const char *namespaceName, const char *className)</argsstring>
+        <name>instantiate_class</name>
+        <qualifiedname>catos::ScriptingEngine::instantiate_class</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>namespaceName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>className</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="82" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1aa69f0344954b9e7b7d74e634c15dcb92" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t catos::ScriptingEngine::get_field_accessibility</definition>
+        <argsstring>(MonoClassField *field)</argsstring>
+        <name>get_field_accessibility</name>
+        <qualifiedname>catos::ScriptingEngine::get_field_accessibility</qualifiedname>
+        <param>
+          <type>MonoClassField *</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="85" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="a00039_1ad977d46c00b8d2353c3670435d229c9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t catos::ScriptingEngine::get_property_accessbility</definition>
+        <argsstring>(MonoProperty *property)</argsstring>
+        <name>get_property_accessbility</name>
+        <qualifiedname>catos::ScriptingEngine::get_property_accessbility</qualifiedname>
+        <param>
+          <type>MonoProperty *</type>
+          <declname>property</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="86" column="17"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" line="39" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/scripting/scriptingEngine.h" bodystart="39" bodyend="92"/>
+    <listofallmembers>
+      <member refid="a00039_1ae4fcddda662d137a2b38be007b14dfb2" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>_context</name></member>
+      <member refid="a00039_1a2e2e804ae9c510f6ce993c7f40bfeb2a" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>call_print_method</name></member>
+      <member refid="a00039_1af6e448ef9f2b34864522544657f58442" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>check_mono_error</name></member>
+      <member refid="a00039_1a7e2c751a6515aa0b4ddc75abe05480ec" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>clean_up</name></member>
+      <member refid="a00039_1a0b981b59a791b1da14a50c334c2d7578" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>embed_function</name></member>
+      <member refid="a00039_1a302c9eb739cd4c95828d143292c11721" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>get_class_in_assembly</name></member>
+      <member refid="a00039_1aa69f0344954b9e7b7d74e634c15dcb92" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>get_field_accessibility</name></member>
+      <member refid="a00039_1ad977d46c00b8d2353c3670435d229c9e" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>get_property_accessbility</name></member>
+      <member refid="a00039_1af57fee23c2e4a37f2dd7553673da2f91" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>init</name></member>
+      <member refid="a00039_1ad7ec943133be43d1112582952f2d0c6b" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>init_mono</name></member>
+      <member refid="a00039_1ad245c330ebe782c6a98c4c8ca8b71227" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>instantiate_class</name></member>
+      <member refid="a00039_1a5e00ac6fa3c4f04ecf2db66cf9b56061" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>load_assembly</name></member>
+      <member refid="a00039_1a5b387bbe94c70bb7a6dca8bfd04ca888" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>mono_string_to_string</name></member>
+      <member refid="a00039_1a8f4a1eecd0d21971a8e2fd71458c227c" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>print_assembly_types</name></member>
+      <member refid="a00039_1afb8b4ccd104d6a011a4536fb5c391090" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>read_bytes</name></member>
+      <member refid="a00039_1a19fe157c37ba91a6de1899fa249cf4ac" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>static_function</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
