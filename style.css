@@ -32,12 +32,13 @@ body{
     width: 90vw;
     text-decoration: none;
     left: 1.75vw;
-    transition: padding 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out, rotate 0.3s ease-in-out;
 }
 
 .blog:hover {
     padding: 30px; 
-    transition: padding 0.3s ease-in-out;
+    rotate: 0.5deg;
+    transition: padding 0.3s ease-in-out, rotate 0.3s ease-in-out;
 }
 
 
@@ -55,49 +56,13 @@ body{
     color:rgb(148, 173, 173);
 }
 
-.neon {
-    position: absolute;
-    margin-top: 40%;
-    vertical-align: bottom;
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-    color: #8d0101;
-    text-shadow: 
-    0 0 20px #ff0000;
-
-}
-
-
-
-
-.neon span {
-    animation: flicker 1s linear infinite;
-}
-
-.neon .delay1 {
-    animation-delay: 0.8s;
-}
-
-@keyframes flicker {
-
-    0% {opacity:  0;}
-    10% {opacity: 1;}
-    20% {opacity: 0;}
-    40% {opacity: 1;}
-    50% {opacity: 0;}
-    60% {opacity: 1;}
-    80% {opacity: 0;}
-    100% {opacity: 1;}
-
-}
-
 
 .animated-text{
     position: absolute;
     font-size: 34px;
     font-weight: 600;
     min-width: 280px;
+    left: 20vw;
 }
 
 .animated-text span{
@@ -212,4 +177,11 @@ body{
     rotate: 5deg;
     text-shadow: #dcdcdc 0px 0 20px;
     transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in, text-shadow 0.2s ease-in;
+}
+
+.Computer {
+    position: absolute;
+    right: 1vw;
+    background-attachment: scroll;
+    filter: drop-shadow(20px 20px 3px #141519);
 }

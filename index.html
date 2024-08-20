@@ -8,20 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="animated-text">
+
+    <div class="Computer" id="blur">
+        <img src="images/computer.gif">
+    </div>
+    <script>
+        //blur
+        window.addEventListener('scroll', function() {
+            let num = (window.scrollY / window.innerHeight) + 0.1;
+            
+            document.getElementById('blur').style.webkitFilter = 'blur(' + num + 'vh)'
+        })
+    </script>
+
+
+    <div class="animated-text" >
         Hello I'm a <span>
             
         </span>
     </div>
 
-    <div class="neon"> 
-        m o r e  | c o m m i n g | 
-        <span class="delay1">
-              s
-        </span>
-         o o n
-           
-    </div>
+
 
     <div class="titlebar">
 
@@ -29,6 +36,8 @@
         <a href="catos/html/index.html"> <span class="CatosDocs"> Catos Docs </span> </a>
         
     </div>
+
+
 
 
     <span class="holderTitle"> Blogs: </span>
