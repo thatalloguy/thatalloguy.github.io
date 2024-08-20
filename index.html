@@ -15,10 +15,12 @@
     <script>
         //blur
         window.addEventListener('scroll', function() {
-            let num = (window.scrollY / window.innerHeight) + 0.1;
+            let num = (window.scrollY / window.innerHeight) - 0.2;
             
             document.getElementById('blur').style.webkitFilter = 'blur(' + num + 'vh)'
         })
+
+
     </script>
 
 

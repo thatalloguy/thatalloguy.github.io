@@ -32,13 +32,15 @@ body{
     width: 90vw;
     text-decoration: none;
     left: 1.75vw;
-    transition: padding 0.3s ease-in-out, rotate 0.3s ease-in-out;
+    top: 0px;
+    transition: top 0.5s ease, rotate 0.5s ease, filter 0.3s ease;
 }
 
 .blog:hover {
-    padding: 30px; 
-    rotate: 0.5deg;
-    transition: padding 0.3s ease-in-out, rotate 0.3s ease-in-out;
+    top: -12px;
+    rotate: 0.2deg;
+    filter: drop-shadow(20px 20px 10px #171a21);
+    transition: top 0.5s ease, rotate 0.5s ease, filter 0.3s ease;
 }
 
 
@@ -151,7 +153,7 @@ body{
 
 .BlogsButton:hover {
     font-size: xx-large;
-    rotate: 5deg;
+    rotate: 2deg;
     text-shadow: #dcdcdc 0px 0 20px;
     transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in, text-shadow 0.2s ease-in;
 
@@ -182,6 +184,4 @@ body{
 .Computer {
     position: absolute;
     right: 1vw;
-    background-attachment: scroll;
-    filter: drop-shadow(20px 20px 3px #141519);
 }
