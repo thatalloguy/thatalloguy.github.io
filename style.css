@@ -3,12 +3,28 @@ body{
     padding: 0;
     background-color: #2f3542;
     color: #fff;
+    background: linear-gradient(315deg, #2f3542 3%, #3e4b67 100%);
     height: 100vh;
+    background-size: 400% 400%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: "Montserrat", sans-serif;
+    animation: gradient 30s ease infinite;
 }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 
 .blogholder {
     position: relative;
@@ -32,12 +48,12 @@ body{
     width: 90vw;
     text-decoration: none;
     left: 1.75vw;
-    top: 0px;
+    top: 7vh;
     transition: top 0.5s ease, rotate 0.5s ease, filter 0.3s ease;
 }
 
 .blog:hover {
-    top: -12px;
+    top: 6vh;
     rotate: 0.2deg;
     filter: drop-shadow(20px 20px 10px #171a21);
     transition: top 0.5s ease, rotate 0.5s ease, filter 0.3s ease;
@@ -81,8 +97,8 @@ body{
     content: "";
     position: absolute;
     width: calc(100% + 8px);
-    height: 100%;
-    background-color: #2f3542;
+    height: 105%;
+    background-color: #333d53;
     border-left: 2px solid #006a41;
     right: -8px;
     animation: cursor .8s infinite, typing 20s steps(14) infinite;
@@ -123,9 +139,23 @@ body{
 
 .holderTitle {
     position: absolute;
-    bottom: -15vh;
-    font-size: x-large;
+    left: 4vw;
+    top: 1vh;
+    font-size: 300%;
+    font-weight: bold;
+    background: (rgba(47,53,66,1) 100%);
+    transition: font-size 0.2s ease-in-out;
 }
+
+.holderTitle:hover {
+    position: absolute;
+    left: 4vw;
+    top: 1vh;
+    font-size: 320%;
+    font-weight: bold;
+    transition: font-size 0.2s ease-in-out;
+}
+
 
 
 .titlebar {
