@@ -32,7 +32,14 @@ body{
     width: 90vw;
     text-decoration: none;
     left: 1.75vw;
+    transition: padding 0.3s ease-in-out;
 }
+
+.blog:hover {
+    padding: 30px; 
+    transition: padding 0.3s ease-in-out;
+}
+
 
 
 .blog .title {
@@ -98,7 +105,7 @@ body{
 }
 
 .animated-text span::before{
-    content: "Youtuber";
+    content: "Game Dev";
     color: #006a41;
     animation: words 20s infinite;
 }
@@ -134,7 +141,7 @@ body{
         content: "Programmer";
     }
     81%,100%{
-        content: "person :)";
+        content: "Developer";
     }
 }
 
@@ -174,14 +181,35 @@ body{
     color: #fff;
     font-weight: bold;
     font-size: large;
+    transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in, text-shadow 0.2s ease-in;
+}
+
+.BlogsButton:hover {
+    font-size: xx-large;
+    rotate: 5deg;
+    text-shadow: #dcdcdc 0px 0 20px;
+    transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in, text-shadow 0.2s ease-in;
+
 }
 
 .CatosDocs {
     position: absolute;
-    top: 3vh;
+    top: 2vh;
     left: 4vw;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
+    rotate: 0deg;
+    transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in;
+}
+
+
+
+
+.CatosDocs:hover {
+    font-size: xx-large;
+    rotate: 5deg;
+    text-shadow: #dcdcdc 0px 0 20px;
+    transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in, text-shadow 0.2s ease-in;
 }
