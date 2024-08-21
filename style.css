@@ -18,7 +18,7 @@ body{
         background-position: 0% 0%;
     }
     50% {
-        background-position: 100% 100%;
+        background-position: 100% 0%;
     }
     100% {
         background-position: 0% 0%;
@@ -55,7 +55,7 @@ body{
 .blog:hover {
     top: 6vh;
     rotate: 0.2deg;
-    filter: drop-shadow(20px 20px 10px #171a21);
+    filter: drop-shadow(20px 20px 1px #171a21);
     transition: top 0.5s ease, rotate 0.5s ease, filter 0.3s ease;
 }
 
@@ -172,12 +172,12 @@ body{
 }
 .BlogsButton {
     position: absolute;
-    top: 3vh;
-    right: 4vw;
+    top:2vh;
+    left: 75vw;
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: large;
+    font-size: x-large;
     transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in, text-shadow 0.2s ease-in;
 }
 
@@ -211,7 +211,43 @@ body{
     transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in, text-shadow 0.2s ease-in;
 }
 
+.Projects {
+    position: absolute;
+    top: 2vh;
+    left: 40vw;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: x-large;
+    rotate: 0deg;
+    transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in;
+}
+
+
+
+
+.Projects:hover {
+    font-size: xx-large;
+    rotate: 5deg;
+    text-shadow: #dcdcdc 0px 0 20px;
+    transition: font-size 0.2s ease-in-out, rotate 0.2s ease-in, text-shadow 0.2s ease-in;
+}
+
 .Computer {
     position: absolute;
     right: 1vw;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(20px 20px #0000006f);
+    transition: filter 0.5s ease;
+    transition: filter 0.5s ease, right 0.5s ease;
+}
+
+.Computer:hover {
+    position: absolute;
+    right: 2vw;
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(50px 50px #0000006f);
+    transition: filter 0.5s ease, right 0.5s ease;
 }
