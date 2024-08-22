@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): scriptingEngine.h File Reference</title>
+<title>Catos Engine (Source): application.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,43 +96,29 @@ $(function(){initNavTree('a00002.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
-  <div class="headertitle"><div class="title">scriptingEngine.h File Reference</div></div>
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">application.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00014_source.html">core/registry.h</a>&gt;</code><br />
-<code>#include &quot;mono/jit/jit.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="a00014_source.html">types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00017_source.html">type_utils.h</a>&quot;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
 </div>
 <p><a href="a00002_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00031.html">catos::ScriptContext</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00028.html">catos::AppCreationInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that holds all info the application needs at launch.  <a href="a00028.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00035.html">catos::Cpp</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00039.html">catos::ScriptingEngine</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00032.html">catos::App</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main class that holds all information.  <a href="a00032.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00026" id="r_a00026"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html">catos</a></td></tr>
-<tr class="memdesc:a00026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note when calling a onUpdate function please use Unmanaged <a class="el" href="a00083.html" title="Stores a function pointer for running it.">Method</a> Thunks.!!! <br /></td></tr>
+<tr class="memitem:a00023" id="r_a00023"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00023.html">catos</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a38d4823f65e5fe29a2fd1bf38eeb077a" id="r_a38d4823f65e5fe29a2fd1bf38eeb077a"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077a">catos::FieldAccessibility</a> : uint8_t { <br />
-&#160;&#160;<a class="el" href="a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aa6adf97f83acf6453d4a6a4b1070f3754">catos::None</a> = 0
-, <a class="el" href="a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aa47f9082fc380ca62d531096aa1d110f1">catos::Private</a> = (1 &lt;&lt; 0)
-, <a class="el" href="a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aaafbf0897a5a83fdd873dfb032ec695d3">catos::Internal</a> = (1 &lt;&lt; 1)
-, <a class="el" href="a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aa56f0605c9795b173abd2e34fab7fc164">catos::Protected</a> = (1 &lt;&lt; 2)
-, <br />
-&#160;&#160;<a class="el" href="a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aa3d067bedfe2f4677470dd6ccf64d05ed">catos::Public</a> = (1 &lt;&lt; 3)
-<br />
- }</td></tr>
-<tr class="separator:a38d4823f65e5fe29a2fd1bf38eeb077a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

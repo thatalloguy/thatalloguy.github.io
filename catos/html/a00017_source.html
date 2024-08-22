@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): types.h Source File</title>
+<title>Catos Engine (Source): type_utils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,27 +99,37 @@ $(function(){initNavTree('a00017_source.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">types.h</div></div>
+  <div class="headertitle"><div class="title">type_utils.h</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="a00017.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by allos on 4/30/2024.</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
+<a href="a00017.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="a00024.html">    4</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00024.html">catos::type_utils</a> {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// -----Returns the name of the given type-----</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="a00024.html#ae8ba5a0350572f3f742754d626557e59">    8</a></span>    std::string <a class="code hl_function" href="a00024.html#ae8ba5a0350572f3f742754d626557e59">get_type_name</a>() {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keywordflow">return</span> std::string(<span class="keyword">typeid</span>(<a class="code hl_function" href="a00024.html#a984a08d43e4be51d38568b267ed64092">T</a>).name());</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    };</div>
+</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="a00017.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">   12</a></span><span class="keyword">typedef</span> std::string_view <a class="code hl_typedef" href="a00017.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="a00017.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">   13</a></span><span class="keyword">typedef</span> <span class="keyword">const</span> <span class="keywordtype">char</span>*  <a class="code hl_typedef" href="a00017.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00017.html#a91ad9478d81a7aaf2593e8d9c3d06a14">   14</a></span><span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_typedef" href="a00017.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a>;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="ttc" id="aa00017_html_a8fa5a7ddaf7b4d44d3dde63343d8d844"><div class="ttname"><a href="a00017.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></div><div class="ttdeci">const char * cstr</div><div class="ttdef"><b>Definition</b> types.h:13</div></div>
-<div class="ttc" id="aa00017_html_a91ad9478d81a7aaf2593e8d9c3d06a14"><div class="ttname"><a href="a00017.html#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></div><div class="ttdeci">unsigned int uint</div><div class="ttdef"><b>Definition</b> types.h:14</div></div>
-<div class="ttc" id="aa00017_html_aabc01e4474ddca8d6c8ac3e5c7dfe4b7"><div class="ttname"><a href="a00017.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a></div><div class="ttdeci">std::string_view str</div><div class="ttdef"><b>Definition</b> types.h:12</div></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// -----Returns the hash of the given Type-----</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00024.html#a984a08d43e4be51d38568b267ed64092">   14</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="a00024.html#a984a08d43e4be51d38568b267ed64092">get_type_hash</a>() {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">return</span> <span class="keyword">typeid</span>(<a class="code hl_function" href="a00024.html#a984a08d43e4be51d38568b267ed64092">T</a>).<a class="code hl_function" href="a00024.html#a984a08d43e4be51d38568b267ed64092">hash_code</a>();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
+</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>}</div>
+</div>
+<div class="ttc" id="aa00024_html"><div class="ttname"><a href="a00024.html">catos::type_utils</a></div><div class="ttdef"><b>Definition</b> type_utils.h:4</div></div>
+<div class="ttc" id="aa00024_html_a984a08d43e4be51d38568b267ed64092"><div class="ttname"><a href="a00024.html#a984a08d43e4be51d38568b267ed64092">catos::type_utils::get_type_hash</a></div><div class="ttdeci">size_t get_type_hash()</div><div class="ttdef"><b>Definition</b> type_utils.h:14</div></div>
+<div class="ttc" id="aa00024_html_ae8ba5a0350572f3f742754d626557e59"><div class="ttname"><a href="a00024.html#ae8ba5a0350572f3f742754d626557e59">catos::type_utils::get_type_name</a></div><div class="ttdeci">std::string get_type_name()</div><div class="ttdef"><b>Definition</b> type_utils.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <p>

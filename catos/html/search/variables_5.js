@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['properties_0',['properties',['../a00087.html#a7cbfa52dbf039cfe37ff79d1c97db144',1,'catos::TypeInfo']]]
+  ['returnname_0',['returnName',['../a00068.html#a0b06cd150b4dc8a0b35d356d6f134442',1,'catos::Method']]]
 ];

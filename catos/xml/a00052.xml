@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="69" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/game.h" bodystart="69" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="69" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="a00052_1a6189d683dfc752941b3cd0939efa1758" prot="private" static="no" mutable="no">
         <type>std::unordered_map&lt; <ref refid="a00014_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref>, std::shared_ptr&lt; <ref refid="a00044" kindref="compound">Scene</ref> &gt; &gt;</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="72" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/game.h" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="72" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="72" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -46,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="55" column="9"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="55" column="9"/>
       </memberdef>
       <memberdef kind="function" id="a00052_1a1b8a681b7b89244c5c626074c4690d4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -60,7 +60,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="56" column="9"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="56" column="9"/>
       </memberdef>
       <memberdef kind="function" id="a00052_1af8d7ba8f87059a57e80918176bb3e28a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="a00048" kindref="compound">GameConfig</ref> &amp;</type>
@@ -74,7 +74,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="58" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/game.h" bodystart="58" bodyend="58"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="58" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="58" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="a00052_1a35a7d7e82c0b45b08a1535507c8aaab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="a00044" kindref="compound">Scene</ref> &gt;</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="62" column="25"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="62" column="25"/>
       </memberdef>
       <memberdef kind="function" id="a00052_1a15b6aa6ae59582aeb7a5d4d875adb748" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="a00044" kindref="compound">Scene</ref> &gt;</type>
@@ -116,7 +116,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="64" column="25"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="64" column="25"/>
       </memberdef>
       <memberdef kind="function" id="a00052_1a1cfc4be379f233184200f19d8f45a6dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::shared_ptr&lt; <ref refid="a00044" kindref="compound">Scene</ref> &gt;</type>
@@ -135,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="66" column="25"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="66" column="25"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -143,7 +143,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/core/game.h" line="52" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/game.h" bodystart="52" bodyend="74"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="52" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="52" bodyend="74"/>
     <listofallmembers>
       <member refid="a00052_1a15b6aa6ae59582aeb7a5d4d875adb748" prot="public" virt="non-virtual"><scope>catos::Game</scope><name>change_scene_name</name></member>
       <member refid="a00052_1a45eb4cd2d7aea3e0beb004a1f31a30b8" prot="private" virt="non-virtual"><scope>catos::Game</scope><name>config</name></member>
