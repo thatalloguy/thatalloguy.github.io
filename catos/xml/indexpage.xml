@@ -6,62 +6,103 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><anchor id="index_1md__c_1_2_users_2allos_2source_2_catos_2docs_2_r_e_a_d_m_e"/> <heading level="5">modern lightweight ECS cpp game engine</heading>
+<para><anchor id="index_1md__c_1_2_users_2allos_2source_2_catos_2_r_e_a_d_m_e"/> <heading level="5">modern lightweight ECS cpp game engine</heading>
 </para>
-<para># </para>
-<sect3 id="index_1planned-features--todo">
-<title>Planned Features / ToDo</title><para><itemizedlist>
+<para>Check out the <ulink url="https://thatalloguy.github.io/catos/html/index.html">Documentation</ulink></para>
+<para>️ # # </para>
+<sect3 id="index_1todo">
+<title>ToDo</title><para><hruler/>
+<itemizedlist>
 <listitem><para>[x] Reflection system</para>
 </listitem><listitem><para>- [ ] <strike>constructors</strike></para>
 </listitem><listitem><para>- [x] Methods</para>
-</listitem><listitem><para>- [x] Properties</para>
-</listitem><listitem><para>[x] EC.</para>
-</listitem><listitem><para>- [x] Entity Creation.</para>
-</listitem><listitem><para>- [x] Central system for handling entities.</para>
-</listitem><listitem><para>- [x] Base component</para>
-</listitem><listitem><para>[ ] Python scripting (via pocketPy)</para>
-</listitem><listitem><para>- [x] Custom Component creation (in python)</para>
-</listitem><listitem><para>- [ ] get Info from cpp</para>
-</listitem><listitem><para>- [ ] change info that affects cpp (in python)</para>
-</listitem><listitem><para>[ ] Resource manager</para>
-</listitem><listitem><para>[ ] Dynamic Editor (via the reflection)</para>
-</listitem><listitem><para>[ ] Atomus implementation. # </para>
+</listitem><listitem><para>- [x] Properties </para>
 </listitem></itemizedlist>
 </para>
 </sect3>
-<sect2 id="index_1ec-system-blueprint">
-<title>EC system blueprint.</title><para><image type="html" name="https://github.com/thatalloguy/Catos/assets/51132972/f8a23b4e-8511-40bb-9648-cb252d856b83" alt="image" inline="yes"></image>
- #</para>
-</sect2>
-<sect2 id="index_1rendering-with">
-<title>Rendering with</title><para><ulink url="https://github.com/thatalloguy/Atomus">https://github.com/thatalloguy/Atomus</ulink></para>
-<sect4 id="index_1ideas-for-the-engine">
-<title>Ideas for the engine</title><para><heading level="5">- Vulkan renderer (+ opengl):</heading>
-</para>
-<para>After ive finished the asset manager i will continue dev on my personal vulkan renderer. After that I am hoping to write a RHI so that i can support multiple graphic api&apos;s.<itemizedlist>
-<listitem><para>UPDATE: I finished Atomus (vulkan renderer) and i dont think il create an RHI anytime soon 😅.</para>
+<sect1 id="index_1autotoc_md------automatic-pkpy-binding-generation">
+<title>- - [ ] Automatic pkpy binding generation.</title><para><itemizedlist>
+<listitem><para>[ ] Entity Model</para>
+</listitem><listitem><para>- [ ] Entities.</para>
+</listitem><listitem><para>- [ ] Entity blueprints </para>
 </listitem></itemizedlist>
 </para>
-<para><heading level="5"><strike>- C# as scripting lang</strike> (Its python now)</heading>
-</para>
-<para>I really like C# and i would like to have it as my scripting lang. However ive learned that implementing C# is a PITA, but im hoping that my new reflection system will make my life easier.<itemizedlist>
-<listitem><para>UPDATE: I started on a pocketpy implementation, will not be using C#. <heading level="5">- Physics engine</heading>
-</para>
+</sect1>
+<sect1 id="index_1autotoc_md------scenes">
+<title>- - [ ] Scenes.</title><para><itemizedlist>
+<listitem><para>[ ] Custom STL (standard Library)</para>
+</listitem><listitem><para>- [x] String</para>
+</listitem><listitem><para>- [x] Vector </para>
 </listitem></itemizedlist>
 </para>
-<para>In the past ive used PhysX, bullet and reactphysics3d. But i dislike all 3. I have heard lots of good stuff about Joltphysics and i might give it a try for this engine.</para>
-<para><heading level="5">- Audio Engine</heading>
+</sect1>
+<sect1 id="index_1autotoc_md------hashmap">
+<title>- - [ ] <strike>HashMap</strike></title><para><itemizedlist>
+<listitem><para>[ ] Render Abstraction Layer (for vulkan).</para>
+</listitem><listitem><para>- [ ] Ability to create new pipelines.</para>
+</listitem><listitem><para>- [ ] Ability to create new RenderPasses.</para>
+</listitem><listitem><para>- [ ] Ability to bind objects to pipelines / passes. </para>
+</listitem></itemizedlist>
 </para>
-<para>Ive never really done much with audio, but ive seen the steam audio api and im hoping to try it!</para>
-<para><heading level="5">- Editor GUI</heading>
+</sect1>
+<sect1 id="index_1autotoc_md------more-general-control-over-the-entire-render-pipeline">
+<title>- - [ ] More general control over the entire render pipeline.</title><para><itemizedlist>
+<listitem><para>[ ] Solid Serialization System.</para>
+</listitem><listitem><para>- [ ] Saving most objects to json or binary.</para>
+</listitem><listitem><para>- [ ] Loading most objects from json or binary. </para>
+</listitem></itemizedlist>
 </para>
-<para>For the editor il be using IMGUI since ive lots of experience with it. However this time around i would like to modify the feel of imgui.</para>
-<para><heading level="5">- Game GUI</heading>
+</sect1>
+<sect1 id="index_1autotoc_md------support-for-custom-stl-objects-string-vector-etc">
+<title>- - [ ] Support for (custom) STL objects (string, vector, etc..)</title><para><itemizedlist>
+<listitem><para>[ ] Resource manager</para>
+</listitem><listitem><para>- [ ] Finding files only by Name not a path.</para>
+</listitem><listitem><para>- [ ] Moving and copying files / folders to projects.</para>
+</listitem><listitem><para>- [ ] Baking Assets for faster loading (Models, textures, sounds). </para>
+</listitem></itemizedlist>
 </para>
-<para>At this point what i will use is far away, but i would either want something to functions like remUI. But i could also end up writing my own (IF i were to write my own GUI lib the editor will use that instead of imgui). </para>
-</sect4>
-</sect2>
+</sect1>
+<sect1 id="index_1autotoc_md------automatically-passing-along-the-asset-to-their-corresponding-manager">
+<title>- - [ ] Automatically passing along the asset to their corresponding manager.</title><para><itemizedlist>
+<listitem><para>Sound Engine</para>
+</listitem><listitem><para>- [ ] Copy from Quack engine.</para>
+</listitem><listitem><para>- [ ] Better audio settings.</para>
+</listitem><listitem><para>- [ ] Better steam audio integration. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1autotoc_md------effects-such-as-fall-off">
+<title>- - [ ] Effects such as fall-off.</title><para><itemizedlist>
+<listitem><para>Good Input System</para>
+</listitem><listitem><para>- [ ] Ability to define actions. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1autotoc_md------binding-both-controller-input-and-keyboard--mouse-input-to-actions">
+<title>- - [ ] Binding both controller input and keyboard / mouse input to actions.</title></sect1>
+<sect1 id="index_1autotoc_md----a-tweening-api">
+<title>- [ ] A tweening API.</title><para><itemizedlist>
+<listitem><para>Utils </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1autotoc_md------commands">
+<title>- - [ ] Commands.</title><para><itemizedlist>
+<listitem><para>[ ] UI system. </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="index_1autotoc_md------kinda-like-html">
+<title>- - [ ] Kinda like HTML.</title><para><itemizedlist>
+<listitem><para>[ ] Editor</para>
+</listitem><listitem><para>- [ ] ECS manipulation.</para>
+</listitem><listitem><para>- [ ] Project management.</para>
+</listitem><listitem><para>- [ ] World View tab</para>
+</listitem><listitem><para>- [ ] Asset browser. # </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/docs/README.md"/>
+    <location file="C:/Users/allos/source/Catos/README.md"/>
   </compounddef>
 </doxygen>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../a00098.html',1,'']]],
-  ['registry_2ecpp_1',['registry.cpp',['../a00008.html',1,'']]],
-  ['registry_2eh_2',['registry.h',['../a00011.html',1,'']]]
+  ['string_2ecpp_0',['string.cpp',['../a00077.html',1,'']]],
+  ['string_2eh_1',['string.h',['../a00080.html',1,'']]]
 ];

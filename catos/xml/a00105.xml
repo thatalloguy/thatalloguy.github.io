@@ -1,35 +1,33 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00105" kind="namespace" language="C++">
-    <compoundname>VkInit</compoundname>
+    <compoundname>catos::tests</compoundname>
     <sectiondef kind="func">
-      <memberdef kind="function" id="a00105_1a89cdca6f147b3cacbef67ef0fcddb5a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkPresentInfoKHR</type>
-        <definition>VkPresentInfoKHR VkInit::presentInfo</definition>
-        <argsstring>()</argsstring>
-        <name>presentInfo</name>
-        <qualifiedname>VkInit::presentInfo</qualifiedname>
+      <memberdef kind="function" id="a00105_1a3d55793e34b921efea74b9b57c975082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::tests::TEST_CASE</definition>
+        <argsstring>(&quot;REGISTRY::GET_TYPE_NAME&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
+        <param>
+          <type>&quot;REGISTRY::GET_TYPE_NAME&quot;</type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="19" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="222" bodyend="234" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="19" declcolumn="22"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="37" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="37" bodyend="39"/>
       </memberdef>
-      <memberdef kind="function" id="a00105_1a3cdef4e7c3a16175ef52084187f27428" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkCommandPoolCreateInfo</type>
-        <definition>VkCommandPoolCreateInfo VkInit::commandPoolCreateInfo</definition>
-        <argsstring>(uint32_t queueFamilyIndex, VkCommandPoolCreateFlags flags)</argsstring>
-        <name>commandPoolCreateInfo</name>
-        <qualifiedname>VkInit::commandPoolCreateInfo</qualifiedname>
+      <memberdef kind="function" id="a00105_1a86b61aaa802336f02f0614acceac24c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::tests::TEST_CASE</definition>
+        <argsstring>(&quot;REGISTRY::FIELDS&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
         <param>
-          <type>uint32_t</type>
-          <declname>queueFamilyIndex</declname>
-        </param>
-        <param>
-          <type>VkCommandPoolCreateFlags</type>
-          <declname>flags</declname>
+          <type>&quot;REGISTRY::FIELDS&quot;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -37,21 +35,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="21" column="29" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="8" bodyend="15" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="21" declcolumn="29"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="41" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="41" bodyend="59"/>
       </memberdef>
-      <memberdef kind="function" id="a00105_1a8fe7cf8c5c6f45b1cbec1c04a3fb2801" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkCommandBufferAllocateInfo</type>
-        <definition>VkCommandBufferAllocateInfo VkInit::commandBufferAllocateInfo</definition>
-        <argsstring>(VkCommandPool pool, uint32_t count)</argsstring>
-        <name>commandBufferAllocateInfo</name>
-        <qualifiedname>VkInit::commandBufferAllocateInfo</qualifiedname>
+      <memberdef kind="function" id="a00105_1a994753c9053093b19e7c46057ffcf719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::tests::TEST_CASE</definition>
+        <argsstring>(&quot;REGISTRY::METHODS&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
         <param>
-          <type>VkCommandPool</type>
-          <declname>pool</declname>
-        </param>
-        <param>
-          <type>uint32_t</type>
-          <declname>count</declname>
+          <type>&quot;REGISTRY::METHODS&quot;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -59,17 +52,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="22" column="33" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="16" bodyend="25" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="22" declcolumn="33"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="63" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="63" bodyend="87"/>
       </memberdef>
-      <memberdef kind="function" id="a00105_1a58ec443d7114304aafcc6dfe40aa91cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkFenceCreateInfo</type>
-        <definition>VkFenceCreateInfo VkInit::fenceCreateInfo</definition>
-        <argsstring>(VkFenceCreateFlags flags)</argsstring>
-        <name>fenceCreateInfo</name>
-        <qualifiedname>VkInit::fenceCreateInfo</qualifiedname>
+      <memberdef kind="function" id="a00105_1afda5b3504e78b229f5b2607e5b8789f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::tests::TEST_CASE</definition>
+        <argsstring>(&quot;Application::INSTANCES&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
         <param>
-          <type>VkFenceCreateFlags</type>
-          <declname>flags</declname>
+          <type>&quot;Application::INSTANCES&quot;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -77,18 +69,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="24" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="27" bodyend="35" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="24" declcolumn="23"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="90" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="90" bodyend="111"/>
       </memberdef>
-      <memberdef kind="function" id="a00105_1ad350c43673bc9b3f7994cd67053d601a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkSemaphoreCreateInfo</type>
-        <definition>VkSemaphoreCreateInfo VkInit::semaphoreCreateInfo</definition>
-        <argsstring>(VkSemaphoreCreateFlags flags=0)</argsstring>
-        <name>semaphoreCreateInfo</name>
-        <qualifiedname>VkInit::semaphoreCreateInfo</qualifiedname>
+      <memberdef kind="function" id="a00105_1adfd1c23b15d8a936aecd76a884dd82d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::tests::TEST_CASE</definition>
+        <argsstring>(&quot;STL::VECTORS&quot;)</argsstring>
+        <name>TEST_CASE</name>
+        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
         <param>
-          <type>VkSemaphoreCreateFlags</type>
-          <declname>flags</declname>
-          <defval>0</defval>
+          <type>&quot;STL::VECTORS&quot;</type>
         </param>
         <briefdescription>
         </briefdescription>
@@ -96,283 +86,13 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="25" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="37" bodyend="44" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="25" declcolumn="27"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1a4f27583522b48fbb2794b4f6eff37c5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkCommandBufferBeginInfo</type>
-        <definition>VkCommandBufferBeginInfo VkInit::commandBufferBeginInfo</definition>
-        <argsstring>(VkCommandBufferUsageFlags flags)</argsstring>
-        <name>commandBufferBeginInfo</name>
-        <qualifiedname>VkInit::commandBufferBeginInfo</qualifiedname>
-        <param>
-          <type>VkCommandBufferUsageFlags</type>
-          <declname>flags</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="27" column="30" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="46" bodyend="55" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="27" declcolumn="30"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1abe7cc27c092869928fc3c6428219e858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkImageSubresourceRange</type>
-        <definition>VkImageSubresourceRange VkInit::imageSubresourceRange</definition>
-        <argsstring>(VkImageAspectFlags aspectMask)</argsstring>
-        <name>imageSubresourceRange</name>
-        <qualifiedname>VkInit::imageSubresourceRange</qualifiedname>
-        <param>
-          <type>VkImageAspectFlags</type>
-          <declname>aspectMask</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="28" column="29" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="56" bodyend="65" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="28" declcolumn="29"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1a255af650bfd089f6febd85848d58c6c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkSemaphoreSubmitInfo</type>
-        <definition>VkSemaphoreSubmitInfo VkInit::semaphoreSubmitInfo</definition>
-        <argsstring>(VkPipelineStageFlags2 stageMask, VkSemaphore semaphore)</argsstring>
-        <name>semaphoreSubmitInfo</name>
-        <qualifiedname>VkInit::semaphoreSubmitInfo</qualifiedname>
-        <param>
-          <type>VkPipelineStageFlags2</type>
-          <declname>stageMask</declname>
-        </param>
-        <param>
-          <type>VkSemaphore</type>
-          <declname>semaphore</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="30" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="67" bodyend="77" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="30" declcolumn="27"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1a4e3740324c0b56d48e31d4201841fbce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkCommandBufferSubmitInfo</type>
-        <definition>VkCommandBufferSubmitInfo VkInit::commandBufferSubmitInfo</definition>
-        <argsstring>(VkCommandBuffer cmd)</argsstring>
-        <name>commandBufferSubmitInfo</name>
-        <qualifiedname>VkInit::commandBufferSubmitInfo</qualifiedname>
-        <param>
-          <type>VkCommandBuffer</type>
-          <declname>cmd</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="31" column="31" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="78" bodyend="86" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="31" declcolumn="31"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1a2cef7fa07f55a58eb23a2aa4de6cb956" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkSubmitInfo2</type>
-        <definition>VkSubmitInfo2 VkInit::submitInfo</definition>
-        <argsstring>(VkCommandBufferSubmitInfo *cmd, VkSemaphoreSubmitInfo *signalSemaphoreInfo, VkSemaphoreSubmitInfo *waitSemaphoreInfo)</argsstring>
-        <name>submitInfo</name>
-        <qualifiedname>VkInit::submitInfo</qualifiedname>
-        <param>
-          <type>VkCommandBufferSubmitInfo *</type>
-          <declname>cmd</declname>
-        </param>
-        <param>
-          <type>VkSemaphoreSubmitInfo *</type>
-          <declname>signalSemaphoreInfo</declname>
-        </param>
-        <param>
-          <type>VkSemaphoreSubmitInfo *</type>
-          <declname>waitSemaphoreInfo</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="32" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="87" bodyend="102" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="32" declcolumn="19"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1af6244bbb89d93fabe28d83cb4203da94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkImageCreateInfo</type>
-        <definition>VkImageCreateInfo VkInit::imageCreateInfo</definition>
-        <argsstring>(VkFormat format, VkImageUsageFlags usageFlags, VkExtent3D extent)</argsstring>
-        <name>imageCreateInfo</name>
-        <qualifiedname>VkInit::imageCreateInfo</qualifiedname>
-        <param>
-          <type>VkFormat</type>
-          <declname>format</declname>
-        </param>
-        <param>
-          <type>VkImageUsageFlags</type>
-          <declname>usageFlags</declname>
-        </param>
-        <param>
-          <type>VkExtent3D</type>
-          <declname>extent</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="34" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="104" bodyend="123" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="34" declcolumn="23"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1a57731c73c6a5a9b41a591f594bedd96c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkImageViewCreateInfo</type>
-        <definition>VkImageViewCreateInfo VkInit::imageViewCreateInfo</definition>
-        <argsstring>(VkFormat format, VkImage image, VkImageAspectFlags aspectFlags)</argsstring>
-        <name>imageViewCreateInfo</name>
-        <qualifiedname>VkInit::imageViewCreateInfo</qualifiedname>
-        <param>
-          <type>VkFormat</type>
-          <declname>format</declname>
-        </param>
-        <param>
-          <type>VkImage</type>
-          <declname>image</declname>
-        </param>
-        <param>
-          <type>VkImageAspectFlags</type>
-          <declname>aspectFlags</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="35" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="125" bodyend="140" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="35" declcolumn="27"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1a76bde95c72a4bf604cd433e439b2fa1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkRenderingAttachmentInfo</type>
-        <definition>VkRenderingAttachmentInfo VkInit::attachmentInfo</definition>
-        <argsstring>(VkImageView view, VkClearValue *clear, VkImageLayout layout)</argsstring>
-        <name>attachmentInfo</name>
-        <qualifiedname>VkInit::attachmentInfo</qualifiedname>
-        <param>
-          <type>VkImageView</type>
-          <declname>view</declname>
-        </param>
-        <param>
-          <type>VkClearValue *</type>
-          <declname>clear</declname>
-        </param>
-        <param>
-          <type>VkImageLayout</type>
-          <declname>layout</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="37" column="31" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="142" bodyend="158" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="37" declcolumn="31"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1afd70e1da9064d67d0f17d4d415f0761d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkRenderingAttachmentInfo</type>
-        <definition>VkRenderingAttachmentInfo VkInit::depthAttachmentInfo</definition>
-        <argsstring>(VkImageView view, VkImageLayout layout)</argsstring>
-        <name>depthAttachmentInfo</name>
-        <qualifiedname>VkInit::depthAttachmentInfo</qualifiedname>
-        <param>
-          <type>VkImageView</type>
-          <declname>view</declname>
-        </param>
-        <param>
-          <type>VkImageLayout</type>
-          <declname>layout</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="38" column="31" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="208" bodyend="220" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="38" declcolumn="31"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1a5e07e2e66058b5c4e6fb30840c396ab3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkRenderingInfo</type>
-        <definition>VkRenderingInfo VkInit::renderingInfo</definition>
-        <argsstring>(VkExtent2D renderExtent, VkRenderingAttachmentInfo *colorAttachment, VkRenderingAttachmentInfo *depthAttachment)</argsstring>
-        <name>renderingInfo</name>
-        <qualifiedname>VkInit::renderingInfo</qualifiedname>
-        <param>
-          <type>VkExtent2D</type>
-          <declname>renderExtent</declname>
-        </param>
-        <param>
-          <type>VkRenderingAttachmentInfo *</type>
-          <declname>colorAttachment</declname>
-        </param>
-        <param>
-          <type>VkRenderingAttachmentInfo *</type>
-          <declname>depthAttachment</declname>
-        </param>
-        <briefdescription>
-<para>NOTE custom function i couldnt find vkguide&apos;s one. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="41" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="160" bodyend="175" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="41" declcolumn="21"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1af12b035c84d7a8af0915e626e68b29f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkPipelineShaderStageCreateInfo</type>
-        <definition>VkPipelineShaderStageCreateInfo VkInit::pipelineShaderStageCreateInfo</definition>
-        <argsstring>(VkShaderStageFlagBits stage, VkShaderModule shaderModule, const char *entry=&quot;main&quot;)</argsstring>
-        <name>pipelineShaderStageCreateInfo</name>
-        <qualifiedname>VkInit::pipelineShaderStageCreateInfo</qualifiedname>
-        <param>
-          <type>VkShaderStageFlagBits</type>
-          <declname>stage</declname>
-        </param>
-        <param>
-          <type>VkShaderModule</type>
-          <declname>shaderModule</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>entry</declname>
-          <defval>&quot;main&quot;</defval>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="44" column="37" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="177" bodyend="192" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="44" declcolumn="37"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1ae22d46467876562f521852203947a73c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkPipelineLayoutCreateInfo</type>
-        <definition>VkPipelineLayoutCreateInfo VkInit::pipelineLayoutCreateInfo</definition>
-        <argsstring>()</argsstring>
-        <name>pipelineLayoutCreateInfo</name>
-        <qualifiedname>VkInit::pipelineLayoutCreateInfo</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="46" column="32" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.cpp" bodystart="194" bodyend="206" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" declline="46" declcolumn="32"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="114" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="114" bodyend="128"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h" line="17" column="1"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="35" column="1"/>
   </compounddef>
 </doxygen>

@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['operator_21_3d_0',['operator!=',['../a00318.html#ab0712544ffd5405264926c1ec057d2ad',1,'catos::Query::Iterator']]],
-  ['operator_2a_1',['operator*',['../a00318.html#adf788275942b857ac85557a283259a24',1,'catos::Query::Iterator']]],
-  ['operator_2b_2',['operator+',['../a00154.html#a1f396224b6250ad2400cb01d60b1b4ec',1,'catos::math::Vector2::operator+(Vector2 &amp;b)'],['../a00154.html#a82c0de289dd8ec25a6e77497098f9064',1,'catos::math::Vector2::operator+(glm::vec2 &amp;b)'],['../a00298.html#ad1ff5942b967858216872885140d61f1',1,'STL::String::operator+()']]],
-  ['operator_2b_2b_3',['operator++',['../a00318.html#ab1b866c78896c17f861a9823cbde24f7',1,'catos::Query::Iterator']]],
-  ['operator_3d_4',['operator=',['../a00298.html#a6e1f1d35335d3760eb61fddbebfb983d',1,'STL::String::operator=(const String &amp;obj)'],['../a00298.html#a26a68776891ac10277a4011c80a62b1b',1,'STL::String::operator=(String &amp;&amp;obj)']]],
-  ['operator_3d_3d_5',['operator==',['../a00154.html#a47758ee7db6b46dcf0c68e85cdb53e86',1,'catos::math::Vector2::operator==(Vector2 &amp;b)'],['../a00154.html#a7a5f74f94f6515ff5371aad50873cee2',1,'catos::math::Vector2::operator==(glm::vec2 &amp;b)'],['../a00318.html#a5d0eb38995b873534d396f20a10efa23',1,'catos::Query::Iterator::operator==()']]]
+  ['refreshtransform_0',['refreshTransform',['../a00237.html#a04e0eff14682dca41284af38d0cb51a5',1,'Node']]],
+  ['register_5fclass_1',['register_class',['../a00137.html#a3c1a3c07e51224b5745cd9764407efff',1,'catos::Registry']]],
+  ['remove_2',['remove',['../a00301.html#ac8d39b9ee09417b0310b347b82bb8cf5',1,'Catos::vector']]],
+  ['renderinginfo_3',['renderingInfo',['../a00102.html#a5e07e2e66058b5c4e6fb30840c396ab3',1,'VkInit']]],
+  ['reserve_4',['reserve',['../a00301.html#ac117128ec5acd0058a234a20d95247f9',1,'Catos::vector']]],
+  ['resize_5',['resize',['../a00301.html#ab8a100ee7d234506862002b16257a9ab',1,'Catos::vector']]],
+  ['run_6',['Run',['../a00217.html#ae2bc28152df989a30cfc8286ccf33b0d',1,'VulkanEngine']]]
 ];

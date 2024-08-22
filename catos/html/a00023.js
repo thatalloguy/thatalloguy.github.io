@@ -1,5 +1,5 @@
 var a00023 =
 [
-    [ "catos::WindowCreationInfo", "a00146.html", "a00146" ],
-    [ "catos::Window", "a00150.html", "a00150" ]
+    [ "catos::WindowCreationInfo", "a00141.html", "a00141" ],
+    [ "catos::Window", "a00145.html", "a00145" ]
 ];

@@ -1,89 +1,50 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00109" kind="namespace" language="C++">
-    <compoundname>catos::EntityUtils</compoundname>
-    <sectiondef kind="func">
-      <memberdef kind="function" id="a00109_1a7f7491ca6642382c71130a825ee91b1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-        <definition>EntityId catos::EntityUtils::create_entity_id</definition>
-        <argsstring>(EntityIndex index, EntityVersion version)</argsstring>
-        <name>create_entity_id</name>
-        <qualifiedname>catos::EntityUtils::create_entity_id</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1ad46e4a899856a996f751ea2c4a1edf61" kindref="member">EntityIndex</ref></type>
-          <declname>index</declname>
-        </param>
-        <param>
-          <type><ref refid="a00101_1a805105b8a0bfeee0ca9c0d2aaa10c91c" kindref="member">EntityVersion</ref></type>
-          <declname>version</declname>
-        </param>
+  <compounddef id="a00109" kind="struct" language="C++" prot="public">
+    <compoundname>catos::AppCreationInfo</compoundname>
+    <includes refid="a00005" local="no">application.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00109_1aa955f138a405ff0d97ca029e5a4bf4df" prot="public" static="no" mutable="no">
+        <type><ref refid="a00014_1a91ad9478d81a7aaf2593e8d9c3d06a14" kindref="member">uint</ref></type>
+        <definition>uint catos::AppCreationInfo::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>catos::AppCreationInfo::version</qualifiedname>
+        <initializer>= 001</initializer>
         <briefdescription>
+<para>MAJOR | MINOR | PATCH? </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="42" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="42" bodyend="44"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="19" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="19" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="a00109_1a978cd4122efd37529a0b31688d5392d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="a00101_1ad46e4a899856a996f751ea2c4a1edf61" kindref="member">EntityIndex</ref></type>
-        <definition>EntityIndex catos::EntityUtils::get_entity_index</definition>
-        <argsstring>(EntityId id)</argsstring>
-        <name>get_entity_index</name>
-        <qualifiedname>catos::EntityUtils::get_entity_index</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
-        </param>
+      <memberdef kind="variable" id="a00109_1a2e1442b7894e8f50cf02926c312a83b4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00014_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref></type>
+        <definition>str catos::AppCreationInfo::applicationTitle</definition>
+        <argsstring></argsstring>
+        <name>applicationTitle</name>
+        <qualifiedname>catos::AppCreationInfo::applicationTitle</qualifiedname>
+        <initializer>= &quot;Catos Application&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="46" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="46" bodyend="48"/>
-      </memberdef>
-      <memberdef kind="function" id="a00109_1a878d770b925762e6bd9a643e8ee9eb68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="a00101_1a805105b8a0bfeee0ca9c0d2aaa10c91c" kindref="member">EntityVersion</ref></type>
-        <definition>EntityVersion catos::EntityUtils::get_entity_version</definition>
-        <argsstring>(EntityId id)</argsstring>
-        <name>get_entity_version</name>
-        <qualifiedname>catos::EntityUtils::get_entity_version</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="50" column="30" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="50" bodyend="52"/>
-      </memberdef>
-      <memberdef kind="function" id="a00109_1a581cc1269c80ccf4eca5a03446e1d6dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool catos::EntityUtils::is_entity_valid</definition>
-        <argsstring>(EntityId id)</argsstring>
-        <name>is_entity_valid</name>
-        <qualifiedname>catos::EntityUtils::is_entity_valid</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="54" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="54" bodyend="56"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="20" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="20" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>A struct that holds all info the application needs at launch. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="39" column="5"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="17" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="17" bodyend="21"/>
+    <listofallmembers>
+      <member refid="a00109_1a2e1442b7894e8f50cf02926c312a83b4" prot="public" virt="non-virtual"><scope>catos::AppCreationInfo</scope><name>applicationTitle</name></member>
+      <member refid="a00109_1aa955f138a405ff0d97ca029e5a4bf4df" prot="public" virt="non-virtual"><scope>catos::AppCreationInfo</scope><name>version</name></member>
+    </listofallmembers>
   </compounddef>
 </doxygen>

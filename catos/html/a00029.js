@@ -1,4 +1,4 @@
 var a00029 =
 [
-    [ "catos::math::Vector2", "a00154.html", "a00154" ]
+    [ "catos::math::Vector2", "a00149.html", "a00149" ]
 ];

@@ -4,6 +4,8 @@
     <compoundname>stl</compoundname>
     <innerfile refid="a00077">string.cpp</innerfile>
     <innerfile refid="a00080">string.h</innerfile>
+    <innerfile refid="a00083">vector.cpp</innerfile>
+    <innerfile refid="a00086">vector.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

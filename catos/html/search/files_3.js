@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['query_2ecpp_0',['query.cpp',['../a00086.html',1,'']]],
-  ['query_2eh_1',['query.h',['../a00089.html',1,'']]]
+  ['registry_2ecpp_0',['registry.cpp',['../a00008.html',1,'']]],
+  ['registry_2eh_1',['registry.h',['../a00011.html',1,'']]]
 ];

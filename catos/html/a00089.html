@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): query.h File Reference</title>
+<title>Catos Engine (Source): main.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,26 +96,94 @@ $(function(){initNavTree('a00089.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">query.h File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="a00095_source.html">world/world.h</a>&gt;</code><br />
-</div>
-<p><a href="a00089_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;../doctest/doctest/doctest.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00017_source.html">core/type_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00011_source.html">core/registry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00005_source.html">core/application.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00095_source.html">world/world.h</a>&quot;</code><br />
+<code>#include &quot;spdlog/spdlog.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00086_source.html">stl/vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00080_source.html">stl/string.h</a>&quot;</code><br />
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00314.html">catos::Query&lt; Components &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00309.html">Foo</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00318.html">catos::Query&lt; Components &gt;::Iterator</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00313.html">TransformComponent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00317.html">ComponentTest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00101" id="r_a00101"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html">catos</a></td></tr>
+<tr class="memitem:a00098" id="r_a00098"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00098.html">catos</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00105" id="r_a00105"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html">catos::tests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:adf980eb1ed0df2191c56fd3d218c2819" id="r_adf980eb1ed0df2191c56fd3d218c2819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf980eb1ed0df2191c56fd3d218c2819">DOCTEST_CONFIG_IMPLEMENT</a></td></tr>
+<tr class="separator:adf980eb1ed0df2191c56fd3d218c2819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3d55793e34b921efea74b9b57c975082" id="r_a3d55793e34b921efea74b9b57c975082"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a3d55793e34b921efea74b9b57c975082">catos::tests::TEST_CASE</a> (&quot;REGISTRY::GET_TYPE_NAME&quot;)</td></tr>
+<tr class="separator:a3d55793e34b921efea74b9b57c975082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b61aaa802336f02f0614acceac24c6" id="r_a86b61aaa802336f02f0614acceac24c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a86b61aaa802336f02f0614acceac24c6">catos::tests::TEST_CASE</a> (&quot;REGISTRY::FIELDS&quot;)</td></tr>
+<tr class="separator:a86b61aaa802336f02f0614acceac24c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994753c9053093b19e7c46057ffcf719" id="r_a994753c9053093b19e7c46057ffcf719"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#a994753c9053093b19e7c46057ffcf719">catos::tests::TEST_CASE</a> (&quot;REGISTRY::METHODS&quot;)</td></tr>
+<tr class="separator:a994753c9053093b19e7c46057ffcf719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda5b3504e78b229f5b2607e5b8789f2" id="r_afda5b3504e78b229f5b2607e5b8789f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#afda5b3504e78b229f5b2607e5b8789f2">catos::tests::TEST_CASE</a> (&quot;Application::INSTANCES&quot;)</td></tr>
+<tr class="separator:afda5b3504e78b229f5b2607e5b8789f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd1c23b15d8a936aecd76a884dd82d0" id="r_adfd1c23b15d8a936aecd76a884dd82d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00105.html#adfd1c23b15d8a936aecd76a884dd82d0">catos::tests::TEST_CASE</a> (&quot;STL::VECTORS&quot;)</td></tr>
+<tr class="separator:adfd1c23b15d8a936aecd76a884dd82d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="adf980eb1ed0df2191c56fd3d218c2819" name="adf980eb1ed0df2191c56fd3d218c2819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf980eb1ed0df2191c56fd3d218c2819">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <p>

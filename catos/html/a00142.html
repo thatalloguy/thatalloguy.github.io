@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): catos::Registry Class Reference</title>
+<title>Catos Engine (Source): Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a00142.html',''); initResizable(); });
+$(function(){initNavTree('a00145.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,184 +94,20 @@ $(function(){initNavTree('a00142.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00139.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">catos::Registry Class Reference</div></div>
+  <div class="headertitle"><div class="title">catos::Window Member List</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The registry is the core system and provides reflection to the rest of the engine.  
- <a href="#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00011_source.html">registry.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a3c1a3c07e51224b5745cd9764407efff" id="r_a3c1a3c07e51224b5745cd9764407efff"><td class="memTemplParams" colspan="2">template&lt;typename A &gt; </td></tr>
-<tr class="memitem:a3c1a3c07e51224b5745cd9764407efff"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00138.html">TypeInfo</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3c1a3c07e51224b5745cd9764407efff">register_class</a> ()</td></tr>
-<tr class="memdesc:a3c1a3c07e51224b5745cd9764407efff"><td class="mdescLeft">&#160;</td><td class="mdescRight">With this function you register a class to the <a class="el" href="a00142.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>.  <br /></td></tr>
-<tr class="separator:a3c1a3c07e51224b5745cd9764407efff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9d8e58c1258eebb008a292f8b8b1c44" id="r_aa9d8e58c1258eebb008a292f8b8b1c44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9d8e58c1258eebb008a292f8b8b1c44">gen_python_bindings_file</a> ()</td></tr>
-<tr class="memdesc:aa9d8e58c1258eebb008a292f8b8b1c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated!!!  <br /></td></tr>
-<tr class="separator:aa9d8e58c1258eebb008a292f8b8b1c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad344d7a045a558fa8a24e4f1ce095a05" id="r_ad344d7a045a558fa8a24e4f1ce095a05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad344d7a045a558fa8a24e4f1ce095a05">gen_cs_bindings_file</a> ()</td></tr>
-<tr class="memdesc:ad344d7a045a558fa8a24e4f1ce095a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO this shit is so ugly ;-;.  <br /></td></tr>
-<tr class="separator:ad344d7a045a558fa8a24e4f1ce095a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03c494fdb9fb9daafaea972f273de633" id="r_a03c494fdb9fb9daafaea972f273de633"><td class="memTemplParams" colspan="2">template&lt;typename A &gt; </td></tr>
-<tr class="memitem:a03c494fdb9fb9daafaea972f273de633"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00138.html">TypeInfo</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a03c494fdb9fb9daafaea972f273de633">get_type</a> ()</td></tr>
-<tr class="memdesc:a03c494fdb9fb9daafaea972f273de633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the registered Type.  <br /></td></tr>
-<tr class="separator:a03c494fdb9fb9daafaea972f273de633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff740e516ed706e2d202086df6f12b9" id="r_a3ff740e516ed706e2d202086df6f12b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ff740e516ed706e2d202086df6f12b9">print_current_register</a> ()</td></tr>
-<tr class="memdesc:a3ff740e516ed706e2d202086df6f12b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out the items in the <a class="el" href="a00142.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>.  <br /></td></tr>
-<tr class="separator:a3ff740e516ed706e2d202086df6f12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The registry is the core system and provides reflection to the rest of the engine. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad344d7a045a558fa8a24e4f1ce095a05" name="ad344d7a045a558fa8a24e4f1ce095a05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad344d7a045a558fa8a24e4f1ce095a05">&#9670;&#160;</a></span>gen_cs_bindings_file()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void catos::Registry::gen_cs_bindings_file </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>TODO this shit is so ugly ;-;. </p>
-
-</div>
-</div>
-<a id="aa9d8e58c1258eebb008a292f8b8b1c44" name="aa9d8e58c1258eebb008a292f8b8b1c44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9d8e58c1258eebb008a292f8b8b1c44">&#9670;&#160;</a></span>gen_python_bindings_file()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void catos::Registry::gen_python_bindings_file </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deprecated!!! </p>
-
-</div>
-</div>
-<a id="a03c494fdb9fb9daafaea972f273de633" name="a03c494fdb9fb9daafaea972f273de633"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03c494fdb9fb9daafaea972f273de633">&#9670;&#160;</a></span>get_type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename A &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00138.html">TypeInfo</a> &amp; catos::Registry::get_type </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the registered Type. </p>
-
-</div>
-</div>
-<a id="a3ff740e516ed706e2d202086df6f12b9" name="a3ff740e516ed706e2d202086df6f12b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ff740e516ed706e2d202086df6f12b9">&#9670;&#160;</a></span>print_current_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void catos::Registry::print_current_register </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Prints out the items in the <a class="el" href="a00142.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>. </p>
-
-</div>
-</div>
-<a id="a3c1a3c07e51224b5745cd9764407efff" name="a3c1a3c07e51224b5745cd9764407efff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c1a3c07e51224b5745cd9764407efff">&#9670;&#160;</a></span>register_class()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename A &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00138.html">TypeInfo</a> &amp; catos::Registry::register_class </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>With this function you register a class to the <a class="el" href="a00142.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00011_source.html">registry.h</a></li>
-</ul>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a00145.html">catos::Window</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a00145.html#a4097b3e04a4f8ece21f5abe1b10e6323">App</a></td><td class="entry"><a class="el" href="a00145.html">catos::Window</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00145.html#afc3176914723cab13d809b6ae8f3d6d2">get_glfw_window</a>()</td><td class="entry"><a class="el" href="a00145.html">catos::Window</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00145.html#a7666877758d915dca4176786fc0a7925">getMonitorSize</a>()</td><td class="entry"><a class="el" href="a00145.html">catos::Window</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00145.html#a6df30484abfd5cc491a5ed2055692859">should_window_close</a>()</td><td class="entry"><a class="el" href="a00145.html">catos::Window</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00145.html#a59515fc5a56e86d5a46d771595daac55">update</a>()</td><td class="entry"><a class="el" href="a00145.html">catos::Window</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00145.html#a17960ca89f793bac084a8203f1a7d3e6">Window</a>(WindowCreationInfo &amp;creationInfo)</td><td class="entry"><a class="el" href="a00145.html">catos::Window</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00145.html#a245d821e6016fa1f6970ccbbedd635f6">~Window</a>()</td><td class="entry"><a class="el" href="a00145.html">catos::Window</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

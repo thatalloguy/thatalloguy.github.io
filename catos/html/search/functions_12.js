@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['update_0',['update',['../a00150.html#a59515fc5a56e86d5a46d771595daac55',1,'catos::Window::update()'],['../a00158.html#a42cda7239981a5618660d04bd5893556',1,'Camera::update()']]],
-  ['updatescene_1',['updateScene',['../a00222.html#ad2da415dabe3add3882952382efbb926',1,'VulkanEngine']]],
-  ['updateset_2',['updateSet',['../a00182.html#aa6d2deed567c313417fc333e55647814',1,'DescriptorWriter']]],
-  ['uploadmesh_3',['uploadMesh',['../a00222.html#a2eef35ed3cc46cf090af65c68dc63243',1,'VulkanEngine']]]
+  ['_7eapp_0',['~App',['../a00113.html#ae2beda1820f2fb8b3d2b690e9cd7742b',1,'catos::App']]],
+  ['_7eproperty_1',['~Property',['../a00117.html#aadf32bd1d8c607a993f117ea2db3cadd',1,'catos::Property']]],
+  ['_7estring_2',['~string',['../a00293.html#a16ae32c4fbda7123cdfdd8e190b83b16',1,'Catos::string']]],
+  ['_7evector_3',['~vector',['../a00301.html#a01c7366458cfb98447769a3f321bc1ba',1,'Catos::vector']]],
+  ['_7ewindow_4',['~Window',['../a00145.html#a245d821e6016fa1f6970ccbbedd635f6',1,'catos::Window']]]
 ];

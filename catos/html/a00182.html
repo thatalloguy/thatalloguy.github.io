@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): DescriptorWriter Struct Reference</title>
+<title>Catos Engine (Source): Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a00182.html',''); initResizable(); });
+$(function(){initNavTree('a00185.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,195 +94,17 @@ $(function(){initNavTree('a00182.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="a00179.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DescriptorWriter Struct Reference</div></div>
+  <div class="headertitle"><div class="title">ComputePushConstants Member List</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00041_source.html">VkDescriptors.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a2a892146e50f1e47f2e5e2f84fb0eb66" id="r_a2a892146e50f1e47f2e5e2f84fb0eb66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a892146e50f1e47f2e5e2f84fb0eb66">writeImage</a> (int binding, VkImageView image, VkSampler sampler, VkImageLayout layout, VkDescriptorType type)</td></tr>
-<tr class="separator:a2a892146e50f1e47f2e5e2f84fb0eb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24d1efff56cfd0a03ffe5aa3ce7e17bf" id="r_a24d1efff56cfd0a03ffe5aa3ce7e17bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a24d1efff56cfd0a03ffe5aa3ce7e17bf">writeBuffer</a> (int binding, VkBuffer buffer, size_t size, size_t offset, VkDescriptorType type)</td></tr>
-<tr class="separator:a24d1efff56cfd0a03ffe5aa3ce7e17bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2f603a5f4382aeed806d6a25f4fc9d9" id="r_ad2f603a5f4382aeed806d6a25f4fc9d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad2f603a5f4382aeed806d6a25f4fc9d9">clear</a> ()</td></tr>
-<tr class="separator:ad2f603a5f4382aeed806d6a25f4fc9d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6d2deed567c313417fc333e55647814" id="r_aa6d2deed567c313417fc333e55647814"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6d2deed567c313417fc333e55647814">updateSet</a> (VkDevice device, VkDescriptorSet set)</td></tr>
-<tr class="separator:aa6d2deed567c313417fc333e55647814"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a1a8fd25b760653c787354b53792fd123" id="r_a1a8fd25b760653c787354b53792fd123"><td class="memItemLeft" align="right" valign="top">std::deque&lt; VkDescriptorImageInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1a8fd25b760653c787354b53792fd123">imageInfos</a></td></tr>
-<tr class="separator:a1a8fd25b760653c787354b53792fd123"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4afed3f867ffe490c2bcb18d739d5fc" id="r_ab4afed3f867ffe490c2bcb18d739d5fc"><td class="memItemLeft" align="right" valign="top">std::deque&lt; VkDescriptorBufferInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab4afed3f867ffe490c2bcb18d739d5fc">bufferInfos</a></td></tr>
-<tr class="separator:ab4afed3f867ffe490c2bcb18d739d5fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac22018161ff02865aa9ef6e652c89d5e" id="r_ac22018161ff02865aa9ef6e652c89d5e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; VkWriteDescriptorSet &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac22018161ff02865aa9ef6e652c89d5e">writes</a></td></tr>
-<tr class="separator:ac22018161ff02865aa9ef6e652c89d5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad2f603a5f4382aeed806d6a25f4fc9d9" name="ad2f603a5f4382aeed806d6a25f4fc9d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2f603a5f4382aeed806d6a25f4fc9d9">&#9670;&#160;</a></span>clear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DescriptorWriter::clear </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa6d2deed567c313417fc333e55647814" name="aa6d2deed567c313417fc333e55647814"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6d2deed567c313417fc333e55647814">&#9670;&#160;</a></span>updateSet()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DescriptorWriter::updateSet </td>
-          <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkDescriptorSet</td>          <td class="paramname"><span class="paramname"><em>set</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a24d1efff56cfd0a03ffe5aa3ce7e17bf" name="a24d1efff56cfd0a03ffe5aa3ce7e17bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24d1efff56cfd0a03ffe5aa3ce7e17bf">&#9670;&#160;</a></span>writeBuffer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DescriptorWriter::writeBuffer </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>binding</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkBuffer</td>          <td class="paramname"><span class="paramname"><em>buffer</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>offset</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkDescriptorType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2a892146e50f1e47f2e5e2f84fb0eb66" name="a2a892146e50f1e47f2e5e2f84fb0eb66"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a892146e50f1e47f2e5e2f84fb0eb66">&#9670;&#160;</a></span>writeImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DescriptorWriter::writeImage </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>binding</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkImageView</td>          <td class="paramname"><span class="paramname"><em>image</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkSampler</td>          <td class="paramname"><span class="paramname"><em>sampler</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkImageLayout</td>          <td class="paramname"><span class="paramname"><em>layout</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkDescriptorType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab4afed3f867ffe490c2bcb18d739d5fc" name="ab4afed3f867ffe490c2bcb18d739d5fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4afed3f867ffe490c2bcb18d739d5fc">&#9670;&#160;</a></span>bufferInfos</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::deque&lt;VkDescriptorBufferInfo&gt; DescriptorWriter::bufferInfos</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1a8fd25b760653c787354b53792fd123" name="a1a8fd25b760653c787354b53792fd123"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a8fd25b760653c787354b53792fd123">&#9670;&#160;</a></span>imageInfos</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::deque&lt;VkDescriptorImageInfo&gt; DescriptorWriter::imageInfos</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac22018161ff02865aa9ef6e652c89d5e" name="ac22018161ff02865aa9ef6e652c89d5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac22018161ff02865aa9ef6e652c89d5e">&#9670;&#160;</a></span>writes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;VkWriteDescriptorSet&gt; DescriptorWriter::writes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li><a class="el" href="a00041_source.html">VkDescriptors.h</a></li>
-<li><a class="el" href="a00038.html">VkDescriptors.cpp</a></li>
-</ul>
-</div><!-- contents -->
+<p>This is the complete list of members for <a class="el" href="a00185.html">ComputePushConstants</a>, including all inherited members.</p>
+<table class="directory">
+  <tr class="even"><td class="entry"><a class="el" href="a00185.html#af1b14859e4a196ab2313734dde81428a">data1</a></td><td class="entry"><a class="el" href="a00185.html">ComputePushConstants</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00185.html#aaa6359f4ea37d85e40f2881ef732826b">data2</a></td><td class="entry"><a class="el" href="a00185.html">ComputePushConstants</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00185.html#a5035e7701b815f7e95c3fd525b6e075e">data3</a></td><td class="entry"><a class="el" href="a00185.html">ComputePushConstants</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00185.html#ad1b7e85d855000abe4f3c62ca6b9e85e">data4</a></td><td class="entry"><a class="el" href="a00185.html">ComputePushConstants</a></td><td class="entry"></td></tr>
+</table></div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

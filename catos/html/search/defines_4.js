@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['max_5fcomponents_0',['MAX_COMPONENTS',['../a00095.html#a6d8c910a1fdb6d4762a05f7250e64322',1,'world.h']]],
-  ['max_5fentities_1',['MAX_ENTITIES',['../a00095.html#a0b7e155f796ed5e7b49b0f44867135ee',1,'world.h']]]
+  ['vk_5fcheck_0',['VK_CHECK',['../a00074.html#a3d55e176cc77828a9adaa05ac4413b99',1,'VkTypes.h']]],
+  ['vma_5fimplementation_1',['VMA_IMPLEMENTATION',['../a00044.html#abea80547807da765ebe9fce1c6dd6a8d',1,'VkEngine.cpp']]]
 ];

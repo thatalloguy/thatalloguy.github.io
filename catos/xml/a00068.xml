@@ -147,7 +147,7 @@
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00071" kindref="compound">VkPipelines.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;spdlog/spdlog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00104_1a73da1142a76da292c64a9499aacf5bc2" kindref="member">VkUtil::loadShaderModule</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filePath,<sp/>VkDevice<sp/>device,<sp/>VkShaderModule<sp/>*outShaderModule)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00101_1a73da1142a76da292c64a9499aacf5bc2" kindref="member">VkUtil::loadShaderModule</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filePath,<sp/>VkDevice<sp/>device,<sp/>VkShaderModule<sp/>*outShaderModule)<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>file(filePath,<sp/>std::ios::ate<sp/>|<sp/>std::ios::binary);</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
@@ -187,27 +187,27 @@
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
 <codeline lineno="46"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a10f1778c78c6b0d4c6b2b92b13b2191b" kindref="member">PipelineBuilder::clear</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a10f1778c78c6b0d4c6b2b92b13b2191b" kindref="member">PipelineBuilder::clear</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clear<sp/>all<sp/>structs</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref><sp/>=<sp/>{.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO<sp/>};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref><sp/>=<sp/>{.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_INPUT_ASSEMBLY_STATE_CREATE_INFO<sp/>};</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref><sp/>=<sp/>{.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO<sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref><sp/>=<sp/>{.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_RASTERIZATION_STATE_CREATE_INFO<sp/>};</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref><sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref><sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref><sp/>=<sp/>{<sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO<sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref><sp/>=<sp/>{<sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_MULTISAMPLE_STATE_CREATE_INFO<sp/>};</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a27a3416b889bde0dcce7c28bbb15ed46" kindref="member">_pipelineLayout</ref><sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a27a3416b889bde0dcce7c28bbb15ed46" kindref="member">_pipelineLayout</ref><sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref><sp/>=<sp/>{<sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO<sp/>};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref><sp/>=<sp/>{<sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_DEPTH_STENCIL_STATE_CREATE_INFO<sp/>};</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref><sp/>=<sp/>{<sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_RENDERING_CREATE_INFO<sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref><sp/>=<sp/>{<sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_RENDERING_CREATE_INFO<sp/>};</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.clear();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.clear();</highlight></codeline>
 <codeline lineno="66"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal">VkPipeline<sp/><ref refid="a00250_1ab68e37be1873638547e1912ee287a19e" kindref="member">PipelineBuilder::buildPipeline</ref>(VkDevice<sp/>device)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">VkPipeline<sp/><ref refid="a00245_1ab68e37be1873638547e1912ee287a19e" kindref="member">PipelineBuilder::buildPipeline</ref>(VkDevice<sp/>device)<sp/>{</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineViewportStateCreateInfo<sp/>viewportState<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>viewportState.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_VIEWPORT_STATE_CREATE_INFO;</highlight></codeline>
@@ -225,7 +225,7 @@
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>colorBlending.logicOpEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>colorBlending.logicOp<sp/>=<sp/>VK_LOGIC_OP_COPY;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>colorBlending.attachmentCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>colorBlending.pAttachments<sp/>=<sp/>&amp;<ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>colorBlending.pAttachments<sp/>=<sp/>&amp;<ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//completely<sp/>clear<sp/>VertexInputStateCreateInfo,<sp/>as<sp/>we<sp/>have<sp/>no<sp/>need<sp/>for<sp/>it</highlight><highlight class="normal"></highlight></codeline>
@@ -233,18 +233,18 @@
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>VkGraphicsPipelineCreateInfo<sp/>pipelineInfo<sp/>=<sp/>{.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_GRAPHICS_PIPELINE_CREATE_INFO};</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//connect<sp/>the<sp/>renderInfo<sp/>to<sp/>the<sp/>pNext<sp/>extension<sp/>mechanism</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pNext<sp/>=<sp/>&amp;<ref refid="a00250_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pNext<sp/>=<sp/>&amp;<ref refid="a00245_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.stageCount<sp/>=<sp/>(uint32_t)<ref refid="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.size();</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pStages<sp/>=<sp/><ref refid="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.data();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.stageCount<sp/>=<sp/>(uint32_t)<ref refid="a00245_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.size();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pStages<sp/>=<sp/><ref refid="a00245_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.data();</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pVertexInputState<sp/>=<sp/>&amp;_vertexInputInfo;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pInputAssemblyState<sp/>=<sp/>&amp;<ref refid="a00250_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pInputAssemblyState<sp/>=<sp/>&amp;<ref refid="a00245_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref>;</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pViewportState<sp/>=<sp/>&amp;viewportState;</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pRasterizationState<sp/>=<sp/>&amp;<ref refid="a00250_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pMultisampleState<sp/>=<sp/>&amp;<ref refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pRasterizationState<sp/>=<sp/>&amp;<ref refid="a00245_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pMultisampleState<sp/>=<sp/>&amp;<ref refid="a00245_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pColorBlendState<sp/>=<sp/>&amp;colorBlending;</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pDepthStencilState<sp/>=<sp/>&amp;<ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.layout<sp/>=<sp/><ref refid="a00250_1a27a3416b889bde0dcce7c28bbb15ed46" kindref="member">_pipelineLayout</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.pDepthStencilState<sp/>=<sp/>&amp;<ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>pipelineInfo.layout<sp/>=<sp/><ref refid="a00245_1a27a3416b889bde0dcce7c28bbb15ed46" kindref="member">_pipelineLayout</ref>;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>VkDynamicState<sp/>state[]<sp/>=<sp/>{VK_DYNAMIC_STATE_VIEWPORT,<sp/>VK_DYNAMIC_STATE_SCISSOR};</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"></highlight></codeline>
@@ -265,110 +265,110 @@
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="124"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a2228754d15d46e04d91c45974282716a" kindref="member">PipelineBuilder::setShaders</ref>(VkShaderModule<sp/>vertexShader,<sp/>VkShaderModule<sp/>fragmentShader)<sp/>{</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.clear();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a2228754d15d46e04d91c45974282716a" kindref="member">PipelineBuilder::setShaders</ref>(VkShaderModule<sp/>vertexShader,<sp/>VkShaderModule<sp/>fragmentShader)<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.clear();</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.push_back(</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00105_1af12b035c84d7a8af0915e626e68b29f0" kindref="member">VkInit::pipelineShaderStageCreateInfo</ref>(VK_SHADER_STAGE_VERTEX_BIT,<sp/>vertexShader)</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.push_back(</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00102_1af12b035c84d7a8af0915e626e68b29f0" kindref="member">VkInit::pipelineShaderStageCreateInfo</ref>(VK_SHADER_STAGE_VERTEX_BIT,<sp/>vertexShader)</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.push_back(</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00105_1af12b035c84d7a8af0915e626e68b29f0" kindref="member">VkInit::pipelineShaderStageCreateInfo</ref>(VK_SHADER_STAGE_FRAGMENT_BIT,<sp/>fragmentShader)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>.push_back(</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00102_1af12b035c84d7a8af0915e626e68b29f0" kindref="member">VkInit::pipelineShaderStageCreateInfo</ref>(VK_SHADER_STAGE_FRAGMENT_BIT,<sp/>fragmentShader)</highlight></codeline>
 <codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
 <codeline lineno="136"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1ac64ce97ba92f9226bbb11ce387b52661" kindref="member">PipelineBuilder::setInputToplogy</ref>(VkPrimitiveTopology<sp/>topology)<sp/>{</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref>.topology<sp/>=<sp/>topology;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1ac64ce97ba92f9226bbb11ce387b52661" kindref="member">PipelineBuilder::setInputToplogy</ref>(VkPrimitiveTopology<sp/>topology)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref>.topology<sp/>=<sp/>topology;</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"></highlight></codeline>
 <codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>who<sp/>needs<sp/>this<sp/>anyways?</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref>.primitiveRestartEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref>.primitiveRestartEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
 <codeline lineno="143"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a692362aaf0f61503d00b0f4ff5cfb134" kindref="member">PipelineBuilder::setPolygonMode</ref>(VkPolygonMode<sp/>mode)<sp/>{</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>.polygonMode<sp/>=<sp/>mode;</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>.lineWidth<sp/>=<sp/>1.f;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a692362aaf0f61503d00b0f4ff5cfb134" kindref="member">PipelineBuilder::setPolygonMode</ref>(VkPolygonMode<sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>.polygonMode<sp/>=<sp/>mode;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>.lineWidth<sp/>=<sp/>1.f;</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"></highlight></codeline>
 <codeline lineno="149"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a586cf4dd2fa96f3a3e546ed5ee9aae0d" kindref="member">PipelineBuilder::setMultisamplingNone</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.sampleShadingEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a586cf4dd2fa96f3a3e546ed5ee9aae0d" kindref="member">PipelineBuilder::setMultisamplingNone</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.sampleShadingEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.rasterizationSamples<sp/>=<sp/>VK_SAMPLE_COUNT_1_BIT;</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.minSampleShading<sp/>=<sp/>1.0f;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.pSampleMask<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.rasterizationSamples<sp/>=<sp/>VK_SAMPLE_COUNT_1_BIT;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.minSampleShading<sp/>=<sp/>1.0f;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.pSampleMask<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.alphaToCoverageEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.alphaToOneEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.alphaToCoverageEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>.alphaToOneEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
 <codeline lineno="160"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a647ed08fe336a4e19382e20f6dfe8c51" kindref="member">PipelineBuilder::disableBlending</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorWriteMask<sp/>=<sp/>VK_COLOR_COMPONENT_R_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_G_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_B_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_A_BIT;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a647ed08fe336a4e19382e20f6dfe8c51" kindref="member">PipelineBuilder::disableBlending</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorWriteMask<sp/>=<sp/>VK_COLOR_COMPONENT_R_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_G_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_B_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_A_BIT;</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.blendEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.blendEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
 <codeline lineno="166"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="167"><highlight class="normal"></highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a98e8a722b30d50f7f9e224172a768061" kindref="member">PipelineBuilder::setColorAttachmentFormat</ref>(VkFormat<sp/>format)<sp/>{</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a8a163243157a769336a712d8df4fd2ff" kindref="member">_colorAttachmentformat</ref><sp/>=<sp/>format;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a98e8a722b30d50f7f9e224172a768061" kindref="member">PipelineBuilder::setColorAttachmentFormat</ref>(VkFormat<sp/>format)<sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a8a163243157a769336a712d8df4fd2ff" kindref="member">_colorAttachmentformat</ref><sp/>=<sp/>format;</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>.colorAttachmentCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>.pColorAttachmentFormats<sp/>=<sp/>&amp;<ref refid="a00250_1a8a163243157a769336a712d8df4fd2ff" kindref="member">_colorAttachmentformat</ref>;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>.colorAttachmentCount<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>.pColorAttachmentFormats<sp/>=<sp/>&amp;<ref refid="a00245_1a8a163243157a769336a712d8df4fd2ff" kindref="member">_colorAttachmentformat</ref>;</highlight></codeline>
 <codeline lineno="173"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a8e9c83acd93cfcb0e9e21024d75c27cd" kindref="member">PipelineBuilder::setDepthFormat</ref>(VkFormat<sp/>format)<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a8e9c83acd93cfcb0e9e21024d75c27cd" kindref="member">PipelineBuilder::setDepthFormat</ref>(VkFormat<sp/>format)<sp/>{</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>.depthAttachmentFormat<sp/>=<sp/>format;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>.depthAttachmentFormat<sp/>=<sp/>format;</highlight></codeline>
 <codeline lineno="178"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a965014baa4b56a3ad6c6c8981c2b001e" kindref="member">PipelineBuilder::disableDepthtest</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthWriteEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthCompareOp<sp/>=<sp/>VK_COMPARE_OP_NEVER;</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthBoundsTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.stencilTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.front<sp/>=<sp/>{};</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.back<sp/>=<sp/>{};</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.minDepthBounds<sp/>=<sp/>0.f;</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.maxDepthBounds=<sp/>1.f;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a965014baa4b56a3ad6c6c8981c2b001e" kindref="member">PipelineBuilder::disableDepthtest</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthWriteEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthCompareOp<sp/>=<sp/>VK_COMPARE_OP_NEVER;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthBoundsTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.stencilTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.front<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.back<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.minDepthBounds<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.maxDepthBounds=<sp/>1.f;</highlight></codeline>
 <codeline lineno="190"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"></highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a4bba978feda490ecd639e05cf5df0dad" kindref="member">PipelineBuilder::setCullMode</ref>(VkCullModeFlags<sp/>cullMode,<sp/>VkFrontFace<sp/>frontFace)<sp/>{</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>.cullMode<sp/>=<sp/>cullMode;</highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>.frontFace<sp/>=<sp/>frontFace;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a4bba978feda490ecd639e05cf5df0dad" kindref="member">PipelineBuilder::setCullMode</ref>(VkCullModeFlags<sp/>cullMode,<sp/>VkFrontFace<sp/>frontFace)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>.cullMode<sp/>=<sp/>cullMode;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>.frontFace<sp/>=<sp/>frontFace;</highlight></codeline>
 <codeline lineno="195"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1a4ebe0b6e3f37ac498322d7dda1ec8a2d" kindref="member">PipelineBuilder::enableDepthtest</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>depthWriteEnable,<sp/>VkCompareOp<sp/>op)<sp/>{</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthTestEnable<sp/>=<sp/>VK_TRUE;</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthWriteEnable<sp/>=<sp/>depthWriteEnable;</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthCompareOp<sp/>=<sp/>op;</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthBoundsTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.stencilTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
-<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.front<sp/>=<sp/>{};</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.back<sp/>=<sp/>{};</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.minDepthBounds<sp/>=<sp/>0.f;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.maxDepthBounds<sp/>=<sp/>1.f;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1a4ebe0b6e3f37ac498322d7dda1ec8a2d" kindref="member">PipelineBuilder::enableDepthtest</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>depthWriteEnable,<sp/>VkCompareOp<sp/>op)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthTestEnable<sp/>=<sp/>VK_TRUE;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthWriteEnable<sp/>=<sp/>depthWriteEnable;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthCompareOp<sp/>=<sp/>op;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.depthBoundsTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.stencilTestEnable<sp/>=<sp/>VK_FALSE;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.front<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.back<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.minDepthBounds<sp/>=<sp/>0.f;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>.maxDepthBounds<sp/>=<sp/>1.f;</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"></highlight></codeline>
 <codeline lineno="208"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1aa8a8b5d264a156de7a8beea3508723c8" kindref="member">PipelineBuilder::enableBlendingAdditive</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorWriteMask<sp/>=<sp/>VK_COLOR_COMPONENT_R_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_G_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_B_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_A_BIT;</highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.blendEnable<sp/>=<sp/>VK_TRUE;</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.srcColorBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ONE;</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.dstColorBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_DST_ALPHA;</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorBlendOp<sp/>=<sp/>VK_BLEND_OP_ADD;</highlight></codeline>
-<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.srcAlphaBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ONE;</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.dstAlphaBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ZERO;</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.alphaBlendOp<sp/>=<sp/>VK_BLEND_OP_ADD;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1aa8a8b5d264a156de7a8beea3508723c8" kindref="member">PipelineBuilder::enableBlendingAdditive</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorWriteMask<sp/>=<sp/>VK_COLOR_COMPONENT_R_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_G_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_B_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_A_BIT;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.blendEnable<sp/>=<sp/>VK_TRUE;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.srcColorBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ONE;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.dstColorBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_DST_ALPHA;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorBlendOp<sp/>=<sp/>VK_BLEND_OP_ADD;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.srcAlphaBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ONE;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.dstAlphaBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ZERO;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.alphaBlendOp<sp/>=<sp/>VK_BLEND_OP_ADD;</highlight></codeline>
 <codeline lineno="219"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00250_1adbe69d479e856129f73056f6db4b4ebf" kindref="member">PipelineBuilder::enableBlendingAlphablend</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorWriteMask<sp/>=<sp/>VK_COLOR_COMPONENT_R_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_G_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_B_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_A_BIT;</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.blendEnable<sp/>=<sp/>VK_TRUE;</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.srcColorBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ONE_MINUS_DST_ALPHA;</highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.dstColorBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_DST_ALPHA;</highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorBlendOp<sp/>=<sp/>VK_BLEND_OP_ADD;</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.srcAlphaBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ONE;</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.dstAlphaBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ZERO;</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.alphaBlendOp<sp/>=<sp/>VK_BLEND_OP_ADD;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00245_1adbe69d479e856129f73056f6db4b4ebf" kindref="member">PipelineBuilder::enableBlendingAlphablend</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorWriteMask<sp/>=<sp/>VK_COLOR_COMPONENT_R_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_G_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_B_BIT<sp/>|<sp/>VK_COLOR_COMPONENT_A_BIT;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.blendEnable<sp/>=<sp/>VK_TRUE;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.srcColorBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ONE_MINUS_DST_ALPHA;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.dstColorBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_DST_ALPHA;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.colorBlendOp<sp/>=<sp/>VK_BLEND_OP_ADD;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.srcAlphaBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ONE;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.dstAlphaBlendFactor<sp/>=<sp/>VK_BLEND_FACTOR_ZERO;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00245_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>.alphaBlendOp<sp/>=<sp/>VK_BLEND_OP_ADD;</highlight></codeline>
 <codeline lineno="230"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="231"><highlight class="normal"></highlight></codeline>
 <codeline lineno="232"><highlight class="normal"></highlight></codeline>

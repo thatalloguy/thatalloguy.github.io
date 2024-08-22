@@ -94,115 +94,11 @@ $(function(){initNavTree('a00095.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">world.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;bitset&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-</div>
+
 <p><a href="a00095_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00322.html">catos::EntityInfo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00326.html">catos::ComponentPool</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00330.html">catos::World</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00101" id="r_a00101"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html">catos</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00109" id="r_a00109"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html">catos::EntityUtils</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00110" id="r_a00110"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html">catos::Component</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a6d8c910a1fdb6d4762a05f7250e64322" id="r_a6d8c910a1fdb6d4762a05f7250e64322"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6d8c910a1fdb6d4762a05f7250e64322">MAX_COMPONENTS</a>&#160;&#160;&#160;32</td></tr>
-<tr class="separator:a6d8c910a1fdb6d4762a05f7250e64322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b7e155f796ed5e7b49b0f44867135ee" id="r_a0b7e155f796ed5e7b49b0f44867135ee"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b7e155f796ed5e7b49b0f44867135ee">MAX_ENTITIES</a>&#160;&#160;&#160;100</td></tr>
-<tr class="separator:a0b7e155f796ed5e7b49b0f44867135ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf65ae7e548af7032d38f564cc5548c2" id="r_adf65ae7e548af7032d38f564cc5548c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf65ae7e548af7032d38f564cc5548c2">INVALID_ENTITY</a>&#160;&#160;&#160;create_entity_id(EntityIndex(-1), 0)</td></tr>
-<tr class="separator:adf65ae7e548af7032d38f564cc5548c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
-Typedefs</h2></td></tr>
-<tr class="memitem:ad46e4a899856a996f751ea2c4a1edf61" id="r_ad46e4a899856a996f751ea2c4a1edf61"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html#ad46e4a899856a996f751ea2c4a1edf61">catos::EntityIndex</a></td></tr>
-<tr class="separator:ad46e4a899856a996f751ea2c4a1edf61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a805105b8a0bfeee0ca9c0d2aaa10c91c" id="r_a805105b8a0bfeee0ca9c0d2aaa10c91c"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html#a805105b8a0bfeee0ca9c0d2aaa10c91c">catos::EntityVersion</a></td></tr>
-<tr class="separator:a805105b8a0bfeee0ca9c0d2aaa10c91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ae0fcdee257ea20ef85ba0a2ea80957" id="r_a8ae0fcdee257ea20ef85ba0a2ea80957"><td class="memItemLeft" align="right" valign="top">typedef unsigned long long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html#a8ae0fcdee257ea20ef85ba0a2ea80957">catos::EntityId</a></td></tr>
-<tr class="separator:a8ae0fcdee257ea20ef85ba0a2ea80957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae151ba2b3dceaf31a210e55391499bf3" id="r_ae151ba2b3dceaf31a210e55391499bf3"><td class="memItemLeft" align="right" valign="top">typedef std::bitset&lt; <a class="el" href="#a6d8c910a1fdb6d4762a05f7250e64322">MAX_COMPONENTS</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html#ae151ba2b3dceaf31a210e55391499bf3">catos::ComponentMask</a></td></tr>
-<tr class="separator:ae151ba2b3dceaf31a210e55391499bf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a7f7491ca6642382c71130a825ee91b1c" id="r_a7f7491ca6642382c71130a825ee91b1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00101.html#a8ae0fcdee257ea20ef85ba0a2ea80957">EntityId</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a7f7491ca6642382c71130a825ee91b1c">catos::EntityUtils::create_entity_id</a> (<a class="el" href="a00101.html#ad46e4a899856a996f751ea2c4a1edf61">EntityIndex</a> index, <a class="el" href="a00101.html#a805105b8a0bfeee0ca9c0d2aaa10c91c">EntityVersion</a> version)</td></tr>
-<tr class="separator:a7f7491ca6642382c71130a825ee91b1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a978cd4122efd37529a0b31688d5392d3" id="r_a978cd4122efd37529a0b31688d5392d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00101.html#ad46e4a899856a996f751ea2c4a1edf61">EntityIndex</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a978cd4122efd37529a0b31688d5392d3">catos::EntityUtils::get_entity_index</a> (<a class="el" href="a00101.html#a8ae0fcdee257ea20ef85ba0a2ea80957">EntityId</a> id)</td></tr>
-<tr class="separator:a978cd4122efd37529a0b31688d5392d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a878d770b925762e6bd9a643e8ee9eb68" id="r_a878d770b925762e6bd9a643e8ee9eb68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00101.html#a805105b8a0bfeee0ca9c0d2aaa10c91c">EntityVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a878d770b925762e6bd9a643e8ee9eb68">catos::EntityUtils::get_entity_version</a> (<a class="el" href="a00101.html#a8ae0fcdee257ea20ef85ba0a2ea80957">EntityId</a> id)</td></tr>
-<tr class="separator:a878d770b925762e6bd9a643e8ee9eb68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581cc1269c80ccf4eca5a03446e1d6dc" id="r_a581cc1269c80ccf4eca5a03446e1d6dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html#a581cc1269c80ccf4eca5a03446e1d6dc">catos::EntityUtils::is_entity_valid</a> (<a class="el" href="a00101.html#a8ae0fcdee257ea20ef85ba0a2ea80957">EntityId</a> id)</td></tr>
-<tr class="separator:a581cc1269c80ccf4eca5a03446e1d6dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="adf65ae7e548af7032d38f564cc5548c2" name="adf65ae7e548af7032d38f564cc5548c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf65ae7e548af7032d38f564cc5548c2">&#9670;&#160;</a></span>INVALID_ENTITY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define INVALID_ENTITY&#160;&#160;&#160;create_entity_id(EntityIndex(-1), 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6d8c910a1fdb6d4762a05f7250e64322" name="a6d8c910a1fdb6d4762a05f7250e64322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d8c910a1fdb6d4762a05f7250e64322">&#9670;&#160;</a></span>MAX_COMPONENTS</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_COMPONENTS&#160;&#160;&#160;32</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0b7e155f796ed5e7b49b0f44867135ee" name="a0b7e155f796ed5e7b49b0f44867135ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b7e155f796ed5e7b49b0f44867135ee">&#9670;&#160;</a></span>MAX_ENTITIES</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAX_ENTITIES&#160;&#160;&#160;100</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <p>
