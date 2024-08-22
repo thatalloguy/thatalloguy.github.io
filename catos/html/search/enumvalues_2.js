@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['private_0',['Private',['../a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aa47f9082fc380ca62d531096aa1d110f1',1,'catos']]],
-  ['protected_1',['Protected',['../a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aa56f0605c9795b173abd2e34fab7fc164',1,'catos']]],
-  ['public_2',['Public',['../a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aa3d067bedfe2f4677470dd6ccf64d05ed',1,'catos']]]
+  ['transparent_0',['Transparent',['../a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63',1,'VkTypes.h']]]
 ];

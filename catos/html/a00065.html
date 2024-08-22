@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): Member List</title>
+<title>Catos Engine (Source): VkLoader.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectalign">
    <div id="projectname">Catos Engine (Source)<span id="projectnumber">&#160;0.0.1</span>
    </div>
-   <div id="projectbrief">Lightweight ECS Game engine</div>
+   <div id="projectbrief">Lightweight Game engine</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a00068.html',''); initResizable(); });
+$(function(){initNavTree('a00065.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,18 +94,80 @@ $(function(){initNavTree('a00068.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">catos::Method Member List</div></div>
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">VkLoader.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="a00074_source.html">VkTypes.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00041_source.html">VkDescriptors.h</a>&quot;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+<code>#include &lt;filesystem&gt;</code><br />
+<code>#include &lt;glm/gtx/quaternion.hpp&gt;</code><br />
+<code>#include &lt;fastgltf/glm_element_traits.hpp&gt;</code><br />
+<code>#include &lt;fastgltf/tools.hpp&gt;</code><br />
+<code>#include &lt;fastgltf/core.hpp&gt;</code><br />
+<code>#include &lt;fastgltf/util.hpp&gt;</code><br />
+</div>
+<p><a href="a00065_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html">IRenderable</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html">GLTFMaterial</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00234.html">GeoSurface</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html">MeshAsset</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html">Node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">LoadedGLTF</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00106" id="r_a00106"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html">VkLoader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:abd75661fe7969e19439052a5f69ba5d1" id="r_abd75661fe7969e19439052a5f69ba5d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abd75661fe7969e19439052a5f69ba5d1">GLM_ENABLE_EXPERIMENTAL</a></td></tr>
+<tr class="separator:abd75661fe7969e19439052a5f69ba5d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a442b1c7be484b0f1b4b53f176d1aaa0f" id="r_a442b1c7be484b0f1b4b53f176d1aaa0f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::vector&lt; std::shared_ptr&lt; <a class="el" href="a00238.html">MeshAsset</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a442b1c7be484b0f1b4b53f176d1aaa0f">VkLoader::loadGltfMeshes</a> (<a class="el" href="a00222.html">VulkanEngine</a> *engine, std::filesystem::path filePath)</td></tr>
+<tr class="separator:a442b1c7be484b0f1b4b53f176d1aaa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dc041b91ac2b9f98dde07fd06dedfb9" id="r_a5dc041b91ac2b9f98dde07fd06dedfb9"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00246.html">LoadedGLTF</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a5dc041b91ac2b9f98dde07fd06dedfb9">VkLoader::loadGltf</a> (<a class="el" href="a00222.html">VulkanEngine</a> *engine, std::string_view filePath)</td></tr>
+<tr class="separator:a5dc041b91ac2b9f98dde07fd06dedfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194340dfa7859815574193cea66f2371" id="r_a194340dfa7859815574193cea66f2371"><td class="memItemLeft" align="right" valign="top">VkFilter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a194340dfa7859815574193cea66f2371">VkLoader::extractFilter</a> (fastgltf::Filter filter)</td></tr>
+<tr class="separator:a194340dfa7859815574193cea66f2371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39631db68d0c201f90fbfd1a48264113" id="r_a39631db68d0c201f90fbfd1a48264113"><td class="memItemLeft" align="right" valign="top">VkSamplerMipmapMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#a39631db68d0c201f90fbfd1a48264113">VkLoader::extractMipmapMode</a> (fastgltf::Filter filter)</td></tr>
+<tr class="separator:a39631db68d0c201f90fbfd1a48264113"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9a802f8df4fdc64b9d8c76222147ae2" id="r_ae9a802f8df4fdc64b9d8c76222147ae2"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="a00294.html">AllocatedImage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00106.html#ae9a802f8df4fdc64b9d8c76222147ae2">VkLoader::loadImage</a> (<a class="el" href="a00222.html">VulkanEngine</a> *engine, fastgltf::Asset &amp;asset, fastgltf::Image &amp;image)</td></tr>
+<tr class="separator:ae9a802f8df4fdc64b9d8c76222147ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="abd75661fe7969e19439052a5f69ba5d1" name="abd75661fe7969e19439052a5f69ba5d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd75661fe7969e19439052a5f69ba5d1">&#9670;&#160;</a></span>GLM_ENABLE_EXPERIMENTAL</h2>
 
-<p>This is the complete list of members for <a class="el" href="a00068.html">catos::Method</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00068.html#a5621be029379a77b80f5fb6f7e91cf88">desc</a></td><td class="entry"><a class="el" href="a00068.html">catos::Method</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00068.html#a5250d5fb0e0066d91dd83ea80f1fb15c">invoke_function</a>(void *instance, Args... args)</td><td class="entry"><a class="el" href="a00068.html">catos::Method</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00068.html#a6563134c767668a602c02cd0ec13d610">invoke_function</a>(void *instance, Args... args)</td><td class="entry"><a class="el" href="a00068.html">catos::Method</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00068.html#a1cc23fc523ecd32b6f4b0030be1edcbc">Method</a>(ReturnType(ClassType::*method)(Args...))</td><td class="entry"><a class="el" href="a00068.html">catos::Method</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00068.html#a0b06cd150b4dc8a0b35d356d6f134442">returnName</a></td><td class="entry"><a class="el" href="a00068.html">catos::Method</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GLM_ENABLE_EXPERIMENTAL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

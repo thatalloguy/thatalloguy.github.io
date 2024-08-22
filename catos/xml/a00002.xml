@@ -1,72 +1,153 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00002" kind="file" language="Markdown">
-    <compoundname>README.md</compoundname>
+  <compounddef id="a00002" kind="file" language="C++">
+    <compoundname>application.cpp</compoundname>
+    <includes refid="a00005" local="yes">core/application.h</includes>
+    <includes refid="a00011" local="yes">core/registry.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>application.cpp</label>
+        <link refid="a00002"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>core/application.h</label>
+        <link refid="a00005"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>core/registry.h</label>
+        <link refid="a00011"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>type_utils.h</label>
+        <link refid="a00017"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>types.h</label>
+        <link refid="a00014"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>any</label>
+      </node>
+      <node id="13">
+        <label>deque</label>
+      </node>
+      <node id="14">
+        <label>fstream</label>
+      </node>
+      <node id="12">
+        <label>functional</label>
+      </node>
+      <node id="9">
+        <label>iostream</label>
+      </node>
+      <node id="11">
+        <label>mono/metadata/loader.h</label>
+      </node>
+      <node id="16">
+        <label>regex</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="15">
+        <label>typeindex</label>
+      </node>
+      <node id="6">
+        <label>typeinfo</label>
+      </node>
+      <node id="7">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">#<sp/>Catos<sp/>Engine</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">######<sp/>modern<sp/>lightweight<sp/>ECS<sp/>cpp<sp/>game<sp/>engine</highlight></codeline>
-<codeline></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">#</highlight></codeline>
-<codeline><highlight class="normal">####<sp/>Planned<sp/>Features<sp/>/<sp/>ToDo</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">-<sp/>[x]<sp/>Reflection<sp/>system</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[<sp/>]<sp/>~~constructors~~</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Methods</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Properties</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>[x]<sp/>EC.</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Entity<sp/>Creation.</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Central<sp/>system<sp/>for<sp/>handling<sp/>entities.</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Base<sp/>component</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">-<sp/>[<sp/>]<sp/>Python<sp/>scripting<sp/>(via<sp/>pocketPy)</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Custom<sp/>Component<sp/>creation<sp/>(in<sp/>python)</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[<sp/>]<sp/>get<sp/>Info<sp/>from<sp/>cpp</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>-<sp/>[<sp/>]<sp/>change<sp/>info<sp/>that<sp/>affects<sp/>cpp<sp/>(in<sp/>python)</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>[<sp/>]<sp/>Resource<sp/>manager</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>[<sp/>]<sp/>Dynamic<sp/>Editor<sp/>(via<sp/>the<sp/>reflection)</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>[<sp/>]<sp/>Atomus<sp/>implementation.</highlight></codeline>
-<codeline><highlight class="normal">#</highlight></codeline>
-<codeline><highlight class="normal">###<sp/>EC<sp/>system<sp/>blueprint.</highlight></codeline>
-<codeline><highlight class="normal">![image](https://github.com/thatalloguy/Catos/assets/51132972/f8a23b4e-8511-40bb-9648-cb252d856b83)</highlight></codeline>
-<codeline><highlight class="normal">#</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">###<sp/>Rendering<sp/>with</highlight></codeline>
-<codeline><highlight class="normal">https://github.com/thatalloguy/Atomus</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">#####<sp/>Ideas<sp/>for<sp/>the<sp/>engine</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">######<sp/>-<sp/>Vulkan<sp/>renderer<sp/>(+<sp/>opengl):</highlight></codeline>
-<codeline><highlight class="normal">After<sp/>ive<sp/>finished<sp/>the<sp/>asset<sp/>manager<sp/>i<sp/>will<sp/>continue<sp/>dev<sp/>on<sp/>my<sp/>personal<sp/>vulkan<sp/>renderer.</highlight></codeline>
-<codeline><highlight class="normal">After<sp/>that<sp/>I<sp/>am<sp/>hoping<sp/>to<sp/>write<sp/>a<sp/>RHI<sp/>so<sp/>that<sp/>i<sp/>can<sp/>support<sp/>multiple<sp/>graphic<sp/>api&apos;s.</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>UPDATE:<sp/>I<sp/>finished<sp/>Atomus<sp/>(vulkan<sp/>renderer)<sp/>and<sp/>i<sp/>dont<sp/>think<sp/>il<sp/>create<sp/>an<sp/>RHI<sp/>anytime<sp/>soon<sp/>😅.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">######<sp/>~~-<sp/>C#<sp/>as<sp/>scripting<sp/>lang~~<sp/>(Its<sp/>python<sp/>now)</highlight></codeline>
-<codeline><highlight class="normal">I<sp/>really<sp/>like<sp/>C#<sp/>and<sp/>i<sp/>would<sp/>like<sp/>to<sp/>have<sp/>it<sp/>as<sp/>my<sp/>scripting<sp/>lang.</highlight></codeline>
-<codeline><highlight class="normal">However<sp/>ive<sp/>learned<sp/>that<sp/>implementing<sp/>C#<sp/>is<sp/>a<sp/>PITA,<sp/>but<sp/>im<sp/>hoping<sp/>that<sp/>my<sp/>new<sp/>reflection<sp/>system<sp/>will<sp/>make<sp/>my<sp/>life<sp/>easier.</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>UPDATE:<sp/>I<sp/>started<sp/>on<sp/>a<sp/>pocketpy<sp/><sp/>implementation,<sp/>will<sp/>not<sp/>be<sp/>using<sp/>C#.</highlight></codeline>
-<codeline><highlight class="normal">######<sp/>-<sp/>Physics<sp/>engine</highlight></codeline>
-<codeline><highlight class="normal">In<sp/>the<sp/>past<sp/>ive<sp/>used<sp/>PhysX,<sp/>bullet<sp/>and<sp/>reactphysics3d.<sp/>But<sp/>i<sp/>dislike<sp/>all<sp/>3.</highlight></codeline>
-<codeline><highlight class="normal">I<sp/>have<sp/>heard<sp/>lots<sp/>of<sp/>good<sp/>stuff<sp/>about<sp/>Joltphysics<sp/>and<sp/>i<sp/>might<sp/>give<sp/>it<sp/>a<sp/>try<sp/>for<sp/>this<sp/>engine.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">######<sp/>-<sp/>Audio<sp/>Engine</highlight></codeline>
-<codeline><highlight class="normal">Ive<sp/>never<sp/>really<sp/>done<sp/>much<sp/>with<sp/>audio,<sp/>but<sp/>ive<sp/>seen<sp/>the<sp/>steam<sp/>audio<sp/>api<sp/>and<sp/>im<sp/>hoping<sp/>to<sp/>try<sp/>it!</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">######<sp/>-<sp/>Editor<sp/>GUI</highlight></codeline>
-<codeline><highlight class="normal">For<sp/>the<sp/>editor<sp/>il<sp/>be<sp/>using<sp/>IMGUI<sp/>since<sp/>ive<sp/>lots<sp/>of<sp/>experience<sp/>with<sp/>it.</highlight></codeline>
-<codeline><highlight class="normal">However<sp/>this<sp/>time<sp/>around<sp/>i<sp/>would<sp/>like<sp/>to<sp/>modify<sp/>the<sp/>feel<sp/>of<sp/>imgui.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">######<sp/>-<sp/>Game<sp/>GUI</highlight></codeline>
-<codeline><highlight class="normal">At<sp/>this<sp/>point<sp/>what<sp/>i<sp/>will<sp/>use<sp/>is<sp/>far<sp/>away,<sp/>but<sp/>i<sp/>would<sp/>either<sp/>want<sp/>something<sp/>to<sp/>functions<sp/>like<sp/>remUI.</highlight></codeline>
-<codeline><highlight class="normal">But<sp/>i<sp/>could<sp/>also<sp/>end<sp/>up<sp/>writing<sp/>my<sp/>own<sp/>(IF<sp/>i<sp/>were<sp/>to<sp/>write<sp/>my<sp/>own<sp/>GUI<sp/>lib<sp/>the<sp/>editor<sp/>will<sp/>use<sp/>that<sp/>instead<sp/>of<sp/>imgui).</highlight></codeline>
-<codeline></codeline>
-<codeline></codeline>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>5/5/2024.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00005" kindref="compound">core/application.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00011" kindref="compound">core/registry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="a00118_1a20c936adde996793bc36c33650b12a23" kindref="member">catos::App::App</ref>(<ref refid="a00114" kindref="compound">AppCreationInfo</ref>*<sp/>creationInfo)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>_info<sp/>=<sp/>creationInfo;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>init_registry();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_alive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="a00118_1ae2beda1820f2fb8b3d2b690e9cd7742b" kindref="member">catos::App::~App</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>registry<sp/>=<sp/>get&lt;Registry&gt;();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>registry;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>catos::App::init_registry()<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>bind&lt;Registry&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="a00142" kindref="compound">Registry</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>registry<sp/>=<sp/>*get&lt;Registry&gt;();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>registry.gen_cs_bindings_file();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00118_1ac7ee8e55850651b7549a64789904ea62" kindref="member">catos::App::is_alive</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_is_alive;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="a00114" kindref="compound">catos::AppCreationInfo</ref><sp/>*<ref refid="a00118_1a4f1ce2929d6062c9d27921d6ed50faa5" kindref="member">catos::App::getAppInfo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_info;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/allos/source/Catos/docs/README.md"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp"/>
   </compounddef>
 </doxygen>

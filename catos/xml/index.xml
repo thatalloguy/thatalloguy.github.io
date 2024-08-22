@@ -1,10 +1,697 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="en-US">
-  <compound refid="a00002" kind="file"><name>README.md</name>
+  <compound refid="a00262" kind="struct"><name>AllocatedBuffer</name>
+    <member refid="a00262_1afd80ecc9bf0b9e9fbe2cd70c81def540" kind="variable"><name>buffer</name></member>
+    <member refid="a00262_1aad4979df72f7e827fd80171e42bfb463" kind="variable"><name>allocation</name></member>
+    <member refid="a00262_1ae8f702ce1eb0772813fdb282bbcf5083" kind="variable"><name>info</name></member>
+  </compound>
+  <compound refid="a00294" kind="struct"><name>AllocatedImage</name>
+    <member refid="a00294_1a13e4a58bd70b09a3743df9effc0dc9f6" kind="variable"><name>image</name></member>
+    <member refid="a00294_1ad124234921b26ec7e9b0cc5f603d5726" kind="variable"><name>imageView</name></member>
+    <member refid="a00294_1a6374bbe549aabc16f21c58b717329028" kind="variable"><name>allocation</name></member>
+    <member refid="a00294_1a3c0016e1c5c44bb21f336486da7c9d66" kind="variable"><name>imageExtent</name></member>
+    <member refid="a00294_1ae4ccf662c664f3b9bdafa7459b746d8b" kind="variable"><name>imageFormat</name></member>
+  </compound>
+  <compound refid="a00118" kind="class"><name>catos::App</name>
+    <member refid="a00118_1ade360a10f6c158d74d0fdd9ed1659672" kind="variable"><name>_info</name></member>
+    <member refid="a00118_1a86114b77047af86111dda9b2dcdc25a7" kind="variable"><name>_is_alive</name></member>
+    <member refid="a00118_1ae9535fe5bd3e21e1ee14b5fca23695c9" kind="variable"><name>_instance_register</name></member>
+    <member refid="a00118_1a20c936adde996793bc36c33650b12a23" kind="function"><name>App</name></member>
+    <member refid="a00118_1ae2beda1820f2fb8b3d2b690e9cd7742b" kind="function"><name>~App</name></member>
+    <member refid="a00118_1ac7ee8e55850651b7549a64789904ea62" kind="function"><name>is_alive</name></member>
+    <member refid="a00118_1a5bd26fdeb5142a62fe81620461de1007" kind="function"><name>bind</name></member>
+    <member refid="a00118_1a2d9f5a50cb0cf5a883d77d27068e3ad2" kind="function"><name>get</name></member>
+    <member refid="a00118_1a4f1ce2929d6062c9d27921d6ed50faa5" kind="function"><name>getAppInfo</name></member>
+    <member refid="a00118_1aa95c160232eb5fe780bec480c5bea272" kind="function"><name>init_registry</name></member>
+  </compound>
+  <compound refid="a00114" kind="struct"><name>catos::AppCreationInfo</name>
+    <member refid="a00114_1aa955f138a405ff0d97ca029e5a4bf4df" kind="variable"><name>version</name></member>
+    <member refid="a00114_1a2e1442b7894e8f50cf02926c312a83b4" kind="variable"><name>applicationTitle</name></member>
+  </compound>
+  <compound refid="a00258" kind="struct"><name>Bounds</name>
+    <member refid="a00258_1ac18b521fb51a535fa927dc590b1a4652" kind="variable"><name>origin</name></member>
+    <member refid="a00258_1ad29877186534ef5c062724335c443df0" kind="variable"><name>sphereRadius</name></member>
+    <member refid="a00258_1a65c365448edaaf81a9fd959272e77e8e" kind="variable"><name>extents</name></member>
+  </compound>
+  <compound refid="a00158" kind="class"><name>Camera</name>
+    <member refid="a00158_1a53f64d060f4d084da096f64c99a459cf" kind="variable"><name>velocity</name></member>
+    <member refid="a00158_1a04b5db2c530d8630660e8cfb93a4b3b5" kind="variable"><name>position</name></member>
+    <member refid="a00158_1ab56fcb39f580e8d2159cf2c9c6d9a65a" kind="variable"><name>pitch</name></member>
+    <member refid="a00158_1ad76701b22630f2df28a0ae15f0497a3a" kind="variable"><name>yaw</name></member>
+    <member refid="a00158_1a08d9c6119a859e664d74ca07db4fe3d3" kind="variable"><name>roll</name></member>
+    <member refid="a00158_1aff7393c9cfbccd7e369091f00008da93" kind="variable"><name>fov</name></member>
+    <member refid="a00158_1ad96efd3e1e4ec33dddb1d25f05d02ff2" kind="variable"><name>near</name></member>
+    <member refid="a00158_1a9f30b77edf6485e001a98d21ff5f17fe" kind="variable"><name>far</name></member>
+    <member refid="a00158_1abe6e05381b53e2d9b4d522759338183c" kind="variable"><name>lastY</name></member>
+    <member refid="a00158_1a619f4bf68c48a4b5ce09e5c6d1e42eca" kind="variable"><name>lastX</name></member>
+    <member refid="a00158_1a5569ca5967e01d3344fbf6aba36d9820" kind="function"><name>getViewMatrix</name></member>
+    <member refid="a00158_1aab60f6efb69f691f2036b5de5897f8a9" kind="function"><name>getRotationMatrix</name></member>
+    <member refid="a00158_1a4387bf00e77f807c531be49e24dbd834" kind="function"><name>processEvent</name></member>
+    <member refid="a00158_1a42cda7239981a5618660d04bd5893556" kind="function"><name>update</name></member>
+  </compound>
+  <compound refid="a00326" kind="struct"><name>catos::ComponentPool</name>
+    <member refid="a00326_1abbab6998563a7cb81b8ffbd361cd0268" kind="variable"><name>pData</name></member>
+    <member refid="a00326_1a3b4c93bcd17b822bed21cc7f38a872bd" kind="variable"><name>elementSize</name></member>
+    <member refid="a00326_1a62386780291a536aa97b9385d1095845" kind="function"><name>ComponentPool</name></member>
+    <member refid="a00326_1a254ffd02c164a3b1cef8d2b30a29bf9a" kind="function"><name>~ComponentPool</name></member>
+    <member refid="a00326_1a66e6d6be5858f7730e038d52eb7f4a77" kind="function"><name>get</name></member>
+  </compound>
+  <compound refid="a00310" kind="struct"><name>ComponentTest</name>
+    <member refid="a00310_1a3814e0099de95993b4e149af850b780f" kind="variable"><name>d</name></member>
+  </compound>
+  <compound refid="a00194" kind="struct"><name>ComputeEffect</name>
+    <member refid="a00194_1abddbf819b22623f6a100da0296f22c79" kind="variable"><name>name</name></member>
+    <member refid="a00194_1ae88c49abeaebead8e1886f771f49fdfe" kind="variable"><name>pipeline</name></member>
+    <member refid="a00194_1a03d2cd14a02f2d2e86ec6618299eab78" kind="variable"><name>layout</name></member>
+    <member refid="a00194_1a8f0ff7eafb00783dbcc2a31a344a424f" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="a00190" kind="struct"><name>ComputePushConstants</name>
+    <member refid="a00190_1af1b14859e4a196ab2313734dde81428a" kind="variable"><name>data1</name></member>
+    <member refid="a00190_1aaa6359f4ea37d85e40f2881ef732826b" kind="variable"><name>data2</name></member>
+    <member refid="a00190_1a5035e7701b815f7e95c3fd525b6e075e" kind="variable"><name>data3</name></member>
+    <member refid="a00190_1ad1b7e85d855000abe4f3c62ca6b9e85e" kind="variable"><name>data4</name></member>
+  </compound>
+  <compound refid="a00290" kind="struct"><name>DeletionQueue</name>
+    <member refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" kind="variable"><name>deletors</name></member>
+    <member refid="a00290_1a91bdce3808d2f96671f38a610810c67b" kind="function"><name>pushFunction</name></member>
+    <member refid="a00290_1ad8258e84b869dbf3800178a61cc51cb3" kind="function"><name>flush</name></member>
+  </compound>
+  <compound refid="a00166" kind="struct"><name>DescriptorAllocator</name>
+    <member refid="a00166_1a51150b1aad092cd0707378078ec0e35c" kind="variable"><name>pool</name></member>
+    <member refid="a00166_1af462a503a5c26ba20338c56d009eea48" kind="function"><name>initPool</name></member>
+    <member refid="a00166_1a7824d1b20b807681a834dd53c0bd1315" kind="function"><name>clearDescriptors</name></member>
+    <member refid="a00166_1a574cc72d9888d2cf0a4ab77fa56093d7" kind="function"><name>destroyPool</name></member>
+    <member refid="a00166_1a334e8652789e38e59f911c89aeea2dc6" kind="function"><name>allocate</name></member>
+  </compound>
+  <compound refid="a00174" kind="class"><name>DescriptorAllocatorGrowable</name>
+    <member refid="a00174_1a3b416daae1c9ac2db8afdd00e91987ca" kind="variable"><name>ratios</name></member>
+    <member refid="a00174_1addbc3458b5f7c051aab8570f5c95105d" kind="variable"><name>fullPools</name></member>
+    <member refid="a00174_1a943abb13559d5d3fbc651d7c13d64ec2" kind="variable"><name>readyPools</name></member>
+    <member refid="a00174_1afbd4da12192209a5e88408558f16d3bd" kind="variable"><name>setsPerPool</name></member>
+    <member refid="a00174_1af5cae4856149623867934153486e9b45" kind="function"><name>init</name></member>
+    <member refid="a00174_1a4fbeabc0aea9829cf922f7e9cce2fa53" kind="function"><name>clearPools</name></member>
+    <member refid="a00174_1a9be93476cebaaba27b5e6a41650b1c25" kind="function"><name>destroyPools</name></member>
+    <member refid="a00174_1a6db84a1399339f8008d6a0745383b591" kind="function"><name>allocate</name></member>
+    <member refid="a00174_1a0e4ba4b05394029041ff93b44ef90164" kind="function"><name>getPool</name></member>
+    <member refid="a00174_1a0b0f4ceff36d7dd44d83f3beefc472cf" kind="function"><name>createPool</name></member>
+  </compound>
+  <compound refid="a00162" kind="struct"><name>DescriptorLayoutBuilder</name>
+    <member refid="a00162_1a84964bc1535f1164c65c682d8abc1ae6" kind="variable"><name>bindings</name></member>
+    <member refid="a00162_1afc94cce99812e98162990b38dc7a2fd0" kind="function"><name>addBinding</name></member>
+    <member refid="a00162_1a458ab671e6690342e749cd8f71bb41bc" kind="function"><name>clear</name></member>
+    <member refid="a00162_1a797241e8070455929166f95a9de86163" kind="function"><name>build</name></member>
+  </compound>
+  <compound refid="a00182" kind="struct"><name>DescriptorWriter</name>
+    <member refid="a00182_1a1a8fd25b760653c787354b53792fd123" kind="variable"><name>imageInfos</name></member>
+    <member refid="a00182_1ab4afed3f867ffe490c2bcb18d739d5fc" kind="variable"><name>bufferInfos</name></member>
+    <member refid="a00182_1ac22018161ff02865aa9ef6e652c89d5e" kind="variable"><name>writes</name></member>
+    <member refid="a00182_1a2a892146e50f1e47f2e5e2f84fb0eb66" kind="function"><name>writeImage</name></member>
+    <member refid="a00182_1a24d1efff56cfd0a03ffe5aa3ce7e17bf" kind="function"><name>writeBuffer</name></member>
+    <member refid="a00182_1ad2f603a5f4382aeed806d6a25f4fc9d9" kind="function"><name>clear</name></member>
+    <member refid="a00182_1aa6d2deed567c313417fc333e55647814" kind="function"><name>updateSet</name></member>
+  </compound>
+  <compound refid="a00214" kind="struct"><name>DrawContext</name>
+    <member refid="a00214_1a92fc7232c72c6f3b5dc4e12dd6606f17" kind="variable"><name>OpaqueSurfaces</name></member>
+    <member refid="a00214_1ad057160f65e0657e137a740ec37d31c2" kind="variable"><name>TransparentSurfaces</name></member>
+  </compound>
+  <compound refid="a00254" kind="struct"><name>EngineStats</name>
+    <member refid="a00254_1a268de968f518937e5b5a0eabcde74ac1" kind="variable"><name>frameTime</name></member>
+    <member refid="a00254_1a09bb44af11d551238f5592baf3192ac0" kind="variable"><name>triangleCount</name></member>
+    <member refid="a00254_1ad2e9038c2125482ce0c3e952ee4a1640" kind="variable"><name>drawCallCount</name></member>
+    <member refid="a00254_1a63684651caeeea776748ffec6860e3d2" kind="variable"><name>sceneUpdateTime</name></member>
+    <member refid="a00254_1ab98fff18928718889d9a41f62cb45b5b" kind="variable"><name>meshDrawTime</name></member>
+  </compound>
+  <compound refid="a00322" kind="struct"><name>catos::EntityInfo</name>
+    <member refid="a00322_1aec919ae5d522d32c06c2f74ddd6d7739" kind="variable"><name>id</name></member>
+    <member refid="a00322_1a3dfa569bcd3389c0c7e393cd30df3b39" kind="variable"><name>mask</name></member>
+  </compound>
+  <compound refid="a00302" kind="struct"><name>Foo</name>
+    <member refid="a00302_1a580ffca91bd258c922ab02aaa7ec44c6" kind="variable"><name>data</name></member>
+    <member refid="a00302_1a48d3d5772799f8f7cc35939108de7cc9" kind="function"><name>get_data</name></member>
+  </compound>
+  <compound refid="a00186" kind="struct"><name>FrameData</name>
+    <member refid="a00186_1afd2882c300350dd131bd9d0a631613af" kind="variable"><name>_commandPool</name></member>
+    <member refid="a00186_1a0f7ce63c6449cafff984ccfaf99964d4" kind="variable"><name>_mainCommandBuffer</name></member>
+    <member refid="a00186_1aab25fa2b65e6e60a8f6e64a14bbb6d6c" kind="variable"><name>_swapchainSemaphore</name></member>
+    <member refid="a00186_1a383e503475e5ebda98abe12d2f31d9a3" kind="variable"><name>_renderSemaphore</name></member>
+    <member refid="a00186_1af1c1a353cca71e2c370f7b9d46962daf" kind="variable"><name>_renderFence</name></member>
+    <member refid="a00186_1aca8a4d6ba793aa45bee87a83dca1a2e7" kind="variable"><name>_deletionQueue</name></member>
+    <member refid="a00186_1a8a642e7d6c19cc5ff3340c5e4d267188" kind="variable"><name>_frameDescriptors</name></member>
+  </compound>
+  <compound refid="a00234" kind="struct"><name>GeoSurface</name>
+    <member refid="a00234_1ab6fd9aebf929934ca3b679e11b984e88" kind="variable"><name>startIndex</name></member>
+    <member refid="a00234_1a5bfc701fbd45f395a990f9a0063b8975" kind="variable"><name>count</name></member>
+    <member refid="a00234_1ad8e3399fe5d911224a61f379cbfcd4d9" kind="variable"><name>bounds</name></member>
+    <member refid="a00234_1af0c192263057788d4136d4b73a63ead4" kind="variable"><name>material</name></member>
+  </compound>
+  <compound refid="a00230" kind="struct"><name>GLTFMaterial</name>
+    <member refid="a00230_1a0a53cb60736b2eb12975d43c6b071d28" kind="variable"><name>data</name></member>
+  </compound>
+  <compound refid="a00198" kind="struct"><name>GLTFMetallic_roughness</name>
+    <member refid="a00198_1a14e8a4c07862539d98a1793cf7be2e24" kind="variable"><name>opaquePipeline</name></member>
+    <member refid="a00198_1a20a1e6318217b3d3e63e91439022a4d8" kind="variable"><name>transparentPipeline</name></member>
+    <member refid="a00198_1a269aa1b48852004420322491f8e03e4a" kind="variable"><name>materialLayout</name></member>
+    <member refid="a00198_1a90094ab356bc8a5426f8012f76c1326f" kind="variable"><name>writer</name></member>
+    <member refid="a00198_1ac6b86602d156a5555b3799b9172c674e" kind="function"><name>buildPipelines</name></member>
+    <member refid="a00198_1acdddc2beb7cc303daabfa28404afa2c9" kind="function"><name>clearResources</name></member>
+    <member refid="a00198_1a744d03ddb8fe03ea8ee07f2ae3b42de5" kind="function"><name>writeMaterial</name></member>
+    <member refid="a00198_1a96ff6cb8fd8d01b16921be3900827939" kind="function"><name>destroy</name></member>
+  </compound>
+  <compound refid="a00278" kind="struct"><name>GPUDrawPushConstants</name>
+    <member refid="a00278_1ac7769ead4f8c948c6a727ec202a6a625" kind="variable"><name>worldMatrix</name></member>
+    <member refid="a00278_1a3d87824455c363095cd2bed7ebcb7f95" kind="variable"><name>vertexBuffer</name></member>
+  </compound>
+  <compound refid="a00270" kind="struct"><name>GPUMeshBuffers</name>
+    <member refid="a00270_1a36072bc102efd91d9cb0a2e2a91fb731" kind="variable"><name>indexBuffer</name></member>
+    <member refid="a00270_1a1492235568eb70ea34448e73fe799334" kind="variable"><name>vertexBuffer</name></member>
+    <member refid="a00270_1a07320f9b017b3298c541cecad2ca9756" kind="variable"><name>vertexBufferAddress</name></member>
+  </compound>
+  <compound refid="a00274" kind="struct"><name>GPUSceneData</name>
+    <member refid="a00274_1a11a59cecab808ab8f32a2229cb9cbc05" kind="variable"><name>view</name></member>
+    <member refid="a00274_1a94a8aebb2509f463fdd5930a18e220a9" kind="variable"><name>proj</name></member>
+    <member refid="a00274_1a1eb16232bc41fa47f782f3848e6d5419" kind="variable"><name>viewproj</name></member>
+    <member refid="a00274_1a80aa527f0dd23ad93ce82ccae46a2bb8" kind="variable"><name>ambientColor</name></member>
+    <member refid="a00274_1a0d0ad9dbe48fd5cffa61d7b7e7a08026" kind="variable"><name>sunLightDirection</name></member>
+    <member refid="a00274_1ae6655907e76d7de3832f5d9d15bb812f" kind="variable"><name>sunlightColor</name></member>
+  </compound>
+  <compound refid="a00226" kind="class"><name>IRenderable</name>
+    <member refid="a00226_1ae49bac0820d1ec198e844e29bf4420f4" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="a00318" kind="struct"><name>catos::Query::Iterator</name>
+    <member refid="a00318_1a7533378592c157e170fe5e9befcf8f70" kind="variable"><name>index</name></member>
+    <member refid="a00318_1a59fc73fc30ba499cfbe21880402da46c" kind="variable"><name>p_world</name></member>
+    <member refid="a00318_1a8b5e6ccce3719df2057b3420c04c7e4f" kind="variable"><name>mask</name></member>
+    <member refid="a00318_1a073f65778f6dd477a66fd06d335f6e75" kind="variable"><name>all</name></member>
+    <member refid="a00318_1a43b0b8ee4a8c1a694101c9317836f8d8" kind="function"><name>Iterator</name></member>
+    <member refid="a00318_1adf788275942b857ac85557a283259a24" kind="function"><name>operator*</name></member>
+    <member refid="a00318_1a5d0eb38995b873534d396f20a10efa23" kind="function"><name>operator==</name></member>
+    <member refid="a00318_1ab0712544ffd5405264926c1ec057d2ad" kind="function"><name>operator!=</name></member>
+    <member refid="a00318_1aeccc4ced85109363b48b14e605e28db4" kind="function"><name>valid_index</name></member>
+    <member refid="a00318_1ab1b866c78896c17f861a9823cbde24f7" kind="function"><name>operator++</name></member>
+  </compound>
+  <compound refid="a00246" kind="struct"><name>LoadedGLTF</name>
+    <member refid="a00246_1a0d81dfeaab41142c4f2ab033cdd9f8b8" kind="variable"><name>meshes</name></member>
+    <member refid="a00246_1abf50d971f7ff884cf18b10627132e24d" kind="variable"><name>nodes</name></member>
+    <member refid="a00246_1af8970fbf7b368a7560c68b1b5d9c5f35" kind="variable"><name>images</name></member>
+    <member refid="a00246_1af295ba2993c19703f95422d0cffe87ae" kind="variable"><name>materials</name></member>
+    <member refid="a00246_1a19f8f4de300949b8c9242e6b0f4274cb" kind="variable"><name>topNodes</name></member>
+    <member refid="a00246_1a4a2ad17dc3b17f86bd21527a651c166d" kind="variable"><name>samplers</name></member>
+    <member refid="a00246_1adf479fe7b1bfabe170b82282a81a5e5e" kind="variable"><name>descriptorPool</name></member>
+    <member refid="a00246_1a8237d21c94d7972aa7a3d7c189a00ba5" kind="variable"><name>materialDataBuffer</name></member>
+    <member refid="a00246_1ac6263b49db35fbd7492b494ab054552b" kind="variable"><name>creator</name></member>
+    <member refid="a00246_1a5cb28e137c9fff7788afaf7aa5e565ac" kind="function"><name>Draw</name></member>
+    <member refid="a00246_1a57694eaff57520a9d0fcd2f29748cf9b" kind="function"><name>clearAll</name></member>
+  </compound>
+  <compound refid="a00202" kind="struct"><name>GLTFMetallic_roughness::MaterialConstants</name>
+    <member refid="a00202_1a006333f251c1c42685a1327f5e28d2b5" kind="variable"><name>colorFactors</name></member>
+    <member refid="a00202_1a0879b1b307e3fc6093979270f0d88684" kind="variable"><name>metalRoughFactors</name></member>
+    <member refid="a00202_1a897bbbaccb9a421115147a22b6015c4b" kind="variable"><name>extra</name></member>
+  </compound>
+  <compound refid="a00286" kind="struct"><name>MaterialInstance</name>
+    <member refid="a00286_1a6270ec8b9754e8071ad89436e9b307c7" kind="variable"><name>pipeline</name></member>
+    <member refid="a00286_1a0d388ba1aded5dcdd49c622a51e1bf92" kind="variable"><name>materialSet</name></member>
+    <member refid="a00286_1ab6a8270117524873601400f0bcb401db" kind="variable"><name>passType</name></member>
+  </compound>
+  <compound refid="a00282" kind="struct"><name>MaterialPipeline</name>
+    <member refid="a00282_1a5500b751b3a9fb3017151b515b577ad7" kind="variable"><name>pipeline</name></member>
+    <member refid="a00282_1a54c031a905193c1d35539d1566775f00" kind="variable"><name>layout</name></member>
+  </compound>
+  <compound refid="a00206" kind="struct"><name>GLTFMetallic_roughness::MaterialResources</name>
+    <member refid="a00206_1a3dd3a1bd7517a31b58583f30940c3441" kind="variable"><name>colorImage</name></member>
+    <member refid="a00206_1a14de3bb8c602f204bcf5d6c2ccb7ee2a" kind="variable"><name>colorSampler</name></member>
+    <member refid="a00206_1af7791b1215a1fee0b5897e1d39a3c9ed" kind="variable"><name>metalRoughImage</name></member>
+    <member refid="a00206_1aad3abdd50028f1774271881c1de7dc85" kind="variable"><name>metalRoughSampler</name></member>
+    <member refid="a00206_1af0402d122ad15ba381be88d540c77fa7" kind="variable"><name>dataBuffer</name></member>
+    <member refid="a00206_1a7f4e87b350163adac17d662bef1eab3b" kind="variable"><name>dataBufferOffset</name></member>
+  </compound>
+  <compound refid="a00238" kind="struct"><name>MeshAsset</name>
+    <member refid="a00238_1a7abaa0b660e944edd81ce5186c32d367" kind="variable"><name>name</name></member>
+    <member refid="a00238_1a40aac10ab4f9e8d1041ea3035336c68a" kind="variable"><name>surfaces</name></member>
+    <member refid="a00238_1a27c656c430749b3b3412dcafba2c7b9c" kind="variable"><name>meshBuffers</name></member>
+  </compound>
+  <compound refid="a00218" kind="struct"><name>MeshNode</name>
+    <member refid="a00218_1aad4716b73a0170c5a9af5b58f429ef5a" kind="variable"><name>mesh</name></member>
+    <member refid="a00218_1a8d5ed2175240d27f97e058508b110b51" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="a00134" kind="class"><name>catos::Method</name>
+    <member refid="a00134_1a5621be029379a77b80f5fb6f7e91cf88" kind="variable"><name>desc</name></member>
+    <member refid="a00134_1a0b06cd150b4dc8a0b35d356d6f134442" kind="variable"><name>returnName</name></member>
+    <member refid="a00134_1aec3f9c676b863394c22100937548995c" kind="variable"><name>parameters</name></member>
+    <member refid="a00134_1acb8b27e43adc06a52a1b2e2303b4a34e" kind="variable"><name>parameterNames</name></member>
+    <member refid="a00134_1a4b8737f52ca1d169e4742141f3dc88c6" kind="variable"><name>ptr</name></member>
+    <member refid="a00134_1af512b6f07768acb200d4bb9f84a04573" kind="variable"><name>_mFunc</name></member>
+    <member refid="a00134_1a40350e2564f0207cc7e730c34153ea6b" kind="function"><name>Method</name></member>
+    <member refid="a00134_1a5250d5fb0e0066d91dd83ea80f1fb15c" kind="function"><name>invoke_function</name></member>
+    <member refid="a00134_1a6563134c767668a602c02cd0ec13d610" kind="function"><name>invoke_function</name></member>
+  </compound>
+  <compound refid="a00130" kind="class"><name>catos::MethodInvoker</name>
+    <member refid="a00130_1a0a1005231c6d3687fd607b65a2771fb8" kind="variable"><name>memPtr</name></member>
+    <member refid="a00130_1a1553e3e36fee4658a51d9f652d330928" kind="function"><name>MethodInvoker</name></member>
+    <member refid="a00130_1adb068c5506bbbd26cf6e4362e680f380" kind="function"><name>callFunction</name></member>
+  </compound>
+  <compound refid="a00242" kind="struct"><name>Node</name>
+    <member refid="a00242_1a99e65d6b9186c551371b95ea3845b6fd" kind="variable"><name>parent</name></member>
+    <member refid="a00242_1a0f9591e9fa0bf1680b1e3ac8c32739aa" kind="variable"><name>childern</name></member>
+    <member refid="a00242_1a633dd4c9cfe7d73b9964bd90c0b9c28f" kind="variable"><name>localTransform</name></member>
+    <member refid="a00242_1a080e37187a37353df15596dc9250e700" kind="variable"><name>worldTransform</name></member>
+    <member refid="a00242_1a04e0eff14682dca41284af38d0cb51a5" kind="function"><name>refreshTransform</name></member>
+    <member refid="a00242_1a6870e549c7f428dbcd4f61d43eaa2f4b" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="a00250" kind="class"><name>PipelineBuilder</name>
+    <member refid="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" kind="variable"><name>_shaderStages</name></member>
+    <member refid="a00250_1a9c96fd4cfd4451053618317e8dc2742d" kind="variable"><name>_inputAssembly</name></member>
+    <member refid="a00250_1a08020325183ad1d38da46c6df00d5f56" kind="variable"><name>_rasterizer</name></member>
+    <member refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" kind="variable"><name>_colorBlendAttachment</name></member>
+    <member refid="a00250_1abbd337208ef05b087f450185fa2cde2e" kind="variable"><name>_multisampling</name></member>
+    <member refid="a00250_1a27a3416b889bde0dcce7c28bbb15ed46" kind="variable"><name>_pipelineLayout</name></member>
+    <member refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" kind="variable"><name>_depthStencil</name></member>
+    <member refid="a00250_1a15beb7114c2a59de1d8022dcc9d8219a" kind="variable"><name>_renderInfo</name></member>
+    <member refid="a00250_1a8a163243157a769336a712d8df4fd2ff" kind="variable"><name>_colorAttachmentformat</name></member>
+    <member refid="a00250_1a08bb82589a05c27fdde547e4a53c8a16" kind="function"><name>PipelineBuilder</name></member>
+    <member refid="a00250_1a10f1778c78c6b0d4c6b2b92b13b2191b" kind="function"><name>clear</name></member>
+    <member refid="a00250_1a2228754d15d46e04d91c45974282716a" kind="function"><name>setShaders</name></member>
+    <member refid="a00250_1ac64ce97ba92f9226bbb11ce387b52661" kind="function"><name>setInputToplogy</name></member>
+    <member refid="a00250_1a692362aaf0f61503d00b0f4ff5cfb134" kind="function"><name>setPolygonMode</name></member>
+    <member refid="a00250_1a4bba978feda490ecd639e05cf5df0dad" kind="function"><name>setCullMode</name></member>
+    <member refid="a00250_1a586cf4dd2fa96f3a3e546ed5ee9aae0d" kind="function"><name>setMultisamplingNone</name></member>
+    <member refid="a00250_1a647ed08fe336a4e19382e20f6dfe8c51" kind="function"><name>disableBlending</name></member>
+    <member refid="a00250_1a98e8a722b30d50f7f9e224172a768061" kind="function"><name>setColorAttachmentFormat</name></member>
+    <member refid="a00250_1a8e9c83acd93cfcb0e9e21024d75c27cd" kind="function"><name>setDepthFormat</name></member>
+    <member refid="a00250_1a965014baa4b56a3ad6c6c8981c2b001e" kind="function"><name>disableDepthtest</name></member>
+    <member refid="a00250_1a4ebe0b6e3f37ac498322d7dda1ec8a2d" kind="function"><name>enableDepthtest</name></member>
+    <member refid="a00250_1aa8a8b5d264a156de7a8beea3508723c8" kind="function"><name>enableBlendingAdditive</name></member>
+    <member refid="a00250_1adbe69d479e856129f73056f6db4b4ebf" kind="function"><name>enableBlendingAlphablend</name></member>
+    <member refid="a00250_1ab68e37be1873638547e1912ee287a19e" kind="function"><name>buildPipeline</name></member>
+  </compound>
+  <compound refid="a00170" kind="struct"><name>DescriptorAllocator::PoolSizeRatio</name>
+    <member refid="a00170_1a02c61834a3489dda3bf125c574b177b2" kind="variable"><name>type</name></member>
+    <member refid="a00170_1a637dfec791d056803ac8d7f7d399c458" kind="variable"><name>ratio</name></member>
+  </compound>
+  <compound refid="a00178" kind="struct"><name>DescriptorAllocatorGrowable::PoolSizeRatio</name>
+    <member refid="a00178_1a225b758ecd1cfec187eff382cf678e24" kind="variable"><name>type</name></member>
+    <member refid="a00178_1ab81f0e5da32fc800faa04f6add9b3e29" kind="variable"><name>ratio</name></member>
+  </compound>
+  <compound refid="a00122" kind="class"><name>catos::Property</name>
+    <member refid="a00122_1aabfc2935e5ce159303cdd8c760fe3e43" kind="variable"><name>desc</name></member>
+    <member refid="a00122_1aadf32bd1d8c607a993f117ea2db3cadd" kind="function"><name>~Property</name></member>
+    <member refid="a00122_1a658e2343fa5565207592286b665c82e5" kind="function"><name>get_value</name></member>
+    <member refid="a00122_1ae2346543825d185fd3397262fd09d4cf" kind="function"><name>get_name</name></member>
+    <member refid="a00122_1ade91b642390d463208dcc397143a1a95" kind="function"><name>get_type_name</name></member>
+    <member refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kind="function"><name>get_type_hash</name></member>
+    <member refid="a00122_1a14c6ded73ec5e93149fda506c540a34f" kind="function"><name>set_name</name></member>
+  </compound>
+  <compound refid="a00126" kind="class"><name>catos::PropertyImpl</name>
+    <member refid="a00126_1ab295885403ec42bdf4db7c50dacb6c4b" kind="variable"><name>memberPtr</name></member>
+    <member refid="a00126_1a6f9a11dc26ec88bce95a6d7e0131da9f" kind="variable"><name>name</name></member>
+    <member refid="a00126_1a220d2c57189b922ac43e74b7605ddfec" kind="variable"><name>type_name</name></member>
+    <member refid="a00126_1ac17e39e00f466c5e3ce27c204ebe7aa8" kind="variable"><name>type_hash</name></member>
+    <member refid="a00126_1ac0cf2f99603c800a6054af6c9c21c74f" kind="function"><name>PropertyImpl</name></member>
+    <member refid="a00126_1a65aa9409bbd99020c1516dce375f7d42" kind="function"><name>set_name</name></member>
+    <member refid="a00126_1aa89fca9f010b109d612eab9df84fa386" kind="function"><name>get_value</name></member>
+    <member refid="a00126_1a24f8b788dd92d969611c1a04f9bbd452" kind="function"><name>get_name</name></member>
+    <member refid="a00126_1af278bcec34c8085f5e7d167678158a87" kind="function"><name>get_type_name</name></member>
+    <member refid="a00126_1ab2faac90acb74e92242075e332ee34af" kind="function"><name>get_type_hash</name></member>
+  </compound>
+  <compound refid="a00314" kind="struct"><name>catos::Query</name>
+    <member refid="a00314_1ac8619d912679e016e3aa313d36f5d50d" kind="variable"><name>p_world</name></member>
+    <member refid="a00314_1a4843232ab9108698b1b0f62ea66b83de" kind="variable"><name>componentMask</name></member>
+    <member refid="a00314_1a4db087574206f51b8bb6621852388286" kind="variable"><name>all</name></member>
+    <member refid="a00314_1a82ebf0b28fda4a7920c044dff21b0069" kind="function"><name>Query</name></member>
+    <member refid="a00314_1a1f1a6a4bdc2851f0906c36873207257c" kind="function"><name>begin</name></member>
+    <member refid="a00314_1a729f43371fb8ff50690c3117589ceb09" kind="function"><name>end</name></member>
+  </compound>
+  <compound refid="a00142" kind="class"><name>catos::Registry</name>
+    <member refid="a00142_1a759718acff0cdb1cfd97bf13fd0700a6" kind="variable"><name>_register</name></member>
+    <member refid="a00142_1ab554c66d2f7b86c82e6d55ae3cc34b77" kind="variable"><name>_instance_register</name></member>
+    <member refid="a00142_1a3c1a3c07e51224b5745cd9764407efff" kind="function"><name>register_class</name></member>
+    <member refid="a00142_1aa9d8e58c1258eebb008a292f8b8b1c44" kind="function"><name>gen_python_bindings_file</name></member>
+    <member refid="a00142_1ad344d7a045a558fa8a24e4f1ce095a05" kind="function"><name>gen_cs_bindings_file</name></member>
+    <member refid="a00142_1a03c494fdb9fb9daafaea972f273de633" kind="function"><name>get_type</name></member>
+    <member refid="a00142_1a3ff740e516ed706e2d202086df6f12b9" kind="function"><name>print_current_register</name></member>
+  </compound>
+  <compound refid="a00210" kind="struct"><name>RenderObject</name>
+    <member refid="a00210_1ad804e3c297d2f4d5ea1aabc80f3a2801" kind="variable"><name>indexCount</name></member>
+    <member refid="a00210_1ac0d57e3a8ec65b53d2593224161ace73" kind="variable"><name>firstIndex</name></member>
+    <member refid="a00210_1a30d8bb5f11112733abf3fa034f65f80c" kind="variable"><name>indexBuffer</name></member>
+    <member refid="a00210_1ab09c067290de5759d715bfea4487fcf6" kind="variable"><name>material</name></member>
+    <member refid="a00210_1a14bf8548f4c7a416e787a3508f833a50" kind="variable"><name>bounds</name></member>
+    <member refid="a00210_1a5aa60e9c01b069dcddebd1a913e0999c" kind="variable"><name>transform</name></member>
+    <member refid="a00210_1a2cb78112987761ab014ca3095c3b0dbf" kind="variable"><name>vertexBufferAddress</name></member>
+  </compound>
+  <compound refid="a00298" kind="class"><name>STL::String</name>
+    <member refid="a00298_1a43be6facfefe6244fd37c572a37e0270" kind="variable"><name>buf</name></member>
+    <member refid="a00298_1ae7b5cac5a65b7020c35c515fb4a0f92e" kind="variable"><name>size</name></member>
+    <member refid="a00298_1afba7e9db0db3c9beff7b715363676d4e" kind="function"><name>String</name></member>
+    <member refid="a00298_1a0558edaebb50dd0a54662517db9e26e8" kind="function"><name>String</name></member>
+    <member refid="a00298_1a3e2f35344bbfc568199d764697ac1ae2" kind="function"><name>String</name></member>
+    <member refid="a00298_1ac5e070a29fbd7224f6556aedfe69a05f" kind="function"><name>String</name></member>
+    <member refid="a00298_1a6e1f1d35335d3760eb61fddbebfb983d" kind="function"><name>operator=</name></member>
+    <member refid="a00298_1a26a68776891ac10277a4011c80a62b1b" kind="function"><name>operator=</name></member>
+    <member refid="a00298_1ad1ff5942b967858216872885140d61f1" kind="function"><name>operator+</name></member>
+    <member refid="a00298_1aeda63c9aa0803a501865a3974441b3d1" kind="function"><name>length</name></member>
+    <member refid="a00298_1ae71147c0f4a7d9a3d1fc3b8e5c4ac6e5" kind="function"><name>c_str</name></member>
+    <member refid="a00298_1a0fbda173657b0a9c284584cf9287bd8c" kind="function"><name>~String</name></member>
+    <member refid="a00298_1a54656376554ea497e12aea0d885cf7ed" kind="function"><name>cleanUp</name></member>
+  </compound>
+  <compound refid="a00306" kind="struct"><name>TransformComponent</name>
+    <member refid="a00306_1a30d1678c82cfa095b35ecb9a180bb697" kind="variable"><name>x</name></member>
+    <member refid="a00306_1a8661b2f37bf9926ed19e7a4a8fc2d41b" kind="variable"><name>y</name></member>
+    <member refid="a00306_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" kind="variable"><name>z</name></member>
+  </compound>
+  <compound refid="a00138" kind="class"><name>catos::TypeInfo</name>
+    <member refid="a00138_1a9a4c20fb31a1759ef8aa1d5c8acfeabd" kind="variable"><name>type_hash</name></member>
+    <member refid="a00138_1ae0b2ff915a7ee07932398ea73ba22943" kind="variable"><name>name</name></member>
+    <member refid="a00138_1a7cbfa52dbf039cfe37ff79d1c97db144" kind="variable"><name>properties</name></member>
+    <member refid="a00138_1a9c4b2bf58d22a49d4e52dc27ff248ed2" kind="variable"><name>methods</name></member>
+    <member refid="a00138_1adb9288a8ea5edbb41cf884f82d2e5322" kind="function"><name>property</name></member>
+    <member refid="a00138_1ab07220b87a27baec193e958522f3a157" kind="function"><name>method</name></member>
+    <member refid="a00138_1a2e3be86b60d107455570b7b5f1d9fd43" kind="function"><name>get_property</name></member>
+    <member refid="a00138_1aae56ec26c2e744b449f3da7cd11667c3" kind="function"><name>get_method</name></member>
+    <member refid="a00138_1a267bd4ae8f4c123f604e8f733d4f7aa6" kind="function"><name>is_valid</name></member>
+    <member refid="a00138_1a59fec13410de1cba52ac86212587f5aa" kind="function"><name>is_valid</name></member>
+  </compound>
+  <compound refid="a00154" kind="struct"><name>catos::math::Vector2</name>
+    <member refid="a00154_1a442e5ef4dd0744758b5db87ca36aed90" kind="variable"><name>x</name></member>
+    <member refid="a00154_1a58d259a2d9057efd9c5bbb69f418d601" kind="variable"><name>y</name></member>
+    <member refid="a00154_1a47758ee7db6b46dcf0c68e85cdb53e86" kind="function"><name>operator==</name></member>
+    <member refid="a00154_1a7a5f74f94f6515ff5371aad50873cee2" kind="function"><name>operator==</name></member>
+    <member refid="a00154_1a1f396224b6250ad2400cb01d60b1b4ec" kind="function"><name>operator+</name></member>
+    <member refid="a00154_1a82c0de289dd8ec25a6e77497098f9064" kind="function"><name>operator+</name></member>
+  </compound>
+  <compound refid="a00266" kind="struct"><name>Vertex</name>
+    <member refid="a00266_1a030819fdc241743bbd3e180a6b132ed3" kind="variable"><name>position</name></member>
+    <member refid="a00266_1a3c6b70cc0df673dab20ae012fa7a4ce3" kind="variable"><name>uv_x</name></member>
+    <member refid="a00266_1a3aa35fe84025ecf1acccb5f65f5577fd" kind="variable"><name>normal</name></member>
+    <member refid="a00266_1a8dfaf04a6d2a62045fee28010aeb92eb" kind="variable"><name>uv_y</name></member>
+    <member refid="a00266_1aa7ecd21578677765699b8831e0011696" kind="variable"><name>color</name></member>
+  </compound>
+  <compound refid="a00222" kind="class"><name>VulkanEngine</name>
+    <member refid="a00222_1a59d1bdeb91fc7a6b072dd41db890f317" kind="variable"><name>_isInitialized</name></member>
+    <member refid="a00222_1acbacb0e89bba12ea169c900bbf74a23e" kind="variable"><name>_frameNumber</name></member>
+    <member refid="a00222_1a290bcf05482970acbfd14571034ccd90" kind="variable"><name>_stopRendering</name></member>
+    <member refid="a00222_1a1b355560c30d73de48d86023dcdea5f4" kind="variable"><name>_windowExtent</name></member>
+    <member refid="a00222_1a66a9cc0c8097072f24c38e687bf4a51a" kind="variable"><name>_window</name></member>
+    <member refid="a00222_1a5c0ce388983da02a693f298f01f9f0ff" kind="variable"><name>renderScale</name></member>
+    <member refid="a00222_1adaef1ea968c30d0cc429146dfbb99330" kind="variable"><name>mainCamera</name></member>
+    <member refid="a00222_1a85897f1180282b72d30b55dda1fe1045" kind="variable"><name>_instance</name></member>
+    <member refid="a00222_1aafc8bafd1ba65127ce2720de635e1231" kind="variable"><name>_debugMessenger</name></member>
+    <member refid="a00222_1a5d533c792641fc73c7834c46074c25cd" kind="variable"><name>_chosenGPU</name></member>
+    <member refid="a00222_1ab3856636bf2bd4805f72b852c2163f10" kind="variable"><name>_device</name></member>
+    <member refid="a00222_1ac5f5f041d67a7983769cc80255bead65" kind="variable"><name>_surface</name></member>
+    <member refid="a00222_1ac17fb4ee4cf0de62648debe8e4b05130" kind="variable"><name>_swapchain</name></member>
+    <member refid="a00222_1a5e5a8b61e55df8eeffd820988e40e73e" kind="variable"><name>_swapchainImageFormat</name></member>
+    <member refid="a00222_1a4f951e6fd307b7d08b28ef643be7e4fb" kind="variable"><name>_swapchainImages</name></member>
+    <member refid="a00222_1a80ebb2acd6e6e88efaf9c7245c59079c" kind="variable"><name>_swapchainImageViews</name></member>
+    <member refid="a00222_1ae2b5b9f37a4dd77e909d6a87c3290885" kind="variable"><name>_swapchainExtent</name></member>
+    <member refid="a00222_1a43719b6bfc0dfb7b725e254b46716815" kind="variable"><name>_frames</name></member>
+    <member refid="a00222_1a6b240d37948c2d5fa2cf071468c3bd4b" kind="variable"><name>_graphicsQueue</name></member>
+    <member refid="a00222_1a3ce453b78ccf4ffdd19c2e64fb5a6ac7" kind="variable"><name>_graphicsQueueFamily</name></member>
+    <member refid="a00222_1ab1707a6b3122db0d0fce56c13999367b" kind="variable"><name>_mainDeletionQueue</name></member>
+    <member refid="a00222_1a75d08cfc1400cc46c7649b0041b0e0fc" kind="variable"><name>_allocator</name></member>
+    <member refid="a00222_1ad332e0c9421b787d1805a642c6a04c70" kind="variable"><name>_drawImage</name></member>
+    <member refid="a00222_1a20eff0d0f15bd84d364edb01d8cb340d" kind="variable"><name>_depthImage</name></member>
+    <member refid="a00222_1acdf79fe860137de04a46809a804094e4" kind="variable"><name>_drawExtent</name></member>
+    <member refid="a00222_1a429373e20598afe382d2d5ea1e5f32a3" kind="variable"><name>globalDescriptorAllocator</name></member>
+    <member refid="a00222_1adcf4fd54a9568717d52fc711b1ff8593" kind="variable"><name>_drawImageDescriptors</name></member>
+    <member refid="a00222_1a510b5529eca5876823392263a245f45e" kind="variable"><name>_drawImageDescriptorLayout</name></member>
+    <member refid="a00222_1a656044cc262a32f92926d5c63b5edcbf" kind="variable"><name>_gradientPipeline</name></member>
+    <member refid="a00222_1a0b8a40b8565cc5e4dce1477451ec9758" kind="variable"><name>_gradientPipelineLayout</name></member>
+    <member refid="a00222_1ac238e3c8dd8ceef2593828c25f9c6532" kind="variable"><name>_immFence</name></member>
+    <member refid="a00222_1ad2f38e852d4cb1820da1b9d60ab38568" kind="variable"><name>_immCommandBuffer</name></member>
+    <member refid="a00222_1a3bb1ce4d610c0318e013638c807bd920" kind="variable"><name>_immCommandPool</name></member>
+    <member refid="a00222_1a2d6c74d128b5dc95ce311ad39dac81f8" kind="variable"><name>_singleImageDescriptorLayout</name></member>
+    <member refid="a00222_1a82402825df27e499dd3a6a9f7798785e" kind="variable"><name>calledNum</name></member>
+    <member refid="a00222_1af958cc75522e578ad3b4837d362e42ee" kind="variable"><name>displayDebugMenu</name></member>
+    <member refid="a00222_1ac5fb2b0b7dea59777e271cc2d5a834bf" kind="variable"><name>stats</name></member>
+    <member refid="a00222_1a0a37542e50f4f52c7a82dc5f3b7f3330" kind="variable"><name>mainDrawContext</name></member>
+    <member refid="a00222_1aae6a5015a54ca1697d8ea5a4891af4d1" kind="variable"><name>sceneData</name></member>
+    <member refid="a00222_1a8490bfb929ed4ad82203deb7a7753cff" kind="variable"><name>loadedNodes</name></member>
+    <member refid="a00222_1a52aa7ad2d968f8dac3c98fe8e5f4a0ed" kind="variable"><name>_gpuSceneDataDescriptorLayout</name></member>
+    <member refid="a00222_1a67ff3a8f056d68ada2920ce7bc88e0b3" kind="variable"><name>_blackImage</name></member>
+    <member refid="a00222_1a97f75c9571330d57beb368b28fe5685f" kind="variable"><name>_greyImage</name></member>
+    <member refid="a00222_1ae9e37119779c3c298affe9d8768e1237" kind="variable"><name>_defaultSamplerLinear</name></member>
+    <member refid="a00222_1a417234053d867dd5eba9c54a3dfd987f" kind="variable"><name>_defaultSamplerNearest</name></member>
+    <member refid="a00222_1a019c69495963902de318bf1005034bda" kind="variable"><name>defaultData</name></member>
+    <member refid="a00222_1a94db50b96840113529b5c31ee1eff0f3" kind="variable"><name>metalRoughMaterial</name></member>
+    <member refid="a00222_1abad82df25c8216a872cafa95e2276986" kind="variable"><name>_errorImage</name></member>
+    <member refid="a00222_1ac5c036edc1d962cdebe3e260940e9740" kind="variable"><name>_whiteImage</name></member>
+    <member refid="a00222_1a5c648ce299b62a216ca42cb762cb0758" kind="variable"><name>loadedScenes</name></member>
+    <member refid="a00222_1a5c9b5403d18a160c2e3d57b7b981204b" kind="variable"><name>backgroundEffects</name></member>
+    <member refid="a00222_1ab690c6553e6e196fef597af561655527" kind="variable"><name>currentBackgroundEffect</name></member>
+    <member refid="a00222_1a5f53603360ad1d4f6f4ecf01acc7860f" kind="variable"><name>_trianglePipelineLayout</name></member>
+    <member refid="a00222_1a967ac2e931dcfbf746fcef2239549b28" kind="variable"><name>_trianglePipeline</name></member>
+    <member refid="a00222_1ae2c73ed644888961513ff22a7644725d" kind="variable"><name>testMeshes</name></member>
+    <member refid="a00222_1aa5dde64bb4ba44551f8caf3a67b33a97" kind="variable"><name>_meshPipelineLayout</name></member>
+    <member refid="a00222_1a3a8a4dabc7acf435338bc616e3a0b5ee" kind="variable"><name>_meshPipeline</name></member>
+    <member refid="a00222_1a61857cc8e56755ee8ecfb895e6df832f" kind="variable"><name>rectangle</name></member>
+    <member refid="a00222_1a225dacf845c5326b25592a658295fdc1" kind="variable"><name>resizeRequested</name></member>
+    <member refid="a00222_1aa93d515ee250059976f8b84bd5599ac0" kind="function"><name>getCurrentFrame</name></member>
+    <member refid="a00222_1add07ae792339ef143c88dd43f0950f1d" kind="function"><name>immediate_submit</name></member>
+    <member refid="a00222_1a29a528496c68c9f0c44414c466d1169f" kind="function"><name>createBuffer</name></member>
+    <member refid="a00222_1a3ce795645ea1f6bc1d7e7d462d47bcd6" kind="function"><name>destroyBuffer</name></member>
+    <member refid="a00222_1a2eef35ed3cc46cf090af65c68dc63243" kind="function"><name>uploadMesh</name></member>
+    <member refid="a00222_1a705e6ee910d1eae33b8b0cb5c6a770b0" kind="function"><name>createImage</name></member>
+    <member refid="a00222_1a7f02e7be826d94845e6b675c5262d172" kind="function"><name>createImage</name></member>
+    <member refid="a00222_1a999dceb09a0a03ea7333d2b5f901e35d" kind="function"><name>destroyImage</name></member>
+    <member refid="a00222_1a101adc8c3d7479afd98d43338a0b9707" kind="function"><name>isVisible</name></member>
+    <member refid="a00222_1a605027f7ed6fcd0d1861ebd72c5c5858" kind="function"><name>Init</name></member>
+    <member refid="a00222_1ae4b64b3a0c41f17e36339146bb0c15f9" kind="function"><name>CleanUp</name></member>
+    <member refid="a00222_1ab9ac14fa153808cb5e7f00c53e38ec3e" kind="function"><name>Draw</name></member>
+    <member refid="a00222_1ae2bc28152df989a30cfc8286ccf33b0d" kind="function"><name>Run</name></member>
+    <member refid="a00222_1a0920f100af18abeffaff8ac5296ad309" kind="function"><name>start_imgui_frame</name></member>
+    <member refid="a00222_1a39cb52548f29a4501c5e17bb7eb8a001" kind="function"><name>end_imgui_frame</name></member>
+    <member refid="a00222_1ad2da415dabe3add3882952382efbb926" kind="function"><name>updateScene</name></member>
+    <member refid="a00222_1aac690da9ffba122c6f145e27fda36e05" kind="function"><name>Get</name></member>
+    <member refid="a00222_1a3ee1028f00268bb1d35c797c1c659834" kind="function"><name>initVulkan</name></member>
+    <member refid="a00222_1a936722ebc009d255a74389af3db2dce5" kind="function"><name>initSwapchain</name></member>
+    <member refid="a00222_1aaca5e58932a4527c23a8ba317195760a" kind="function"><name>initCommands</name></member>
+    <member refid="a00222_1a0144f64b1176c720687f32859fbfefcb" kind="function"><name>initSyncStructures</name></member>
+    <member refid="a00222_1a129417c880ebfc475b3a28a00e424aa7" kind="function"><name>drawBackground</name></member>
+    <member refid="a00222_1a454579a7e1ac783dfb726fbba55c3f4d" kind="function"><name>createSwapchain</name></member>
+    <member refid="a00222_1a2e91a5d3c34e6e44a11feec2a2a72d7a" kind="function"><name>resizeSwapchain</name></member>
+    <member refid="a00222_1a389d40c1719aa786834678a4b11d3271" kind="function"><name>destroySwapchain</name></member>
+    <member refid="a00222_1a7d9328c9d3deade97a3f5bc2c8e80991" kind="function"><name>initDescriptors</name></member>
+    <member refid="a00222_1a944690af6365ff20599f246df7c97f9d" kind="function"><name>initPipelines</name></member>
+    <member refid="a00222_1ae5d9ad1f330c9b47b5ab13b3b243dfcc" kind="function"><name>initBackgroundPipelines</name></member>
+    <member refid="a00222_1a97450c90f38eca453a468d562c513e82" kind="function"><name>initImGui</name></member>
+    <member refid="a00222_1a22394349a40551121a9091f5a0157ab9" kind="function"><name>drawImgui</name></member>
+    <member refid="a00222_1abdee285ad5da6a17a3f187ec4cb86f39" kind="function"><name>initTrianglePipeline</name></member>
+    <member refid="a00222_1a5b6fcd1dec99af66fefc1e1402c46a0f" kind="function"><name>drawGeometry</name></member>
+    <member refid="a00222_1aff00374d0b446dad66c2e4335aa5fbfd" kind="function"><name>initMeshPipeline</name></member>
+    <member refid="a00222_1a1240a2d171cb80afe1dcfa304e20a128" kind="function"><name>initDefaultData</name></member>
+  </compound>
+  <compound refid="a00150" kind="class"><name>catos::Window</name>
+    <member refid="a00150_1a4097b3e04a4f8ece21f5abe1b10e6323" kind="friend"><name>App</name></member>
+    <member refid="a00150_1ab7994356dd1b1d7d9de8e064339b19c8" kind="variable"><name>_raw_window</name></member>
+    <member refid="a00150_1a33dc31c1903b6bb9b7684217cc553d7f" kind="variable"><name>_createInfo</name></member>
+    <member refid="a00150_1a17960ca89f793bac084a8203f1a7d3e6" kind="function"><name>Window</name></member>
+    <member refid="a00150_1a245d821e6016fa1f6970ccbbedd635f6" kind="function"><name>~Window</name></member>
+    <member refid="a00150_1a6df30484abfd5cc491a5ed2055692859" kind="function"><name>should_window_close</name></member>
+    <member refid="a00150_1a59515fc5a56e86d5a46d771595daac55" kind="function"><name>update</name></member>
+    <member refid="a00150_1afc3176914723cab13d809b6ae8f3d6d2" kind="function"><name>get_glfw_window</name></member>
+    <member refid="a00150_1a7666877758d915dca4176786fc0a7925" kind="function"><name>getMonitorSize</name></member>
+    <member refid="a00150_1a28daab9434c88ba9e1330e3462cf0517" kind="function"><name>enable_dark_theme</name></member>
+  </compound>
+  <compound refid="a00146" kind="struct"><name>catos::WindowCreationInfo</name>
+    <member refid="a00146_1ae968365d3c684b7865dbd44a9b58a0d4" kind="variable"><name>size</name></member>
+    <member refid="a00146_1aec4ef506b269d318933637e3f8cb04b9" kind="variable"><name>position</name></member>
+    <member refid="a00146_1a93cc9ee1f3794b1621f46ccf5ca1c91d" kind="variable"><name>title</name></member>
+    <member refid="a00146_1a2afaf94058c62aee02391616b88bd63c" kind="variable"><name>is_fullscreen</name></member>
+    <member refid="a00146_1a3cc89a85c712fc2945e50dcb1d99e378" kind="variable"><name>borderless</name></member>
+    <member refid="a00146_1af4e7fb2bc7459c373e17b77a30565680" kind="variable"><name>enable_darktheme</name></member>
+  </compound>
+  <compound refid="a00330" kind="class"><name>catos::World</name>
+    <member refid="a00330_1aff4dc4c37cc8879920726b30fbca3c85" kind="variable"><name>entities</name></member>
+    <member refid="a00330_1ad1c7107c8dc9f4a2bf579f3b9bee86f9" kind="variable"><name>free_entities</name></member>
+    <member refid="a00330_1ae63320191678435fd09fe3e3dd6e25c9" kind="variable"><name>component_pools</name></member>
+    <member refid="a00330_1a38fb24dfb4f9b045f1c1d47b7240c164" kind="function"><name>new_entity</name></member>
+    <member refid="a00330_1a67f3136c019c1e0df16f34c19c5054af" kind="function"><name>assign</name></member>
+    <member refid="a00330_1a46bf8da6abcf9472aaad7545918f3799" kind="function"><name>has_component</name></member>
+    <member refid="a00330_1a797914e74e190a3fa4ee3c072a6ac3b3" kind="function"><name>get</name></member>
+    <member refid="a00330_1a894bc6946ca9101f8ff065c5b46bc43a" kind="function"><name>remove</name></member>
+    <member refid="a00330_1a64e6a29f27b70562fcf1f64ec4c36404" kind="function"><name>destroy_entity</name></member>
+    <member refid="a00330_1a4286854dce1e87b51d7e17b85fbf5c4c" kind="function"><name>assign_</name></member>
+    <member refid="a00330_1ac76e0f05473ef33e17d0f59c4dd9e98d" kind="function"><name>has_component_</name></member>
+  </compound>
+  <compound refid="a00101" kind="namespace"><name>catos</name>
+    <member refid="a00101_1ad46e4a899856a996f751ea2c4a1edf61" kind="typedef"><name>EntityIndex</name></member>
+    <member refid="a00101_1a805105b8a0bfeee0ca9c0d2aaa10c91c" kind="typedef"><name>EntityVersion</name></member>
+    <member refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kind="typedef"><name>EntityId</name></member>
+    <member refid="a00101_1ae151ba2b3dceaf31a210e55391499bf3" kind="typedef"><name>ComponentMask</name></member>
+    <member refid="a00101_1a15a9986d23699b6fe1fa103e412aad9e" kind="function"><name>getNames</name></member>
+    <member refid="a00101_1ab2f55e47d4a482511ba7dd433fb857f1" kind="function"><name>getArgNames</name></member>
+  </compound>
+  <compound refid="a00110" kind="namespace"><name>catos::Component</name>
+    <member refid="a00110_1a34d9aebe0d3fc9b7fc27a0de9d6f6544" kind="variable"><name>c_componentCounter</name></member>
+    <member refid="a00110_1ab6ae9ff34679c725201b26c459fe4b80" kind="function"><name>get_id</name></member>
+    <member refid="a00110_1aefc92dfa4f53c9a93e469670d9877fc7" kind="function"><name>get_component_id_counter</name></member>
+  </compound>
+  <compound refid="a00109" kind="namespace"><name>catos::EntityUtils</name>
+    <member refid="a00109_1a7f7491ca6642382c71130a825ee91b1c" kind="function"><name>create_entity_id</name></member>
+    <member refid="a00109_1a978cd4122efd37529a0b31688d5392d3" kind="function"><name>get_entity_index</name></member>
+    <member refid="a00109_1a878d770b925762e6bd9a643e8ee9eb68" kind="function"><name>get_entity_version</name></member>
+    <member refid="a00109_1a581cc1269c80ccf4eca5a03446e1d6dc" kind="function"><name>is_entity_valid</name></member>
+  </compound>
+  <compound refid="a00103" kind="namespace"><name>catos::math</name>
+  </compound>
+  <compound refid="a00108" kind="namespace"><name>catos::tests</name>
+    <member refid="a00108_1a3d55793e34b921efea74b9b57c975082" kind="function"><name>TEST_CASE</name></member>
+    <member refid="a00108_1a86b61aaa802336f02f0614acceac24c6" kind="function"><name>TEST_CASE</name></member>
+    <member refid="a00108_1a994753c9053093b19e7c46057ffcf719" kind="function"><name>TEST_CASE</name></member>
+    <member refid="a00108_1afda5b3504e78b229f5b2607e5b8789f2" kind="function"><name>TEST_CASE</name></member>
+    <member refid="a00108_1ad54824a21c447710d21c07905d515846" kind="function"><name>TEST_CASE</name></member>
+    <member refid="a00108_1a1695cede4c29d391eba7c2344b10d783" kind="function"><name>TEST_CASE</name></member>
+    <member refid="a00108_1a9cdad5e15230315dbedef89da64f6916" kind="function"><name>TEST_CASE</name></member>
+    <member refid="a00108_1a75e6e0db8d74228e45e0a79402d39b65" kind="function"><name>TEST_CASE</name></member>
+    <member refid="a00108_1adb2fa6ff324cfa94c193fbdc057396b0" kind="function"><name>TEST_CASE</name></member>
+  </compound>
+  <compound refid="a00102" kind="namespace"><name>catos::type_utils</name>
+    <member refid="a00102_1ae8ba5a0350572f3f742754d626557e59" kind="function"><name>get_type_name</name></member>
+    <member refid="a00102_1a984a08d43e4be51d38568b267ed64092" kind="function"><name>get_type_hash</name></member>
+  </compound>
+  <compound refid="a00107" kind="namespace"><name>STL</name>
+  </compound>
+  <compound refid="a00105" kind="namespace"><name>VkInit</name>
+    <member refid="a00105_1a89cdca6f147b3cacbef67ef0fcddb5a4" kind="function"><name>presentInfo</name></member>
+    <member refid="a00105_1a3cdef4e7c3a16175ef52084187f27428" kind="function"><name>commandPoolCreateInfo</name></member>
+    <member refid="a00105_1a8fe7cf8c5c6f45b1cbec1c04a3fb2801" kind="function"><name>commandBufferAllocateInfo</name></member>
+    <member refid="a00105_1a58ec443d7114304aafcc6dfe40aa91cf" kind="function"><name>fenceCreateInfo</name></member>
+    <member refid="a00105_1ad350c43673bc9b3f7994cd67053d601a" kind="function"><name>semaphoreCreateInfo</name></member>
+    <member refid="a00105_1a4f27583522b48fbb2794b4f6eff37c5b" kind="function"><name>commandBufferBeginInfo</name></member>
+    <member refid="a00105_1abe7cc27c092869928fc3c6428219e858" kind="function"><name>imageSubresourceRange</name></member>
+    <member refid="a00105_1a255af650bfd089f6febd85848d58c6c5" kind="function"><name>semaphoreSubmitInfo</name></member>
+    <member refid="a00105_1a4e3740324c0b56d48e31d4201841fbce" kind="function"><name>commandBufferSubmitInfo</name></member>
+    <member refid="a00105_1a2cef7fa07f55a58eb23a2aa4de6cb956" kind="function"><name>submitInfo</name></member>
+    <member refid="a00105_1af6244bbb89d93fabe28d83cb4203da94" kind="function"><name>imageCreateInfo</name></member>
+    <member refid="a00105_1a57731c73c6a5a9b41a591f594bedd96c" kind="function"><name>imageViewCreateInfo</name></member>
+    <member refid="a00105_1a76bde95c72a4bf604cd433e439b2fa1b" kind="function"><name>attachmentInfo</name></member>
+    <member refid="a00105_1afd70e1da9064d67d0f17d4d415f0761d" kind="function"><name>depthAttachmentInfo</name></member>
+    <member refid="a00105_1a5e07e2e66058b5c4e6fb30840c396ab3" kind="function"><name>renderingInfo</name></member>
+    <member refid="a00105_1af12b035c84d7a8af0915e626e68b29f0" kind="function"><name>pipelineShaderStageCreateInfo</name></member>
+    <member refid="a00105_1ae22d46467876562f521852203947a73c" kind="function"><name>pipelineLayoutCreateInfo</name></member>
+  </compound>
+  <compound refid="a00106" kind="namespace"><name>VkLoader</name>
+    <member refid="a00106_1a442b1c7be484b0f1b4b53f176d1aaa0f" kind="function"><name>loadGltfMeshes</name></member>
+    <member refid="a00106_1a5dc041b91ac2b9f98dde07fd06dedfb9" kind="function"><name>loadGltf</name></member>
+    <member refid="a00106_1a194340dfa7859815574193cea66f2371" kind="function"><name>extractFilter</name></member>
+    <member refid="a00106_1a39631db68d0c201f90fbfd1a48264113" kind="function"><name>extractMipmapMode</name></member>
+    <member refid="a00106_1ae9a802f8df4fdc64b9d8c76222147ae2" kind="function"><name>loadImage</name></member>
+  </compound>
+  <compound refid="a00104" kind="namespace"><name>VkUtil</name>
+    <member refid="a00104_1a875b1e47dc0c1a3d683aa56a048004a1" kind="function"><name>transitionImage</name></member>
+    <member refid="a00104_1aaf415273879926840c4ba3f273ced282" kind="function"><name>copyImageToImage</name></member>
+    <member refid="a00104_1ab2f70afca891c15b7a86f4d2d5c67931" kind="function"><name>generateMipMaps</name></member>
+    <member refid="a00104_1a73da1142a76da292c64a9499aacf5bc2" kind="function"><name>loadShaderModule</name></member>
+  </compound>
+  <compound refid="a00098" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="a00002" kind="file"><name>application.cpp</name>
+  </compound>
+  <compound refid="a00005" kind="file"><name>application.h</name>
+  </compound>
+  <compound refid="a00008" kind="file"><name>registry.cpp</name>
+  </compound>
+  <compound refid="a00011" kind="file"><name>registry.h</name>
+  </compound>
+  <compound refid="a00017" kind="file"><name>type_utils.h</name>
+  </compound>
+  <compound refid="a00014" kind="file"><name>types.h</name>
+    <member refid="a00014_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kind="typedef"><name>str</name></member>
+    <member refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kind="typedef"><name>cstr</name></member>
+    <member refid="a00014_1a91ad9478d81a7aaf2593e8d9c3d06a14" kind="typedef"><name>uint</name></member>
+  </compound>
+  <compound refid="a00020" kind="file"><name>window.cpp</name>
+  </compound>
+  <compound refid="a00023" kind="file"><name>window.h</name>
+  </compound>
+  <compound refid="a00026" kind="file"><name>vecs.cpp</name>
+  </compound>
+  <compound refid="a00029" kind="file"><name>vecs.h</name>
+  </compound>
+  <compound refid="a00032" kind="file"><name>Camera.cpp</name>
+    <member refid="a00032_1abd75661fe7969e19439052a5f69ba5d1" kind="define"><name>GLM_ENABLE_EXPERIMENTAL</name></member>
+  </compound>
+  <compound refid="a00035" kind="file"><name>Camera.h</name>
+  </compound>
+  <compound refid="a00038" kind="file"><name>VkDescriptors.cpp</name>
+  </compound>
+  <compound refid="a00041" kind="file"><name>VkDescriptors.h</name>
+  </compound>
+  <compound refid="a00044" kind="file"><name>VkEngine.cpp</name>
+    <member refid="a00044_1abea80547807da765ebe9fce1c6dd6a8d" kind="define"><name>VMA_IMPLEMENTATION</name></member>
+    <member refid="a00044_1a0f2bcd236403cd740db7ed89ec4e392f" kind="variable"><name>bUseValidationLayers</name></member>
+    <member refid="a00044_1a3180bc6bf9f297afa593d69886a475fb" kind="variable"><name>loadedEngine</name></member>
+  </compound>
+  <compound refid="a00047" kind="file"><name>VkEngine.h</name>
+    <member refid="a00047_1ab91f325a54d3e35fe831a86d6382c2a9" kind="define"><name>GLFW_INCLUDE_VULKAN</name></member>
+    <member refid="a00047_1a10ae962afdbd2c033a5c3af07aea14c2" kind="variable"><name>FRAME_OVERLAP</name></member>
+  </compound>
+  <compound refid="a00050" kind="file"><name>VkImages.cpp</name>
+    <member refid="a00050_1a18372412ad2fc3ce1e3240b3cf0efe78" kind="define"><name>STB_IMAGE_IMPLEMENTATION</name></member>
+  </compound>
+  <compound refid="a00053" kind="file"><name>VkImages.h</name>
+  </compound>
+  <compound refid="a00056" kind="file"><name>VkInitializers.cpp</name>
+  </compound>
+  <compound refid="a00059" kind="file"><name>VkInitializers.h</name>
+  </compound>
+  <compound refid="a00062" kind="file"><name>VkLoader.cpp</name>
+    <member refid="a00062_1abd75661fe7969e19439052a5f69ba5d1" kind="define"><name>GLM_ENABLE_EXPERIMENTAL</name></member>
+  </compound>
+  <compound refid="a00065" kind="file"><name>VkLoader.h</name>
+    <member refid="a00065_1abd75661fe7969e19439052a5f69ba5d1" kind="define"><name>GLM_ENABLE_EXPERIMENTAL</name></member>
+  </compound>
+  <compound refid="a00068" kind="file"><name>VkPipelines.cpp</name>
+  </compound>
+  <compound refid="a00071" kind="file"><name>VkPipelines.h</name>
+    <member refid="a00071_1acf55208507a986f3bce7bf1dc150b896" kind="define"><name>ATOMUSVULKAN_VKPIPELINES_H</name></member>
+  </compound>
+  <compound refid="a00074" kind="file"><name>VkTypes.h</name>
+    <member refid="a00074_1ab91f325a54d3e35fe831a86d6382c2a9" kind="define"><name>GLFW_INCLUDE_VULKAN</name></member>
+    <member refid="a00074_1a3d55e176cc77828a9adaa05ac4413b99" kind="define"><name>VK_CHECK</name></member>
+    <member refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" kind="enum"><name>MaterialPass</name></member>
+    <member refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529" kind="enumvalue"><name>MainColor</name></member>
+    <member refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63" kind="enumvalue"><name>Transparent</name></member>
+    <member refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1" kind="enumvalue"><name>Other</name></member>
+  </compound>
+  <compound refid="a00077" kind="file"><name>string.cpp</name>
+  </compound>
+  <compound refid="a00080" kind="file"><name>string.h</name>
+  </compound>
+  <compound refid="a00083" kind="file"><name>main.cpp</name>
+    <member refid="a00083_1adf980eb1ed0df2191c56fd3d218c2819" kind="define"><name>DOCTEST_CONFIG_IMPLEMENT</name></member>
+    <member refid="a00083_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="a00086" kind="file"><name>query.cpp</name>
+  </compound>
+  <compound refid="a00089" kind="file"><name>query.h</name>
+  </compound>
+  <compound refid="a00092" kind="file"><name>world.cpp</name>
+  </compound>
+  <compound refid="a00095" kind="file"><name>world.h</name>
+    <member refid="a00095_1a6d8c910a1fdb6d4762a05f7250e64322" kind="define"><name>MAX_COMPONENTS</name></member>
+    <member refid="a00095_1a0b7e155f796ed5e7b49b0f44867135ee" kind="define"><name>MAX_ENTITIES</name></member>
+    <member refid="a00095_1adf65ae7e548af7032d38f564cc5548c2" kind="define"><name>INVALID_ENTITY</name></member>
   </compound>
   <compound refid="dir_3f340e0b9cc460f74c713234c9fdc727" kind="dir"><name>Catos</name>
   </compound>
+  <compound refid="dir_aeed8c4c988cf984201a5af9d542cd60" kind="dir"><name>core</name>
+  </compound>
   <compound refid="dir_7d6cbd7c926a015d1e4e8ab36b9a9a07" kind="dir"><name>docs</name>
+  </compound>
+  <compound refid="dir_6ec2e57f1267756cfb2f22fd5561a7a9" kind="dir"><name>math</name>
+  </compound>
+  <compound refid="dir_fd70bef6cc29cc5db1a34d3d53b10fa1" kind="dir"><name>Renderer</name>
+  </compound>
+  <compound refid="dir_d79a2d43d9bc69227b07672b83d05d3f" kind="dir"><name>Runtime</name>
+  </compound>
+  <compound refid="dir_a457a6f8f2312f3aff6bfc4a92329718" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_4c1af30473a9e10bbf0089f4a009f125" kind="dir"><name>stl</name>
+  </compound>
+  <compound refid="dir_0b7b4a468a05e67e25cf46f17c51c797" kind="dir"><name>tests</name>
+  </compound>
+  <compound refid="dir_e30308e155d0e4b24382fe3d095b29d5" kind="dir"><name>world</name>
   </compound>
   <compound refid="indexpage" kind="page"><name>index</name>
   </compound>

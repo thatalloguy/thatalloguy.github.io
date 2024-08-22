@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): catos::Game Class Reference</title>
+<title>Catos Engine (Source): VkImages.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectalign">
    <div id="projectname">Catos Engine (Source)<span id="projectnumber">&#160;0.0.1</span>
    </div>
-   <div id="projectbrief">Lightweight ECS Game engine</div>
+   <div id="projectbrief">Lightweight Game engine</div>
   </td>
  </tr>
  </tbody>
@@ -95,297 +95,34 @@ $(function(){initNavTree('a00050.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="a00047.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">catos::Game Class Reference</div></div>
+<a href="#define-members">Macros</a>  </div>
+  <div class="headertitle"><div class="title">VkImages.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The <a class="el" href="a00050.html" title="The Game objects stores the scenes and other objects.">Game</a> objects stores the scenes and other objects.  
- <a href="#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00005_source.html">game.h</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a1c9d5572c3cdb404044451457dd886" id="r_a7a1c9d5572c3cdb404044451457dd886"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a1c9d5572c3cdb404044451457dd886">Game</a> ()=default</td></tr>
-<tr class="separator:a7a1c9d5572c3cdb404044451457dd886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b8a681b7b89244c5c626074c4690d4e" id="r_a1b8a681b7b89244c5c626074c4690d4e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b8a681b7b89244c5c626074c4690d4e">~Game</a> ()=default</td></tr>
-<tr class="separator:a1b8a681b7b89244c5c626074c4690d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89a1cedb2203b821034038d66e509b08" id="r_a89a1cedb2203b821034038d66e509b08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89a1cedb2203b821034038d66e509b08">init</a> ()</td></tr>
-<tr class="separator:a89a1cedb2203b821034038d66e509b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa74a1aa80630a7ddc216e7ba28a2a3c8" id="r_aa74a1aa80630a7ddc216e7ba28a2a3c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00046.html">GameConfig</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa74a1aa80630a7ddc216e7ba28a2a3c8">get_config</a> ()</td></tr>
-<tr class="separator:aa74a1aa80630a7ddc216e7ba28a2a3c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a721f190ff4930ab710ea343e0ff5e594" id="r_a721f190ff4930ab710ea343e0ff5e594"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00042.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a721f190ff4930ab710ea343e0ff5e594">create_scene</a> (<a class="el" href="a00011.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a> <a class="el" href="a00050.html">Game</a>)</td></tr>
-<tr class="separator:a721f190ff4930ab710ea343e0ff5e594"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbcd7e24ad697a2877da552932a02262" id="r_acbcd7e24ad697a2877da552932a02262"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00042.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acbcd7e24ad697a2877da552932a02262">change_scene_name</a> (<a class="el" href="a00011.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a> oldGame, <a class="el" href="a00011.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a> newGame)</td></tr>
-<tr class="memdesc:acbcd7e24ad697a2877da552932a02262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the <a class="el" href="a00050.html" title="The Game objects stores the scenes and other objects.">Game</a> of a scene, returns the changed scene.  <br /></td></tr>
-<tr class="separator:acbcd7e24ad697a2877da552932a02262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a49d74e76e9ecdcf368b9d85cfcc16cac" id="r_a49d74e76e9ecdcf368b9d85cfcc16cac"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00042.html">Scene</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49d74e76e9ecdcf368b9d85cfcc16cac">get_scene</a> (<a class="el" href="a00011.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a> <a class="el" href="a00050.html">Game</a>)</td></tr>
-<tr class="memdesc:a49d74e76e9ecdcf368b9d85cfcc16cac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the scene via the <a class="el" href="a00050.html" title="The Game objects stores the scenes and other objects.">Game</a>.  <br /></td></tr>
-<tr class="separator:a49d74e76e9ecdcf368b9d85cfcc16cac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d45a8e19170c3c6b16cce52c3ddb4e7" id="r_a7d45a8e19170c3c6b16cce52c3ddb4e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7d45a8e19170c3c6b16cce52c3ddb4e7">operator==</a> (<a class="el" href="a00050.html">Game</a> other)</td></tr>
-<tr class="separator:a7d45a8e19170c3c6b16cce52c3ddb4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad14328333e83c598a4d8c7d04b76e099" id="r_ad14328333e83c598a4d8c7d04b76e099"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00050.html">Game</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad14328333e83c598a4d8c7d04b76e099">_</a> ()</td></tr>
-<tr class="separator:ad14328333e83c598a4d8c7d04b76e099"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aae8c67ebd882d7462b94463a42f618b2" id="r_aae8c67ebd882d7462b94463a42f618b2"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae8c67ebd882d7462b94463a42f618b2">_register</a> (VM *vm, PyObject *mod, PyObject *type)</td></tr>
-<tr class="separator:aae8c67ebd882d7462b94463a42f618b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<div class="textblock"><code>#include &lt;stb_image.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00053_source.html">VkImages.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00059_source.html">VkInitializers.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a18372412ad2fc3ce1e3240b3cf0efe78" id="r_a18372412ad2fc3ce1e3240b3cf0efe78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18372412ad2fc3ce1e3240b3cf0efe78">STB_IMAGE_IMPLEMENTATION</a></td></tr>
+<tr class="separator:a18372412ad2fc3ce1e3240b3cf0efe78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="a00050.html" title="The Game objects stores the scenes and other objects.">Game</a> objects stores the scenes and other objects. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a7a1c9d5572c3cdb404044451457dd886" name="a7a1c9d5572c3cdb404044451457dd886"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a1c9d5572c3cdb404044451457dd886">&#9670;&#160;</a></span>Game()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">catos::Game::Game </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1b8a681b7b89244c5c626074c4690d4e" name="a1b8a681b7b89244c5c626074c4690d4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b8a681b7b89244c5c626074c4690d4e">&#9670;&#160;</a></span>~Game()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">catos::Game::~Game </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad14328333e83c598a4d8c7d04b76e099" name="ad14328333e83c598a4d8c7d04b76e099"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad14328333e83c598a4d8c7d04b76e099">&#9670;&#160;</a></span>_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00050.html">Game</a> * catos::Game::_ </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aae8c67ebd882d7462b94463a42f618b2" name="aae8c67ebd882d7462b94463a42f618b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae8c67ebd882d7462b94463a42f618b2">&#9670;&#160;</a></span>_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void catos::Game::_register </td>
-          <td>(</td>
-          <td class="paramtype">VM *</td>          <td class="paramname"><span class="paramname"><em>vm</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PyObject *</td>          <td class="paramname"><span class="paramname"><em>mod</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">PyObject *</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acbcd7e24ad697a2877da552932a02262" name="acbcd7e24ad697a2877da552932a02262"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbcd7e24ad697a2877da552932a02262">&#9670;&#160;</a></span>change_scene_name()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a18372412ad2fc3ce1e3240b3cf0efe78" name="a18372412ad2fc3ce1e3240b3cf0efe78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18372412ad2fc3ce1e3240b3cf0efe78">&#9670;&#160;</a></span>STB_IMAGE_IMPLEMENTATION</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="a00042.html">Scene</a> &gt; catos::Game::change_scene_name </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00011.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td>          <td class="paramname"><span class="paramname"><em>oldGame</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00011.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td>          <td class="paramname"><span class="paramname"><em>newGame</em></span>&#160;)</td>
+          <td class="memname">#define STB_IMAGE_IMPLEMENTATION</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Changes the <a class="el" href="a00050.html" title="The Game objects stores the scenes and other objects.">Game</a> of a scene, returns the changed scene. </p>
-
 </div>
 </div>
-<a id="a721f190ff4930ab710ea343e0ff5e594" name="a721f190ff4930ab710ea343e0ff5e594"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a721f190ff4930ab710ea343e0ff5e594">&#9670;&#160;</a></span>create_scene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="a00042.html">Scene</a> &gt; catos::Game::create_scene </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00011.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td>          <td class="paramname"><span class="paramname"><em>Game</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p><a class="el" href="a00042.html" title="The scene holds everything about the scene and entities.">Scene</a> handling Creates a scene via a <a class="el" href="a00050.html" title="The Game objects stores the scenes and other objects.">Game</a>, returns the newly created scene. </p>
-
-</div>
-</div>
-<a id="aa74a1aa80630a7ddc216e7ba28a2a3c8" name="aa74a1aa80630a7ddc216e7ba28a2a3c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa74a1aa80630a7ddc216e7ba28a2a3c8">&#9670;&#160;</a></span>get_config()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00046.html">GameConfig</a> &amp; catos::Game::get_config </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a49d74e76e9ecdcf368b9d85cfcc16cac" name="a49d74e76e9ecdcf368b9d85cfcc16cac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49d74e76e9ecdcf368b9d85cfcc16cac">&#9670;&#160;</a></span>get_scene()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::shared_ptr&lt; <a class="el" href="a00042.html">Scene</a> &gt; catos::Game::get_scene </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00011.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td>          <td class="paramname"><span class="paramname"><em>Game</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Returns the scene via the <a class="el" href="a00050.html" title="The Game objects stores the scenes and other objects.">Game</a>. </p>
-
-</div>
-</div>
-<a id="a89a1cedb2203b821034038d66e509b08" name="a89a1cedb2203b821034038d66e509b08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89a1cedb2203b821034038d66e509b08">&#9670;&#160;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void catos::Game::init </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7d45a8e19170c3c6b16cce52c3ddb4e7" name="a7d45a8e19170c3c6b16cce52c3ddb4e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d45a8e19170c3c6b16cce52c3ddb4e7">&#9670;&#160;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool catos::Game::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00050.html">Game</a></td>          <td class="paramname"><span class="paramname"><em>other</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00005_source.html">game.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <p>

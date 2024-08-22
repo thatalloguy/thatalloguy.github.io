@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['scene_0',['Scene',['../a00044.html',1,'catos::Scene'],['../a00044.html#adc98f44d27d0b8d7b21a905412373726',1,'catos::Scene::Scene()']]],
-  ['set_5fname_1',['set_name',['../a00056.html#a14c6ded73ec5e93149fda506c540a34f',1,'catos::Property::set_name()'],['../a00060.html#a65aa9409bbd99020c1516dce375f7d42',1,'catos::PropertyImpl::set_name()']]],
-  ['setup_2',['setup',['../a00040.html#a0ec9adef499357ade7d76d33a4a611be',1,'catos::Entity']]],
-  ['str_3',['str',['../a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7',1,'types.h']]],
-  ['system_20blueprint_4',['EC system blueprint.',['../index.html#ec-system-blueprint',1,'']]]
+  ['name_0',['name',['../a00126.html#a6f9a11dc26ec88bce95a6d7e0131da9f',1,'catos::PropertyImpl::name'],['../a00138.html#ae0b2ff915a7ee07932398ea73ba22943',1,'catos::TypeInfo::name'],['../a00194.html#abddbf819b22623f6a100da0296f22c79',1,'ComputeEffect::name'],['../a00238.html#a7abaa0b660e944edd81ce5186c32d367',1,'MeshAsset::name']]],
+  ['near_1',['near',['../a00158.html#ad96efd3e1e4ec33dddb1d25f05d02ff2',1,'Camera']]],
+  ['new_5fentity_2',['new_entity',['../a00330.html#a38fb24dfb4f9b045f1c1d47b7240c164',1,'catos::World']]],
+  ['node_3',['Node',['../a00242.html',1,'']]],
+  ['nodes_4',['nodes',['../a00246.html#abf50d971f7ff884cf18b10627132e24d',1,'LoadedGLTF']]],
+  ['normal_5',['normal',['../a00266.html#a3aa35fe84025ecf1acccb5f65f5577fd',1,'Vertex']]]
 ];

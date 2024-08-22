@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): Catos Engine</title>
+<title>Catos Engine (Source): application.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectalign">
    <div id="projectname">Catos Engine (Source)<span id="projectnumber">&#160;0.0.1</span>
    </div>
-   <div id="projectbrief">Lightweight ECS Game engine</div>
+   <div id="projectbrief">Lightweight Game engine</div>
   </td>
  </tr>
  </tbody>
@@ -93,60 +93,34 @@ $(function(){initNavTree('a00005.html',''); initResizable(); });
 </div>
 </div>
 
-<div><div class="header">
-  <div class="headertitle"><div class="title">Catos Engine</div></div>
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">application.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="catos-engine"></a> </p><h5>modern lightweight ECS cpp game engine</h5>
-<p>(Wiki) <a href="https://github.com/thatalloguy/Catos/wiki">https://github.com/thatalloguy/Catos/wiki</a> </p><h5>Different one comming sometime 🤷‍♂️</h5>
-<p># # </p>
-<h3><a class="anchor" id="planned-features--todo"></a>
-Planned Features / ToDo</h3>
-<ul>
-<li>[x] Reflection system</li>
-<li>- [ ] <strike>constructors</strike></li>
-<li>- [x] Methods</li>
-<li>- [x] Properties</li>
-<li>[x] EC.</li>
-<li>- [x] Entity Creation.</li>
-<li>- [x] Central system for handling entities.</li>
-<li>- [x] Base component</li>
-<li>[ ] C# scripting engine</li>
-<li>- [x] Creating instances of classes.</li>
-<li>- [x] Calling functions of instances.</li>
-<li>- [x] Getting and Setting fields.</li>
-<li>- [x] Calling Cpp from C#</li>
-<li>- [ ] Embedding intergration with the reflection system</li>
-<li>- [ ] Refactor.</li>
-<li>- [ ] Script Object.</li>
-<li>[ ] Resource manager</li>
-<li>[ ] Dynamic Editor (via the reflection)</li>
-<li>[ ] Atomus implementation. # </li>
-</ul>
-<h2><a class="anchor" id="ec-system-blueprint"></a>
-EC system blueprint.</h2>
-<p><img src="https://github.com/thatalloguy/Catos/assets/51132972/f8a23b4e-8511-40bb-9648-cb252d856b83" alt="image" class="inline"/> #</p>
-<h2><a class="anchor" id="rendering-with"></a>
-Rendering with</h2>
-<p><a href="https://github.com/thatalloguy/Atomus">https://github.com/thatalloguy/Atomus</a></p>
-<h4><a class="anchor" id="ideas-for-the-engine"></a>
-Ideas for the engine</h4>
-<h5>- Vulkan renderer (+ opengl):</h5>
-<p>After ive finished the asset manager i will continue dev on my personal vulkan renderer. After that I am hoping to write a RHI so that i can support multiple graphic api's.</p><ul>
-<li>UPDATE: I finished Atomus (vulkan renderer) and i dont think il create an RHI anytime soon 😅.</li>
-</ul>
-<h5>- C# as scripting lang</h5>
-<p>I really like C# and i would like to have it as my scripting lang. However ive learned that implementing C# is a PITA, but im hoping that my new reflection system will make my life easier.</p>
-<h5>- Physics engine</h5>
-<p>In the past ive used PhysX, bullet and reactphysics3d. But i dislike all 3. I have heard lots of good stuff about Joltphysics and i might give it a try for this engine.</p>
-<h5>- Audio Engine</h5>
-<p>Ive never really done much with audio, but ive seen the steam audio api and im hoping to try it!</p>
-<h5>- Editor GUI</h5>
-<p>For the editor il be using IMGUI since ive lots of experience with it. However this time around i would like to modify the feel of imgui.</p>
-<h5>- Game GUI</h5>
-<p>At this point what i will use is far away, but i would either want something to functions like remUI. But i could also end up writing my own (IF i were to write my own GUI lib the editor will use that instead of imgui). </p>
-</div></div><!-- contents -->
-</div><!-- PageDoc -->
+<div class="textblock"><code>#include &quot;<a class="el" href="a00014_source.html">types.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00017_source.html">type_utils.h</a>&quot;</code><br />
+<code>#include &lt;unordered_map&gt;</code><br />
+</div>
+<p><a href="a00005_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html">catos::AppCreationInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that holds all info the application needs at launch.  <a href="a00114.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html">catos::App</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main class that holds all information.  <a href="a00118.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00101" id="r_a00101"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00101.html">catos</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

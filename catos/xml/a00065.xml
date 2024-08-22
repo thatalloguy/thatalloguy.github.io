@@ -1,227 +1,355 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00065" kind="class" language="C++" prot="public">
-    <compoundname>catos::PropertyImpl</compoundname>
-    <basecompoundref refid="a00061" prot="public" virt="non-virtual">catos::Property</basecompoundref>
-    <includes refid="a00011" local="no">registry.h</includes>
-    <templateparamlist>
-      <param>
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">typename</ref> <ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">T</ref></type>
-      </param>
-      <param>
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">typename</ref> <ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">U</ref></type>
-      </param>
-    </templateparamlist>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00065_1ab295885403ec42bdf4db7c50dacb6c4b" prot="public" static="no" mutable="no">
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">U</ref> T::*</type>
-        <definition>U T::* catos::PropertyImpl&lt; T, U &gt;::memberPtr</definition>
-        <argsstring></argsstring>
-        <name>memberPtr</name>
-        <qualifiedname>catos::PropertyImpl::memberPtr</qualifiedname>
+  <compounddef id="a00065" kind="file" language="C++">
+    <compoundname>VkLoader.h</compoundname>
+    <includes refid="a00074" local="yes">VkTypes.h</includes>
+    <includes refid="a00041" local="yes">VkDescriptors.h</includes>
+    <includes local="no">unordered_map</includes>
+    <includes local="no">filesystem</includes>
+    <includes local="no">glm/gtx/quaternion.hpp</includes>
+    <includes local="no">fastgltf/glm_element_traits.hpp</includes>
+    <includes local="no">fastgltf/tools.hpp</includes>
+    <includes local="no">fastgltf/core.hpp</includes>
+    <includes local="no">fastgltf/util.hpp</includes>
+    <includedby refid="a00047" local="yes">VkEngine.h</includedby>
+    <includedby refid="a00062" local="yes">VkLoader.cpp</includedby>
+    <incdepgraph>
+      <node id="23">
+        <label>VkDescriptors.h</label>
+        <link refid="a00041"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>VkLoader.h</label>
+        <link refid="a00065"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>VkTypes.h</label>
+        <link refid="a00074"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="17">
+        <label>VkBootstrap.h</label>
+      </node>
+      <node id="8">
+        <label>array</label>
+      </node>
+      <node id="12">
+        <label>chrono</label>
+      </node>
+      <node id="10">
+        <label>deque</label>
+      </node>
+      <node id="29">
+        <label>fastgltf/core.hpp</label>
+      </node>
+      <node id="27">
+        <label>fastgltf/glm_element_traits.hpp</label>
+      </node>
+      <node id="28">
+        <label>fastgltf/tools.hpp</label>
+      </node>
+      <node id="30">
+        <label>fastgltf/util.hpp</label>
+      </node>
+      <node id="25">
+        <label>filesystem</label>
+      </node>
+      <node id="9">
+        <label>functional</label>
+      </node>
+      <node id="22">
+        <label>glm/common.hpp</label>
+      </node>
+      <node id="21">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="26">
+        <label>glm/gtx/quaternion.hpp</label>
+      </node>
+      <node id="19">
+        <label>glm/mat4x4.hpp</label>
+      </node>
+      <node id="20">
+        <label>glm/vec4.hpp</label>
+      </node>
+      <node id="3">
+        <label>memory</label>
+      </node>
+      <node id="4">
+        <label>optional</label>
+      </node>
+      <node id="7">
+        <label>span</label>
+      </node>
+      <node id="18">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>thread</label>
+      </node>
+      <node id="24">
+        <label>unordered_map</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="16">
+        <label>vk_mem_alloc.h</label>
+      </node>
+      <node id="15">
+        <label>vulkan/vk_enum_string_helper.h</label>
+      </node>
+      <node id="14">
+        <label>vulkan/vulkan.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>VkEngine.cpp</label>
+        <link refid="a00044"/>
+      </node>
+      <node id="2">
+        <label>VkEngine.h</label>
+        <link refid="a00047"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>VkLoader.cpp</label>
+        <link refid="a00062"/>
+      </node>
+      <node id="1">
+        <label>VkLoader.h</label>
+        <link refid="a00065"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>window.cpp</label>
+        <link refid="a00020"/>
+      </node>
+      <node id="5">
+        <label>window.h</label>
+        <link refid="a00023"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00226" prot="public">IRenderable</innerclass>
+    <innerclass refid="a00230" prot="public">GLTFMaterial</innerclass>
+    <innerclass refid="a00234" prot="public">GeoSurface</innerclass>
+    <innerclass refid="a00238" prot="public">MeshAsset</innerclass>
+    <innerclass refid="a00242" prot="public">Node</innerclass>
+    <innerclass refid="a00246" prot="public">LoadedGLTF</innerclass>
+    <innernamespace refid="a00106">VkLoader</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="a00065_1abd75661fe7969e19439052a5f69ba5d1" prot="public" static="no">
+        <name>GLM_ENABLE_EXPERIMENTAL</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="48" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="48" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00065_1a6f9a11dc26ec88bce95a6d7e0131da9f" prot="public" static="no" mutable="no">
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">const</ref> <ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">char</ref> *</type>
-        <definition>const char* catos::PropertyImpl&lt; T, U &gt;::name</definition>
-        <argsstring></argsstring>
-        <name>name</name>
-        <qualifiedname>catos::PropertyImpl::name</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="49" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="49" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00065_1a220d2c57189b922ac43e74b7605ddfec" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string catos::PropertyImpl&lt; T, U &gt;::type_name</definition>
-        <argsstring></argsstring>
-        <name>type_name</name>
-        <qualifiedname>catos::PropertyImpl::type_name</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="52" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="52" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00065_1ac17e39e00f466c5e3ce27c204ebe7aa8" prot="public" static="no" mutable="no">
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">size_t</ref></type>
-        <definition>size_t catos::PropertyImpl&lt; T, U &gt;::type_hash</definition>
-        <argsstring></argsstring>
-        <name>type_hash</name>
-        <qualifiedname>catos::PropertyImpl::type_hash</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="53" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="53" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00065_1ac0cf2f99603c800a6054af6c9c21c74f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>catos::PropertyImpl&lt; T, U &gt;::PropertyImpl</definition>
-        <argsstring>(U T::*memPtr)</argsstring>
-        <name>PropertyImpl</name>
-        <qualifiedname>catos::PropertyImpl::PropertyImpl</qualifiedname>
-        <param>
-          <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">U</ref> T::*</type>
-          <declname>memPtr</declname>
-        </param>
-        <briefdescription>
-<para><ref refid="a00065" kindref="compound">PropertyImpl</ref> exist in order to avoid having to deal with templates at the user-side. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="56" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="56" bodyend="59"/>
-      </memberdef>
-      <memberdef kind="function" id="a00065_1a65aa9409bbd99020c1516dce375f7d42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">void</ref></type>
-        <definition>void catos::PropertyImpl&lt; T, U &gt;::set_name</definition>
-        <argsstring>(const char *new_name) override</argsstring>
-        <name>set_name</name>
-        <qualifiedname>catos::PropertyImpl::set_name</qualifiedname>
-        <reimplements refid="a00061_1a14c6ded73ec5e93149fda506c540a34f">set_name</reimplements>
-        <param>
-          <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">const</ref> <ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">char</ref> *</type>
-          <declname>new_name</declname>
-        </param>
-        <briefdescription>
-<para>Set the name of the property. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="62" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="62" bodyend="64"/>
-      </memberdef>
-      <memberdef kind="function" id="a00065_1aa89fca9f010b109d612eab9df84fa386" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">void</ref> *</type>
-        <definition>void * catos::PropertyImpl&lt; T, U &gt;::get_value</definition>
-        <argsstring>(const void *objPtr) override</argsstring>
-        <name>get_value</name>
-        <qualifiedname>catos::PropertyImpl::get_value</qualifiedname>
-        <reimplements refid="a00061_1a658e2343fa5565207592286b665c82e5">get_value</reimplements>
-        <param>
-          <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">const</ref> <ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">void</ref> *</type>
-          <declname>objPtr</declname>
-        </param>
-        <briefdescription>
-<para>Use Get value (which can be cased to the desired type) to return an value of an instance. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="70" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="70" bodyend="73"/>
-      </memberdef>
-      <memberdef kind="function" id="a00065_1a24f8b788dd92d969611c1a04f9bbd452" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">const</ref> <ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">char</ref> *</type>
-        <definition>const char * catos::PropertyImpl&lt; T, U &gt;::get_name</definition>
-        <argsstring>() override</argsstring>
-        <name>get_name</name>
-        <qualifiedname>catos::PropertyImpl::get_name</qualifiedname>
-        <reimplements refid="a00061_1ae2346543825d185fd3397262fd09d4cf">get_name</reimplements>
-        <briefdescription>
-<para>Get the name of the property. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="77" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="77" bodyend="79"/>
-      </memberdef>
-      <memberdef kind="function" id="a00065_1af278bcec34c8085f5e7d167678158a87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>const char *</type>
-        <definition>const char * catos::PropertyImpl&lt; T, U &gt;::get_type_name</definition>
-        <argsstring>() override</argsstring>
-        <name>get_type_name</name>
-        <qualifiedname>catos::PropertyImpl::get_type_name</qualifiedname>
-        <reimplements refid="a00061_1ade91b642390d463208dcc397143a1a95">get_type_name</reimplements>
-        <briefdescription>
-<para>Returns the name of the fields type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="82" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="82" bodyend="84"/>
-      </memberdef>
-      <memberdef kind="function" id="a00065_1ab2faac90acb74e92242075e332ee34af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type><ref refid="a00065_1af278bcec34c8085f5e7d167678158a87" kindref="member">size_t</ref> &amp;</type>
-        <definition>size_t &amp; catos::PropertyImpl&lt; T, U &gt;::get_type_hash</definition>
-        <argsstring>() override</argsstring>
-        <name>get_type_hash</name>
-        <qualifiedname>catos::PropertyImpl::get_type_hash</qualifiedname>
-        <reimplements refid="a00061_1a2048e2c564639ddbe4b2632749f417da">get_type_hash</reimplements>
-        <briefdescription>
-<para>Returns (a reference of) the type&apos;s hash. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="87" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="87" bodyend="89"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="18" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="18" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para><ref refid="a00065" kindref="compound">PropertyImpl</ref> implements <ref refid="a00061" kindref="compound">Property</ref> and holds an member function pointer. Used to get an value of an field of an Type&apos;s instance. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="2">
-        <label>catos::Property</label>
-        <link refid="a00061"/>
-      </node>
-      <node id="1">
-        <label>catos::PropertyImpl&lt; T, U &gt;</label>
-        <link refid="a00065"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="2">
-        <label>catos::Property</label>
-        <link refid="a00061"/>
-      </node>
-      <node id="1">
-        <label>catos::PropertyImpl&lt; T, U &gt;</label>
-        <link refid="a00065"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="44" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="44" bodyend="91"/>
-    <listofallmembers>
-      <member refid="a00061_1aabfc2935e5ce159303cdd8c760fe3e43" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>desc</name></member>
-      <member refid="a00065_1a24f8b788dd92d969611c1a04f9bbd452" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>get_name</name></member>
-      <member refid="a00065_1ab2faac90acb74e92242075e332ee34af" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>get_type_hash</name></member>
-      <member refid="a00065_1af278bcec34c8085f5e7d167678158a87" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>get_type_name</name></member>
-      <member refid="a00065_1aa89fca9f010b109d612eab9df84fa386" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>get_value</name></member>
-      <member refid="a00065_1ab295885403ec42bdf4db7c50dacb6c4b" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>memberPtr</name></member>
-      <member refid="a00065_1a6f9a11dc26ec88bce95a6d7e0131da9f" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>name</name></member>
-      <member refid="a00065_1ac0cf2f99603c800a6054af6c9c21c74f" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>PropertyImpl</name></member>
-      <member refid="a00065_1a65aa9409bbd99020c1516dce375f7d42" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>set_name</name></member>
-      <member refid="a00065_1ac17e39e00f466c5e3ce27c204ebe7aa8" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>type_hash</name></member>
-      <member refid="a00065_1a220d2c57189b922ac43e74b7605ddfec" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>type_name</name></member>
-      <member refid="a00061_1aadf32bd1d8c607a993f117ea2db3cadd" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>~Property</name></member>
-    </listofallmembers>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>2/10/2024.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Purpose<sp/>of<sp/>this<sp/>file<sp/>for<sp/>future<sp/>reference:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Will<sp/>contain<sp/>GLTF<sp/>loading<sp/>logic</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00074" kindref="compound">VkTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00041" kindref="compound">VkDescriptors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;filesystem&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="a00065_1abd75661fe7969e19439052a5f69ba5d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLM_ENABLE_EXPERIMENTAL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/gtx/quaternion.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fastgltf/glm_element_traits.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fastgltf/tools.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fastgltf/core.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fastgltf/util.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00222" kindref="compound">VulkanEngine</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00214" kindref="compound">DrawContext</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="a00226" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00226" kindref="compound">IRenderable</ref><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Draw(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::mat4&amp;<sp/>topMatrix,<sp/><ref refid="a00214" kindref="compound">DrawContext</ref>&amp;<sp/>ctx)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="a00230" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00230" kindref="compound">GLTFMaterial</ref><sp/>{</highlight></codeline>
+<codeline lineno="39" refid="a00230_1a0a53cb60736b2eb12975d43c6b071d28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00286" kindref="compound">MaterialInstance</ref><sp/><ref refid="a00230_1a0a53cb60736b2eb12975d43c6b071d28" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="a00234" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00234" kindref="compound">GeoSurface</ref><sp/>{</highlight></codeline>
+<codeline lineno="43" refid="a00234_1ab6fd9aebf929934ca3b679e11b984e88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="a00234_1ab6fd9aebf929934ca3b679e11b984e88" kindref="member">startIndex</ref>;</highlight></codeline>
+<codeline lineno="44" refid="a00234_1a5bfc701fbd45f395a990f9a0063b8975" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="a00234_1a5bfc701fbd45f395a990f9a0063b8975" kindref="member">count</ref>;</highlight></codeline>
+<codeline lineno="45" refid="a00234_1ad8e3399fe5d911224a61f379cbfcd4d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00258" kindref="compound">Bounds</ref><sp/><ref refid="a00234_1ad8e3399fe5d911224a61f379cbfcd4d9" kindref="member">bounds</ref>;</highlight></codeline>
+<codeline lineno="46" refid="a00234_1af0c192263057788d4136d4b73a63ead4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::shared_ptr&lt;GLTFMaterial&gt;<sp/><ref refid="a00234_1af0c192263057788d4136d4b73a63ead4" kindref="member">material</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="a00238" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00238" kindref="compound">MeshAsset</ref><sp/>{</highlight></codeline>
+<codeline lineno="51" refid="a00238_1a7abaa0b660e944edd81ce5186c32d367" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="a00238_1a7abaa0b660e944edd81ce5186c32d367" kindref="member">name</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="a00238_1a40aac10ab4f9e8d1041ea3035336c68a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;GeoSurface&gt;<sp/><ref refid="a00238_1a40aac10ab4f9e8d1041ea3035336c68a" kindref="member">surfaces</ref>;</highlight></codeline>
+<codeline lineno="54" refid="a00238_1a27c656c430749b3b3412dcafba2c7b9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00270" kindref="compound">GPUMeshBuffers</ref><sp/><ref refid="a00238_1a27c656c430749b3b3412dcafba2c7b9c" kindref="member">meshBuffers</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="a00242" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00242" kindref="compound">Node</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="a00226" kindref="compound">IRenderable</ref><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="a00242_1a99e65d6b9186c551371b95ea3845b6fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::weak_ptr&lt;Node&gt;<sp/><ref refid="a00242_1a99e65d6b9186c551371b95ea3845b6fd" kindref="member">parent</ref>;</highlight></codeline>
+<codeline lineno="64" refid="a00242_1a0f9591e9fa0bf1680b1e3ac8c32739aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::shared_ptr&lt;Node&gt;&gt;<sp/><ref refid="a00242_1a0f9591e9fa0bf1680b1e3ac8c32739aa" kindref="member">childern</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="a00242_1a633dd4c9cfe7d73b9964bd90c0b9c28f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/><ref refid="a00242_1a633dd4c9cfe7d73b9964bd90c0b9c28f" kindref="member">localTransform</ref>;</highlight></codeline>
+<codeline lineno="67" refid="a00242_1a080e37187a37353df15596dc9250e700" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/><ref refid="a00242_1a080e37187a37353df15596dc9250e700" kindref="member">worldTransform</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="a00242_1a04e0eff14682dca41284af38d0cb51a5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00242_1a04e0eff14682dca41284af38d0cb51a5" kindref="member">refreshTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::mat4&amp;<sp/>parentMatrix)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00242_1a080e37187a37353df15596dc9250e700" kindref="member">worldTransform</ref><sp/>=<sp/>parentMatrix<sp/>*<sp/><ref refid="a00242_1a633dd4c9cfe7d73b9964bd90c0b9c28f" kindref="member">localTransform</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>c<sp/>:<sp/><ref refid="a00242_1a0f9591e9fa0bf1680b1e3ac8c32739aa" kindref="member">childern</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c-&gt;refreshTransform(<ref refid="a00242_1a080e37187a37353df15596dc9250e700" kindref="member">worldTransform</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="a00242_1a6870e549c7f428dbcd4f61d43eaa2f4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00242_1a6870e549c7f428dbcd4f61d43eaa2f4b" kindref="member">Draw</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::mat4&amp;<sp/>topMatrix,<sp/><ref refid="a00214" kindref="compound">DrawContext</ref>&amp;<sp/>ctx)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>c<sp/>:<sp/><ref refid="a00242_1a0f9591e9fa0bf1680b1e3ac8c32739aa" kindref="member">childern</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c-&gt;Draw(topMatrix,<sp/>ctx);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="a00246" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00246" kindref="compound">LoadedGLTF</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="a00226" kindref="compound">IRenderable</ref><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//storage<sp/>for<sp/>all<sp/>the<sp/>data<sp/>of<sp/>a<sp/>GLTF<sp/>file</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="a00246_1a0d81dfeaab41142c4f2ab033cdd9f8b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;std::string,<sp/>std::shared_ptr&lt;MeshAsset&gt;&gt;<sp/><ref refid="a00246_1a0d81dfeaab41142c4f2ab033cdd9f8b8" kindref="member">meshes</ref>;</highlight></codeline>
+<codeline lineno="90" refid="a00246_1abf50d971f7ff884cf18b10627132e24d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;std::string,<sp/>std::shared_ptr&lt;Node&gt;&gt;<sp/><ref refid="a00246_1abf50d971f7ff884cf18b10627132e24d" kindref="member">nodes</ref>;</highlight></codeline>
+<codeline lineno="91" refid="a00246_1af8970fbf7b368a7560c68b1b5d9c5f35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;std::string,<sp/>AllocatedImage&gt;<sp/><ref refid="a00246_1af8970fbf7b368a7560c68b1b5d9c5f35" kindref="member">images</ref>;</highlight></codeline>
+<codeline lineno="92" refid="a00246_1af295ba2993c19703f95422d0cffe87ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unordered_map&lt;std::string,<sp/>std::shared_ptr&lt;GLTFMaterial&gt;&gt;<sp/><ref refid="a00246_1af295ba2993c19703f95422d0cffe87ae" kindref="member">materials</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//nodes<sp/>that<sp/>dont<sp/>have<sp/>a<sp/>parent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="a00246_1a19f8f4de300949b8c9242e6b0f4274cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::shared_ptr&lt;Node&gt;&gt;<sp/><ref refid="a00246_1a19f8f4de300949b8c9242e6b0f4274cb" kindref="member">topNodes</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="a00246_1a4a2ad17dc3b17f86bd21527a651c166d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;VkSampler&gt;<sp/><ref refid="a00246_1a4a2ad17dc3b17f86bd21527a651c166d" kindref="member">samplers</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="a00246_1adf479fe7b1bfabe170b82282a81a5e5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00174" kindref="compound">DescriptorAllocatorGrowable</ref><sp/><ref refid="a00246_1adf479fe7b1bfabe170b82282a81a5e5e" kindref="member">descriptorPool</ref>;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="a00246_1a8237d21c94d7972aa7a3d7c189a00ba5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00262" kindref="compound">AllocatedBuffer</ref><sp/><ref refid="a00246_1a8237d21c94d7972aa7a3d7c189a00ba5" kindref="member">materialDataBuffer</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="a00246_1ac6263b49db35fbd7492b494ab054552b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00222" kindref="compound">VulkanEngine</ref>*<sp/><ref refid="a00246_1ac6263b49db35fbd7492b494ab054552b" kindref="member">creator</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00246_1a5cb28e137c9fff7788afaf7aa5e565ac" kindref="member">Draw</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>glm::mat4&amp;<sp/>topMatrix,<sp/><ref refid="a00214" kindref="compound">DrawContext</ref>&amp;<sp/>ctx);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00246_1a57694eaff57520a9d0fcd2f29748cf9b" kindref="member">clearAll</ref>();</highlight></codeline>
+<codeline lineno="111"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00106" kindref="compound">VkLoader</ref><sp/>{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;std::vector&lt;std::shared_ptr&lt;MeshAsset&gt;&gt;&gt;<sp/><ref refid="a00106_1a442b1c7be484b0f1b4b53f176d1aaa0f" kindref="member">loadGltfMeshes</ref>(<ref refid="a00222" kindref="compound">VulkanEngine</ref><sp/>*engine,<sp/>std::filesystem::path<sp/>filePath);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;std::shared_ptr&lt;LoadedGLTF&gt;&gt;<sp/><ref refid="a00106_1a5dc041b91ac2b9f98dde07fd06dedfb9" kindref="member">loadGltf</ref>(<ref refid="a00222" kindref="compound">VulkanEngine</ref><sp/>*engine,<sp/>std::string_view<sp/>filePath);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>VkFilter<sp/><ref refid="a00106_1a194340dfa7859815574193cea66f2371" kindref="member">extractFilter</ref>(fastgltf::Filter<sp/>filter);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>VkSamplerMipmapMode<sp/><ref refid="a00106_1a39631db68d0c201f90fbfd1a48264113" kindref="member">extractMipmapMode</ref>(fastgltf::Filter<sp/>filter);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>std::optional&lt;AllocatedImage&gt;<sp/><ref refid="a00106_1ae9a802f8df4fdc64b9d8c76222147ae2" kindref="member">loadImage</ref>(<ref refid="a00222" kindref="compound">VulkanEngine</ref>*<sp/>engine,<sp/>fastgltf::Asset&amp;<sp/>asset,<sp/>fastgltf::Image&amp;<sp/>image);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h"/>
   </compounddef>
 </doxygen>

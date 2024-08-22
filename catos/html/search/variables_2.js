@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['memberptr_0',['memberPtr',['../a00060.html#ab295885403ec42bdf4db7c50dacb6c4b',1,'catos::PropertyImpl']]],
-  ['memptr_1',['memPtr',['../a00064.html#a0a1005231c6d3687fd607b65a2771fb8',1,'catos::MethodInvoker']]],
-  ['methods_2',['methods',['../a00072.html#a9c4b2bf58d22a49d4e52dc27ff248ed2',1,'catos::TypeInfo']]]
+  ['bindings_0',['bindings',['../a00162.html#a84964bc1535f1164c65c682d8abc1ae6',1,'DescriptorLayoutBuilder']]],
+  ['borderless_1',['borderless',['../a00146.html#a3cc89a85c712fc2945e50dcb1d99e378',1,'catos::WindowCreationInfo']]],
+  ['bounds_2',['bounds',['../a00210.html#a14bf8548f4c7a416e787a3508f833a50',1,'RenderObject::bounds'],['../a00234.html#ad8e3399fe5d911224a61f379cbfcd4d9',1,'GeoSurface::bounds']]],
+  ['buffer_3',['buffer',['../a00262.html#afd80ecc9bf0b9e9fbe2cd70c81def540',1,'AllocatedBuffer']]],
+  ['bufferinfos_4',['bufferInfos',['../a00182.html#ab4afed3f867ffe490c2bcb18d739d5fc',1,'DescriptorWriter']]],
+  ['busevalidationlayers_5',['bUseValidationLayers',['../a00044.html#a0f2bcd236403cd740db7ed89ec4e392f',1,'VkEngine.cpp']]]
 ];

@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['_7eentity_0',['~Entity',['../a00038.html#a3f0c4e9ced3c4caf83f05b37a103b704',1,'catos::Entity']]],
-  ['_7egame_1',['~Game',['../a00050.html#a1b8a681b7b89244c5c626074c4690d4e',1,'catos::Game']]],
-  ['_7eproperty_2',['~Property',['../a00054.html#aadf32bd1d8c607a993f117ea2db3cadd',1,'catos::Property']]],
-  ['_7escene_3',['~Scene',['../a00042.html#a46a13b91b0e9eeeabffcf72a1f3879b6',1,'catos::Scene']]]
+  ['refreshtransform_0',['refreshTransform',['../a00242.html#a04e0eff14682dca41284af38d0cb51a5',1,'Node']]],
+  ['register_5fclass_1',['register_class',['../a00142.html#a3c1a3c07e51224b5745cd9764407efff',1,'catos::Registry']]],
+  ['remove_2',['remove',['../a00330.html#a894bc6946ca9101f8ff065c5b46bc43a',1,'catos::World']]],
+  ['renderinginfo_3',['renderingInfo',['../a00105.html#a5e07e2e66058b5c4e6fb30840c396ab3',1,'VkInit']]],
+  ['run_4',['Run',['../a00222.html#ae2bc28152df989a30cfc8286ccf33b0d',1,'VulkanEngine']]]
 ];

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['app_0',['App',['../a00032.html',1,'catos']]],
-  ['appcreationinfo_1',['AppCreationInfo',['../a00028.html',1,'catos']]]
+  ['allocatedbuffer_0',['AllocatedBuffer',['../a00262.html',1,'']]],
+  ['allocatedimage_1',['AllocatedImage',['../a00294.html',1,'']]],
+  ['app_2',['App',['../a00118.html',1,'catos']]],
+  ['appcreationinfo_3',['AppCreationInfo',['../a00114.html',1,'catos']]]
 ];

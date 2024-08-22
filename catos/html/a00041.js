@@ -1,6 +1,9 @@
 var a00041 =
 [
-    [ "destroy", "a00041.html#acee6f0a181489892319a99d6b8ee813f", null ],
-    [ "init", "a00041.html#a198b1c7d794d41af75f7f7ed5b069ea3", null ],
-    [ "update", "a00041.html#a31a1133e9d321871ad9b3cca7f325e30", null ]
+    [ "DescriptorLayoutBuilder", "a00162.html", "a00162" ],
+    [ "DescriptorAllocator", "a00166.html", "a00166" ],
+    [ "DescriptorAllocator::PoolSizeRatio", "a00170.html", "a00170" ],
+    [ "DescriptorAllocatorGrowable", "a00174.html", "a00174" ],
+    [ "DescriptorAllocatorGrowable::PoolSizeRatio", "a00178.html", "a00178" ],
+    [ "DescriptorWriter", "a00182.html", "a00182" ]
 ];

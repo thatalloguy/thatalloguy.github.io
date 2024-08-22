@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['none_0',['None',['../a00026.html#a38d4823f65e5fe29a2fd1bf38eeb077aa6adf97f83acf6453d4a6a4b1070f3754',1,'catos']]]
+  ['other_0',['Other',['../a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1',1,'VkTypes.h']]]
 ];

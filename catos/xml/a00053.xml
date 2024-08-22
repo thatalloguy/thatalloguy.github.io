@@ -1,164 +1,66 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00053" kind="class" language="C++" prot="public">
-    <compoundname>catos::Scene</compoundname>
-    <includes refid="a00008" local="no">game.h</includes>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00053_1aec49e130b2eaa0258d7909a525632570" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; <ref refid="a00014_1aabc01e4474ddca8d6c8ac3e5c7dfe4b7" kindref="member">str</ref>, std::shared_ptr&lt; <ref refid="a00045" kindref="compound">Entity</ref> &gt; &gt;</type>
-        <definition>std::unordered_map&lt;str, std::shared_ptr&lt;Entity&gt; &gt; catos::Scene::entityTable</definition>
-        <argsstring></argsstring>
-        <name>entityTable</name>
-        <qualifiedname>catos::Scene::entityTable</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="43" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="43" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00053_1a0ad40167667d789fddc17d66d5147861" prot="private" static="no" mutable="no">
-        <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-        <definition>cstr catos::Scene::_name</definition>
-        <argsstring></argsstring>
-        <name>_name</name>
-        <qualifiedname>catos::Scene::_name</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="44" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="44" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00053_1adc98f44d27d0b8d7b21a905412373726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::Scene::Scene</definition>
-        <argsstring>(cstr Name)</argsstring>
-        <name>Scene</name>
-        <qualifiedname>catos::Scene::Scene</qualifiedname>
-        <param>
-          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-          <declname>Name</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="22" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="a00053_1a46a13b91b0e9eeeabffcf72a1f3879b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::Scene::~Scene</definition>
-        <argsstring>()=default</argsstring>
-        <name>~Scene</name>
-        <qualifiedname>catos::Scene::~Scene</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="23" column="9"/>
-      </memberdef>
-      <memberdef kind="function" id="a00053_1abb300650c7fdf0e0c59b9e110dd7924d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-        <definition>cstr catos::Scene::get_name</definition>
-        <argsstring>()</argsstring>
-        <name>get_name</name>
-        <qualifiedname>catos::Scene::get_name</qualifiedname>
-        <briefdescription>
-<para>Returns the Name of the scene. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="26" column="14"/>
-      </memberdef>
-      <memberdef kind="function" id="a00053_1a36a94013d883f4afa5bf0f9db1747268" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::shared_ptr&lt; <ref refid="a00045" kindref="compound">Entity</ref> &gt;</type>
-        <definition>std::shared_ptr&lt; Entity &gt; catos::Scene::get_entity</definition>
-        <argsstring>(cstr Name)</argsstring>
-        <name>get_entity</name>
-        <qualifiedname>catos::Scene::get_entity</qualifiedname>
-        <param>
-          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-          <declname>Name</declname>
-        </param>
-        <briefdescription>
-<para>entity stuff </para>
-        </briefdescription>
-        <detaileddescription>
-<para>Returns an entity via <ref refid="a00033" kindref="compound">Game</ref>; </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="32" column="25"/>
-      </memberdef>
-      <memberdef kind="function" id="a00053_1a415c242c7feb4f9419a3013ba38a775d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::shared_ptr&lt; <ref refid="a00045" kindref="compound">Entity</ref> &gt;</type>
-        <definition>std::shared_ptr&lt; Entity &gt; catos::Scene::new_entity</definition>
-        <argsstring>(cstr Name)</argsstring>
-        <name>new_entity</name>
-        <qualifiedname>catos::Scene::new_entity</qualifiedname>
-        <param>
-          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-          <declname>Name</declname>
-        </param>
-        <briefdescription>
-<para>Creates a new entity with a <ref refid="a00033" kindref="compound">Game</ref>, returns the newly created entity. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="35" column="26"/>
-      </memberdef>
-      <memberdef kind="function" id="a00053_1ab045529fa12270e7ab96bf6e26b14fff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::shared_ptr&lt; <ref refid="a00045" kindref="compound">Entity</ref> &gt;</type>
-        <definition>std::shared_ptr&lt; Entity &gt; catos::Scene::change_entity_name</definition>
-        <argsstring>(cstr oldGame, cstr newGame)</argsstring>
-        <name>change_entity_name</name>
-        <qualifiedname>catos::Scene::change_entity_name</qualifiedname>
-        <param>
-          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-          <declname>oldGame</declname>
-        </param>
-        <param>
-          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-          <declname>newGame</declname>
-        </param>
-        <briefdescription>
-<para>Changes the <ref refid="a00033" kindref="compound">Game</ref> of the entity, returns the changed entity. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="38" column="25"/>
-      </memberdef>
-    </sectiondef>
+  <compounddef id="a00053" kind="file" language="C++">
+    <compoundname>VkImages.h</compoundname>
+    <includes local="no">vulkan/vulkan.h</includes>
+    <includedby refid="a00044" local="yes">VkEngine.cpp</includedby>
+    <includedby refid="a00050" local="yes">VkImages.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>VkImages.h</label>
+        <link refid="a00053"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vulkan/vulkan.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>VkEngine.cpp</label>
+        <link refid="a00044"/>
+      </node>
+      <node id="3">
+        <label>VkImages.cpp</label>
+        <link refid="a00050"/>
+      </node>
+      <node id="1">
+        <label>VkImages.h</label>
+        <link refid="a00053"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="a00104">VkUtil</innernamespace>
     <briefdescription>
-<para>The scene holds everything about the scene and entities. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/game.h" line="19" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/game.h" bodystart="19" bodyend="46"/>
-    <listofallmembers>
-      <member refid="a00053_1a0ad40167667d789fddc17d66d5147861" prot="private" virt="non-virtual"><scope>catos::Scene</scope><name>_name</name></member>
-      <member refid="a00053_1ab045529fa12270e7ab96bf6e26b14fff" prot="public" virt="non-virtual"><scope>catos::Scene</scope><name>change_entity_name</name></member>
-      <member refid="a00053_1aec49e130b2eaa0258d7909a525632570" prot="private" virt="non-virtual"><scope>catos::Scene</scope><name>entityTable</name></member>
-      <member refid="a00053_1a36a94013d883f4afa5bf0f9db1747268" prot="public" virt="non-virtual"><scope>catos::Scene</scope><name>get_entity</name></member>
-      <member refid="a00053_1abb300650c7fdf0e0c59b9e110dd7924d" prot="public" virt="non-virtual"><scope>catos::Scene</scope><name>get_name</name></member>
-      <member refid="a00053_1a415c242c7feb4f9419a3013ba38a775d" prot="public" virt="non-virtual"><scope>catos::Scene</scope><name>new_entity</name></member>
-      <member refid="a00053_1adc98f44d27d0b8d7b21a905412373726" prot="public" virt="non-virtual"><scope>catos::Scene</scope><name>Scene</name></member>
-      <member refid="a00053_1a46a13b91b0e9eeeabffcf72a1f3879b6" prot="public" virt="non-virtual"><scope>catos::Scene</scope><name>~Scene</name></member>
-    </listofallmembers>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>2/10/2024.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Purpose<sp/>of<sp/>this<sp/>file<sp/>for<sp/>future<sp/>reference:</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>This<sp/>will<sp/>contain<sp/>image<sp/>related<sp/>vulkan<sp/>helpers</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vulkan/vulkan.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="a00104" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00104" kindref="compound">VkUtil</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00104_1a875b1e47dc0c1a3d683aa56a048004a1" kindref="member">transitionImage</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>image,<sp/>VkImageLayout<sp/>currentLayout,<sp/>VkImageLayout<sp/>newLayout);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00104_1aaf415273879926840c4ba3f273ced282" kindref="member">copyImageToImage</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>source,<sp/>VkImage<sp/>destination,<sp/>VkExtent2D<sp/>srcSize,<sp/>VkExtent2D<sp/>dstSize);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00104_1ab2f70afca891c15b7a86f4d2d5c67931" kindref="member">generateMipMaps</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>image,<sp/>VkExtent2D<sp/>imageSize);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h"/>
   </compounddef>
 </doxygen>

@@ -1,168 +1,487 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00074" kind="class" language="C++" prot="public">
-    <compoundname>catos::Registry</compoundname>
-    <includes refid="a00008" local="no">registry.h</includes>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00074_1a759718acff0cdb1cfd97bf13fd0700a6" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; size_t, <ref refid="a00070" kindref="compound">TypeInfo</ref> &gt;</type>
-        <definition>std::unordered_map&lt;size_t, TypeInfo&gt; catos::Registry::_register</definition>
-        <argsstring></argsstring>
-        <name>_register</name>
-        <qualifiedname>catos::Registry::_register</qualifiedname>
+  <compounddef id="a00074" kind="file" language="C++">
+    <compoundname>VkTypes.h</compoundname>
+    <includes local="no">memory</includes>
+    <includes local="no">optional</includes>
+    <includes local="no">string</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">span</includes>
+    <includes local="no">array</includes>
+    <includes local="no">functional</includes>
+    <includes local="no">deque</includes>
+    <includes local="no">GLFW/glfw3.h</includes>
+    <includes local="no">chrono</includes>
+    <includes local="no">thread</includes>
+    <includes local="no">vulkan/vulkan.h</includes>
+    <includes local="no">vulkan/vk_enum_string_helper.h</includes>
+    <includes local="no">vk_mem_alloc.h</includes>
+    <includes local="no">VkBootstrap.h</includes>
+    <includes local="no">spdlog/spdlog.h</includes>
+    <includes local="no">glm/mat4x4.hpp</includes>
+    <includes local="no">glm/vec4.hpp</includes>
+    <includes local="no">glm/glm.hpp</includes>
+    <includes local="no">glm/common.hpp</includes>
+    <includedby refid="a00035" local="yes">Camera.h</includedby>
+    <includedby refid="a00041" local="yes">VkDescriptors.h</includedby>
+    <includedby refid="a00047" local="yes">VkEngine.h</includedby>
+    <includedby refid="a00059" local="yes">VkInitializers.h</includedby>
+    <includedby refid="a00062" local="yes">VkLoader.cpp</includedby>
+    <includedby refid="a00065" local="yes">VkLoader.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>VkTypes.h</label>
+        <link refid="a00074"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>GLFW/glfw3.h</label>
+      </node>
+      <node id="16">
+        <label>VkBootstrap.h</label>
+      </node>
+      <node id="7">
+        <label>array</label>
+      </node>
+      <node id="11">
+        <label>chrono</label>
+      </node>
+      <node id="9">
+        <label>deque</label>
+      </node>
+      <node id="8">
+        <label>functional</label>
+      </node>
+      <node id="21">
+        <label>glm/common.hpp</label>
+      </node>
+      <node id="20">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="18">
+        <label>glm/mat4x4.hpp</label>
+      </node>
+      <node id="19">
+        <label>glm/vec4.hpp</label>
+      </node>
+      <node id="2">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>optional</label>
+      </node>
+      <node id="6">
+        <label>span</label>
+      </node>
+      <node id="17">
+        <label>spdlog/spdlog.h</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="12">
+        <label>thread</label>
+      </node>
+      <node id="5">
+        <label>vector</label>
+      </node>
+      <node id="15">
+        <label>vk_mem_alloc.h</label>
+      </node>
+      <node id="14">
+        <label>vulkan/vk_enum_string_helper.h</label>
+      </node>
+      <node id="13">
+        <label>vulkan/vulkan.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>Camera.cpp</label>
+        <link refid="a00032"/>
+      </node>
+      <node id="2">
+        <label>Camera.h</label>
+        <link refid="a00035"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>VkDescriptors.cpp</label>
+        <link refid="a00038"/>
+      </node>
+      <node id="9">
+        <label>VkDescriptors.h</label>
+        <link refid="a00041"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>VkEngine.cpp</label>
+        <link refid="a00044"/>
+      </node>
+      <node id="4">
+        <label>VkEngine.h</label>
+        <link refid="a00047"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>VkImages.cpp</label>
+        <link refid="a00050"/>
+      </node>
+      <node id="14">
+        <label>VkInitializers.cpp</label>
+        <link refid="a00056"/>
+      </node>
+      <node id="12">
+        <label>VkInitializers.h</label>
+        <link refid="a00059"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>VkLoader.cpp</label>
+        <link refid="a00062"/>
+      </node>
+      <node id="11">
+        <label>VkLoader.h</label>
+        <link refid="a00065"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>VkPipelines.cpp</label>
+        <link refid="a00068"/>
+      </node>
+      <node id="15">
+        <label>VkPipelines.h</label>
+        <link refid="a00071"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>VkTypes.h</label>
+        <link refid="a00074"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>window.cpp</label>
+        <link refid="a00020"/>
+      </node>
+      <node id="7">
+        <label>window.h</label>
+        <link refid="a00023"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00254" prot="public">EngineStats</innerclass>
+    <innerclass refid="a00258" prot="public">Bounds</innerclass>
+    <innerclass refid="a00262" prot="public">AllocatedBuffer</innerclass>
+    <innerclass refid="a00266" prot="public">Vertex</innerclass>
+    <innerclass refid="a00270" prot="public">GPUMeshBuffers</innerclass>
+    <innerclass refid="a00274" prot="public">GPUSceneData</innerclass>
+    <innerclass refid="a00278" prot="public">GPUDrawPushConstants</innerclass>
+    <innerclass refid="a00282" prot="public">MaterialPipeline</innerclass>
+    <innerclass refid="a00286" prot="public">MaterialInstance</innerclass>
+    <innerclass refid="a00290" prot="public">DeletionQueue</innerclass>
+    <innerclass refid="a00294" prot="public">AllocatedImage</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="a00074_1ab91f325a54d3e35fe831a86d6382c2a9" prot="public" static="no">
+        <name>GLFW_INCLUDE_VULKAN</name>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="333" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="333" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="24" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="24" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00074_1ab554c66d2f7b86c82e6d55ae3cc34b77" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; size_t, const void * &gt;</type>
-        <definition>std::unordered_map&lt;size_t, const void* &gt; catos::Registry::_instance_register</definition>
-        <argsstring></argsstring>
-        <name>_instance_register</name>
-        <qualifiedname>catos::Registry::_instance_register</qualifiedname>
+      <memberdef kind="define" id="a00074_1a3d55e176cc77828a9adaa05ac4413b99" prot="public" static="no">
+        <name>VK_CHECK</name>
+        <param><defname>x</defname></param>
+        <initializer>    do {                                                                 \
+        VkResult err = x;                                                \
+        if (err != VK_SUCCESS) {                                         \
+            spdlog::info(&quot;ruh roh&quot;);                                                             \
+            spdlog::error(&quot;Detected Vulkan error at {}: {}&quot;, __FILE__, __LINE__); \
+            abort();                                                     \
+        }                                                          \
+    } while (0)</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="334" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="334" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="144" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="144" bodyend="152"/>
       </memberdef>
     </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00074_1a3c1a3c07e51224b5745cd9764407efff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename A</type>
-          </param>
-        </templateparamlist>
-        <type><ref refid="a00070" kindref="compound">TypeInfo</ref> &amp;</type>
-        <definition>TypeInfo &amp; catos::Registry::register_class</definition>
-        <argsstring>()</argsstring>
-        <name>register_class</name>
-        <qualifiedname>catos::Registry::register_class</qualifiedname>
-        <briefdescription>
-<para>With this function you register a class to the <ref refid="a00074" kindref="compound">Registry</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="235" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="235" bodyend="246"/>
-      </memberdef>
-      <memberdef kind="function" id="a00074_1aa9d8e58c1258eebb008a292f8b8b1c44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void catos::Registry::gen_python_bindings_file</definition>
-        <argsstring>()</argsstring>
-        <name>gen_python_bindings_file</name>
-        <qualifiedname>catos::Registry::gen_python_bindings_file</qualifiedname>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" prot="public" static="no" strong="no">
+        <type>uint8_t</type>
+        <name>MaterialPass</name>
+        <enumvalue id="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529" prot="public">
+          <name>MainColor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63" prot="public">
+          <name>Transparent</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1" prot="public">
+          <name>Other</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="248" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="248" bodyend="292"/>
-      </memberdef>
-      <memberdef kind="function" id="a00074_1a0badcac26396818228e788196b82b33c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename A</type>
-          </param>
-        </templateparamlist>
-        <type>void</type>
-        <definition>void catos::Registry::bind</definition>
-        <argsstring>(const void *instance)</argsstring>
-        <name>bind</name>
-        <qualifiedname>catos::Registry::bind</qualifiedname>
-        <param>
-          <type>const void *</type>
-          <declname>instance</declname>
-        </param>
-        <briefdescription>
-<para>Used to bind an instance to an type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="297" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="297" bodyend="299"/>
-      </memberdef>
-      <memberdef kind="function" id="a00074_1a94bda2854dfb087438e81ff0adb9f0bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename A</type>
-          </param>
-        </templateparamlist>
-        <type>A *</type>
-        <definition>A * catos::Registry::get</definition>
-        <argsstring>()</argsstring>
-        <name>get</name>
-        <qualifiedname>catos::Registry::get</qualifiedname>
-        <briefdescription>
-<para>Returns the registered instance. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="303" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="303" bodyend="306"/>
-      </memberdef>
-      <memberdef kind="function" id="a00074_1a03c494fdb9fb9daafaea972f273de633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename A</type>
-          </param>
-        </templateparamlist>
-        <type><ref refid="a00070" kindref="compound">TypeInfo</ref> &amp;</type>
-        <definition>TypeInfo &amp; catos::Registry::get_type</definition>
-        <argsstring>()</argsstring>
-        <name>get_type</name>
-        <qualifiedname>catos::Registry::get_type</qualifiedname>
-        <briefdescription>
-<para>Returns the registered Type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="310" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="310" bodyend="312"/>
-      </memberdef>
-      <memberdef kind="function" id="a00074_1a3ff740e516ed706e2d202086df6f12b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void catos::Registry::print_current_register</definition>
-        <argsstring>()</argsstring>
-        <name>print_current_register</name>
-        <qualifiedname>catos::Registry::print_current_register</qualifiedname>
-        <briefdescription>
-<para>Prints out the items in the <ref refid="a00074" kindref="compound">Registry</ref>. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="316" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="316" bodyend="327"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="106" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="106" bodyend="110"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>The registry is the core system and provides reflection to the rest of the engine. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/registry.h" line="227" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/registry.h" bodystart="227" bodyend="335"/>
-    <listofallmembers>
-      <member refid="a00074_1ab554c66d2f7b86c82e6d55ae3cc34b77" prot="private" virt="non-virtual"><scope>catos::Registry</scope><name>_instance_register</name></member>
-      <member refid="a00074_1a759718acff0cdb1cfd97bf13fd0700a6" prot="private" virt="non-virtual"><scope>catos::Registry</scope><name>_register</name></member>
-      <member refid="a00074_1a0badcac26396818228e788196b82b33c" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>bind</name></member>
-      <member refid="a00074_1aa9d8e58c1258eebb008a292f8b8b1c44" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>gen_python_bindings_file</name></member>
-      <member refid="a00074_1a94bda2854dfb087438e81ff0adb9f0bd" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>get</name></member>
-      <member refid="a00074_1a03c494fdb9fb9daafaea972f273de633" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>get_type</name></member>
-      <member refid="a00074_1a3ff740e516ed706e2d202086df6f12b9" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>print_current_register</name></member>
-      <member refid="a00074_1a3c1a3c07e51224b5745cd9764407efff" prot="public" virt="non-virtual"><scope>catos::Registry</scope><name>register_class</name></member>
-    </listofallmembers>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>2/10/2024.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Purpose<sp/>of<sp/>this<sp/>file<sp/>for<sp/>future<sp/>reference:</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>The<sp/>entire<sp/>codebase<sp/>will<sp/>include<sp/>this<sp/>header,<sp/>it<sp/>will<sp/>provide<sp/>widely<sp/>used<sp/>default<sp/>structures<sp/>and<sp/>includes<sp/>:)</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Include<sp/>lib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;optional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;span&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;deque&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="a00074_1ab91f325a54d3e35fe831a86d6382c2a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLFW_INCLUDE_VULKAN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLFW_EXPOSE_NATIVE_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;GLFW/glfw3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;chrono&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;thread&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vulkan/vulkan.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vulkan/vk_enum_string_helper.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vk_mem_alloc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;VkBootstrap.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;spdlog/spdlog.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/mat4x4.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/vec4.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/glm.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/common.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//TODO<sp/>add<sp/>documentation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="a00254" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00254" kindref="compound">EngineStats</ref><sp/>{</highlight></codeline>
+<codeline lineno="50" refid="a00254_1a268de968f518937e5b5a0eabcde74ac1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00254_1a268de968f518937e5b5a0eabcde74ac1" kindref="member">frameTime</ref>;</highlight></codeline>
+<codeline lineno="51" refid="a00254_1a09bb44af11d551238f5592baf3192ac0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00254_1a09bb44af11d551238f5592baf3192ac0" kindref="member">triangleCount</ref>;</highlight></codeline>
+<codeline lineno="52" refid="a00254_1ad2e9038c2125482ce0c3e952ee4a1640" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00254_1ad2e9038c2125482ce0c3e952ee4a1640" kindref="member">drawCallCount</ref>;</highlight></codeline>
+<codeline lineno="53" refid="a00254_1a63684651caeeea776748ffec6860e3d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00254_1a63684651caeeea776748ffec6860e3d2" kindref="member">sceneUpdateTime</ref>;</highlight></codeline>
+<codeline lineno="54" refid="a00254_1ab98fff18928718889d9a41f62cb45b5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00254_1ab98fff18928718889d9a41f62cb45b5b" kindref="member">meshDrawTime</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="a00258" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00258" kindref="compound">Bounds</ref><sp/>{</highlight></codeline>
+<codeline lineno="58" refid="a00258_1ac18b521fb51a535fa927dc590b1a4652" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec3<sp/><ref refid="a00258_1ac18b521fb51a535fa927dc590b1a4652" kindref="member">origin</ref>;</highlight></codeline>
+<codeline lineno="59" refid="a00258_1ad29877186534ef5c062724335c443df0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00258_1ad29877186534ef5c062724335c443df0" kindref="member">sphereRadius</ref>;</highlight></codeline>
+<codeline lineno="60" refid="a00258_1a65c365448edaaf81a9fd959272e77e8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec3<sp/><ref refid="a00258_1a65c365448edaaf81a9fd959272e77e8e" kindref="member">extents</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="a00262" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00262" kindref="compound">AllocatedBuffer</ref><sp/>{</highlight></codeline>
+<codeline lineno="65" refid="a00262_1afd80ecc9bf0b9e9fbe2cd70c81def540" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkBuffer<sp/><ref refid="a00262_1afd80ecc9bf0b9e9fbe2cd70c81def540" kindref="member">buffer</ref>;</highlight></codeline>
+<codeline lineno="66" refid="a00262_1aad4979df72f7e827fd80171e42bfb463" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VmaAllocation<sp/><ref refid="a00262_1aad4979df72f7e827fd80171e42bfb463" kindref="member">allocation</ref>;</highlight></codeline>
+<codeline lineno="67" refid="a00262_1ae8f702ce1eb0772813fdb282bbcf5083" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VmaAllocationInfo<sp/><ref refid="a00262_1ae8f702ce1eb0772813fdb282bbcf5083" kindref="member">info</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="a00266" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00266" kindref="compound">Vertex</ref><sp/>{</highlight></codeline>
+<codeline lineno="71" refid="a00266_1a030819fdc241743bbd3e180a6b132ed3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec3<sp/><ref refid="a00266_1a030819fdc241743bbd3e180a6b132ed3" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="72" refid="a00266_1a3c6b70cc0df673dab20ae012fa7a4ce3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00266_1a3c6b70cc0df673dab20ae012fa7a4ce3" kindref="member">uv_x</ref>;</highlight></codeline>
+<codeline lineno="73" refid="a00266_1a3aa35fe84025ecf1acccb5f65f5577fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec3<sp/><ref refid="a00266_1a3aa35fe84025ecf1acccb5f65f5577fd" kindref="member">normal</ref>;</highlight></codeline>
+<codeline lineno="74" refid="a00266_1a8dfaf04a6d2a62045fee28010aeb92eb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00266_1a8dfaf04a6d2a62045fee28010aeb92eb" kindref="member">uv_y</ref>;</highlight></codeline>
+<codeline lineno="75" refid="a00266_1aa7ecd21578677765699b8831e0011696" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec4<sp/><ref refid="a00266_1aa7ecd21578677765699b8831e0011696" kindref="member">color</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Holds<sp/>the<sp/>resources<sp/>for<sp/>a<sp/>mesh</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="a00270" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00270" kindref="compound">GPUMeshBuffers</ref><sp/>{</highlight></codeline>
+<codeline lineno="80" refid="a00270_1a36072bc102efd91d9cb0a2e2a91fb731" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00262" kindref="compound">AllocatedBuffer</ref><sp/><ref refid="a00270_1a36072bc102efd91d9cb0a2e2a91fb731" kindref="member">indexBuffer</ref>;</highlight></codeline>
+<codeline lineno="81" refid="a00270_1a1492235568eb70ea34448e73fe799334" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00262" kindref="compound">AllocatedBuffer</ref><sp/><ref refid="a00270_1a1492235568eb70ea34448e73fe799334" kindref="member">vertexBuffer</ref>;</highlight></codeline>
+<codeline lineno="82" refid="a00270_1a07320f9b017b3298c541cecad2ca9756" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkDeviceAddress<sp/><ref refid="a00270_1a07320f9b017b3298c541cecad2ca9756" kindref="member">vertexBufferAddress</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="a00274" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00274" kindref="compound">GPUSceneData</ref><sp/>{</highlight></codeline>
+<codeline lineno="86" refid="a00274_1a11a59cecab808ab8f32a2229cb9cbc05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/><ref refid="a00274_1a11a59cecab808ab8f32a2229cb9cbc05" kindref="member">view</ref>;</highlight></codeline>
+<codeline lineno="87" refid="a00274_1a94a8aebb2509f463fdd5930a18e220a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/><ref refid="a00274_1a94a8aebb2509f463fdd5930a18e220a9" kindref="member">proj</ref>;</highlight></codeline>
+<codeline lineno="88" refid="a00274_1a1eb16232bc41fa47f782f3848e6d5419" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/><ref refid="a00274_1a1eb16232bc41fa47f782f3848e6d5419" kindref="member">viewproj</ref>;</highlight></codeline>
+<codeline lineno="89" refid="a00274_1a80aa527f0dd23ad93ce82ccae46a2bb8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec4<sp/><ref refid="a00274_1a80aa527f0dd23ad93ce82ccae46a2bb8" kindref="member">ambientColor</ref>;</highlight></codeline>
+<codeline lineno="90" refid="a00274_1a0d0ad9dbe48fd5cffa61d7b7e7a08026" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec4<sp/><ref refid="a00274_1a0d0ad9dbe48fd5cffa61d7b7e7a08026" kindref="member">sunLightDirection</ref>;<sp/></highlight><highlight class="comment">//<sp/>W<sp/>is<sp/>for<sp/>sun<sp/>power<sp/>:)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="a00274_1ae6655907e76d7de3832f5d9d15bb812f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::vec4<sp/><ref refid="a00274_1ae6655907e76d7de3832f5d9d15bb812f" kindref="member">sunlightColor</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//Push<sp/>constants<sp/>for<sp/>the<sp/>mesh</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="a00278" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00278" kindref="compound">GPUDrawPushConstants</ref><sp/>{</highlight></codeline>
+<codeline lineno="96" refid="a00278_1ac7769ead4f8c948c6a727ec202a6a625" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/><ref refid="a00278_1ac7769ead4f8c948c6a727ec202a6a625" kindref="member">worldMatrix</ref>;</highlight></codeline>
+<codeline lineno="97" refid="a00278_1a3d87824455c363095cd2bed7ebcb7f95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkDeviceAddress<sp/><ref refid="a00278_1a3d87824455c363095cd2bed7ebcb7f95" kindref="member">vertexBuffer</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="a00282" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00282" kindref="compound">MaterialPipeline</ref><sp/>{</highlight></codeline>
+<codeline lineno="102" refid="a00282_1a5500b751b3a9fb3017151b515b577ad7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipeline<sp/><ref refid="a00282_1a5500b751b3a9fb3017151b515b577ad7" kindref="member">pipeline</ref>;</highlight></codeline>
+<codeline lineno="103" refid="a00282_1a54c031a905193c1d35539d1566775f00" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineLayout<sp/><ref refid="a00282_1a54c031a905193c1d35539d1566775f00" kindref="member">layout</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" kindref="member">MaterialPass</ref><sp/>:<sp/>uint8_t<sp/>{</highlight></codeline>
+<codeline lineno="107" refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529" kindref="member">MainColor</ref>,</highlight></codeline>
+<codeline lineno="108" refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63" kindref="member">Transparent</ref>,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1" kindref="member">Other</ref></highlight></codeline>
+<codeline lineno="110" refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1" refkind="member"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="a00286" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00286" kindref="compound">MaterialInstance</ref><sp/>{</highlight></codeline>
+<codeline lineno="113" refid="a00286_1a6270ec8b9754e8071ad89436e9b307c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00282" kindref="compound">MaterialPipeline</ref>*<sp/><ref refid="a00286_1a6270ec8b9754e8071ad89436e9b307c7" kindref="member">pipeline</ref>;</highlight></codeline>
+<codeline lineno="114" refid="a00286_1a0d388ba1aded5dcdd49c622a51e1bf92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkDescriptorSet<sp/><ref refid="a00286_1a0d388ba1aded5dcdd49c622a51e1bf92" kindref="member">materialSet</ref>;</highlight></codeline>
+<codeline lineno="115" refid="a00286_1ab6a8270117524873601400f0bcb401db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" kindref="member">MaterialPass</ref><sp/><ref refid="a00286_1ab6a8270117524873601400f0bcb401db" kindref="member">passType</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="a00290" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00290" kindref="compound">DeletionQueue</ref><sp/>{</highlight></codeline>
+<codeline lineno="120" refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::deque&lt;std::function&lt;void()&gt;&gt;<sp/><ref refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" kindref="member">deletors</ref>;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="a00290_1a91bdce3808d2f96671f38a610810c67b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00290_1a91bdce3808d2f96671f38a610810c67b" kindref="member">pushFunction</ref>(std::function&lt;</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">()&gt;&amp;&amp;<sp/>function)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" kindref="member">deletors</ref>.push_back(function);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="a00290_1ad8258e84b869dbf3800178a61cc51cb3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00290_1ad8258e84b869dbf3800178a61cc51cb3" kindref="member">flush</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" kindref="member">deletors</ref>.rbegin();<sp/>it<sp/>!=<sp/><ref refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" kindref="member">deletors</ref>.rend();<sp/>it++)<sp/>{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*it)();</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" kindref="member">deletors</ref>.clear();</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="a00294" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00294" kindref="compound">AllocatedImage</ref><sp/>{</highlight></codeline>
+<codeline lineno="136" refid="a00294_1a13e4a58bd70b09a3743df9effc0dc9f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImage<sp/><ref refid="a00294_1a13e4a58bd70b09a3743df9effc0dc9f6" kindref="member">image</ref>;</highlight></codeline>
+<codeline lineno="137" refid="a00294_1ad124234921b26ec7e9b0cc5f603d5726" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageView<sp/><ref refid="a00294_1ad124234921b26ec7e9b0cc5f603d5726" kindref="member">imageView</ref>;</highlight></codeline>
+<codeline lineno="138" refid="a00294_1a6374bbe549aabc16f21c58b717329028" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VmaAllocation<sp/><ref refid="a00294_1a6374bbe549aabc16f21c58b717329028" kindref="member">allocation</ref>;</highlight></codeline>
+<codeline lineno="139" refid="a00294_1a3c0016e1c5c44bb21f336486da7c9d66" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkExtent3D<sp/><ref refid="a00294_1a3c0016e1c5c44bb21f336486da7c9d66" kindref="member">imageExtent</ref>;</highlight></codeline>
+<codeline lineno="140" refid="a00294_1ae4ccf662c664f3b9bdafa7459b746d8b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkFormat<sp/><ref refid="a00294_1ae4ccf662c664f3b9bdafa7459b746d8b" kindref="member">imageFormat</ref>;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="a00074_1a3d55e176cc77828a9adaa05ac4413b99" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VK_CHECK(x)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="145"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>do<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="146"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkResult<sp/>err<sp/>=<sp/>x;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="147"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(err<sp/>!=<sp/>VK_SUCCESS)<sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="148"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::info(&quot;ruh<sp/>roh&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="149"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::error(&quot;Detected<sp/>Vulkan<sp/>error<sp/>at<sp/>{}:<sp/>{}&quot;,<sp/>__FILE__,<sp/>__LINE__);<sp/>\</highlight></codeline>
+<codeline lineno="150"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>abort();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="151"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="152"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}<sp/>while<sp/>(0)</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h"/>
   </compounddef>
 </doxygen>

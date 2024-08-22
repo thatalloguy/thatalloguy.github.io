@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): catos::Registry Class Reference</title>
+<title>Catos Engine (Source): VkTypes.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -31,7 +31,7 @@
   <td id="projectalign">
    <div id="projectname">Catos Engine (Source)<span id="projectnumber">&#160;0.0.1</span>
    </div>
-   <div id="projectbrief">Lightweight ECS Game engine</div>
+   <div id="projectbrief">Lightweight Game engine</div>
   </td>
  </tr>
  </tbody>
@@ -95,215 +95,135 @@ $(function(){initNavTree('a00074.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="a00071.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">catos::Registry Class Reference</div></div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
+  <div class="headertitle"><div class="title">VkTypes.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The registry is the core system and provides reflection to the rest of the engine.  
- <a href="#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00008_source.html">registry.h</a>&gt;</code></p>
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;span&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;functional&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
+<code>#include &lt;GLFW/glfw3.h&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+<code>#include &lt;vulkan/vulkan.h&gt;</code><br />
+<code>#include &lt;vulkan/vk_enum_string_helper.h&gt;</code><br />
+<code>#include &lt;vk_mem_alloc.h&gt;</code><br />
+<code>#include &lt;VkBootstrap.h&gt;</code><br />
+<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
+<code>#include &lt;glm/mat4x4.hpp&gt;</code><br />
+<code>#include &lt;glm/vec4.hpp&gt;</code><br />
+<code>#include &lt;glm/glm.hpp&gt;</code><br />
+<code>#include &lt;glm/common.hpp&gt;</code><br />
+</div>
+<p><a href="a00074_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a3c1a3c07e51224b5745cd9764407efff" id="r_a3c1a3c07e51224b5745cd9764407efff"><td class="memTemplParams" colspan="2">template&lt;typename A &gt; </td></tr>
-<tr class="memitem:a3c1a3c07e51224b5745cd9764407efff"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00070.html">TypeInfo</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3c1a3c07e51224b5745cd9764407efff">register_class</a> ()</td></tr>
-<tr class="memdesc:a3c1a3c07e51224b5745cd9764407efff"><td class="mdescLeft">&#160;</td><td class="mdescRight">With this function you register a class to the <a class="el" href="a00074.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>.  <br /></td></tr>
-<tr class="separator:a3c1a3c07e51224b5745cd9764407efff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9d8e58c1258eebb008a292f8b8b1c44" id="r_aa9d8e58c1258eebb008a292f8b8b1c44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9d8e58c1258eebb008a292f8b8b1c44">gen_python_bindings_file</a> ()</td></tr>
-<tr class="separator:aa9d8e58c1258eebb008a292f8b8b1c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0badcac26396818228e788196b82b33c" id="r_a0badcac26396818228e788196b82b33c"><td class="memTemplParams" colspan="2">template&lt;typename A &gt; </td></tr>
-<tr class="memitem:a0badcac26396818228e788196b82b33c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0badcac26396818228e788196b82b33c">bind</a> (const void *instance)</td></tr>
-<tr class="memdesc:a0badcac26396818228e788196b82b33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to bind an instance to an type.  <br /></td></tr>
-<tr class="separator:a0badcac26396818228e788196b82b33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94bda2854dfb087438e81ff0adb9f0bd" id="r_a94bda2854dfb087438e81ff0adb9f0bd"><td class="memTemplParams" colspan="2">template&lt;typename A &gt; </td></tr>
-<tr class="memitem:a94bda2854dfb087438e81ff0adb9f0bd"><td class="memTemplItemLeft" align="right" valign="top">A *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a94bda2854dfb087438e81ff0adb9f0bd">get</a> ()</td></tr>
-<tr class="memdesc:a94bda2854dfb087438e81ff0adb9f0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the registered instance.  <br /></td></tr>
-<tr class="separator:a94bda2854dfb087438e81ff0adb9f0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03c494fdb9fb9daafaea972f273de633" id="r_a03c494fdb9fb9daafaea972f273de633"><td class="memTemplParams" colspan="2">template&lt;typename A &gt; </td></tr>
-<tr class="memitem:a03c494fdb9fb9daafaea972f273de633"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00070.html">TypeInfo</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a03c494fdb9fb9daafaea972f273de633">get_type</a> ()</td></tr>
-<tr class="memdesc:a03c494fdb9fb9daafaea972f273de633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the registered Type.  <br /></td></tr>
-<tr class="separator:a03c494fdb9fb9daafaea972f273de633"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff740e516ed706e2d202086df6f12b9" id="r_a3ff740e516ed706e2d202086df6f12b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ff740e516ed706e2d202086df6f12b9">print_current_register</a> ()</td></tr>
-<tr class="memdesc:a3ff740e516ed706e2d202086df6f12b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out the items in the <a class="el" href="a00074.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>.  <br /></td></tr>
-<tr class="separator:a3ff740e516ed706e2d202086df6f12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html">EngineStats</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html">Bounds</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00262.html">AllocatedBuffer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00266.html">Vertex</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html">GPUMeshBuffers</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00274.html">GPUSceneData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00278.html">GPUDrawPushConstants</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00282.html">MaterialPipeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html">MaterialInstance</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00290.html">DeletionQueue</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html">AllocatedImage</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ab91f325a54d3e35fe831a86d6382c2a9" id="r_ab91f325a54d3e35fe831a86d6382c2a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab91f325a54d3e35fe831a86d6382c2a9">GLFW_INCLUDE_VULKAN</a></td></tr>
+<tr class="separator:ab91f325a54d3e35fe831a86d6382c2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d55e176cc77828a9adaa05ac4413b99" id="r_a3d55e176cc77828a9adaa05ac4413b99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d55e176cc77828a9adaa05ac4413b99">VK_CHECK</a>(x)</td></tr>
+<tr class="separator:a3d55e176cc77828a9adaa05ac4413b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a5d0f6bec114ddc0ce218cc9986d7bcac" id="r_a5d0f6bec114ddc0ce218cc9986d7bcac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a> : uint8_t { <a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529">MainColor</a>
+, <a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63">Transparent</a>
+, <a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1">Other</a>
+ }</td></tr>
+<tr class="separator:a5d0f6bec114ddc0ce218cc9986d7bcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The registry is the core system and provides reflection to the rest of the engine. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a0badcac26396818228e788196b82b33c" name="a0badcac26396818228e788196b82b33c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0badcac26396818228e788196b82b33c">&#9670;&#160;</a></span>bind()</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ab91f325a54d3e35fe831a86d6382c2a9" name="ab91f325a54d3e35fe831a86d6382c2a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab91f325a54d3e35fe831a86d6382c2a9">&#9670;&#160;</a></span>GLFW_INCLUDE_VULKAN</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename A &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void catos::Registry::bind </td>
-          <td>(</td>
-          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>instance</em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">#define GLFW_INCLUDE_VULKAN</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Used to bind an instance to an type. </p>
-
-</div>
-</div>
-<a id="aa9d8e58c1258eebb008a292f8b8b1c44" name="aa9d8e58c1258eebb008a292f8b8b1c44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9d8e58c1258eebb008a292f8b8b1c44">&#9670;&#160;</a></span>gen_python_bindings_file()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void catos::Registry::gen_python_bindings_file </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a94bda2854dfb087438e81ff0adb9f0bd" name="a94bda2854dfb087438e81ff0adb9f0bd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94bda2854dfb087438e81ff0adb9f0bd">&#9670;&#160;</a></span>get()</h2>
+<a id="a3d55e176cc77828a9adaa05ac4413b99" name="a3d55e176cc77828a9adaa05ac4413b99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d55e176cc77828a9adaa05ac4413b99">&#9670;&#160;</a></span>VK_CHECK</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename A &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">A * catos::Registry::get </td>
+          <td class="memname">#define VK_CHECK</td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">x</span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Returns the registered instance. </p>
-
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                 \</div>
+<div class="line">        VkResult err = x;                                                \</div>
+<div class="line">        if (err != VK_SUCCESS) {                                         \</div>
+<div class="line">            spdlog::info(<span class="stringliteral">&quot;ruh roh&quot;</span>);                                                             \</div>
+<div class="line">            spdlog::error(<span class="stringliteral">&quot;Detected Vulkan error at {}: {}&quot;</span>, __FILE__, __LINE__); \</div>
+<div class="line">            abort();                                                     \</div>
+<div class="line">        }                                                          \</div>
+<div class="line">    } <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="a03c494fdb9fb9daafaea972f273de633" name="a03c494fdb9fb9daafaea972f273de633"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a03c494fdb9fb9daafaea972f273de633">&#9670;&#160;</a></span>get_type()</h2>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="a5d0f6bec114ddc0ce218cc9986d7bcac" name="a5d0f6bec114ddc0ce218cc9986d7bcac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0f6bec114ddc0ce218cc9986d7bcac">&#9670;&#160;</a></span>MaterialPass</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;typename A &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00070.html">TypeInfo</a> &amp; catos::Registry::get_type </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
+          <td class="memname">enum <a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a> : uint8_t</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
-
-<p>Returns the registered Type. </p>
-
-</div>
-</div>
-<a id="a3ff740e516ed706e2d202086df6f12b9" name="a3ff740e516ed706e2d202086df6f12b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ff740e516ed706e2d202086df6f12b9">&#9670;&#160;</a></span>print_current_register()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void catos::Registry::print_current_register </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529" name="a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529"></a>MainColor&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63" name="a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63"></a>Transparent&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1" name="a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1"></a>Other&#160;</td><td class="fielddoc"></td></tr>
 </table>
-</div><div class="memdoc">
-
-<p>Prints out the items in the <a class="el" href="a00074.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>. </p>
 
 </div>
 </div>
-<a id="a3c1a3c07e51224b5745cd9764407efff" name="a3c1a3c07e51224b5745cd9764407efff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c1a3c07e51224b5745cd9764407efff">&#9670;&#160;</a></span>register_class()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename A &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00070.html">TypeInfo</a> &amp; catos::Registry::register_class </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>With this function you register a class to the <a class="el" href="a00074.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>. </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00008_source.html">registry.h</a></li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <p>
