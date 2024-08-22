@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): Member List</title>
+<title>Catos Engine (Source): catos::Component Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a00039.html',''); initResizable(); });
+$(function(){initNavTree('a00036.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,17 +94,109 @@ $(function(){initNavTree('a00039.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">catos::ScriptingEngine Member List</div></div>
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00033.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">catos::Component Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00039.html">catos::ScriptingEngine</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00039.html#a7e2c751a6515aa0b4ddc75abe05480ec">clean_up</a>()</td><td class="entry"><a class="el" href="a00039.html">catos::ScriptingEngine</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00039.html#a0b981b59a791b1da14a50c334c2d7578">embed_function</a>(const char *name)</td><td class="entry"><a class="el" href="a00039.html">catos::ScriptingEngine</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00039.html#af57fee23c2e4a37f2dd7553673da2f91">init</a>()</td><td class="entry"><a class="el" href="a00039.html">catos::ScriptingEngine</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00039.html#a19fe157c37ba91a6de1899fa249cf4ac">static_function</a>(T &amp;instance, Args... args)</td><td class="entry"><a class="el" href="a00039.html">catos::ScriptingEngine</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-</table></div><!-- contents -->
+<p><a class="el" href="a00036.html" title="Component is an abstract class that is the base for any component.">Component</a> is an abstract class that is the base for any component.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00005_source.html">entity.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a198b1c7d794d41af75f7f7ed5b069ea3" id="r_a198b1c7d794d41af75f7f7ed5b069ea3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a198b1c7d794d41af75f7f7ed5b069ea3">init</a> (<a class="el" href="a00040.html">Entity</a> &amp;entity)</td></tr>
+<tr class="separator:a198b1c7d794d41af75f7f7ed5b069ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31a1133e9d321871ad9b3cca7f325e30" id="r_a31a1133e9d321871ad9b3cca7f325e30"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a31a1133e9d321871ad9b3cca7f325e30">update</a> (<a class="el" href="a00040.html">Entity</a> &amp;entity)</td></tr>
+<tr class="separator:a31a1133e9d321871ad9b3cca7f325e30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee6f0a181489892319a99d6b8ee813f" id="r_acee6f0a181489892319a99d6b8ee813f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acee6f0a181489892319a99d6b8ee813f">destroy</a> (<a class="el" href="a00040.html">Entity</a> &amp;entity)</td></tr>
+<tr class="separator:acee6f0a181489892319a99d6b8ee813f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="a00036.html" title="Component is an abstract class that is the base for any component.">Component</a> is an abstract class that is the base for any component. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="acee6f0a181489892319a99d6b8ee813f" name="acee6f0a181489892319a99d6b8ee813f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acee6f0a181489892319a99d6b8ee813f">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void catos::Component::destroy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00040.html">Entity</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a198b1c7d794d41af75f7f7ed5b069ea3" name="a198b1c7d794d41af75f7f7ed5b069ea3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a198b1c7d794d41af75f7f7ed5b069ea3">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void catos::Component::init </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00040.html">Entity</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a31a1133e9d321871ad9b3cca7f325e30" name="a31a1133e9d321871ad9b3cca7f325e30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a1133e9d321871ad9b3cca7f325e30">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void catos::Component::update </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00040.html">Entity</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00005_source.html">entity.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

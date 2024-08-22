@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="61" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="61" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="62" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="a00032_1a86114b77047af86111dda9b2dcdc25a7" prot="private" static="no" mutable="no">
         <type>bool</type>
@@ -31,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="62" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="62" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="63" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="a00032_1ae9535fe5bd3e21e1ee14b5fca23695c9" prot="private" static="no" mutable="no">
         <type>std::unordered_map&lt; size_t, const void * &gt;</type>
@@ -45,7 +45,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="64" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="64" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="65" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="65" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="30" column="9"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="30" column="9"/>
       </memberdef>
       <memberdef kind="function" id="a00032_1ae2beda1820f2fb8b3d2b690e9cd7742b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="31" column="9"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="31" column="9"/>
       </memberdef>
       <memberdef kind="function" id="a00032_1ac7ee8e55850651b7549a64789904ea62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="34" column="14"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="34" column="14"/>
       </memberdef>
       <memberdef kind="function" id="a00032_1a5bd26fdeb5142a62fe81620461de1007" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="41" bodyend="43"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="41" bodyend="43"/>
       </memberdef>
       <memberdef kind="function" id="a00032_1a2d9f5a50cb0cf5a883d77d27068e3ad2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -139,7 +139,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="47" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="47" bodyend="49"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="47" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="47" bodyend="50"/>
       </memberdef>
       <memberdef kind="function" id="a00032_1aa075aafecc5843c6fbe3f1f7e8eacf39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="a00028" kindref="compound">AppCreationInfo</ref> *</type>
@@ -154,7 +154,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="53" column="25"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="54" column="25"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-func">
@@ -170,7 +170,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="58" column="14"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="59" column="14"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -178,7 +178,7 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/include/core/application.h" line="25" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/core/application.h" bodystart="25" bodyend="65"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/include/application.h" line="25" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/include/application.h" bodystart="25" bodyend="66"/>
     <listofallmembers>
       <member refid="a00032_1ade360a10f6c158d74d0fdd9ed1659672" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_info</name></member>
       <member refid="a00032_1ae9535fe5bd3e21e1ee14b5fca23695c9" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_instance_register</name></member>

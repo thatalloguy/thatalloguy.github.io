@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): Member List</title>
+<title>Catos Engine (Source): catos::Entity Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a00043.html',''); initResizable(); });
+$(function(){initNavTree('a00040.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,15 +94,235 @@ $(function(){initNavTree('a00043.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">catos::AppCreationInfo Member List</div></div>
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="a00037.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">catos::Entity Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00043.html">catos::AppCreationInfo</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00043.html#a2e1442b7894e8f50cf02926c312a83b4">applicationTitle</a></td><td class="entry"><a class="el" href="a00043.html">catos::AppCreationInfo</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00043.html#aa955f138a405ff0d97ca029e5a4bf4df">version</a></td><td class="entry"><a class="el" href="a00043.html">catos::AppCreationInfo</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Entities hold components which do the logic.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00005_source.html">entity.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0ec9adef499357ade7d76d33a4a611be" id="r_a0ec9adef499357ade7d76d33a4a611be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ec9adef499357ade7d76d33a4a611be">setup</a> (<a class="el" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a> name)</td></tr>
+<tr class="separator:a0ec9adef499357ade7d76d33a4a611be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f0c4e9ced3c4caf83f05b37a103b704" id="r_a3f0c4e9ced3c4caf83f05b37a103b704"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3f0c4e9ced3c4caf83f05b37a103b704">~Entity</a> ()=default</td></tr>
+<tr class="separator:a3f0c4e9ced3c4caf83f05b37a103b704"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0219c97b8947c567c14f6a814ce2039f" id="r_a0219c97b8947c567c14f6a814ce2039f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00036.html">Component</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0219c97b8947c567c14f6a814ce2039f">get_component</a> (<a class="el" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a> &amp;name)</td></tr>
+<tr class="memdesc:a0219c97b8947c567c14f6a814ce2039f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a component via name, returns a <a class="el" href="a00036.html" title="Component is an abstract class that is the base for any component.">Component</a> pointer.  <br /></td></tr>
+<tr class="separator:a0219c97b8947c567c14f6a814ce2039f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb1a095017ec43da5c9fc4ff2971f27c" id="r_acb1a095017ec43da5c9fc4ff2971f27c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb1a095017ec43da5c9fc4ff2971f27c">add_component</a> (<a class="el" href="a00036.html">Component</a> *component, <a class="el" href="a00014.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a> name)</td></tr>
+<tr class="memdesc:acb1a095017ec43da5c9fc4ff2971f27c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a component. Needs a type for the registry name.  <br /></td></tr>
+<tr class="separator:acb1a095017ec43da5c9fc4ff2971f27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a812872b389e2e267268bf3b3ef0488fd" id="r_a812872b389e2e267268bf3b3ef0488fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a812872b389e2e267268bf3b3ef0488fd">get_name</a> ()</td></tr>
+<tr class="memdesc:a812872b389e2e267268bf3b3ef0488fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the entity.  <br /></td></tr>
+<tr class="separator:a812872b389e2e267268bf3b3ef0488fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b980e6dd61f0b3d64683c4d8fc8640b" id="r_a1b980e6dd61f0b3d64683c4d8fc8640b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b980e6dd61f0b3d64683c4d8fc8640b">init</a> ()</td></tr>
+<tr class="memdesc:a1b980e6dd61f0b3d64683c4d8fc8640b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs <a class="el" href="a00036.html#a198b1c7d794d41af75f7f7ed5b069ea3">Component.init()</a> on every registered component. (Init gets run at the start of the game)  <br /></td></tr>
+<tr class="separator:a1b980e6dd61f0b3d64683c4d8fc8640b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e2c38a1a54cdee9427d519c6f544fbe" id="r_a7e2c38a1a54cdee9427d519c6f544fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7e2c38a1a54cdee9427d519c6f544fbe">update</a> ()</td></tr>
+<tr class="memdesc:a7e2c38a1a54cdee9427d519c6f544fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs <a class="el" href="a00036.html#a31a1133e9d321871ad9b3cca7f325e30">Component.update()</a> on every registered component. ( Gets called every tick)  <br /></td></tr>
+<tr class="separator:a7e2c38a1a54cdee9427d519c6f544fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332a9d20fefc7b8a610b89c9ad0b0d1d" id="r_a332a9d20fefc7b8a610b89c9ad0b0d1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a332a9d20fefc7b8a610b89c9ad0b0d1d">destroy</a> ()</td></tr>
+<tr class="memdesc:a332a9d20fefc7b8a610b89c9ad0b0d1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs <a class="el" href="a00036.html#acee6f0a181489892319a99d6b8ee813f">Component.destroy()</a> on every registered component. ( Gets called at the end of the program).  <br /></td></tr>
+<tr class="separator:a332a9d20fefc7b8a610b89c9ad0b0d1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Entities hold components which do the logic. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a3f0c4e9ced3c4caf83f05b37a103b704" name="a3f0c4e9ced3c4caf83f05b37a103b704"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f0c4e9ced3c4caf83f05b37a103b704">&#9670;&#160;</a></span>~Entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">catos::Entity::~Entity </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="acb1a095017ec43da5c9fc4ff2971f27c" name="acb1a095017ec43da5c9fc4ff2971f27c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb1a095017ec43da5c9fc4ff2971f27c">&#9670;&#160;</a></span>add_component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::Entity::add_component </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00036.html">Component</a> *</td>          <td class="paramname"><span class="paramname"><em>component</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00014.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td>          <td class="paramname"><span class="paramname"><em>name</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Add a component. Needs a type for the registry name. </p>
+
+</div>
+</div>
+<a id="a332a9d20fefc7b8a610b89c9ad0b0d1d" name="a332a9d20fefc7b8a610b89c9ad0b0d1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332a9d20fefc7b8a610b89c9ad0b0d1d">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::Entity::destroy </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs <a class="el" href="a00036.html#acee6f0a181489892319a99d6b8ee813f">Component.destroy()</a> on every registered component. ( Gets called at the end of the program). </p>
+
+</div>
+</div>
+<a id="a0219c97b8947c567c14f6a814ce2039f" name="a0219c97b8947c567c14f6a814ce2039f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0219c97b8947c567c14f6a814ce2039f">&#9670;&#160;</a></span>get_component()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00036.html">Component</a> * catos::Entity::get_component </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a component via name, returns a <a class="el" href="a00036.html" title="Component is an abstract class that is the base for any component.">Component</a> pointer. </p>
+
+</div>
+</div>
+<a id="a812872b389e2e267268bf3b3ef0488fd" name="a812872b389e2e267268bf3b3ef0488fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a812872b389e2e267268bf3b3ef0488fd">&#9670;&#160;</a></span>get_name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a> &amp; catos::Entity::get_name </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the name of the entity. </p>
+
+</div>
+</div>
+<a id="a1b980e6dd61f0b3d64683c4d8fc8640b" name="a1b980e6dd61f0b3d64683c4d8fc8640b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b980e6dd61f0b3d64683c4d8fc8640b">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::Entity::init </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs <a class="el" href="a00036.html#a198b1c7d794d41af75f7f7ed5b069ea3">Component.init()</a> on every registered component. (Init gets run at the start of the game) </p>
+
+</div>
+</div>
+<a id="a0ec9adef499357ade7d76d33a4a611be" name="a0ec9adef499357ade7d76d33a4a611be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ec9adef499357ade7d76d33a4a611be">&#9670;&#160;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::Entity::setup </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00014.html#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a></td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7e2c38a1a54cdee9427d519c6f544fbe" name="a7e2c38a1a54cdee9427d519c6f544fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e2c38a1a54cdee9427d519c6f544fbe">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::Entity::update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Runs <a class="el" href="a00036.html#a31a1133e9d321871ad9b3cca7f325e30">Component.update()</a> on every registered component. ( Gets called every tick) </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00005_source.html">entity.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

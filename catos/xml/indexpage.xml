@@ -6,11 +6,9 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<para><anchor id="index_1md__c_1_2_users_2allos_2source_2_catos_2_r_e_a_d_m_e"/> <heading level="5">modern lightweight ECS cpp game engine</heading>
+<para><anchor id="index_1md__c_1_2_users_2allos_2source_2_catos_2docs_2_r_e_a_d_m_e"/> <heading level="5">modern lightweight ECS cpp game engine</heading>
 </para>
-<para>(Wiki) <ulink url="https://github.com/thatalloguy/Catos/wiki">https://github.com/thatalloguy/Catos/wiki</ulink> <heading level="5">Different one comming sometime 🤷‍♂️</heading>
-</para>
-<para># # </para>
+<para># </para>
 <sect3 id="index_1planned-features--todo">
 <title>Planned Features / ToDo</title><para><itemizedlist>
 <listitem><para>[x] Reflection system</para>
@@ -21,14 +19,10 @@
 </listitem><listitem><para>- [x] Entity Creation.</para>
 </listitem><listitem><para>- [x] Central system for handling entities.</para>
 </listitem><listitem><para>- [x] Base component</para>
-</listitem><listitem><para>[ ] C# scripting engine</para>
-</listitem><listitem><para>- [x] Creating instances of classes.</para>
-</listitem><listitem><para>- [x] Calling functions of instances.</para>
-</listitem><listitem><para>- [x] Getting and Setting fields.</para>
-</listitem><listitem><para>- [x] Calling Cpp from C#</para>
-</listitem><listitem><para>- [ ] Embedding intergration with the reflection system</para>
-</listitem><listitem><para>- [ ] Refactor.</para>
-</listitem><listitem><para>- [ ] Script Object.</para>
+</listitem><listitem><para>[ ] Python scripting (via pocketPy)</para>
+</listitem><listitem><para>- [x] Custom Component creation (in python)</para>
+</listitem><listitem><para>- [ ] get Info from cpp</para>
+</listitem><listitem><para>- [ ] change info that affects cpp (in python)</para>
 </listitem><listitem><para>[ ] Resource manager</para>
 </listitem><listitem><para>[ ] Dynamic Editor (via the reflection)</para>
 </listitem><listitem><para>[ ] Atomus implementation. # </para>
@@ -41,17 +35,19 @@
 </sect2>
 <sect2 id="index_1rendering-with">
 <title>Rendering with</title><para><ulink url="https://github.com/thatalloguy/Atomus">https://github.com/thatalloguy/Atomus</ulink></para>
-<sect3 id="index_1ideas-for-the-engine">
+<sect4 id="index_1ideas-for-the-engine">
 <title>Ideas for the engine</title><para><heading level="5">- Vulkan renderer (+ opengl):</heading>
 </para>
 <para>After ive finished the asset manager i will continue dev on my personal vulkan renderer. After that I am hoping to write a RHI so that i can support multiple graphic api&apos;s.<itemizedlist>
 <listitem><para>UPDATE: I finished Atomus (vulkan renderer) and i dont think il create an RHI anytime soon 😅.</para>
 </listitem></itemizedlist>
 </para>
-<para><heading level="5">- C# as scripting lang</heading>
+<para><heading level="5"><strike>- C# as scripting lang</strike> (Its python now)</heading>
 </para>
-<para>I really like C# and i would like to have it as my scripting lang. However ive learned that implementing C# is a PITA, but im hoping that my new reflection system will make my life easier.</para>
-<para><heading level="5">- Physics engine</heading>
+<para>I really like C# and i would like to have it as my scripting lang. However ive learned that implementing C# is a PITA, but im hoping that my new reflection system will make my life easier.<itemizedlist>
+<listitem><para>UPDATE: I started on a pocketpy implementation, will not be using C#. <heading level="5">- Physics engine</heading>
+</para>
+</listitem></itemizedlist>
 </para>
 <para>In the past ive used PhysX, bullet and reactphysics3d. But i dislike all 3. I have heard lots of good stuff about Joltphysics and i might give it a try for this engine.</para>
 <para><heading level="5">- Audio Engine</heading>
@@ -63,9 +59,9 @@
 <para><heading level="5">- Game GUI</heading>
 </para>
 <para>At this point what i will use is far away, but i would either want something to functions like remUI. But i could also end up writing my own (IF i were to write my own GUI lib the editor will use that instead of imgui). </para>
-</sect3>
+</sect4>
 </sect2>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/README.md"/>
+    <location file="C:/Users/allos/source/Catos/docs/README.md"/>
   </compounddef>
 </doxygen>

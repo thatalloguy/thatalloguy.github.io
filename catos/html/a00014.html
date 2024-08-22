@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): registry.h File Reference</title>
+<title>Catos Engine (Source): types.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,50 +95,66 @@ $(function(){initNavTree('a00014.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">registry.h File Reference</div></div>
+<a href="#typedef-members">Typedefs</a>  </div>
+  <div class="headertitle"><div class="title">types.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;unordered_map&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;any&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00020_source.html">type_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00017_source.html">types.h</a>&quot;</code><br />
-<code>#include &quot;mono/metadata/loader.h&quot;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;deque&gt;</code><br />
-<code>#include &lt;fstream&gt;</code><br />
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="a00014_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00071.html">catos::Property</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="a00075.html" title="PropertyImpl implements Property and holds an member function pointer. Used to get an value of an fie...">PropertyImpl</a> for details.  <a href="a00071.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00075.html">catos::PropertyImpl&lt; T, U &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00075.html" title="PropertyImpl implements Property and holds an member function pointer. Used to get an value of an fie...">PropertyImpl</a> implements <a class="el" href="a00071.html" title="See PropertyImpl for details.">Property</a> and holds an member function pointer. Used to get an value of an field of an Type's instance.  <a href="a00075.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00079.html">catos::MethodInvoker&lt; ReturnType, ClassType, Args &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00079.html" title="MethodInvoker invokes the method (with args) given at creation.">MethodInvoker</a> invokes the method (with args) given at creation.  <a href="a00079.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00083.html">catos::Method</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a function pointer for running it.  <a href="a00083.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00087.html">catos::TypeInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typeinfo is an object that holds all information about a specific type.  <a href="a00087.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00091.html">catos::Registry</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registry is the core system and provides reflection to the rest of the engine.  <a href="a00091.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00026" id="r_a00026"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00026.html">catos</a></td></tr>
-<tr class="memdesc:a00026"><td class="mdescLeft">&#160;</td><td class="mdescRight">Note when calling a onUpdate function please use Unmanaged <a class="el" href="a00083.html" title="Stores a function pointer for running it.">Method</a> Thunks.!!! <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:aabc01e4474ddca8d6c8ac3e5c7dfe4b7" id="r_aabc01e4474ddca8d6c8ac3e5c7dfe4b7"><td class="memItemLeft" align="right" valign="top">typedef std::string_view&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a></td></tr>
+<tr class="separator:aabc01e4474ddca8d6c8ac3e5c7dfe4b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fa5a7ddaf7b4d44d3dde63343d8d844" id="r_a8fa5a7ddaf7b4d44d3dde63343d8d844"><td class="memItemLeft" align="right" valign="top">typedef const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td></tr>
+<tr class="separator:a8fa5a7ddaf7b4d44d3dde63343d8d844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ad9478d81a7aaf2593e8d9c3d06a14" id="r_a91ad9478d81a7aaf2593e8d9c3d06a14"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td></tr>
+<tr class="separator:a91ad9478d81a7aaf2593e8d9c3d06a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a8fa5a7ddaf7b4d44d3dde63343d8d844" name="a8fa5a7ddaf7b4d44d3dde63343d8d844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fa5a7ddaf7b4d44d3dde63343d8d844">&#9670;&#160;</a></span>cstr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef const char* <a class="el" href="#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabc01e4474ddca8d6c8ac3e5c7dfe4b7" name="aabc01e4474ddca8d6c8ac3e5c7dfe4b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">&#9670;&#160;</a></span>str</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef std::string_view <a class="el" href="#aabc01e4474ddca8d6c8ac3e5c7dfe4b7">str</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a91ad9478d81a7aaf2593e8d9c3d06a14" name="a91ad9478d81a7aaf2593e8d9c3d06a14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a91ad9478d81a7aaf2593e8d9c3d06a14">&#9670;&#160;</a></span>uint</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="#a91ad9478d81a7aaf2593e8d9c3d06a14">uint</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <p>
