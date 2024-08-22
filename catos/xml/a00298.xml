@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00298" kind="class" language="C++" prot="public">
+    <compoundname>STL::String</compoundname>
+    <includes refid="a00080" local="no">string.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00298_1a43be6facfefe6244fd37c572a37e0270" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* STL::String::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>STL::String::buf</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="49" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00298_1ae7b5cac5a65b7020c35c515fb4a0f92e" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int STL::String::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>STL::String::size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="50" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00298_1afba7e9db0db3c9beff7b715363676d4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>STL::String::String</definition>
+        <argsstring>()</argsstring>
+        <name>String</name>
+        <qualifiedname>STL::String::String</qualifiedname>
+        <briefdescription>
+<para>Initializes the internal buff to nullptr and size to 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="16" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1a0558edaebb50dd0a54662517db9e26e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>STL::String::String</definition>
+        <argsstring>(const char *buffer)</argsstring>
+        <name>String</name>
+        <qualifiedname>STL::String::String</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Copies the char array to the internal buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="19" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1a3e2f35344bbfc568199d764697ac1ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>STL::String::String</definition>
+        <argsstring>(const String &amp;obj)</argsstring>
+        <name>String</name>
+        <qualifiedname>STL::String::String</qualifiedname>
+        <param>
+          <type>const <ref refid="a00298" kindref="compound">String</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Copies string object to its internal values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="22" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1ac5e070a29fbd7224f6556aedfe69a05f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>STL::String::String</definition>
+        <argsstring>(String &amp;&amp;obj)</argsstring>
+        <name>String</name>
+        <qualifiedname>STL::String::String</qualifiedname>
+        <param>
+          <type><ref refid="a00298" kindref="compound">String</ref> &amp;&amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Transfers ownerShip of buffers to this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="25" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1a6e1f1d35335d3760eb61fddbebfb983d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00298" kindref="compound">String</ref> &amp;</type>
+        <definition>STL::String &amp; STL::String::operator=</definition>
+        <argsstring>(const String &amp;obj)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>STL::String::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="a00298" kindref="compound">String</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Same as the <ref refid="a00298_1a3e2f35344bbfc568199d764697ac1ae2" kindref="member">String(const String&amp; obj)</ref> constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="28" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1a26a68776891ac10277a4011c80a62b1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00298" kindref="compound">String</ref> &amp;</type>
+        <definition>STL::String &amp; STL::String::operator=</definition>
+        <argsstring>(String &amp;&amp;obj)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>STL::String::operator=</qualifiedname>
+        <param>
+          <type><ref refid="a00298" kindref="compound">String</ref> &amp;&amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Transfers ownership from a buffer to this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="31" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="52" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1ad1ff5942b967858216872885140d61f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00298" kindref="compound">String</ref></type>
+        <definition>STL::String STL::String::operator+</definition>
+        <argsstring>(const String &amp;obj)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>STL::String::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="a00298" kindref="compound">String</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Adds a string to itself. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="34" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="66" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1aeda63c9aa0803a501865a3974441b3d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int STL::String::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <qualifiedname>STL::String::length</qualifiedname>
+        <briefdescription>
+<para>Returns the size of the internal buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="37" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1ae71147c0f4a7d9a3d1fc3b8e5c4ac6e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * STL::String::c_str</definition>
+        <argsstring>() const</argsstring>
+        <name>c_str</name>
+        <qualifiedname>STL::String::c_str</qualifiedname>
+        <briefdescription>
+<para>Returns the internal buffer;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="40" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="a00298_1a0fbda173657b0a9c284584cf9287bd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>STL::String::~String</definition>
+        <argsstring>()</argsstring>
+        <name>~String</name>
+        <qualifiedname>STL::String::~String</qualifiedname>
+        <briefdescription>
+<para>Deletes the allocated char array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="44" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="8" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00298_1a54656376554ea497e12aea0d885cf7ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void STL::String::cleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>cleanUp</name>
+        <qualifiedname>STL::String::cleanUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="47" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="46" bodyend="50"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Custom string class that functions as dynamic C_str. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="11" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="11" bodyend="52"/>
+    <listofallmembers>
+      <member refid="a00298_1a43be6facfefe6244fd37c572a37e0270" prot="private" virt="non-virtual"><scope>STL::String</scope><name>buf</name></member>
+      <member refid="a00298_1ae71147c0f4a7d9a3d1fc3b8e5c4ac6e5" prot="public" virt="non-virtual"><scope>STL::String</scope><name>c_str</name></member>
+      <member refid="a00298_1a54656376554ea497e12aea0d885cf7ed" prot="private" virt="non-virtual"><scope>STL::String</scope><name>cleanUp</name></member>
+      <member refid="a00298_1aeda63c9aa0803a501865a3974441b3d1" prot="public" virt="non-virtual"><scope>STL::String</scope><name>length</name></member>
+      <member refid="a00298_1ad1ff5942b967858216872885140d61f1" prot="public" virt="non-virtual"><scope>STL::String</scope><name>operator+</name></member>
+      <member refid="a00298_1a6e1f1d35335d3760eb61fddbebfb983d" prot="public" virt="non-virtual"><scope>STL::String</scope><name>operator=</name></member>
+      <member refid="a00298_1a26a68776891ac10277a4011c80a62b1b" prot="public" virt="non-virtual"><scope>STL::String</scope><name>operator=</name></member>
+      <member refid="a00298_1ae7b5cac5a65b7020c35c515fb4a0f92e" prot="private" virt="non-virtual"><scope>STL::String</scope><name>size</name></member>
+      <member refid="a00298_1afba7e9db0db3c9beff7b715363676d4e" prot="public" virt="non-virtual"><scope>STL::String</scope><name>String</name></member>
+      <member refid="a00298_1a0558edaebb50dd0a54662517db9e26e8" prot="public" virt="non-virtual"><scope>STL::String</scope><name>String</name></member>
+      <member refid="a00298_1a3e2f35344bbfc568199d764697ac1ae2" prot="public" virt="non-virtual"><scope>STL::String</scope><name>String</name></member>
+      <member refid="a00298_1ac5e070a29fbd7224f6556aedfe69a05f" prot="public" virt="non-virtual"><scope>STL::String</scope><name>String</name></member>
+      <member refid="a00298_1a0fbda173657b0a9c284584cf9287bd8c" prot="public" virt="non-virtual"><scope>STL::String</scope><name>~String</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

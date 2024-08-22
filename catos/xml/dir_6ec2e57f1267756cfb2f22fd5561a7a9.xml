@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_6ec2e57f1267756cfb2f22fd5561a7a9" kind="dir">
+    <compoundname>math</compoundname>
+    <innerfile refid="a00026">vecs.cpp</innerfile>
+    <innerfile refid="a00029">vecs.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/math/"/>
+  </compounddef>
+</doxygen>

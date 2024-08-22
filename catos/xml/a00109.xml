@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00109" kind="namespace" language="C++">
+    <compoundname>catos::EntityUtils</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="a00109_1a7f7491ca6642382c71130a825ee91b1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
+        <definition>EntityId catos::EntityUtils::create_entity_id</definition>
+        <argsstring>(EntityIndex index, EntityVersion version)</argsstring>
+        <name>create_entity_id</name>
+        <qualifiedname>catos::EntityUtils::create_entity_id</qualifiedname>
+        <param>
+          <type><ref refid="a00101_1ad46e4a899856a996f751ea2c4a1edf61" kindref="member">EntityIndex</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="a00101_1a805105b8a0bfeee0ca9c0d2aaa10c91c" kindref="member">EntityVersion</ref></type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="42" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="42" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="a00109_1a978cd4122efd37529a0b31688d5392d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00101_1ad46e4a899856a996f751ea2c4a1edf61" kindref="member">EntityIndex</ref></type>
+        <definition>EntityIndex catos::EntityUtils::get_entity_index</definition>
+        <argsstring>(EntityId id)</argsstring>
+        <name>get_entity_index</name>
+        <qualifiedname>catos::EntityUtils::get_entity_index</qualifiedname>
+        <param>
+          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="46" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="46" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="a00109_1a878d770b925762e6bd9a643e8ee9eb68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00101_1a805105b8a0bfeee0ca9c0d2aaa10c91c" kindref="member">EntityVersion</ref></type>
+        <definition>EntityVersion catos::EntityUtils::get_entity_version</definition>
+        <argsstring>(EntityId id)</argsstring>
+        <name>get_entity_version</name>
+        <qualifiedname>catos::EntityUtils::get_entity_version</qualifiedname>
+        <param>
+          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="50" column="30" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="a00109_1a581cc1269c80ccf4eca5a03446e1d6dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::EntityUtils::is_entity_valid</definition>
+        <argsstring>(EntityId id)</argsstring>
+        <name>is_entity_valid</name>
+        <qualifiedname>catos::EntityUtils::is_entity_valid</qualifiedname>
+        <param>
+          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="54" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="54" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="39" column="5"/>
+  </compounddef>
+</doxygen>

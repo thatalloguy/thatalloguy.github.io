@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00242" kind="struct" language="C++" prot="public">
+    <compoundname>Node</compoundname>
+    <basecompoundref refid="a00226" prot="public" virt="non-virtual">IRenderable</basecompoundref>
+    <derivedcompoundref refid="a00218" prot="public" virt="non-virtual">MeshNode</derivedcompoundref>
+    <includes refid="a00065" local="no">VkLoader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00242_1a99e65d6b9186c551371b95ea3845b6fd" prot="public" static="no" mutable="no">
+        <type>std::weak_ptr&lt; <ref refid="a00242" kindref="compound">Node</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;Node&gt; Node::parent</definition>
+        <argsstring></argsstring>
+        <name>parent</name>
+        <qualifiedname>Node::parent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="63" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00242_1a0f9591e9fa0bf1680b1e3ac8c32739aa" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="a00242" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;Node&gt; &gt; Node::childern</definition>
+        <argsstring></argsstring>
+        <name>childern</name>
+        <qualifiedname>Node::childern</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="64" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00242_1a633dd4c9cfe7d73b9964bd90c0b9c28f" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 Node::localTransform</definition>
+        <argsstring></argsstring>
+        <name>localTransform</name>
+        <qualifiedname>Node::localTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="66" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00242_1a080e37187a37353df15596dc9250e700" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 Node::worldTransform</definition>
+        <argsstring></argsstring>
+        <name>worldTransform</name>
+        <qualifiedname>Node::worldTransform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="67" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00242_1a04e0eff14682dca41284af38d0cb51a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Node::refreshTransform</definition>
+        <argsstring>(const glm::mat4 &amp;parentMatrix)</argsstring>
+        <name>refreshTransform</name>
+        <qualifiedname>Node::refreshTransform</qualifiedname>
+        <param>
+          <type>const glm::mat4 &amp;</type>
+          <declname>parentMatrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="69" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="69" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="a00242_1a6870e549c7f428dbcd4f61d43eaa2f4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Node::Draw</definition>
+        <argsstring>(const glm::mat4 &amp;topMatrix, DrawContext &amp;ctx)</argsstring>
+        <name>Draw</name>
+        <qualifiedname>Node::Draw</qualifiedname>
+        <reimplements refid="a00226_1ae49bac0820d1ec198e844e29bf4420f4">Draw</reimplements>
+        <reimplementedby refid="a00218_1a8d5ed2175240d27f97e058508b110b51">Draw</reimplementedby>
+        <param>
+          <type>const glm::mat4 &amp;</type>
+          <declname>topMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="a00214" kindref="compound">DrawContext</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>TODO define <ref refid="a00214" kindref="compound">DrawContext</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="76" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="76" bodyend="81"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IRenderable</label>
+        <link refid="a00226"/>
+      </node>
+      <node id="3">
+        <label>MeshNode</label>
+        <link refid="a00218"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Node</label>
+        <link refid="a00242"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IRenderable</label>
+        <link refid="a00226"/>
+      </node>
+      <node id="1">
+        <label>Node</label>
+        <link refid="a00242"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="61" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="61" bodyend="82"/>
+    <listofallmembers>
+      <member refid="a00242_1a0f9591e9fa0bf1680b1e3ac8c32739aa" prot="public" virt="non-virtual"><scope>Node</scope><name>childern</name></member>
+      <member refid="a00242_1a6870e549c7f428dbcd4f61d43eaa2f4b" prot="public" virt="virtual"><scope>Node</scope><name>Draw</name></member>
+      <member refid="a00242_1a633dd4c9cfe7d73b9964bd90c0b9c28f" prot="public" virt="non-virtual"><scope>Node</scope><name>localTransform</name></member>
+      <member refid="a00242_1a99e65d6b9186c551371b95ea3845b6fd" prot="public" virt="non-virtual"><scope>Node</scope><name>parent</name></member>
+      <member refid="a00242_1a04e0eff14682dca41284af38d0cb51a5" prot="public" virt="non-virtual"><scope>Node</scope><name>refreshTransform</name></member>
+      <member refid="a00242_1a080e37187a37353df15596dc9250e700" prot="public" virt="non-virtual"><scope>Node</scope><name>worldTransform</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

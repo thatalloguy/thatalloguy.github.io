@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00210" kind="struct" language="C++" prot="public">
+    <compoundname>RenderObject</compoundname>
+    <includes refid="a00047" local="no">VkEngine.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00210_1ad804e3c297d2f4d5ea1aabc80f3a2801" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RenderObject::indexCount</definition>
+        <argsstring></argsstring>
+        <name>indexCount</name>
+        <qualifiedname>RenderObject::indexCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="86" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00210_1ac0d57e3a8ec65b53d2593224161ace73" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RenderObject::firstIndex</definition>
+        <argsstring></argsstring>
+        <name>firstIndex</name>
+        <qualifiedname>RenderObject::firstIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="87" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00210_1a30d8bb5f11112733abf3fa034f65f80c" prot="public" static="no" mutable="no">
+        <type>VkBuffer</type>
+        <definition>VkBuffer RenderObject::indexBuffer</definition>
+        <argsstring></argsstring>
+        <name>indexBuffer</name>
+        <qualifiedname>RenderObject::indexBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="88" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00210_1ab09c067290de5759d715bfea4487fcf6" prot="public" static="no" mutable="no">
+        <type><ref refid="a00286" kindref="compound">MaterialInstance</ref> *</type>
+        <definition>MaterialInstance* RenderObject::material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <qualifiedname>RenderObject::material</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="90" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00210_1a14bf8548f4c7a416e787a3508f833a50" prot="public" static="no" mutable="no">
+        <type><ref refid="a00258" kindref="compound">Bounds</ref></type>
+        <definition>Bounds RenderObject::bounds</definition>
+        <argsstring></argsstring>
+        <name>bounds</name>
+        <qualifiedname>RenderObject::bounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="92" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00210_1a5aa60e9c01b069dcddebd1a913e0999c" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 RenderObject::transform</definition>
+        <argsstring></argsstring>
+        <name>transform</name>
+        <qualifiedname>RenderObject::transform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="94" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00210_1a2cb78112987761ab014ca3095c3b0dbf" prot="public" static="no" mutable="no">
+        <type>VkDeviceAddress</type>
+        <definition>VkDeviceAddress RenderObject::vertexBufferAddress</definition>
+        <argsstring></argsstring>
+        <name>vertexBufferAddress</name>
+        <qualifiedname>RenderObject::vertexBufferAddress</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="95" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>Bounds</label>
+        <link refid="a00258"/>
+      </node>
+      <node id="2">
+        <label>MaterialInstance</label>
+        <link refid="a00286"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pipeline</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MaterialPipeline</label>
+        <link refid="a00282"/>
+      </node>
+      <node id="1">
+        <label>RenderObject</label>
+        <link refid="a00210"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>bounds</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="85" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="85" bodyend="96"/>
+    <listofallmembers>
+      <member refid="a00210_1a14bf8548f4c7a416e787a3508f833a50" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>bounds</name></member>
+      <member refid="a00210_1ac0d57e3a8ec65b53d2593224161ace73" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>firstIndex</name></member>
+      <member refid="a00210_1a30d8bb5f11112733abf3fa034f65f80c" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>indexBuffer</name></member>
+      <member refid="a00210_1ad804e3c297d2f4d5ea1aabc80f3a2801" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>indexCount</name></member>
+      <member refid="a00210_1ab09c067290de5759d715bfea4487fcf6" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>material</name></member>
+      <member refid="a00210_1a5aa60e9c01b069dcddebd1a913e0999c" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>transform</name></member>
+      <member refid="a00210_1a2cb78112987761ab014ca3095c3b0dbf" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>vertexBufferAddress</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

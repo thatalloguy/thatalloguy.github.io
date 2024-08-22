@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00258" kind="struct" language="C++" prot="public">
+    <compoundname>Bounds</compoundname>
+    <includes refid="a00074" local="no">VkTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00258_1ac18b521fb51a535fa927dc590b1a4652" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 Bounds::origin</definition>
+        <argsstring></argsstring>
+        <name>origin</name>
+        <qualifiedname>Bounds::origin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="58" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00258_1ad29877186534ef5c062724335c443df0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Bounds::sphereRadius</definition>
+        <argsstring></argsstring>
+        <name>sphereRadius</name>
+        <qualifiedname>Bounds::sphereRadius</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="59" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00258_1a65c365448edaaf81a9fd959272e77e8e" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 Bounds::extents</definition>
+        <argsstring></argsstring>
+        <name>extents</name>
+        <qualifiedname>Bounds::extents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="60" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="57" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="57" bodyend="61"/>
+    <listofallmembers>
+      <member refid="a00258_1a65c365448edaaf81a9fd959272e77e8e" prot="public" virt="non-virtual"><scope>Bounds</scope><name>extents</name></member>
+      <member refid="a00258_1ac18b521fb51a535fa927dc590b1a4652" prot="public" virt="non-virtual"><scope>Bounds</scope><name>origin</name></member>
+      <member refid="a00258_1ad29877186534ef5c062724335c443df0" prot="public" virt="non-virtual"><scope>Bounds</scope><name>sphereRadius</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

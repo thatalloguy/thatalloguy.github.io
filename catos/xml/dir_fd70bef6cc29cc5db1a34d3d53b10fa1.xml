@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_fd70bef6cc29cc5db1a34d3d53b10fa1" kind="dir">
+    <compoundname>Renderer</compoundname>
+    <innerfile refid="a00032">Camera.cpp</innerfile>
+    <innerfile refid="a00035">Camera.h</innerfile>
+    <innerfile refid="a00038">VkDescriptors.cpp</innerfile>
+    <innerfile refid="a00041">VkDescriptors.h</innerfile>
+    <innerfile refid="a00044">VkEngine.cpp</innerfile>
+    <innerfile refid="a00047">VkEngine.h</innerfile>
+    <innerfile refid="a00050">VkImages.cpp</innerfile>
+    <innerfile refid="a00053">VkImages.h</innerfile>
+    <innerfile refid="a00056">VkInitializers.cpp</innerfile>
+    <innerfile refid="a00059">VkInitializers.h</innerfile>
+    <innerfile refid="a00062">VkLoader.cpp</innerfile>
+    <innerfile refid="a00065">VkLoader.h</innerfile>
+    <innerfile refid="a00068">VkPipelines.cpp</innerfile>
+    <innerfile refid="a00071">VkPipelines.h</innerfile>
+    <innerfile refid="a00074">VkTypes.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/"/>
+  </compounddef>
+</doxygen>

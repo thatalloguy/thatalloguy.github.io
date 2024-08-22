@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00278" kind="struct" language="C++" prot="public">
+    <compoundname>GPUDrawPushConstants</compoundname>
+    <includes refid="a00074" local="no">VkTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00278_1ac7769ead4f8c948c6a727ec202a6a625" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 GPUDrawPushConstants::worldMatrix</definition>
+        <argsstring></argsstring>
+        <name>worldMatrix</name>
+        <qualifiedname>GPUDrawPushConstants::worldMatrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="96" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00278_1a3d87824455c363095cd2bed7ebcb7f95" prot="public" static="no" mutable="no">
+        <type>VkDeviceAddress</type>
+        <definition>VkDeviceAddress GPUDrawPushConstants::vertexBuffer</definition>
+        <argsstring></argsstring>
+        <name>vertexBuffer</name>
+        <qualifiedname>GPUDrawPushConstants::vertexBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="97" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="95" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="95" bodyend="98"/>
+    <listofallmembers>
+      <member refid="a00278_1a3d87824455c363095cd2bed7ebcb7f95" prot="public" virt="non-virtual"><scope>GPUDrawPushConstants</scope><name>vertexBuffer</name></member>
+      <member refid="a00278_1ac7769ead4f8c948c6a727ec202a6a625" prot="public" virt="non-virtual"><scope>GPUDrawPushConstants</scope><name>worldMatrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

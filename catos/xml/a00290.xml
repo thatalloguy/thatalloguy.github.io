@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00290" kind="struct" language="C++" prot="public">
+    <compoundname>DeletionQueue</compoundname>
+    <includes refid="a00074" local="no">VkTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" prot="public" static="no" mutable="no">
+        <type>std::deque&lt; std::function&lt; void()&gt; &gt;</type>
+        <definition>std::deque&lt;std::function&lt;void()&gt; &gt; DeletionQueue::deletors</definition>
+        <argsstring></argsstring>
+        <name>deletors</name>
+        <qualifiedname>DeletionQueue::deletors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="120" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00290_1a91bdce3808d2f96671f38a610810c67b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeletionQueue::pushFunction</definition>
+        <argsstring>(std::function&lt; void()&gt; &amp;&amp;function)</argsstring>
+        <name>pushFunction</name>
+        <qualifiedname>DeletionQueue::pushFunction</qualifiedname>
+        <param>
+          <type>std::function&lt; void()&gt; &amp;&amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="122" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="a00290_1ad8258e84b869dbf3800178a61cc51cb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void DeletionQueue::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <qualifiedname>DeletionQueue::flush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="126" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="126" bodyend="132"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="119" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="119" bodyend="133"/>
+    <listofallmembers>
+      <member refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" prot="public" virt="non-virtual"><scope>DeletionQueue</scope><name>deletors</name></member>
+      <member refid="a00290_1ad8258e84b869dbf3800178a61cc51cb3" prot="public" virt="non-virtual"><scope>DeletionQueue</scope><name>flush</name></member>
+      <member refid="a00290_1a91bdce3808d2f96671f38a610810c67b" prot="public" virt="non-virtual"><scope>DeletionQueue</scope><name>pushFunction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

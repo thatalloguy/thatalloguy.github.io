@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00104" kind="namespace" language="C++">
+    <compoundname>VkUtil</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="a00104_1a875b1e47dc0c1a3d683aa56a048004a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VkUtil::transitionImage</definition>
+        <argsstring>(VkCommandBuffer cmd, VkImage image, VkImageLayout currentLayout, VkImageLayout newLayout)</argsstring>
+        <name>transitionImage</name>
+        <qualifiedname>VkUtil::transitionImage</qualifiedname>
+        <param>
+          <type>VkCommandBuffer</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>VkImage</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>VkImageLayout</type>
+          <declname>currentLayout</declname>
+        </param>
+        <param>
+          <type>VkImageLayout</type>
+          <declname>newLayout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h" line="16" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.cpp" bodystart="9" bodyend="33" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h" declline="16" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="a00104_1aaf415273879926840c4ba3f273ced282" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VkUtil::copyImageToImage</definition>
+        <argsstring>(VkCommandBuffer cmd, VkImage source, VkImage destination, VkExtent2D srcSize, VkExtent2D dstSize)</argsstring>
+        <name>copyImageToImage</name>
+        <qualifiedname>VkUtil::copyImageToImage</qualifiedname>
+        <param>
+          <type>VkCommandBuffer</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>VkImage</type>
+          <declname>source</declname>
+        </param>
+        <param>
+          <type>VkImage</type>
+          <declname>destination</declname>
+        </param>
+        <param>
+          <type>VkExtent2D</type>
+          <declname>srcSize</declname>
+        </param>
+        <param>
+          <type>VkExtent2D</type>
+          <declname>dstSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h" line="17" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.cpp" bodystart="35" bodyend="67" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h" declline="17" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="a00104_1ab2f70afca891c15b7a86f4d2d5c67931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VkUtil::generateMipMaps</definition>
+        <argsstring>(VkCommandBuffer cmd, VkImage image, VkExtent2D imageSize)</argsstring>
+        <name>generateMipMaps</name>
+        <qualifiedname>VkUtil::generateMipMaps</qualifiedname>
+        <param>
+          <type>VkCommandBuffer</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>VkImage</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>VkExtent2D</type>
+          <declname>imageSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h" line="19" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.cpp" bodystart="69" bodyend="142" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h" declline="19" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="a00104_1a73da1142a76da292c64a9499aacf5bc2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool VkUtil::loadShaderModule</definition>
+        <argsstring>(const char *filePath, VkDevice device, VkShaderModule *outShaderModule)</argsstring>
+        <name>loadShaderModule</name>
+        <qualifiedname>VkUtil::loadShaderModule</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>VkShaderModule *</type>
+          <declname>outShaderModule</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="22" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="8" bodyend="46" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" declline="22" declcolumn="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h" line="14" column="1"/>
+  </compounddef>
+</doxygen>

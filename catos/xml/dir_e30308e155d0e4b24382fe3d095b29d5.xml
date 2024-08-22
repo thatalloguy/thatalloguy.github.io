@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_e30308e155d0e4b24382fe3d095b29d5" kind="dir">
+    <compoundname>world</compoundname>
+    <innerfile refid="a00086">query.cpp</innerfile>
+    <innerfile refid="a00089">query.h</innerfile>
+    <innerfile refid="a00092">world.cpp</innerfile>
+    <innerfile refid="a00095">world.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/"/>
+  </compounddef>
+</doxygen>

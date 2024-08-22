@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00238" kind="struct" language="C++" prot="public">
+    <compoundname>MeshAsset</compoundname>
+    <includes refid="a00065" local="no">VkLoader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00238_1a7abaa0b660e944edd81ce5186c32d367" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MeshAsset::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>MeshAsset::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="51" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00238_1a40aac10ab4f9e8d1041ea3035336c68a" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="a00234" kindref="compound">GeoSurface</ref> &gt;</type>
+        <definition>std::vector&lt;GeoSurface&gt; MeshAsset::surfaces</definition>
+        <argsstring></argsstring>
+        <name>surfaces</name>
+        <qualifiedname>MeshAsset::surfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="53" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00238_1a27c656c430749b3b3412dcafba2c7b9c" prot="public" static="no" mutable="no">
+        <type><ref refid="a00270" kindref="compound">GPUMeshBuffers</ref></type>
+        <definition>GPUMeshBuffers MeshAsset::meshBuffers</definition>
+        <argsstring></argsstring>
+        <name>meshBuffers</name>
+        <qualifiedname>MeshAsset::meshBuffers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="54" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>AllocatedBuffer</label>
+        <link refid="a00262"/>
+      </node>
+      <node id="2">
+        <label>GPUMeshBuffers</label>
+        <link refid="a00270"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>indexBuffer</edgelabel>
+          <edgelabel>vertexBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MeshAsset</label>
+        <link refid="a00238"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>meshBuffers</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="50" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="50" bodyend="55"/>
+    <listofallmembers>
+      <member refid="a00238_1a27c656c430749b3b3412dcafba2c7b9c" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>meshBuffers</name></member>
+      <member refid="a00238_1a7abaa0b660e944edd81ce5186c32d367" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>name</name></member>
+      <member refid="a00238_1a40aac10ab4f9e8d1041ea3035336c68a" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>surfaces</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

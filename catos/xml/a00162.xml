@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00162" kind="struct" language="C++" prot="public">
+    <compoundname>DescriptorLayoutBuilder</compoundname>
+    <includes refid="a00041" local="no">VkDescriptors.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00162_1a84964bc1535f1164c65c682d8abc1ae6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; VkDescriptorSetLayoutBinding &gt;</type>
+        <definition>std::vector&lt;VkDescriptorSetLayoutBinding&gt; DescriptorLayoutBuilder::bindings</definition>
+        <argsstring></argsstring>
+        <name>bindings</name>
+        <qualifiedname>DescriptorLayoutBuilder::bindings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="18" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00162_1afc94cce99812e98162990b38dc7a2fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DescriptorLayoutBuilder::addBinding</definition>
+        <argsstring>(uint32_t binding, VkDescriptorType type)</argsstring>
+        <name>addBinding</name>
+        <qualifiedname>DescriptorLayoutBuilder::addBinding</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>VkDescriptorType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="20" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="7" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="a00162_1a458ab671e6690342e749cd8f71bb41bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DescriptorLayoutBuilder::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>DescriptorLayoutBuilder::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="21" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="a00162_1a797241e8070455929166f95a9de86163" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkDescriptorSetLayout</type>
+        <definition>VkDescriptorSetLayout DescriptorLayoutBuilder::build</definition>
+        <argsstring>(VkDevice device, VkShaderStageFlags shaderStages)</argsstring>
+        <name>build</name>
+        <qualifiedname>DescriptorLayoutBuilder::build</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>VkShaderStageFlags</type>
+          <declname>shaderStages</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="23" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="21" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="16" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="16" bodyend="24"/>
+    <listofallmembers>
+      <member refid="a00162_1afc94cce99812e98162990b38dc7a2fd0" prot="public" virt="non-virtual"><scope>DescriptorLayoutBuilder</scope><name>addBinding</name></member>
+      <member refid="a00162_1a84964bc1535f1164c65c682d8abc1ae6" prot="public" virt="non-virtual"><scope>DescriptorLayoutBuilder</scope><name>bindings</name></member>
+      <member refid="a00162_1a797241e8070455929166f95a9de86163" prot="public" virt="non-virtual"><scope>DescriptorLayoutBuilder</scope><name>build</name></member>
+      <member refid="a00162_1a458ab671e6690342e749cd8f71bb41bc" prot="public" virt="non-virtual"><scope>DescriptorLayoutBuilder</scope><name>clear</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

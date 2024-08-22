@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="dir_4c1af30473a9e10bbf0089f4a009f125" kind="dir">
+    <compoundname>stl</compoundname>
+    <innerfile refid="a00077">string.cpp</innerfile>
+    <innerfile refid="a00080">string.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/"/>
+  </compounddef>
+</doxygen>

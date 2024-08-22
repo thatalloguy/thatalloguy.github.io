@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00306" kind="struct" language="C++" prot="public">
+    <compoundname>TransformComponent</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00306_1a30d1678c82cfa095b35ecb9a180bb697" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TransformComponent::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>TransformComponent::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="23" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00306_1a8661b2f37bf9926ed19e7a4a8fc2d41b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TransformComponent::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>TransformComponent::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="23" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00306_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TransformComponent::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>TransformComponent::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="23" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="22" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="22" bodyend="24"/>
+    <listofallmembers>
+      <member refid="a00306_1a30d1678c82cfa095b35ecb9a180bb697" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>x</name></member>
+      <member refid="a00306_1a8661b2f37bf9926ed19e7a4a8fc2d41b" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>y</name></member>
+      <member refid="a00306_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

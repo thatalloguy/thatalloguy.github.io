@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00101" kind="namespace" language="C++">
+    <compoundname>catos</compoundname>
+    <innerclass refid="a00118" prot="public">catos::App</innerclass>
+    <innerclass refid="a00114" prot="public">catos::AppCreationInfo</innerclass>
+    <innerclass refid="a00326" prot="public">catos::ComponentPool</innerclass>
+    <innerclass refid="a00322" prot="public">catos::EntityInfo</innerclass>
+    <innerclass refid="a00134" prot="public">catos::Method</innerclass>
+    <innerclass refid="a00130" prot="public">catos::MethodInvoker</innerclass>
+    <innerclass refid="a00122" prot="public">catos::Property</innerclass>
+    <innerclass refid="a00126" prot="public">catos::PropertyImpl</innerclass>
+    <innerclass refid="a00314" prot="public">catos::Query</innerclass>
+    <innerclass refid="a00142" prot="public">catos::Registry</innerclass>
+    <innerclass refid="a00138" prot="public">catos::TypeInfo</innerclass>
+    <innerclass refid="a00150" prot="public">catos::Window</innerclass>
+    <innerclass refid="a00146" prot="public">catos::WindowCreationInfo</innerclass>
+    <innerclass refid="a00330" prot="public">catos::World</innerclass>
+    <innernamespace refid="a00110">catos::Component</innernamespace>
+    <innernamespace refid="a00109">catos::EntityUtils</innernamespace>
+    <innernamespace refid="a00103">catos::math</innernamespace>
+    <innernamespace refid="a00108">catos::tests</innernamespace>
+    <innernamespace refid="a00102">catos::type_utils</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00101_1ad46e4a899856a996f751ea2c4a1edf61" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int catos::EntityIndex</definition>
+        <argsstring></argsstring>
+        <name>EntityIndex</name>
+        <qualifiedname>catos::EntityIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="28" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00101_1a805105b8a0bfeee0ca9c0d2aaa10c91c" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int catos::EntityVersion</definition>
+        <argsstring></argsstring>
+        <name>EntityVersion</name>
+        <qualifiedname>catos::EntityVersion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="29" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" prot="public" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long catos::EntityId</definition>
+        <argsstring></argsstring>
+        <name>EntityId</name>
+        <qualifiedname>catos::EntityId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="30" column="32" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00101_1ae151ba2b3dceaf31a210e55391499bf3" prot="public" static="no">
+        <type>std::bitset&lt; <ref refid="a00095_1a6d8c910a1fdb6d4762a05f7250e64322" kindref="member">MAX_COMPONENTS</ref> &gt;</type>
+        <definition>typedef std::bitset&lt;MAX_COMPONENTS&gt; catos::ComponentMask</definition>
+        <argsstring></argsstring>
+        <name>ComponentMask</name>
+        <qualifiedname>catos::ComponentMask</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="32" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="a00101_1a15a9986d23699b6fe1fa103e412aad9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string catos::getNames</definition>
+        <argsstring>()</argsstring>
+        <name>getNames</name>
+        <qualifiedname>catos::getNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="120" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="120" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="a00101_1ab2f55e47d4a482511ba7dd433fb857f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string catos::getArgNames</definition>
+        <argsstring>()</argsstring>
+        <name>getArgNames</name>
+        <qualifiedname>catos::getArgNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="129" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="129" bodyend="141"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="13" column="1"/>
+  </compounddef>
+</doxygen>

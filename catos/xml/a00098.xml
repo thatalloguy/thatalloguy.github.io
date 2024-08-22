@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00098" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Catos<sp/>Engine</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">######<sp/>modern<sp/>lightweight<sp/>ECS<sp/>cpp<sp/>game<sp/>engine</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#</highlight></codeline>
+<codeline><highlight class="normal">####<sp/>Planned<sp/>Features<sp/>/<sp/>ToDo</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[x]<sp/>Reflection<sp/>system</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[<sp/>]<sp/>~~constructors~~</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Methods</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Properties</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[x]<sp/>EC.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Entity<sp/>Creation.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Central<sp/>system<sp/>for<sp/>handling<sp/>entities.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Base<sp/>component</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>[<sp/>]<sp/>Python<sp/>scripting<sp/>(via<sp/>pocketPy)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[x]<sp/>Custom<sp/>Component<sp/>creation<sp/>(in<sp/>python)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[<sp/>]<sp/>get<sp/>Info<sp/>from<sp/>cpp</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>-<sp/>[<sp/>]<sp/>change<sp/>info<sp/>that<sp/>affects<sp/>cpp<sp/>(in<sp/>python)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[<sp/>]<sp/>Resource<sp/>manager</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[<sp/>]<sp/>Dynamic<sp/>Editor<sp/>(via<sp/>the<sp/>reflection)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>[<sp/>]<sp/>Atomus<sp/>implementation.</highlight></codeline>
+<codeline><highlight class="normal">#</highlight></codeline>
+<codeline><highlight class="normal">###<sp/>EC<sp/>system<sp/>blueprint.</highlight></codeline>
+<codeline><highlight class="normal">![image](https://github.com/thatalloguy/Catos/assets/51132972/f8a23b4e-8511-40bb-9648-cb252d856b83)</highlight></codeline>
+<codeline><highlight class="normal">#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Rendering<sp/>with</highlight></codeline>
+<codeline><highlight class="normal">https://github.com/thatalloguy/Atomus</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>Ideas<sp/>for<sp/>the<sp/>engine</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">######<sp/>-<sp/>Vulkan<sp/>renderer<sp/>(+<sp/>opengl):</highlight></codeline>
+<codeline><highlight class="normal">After<sp/>ive<sp/>finished<sp/>the<sp/>asset<sp/>manager<sp/>i<sp/>will<sp/>continue<sp/>dev<sp/>on<sp/>my<sp/>personal<sp/>vulkan<sp/>renderer.</highlight></codeline>
+<codeline><highlight class="normal">After<sp/>that<sp/>I<sp/>am<sp/>hoping<sp/>to<sp/>write<sp/>a<sp/>RHI<sp/>so<sp/>that<sp/>i<sp/>can<sp/>support<sp/>multiple<sp/>graphic<sp/>api&apos;s.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>UPDATE:<sp/>I<sp/>finished<sp/>Atomus<sp/>(vulkan<sp/>renderer)<sp/>and<sp/>i<sp/>dont<sp/>think<sp/>il<sp/>create<sp/>an<sp/>RHI<sp/>anytime<sp/>soon<sp/>😅.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">######<sp/>~~-<sp/>C#<sp/>as<sp/>scripting<sp/>lang~~<sp/>(Its<sp/>python<sp/>now)</highlight></codeline>
+<codeline><highlight class="normal">I<sp/>really<sp/>like<sp/>C#<sp/>and<sp/>i<sp/>would<sp/>like<sp/>to<sp/>have<sp/>it<sp/>as<sp/>my<sp/>scripting<sp/>lang.</highlight></codeline>
+<codeline><highlight class="normal">However<sp/>ive<sp/>learned<sp/>that<sp/>implementing<sp/>C#<sp/>is<sp/>a<sp/>PITA,<sp/>but<sp/>im<sp/>hoping<sp/>that<sp/>my<sp/>new<sp/>reflection<sp/>system<sp/>will<sp/>make<sp/>my<sp/>life<sp/>easier.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>UPDATE:<sp/>I<sp/>started<sp/>on<sp/>a<sp/>pocketpy<sp/><sp/>implementation,<sp/>will<sp/>not<sp/>be<sp/>using<sp/>C#.</highlight></codeline>
+<codeline><highlight class="normal">######<sp/>-<sp/>Physics<sp/>engine</highlight></codeline>
+<codeline><highlight class="normal">In<sp/>the<sp/>past<sp/>ive<sp/>used<sp/>PhysX,<sp/>bullet<sp/>and<sp/>reactphysics3d.<sp/>But<sp/>i<sp/>dislike<sp/>all<sp/>3.</highlight></codeline>
+<codeline><highlight class="normal">I<sp/>have<sp/>heard<sp/>lots<sp/>of<sp/>good<sp/>stuff<sp/>about<sp/>Joltphysics<sp/>and<sp/>i<sp/>might<sp/>give<sp/>it<sp/>a<sp/>try<sp/>for<sp/>this<sp/>engine.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">######<sp/>-<sp/>Audio<sp/>Engine</highlight></codeline>
+<codeline><highlight class="normal">Ive<sp/>never<sp/>really<sp/>done<sp/>much<sp/>with<sp/>audio,<sp/>but<sp/>ive<sp/>seen<sp/>the<sp/>steam<sp/>audio<sp/>api<sp/>and<sp/>im<sp/>hoping<sp/>to<sp/>try<sp/>it!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">######<sp/>-<sp/>Editor<sp/>GUI</highlight></codeline>
+<codeline><highlight class="normal">For<sp/>the<sp/>editor<sp/>il<sp/>be<sp/>using<sp/>IMGUI<sp/>since<sp/>ive<sp/>lots<sp/>of<sp/>experience<sp/>with<sp/>it.</highlight></codeline>
+<codeline><highlight class="normal">However<sp/>this<sp/>time<sp/>around<sp/>i<sp/>would<sp/>like<sp/>to<sp/>modify<sp/>the<sp/>feel<sp/>of<sp/>imgui.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">######<sp/>-<sp/>Game<sp/>GUI</highlight></codeline>
+<codeline><highlight class="normal">At<sp/>this<sp/>point<sp/>what<sp/>i<sp/>will<sp/>use<sp/>is<sp/>far<sp/>away,<sp/>but<sp/>i<sp/>would<sp/>either<sp/>want<sp/>something<sp/>to<sp/>functions<sp/>like<sp/>remUI.</highlight></codeline>
+<codeline><highlight class="normal">But<sp/>i<sp/>could<sp/>also<sp/>end<sp/>up<sp/>writing<sp/>my<sp/>own<sp/>(IF<sp/>i<sp/>were<sp/>to<sp/>write<sp/>my<sp/>own<sp/>GUI<sp/>lib<sp/>the<sp/>editor<sp/>will<sp/>use<sp/>that<sp/>instead<sp/>of<sp/>imgui).</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/Users/allos/source/Catos/docs/README.md"/>
+  </compounddef>
+</doxygen>

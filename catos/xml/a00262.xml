@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00262" kind="struct" language="C++" prot="public">
+    <compoundname>AllocatedBuffer</compoundname>
+    <includes refid="a00074" local="no">VkTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00262_1afd80ecc9bf0b9e9fbe2cd70c81def540" prot="public" static="no" mutable="no">
+        <type>VkBuffer</type>
+        <definition>VkBuffer AllocatedBuffer::buffer</definition>
+        <argsstring></argsstring>
+        <name>buffer</name>
+        <qualifiedname>AllocatedBuffer::buffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="65" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00262_1aad4979df72f7e827fd80171e42bfb463" prot="public" static="no" mutable="no">
+        <type>VmaAllocation</type>
+        <definition>VmaAllocation AllocatedBuffer::allocation</definition>
+        <argsstring></argsstring>
+        <name>allocation</name>
+        <qualifiedname>AllocatedBuffer::allocation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="66" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00262_1ae8f702ce1eb0772813fdb282bbcf5083" prot="public" static="no" mutable="no">
+        <type>VmaAllocationInfo</type>
+        <definition>VmaAllocationInfo AllocatedBuffer::info</definition>
+        <argsstring></argsstring>
+        <name>info</name>
+        <qualifiedname>AllocatedBuffer::info</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="67" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="64" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="64" bodyend="68"/>
+    <listofallmembers>
+      <member refid="a00262_1aad4979df72f7e827fd80171e42bfb463" prot="public" virt="non-virtual"><scope>AllocatedBuffer</scope><name>allocation</name></member>
+      <member refid="a00262_1afd80ecc9bf0b9e9fbe2cd70c81def540" prot="public" virt="non-virtual"><scope>AllocatedBuffer</scope><name>buffer</name></member>
+      <member refid="a00262_1ae8f702ce1eb0772813fdb282bbcf5083" prot="public" virt="non-virtual"><scope>AllocatedBuffer</scope><name>info</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

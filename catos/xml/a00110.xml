@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00110" kind="namespace" language="C++">
+    <compoundname>catos::Component</compoundname>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="a00110_1a34d9aebe0d3fc9b7fc27a0de9d6f6544" prot="public" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int catos::Component::c_componentCounter</definition>
+        <argsstring></argsstring>
+        <name>c_componentCounter</name>
+        <qualifiedname>catos::Component::c_componentCounter</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="63" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="a00110_1ab6ae9ff34679c725201b26c459fe4b80" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>static int catos::Component::get_id</definition>
+        <argsstring>()</argsstring>
+        <name>get_id</name>
+        <qualifiedname>catos::Component::get_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="66" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="a00110_1aefc92dfa4f53c9a93e469670d9877fc7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int catos::Component::get_component_id_counter</definition>
+        <argsstring>()</argsstring>
+        <name>get_component_id_counter</name>
+        <qualifiedname>catos::Component::get_component_id_counter</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="71" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="71" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="62" column="5"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00234" kind="struct" language="C++" prot="public">
+    <compoundname>GeoSurface</compoundname>
+    <includes refid="a00065" local="no">VkLoader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00234_1ab6fd9aebf929934ca3b679e11b984e88" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GeoSurface::startIndex</definition>
+        <argsstring></argsstring>
+        <name>startIndex</name>
+        <qualifiedname>GeoSurface::startIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="43" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00234_1a5bfc701fbd45f395a990f9a0063b8975" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t GeoSurface::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <qualifiedname>GeoSurface::count</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="44" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00234_1ad8e3399fe5d911224a61f379cbfcd4d9" prot="public" static="no" mutable="no">
+        <type><ref refid="a00258" kindref="compound">Bounds</ref></type>
+        <definition>Bounds GeoSurface::bounds</definition>
+        <argsstring></argsstring>
+        <name>bounds</name>
+        <qualifiedname>GeoSurface::bounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="45" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00234_1af0c192263057788d4136d4b73a63ead4" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="a00230" kindref="compound">GLTFMaterial</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;GLTFMaterial&gt; GeoSurface::material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <qualifiedname>GeoSurface::material</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="46" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Bounds</label>
+        <link refid="a00258"/>
+      </node>
+      <node id="1">
+        <label>GeoSurface</label>
+        <link refid="a00234"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>bounds</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="42" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="42" bodyend="47"/>
+    <listofallmembers>
+      <member refid="a00234_1ad8e3399fe5d911224a61f379cbfcd4d9" prot="public" virt="non-virtual"><scope>GeoSurface</scope><name>bounds</name></member>
+      <member refid="a00234_1a5bfc701fbd45f395a990f9a0063b8975" prot="public" virt="non-virtual"><scope>GeoSurface</scope><name>count</name></member>
+      <member refid="a00234_1af0c192263057788d4136d4b73a63ead4" prot="public" virt="non-virtual"><scope>GeoSurface</scope><name>material</name></member>
+      <member refid="a00234_1ab6fd9aebf929934ca3b679e11b984e88" prot="public" virt="non-virtual"><scope>GeoSurface</scope><name>startIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
