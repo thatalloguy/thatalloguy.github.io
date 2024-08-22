@@ -3,7 +3,6 @@
   <compounddef id="dir_3f340e0b9cc460f74c713234c9fdc727" kind="dir">
     <compoundname>Catos</compoundname>
     <innerdir refid="dir_7d6cbd7c926a015d1e4e8ab36b9a9a07">docs</innerdir>
-    <innerdir refid="dir_d79a2d43d9bc69227b07672b83d05d3f">Runtime</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
