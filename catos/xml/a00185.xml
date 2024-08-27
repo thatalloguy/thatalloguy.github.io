@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00185" kind="struct" language="C++" prot="public">
+    <compoundname>ComputePushConstants</compoundname>
+    <includes refid="a00047" local="no">VkEngine.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00185_1af1b14859e4a196ab2313734dde81428a" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 ComputePushConstants::data1</definition>
+        <argsstring></argsstring>
+        <name>data1</name>
+        <qualifiedname>ComputePushConstants::data1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="37" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00185_1aaa6359f4ea37d85e40f2881ef732826b" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 ComputePushConstants::data2</definition>
+        <argsstring></argsstring>
+        <name>data2</name>
+        <qualifiedname>ComputePushConstants::data2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="38" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00185_1a5035e7701b815f7e95c3fd525b6e075e" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 ComputePushConstants::data3</definition>
+        <argsstring></argsstring>
+        <name>data3</name>
+        <qualifiedname>ComputePushConstants::data3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="39" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00185_1ad1b7e85d855000abe4f3c62ca6b9e85e" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 ComputePushConstants::data4</definition>
+        <argsstring></argsstring>
+        <name>data4</name>
+        <qualifiedname>ComputePushConstants::data4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="40" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="36" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="36" bodyend="41"/>
+    <listofallmembers>
+      <member refid="a00185_1af1b14859e4a196ab2313734dde81428a" prot="public" virt="non-virtual"><scope>ComputePushConstants</scope><name>data1</name></member>
+      <member refid="a00185_1aaa6359f4ea37d85e40f2881ef732826b" prot="public" virt="non-virtual"><scope>ComputePushConstants</scope><name>data2</name></member>
+      <member refid="a00185_1a5035e7701b815f7e95c3fd525b6e075e" prot="public" virt="non-virtual"><scope>ComputePushConstants</scope><name>data3</name></member>
+      <member refid="a00185_1ad1b7e85d855000abe4f3c62ca6b9e85e" prot="public" virt="non-virtual"><scope>ComputePushConstants</scope><name>data4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

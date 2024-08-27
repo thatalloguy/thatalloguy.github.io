@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00121" kind="class" language="C++" prot="public">
+    <compoundname>catos::PropertyImpl</compoundname>
+    <basecompoundref refid="a00117" prot="public" virt="non-virtual">catos::Property</basecompoundref>
+    <includes refid="a00011" local="no">registry.h</includes>
+    <templateparamlist>
+      <param>
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">typename</ref> <ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">T</ref></type>
+      </param>
+      <param>
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">typename</ref> <ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">U</ref></type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00121_1ab295885403ec42bdf4db7c50dacb6c4b" prot="public" static="no" mutable="no">
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">U</ref> T::*</type>
+        <definition>U T::* catos::PropertyImpl&lt; T, U &gt;::memberPtr</definition>
+        <argsstring></argsstring>
+        <name>memberPtr</name>
+        <qualifiedname>catos::PropertyImpl::memberPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="51" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00121_1a6f9a11dc26ec88bce95a6d7e0131da9f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">const</ref> <ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">char</ref> *</type>
+        <definition>const char* catos::PropertyImpl&lt; T, U &gt;::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>catos::PropertyImpl::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="52" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00121_1a220d2c57189b922ac43e74b7605ddfec" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string catos::PropertyImpl&lt; T, U &gt;::type_name</definition>
+        <argsstring></argsstring>
+        <name>type_name</name>
+        <qualifiedname>catos::PropertyImpl::type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="55" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00121_1ac17e39e00f466c5e3ce27c204ebe7aa8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">size_t</ref></type>
+        <definition>size_t catos::PropertyImpl&lt; T, U &gt;::type_hash</definition>
+        <argsstring></argsstring>
+        <name>type_hash</name>
+        <qualifiedname>catos::PropertyImpl::type_hash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="56" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00121_1ac0cf2f99603c800a6054af6c9c21c74f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::PropertyImpl&lt; T, U &gt;::PropertyImpl</definition>
+        <argsstring>(U T::*memPtr)</argsstring>
+        <name>PropertyImpl</name>
+        <qualifiedname>catos::PropertyImpl::PropertyImpl</qualifiedname>
+        <param>
+          <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">U</ref> T::*</type>
+          <declname>memPtr</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="a00121" kindref="compound">PropertyImpl</ref> exist in order to avoid having to deal with templates at the user-side. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="59" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="a00121_1a65aa9409bbd99020c1516dce375f7d42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">void</ref></type>
+        <definition>void catos::PropertyImpl&lt; T, U &gt;::set_name</definition>
+        <argsstring>(const char *new_name) override</argsstring>
+        <name>set_name</name>
+        <qualifiedname>catos::PropertyImpl::set_name</qualifiedname>
+        <reimplements refid="a00117_1a14c6ded73ec5e93149fda506c540a34f">set_name</reimplements>
+        <param>
+          <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">const</ref> <ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">char</ref> *</type>
+          <declname>new_name</declname>
+        </param>
+        <briefdescription>
+<para>Set the name of the property. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="65" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="65" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="a00121_1aa89fca9f010b109d612eab9df84fa386" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">void</ref> *</type>
+        <definition>void * catos::PropertyImpl&lt; T, U &gt;::get_value</definition>
+        <argsstring>(const void *objPtr) override</argsstring>
+        <name>get_value</name>
+        <qualifiedname>catos::PropertyImpl::get_value</qualifiedname>
+        <reimplements refid="a00117_1a658e2343fa5565207592286b665c82e5">get_value</reimplements>
+        <param>
+          <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">const</ref> <ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">void</ref> *</type>
+          <declname>objPtr</declname>
+        </param>
+        <briefdescription>
+<para>Use Get value (which can be cased to the desired type) to return an value of an instance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="73" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="a00121_1a24f8b788dd92d969611c1a04f9bbd452" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">const</ref> <ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">char</ref> *</type>
+        <definition>const char * catos::PropertyImpl&lt; T, U &gt;::get_name</definition>
+        <argsstring>() override</argsstring>
+        <name>get_name</name>
+        <qualifiedname>catos::PropertyImpl::get_name</qualifiedname>
+        <reimplements refid="a00117_1ae2346543825d185fd3397262fd09d4cf">get_name</reimplements>
+        <briefdescription>
+<para>Get the name of the property. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="80" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="a00121_1af278bcec34c8085f5e7d167678158a87" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">const</ref> <ref refid="a00121_1ab2faac90acb74e92242075e332ee34af" kindref="member">char</ref> *</type>
+        <definition>const char * catos::PropertyImpl&lt; T, U &gt;::get_type_name</definition>
+        <argsstring>() override</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>catos::PropertyImpl::get_type_name</qualifiedname>
+        <reimplements refid="a00117_1ade91b642390d463208dcc397143a1a95">get_type_name</reimplements>
+        <briefdescription>
+<para>Returns the name of the fields type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="85" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="a00121_1ab2faac90acb74e92242075e332ee34af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>size_t &amp;</type>
+        <definition>size_t &amp; catos::PropertyImpl&lt; T, U &gt;::get_type_hash</definition>
+        <argsstring>() override</argsstring>
+        <name>get_type_hash</name>
+        <qualifiedname>catos::PropertyImpl::get_type_hash</qualifiedname>
+        <reimplements refid="a00117_1a2048e2c564639ddbe4b2632749f417da">get_type_hash</reimplements>
+        <briefdescription>
+<para>Returns (a reference of) the type&apos;s hash. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="90" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="90" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para><ref refid="a00121" kindref="compound">PropertyImpl</ref> implements <ref refid="a00117" kindref="compound">Property</ref> and holds an member function pointer. Used to get an value of an field of an Type&apos;s instance. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>catos::Property</label>
+        <link refid="a00117"/>
+      </node>
+      <node id="1">
+        <label>catos::PropertyImpl&lt; T, U &gt;</label>
+        <link refid="a00121"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>catos::Property</label>
+        <link refid="a00117"/>
+      </node>
+      <node id="1">
+        <label>catos::PropertyImpl&lt; T, U &gt;</label>
+        <link refid="a00121"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="47" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="47" bodyend="94"/>
+    <listofallmembers>
+      <member refid="a00117_1aabfc2935e5ce159303cdd8c760fe3e43" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>desc</name></member>
+      <member refid="a00121_1a24f8b788dd92d969611c1a04f9bbd452" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>get_name</name></member>
+      <member refid="a00121_1ab2faac90acb74e92242075e332ee34af" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>get_type_hash</name></member>
+      <member refid="a00121_1af278bcec34c8085f5e7d167678158a87" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>get_type_name</name></member>
+      <member refid="a00121_1aa89fca9f010b109d612eab9df84fa386" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>get_value</name></member>
+      <member refid="a00121_1ab295885403ec42bdf4db7c50dacb6c4b" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>memberPtr</name></member>
+      <member refid="a00121_1a6f9a11dc26ec88bce95a6d7e0131da9f" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>name</name></member>
+      <member refid="a00121_1ac0cf2f99603c800a6054af6c9c21c74f" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>PropertyImpl</name></member>
+      <member refid="a00121_1a65aa9409bbd99020c1516dce375f7d42" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>set_name</name></member>
+      <member refid="a00121_1ac17e39e00f466c5e3ce27c204ebe7aa8" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>type_hash</name></member>
+      <member refid="a00121_1a220d2c57189b922ac43e74b7605ddfec" prot="public" virt="non-virtual"><scope>catos::PropertyImpl</scope><name>type_name</name></member>
+      <member refid="a00117_1aadf32bd1d8c607a993f117ea2db3cadd" prot="public" virt="virtual"><scope>catos::PropertyImpl</scope><name>~Property</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

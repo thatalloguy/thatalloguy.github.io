@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00100" kind="namespace" language="C++">
+    <compoundname>catos::math</compoundname>
+    <innerclass refid="a00149" prot="public">catos::math::Vector2</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="10" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00225" kind="struct" language="C++" prot="public">
+    <compoundname>GLTFMaterial</compoundname>
+    <includes refid="a00065" local="no">VkLoader.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00225_1a0a53cb60736b2eb12975d43c6b071d28" prot="public" static="no" mutable="no">
+        <type><ref refid="a00281" kindref="compound">MaterialInstance</ref></type>
+        <definition>MaterialInstance GLTFMaterial::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>GLTFMaterial::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="39" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>GLTFMaterial</label>
+        <link refid="a00225"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MaterialInstance</label>
+        <link refid="a00281"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>pipeline</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MaterialPipeline</label>
+        <link refid="a00277"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="38" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="38" bodyend="40"/>
+    <listofallmembers>
+      <member refid="a00225_1a0a53cb60736b2eb12975d43c6b071d28" prot="public" virt="non-virtual"><scope>GLTFMaterial</scope><name>data</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

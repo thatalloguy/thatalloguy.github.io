@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00338" kind="class" language="C++" prot="public">
+    <compoundname>catos::Script</compoundname>
+    <includes refid="a00101" local="no">world.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00338_1a1d2844c55704b9d31d713b824da00e14" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::Script::Script</definition>
+        <argsstring>()</argsstring>
+        <name>Script</name>
+        <qualifiedname>catos::Script::Script</qualifiedname>
+        <briefdescription>
+<para>The constructors gets called at the start of the script. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="19" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="a00338_1af279e5aad0ff44fe62ce8698886ed0bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Script::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>catos::Script::update</qualifiedname>
+        <briefdescription>
+<para>the update function gets called every frame </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="22" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="a00338_1ad93a5bc97f52f9913c5b60f18ca492ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Script::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <qualifiedname>catos::Script::end</qualifiedname>
+        <briefdescription>
+<para>this function is called when the game ends. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="25" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A <ref refid="a00338" kindref="compound">Script</ref> is an empty class that holds logic made in python. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="14" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="14" bodyend="27"/>
+    <listofallmembers>
+      <member refid="a00338_1ad93a5bc97f52f9913c5b60f18ca492ec" prot="public" virt="non-virtual"><scope>catos::Script</scope><name>end</name></member>
+      <member refid="a00338_1a1d2844c55704b9d31d713b824da00e14" prot="public" virt="non-virtual"><scope>catos::Script</scope><name>Script</name></member>
+      <member refid="a00338_1af279e5aad0ff44fe62ce8698886ed0bd" prot="public" virt="non-virtual"><scope>catos::Script</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

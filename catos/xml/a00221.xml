@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00221" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IRenderable</compoundname>
+    <derivedcompoundref refid="a00241" prot="public" virt="non-virtual">LoadedGLTF</derivedcompoundref>
+    <derivedcompoundref refid="a00237" prot="public" virt="non-virtual">Node</derivedcompoundref>
+    <includes refid="a00065" local="no">VkLoader.h</includes>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00221_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IRenderable::Draw</definition>
+        <argsstring>(const glm::mat4 &amp;topMatrix, DrawContext &amp;ctx)=0</argsstring>
+        <name>Draw</name>
+        <qualifiedname>IRenderable::Draw</qualifiedname>
+        <reimplementedby refid="a00237_1a6870e549c7f428dbcd4f61d43eaa2f4b">Draw</reimplementedby>
+        <reimplementedby refid="a00241_1a5cb28e137c9fff7788afaf7aa5e565ac">Draw</reimplementedby>
+        <reimplementedby refid="a00213_1a8d5ed2175240d27f97e058508b110b51">Draw</reimplementedby>
+        <param>
+          <type>const glm::mat4 &amp;</type>
+          <declname>topMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="a00209" kindref="compound">DrawContext</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+<para>TODO define <ref refid="a00209" kindref="compound">DrawContext</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="33" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>IRenderable</label>
+        <link refid="a00221"/>
+      </node>
+      <node id="2">
+        <label>LoadedGLTF</label>
+        <link refid="a00241"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>MeshNode</label>
+        <link refid="a00213"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+        <link refid="a00237"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="31" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="31" bodyend="34"/>
+    <listofallmembers>
+      <member refid="a00221_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" virt="pure-virtual"><scope>IRenderable</scope><name>Draw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

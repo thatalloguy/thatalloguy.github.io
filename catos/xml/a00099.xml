@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00099" kind="namespace" language="C++">
+    <compoundname>catos::type_utils</compoundname>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="a00099_1ae8ba5a0350572f3f742754d626557e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string catos::type_utils::get_type_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>catos::type_utils::get_type_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" line="8" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="a00099_1a984a08d43e4be51d38568b267ed64092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t catos::type_utils::get_type_hash</definition>
+        <argsstring>()</argsstring>
+        <name>get_type_hash</name>
+        <qualifiedname>catos::type_utils::get_type_hash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" line="14" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" bodystart="14" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" line="4" column="1"/>
+  </compounddef>
+</doxygen>

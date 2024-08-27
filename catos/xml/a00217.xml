@@ -1,0 +1,1652 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00217" kind="class" language="C++" prot="public">
+    <compoundname>VulkanEngine</compoundname>
+    <includes refid="a00047" local="no">VkEngine.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00217_1a59d1bdeb91fc7a6b072dd41db890f317" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool VulkanEngine::_isInitialized</definition>
+        <argsstring></argsstring>
+        <name>_isInitialized</name>
+        <qualifiedname>VulkanEngine::_isInitialized</qualifiedname>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="120" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1acbacb0e89bba12ea169c900bbf74a23e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int VulkanEngine::_frameNumber</definition>
+        <argsstring></argsstring>
+        <name>_frameNumber</name>
+        <qualifiedname>VulkanEngine::_frameNumber</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="121" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a290bcf05482970acbfd14571034ccd90" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool VulkanEngine::_stopRendering</definition>
+        <argsstring></argsstring>
+        <name>_stopRendering</name>
+        <qualifiedname>VulkanEngine::_stopRendering</qualifiedname>
+        <initializer>{ false }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="122" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a1b355560c30d73de48d86023dcdea5f4" prot="public" static="no" mutable="no">
+        <type>VkExtent2D</type>
+        <definition>VkExtent2D VulkanEngine::_windowExtent</definition>
+        <argsstring></argsstring>
+        <name>_windowExtent</name>
+        <qualifiedname>VulkanEngine::_windowExtent</qualifiedname>
+        <initializer>{800, 600}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="124" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a66a9cc0c8097072f24c38e687bf4a51a" prot="public" static="no" mutable="no">
+        <type>GLFWwindow *</type>
+        <definition>GLFWwindow* VulkanEngine::_window</definition>
+        <argsstring></argsstring>
+        <name>_window</name>
+        <qualifiedname>VulkanEngine::_window</qualifiedname>
+        <initializer>{ nullptr }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="125" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="125" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a5c0ce388983da02a693f298f01f9f0ff" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float VulkanEngine::renderScale</definition>
+        <argsstring></argsstring>
+        <name>renderScale</name>
+        <qualifiedname>VulkanEngine::renderScale</qualifiedname>
+        <initializer>= 1.f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="126" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1adaef1ea968c30d0cc429146dfbb99330" prot="public" static="no" mutable="no">
+        <type><ref refid="a00153" kindref="compound">Camera</ref></type>
+        <definition>Camera VulkanEngine::mainCamera</definition>
+        <argsstring></argsstring>
+        <name>mainCamera</name>
+        <qualifiedname>VulkanEngine::mainCamera</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="127" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a85897f1180282b72d30b55dda1fe1045" prot="public" static="no" mutable="no">
+        <type>VkInstance</type>
+        <definition>VkInstance VulkanEngine::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <qualifiedname>VulkanEngine::_instance</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="130" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1aafc8bafd1ba65127ce2720de635e1231" prot="public" static="no" mutable="no">
+        <type>VkDebugUtilsMessengerEXT</type>
+        <definition>VkDebugUtilsMessengerEXT VulkanEngine::_debugMessenger</definition>
+        <argsstring></argsstring>
+        <name>_debugMessenger</name>
+        <qualifiedname>VulkanEngine::_debugMessenger</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="131" column="35" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a5d533c792641fc73c7834c46074c25cd" prot="public" static="no" mutable="no">
+        <type>VkPhysicalDevice</type>
+        <definition>VkPhysicalDevice VulkanEngine::_chosenGPU</definition>
+        <argsstring></argsstring>
+        <name>_chosenGPU</name>
+        <qualifiedname>VulkanEngine::_chosenGPU</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="132" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ab3856636bf2bd4805f72b852c2163f10" prot="public" static="no" mutable="no">
+        <type>VkDevice</type>
+        <definition>VkDevice VulkanEngine::_device</definition>
+        <argsstring></argsstring>
+        <name>_device</name>
+        <qualifiedname>VulkanEngine::_device</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="133" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ac5f5f041d67a7983769cc80255bead65" prot="public" static="no" mutable="no">
+        <type>VkSurfaceKHR</type>
+        <definition>VkSurfaceKHR VulkanEngine::_surface</definition>
+        <argsstring></argsstring>
+        <name>_surface</name>
+        <qualifiedname>VulkanEngine::_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="134" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ac17fb4ee4cf0de62648debe8e4b05130" prot="public" static="no" mutable="no">
+        <type>VkSwapchainKHR</type>
+        <definition>VkSwapchainKHR VulkanEngine::_swapchain</definition>
+        <argsstring></argsstring>
+        <name>_swapchain</name>
+        <qualifiedname>VulkanEngine::_swapchain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="137" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a5e5a8b61e55df8eeffd820988e40e73e" prot="public" static="no" mutable="no">
+        <type>VkFormat</type>
+        <definition>VkFormat VulkanEngine::_swapchainImageFormat</definition>
+        <argsstring></argsstring>
+        <name>_swapchainImageFormat</name>
+        <qualifiedname>VulkanEngine::_swapchainImageFormat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="138" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a4f951e6fd307b7d08b28ef643be7e4fb" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; VkImage &gt;</type>
+        <definition>std::vector&lt;VkImage&gt; VulkanEngine::_swapchainImages</definition>
+        <argsstring></argsstring>
+        <name>_swapchainImages</name>
+        <qualifiedname>VulkanEngine::_swapchainImages</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="140" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a80ebb2acd6e6e88efaf9c7245c59079c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; VkImageView &gt;</type>
+        <definition>std::vector&lt;VkImageView&gt; VulkanEngine::_swapchainImageViews</definition>
+        <argsstring></argsstring>
+        <name>_swapchainImageViews</name>
+        <qualifiedname>VulkanEngine::_swapchainImageViews</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="141" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ae2b5b9f37a4dd77e909d6a87c3290885" prot="public" static="no" mutable="no">
+        <type>VkExtent2D</type>
+        <definition>VkExtent2D VulkanEngine::_swapchainExtent</definition>
+        <argsstring></argsstring>
+        <name>_swapchainExtent</name>
+        <qualifiedname>VulkanEngine::_swapchainExtent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="142" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a43719b6bfc0dfb7b725e254b46716815" prot="public" static="no" mutable="no">
+        <type><ref refid="a00181" kindref="compound">FrameData</ref></type>
+        <definition>FrameData VulkanEngine::_frames[FRAME_OVERLAP]</definition>
+        <argsstring>[FRAME_OVERLAP]</argsstring>
+        <name>_frames</name>
+        <qualifiedname>VulkanEngine::_frames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="146" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a6b240d37948c2d5fa2cf071468c3bd4b" prot="public" static="no" mutable="no">
+        <type>VkQueue</type>
+        <definition>VkQueue VulkanEngine::_graphicsQueue</definition>
+        <argsstring></argsstring>
+        <name>_graphicsQueue</name>
+        <qualifiedname>VulkanEngine::_graphicsQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="150" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a3ce453b78ccf4ffdd19c2e64fb5a6ac7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t VulkanEngine::_graphicsQueueFamily</definition>
+        <argsstring></argsstring>
+        <name>_graphicsQueueFamily</name>
+        <qualifiedname>VulkanEngine::_graphicsQueueFamily</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="151" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ab1707a6b3122db0d0fce56c13999367b" prot="public" static="no" mutable="no">
+        <type><ref refid="a00285" kindref="compound">DeletionQueue</ref></type>
+        <definition>DeletionQueue VulkanEngine::_mainDeletionQueue</definition>
+        <argsstring></argsstring>
+        <name>_mainDeletionQueue</name>
+        <qualifiedname>VulkanEngine::_mainDeletionQueue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="154" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a75d08cfc1400cc46c7649b0041b0e0fc" prot="public" static="no" mutable="no">
+        <type>VmaAllocator</type>
+        <definition>VmaAllocator VulkanEngine::_allocator</definition>
+        <argsstring></argsstring>
+        <name>_allocator</name>
+        <qualifiedname>VulkanEngine::_allocator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="155" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ad332e0c9421b787d1805a642c6a04c70" prot="public" static="no" mutable="no">
+        <type><ref refid="a00289" kindref="compound">AllocatedImage</ref></type>
+        <definition>AllocatedImage VulkanEngine::_drawImage</definition>
+        <argsstring></argsstring>
+        <name>_drawImage</name>
+        <qualifiedname>VulkanEngine::_drawImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="158" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a20eff0d0f15bd84d364edb01d8cb340d" prot="public" static="no" mutable="no">
+        <type><ref refid="a00289" kindref="compound">AllocatedImage</ref></type>
+        <definition>AllocatedImage VulkanEngine::_depthImage</definition>
+        <argsstring></argsstring>
+        <name>_depthImage</name>
+        <qualifiedname>VulkanEngine::_depthImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="159" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1acdf79fe860137de04a46809a804094e4" prot="public" static="no" mutable="no">
+        <type>VkExtent2D</type>
+        <definition>VkExtent2D VulkanEngine::_drawExtent</definition>
+        <argsstring></argsstring>
+        <name>_drawExtent</name>
+        <qualifiedname>VulkanEngine::_drawExtent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="160" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a429373e20598afe382d2d5ea1e5f32a3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00169" kindref="compound">DescriptorAllocatorGrowable</ref></type>
+        <definition>DescriptorAllocatorGrowable VulkanEngine::globalDescriptorAllocator</definition>
+        <argsstring></argsstring>
+        <name>globalDescriptorAllocator</name>
+        <qualifiedname>VulkanEngine::globalDescriptorAllocator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="163" column="37" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1adcf4fd54a9568717d52fc711b1ff8593" prot="public" static="no" mutable="no">
+        <type>VkDescriptorSet</type>
+        <definition>VkDescriptorSet VulkanEngine::_drawImageDescriptors</definition>
+        <argsstring></argsstring>
+        <name>_drawImageDescriptors</name>
+        <qualifiedname>VulkanEngine::_drawImageDescriptors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="165" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a510b5529eca5876823392263a245f45e" prot="public" static="no" mutable="no">
+        <type>VkDescriptorSetLayout</type>
+        <definition>VkDescriptorSetLayout VulkanEngine::_drawImageDescriptorLayout</definition>
+        <argsstring></argsstring>
+        <name>_drawImageDescriptorLayout</name>
+        <qualifiedname>VulkanEngine::_drawImageDescriptorLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="166" column="31" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a656044cc262a32f92926d5c63b5edcbf" prot="public" static="no" mutable="no">
+        <type>VkPipeline</type>
+        <definition>VkPipeline VulkanEngine::_gradientPipeline</definition>
+        <argsstring></argsstring>
+        <name>_gradientPipeline</name>
+        <qualifiedname>VulkanEngine::_gradientPipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="169" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a0b8a40b8565cc5e4dce1477451ec9758" prot="public" static="no" mutable="no">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout VulkanEngine::_gradientPipelineLayout</definition>
+        <argsstring></argsstring>
+        <name>_gradientPipelineLayout</name>
+        <qualifiedname>VulkanEngine::_gradientPipelineLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="170" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ac238e3c8dd8ceef2593828c25f9c6532" prot="public" static="no" mutable="no">
+        <type>VkFence</type>
+        <definition>VkFence VulkanEngine::_immFence</definition>
+        <argsstring></argsstring>
+        <name>_immFence</name>
+        <qualifiedname>VulkanEngine::_immFence</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="174" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ad2f38e852d4cb1820da1b9d60ab38568" prot="public" static="no" mutable="no">
+        <type>VkCommandBuffer</type>
+        <definition>VkCommandBuffer VulkanEngine::_immCommandBuffer</definition>
+        <argsstring></argsstring>
+        <name>_immCommandBuffer</name>
+        <qualifiedname>VulkanEngine::_immCommandBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="175" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a3bb1ce4d610c0318e013638c807bd920" prot="public" static="no" mutable="no">
+        <type>VkCommandPool</type>
+        <definition>VkCommandPool VulkanEngine::_immCommandPool</definition>
+        <argsstring></argsstring>
+        <name>_immCommandPool</name>
+        <qualifiedname>VulkanEngine::_immCommandPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="176" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a2d6c74d128b5dc95ce311ad39dac81f8" prot="public" static="no" mutable="no">
+        <type>VkDescriptorSetLayout</type>
+        <definition>VkDescriptorSetLayout VulkanEngine::_singleImageDescriptorLayout</definition>
+        <argsstring></argsstring>
+        <name>_singleImageDescriptorLayout</name>
+        <qualifiedname>VulkanEngine::_singleImageDescriptorLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="179" column="31" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a82402825df27e499dd3a6a9f7798785e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int VulkanEngine::calledNum</definition>
+        <argsstring></argsstring>
+        <name>calledNum</name>
+        <qualifiedname>VulkanEngine::calledNum</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="183" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1af958cc75522e578ad3b4837d362e42ee" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool VulkanEngine::displayDebugMenu</definition>
+        <argsstring></argsstring>
+        <name>displayDebugMenu</name>
+        <qualifiedname>VulkanEngine::displayDebugMenu</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="184" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ac5fb2b0b7dea59777e271cc2d5a834bf" prot="public" static="no" mutable="no">
+        <type><ref refid="a00249" kindref="compound">EngineStats</ref></type>
+        <definition>EngineStats VulkanEngine::stats</definition>
+        <argsstring></argsstring>
+        <name>stats</name>
+        <qualifiedname>VulkanEngine::stats</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="185" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a0a37542e50f4f52c7a82dc5f3b7f3330" prot="public" static="no" mutable="no">
+        <type><ref refid="a00209" kindref="compound">DrawContext</ref></type>
+        <definition>DrawContext VulkanEngine::mainDrawContext</definition>
+        <argsstring></argsstring>
+        <name>mainDrawContext</name>
+        <qualifiedname>VulkanEngine::mainDrawContext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="189" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1aae6a5015a54ca1697d8ea5a4891af4d1" prot="public" static="no" mutable="no">
+        <type><ref refid="a00269" kindref="compound">GPUSceneData</ref></type>
+        <definition>GPUSceneData VulkanEngine::sceneData</definition>
+        <argsstring></argsstring>
+        <name>sceneData</name>
+        <qualifiedname>VulkanEngine::sceneData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="190" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a8490bfb929ed4ad82203deb7a7753cff" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::shared_ptr&lt; <ref refid="a00237" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::shared_ptr&lt;Node&gt; &gt; VulkanEngine::loadedNodes</definition>
+        <argsstring></argsstring>
+        <name>loadedNodes</name>
+        <qualifiedname>VulkanEngine::loadedNodes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="192" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a52aa7ad2d968f8dac3c98fe8e5f4a0ed" prot="public" static="no" mutable="no">
+        <type>VkDescriptorSetLayout</type>
+        <definition>VkDescriptorSetLayout VulkanEngine::_gpuSceneDataDescriptorLayout</definition>
+        <argsstring></argsstring>
+        <name>_gpuSceneDataDescriptorLayout</name>
+        <qualifiedname>VulkanEngine::_gpuSceneDataDescriptorLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="195" column="31" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a67ff3a8f056d68ada2920ce7bc88e0b3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00289" kindref="compound">AllocatedImage</ref></type>
+        <definition>AllocatedImage VulkanEngine::_blackImage</definition>
+        <argsstring></argsstring>
+        <name>_blackImage</name>
+        <qualifiedname>VulkanEngine::_blackImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="224" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a97f75c9571330d57beb368b28fe5685f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00289" kindref="compound">AllocatedImage</ref></type>
+        <definition>AllocatedImage VulkanEngine::_greyImage</definition>
+        <argsstring></argsstring>
+        <name>_greyImage</name>
+        <qualifiedname>VulkanEngine::_greyImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="225" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ae9e37119779c3c298affe9d8768e1237" prot="public" static="no" mutable="no">
+        <type>VkSampler</type>
+        <definition>VkSampler VulkanEngine::_defaultSamplerLinear</definition>
+        <argsstring></argsstring>
+        <name>_defaultSamplerLinear</name>
+        <qualifiedname>VulkanEngine::_defaultSamplerLinear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="227" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a417234053d867dd5eba9c54a3dfd987f" prot="public" static="no" mutable="no">
+        <type>VkSampler</type>
+        <definition>VkSampler VulkanEngine::_defaultSamplerNearest</definition>
+        <argsstring></argsstring>
+        <name>_defaultSamplerNearest</name>
+        <qualifiedname>VulkanEngine::_defaultSamplerNearest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="228" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a019c69495963902de318bf1005034bda" prot="public" static="no" mutable="no">
+        <type><ref refid="a00281" kindref="compound">MaterialInstance</ref></type>
+        <definition>MaterialInstance VulkanEngine::defaultData</definition>
+        <argsstring></argsstring>
+        <name>defaultData</name>
+        <qualifiedname>VulkanEngine::defaultData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="230" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a94db50b96840113529b5c31ee1eff0f3" prot="public" static="no" mutable="no">
+        <type><ref refid="a00193" kindref="compound">GLTFMetallic_roughness</ref></type>
+        <definition>GLTFMetallic_roughness VulkanEngine::metalRoughMaterial</definition>
+        <argsstring></argsstring>
+        <name>metalRoughMaterial</name>
+        <qualifiedname>VulkanEngine::metalRoughMaterial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="231" column="32" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1abad82df25c8216a872cafa95e2276986" prot="public" static="no" mutable="no">
+        <type><ref refid="a00289" kindref="compound">AllocatedImage</ref></type>
+        <definition>AllocatedImage VulkanEngine::_errorImage</definition>
+        <argsstring></argsstring>
+        <name>_errorImage</name>
+        <qualifiedname>VulkanEngine::_errorImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="234" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ac5c036edc1d962cdebe3e260940e9740" prot="public" static="no" mutable="no">
+        <type><ref refid="a00289" kindref="compound">AllocatedImage</ref></type>
+        <definition>AllocatedImage VulkanEngine::_whiteImage</definition>
+        <argsstring></argsstring>
+        <name>_whiteImage</name>
+        <qualifiedname>VulkanEngine::_whiteImage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="236" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a5c648ce299b62a216ca42cb762cb0758" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, std::shared_ptr&lt; <ref refid="a00241" kindref="compound">LoadedGLTF</ref> &gt; &gt;</type>
+        <definition>std::unordered_map&lt;std::string, std::shared_ptr&lt;LoadedGLTF&gt; &gt; VulkanEngine::loadedScenes</definition>
+        <argsstring></argsstring>
+        <name>loadedScenes</name>
+        <qualifiedname>VulkanEngine::loadedScenes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="238" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00217_1a5c9b5403d18a160c2e3d57b7b981204b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="a00189" kindref="compound">ComputeEffect</ref> &gt;</type>
+        <definition>std::vector&lt;ComputeEffect&gt; VulkanEngine::backgroundEffects</definition>
+        <argsstring></argsstring>
+        <name>backgroundEffects</name>
+        <qualifiedname>VulkanEngine::backgroundEffects</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="265" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ab690c6553e6e196fef597af561655527" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int VulkanEngine::currentBackgroundEffect</definition>
+        <argsstring></argsstring>
+        <name>currentBackgroundEffect</name>
+        <qualifiedname>VulkanEngine::currentBackgroundEffect</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="266" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="266" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a5f53603360ad1d4f6f4ecf01acc7860f" prot="private" static="no" mutable="no">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout VulkanEngine::_trianglePipelineLayout</definition>
+        <argsstring></argsstring>
+        <name>_trianglePipelineLayout</name>
+        <qualifiedname>VulkanEngine::_trianglePipelineLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="268" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a967ac2e931dcfbf746fcef2239549b28" prot="private" static="no" mutable="no">
+        <type>VkPipeline</type>
+        <definition>VkPipeline VulkanEngine::_trianglePipeline</definition>
+        <argsstring></argsstring>
+        <name>_trianglePipeline</name>
+        <qualifiedname>VulkanEngine::_trianglePipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="269" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1ae2c73ed644888961513ff22a7644725d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="a00233" kindref="compound">MeshAsset</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;MeshAsset&gt; &gt; VulkanEngine::testMeshes</definition>
+        <argsstring></argsstring>
+        <name>testMeshes</name>
+        <qualifiedname>VulkanEngine::testMeshes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="275" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1aa5dde64bb4ba44551f8caf3a67b33a97" prot="private" static="no" mutable="no">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout VulkanEngine::_meshPipelineLayout</definition>
+        <argsstring></argsstring>
+        <name>_meshPipelineLayout</name>
+        <qualifiedname>VulkanEngine::_meshPipelineLayout</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="277" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="277" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a3a8a4dabc7acf435338bc616e3a0b5ee" prot="private" static="no" mutable="no">
+        <type>VkPipeline</type>
+        <definition>VkPipeline VulkanEngine::_meshPipeline</definition>
+        <argsstring></argsstring>
+        <name>_meshPipeline</name>
+        <qualifiedname>VulkanEngine::_meshPipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="278" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a61857cc8e56755ee8ecfb895e6df832f" prot="private" static="no" mutable="no">
+        <type><ref refid="a00265" kindref="compound">GPUMeshBuffers</ref></type>
+        <definition>GPUMeshBuffers VulkanEngine::rectangle</definition>
+        <argsstring></argsstring>
+        <name>rectangle</name>
+        <qualifiedname>VulkanEngine::rectangle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="280" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="280" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00217_1a225dacf845c5326b25592a658295fdc1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool VulkanEngine::resizeRequested</definition>
+        <argsstring></argsstring>
+        <name>resizeRequested</name>
+        <qualifiedname>VulkanEngine::resizeRequested</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="284" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00217_1aa93d515ee250059976f8b84bd5599ac0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00181" kindref="compound">FrameData</ref> &amp;</type>
+        <definition>FrameData &amp; VulkanEngine::getCurrentFrame</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentFrame</name>
+        <qualifiedname>VulkanEngine::getCurrentFrame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="148" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1add07ae792339ef143c88dd43f0950f1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::immediate_submit</definition>
+        <argsstring>(std::function&lt; void(VkCommandBuffer cmd)&gt; &amp;&amp;function)</argsstring>
+        <name>immediate_submit</name>
+        <qualifiedname>VulkanEngine::immediate_submit</qualifiedname>
+        <param>
+          <type>std::function&lt; void(VkCommandBuffer cmd)&gt; &amp;&amp;</type>
+          <declname>function</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="197" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="723" bodyend="748"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a29a528496c68c9f0c44414c466d1169f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00257" kindref="compound">AllocatedBuffer</ref></type>
+        <definition>AllocatedBuffer VulkanEngine::createBuffer</definition>
+        <argsstring>(size_t allocSize, VkBufferUsageFlags usage, VmaMemoryUsage memoryUsage)</argsstring>
+        <name>createBuffer</name>
+        <qualifiedname>VulkanEngine::createBuffer</qualifiedname>
+        <param>
+          <type>size_t</type>
+          <declname>allocSize</declname>
+        </param>
+        <param>
+          <type>VkBufferUsageFlags</type>
+          <declname>usage</declname>
+        </param>
+        <param>
+          <type>VmaMemoryUsage</type>
+          <declname>memoryUsage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="199" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1022" bodyend="1041"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a3ce795645ea1f6bc1d7e7d462d47bcd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::destroyBuffer</definition>
+        <argsstring>(const AllocatedBuffer &amp;buffer)</argsstring>
+        <name>destroyBuffer</name>
+        <qualifiedname>VulkanEngine::destroyBuffer</qualifiedname>
+        <param>
+          <type>const <ref refid="a00257" kindref="compound">AllocatedBuffer</ref> &amp;</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="200" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1043" bodyend="1045"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a2eef35ed3cc46cf090af65c68dc63243" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00265" kindref="compound">GPUMeshBuffers</ref></type>
+        <definition>GPUMeshBuffers VulkanEngine::uploadMesh</definition>
+        <argsstring>(std::span&lt; uint32_t &gt; indices, std::span&lt; Vertex &gt; vertices)</argsstring>
+        <name>uploadMesh</name>
+        <qualifiedname>VulkanEngine::uploadMesh</qualifiedname>
+        <param>
+          <type>std::span&lt; uint32_t &gt;</type>
+          <declname>indices</declname>
+        </param>
+        <param>
+          <type>std::span&lt; <ref refid="a00261" kindref="compound">Vertex</ref> &gt;</type>
+          <declname>vertices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="202" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1047" bodyend="1099"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a705e6ee910d1eae33b8b0cb5c6a770b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00289" kindref="compound">AllocatedImage</ref></type>
+        <definition>AllocatedImage VulkanEngine::createImage</definition>
+        <argsstring>(VkExtent3D size, VkFormat format, VkImageUsageFlags usage, bool mipmapped=false)</argsstring>
+        <name>createImage</name>
+        <qualifiedname>VulkanEngine::createImage</qualifiedname>
+        <param>
+          <type>VkExtent3D</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>VkFormat</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>VkImageUsageFlags</type>
+          <declname>usage</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmapped</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="204" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1303" bodyend="1334"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a7f02e7be826d94845e6b675c5262d172" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00289" kindref="compound">AllocatedImage</ref></type>
+        <definition>AllocatedImage VulkanEngine::createImage</definition>
+        <argsstring>(void *data, VkExtent3D size, VkFormat format, VkImageUsageFlags usage, bool mipmapped=false)</argsstring>
+        <name>createImage</name>
+        <qualifiedname>VulkanEngine::createImage</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>VkExtent3D</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>VkFormat</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <type>VkImageUsageFlags</type>
+          <declname>usage</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>mipmapped</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="205" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1336" bodyend="1374"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a999dceb09a0a03ea7333d2b5f901e35d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::destroyImage</definition>
+        <argsstring>(const AllocatedImage &amp;img)</argsstring>
+        <name>destroyImage</name>
+        <qualifiedname>VulkanEngine::destroyImage</qualifiedname>
+        <param>
+          <type>const <ref refid="a00289" kindref="compound">AllocatedImage</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="207" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1376" bodyend="1379"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a101adc8c3d7479afd98d43338a0b9707" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool VulkanEngine::isVisible</definition>
+        <argsstring>(const RenderObject &amp;obj, const Camera &amp;camera)</argsstring>
+        <name>isVisible</name>
+        <qualifiedname>VulkanEngine::isVisible</qualifiedname>
+        <param>
+          <type>const <ref refid="a00205" kindref="compound">RenderObject</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="a00153" kindref="compound">Camera</ref> &amp;</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="209" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1411" bodyend="1458"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a605027f7ed6fcd0d1861ebd72c5c5858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::Init</definition>
+        <argsstring>(GLFWwindow *renderWindow, bool displayDebugMenu=false)</argsstring>
+        <name>Init</name>
+        <qualifiedname>VulkanEngine::Init</qualifiedname>
+        <param>
+          <type>GLFWwindow *</type>
+          <declname>renderWindow</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>displayDebugMenu</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="214" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="28" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1ae4b64b3a0c41f17e36339146bb0c15f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::CleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>CleanUp</name>
+        <qualifiedname>VulkanEngine::CleanUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>OUR OWN WINDOW IMPL DOES THIS ALREADY</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="215" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="147" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1ab9ac14fa153808cb5e7f00c53e38ec3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::Draw</definition>
+        <argsstring>()</argsstring>
+        <name>Draw</name>
+        <qualifiedname>VulkanEngine::Draw</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>The user must now update the scene manually so that they can call the draw function for their own objects. <ref refid="a00217_1ad2da415dabe3add3882952382efbb926" kindref="member">updateScene()</ref>;</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="216" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="192" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1ae2bc28152df989a30cfc8286ccf33b0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <qualifiedname>VulkanEngine::Run</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>compare the new time vs the old</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="217" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="292" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a0920f100af18abeffaff8ac5296ad309" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::start_imgui_frame</definition>
+        <argsstring>()</argsstring>
+        <name>start_imgui_frame</name>
+        <qualifiedname>VulkanEngine::start_imgui_frame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="220" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="337" bodyend="389"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a39cb52548f29a4501c5e17bb7eb8a001" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::end_imgui_frame</definition>
+        <argsstring>()</argsstring>
+        <name>end_imgui_frame</name>
+        <qualifiedname>VulkanEngine::end_imgui_frame</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="222" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="391" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1ad2da415dabe3add3882952382efbb926" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::updateScene</definition>
+        <argsstring>()</argsstring>
+        <name>updateScene</name>
+        <qualifiedname>VulkanEngine::updateScene</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>loadedScenes[&quot;structure&quot;]-&gt;Draw(glm::mat4{1.f}, mainDrawContext);</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="241" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1381" bodyend="1409"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00217_1aac690da9ffba122c6f145e27fda36e05" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00217" kindref="compound">VulkanEngine</ref> &amp;</type>
+        <definition>VulkanEngine &amp; VulkanEngine::Get</definition>
+        <argsstring>()</argsstring>
+        <name>Get</name>
+        <qualifiedname>VulkanEngine::Get</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="212" column="29" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="24" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00217_1a3ee1028f00268bb1d35c797c1c659834" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initVulkan</definition>
+        <argsstring>()</argsstring>
+        <name>initVulkan</name>
+        <qualifiedname>VulkanEngine::initVulkan</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="243" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="418" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a936722ebc009d255a74389af3db2dce5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initSwapchain</definition>
+        <argsstring>()</argsstring>
+        <name>initSwapchain</name>
+        <qualifiedname>VulkanEngine::initSwapchain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="244" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="489" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1aaca5e58932a4527c23a8ba317195760a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initCommands</definition>
+        <argsstring>()</argsstring>
+        <name>initCommands</name>
+        <qualifiedname>VulkanEngine::initCommands</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="245" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="548" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a0144f64b1176c720687f32859fbfefcb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initSyncStructures</definition>
+        <argsstring>()</argsstring>
+        <name>initSyncStructures</name>
+        <qualifiedname>VulkanEngine::initSyncStructures</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="246" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="578" bodyend="597"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a129417c880ebfc475b3a28a00e424aa7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::drawBackground</definition>
+        <argsstring>(VkCommandBuffer cmd)</argsstring>
+        <name>drawBackground</name>
+        <qualifiedname>VulkanEngine::drawBackground</qualifiedname>
+        <param>
+          <type>VkCommandBuffer</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="248" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="400" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a454579a7e1ac783dfb726fbba55c3f4d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::createSwapchain</definition>
+        <argsstring>(uint32_t width, uint32_t height)</argsstring>
+        <name>createSwapchain</name>
+        <qualifiedname>VulkanEngine::createSwapchain</qualifiedname>
+        <param>
+          <type>uint32_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>height</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="251" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="599" bodyend="620"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a2e91a5d3c34e6e44a11feec2a2a72d7a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::resizeSwapchain</definition>
+        <argsstring>()</argsstring>
+        <name>resizeSwapchain</name>
+        <qualifiedname>VulkanEngine::resizeSwapchain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="252" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1288" bodyend="1301"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a389d40c1719aa786834678a4b11d3271" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::destroySwapchain</definition>
+        <argsstring>()</argsstring>
+        <name>destroySwapchain</name>
+        <qualifiedname>VulkanEngine::destroySwapchain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="253" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="622" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a7d9328c9d3deade97a3f5bc2c8e80991" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initDescriptors</definition>
+        <argsstring>()</argsstring>
+        <name>initDescriptors</name>
+        <qualifiedname>VulkanEngine::initDescriptors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="255" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="85" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a944690af6365ff20599f246df7c97f9d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initPipelines</definition>
+        <argsstring>()</argsstring>
+        <name>initPipelines</name>
+        <qualifiedname>VulkanEngine::initPipelines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>initMeshPipeline();</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="257" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="630" bodyend="636"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1ae5d9ad1f330c9b47b5ab13b3b243dfcc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initBackgroundPipelines</definition>
+        <argsstring>()</argsstring>
+        <name>initBackgroundPipelines</name>
+        <qualifiedname>VulkanEngine::initBackgroundPipelines</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="258" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="638" bodyend="721"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a97450c90f38eca453a468d562c513e82" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initImGui</definition>
+        <argsstring>()</argsstring>
+        <name>initImGui</name>
+        <qualifiedname>VulkanEngine::initImGui</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>NOTE i have no idea if this should be true or false ;-;</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="260" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="750" bodyend="812"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a22394349a40551121a9091f5a0157ab9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::drawImgui</definition>
+        <argsstring>(VkCommandBuffer cmd, VkImageView targetImageView)</argsstring>
+        <name>drawImgui</name>
+        <qualifiedname>VulkanEngine::drawImgui</qualifiedname>
+        <param>
+          <type>VkCommandBuffer</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>VkImageView</type>
+          <declname>targetImageView</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="261" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="814" bodyend="823"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1abdee285ad5da6a17a3f187ec4cb86f39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initTrianglePipeline</definition>
+        <argsstring>()</argsstring>
+        <name>initTrianglePipeline</name>
+        <qualifiedname>VulkanEngine::initTrianglePipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="271" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="825" bodyend="885"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a5b6fcd1dec99af66fefc1e1402c46a0f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::drawGeometry</definition>
+        <argsstring>(VkCommandBuffer cmd)</argsstring>
+        <name>drawGeometry</name>
+        <qualifiedname>VulkanEngine::drawGeometry</qualifiedname>
+        <param>
+          <type>VkCommandBuffer</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="272" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="887" bodyend="1020"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1aff00374d0b446dad66c2e4335aa5fbfd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initMeshPipeline</definition>
+        <argsstring>()</argsstring>
+        <name>initMeshPipeline</name>
+        <qualifiedname>VulkanEngine::initMeshPipeline</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>pipelineBuilder.disableDepthtest();</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="282" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1101" bodyend="1170"/>
+      </memberdef>
+      <memberdef kind="function" id="a00217_1a1240a2d171cb80afe1dcfa304e20a128" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void VulkanEngine::initDefaultData</definition>
+        <argsstring>()</argsstring>
+        <name>initDefaultData</name>
+        <qualifiedname>VulkanEngine::initDefaultData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="287" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1172" bodyend="1286"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>AllocatedImage</label>
+        <link refid="a00289"/>
+      </node>
+      <node id="2">
+        <label>Camera</label>
+        <link refid="a00153"/>
+      </node>
+      <node id="4">
+        <label>DeletionQueue</label>
+        <link refid="a00285"/>
+      </node>
+      <node id="5">
+        <label>DescriptorAllocatorGrowable</label>
+        <link refid="a00169"/>
+      </node>
+      <node id="13">
+        <label>DescriptorWriter</label>
+        <link refid="a00177"/>
+      </node>
+      <node id="8">
+        <label>DrawContext</label>
+        <link refid="a00209"/>
+      </node>
+      <node id="7">
+        <label>EngineStats</label>
+        <link refid="a00249"/>
+      </node>
+      <node id="3">
+        <label>FrameData</label>
+        <link refid="a00181"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_deletionQueue</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>_frameDescriptors</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>GLTFMetallic_roughness</label>
+        <link refid="a00193"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>opaquePipeline</edgelabel>
+          <edgelabel>transparentPipeline</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>writer</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>GPUSceneData</label>
+        <link refid="a00269"/>
+      </node>
+      <node id="10">
+        <label>MaterialInstance</label>
+        <link refid="a00281"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>pipeline</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MaterialPipeline</label>
+        <link refid="a00277"/>
+      </node>
+      <node id="1">
+        <label>VulkanEngine</label>
+        <link refid="a00217"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mainCamera</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_frames</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>_mainDeletionQueue</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>_blackImage</edgelabel>
+          <edgelabel>_depthImage</edgelabel>
+          <edgelabel>_drawImage</edgelabel>
+          <edgelabel>_errorImage</edgelabel>
+          <edgelabel>_greyImage</edgelabel>
+          <edgelabel>_whiteImage</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>globalDescriptorAllocator</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>stats</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>mainDrawContext</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>sceneData</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>defaultData</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>metalRoughMaterial</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="115" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="115" bodyend="288"/>
+    <listofallmembers>
+      <member refid="a00217_1a75d08cfc1400cc46c7649b0041b0e0fc" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_allocator</name></member>
+      <member refid="a00217_1a67ff3a8f056d68ada2920ce7bc88e0b3" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_blackImage</name></member>
+      <member refid="a00217_1a5d533c792641fc73c7834c46074c25cd" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_chosenGPU</name></member>
+      <member refid="a00217_1aafc8bafd1ba65127ce2720de635e1231" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_debugMessenger</name></member>
+      <member refid="a00217_1ae9e37119779c3c298affe9d8768e1237" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_defaultSamplerLinear</name></member>
+      <member refid="a00217_1a417234053d867dd5eba9c54a3dfd987f" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_defaultSamplerNearest</name></member>
+      <member refid="a00217_1a20eff0d0f15bd84d364edb01d8cb340d" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_depthImage</name></member>
+      <member refid="a00217_1ab3856636bf2bd4805f72b852c2163f10" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_device</name></member>
+      <member refid="a00217_1acdf79fe860137de04a46809a804094e4" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_drawExtent</name></member>
+      <member refid="a00217_1ad332e0c9421b787d1805a642c6a04c70" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_drawImage</name></member>
+      <member refid="a00217_1a510b5529eca5876823392263a245f45e" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_drawImageDescriptorLayout</name></member>
+      <member refid="a00217_1adcf4fd54a9568717d52fc711b1ff8593" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_drawImageDescriptors</name></member>
+      <member refid="a00217_1abad82df25c8216a872cafa95e2276986" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_errorImage</name></member>
+      <member refid="a00217_1acbacb0e89bba12ea169c900bbf74a23e" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_frameNumber</name></member>
+      <member refid="a00217_1a43719b6bfc0dfb7b725e254b46716815" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_frames</name></member>
+      <member refid="a00217_1a52aa7ad2d968f8dac3c98fe8e5f4a0ed" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_gpuSceneDataDescriptorLayout</name></member>
+      <member refid="a00217_1a656044cc262a32f92926d5c63b5edcbf" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_gradientPipeline</name></member>
+      <member refid="a00217_1a0b8a40b8565cc5e4dce1477451ec9758" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_gradientPipelineLayout</name></member>
+      <member refid="a00217_1a6b240d37948c2d5fa2cf071468c3bd4b" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_graphicsQueue</name></member>
+      <member refid="a00217_1a3ce453b78ccf4ffdd19c2e64fb5a6ac7" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_graphicsQueueFamily</name></member>
+      <member refid="a00217_1a97f75c9571330d57beb368b28fe5685f" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_greyImage</name></member>
+      <member refid="a00217_1ad2f38e852d4cb1820da1b9d60ab38568" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_immCommandBuffer</name></member>
+      <member refid="a00217_1a3bb1ce4d610c0318e013638c807bd920" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_immCommandPool</name></member>
+      <member refid="a00217_1ac238e3c8dd8ceef2593828c25f9c6532" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_immFence</name></member>
+      <member refid="a00217_1a85897f1180282b72d30b55dda1fe1045" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_instance</name></member>
+      <member refid="a00217_1a59d1bdeb91fc7a6b072dd41db890f317" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_isInitialized</name></member>
+      <member refid="a00217_1ab1707a6b3122db0d0fce56c13999367b" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_mainDeletionQueue</name></member>
+      <member refid="a00217_1a3a8a4dabc7acf435338bc616e3a0b5ee" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>_meshPipeline</name></member>
+      <member refid="a00217_1aa5dde64bb4ba44551f8caf3a67b33a97" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>_meshPipelineLayout</name></member>
+      <member refid="a00217_1a2d6c74d128b5dc95ce311ad39dac81f8" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_singleImageDescriptorLayout</name></member>
+      <member refid="a00217_1a290bcf05482970acbfd14571034ccd90" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_stopRendering</name></member>
+      <member refid="a00217_1ac5f5f041d67a7983769cc80255bead65" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_surface</name></member>
+      <member refid="a00217_1ac17fb4ee4cf0de62648debe8e4b05130" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_swapchain</name></member>
+      <member refid="a00217_1ae2b5b9f37a4dd77e909d6a87c3290885" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_swapchainExtent</name></member>
+      <member refid="a00217_1a5e5a8b61e55df8eeffd820988e40e73e" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_swapchainImageFormat</name></member>
+      <member refid="a00217_1a4f951e6fd307b7d08b28ef643be7e4fb" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_swapchainImages</name></member>
+      <member refid="a00217_1a80ebb2acd6e6e88efaf9c7245c59079c" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_swapchainImageViews</name></member>
+      <member refid="a00217_1a967ac2e931dcfbf746fcef2239549b28" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>_trianglePipeline</name></member>
+      <member refid="a00217_1a5f53603360ad1d4f6f4ecf01acc7860f" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>_trianglePipelineLayout</name></member>
+      <member refid="a00217_1ac5c036edc1d962cdebe3e260940e9740" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_whiteImage</name></member>
+      <member refid="a00217_1a66a9cc0c8097072f24c38e687bf4a51a" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_window</name></member>
+      <member refid="a00217_1a1b355560c30d73de48d86023dcdea5f4" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>_windowExtent</name></member>
+      <member refid="a00217_1a5c9b5403d18a160c2e3d57b7b981204b" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>backgroundEffects</name></member>
+      <member refid="a00217_1a82402825df27e499dd3a6a9f7798785e" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>calledNum</name></member>
+      <member refid="a00217_1ae4b64b3a0c41f17e36339146bb0c15f9" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>CleanUp</name></member>
+      <member refid="a00217_1a29a528496c68c9f0c44414c466d1169f" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>createBuffer</name></member>
+      <member refid="a00217_1a705e6ee910d1eae33b8b0cb5c6a770b0" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>createImage</name></member>
+      <member refid="a00217_1a7f02e7be826d94845e6b675c5262d172" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>createImage</name></member>
+      <member refid="a00217_1a454579a7e1ac783dfb726fbba55c3f4d" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>createSwapchain</name></member>
+      <member refid="a00217_1ab690c6553e6e196fef597af561655527" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>currentBackgroundEffect</name></member>
+      <member refid="a00217_1a019c69495963902de318bf1005034bda" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>defaultData</name></member>
+      <member refid="a00217_1a3ce795645ea1f6bc1d7e7d462d47bcd6" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>destroyBuffer</name></member>
+      <member refid="a00217_1a999dceb09a0a03ea7333d2b5f901e35d" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>destroyImage</name></member>
+      <member refid="a00217_1a389d40c1719aa786834678a4b11d3271" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>destroySwapchain</name></member>
+      <member refid="a00217_1af958cc75522e578ad3b4837d362e42ee" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>displayDebugMenu</name></member>
+      <member refid="a00217_1ab9ac14fa153808cb5e7f00c53e38ec3e" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>Draw</name></member>
+      <member refid="a00217_1a129417c880ebfc475b3a28a00e424aa7" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>drawBackground</name></member>
+      <member refid="a00217_1a5b6fcd1dec99af66fefc1e1402c46a0f" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>drawGeometry</name></member>
+      <member refid="a00217_1a22394349a40551121a9091f5a0157ab9" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>drawImgui</name></member>
+      <member refid="a00217_1a39cb52548f29a4501c5e17bb7eb8a001" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>end_imgui_frame</name></member>
+      <member refid="a00217_1aac690da9ffba122c6f145e27fda36e05" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>Get</name></member>
+      <member refid="a00217_1aa93d515ee250059976f8b84bd5599ac0" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>getCurrentFrame</name></member>
+      <member refid="a00217_1a429373e20598afe382d2d5ea1e5f32a3" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>globalDescriptorAllocator</name></member>
+      <member refid="a00217_1add07ae792339ef143c88dd43f0950f1d" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>immediate_submit</name></member>
+      <member refid="a00217_1a605027f7ed6fcd0d1861ebd72c5c5858" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>Init</name></member>
+      <member refid="a00217_1ae5d9ad1f330c9b47b5ab13b3b243dfcc" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initBackgroundPipelines</name></member>
+      <member refid="a00217_1aaca5e58932a4527c23a8ba317195760a" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initCommands</name></member>
+      <member refid="a00217_1a1240a2d171cb80afe1dcfa304e20a128" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initDefaultData</name></member>
+      <member refid="a00217_1a7d9328c9d3deade97a3f5bc2c8e80991" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initDescriptors</name></member>
+      <member refid="a00217_1a97450c90f38eca453a468d562c513e82" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initImGui</name></member>
+      <member refid="a00217_1aff00374d0b446dad66c2e4335aa5fbfd" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initMeshPipeline</name></member>
+      <member refid="a00217_1a944690af6365ff20599f246df7c97f9d" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initPipelines</name></member>
+      <member refid="a00217_1a936722ebc009d255a74389af3db2dce5" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initSwapchain</name></member>
+      <member refid="a00217_1a0144f64b1176c720687f32859fbfefcb" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initSyncStructures</name></member>
+      <member refid="a00217_1abdee285ad5da6a17a3f187ec4cb86f39" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initTrianglePipeline</name></member>
+      <member refid="a00217_1a3ee1028f00268bb1d35c797c1c659834" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>initVulkan</name></member>
+      <member refid="a00217_1a101adc8c3d7479afd98d43338a0b9707" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>isVisible</name></member>
+      <member refid="a00217_1a8490bfb929ed4ad82203deb7a7753cff" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>loadedNodes</name></member>
+      <member refid="a00217_1a5c648ce299b62a216ca42cb762cb0758" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>loadedScenes</name></member>
+      <member refid="a00217_1adaef1ea968c30d0cc429146dfbb99330" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>mainCamera</name></member>
+      <member refid="a00217_1a0a37542e50f4f52c7a82dc5f3b7f3330" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>mainDrawContext</name></member>
+      <member refid="a00217_1a94db50b96840113529b5c31ee1eff0f3" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>metalRoughMaterial</name></member>
+      <member refid="a00217_1a61857cc8e56755ee8ecfb895e6df832f" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>rectangle</name></member>
+      <member refid="a00217_1a5c0ce388983da02a693f298f01f9f0ff" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>renderScale</name></member>
+      <member refid="a00217_1a225dacf845c5326b25592a658295fdc1" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>resizeRequested</name></member>
+      <member refid="a00217_1a2e91a5d3c34e6e44a11feec2a2a72d7a" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>resizeSwapchain</name></member>
+      <member refid="a00217_1ae2bc28152df989a30cfc8286ccf33b0d" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>Run</name></member>
+      <member refid="a00217_1aae6a5015a54ca1697d8ea5a4891af4d1" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>sceneData</name></member>
+      <member refid="a00217_1a0920f100af18abeffaff8ac5296ad309" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>start_imgui_frame</name></member>
+      <member refid="a00217_1ac5fb2b0b7dea59777e271cc2d5a834bf" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>stats</name></member>
+      <member refid="a00217_1ae2c73ed644888961513ff22a7644725d" prot="private" virt="non-virtual"><scope>VulkanEngine</scope><name>testMeshes</name></member>
+      <member refid="a00217_1ad2da415dabe3add3882952382efbb926" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>updateScene</name></member>
+      <member refid="a00217_1a2eef35ed3cc46cf090af65c68dc63243" prot="public" virt="non-virtual"><scope>VulkanEngine</scope><name>uploadMesh</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

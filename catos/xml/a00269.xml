@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00269" kind="struct" language="C++" prot="public">
+    <compoundname>GPUSceneData</compoundname>
+    <includes refid="a00074" local="no">VkTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00269_1a11a59cecab808ab8f32a2229cb9cbc05" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 GPUSceneData::view</definition>
+        <argsstring></argsstring>
+        <name>view</name>
+        <qualifiedname>GPUSceneData::view</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="86" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00269_1a94a8aebb2509f463fdd5930a18e220a9" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 GPUSceneData::proj</definition>
+        <argsstring></argsstring>
+        <name>proj</name>
+        <qualifiedname>GPUSceneData::proj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="87" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00269_1a1eb16232bc41fa47f782f3848e6d5419" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 GPUSceneData::viewproj</definition>
+        <argsstring></argsstring>
+        <name>viewproj</name>
+        <qualifiedname>GPUSceneData::viewproj</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="88" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00269_1a80aa527f0dd23ad93ce82ccae46a2bb8" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 GPUSceneData::ambientColor</definition>
+        <argsstring></argsstring>
+        <name>ambientColor</name>
+        <qualifiedname>GPUSceneData::ambientColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="89" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00269_1a0d0ad9dbe48fd5cffa61d7b7e7a08026" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 GPUSceneData::sunLightDirection</definition>
+        <argsstring></argsstring>
+        <name>sunLightDirection</name>
+        <qualifiedname>GPUSceneData::sunLightDirection</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="90" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00269_1ae6655907e76d7de3832f5d9d15bb812f" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 GPUSceneData::sunlightColor</definition>
+        <argsstring></argsstring>
+        <name>sunlightColor</name>
+        <qualifiedname>GPUSceneData::sunlightColor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="91" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="85" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="85" bodyend="92"/>
+    <listofallmembers>
+      <member refid="a00269_1a80aa527f0dd23ad93ce82ccae46a2bb8" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>ambientColor</name></member>
+      <member refid="a00269_1a94a8aebb2509f463fdd5930a18e220a9" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>proj</name></member>
+      <member refid="a00269_1ae6655907e76d7de3832f5d9d15bb812f" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>sunlightColor</name></member>
+      <member refid="a00269_1a0d0ad9dbe48fd5cffa61d7b7e7a08026" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>sunLightDirection</name></member>
+      <member refid="a00269_1a11a59cecab808ab8f32a2229cb9cbc05" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>view</name></member>
+      <member refid="a00269_1a1eb16232bc41fa47f782f3848e6d5419" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>viewproj</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

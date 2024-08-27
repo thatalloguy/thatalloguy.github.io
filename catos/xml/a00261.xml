@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00261" kind="struct" language="C++" prot="public">
+    <compoundname>Vertex</compoundname>
+    <includes refid="a00074" local="no">VkTypes.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00261_1a030819fdc241743bbd3e180a6b132ed3" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 Vertex::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>Vertex::position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="71" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00261_1a3c6b70cc0df673dab20ae012fa7a4ce3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Vertex::uv_x</definition>
+        <argsstring></argsstring>
+        <name>uv_x</name>
+        <qualifiedname>Vertex::uv_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="72" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00261_1a3aa35fe84025ecf1acccb5f65f5577fd" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 Vertex::normal</definition>
+        <argsstring></argsstring>
+        <name>normal</name>
+        <qualifiedname>Vertex::normal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="73" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00261_1a8dfaf04a6d2a62045fee28010aeb92eb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Vertex::uv_y</definition>
+        <argsstring></argsstring>
+        <name>uv_y</name>
+        <qualifiedname>Vertex::uv_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="74" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00261_1aa7ecd21578677765699b8831e0011696" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 Vertex::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <qualifiedname>Vertex::color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="75" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="70" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="70" bodyend="76"/>
+    <listofallmembers>
+      <member refid="a00261_1aa7ecd21578677765699b8831e0011696" prot="public" virt="non-virtual"><scope>Vertex</scope><name>color</name></member>
+      <member refid="a00261_1a3aa35fe84025ecf1acccb5f65f5577fd" prot="public" virt="non-virtual"><scope>Vertex</scope><name>normal</name></member>
+      <member refid="a00261_1a030819fdc241743bbd3e180a6b132ed3" prot="public" virt="non-virtual"><scope>Vertex</scope><name>position</name></member>
+      <member refid="a00261_1a3c6b70cc0df673dab20ae012fa7a4ce3" prot="public" virt="non-virtual"><scope>Vertex</scope><name>uv_x</name></member>
+      <member refid="a00261_1a8dfaf04a6d2a62045fee28010aeb92eb" prot="public" virt="non-virtual"><scope>Vertex</scope><name>uv_y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

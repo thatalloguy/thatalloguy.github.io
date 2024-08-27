@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00177" kind="struct" language="C++" prot="public">
+    <compoundname>DescriptorWriter</compoundname>
+    <includes refid="a00041" local="no">VkDescriptors.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00177_1a1a8fd25b760653c787354b53792fd123" prot="public" static="no" mutable="no">
+        <type>std::deque&lt; VkDescriptorImageInfo &gt;</type>
+        <definition>std::deque&lt;VkDescriptorImageInfo&gt; DescriptorWriter::imageInfos</definition>
+        <argsstring></argsstring>
+        <name>imageInfos</name>
+        <qualifiedname>DescriptorWriter::imageInfos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="71" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00177_1ab4afed3f867ffe490c2bcb18d739d5fc" prot="public" static="no" mutable="no">
+        <type>std::deque&lt; VkDescriptorBufferInfo &gt;</type>
+        <definition>std::deque&lt;VkDescriptorBufferInfo&gt; DescriptorWriter::bufferInfos</definition>
+        <argsstring></argsstring>
+        <name>bufferInfos</name>
+        <qualifiedname>DescriptorWriter::bufferInfos</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="72" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00177_1ac22018161ff02865aa9ef6e652c89d5e" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; VkWriteDescriptorSet &gt;</type>
+        <definition>std::vector&lt;VkWriteDescriptorSet&gt; DescriptorWriter::writes</definition>
+        <argsstring></argsstring>
+        <name>writes</name>
+        <qualifiedname>DescriptorWriter::writes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="73" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00177_1a2a892146e50f1e47f2e5e2f84fb0eb66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DescriptorWriter::writeImage</definition>
+        <argsstring>(int binding, VkImageView image, VkSampler sampler, VkImageLayout layout, VkDescriptorType type)</argsstring>
+        <name>writeImage</name>
+        <qualifiedname>DescriptorWriter::writeImage</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>VkImageView</type>
+          <declname>image</declname>
+        </param>
+        <param>
+          <type>VkSampler</type>
+          <declname>sampler</declname>
+        </param>
+        <param>
+          <type>VkImageLayout</type>
+          <declname>layout</declname>
+        </param>
+        <param>
+          <type>VkDescriptorType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="75" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="196" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="a00177_1a24d1efff56cfd0a03ffe5aa3ce7e17bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DescriptorWriter::writeBuffer</definition>
+        <argsstring>(int binding, VkBuffer buffer, size_t size, size_t offset, VkDescriptorType type)</argsstring>
+        <name>writeBuffer</name>
+        <qualifiedname>DescriptorWriter::writeBuffer</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>binding</declname>
+        </param>
+        <param>
+          <type>VkBuffer</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>VkDescriptorType</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="76" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="214" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="a00177_1ad2f603a5f4382aeed806d6a25f4fc9d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DescriptorWriter::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>DescriptorWriter::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="78" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="232" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="a00177_1aa6d2deed567c313417fc333e55647814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DescriptorWriter::updateSet</definition>
+        <argsstring>(VkDevice device, VkDescriptorSet set)</argsstring>
+        <name>updateSet</name>
+        <qualifiedname>DescriptorWriter::updateSet</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>VkDescriptorSet</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="79" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="238" bodyend="244"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="70" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="70" bodyend="80"/>
+    <listofallmembers>
+      <member refid="a00177_1ab4afed3f867ffe490c2bcb18d739d5fc" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>bufferInfos</name></member>
+      <member refid="a00177_1ad2f603a5f4382aeed806d6a25f4fc9d9" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>clear</name></member>
+      <member refid="a00177_1a1a8fd25b760653c787354b53792fd123" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>imageInfos</name></member>
+      <member refid="a00177_1aa6d2deed567c313417fc333e55647814" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>updateSet</name></member>
+      <member refid="a00177_1a24d1efff56cfd0a03ffe5aa3ce7e17bf" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>writeBuffer</name></member>
+      <member refid="a00177_1a2a892146e50f1e47f2e5e2f84fb0eb66" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>writeImage</name></member>
+      <member refid="a00177_1ac22018161ff02865aa9ef6e652c89d5e" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>writes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

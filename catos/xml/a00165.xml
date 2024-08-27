@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00165" kind="struct" language="C++" prot="public">
+    <compoundname>DescriptorAllocator::PoolSizeRatio</compoundname>
+    <includes refid="a00041" local="no">VkDescriptors.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00165_1a02c61834a3489dda3bf125c574b177b2" prot="public" static="no" mutable="no">
+        <type>VkDescriptorType</type>
+        <definition>VkDescriptorType DescriptorAllocator::PoolSizeRatio::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>DescriptorAllocator::PoolSizeRatio::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="28" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00165_1a637dfec791d056803ac8d7f7d399c458" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DescriptorAllocator::PoolSizeRatio::ratio</definition>
+        <argsstring></argsstring>
+        <name>ratio</name>
+        <qualifiedname>DescriptorAllocator::PoolSizeRatio::ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="29" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="27" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="27" bodyend="30"/>
+    <listofallmembers>
+      <member refid="a00165_1a637dfec791d056803ac8d7f7d399c458" prot="public" virt="non-virtual"><scope>DescriptorAllocator::PoolSizeRatio</scope><name>ratio</name></member>
+      <member refid="a00165_1a02c61834a3489dda3bf125c574b177b2" prot="public" virt="non-virtual"><scope>DescriptorAllocator::PoolSizeRatio</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

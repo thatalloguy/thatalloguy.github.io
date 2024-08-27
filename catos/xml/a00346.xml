@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00346" kind="class" language="C++" prot="public">
+    <compoundname>catos::Entity</compoundname>
+    <includes refid="a00101" local="no">world.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00346_1a2a440205eae919719088513015c3865e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="a00104_1a378b7638d7f5500d23e49f3e6e9b1ec6" kindref="member">EntityID</ref></type>
+        <definition>const EntityID catos::Entity::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>catos::Entity::id</qualifiedname>
+        <briefdescription>
+<para>its ID represented by an uint </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="53" column="29" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00346_1a41b9056905c74c5059ca36ab01a76135" prot="private" static="no" mutable="no">
+        <type><ref refid="a00342" kindref="compound">Transform</ref></type>
+        <definition>Transform catos::Entity::_transform</definition>
+        <argsstring></argsstring>
+        <name>_transform</name>
+        <qualifiedname>catos::Entity::_transform</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="60" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00346_1aa64e01f4ef9c5a8ee56433dbec6d78df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::Entity::Entity</definition>
+        <argsstring>()</argsstring>
+        <name>Entity</name>
+        <qualifiedname>catos::Entity::Entity</qualifiedname>
+        <briefdescription>
+<para>creates the entity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="47" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="a00346_1a7bc0234ba129f76c6457d0180b796443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::Entity::Entity</definition>
+        <argsstring>(Entity &amp;&amp;entity)</argsstring>
+        <name>Entity</name>
+        <qualifiedname>catos::Entity::Entity</qualifiedname>
+        <param>
+          <type><ref refid="a00346" kindref="compound">Entity</ref> &amp;&amp;</type>
+          <declname>entity</declname>
+        </param>
+        <briefdescription>
+<para>Destroys the entity and its allocated resources. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="50" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="a00346_1a5bd9c6cb4b32e383ac6244dcf6fe8b8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00342" kindref="compound">Transform</ref> &amp;</type>
+        <definition>Transform &amp; catos::Entity::getTransform</definition>
+        <argsstring>()</argsstring>
+        <name>getTransform</name>
+        <qualifiedname>catos::Entity::getTransform</qualifiedname>
+        <briefdescription>
+<para>Returns a REFERENCE to the private transform. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="56" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="56" bodyend="56"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An empty model for representing any object in the (game) world. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="42" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="42" bodyend="63"/>
+    <listofallmembers>
+      <member refid="a00346_1a41b9056905c74c5059ca36ab01a76135" prot="private" virt="non-virtual"><scope>catos::Entity</scope><name>_transform</name></member>
+      <member refid="a00346_1aa64e01f4ef9c5a8ee56433dbec6d78df" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>Entity</name></member>
+      <member refid="a00346_1a7bc0234ba129f76c6457d0180b796443" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>Entity</name></member>
+      <member refid="a00346_1a5bd9c6cb4b32e383ac6244dcf6fe8b8a" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>getTransform</name></member>
+      <member refid="a00346_1a2a440205eae919719088513015c3865e" prot="public" virt="non-virtual"><scope>catos::Entity</scope><name>id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
