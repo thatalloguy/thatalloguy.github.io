@@ -1,6 +1,5 @@
 var a00286 =
 [
-    [ "materialSet", "a00286.html#a0d388ba1aded5dcdd49c622a51e1bf92", null ],
-    [ "passType", "a00286.html#ab6a8270117524873601400f0bcb401db", null ],
-    [ "pipeline", "a00286.html#a6270ec8b9754e8071ad89436e9b307c7", null ]
+    [ "vertexBuffer", "a00286.html#a3d87824455c363095cd2bed7ebcb7f95", null ],
+    [ "worldMatrix", "a00286.html#ac7769ead4f8c948c6a727ec202a6a625", null ]
 ];

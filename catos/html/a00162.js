@@ -1,7 +1,11 @@
 var a00162 =
 [
-    [ "addBinding", "a00162.html#afc94cce99812e98162990b38dc7a2fd0", null ],
-    [ "build", "a00162.html#a797241e8070455929166f95a9de86163", null ],
-    [ "clear", "a00162.html#a458ab671e6690342e749cd8f71bb41bc", null ],
-    [ "bindings", "a00162.html#a84964bc1535f1164c65c682d8abc1ae6", null ]
+    [ "operator+", "a00162.html#a1cddf6ae46991af3d46855935b34f75a", null ],
+    [ "operator=", "a00162.html#af27fb9153ec0fcb930a73aa9cd7e2d09", null ],
+    [ "operator==", "a00162.html#a1c6bdfef17a8d70344a9af3a20d8b130", null ],
+    [ "sIdentity", "a00162.html#a203266c0dc325bac87c20c3ae822a567", null ],
+    [ "w", "a00162.html#a4ea592d10bfb621eab8f3a5dbb6e8645", null ],
+    [ "x", "a00162.html#a94b0c157ed7151923b1d51f2754b6b0f", null ],
+    [ "y", "a00162.html#a2c481d6a952719618213fc6b921f67c0", null ],
+    [ "z", "a00162.html#a9e8b8c73d6afd0531e7f4c8141f469c9", null ]
 ];

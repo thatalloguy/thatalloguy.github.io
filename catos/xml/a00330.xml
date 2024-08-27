@@ -1,106 +1,61 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00330" kind="class" language="C++" prot="public">
-    <compoundname>catos::World</compoundname>
-    <includes refid="a00095" local="no">world.h</includes>
+  <compounddef id="a00330" kind="struct" language="C++" prot="public">
+    <compoundname>TransformComponent</compoundname>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00330_1aff4dc4c37cc8879920726b30fbca3c85" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00322" kindref="compound">EntityInfo</ref> &gt;</type>
-        <definition>std::vector&lt;EntityInfo&gt; catos::World::entities</definition>
+      <memberdef kind="variable" id="a00330_1a30d1678c82cfa095b35ecb9a180bb697" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TransformComponent::x</definition>
         <argsstring></argsstring>
-        <name>entities</name>
-        <qualifiedname>catos::World::entities</qualifiedname>
+        <name>x</name>
+        <qualifiedname>TransformComponent::x</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="195" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="195" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="25" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="25" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00330_1ad1c7107c8dc9f4a2bf579f3b9bee86f9" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00101_1ad46e4a899856a996f751ea2c4a1edf61" kindref="member">EntityIndex</ref> &gt;</type>
-        <definition>std::vector&lt;EntityIndex&gt; catos::World::free_entities</definition>
+      <memberdef kind="variable" id="a00330_1a8661b2f37bf9926ed19e7a4a8fc2d41b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TransformComponent::y</definition>
         <argsstring></argsstring>
-        <name>free_entities</name>
-        <qualifiedname>catos::World::free_entities</qualifiedname>
+        <name>y</name>
+        <qualifiedname>TransformComponent::y</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="199" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="199" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="25" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="25" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00330_1ae63320191678435fd09fe3e3dd6e25c9" prot="private" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00326" kindref="compound">ComponentPool</ref> * &gt;</type>
-        <definition>std::vector&lt;ComponentPool*&gt; catos::World::component_pools</definition>
+      <memberdef kind="variable" id="a00330_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float TransformComponent::z</definition>
         <argsstring></argsstring>
-        <name>component_pools</name>
-        <qualifiedname>catos::World::component_pools</qualifiedname>
+        <name>z</name>
+        <qualifiedname>TransformComponent::z</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="200" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="200" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="25" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="25" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00330_1a38fb24dfb4f9b045f1c1d47b7240c164" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-        <definition>catos::EntityId catos::World::new_entity</definition>
-        <argsstring>()</argsstring>
-        <name>new_entity</name>
-        <qualifiedname>catos::World::new_entity</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="105" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="7" bodyend="19"/>
-      </memberdef>
-      <memberdef kind="function" id="a00330_1a67f3136c019c1e0df16f34c19c5054af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class T</type>
-          </param>
-        </templateparamlist>
-        <type>T *</type>
-        <definition>T * catos::World::assign</definition>
-        <argsstring>(EntityId id)</argsstring>
-        <name>assign</name>
-        <qualifiedname>catos::World::assign</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="109" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="109" bodyend="127"/>
-      </memberdef>
-      <memberdef kind="function" id="a00330_1a46bf8da6abcf9472aaad7545918f3799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>class T</type>
-          </param>
-        </templateparamlist>
+      <memberdef kind="function" id="a00330_1a418d776f12e6e744c9ac7beed11bb3cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool catos::World::has_component</definition>
-        <argsstring>(EntityId id)</argsstring>
-        <name>has_component</name>
-        <qualifiedname>catos::World::has_component</qualifiedname>
+        <definition>bool TransformComponent::operator!=</definition>
+        <argsstring>(TransformComponent &amp;b)</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>TransformComponent::operator!=</qualifiedname>
         <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
+          <type><ref refid="a00330" kindref="compound">TransformComponent</ref> &amp;</type>
+          <declname>b</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -108,139 +63,19 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="130" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="130" bodyend="133"/>
-      </memberdef>
-      <memberdef kind="function" id="a00330_1a797914e74e190a3fa4ee3c072a6ac3b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
-        <type>T *</type>
-        <definition>T * catos::World::get</definition>
-        <argsstring>(EntityId id)</argsstring>
-        <name>get</name>
-        <qualifiedname>catos::World::get</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="136" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="136" bodyend="146"/>
-      </memberdef>
-      <memberdef kind="function" id="a00330_1a894bc6946ca9101f8ff065c5b46bc43a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename T</type>
-          </param>
-        </templateparamlist>
-        <type>void</type>
-        <definition>void catos::World::remove</definition>
-        <argsstring>(EntityId id)</argsstring>
-        <name>remove</name>
-        <qualifiedname>catos::World::remove</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="154" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="154" bodyend="159"/>
-      </memberdef>
-      <memberdef kind="function" id="a00330_1a64e6a29f27b70562fcf1f64ec4c36404" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void catos::World::destroy_entity</definition>
-        <argsstring>(EntityId id)</argsstring>
-        <name>destroy_entity</name>
-        <qualifiedname>catos::World::destroy_entity</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="162" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="162" bodyend="167"/>
-      </memberdef>
-      <memberdef kind="function" id="a00330_1a4286854dce1e87b51d7e17b85fbf5c4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void catos::World::assign_</definition>
-        <argsstring>(EntityId entityId, int component_id, int component_type_size)</argsstring>
-        <name>assign_</name>
-        <qualifiedname>catos::World::assign_</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>entityId</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>component_id</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>component_type_size</declname>
-        </param>
-        <briefdescription>
-<para>WRAPPED METHODS USAGE IN CPP IS UNTESTED! </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="172" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="172" bodyend="188"/>
-      </memberdef>
-      <memberdef kind="function" id="a00330_1ac76e0f05473ef33e17d0f59c4dd9e98d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool catos::World::has_component_</definition>
-        <argsstring>(EntityId id, int component_id)</argsstring>
-        <name>has_component_</name>
-        <qualifiedname>catos::World::has_component_</qualifiedname>
-        <param>
-          <type><ref refid="a00101_1a8ae0fcdee257ea20ef85ba0a2ea80957" kindref="member">EntityId</ref></type>
-          <declname>id</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>component_id</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="190" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="190" bodyend="192"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="27" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="27" bodyend="29"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="101" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="101" bodyend="202"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="24" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="24" bodyend="30"/>
     <listofallmembers>
-      <member refid="a00330_1a67f3136c019c1e0df16f34c19c5054af" prot="public" virt="non-virtual"><scope>catos::World</scope><name>assign</name></member>
-      <member refid="a00330_1a4286854dce1e87b51d7e17b85fbf5c4c" prot="public" virt="non-virtual"><scope>catos::World</scope><name>assign_</name></member>
-      <member refid="a00330_1ae63320191678435fd09fe3e3dd6e25c9" prot="private" virt="non-virtual"><scope>catos::World</scope><name>component_pools</name></member>
-      <member refid="a00330_1a64e6a29f27b70562fcf1f64ec4c36404" prot="public" virt="non-virtual"><scope>catos::World</scope><name>destroy_entity</name></member>
-      <member refid="a00330_1aff4dc4c37cc8879920726b30fbca3c85" prot="public" virt="non-virtual"><scope>catos::World</scope><name>entities</name></member>
-      <member refid="a00330_1ad1c7107c8dc9f4a2bf579f3b9bee86f9" prot="private" virt="non-virtual"><scope>catos::World</scope><name>free_entities</name></member>
-      <member refid="a00330_1a797914e74e190a3fa4ee3c072a6ac3b3" prot="public" virt="non-virtual"><scope>catos::World</scope><name>get</name></member>
-      <member refid="a00330_1a46bf8da6abcf9472aaad7545918f3799" prot="public" virt="non-virtual"><scope>catos::World</scope><name>has_component</name></member>
-      <member refid="a00330_1ac76e0f05473ef33e17d0f59c4dd9e98d" prot="public" virt="non-virtual"><scope>catos::World</scope><name>has_component_</name></member>
-      <member refid="a00330_1a38fb24dfb4f9b045f1c1d47b7240c164" prot="public" virt="non-virtual"><scope>catos::World</scope><name>new_entity</name></member>
-      <member refid="a00330_1a894bc6946ca9101f8ff065c5b46bc43a" prot="public" virt="non-virtual"><scope>catos::World</scope><name>remove</name></member>
+      <member refid="a00330_1a418d776f12e6e744c9ac7beed11bb3cf" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>operator!=</name></member>
+      <member refid="a00330_1a30d1678c82cfa095b35ecb9a180bb697" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>x</name></member>
+      <member refid="a00330_1a8661b2f37bf9926ed19e7a4a8fc2d41b" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>y</name></member>
+      <member refid="a00330_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>z</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

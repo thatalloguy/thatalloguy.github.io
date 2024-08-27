@@ -1,13 +1,7 @@
 var a00198 =
 [
-    [ "MaterialConstants", "a00202.html", "a00202" ],
-    [ "MaterialResources", "a00206.html", "a00206" ],
-    [ "buildPipelines", "a00198.html#ac6b86602d156a5555b3799b9172c674e", null ],
-    [ "clearResources", "a00198.html#acdddc2beb7cc303daabfa28404afa2c9", null ],
-    [ "destroy", "a00198.html#a96ff6cb8fd8d01b16921be3900827939", null ],
-    [ "writeMaterial", "a00198.html#a744d03ddb8fe03ea8ee07f2ae3b42de5", null ],
-    [ "materialLayout", "a00198.html#a269aa1b48852004420322491f8e03e4a", null ],
-    [ "opaquePipeline", "a00198.html#a14e8a4c07862539d98a1793cf7be2e24", null ],
-    [ "transparentPipeline", "a00198.html#a20a1e6318217b3d3e63e91439022a4d8", null ],
-    [ "writer", "a00198.html#a90094ab356bc8a5426f8012f76c1326f", null ]
+    [ "data1", "a00198.html#af1b14859e4a196ab2313734dde81428a", null ],
+    [ "data2", "a00198.html#aaa6359f4ea37d85e40f2881ef732826b", null ],
+    [ "data3", "a00198.html#a5035e7701b815f7e95c3fd525b6e075e", null ],
+    [ "data4", "a00198.html#ad1b7e85d855000abe4f3c62ca6b9e85e", null ]
 ];

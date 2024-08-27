@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['y_0',['y',['../a00149.html#a58d259a2d9057efd9c5bbb69f418d601',1,'catos::math::Vector2::y'],['../a00313.html#a8661b2f37bf9926ed19e7a4a8fc2d41b',1,'TransformComponent::y']]],
-  ['yaw_1',['yaw',['../a00153.html#ad76701b22630f2df28a0ae15f0497a3a',1,'Camera']]]
+  ['x_0',['x',['../a00154.html#a442e5ef4dd0744758b5db87ca36aed90',1,'catos::math::Vector2::x'],['../a00158.html#aabf30b0a34d4ec3096451393e2d71913',1,'catos::math::Vector3::x'],['../a00162.html#a94b0c157ed7151923b1d51f2754b6b0f',1,'catos::math::Quaternion::x'],['../a00330.html#a30d1678c82cfa095b35ecb9a180bb697',1,'TransformComponent::x']]]
 ];

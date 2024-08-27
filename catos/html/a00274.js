@@ -1,9 +1,8 @@
 var a00274 =
 [
-    [ "ambientColor", "a00274.html#a80aa527f0dd23ad93ce82ccae46a2bb8", null ],
-    [ "proj", "a00274.html#a94a8aebb2509f463fdd5930a18e220a9", null ],
-    [ "sunlightColor", "a00274.html#ae6655907e76d7de3832f5d9d15bb812f", null ],
-    [ "sunLightDirection", "a00274.html#a0d0ad9dbe48fd5cffa61d7b7e7a08026", null ],
-    [ "view", "a00274.html#a11a59cecab808ab8f32a2229cb9cbc05", null ],
-    [ "viewproj", "a00274.html#a1eb16232bc41fa47f782f3848e6d5419", null ]
+    [ "color", "a00274.html#aa7ecd21578677765699b8831e0011696", null ],
+    [ "normal", "a00274.html#a3aa35fe84025ecf1acccb5f65f5577fd", null ],
+    [ "position", "a00274.html#a030819fdc241743bbd3e180a6b132ed3", null ],
+    [ "uv_x", "a00274.html#a3c6b70cc0df673dab20ae012fa7a4ce3", null ],
+    [ "uv_y", "a00274.html#a8dfaf04a6d2a62045fee28010aeb92eb", null ]
 ];

@@ -1,61 +1,91 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00262" kind="struct" language="C++" prot="public">
-    <compoundname>AllocatedBuffer</compoundname>
+    <compoundname>EngineStats</compoundname>
     <includes refid="a00074" local="no">VkTypes.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00262_1afd80ecc9bf0b9e9fbe2cd70c81def540" prot="public" static="no" mutable="no">
-        <type>VkBuffer</type>
-        <definition>VkBuffer AllocatedBuffer::buffer</definition>
+      <memberdef kind="variable" id="a00262_1a268de968f518937e5b5a0eabcde74ac1" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EngineStats::frameTime</definition>
         <argsstring></argsstring>
-        <name>buffer</name>
-        <qualifiedname>AllocatedBuffer::buffer</qualifiedname>
+        <name>frameTime</name>
+        <qualifiedname>EngineStats::frameTime</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="65" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="65" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="50" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="50" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00262_1aad4979df72f7e827fd80171e42bfb463" prot="public" static="no" mutable="no">
-        <type>VmaAllocation</type>
-        <definition>VmaAllocation AllocatedBuffer::allocation</definition>
+      <memberdef kind="variable" id="a00262_1a09bb44af11d551238f5592baf3192ac0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EngineStats::triangleCount</definition>
         <argsstring></argsstring>
-        <name>allocation</name>
-        <qualifiedname>AllocatedBuffer::allocation</qualifiedname>
+        <name>triangleCount</name>
+        <qualifiedname>EngineStats::triangleCount</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="66" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="66" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="51" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="51" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00262_1ae8f702ce1eb0772813fdb282bbcf5083" prot="public" static="no" mutable="no">
-        <type>VmaAllocationInfo</type>
-        <definition>VmaAllocationInfo AllocatedBuffer::info</definition>
+      <memberdef kind="variable" id="a00262_1ad2e9038c2125482ce0c3e952ee4a1640" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EngineStats::drawCallCount</definition>
         <argsstring></argsstring>
-        <name>info</name>
-        <qualifiedname>AllocatedBuffer::info</qualifiedname>
+        <name>drawCallCount</name>
+        <qualifiedname>EngineStats::drawCallCount</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="67" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="67" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="52" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00262_1a63684651caeeea776748ffec6860e3d2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EngineStats::sceneUpdateTime</definition>
+        <argsstring></argsstring>
+        <name>sceneUpdateTime</name>
+        <qualifiedname>EngineStats::sceneUpdateTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="53" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00262_1ab98fff18928718889d9a41f62cb45b5b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EngineStats::meshDrawTime</definition>
+        <argsstring></argsstring>
+        <name>meshDrawTime</name>
+        <qualifiedname>EngineStats::meshDrawTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="54" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="54" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="64" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="64" bodyend="68"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="49" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="49" bodyend="55"/>
     <listofallmembers>
-      <member refid="a00262_1aad4979df72f7e827fd80171e42bfb463" prot="public" virt="non-virtual"><scope>AllocatedBuffer</scope><name>allocation</name></member>
-      <member refid="a00262_1afd80ecc9bf0b9e9fbe2cd70c81def540" prot="public" virt="non-virtual"><scope>AllocatedBuffer</scope><name>buffer</name></member>
-      <member refid="a00262_1ae8f702ce1eb0772813fdb282bbcf5083" prot="public" virt="non-virtual"><scope>AllocatedBuffer</scope><name>info</name></member>
+      <member refid="a00262_1ad2e9038c2125482ce0c3e952ee4a1640" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>drawCallCount</name></member>
+      <member refid="a00262_1a268de968f518937e5b5a0eabcde74ac1" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>frameTime</name></member>
+      <member refid="a00262_1ab98fff18928718889d9a41f62cb45b5b" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>meshDrawTime</name></member>
+      <member refid="a00262_1a63684651caeeea776748ffec6860e3d2" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>sceneUpdateTime</name></member>
+      <member refid="a00262_1a09bb44af11d551238f5592baf3192ac0" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>triangleCount</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

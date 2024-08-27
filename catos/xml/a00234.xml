@@ -1,89 +1,69 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00234" kind="struct" language="C++" prot="public">
-    <compoundname>GeoSurface</compoundname>
+  <compounddef id="a00234" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IRenderable</compoundname>
+    <derivedcompoundref refid="a00254" prot="public" virt="non-virtual">LoadedGLTF</derivedcompoundref>
+    <derivedcompoundref refid="a00250" prot="public" virt="non-virtual">Node</derivedcompoundref>
     <includes refid="a00065" local="no">VkLoader.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00234_1ab6fd9aebf929934ca3b679e11b984e88" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t GeoSurface::startIndex</definition>
-        <argsstring></argsstring>
-        <name>startIndex</name>
-        <qualifiedname>GeoSurface::startIndex</qualifiedname>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00234_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IRenderable::Draw</definition>
+        <argsstring>(const glm::mat4 &amp;topMatrix, DrawContext &amp;ctx)=0</argsstring>
+        <name>Draw</name>
+        <qualifiedname>IRenderable::Draw</qualifiedname>
+        <reimplementedby refid="a00250_1a6870e549c7f428dbcd4f61d43eaa2f4b">Draw</reimplementedby>
+        <reimplementedby refid="a00254_1a5cb28e137c9fff7788afaf7aa5e565ac">Draw</reimplementedby>
+        <reimplementedby refid="a00226_1a8d5ed2175240d27f97e058508b110b51">Draw</reimplementedby>
+        <param>
+          <type>const glm::mat4 &amp;</type>
+          <declname>topMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="a00222" kindref="compound">DrawContext</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
         <briefdescription>
+<para>TODO define <ref refid="a00222" kindref="compound">DrawContext</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="43" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="43" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00234_1a5bfc701fbd45f395a990f9a0063b8975" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t GeoSurface::count</definition>
-        <argsstring></argsstring>
-        <name>count</name>
-        <qualifiedname>GeoSurface::count</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="44" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="44" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00234_1ad8e3399fe5d911224a61f379cbfcd4d9" prot="public" static="no" mutable="no">
-        <type><ref refid="a00258" kindref="compound">Bounds</ref></type>
-        <definition>Bounds GeoSurface::bounds</definition>
-        <argsstring></argsstring>
-        <name>bounds</name>
-        <qualifiedname>GeoSurface::bounds</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="45" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="45" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00234_1af0c192263057788d4136d4b73a63ead4" prot="public" static="no" mutable="no">
-        <type>std::shared_ptr&lt; <ref refid="a00230" kindref="compound">GLTFMaterial</ref> &gt;</type>
-        <definition>std::shared_ptr&lt;GLTFMaterial&gt; GeoSurface::material</definition>
-        <argsstring></argsstring>
-        <name>material</name>
-        <qualifiedname>GeoSurface::material</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="46" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="46" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="33" column="18"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="2">
-        <label>Bounds</label>
-        <link refid="a00258"/>
-      </node>
+    <inheritancegraph>
       <node id="1">
-        <label>GeoSurface</label>
+        <label>IRenderable</label>
         <link refid="a00234"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>bounds</edgelabel>
+      </node>
+      <node id="2">
+        <label>LoadedGLTF</label>
+        <link refid="a00254"/>
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="42" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="42" bodyend="47"/>
+      <node id="4">
+        <label>MeshNode</label>
+        <link refid="a00226"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Node</label>
+        <link refid="a00250"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="31" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="31" bodyend="34"/>
     <listofallmembers>
-      <member refid="a00234_1ad8e3399fe5d911224a61f379cbfcd4d9" prot="public" virt="non-virtual"><scope>GeoSurface</scope><name>bounds</name></member>
-      <member refid="a00234_1a5bfc701fbd45f395a990f9a0063b8975" prot="public" virt="non-virtual"><scope>GeoSurface</scope><name>count</name></member>
-      <member refid="a00234_1af0c192263057788d4136d4b73a63ead4" prot="public" virt="non-virtual"><scope>GeoSurface</scope><name>material</name></member>
-      <member refid="a00234_1ab6fd9aebf929934ca3b679e11b984e88" prot="public" virt="non-virtual"><scope>GeoSurface</scope><name>startIndex</name></member>
+      <member refid="a00234_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" virt="pure-virtual"><scope>IRenderable</scope><name>Draw</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

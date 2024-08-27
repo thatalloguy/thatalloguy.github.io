@@ -1,98 +1,51 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00105" kind="namespace" language="C++">
-    <compoundname>catos::tests</compoundname>
+    <compoundname>catos::type_utils</compoundname>
     <sectiondef kind="func">
-      <memberdef kind="function" id="a00105_1a3d55793e34b921efea74b9b57c975082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;REGISTRY::GET_TYPE_NAME&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;REGISTRY::GET_TYPE_NAME&quot;</type>
-        </param>
+      <memberdef kind="function" id="a00105_1ae8ba5a0350572f3f742754d626557e59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string catos::type_utils::get_type_name</definition>
+        <argsstring>()</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>catos::type_utils::get_type_name</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="37" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="37" bodyend="39"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" line="8" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" bodystart="8" bodyend="10"/>
       </memberdef>
-      <memberdef kind="function" id="a00105_1a86b61aaa802336f02f0614acceac24c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;REGISTRY::FIELDS&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;REGISTRY::FIELDS&quot;</type>
-        </param>
+      <memberdef kind="function" id="a00105_1a984a08d43e4be51d38568b267ed64092" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>size_t</type>
+        <definition>size_t catos::type_utils::get_type_hash</definition>
+        <argsstring>()</argsstring>
+        <name>get_type_hash</name>
+        <qualifiedname>catos::type_utils::get_type_hash</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="41" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="41" bodyend="59"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1a994753c9053093b19e7c46057ffcf719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;REGISTRY::METHODS&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;REGISTRY::METHODS&quot;</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="63" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="63" bodyend="87"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1afda5b3504e78b229f5b2607e5b8789f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;Application::INSTANCES&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;Application::INSTANCES&quot;</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="90" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="90" bodyend="111"/>
-      </memberdef>
-      <memberdef kind="function" id="a00105_1adfd1c23b15d8a936aecd76a884dd82d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;STL::VECTORS&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;STL::VECTORS&quot;</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="114" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="114" bodyend="128"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" line="14" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" bodystart="14" bodyend="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="35" column="1"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/type_utils.h" line="4" column="1"/>
   </compounddef>
 </doxygen>

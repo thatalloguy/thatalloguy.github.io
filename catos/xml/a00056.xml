@@ -133,7 +133,7 @@
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00059" kindref="compound">VkInitializers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal">VkCommandPoolCreateInfo<sp/><ref refid="a00102_1a3cdef4e7c3a16175ef52084187f27428" kindref="member">VkInit::commandPoolCreateInfo</ref>(uint32_t<sp/>queueFamilyIndex,<sp/>VkCommandPoolCreateFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">VkCommandPoolCreateInfo<sp/><ref refid="a00108_1a3cdef4e7c3a16175ef52084187f27428" kindref="member">VkInit::commandPoolCreateInfo</ref>(uint32_t<sp/>queueFamilyIndex,<sp/>VkCommandPoolCreateFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>VkCommandPoolCreateInfo<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_COMMAND_POOL_CREATE_INFO;</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -141,7 +141,7 @@
 <codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>info.flags<sp/>=<sp/>flags;</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="16"><highlight class="normal">VkCommandBufferAllocateInfo<sp/><ref refid="a00102_1a8fe7cf8c5c6f45b1cbec1c04a3fb2801" kindref="member">VkInit::commandBufferAllocateInfo</ref>(VkCommandPool<sp/>pool,<sp/>uint32_t<sp/>count<sp/></highlight><highlight class="comment">/*=<sp/>1*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">VkCommandBufferAllocateInfo<sp/><ref refid="a00108_1a8fe7cf8c5c6f45b1cbec1c04a3fb2801" kindref="member">VkInit::commandBufferAllocateInfo</ref>(VkCommandPool<sp/>pool,<sp/>uint32_t<sp/>count<sp/></highlight><highlight class="comment">/*=<sp/>1*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>VkCommandBufferAllocateInfo<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_COMMAND_BUFFER_ALLOCATE_INFO;</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -152,7 +152,7 @@
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="25"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal">VkFenceCreateInfo<sp/><ref refid="a00102_1a58ec443d7114304aafcc6dfe40aa91cf" kindref="member">VkInit::fenceCreateInfo</ref>(VkFenceCreateFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">VkFenceCreateInfo<sp/><ref refid="a00108_1a58ec443d7114304aafcc6dfe40aa91cf" kindref="member">VkInit::fenceCreateInfo</ref>(VkFenceCreateFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>VkFenceCreateInfo<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_FENCE_CREATE_INFO;</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -162,7 +162,7 @@
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="35"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/>I<sp/>hope<sp/>setting<sp/>this<sp/>to<sp/>0<sp/>doenst<sp/>come<sp/>and<sp/>bite<sp/>me<sp/>in<sp/>the<sp/>ass<sp/>later<sp/>on<sp/>:)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal">VkSemaphoreCreateInfo<sp/><ref refid="a00102_1ad350c43673bc9b3f7994cd67053d601a" kindref="member">VkInit::semaphoreCreateInfo</ref>(VkSemaphoreCreateFlags<sp/>flags)<sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">VkSemaphoreCreateInfo<sp/><ref refid="a00108_1ad350c43673bc9b3f7994cd67053d601a" kindref="member">VkInit::semaphoreCreateInfo</ref>(VkSemaphoreCreateFlags<sp/>flags)<sp/>{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>VkSemaphoreCreateInfo<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_SEMAPHORE_CREATE_INFO;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -171,7 +171,7 @@
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="44"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal">VkCommandBufferBeginInfo<sp/><ref refid="a00102_1a4f27583522b48fbb2794b4f6eff37c5b" kindref="member">VkInit::commandBufferBeginInfo</ref>(VkCommandBufferUsageFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">VkCommandBufferBeginInfo<sp/><ref refid="a00108_1a4f27583522b48fbb2794b4f6eff37c5b" kindref="member">VkInit::commandBufferBeginInfo</ref>(VkCommandBufferUsageFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="47"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>VkCommandBufferBeginInfo<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_COMMAND_BUFFER_BEGIN_INFO;</highlight></codeline>
@@ -181,7 +181,7 @@
 <codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>info.flags<sp/>=<sp/>flags;</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="55"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="56"><highlight class="normal">VkImageSubresourceRange<sp/><ref refid="a00102_1abe7cc27c092869928fc3c6428219e858" kindref="member">VkInit::imageSubresourceRange</ref>(VkImageAspectFlags<sp/>aspectMask)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">VkImageSubresourceRange<sp/><ref refid="a00108_1abe7cc27c092869928fc3c6428219e858" kindref="member">VkInit::imageSubresourceRange</ref>(VkImageAspectFlags<sp/>aspectMask)<sp/>{</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageSubresourceRange<sp/>subImage<sp/>{};</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>subImage.aspectMask<sp/>=<sp/>aspectMask;</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>subImage.baseMipLevel<sp/>=<sp/>0;</highlight></codeline>
@@ -192,18 +192,18 @@
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>subImage;</highlight></codeline>
 <codeline lineno="65"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal">VkSemaphoreSubmitInfo<sp/><ref refid="a00102_1a255af650bfd089f6febd85848d58c6c5" kindref="member">VkInit::semaphoreSubmitInfo</ref>(VkPipelineStageFlags2<sp/>stageMask,<sp/>VkSemaphore<sp/>semaphore)<sp/>{</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>VkSemaphoreSubmitInfo<sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>{};</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_SEMAPHORE_SUBMIT_INFO;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.semaphore<sp/>=<sp/>semaphore;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.stageMask<sp/>=<sp/>stageMask;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.deviceIndex<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.value<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">VkSemaphoreSubmitInfo<sp/><ref refid="a00108_1a255af650bfd089f6febd85848d58c6c5" kindref="member">VkInit::semaphoreSubmitInfo</ref>(VkPipelineStageFlags2<sp/>stageMask,<sp/>VkSemaphore<sp/>semaphore)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>VkSemaphoreSubmitInfo<sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>{};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_SEMAPHORE_SUBMIT_INFO;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.semaphore<sp/>=<sp/>semaphore;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.stageMask<sp/>=<sp/>stageMask;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.deviceIndex<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>.value<sp/>=<sp/>1;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="78"><highlight class="normal">VkCommandBufferSubmitInfo<sp/><ref refid="a00102_1a4e3740324c0b56d48e31d4201841fbce" kindref="member">VkInit::commandBufferSubmitInfo</ref>(VkCommandBuffer<sp/>cmd)<sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">VkCommandBufferSubmitInfo<sp/><ref refid="a00108_1a4e3740324c0b56d48e31d4201841fbce" kindref="member">VkInit::commandBufferSubmitInfo</ref>(VkCommandBuffer<sp/>cmd)<sp/>{</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>VkCommandBufferSubmitInfo<sp/>info{};</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_COMMAND_BUFFER_SUBMIT_INFO;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -212,7 +212,7 @@
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="86"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="87"><highlight class="normal">VkSubmitInfo2<sp/><ref refid="a00102_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">VkInit::submitInfo</ref>(VkCommandBufferSubmitInfo*<sp/>cmd,<sp/>VkSemaphoreSubmitInfo*<sp/>signalSemaphoreInfo,<sp/>VkSemaphoreSubmitInfo*<sp/>waitSemaphoreInfo)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">VkSubmitInfo2<sp/><ref refid="a00108_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">VkInit::submitInfo</ref>(VkCommandBufferSubmitInfo*<sp/>cmd,<sp/>VkSemaphoreSubmitInfo*<sp/>signalSemaphoreInfo,<sp/>VkSemaphoreSubmitInfo*<sp/>waitSemaphoreInfo)<sp/>{</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>VkSubmitInfo2<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_SUBMIT_INFO_2;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -229,7 +229,7 @@
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="102"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal">VkImageCreateInfo<sp/><ref refid="a00102_1af6244bbb89d93fabe28d83cb4203da94" kindref="member">VkInit::imageCreateInfo</ref>(VkFormat<sp/>format,<sp/>VkImageUsageFlags<sp/>usageFlags,<sp/>VkExtent3D<sp/>extent)<sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">VkImageCreateInfo<sp/><ref refid="a00108_1af6244bbb89d93fabe28d83cb4203da94" kindref="member">VkInit::imageCreateInfo</ref>(VkFormat<sp/>format,<sp/>VkImageUsageFlags<sp/>usageFlags,<sp/>VkExtent3D<sp/>extent)<sp/>{</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageCreateInfo<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_IMAGE_CREATE_INFO;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -250,7 +250,7 @@
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal">VkImageViewCreateInfo<sp/><ref refid="a00102_1a57731c73c6a5a9b41a591f594bedd96c" kindref="member">VkInit::imageViewCreateInfo</ref>(VkFormat<sp/>format,<sp/>VkImage<sp/>image,<sp/>VkImageAspectFlags<sp/>aspectFlags)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">VkImageViewCreateInfo<sp/><ref refid="a00108_1a57731c73c6a5a9b41a591f594bedd96c" kindref="member">VkInit::imageViewCreateInfo</ref>(VkFormat<sp/>format,<sp/>VkImage<sp/>image,<sp/>VkImageAspectFlags<sp/>aspectFlags)<sp/>{</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageViewCreateInfo<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_IMAGE_VIEW_CREATE_INFO;</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -267,7 +267,7 @@
 <codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="140"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal">VkRenderingAttachmentInfo<sp/><ref refid="a00102_1a76bde95c72a4bf604cd433e439b2fa1b" kindref="member">VkInit::attachmentInfo</ref>(VkImageView<sp/>view,<sp/>VkClearValue<sp/>*clear,<sp/>VkImageLayout<sp/>layout)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">VkRenderingAttachmentInfo<sp/><ref refid="a00108_1a76bde95c72a4bf604cd433e439b2fa1b" kindref="member">VkInit::attachmentInfo</ref>(VkImageView<sp/>view,<sp/>VkClearValue<sp/>*clear,<sp/>VkImageLayout<sp/>layout)<sp/>{</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>VkRenderingAttachmentInfo<sp/><sp/>colorAttachment<sp/>{};</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/>colorAttachment.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_RENDERING_ATTACHMENT_INFO;</highlight></codeline>
@@ -285,7 +285,7 @@
 <codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>colorAttachment;</highlight></codeline>
 <codeline lineno="158"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal">VkRenderingInfo<sp/><ref refid="a00102_1a5e07e2e66058b5c4e6fb30840c396ab3" kindref="member">VkInit::renderingInfo</ref>(VkExtent2D<sp/>renderExtent,<sp/>VkRenderingAttachmentInfo*<sp/>colorAttachment,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">VkRenderingInfo<sp/><ref refid="a00108_1a5e07e2e66058b5c4e6fb30840c396ab3" kindref="member">VkInit::renderingInfo</ref>(VkExtent2D<sp/>renderExtent,<sp/>VkRenderingAttachmentInfo*<sp/>colorAttachment,</highlight></codeline>
 <codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkRenderingAttachmentInfo*<sp/>depthAttachment)</highlight></codeline>
 <codeline lineno="162"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>VkRenderingInfo<sp/>renderInfo<sp/>{};</highlight></codeline>
@@ -302,7 +302,7 @@
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>renderInfo;</highlight></codeline>
 <codeline lineno="175"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal">VkPipelineShaderStageCreateInfo<sp/><ref refid="a00102_1af12b035c84d7a8af0915e626e68b29f0" kindref="member">VkInit::pipelineShaderStageCreateInfo</ref>(VkShaderStageFlagBits<sp/>stage,</highlight></codeline>
+<codeline lineno="177"><highlight class="normal">VkPipelineShaderStageCreateInfo<sp/><ref refid="a00108_1af12b035c84d7a8af0915e626e68b29f0" kindref="member">VkInit::pipelineShaderStageCreateInfo</ref>(VkShaderStageFlagBits<sp/>stage,</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkShaderModule<sp/>shaderModule,</highlight></codeline>
 <codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>entry)</highlight></codeline>
 <codeline lineno="180"><highlight class="normal">{</highlight></codeline>
@@ -319,7 +319,7 @@
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="192"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="193"><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal">VkPipelineLayoutCreateInfo<sp/><ref refid="a00102_1ae22d46467876562f521852203947a73c" kindref="member">VkInit::pipelineLayoutCreateInfo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">VkPipelineLayoutCreateInfo<sp/><ref refid="a00108_1ae22d46467876562f521852203947a73c" kindref="member">VkInit::pipelineLayoutCreateInfo</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineLayoutCreateInfo<sp/>info<sp/>{};</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_PIPELINE_LAYOUT_CREATE_INFO;</highlight></codeline>
 <codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -333,7 +333,7 @@
 <codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>info;</highlight></codeline>
 <codeline lineno="206"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"></highlight></codeline>
-<codeline lineno="208"><highlight class="normal">VkRenderingAttachmentInfo<sp/><ref refid="a00102_1afd70e1da9064d67d0f17d4d415f0761d" kindref="member">VkInit::depthAttachmentInfo</ref>(VkImageView<sp/>view,<sp/>VkImageLayout<sp/>layout)<sp/>{</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">VkRenderingAttachmentInfo<sp/><ref refid="a00108_1afd70e1da9064d67d0f17d4d415f0761d" kindref="member">VkInit::depthAttachmentInfo</ref>(VkImageView<sp/>view,<sp/>VkImageLayout<sp/>layout)<sp/>{</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>VkRenderingAttachmentInfo<sp/>depthAttachment<sp/>{};</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>depthAttachment.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_RENDERING_ATTACHMENT_INFO;</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>depthAttachment.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
@@ -347,7 +347,7 @@
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>depthAttachment;</highlight></codeline>
 <codeline lineno="220"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"></highlight></codeline>
-<codeline lineno="222"><highlight class="normal">VkPresentInfoKHR<sp/><ref refid="a00102_1a89cdca6f147b3cacbef67ef0fcddb5a4" kindref="member">VkInit::presentInfo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal">VkPresentInfoKHR<sp/><ref refid="a00108_1a89cdca6f147b3cacbef67ef0fcddb5a4" kindref="member">VkInit::presentInfo</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPresentInfoKHR<sp/>info<sp/>=<sp/>{};</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>info.sType<sp/>=<sp/><sp/>VK_STRUCTURE_TYPE_PRESENT_INFO_KHR;</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>info.pNext<sp/>=<sp/>0;</highlight></codeline>

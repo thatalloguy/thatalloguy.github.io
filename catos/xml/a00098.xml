@@ -1,68 +1,112 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00098" kind="namespace" language="C++">
-    <compoundname>catos</compoundname>
-    <innerclass refid="a00113" prot="public">catos::App</innerclass>
-    <innerclass refid="a00109" prot="public">catos::AppCreationInfo</innerclass>
-    <innerclass refid="a00129" prot="public">catos::Method</innerclass>
-    <innerclass refid="a00125" prot="public">catos::MethodInvoker</innerclass>
-    <innerclass refid="a00117" prot="public">catos::Property</innerclass>
-    <innerclass refid="a00121" prot="public">catos::PropertyImpl</innerclass>
-    <innerclass refid="a00137" prot="public">catos::Registry</innerclass>
-    <innerclass refid="a00133" prot="public">catos::TypeInfo</innerclass>
-    <innerclass refid="a00145" prot="public">catos::Window</innerclass>
-    <innerclass refid="a00141" prot="public">catos::WindowCreationInfo</innerclass>
-    <innernamespace refid="a00100">catos::math</innernamespace>
-    <innernamespace refid="a00105">catos::tests</innernamespace>
-    <innernamespace refid="a00099">catos::type_utils</innernamespace>
-    <sectiondef kind="func">
-      <memberdef kind="function" id="a00098_1a15a9986d23699b6fe1fa103e412aad9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename...</type>
-            <declname>Args</declname>
-            <defname>Args</defname>
-          </param>
-        </templateparamlist>
-        <type>std::string</type>
-        <definition>std::string catos::getNames</definition>
-        <argsstring>()</argsstring>
-        <name>getNames</name>
-        <qualifiedname>catos::getNames</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="120" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="120" bodyend="126"/>
-      </memberdef>
-      <memberdef kind="function" id="a00098_1ab2f55e47d4a482511ba7dd433fb857f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename...</type>
-            <declname>Args</declname>
-            <defname>Args</defname>
-          </param>
-        </templateparamlist>
-        <type>std::string</type>
-        <definition>std::string catos::getArgNames</definition>
-        <argsstring>()</argsstring>
-        <name>getArgNames</name>
-        <qualifiedname>catos::getArgNames</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="129" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="129" bodyend="141"/>
-      </memberdef>
-    </sectiondef>
+  <compounddef id="a00098" kind="file" language="C++">
+    <compoundname>world.cpp</compoundname>
+    <includes refid="a00101" local="yes">world.h</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>math/vecs.h</label>
+        <link refid="a00029"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stl/vector.h</label>
+        <link refid="a00092"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>world.cpp</label>
+        <link refid="a00098"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>world.h</label>
+        <link refid="a00101"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>cstring</label>
+      </node>
+      <node id="7">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="3">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="13" column="1"/>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00101" kindref="compound">world.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><ref refid="a00350_1aec8c71d7eecca01b11a340178050b3ff" kindref="member">catos::World::World</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>instances.reserve(8);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="a00350_1aec8c71d7eecca01b11a340178050b3ff" kindref="member">catos::World::World</ref>(World<sp/>&amp;&amp;obj)<sp/></highlight><highlight class="keyword">noexcept</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><ref refid="a00350_1aec8c71d7eecca01b11a340178050b3ff" kindref="member">catos::World::World</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>World<sp/>&amp;obj)<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="a00350_1af060899be4360927761d988573fa6c8d" kindref="member">catos::World::~World</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>cleanUp();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="a00346" kindref="compound">catos::Entity</ref><sp/>*<ref refid="a00350_1a5ec053434585afa253bbdca453e295d5" kindref="member">catos::World::getEntity</ref>(<ref refid="a00104_1a378b7638d7f5500d23e49f3e6e9b1ec6" kindref="member">EntityID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>catos::World::cleanUp()<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>e<sp/>:<sp/>instances)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>e;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>catos::World::getNewWorldID()<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>catos::World::getNewEntityID()<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00350_1a34468b42dbfca5d02cea291c29b68a9d" kindref="member">catos::World::spawnEntity</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>instances.push_back(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Entity{});</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="a00346" kindref="compound">catos::Entity</ref><sp/>*<ref refid="a00350_1a579b68331dcc443cb3f142ca496c8360" kindref="member">catos::World::getLastEntity</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instances[(int)<sp/>instances.length()<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="a00346_1aa64e01f4ef9c5a8ee56433dbec6d78df" kindref="member">catos::Entity::Entity</ref>()<sp/>:<sp/>id(23)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><ref refid="a00346_1aa64e01f4ef9c5a8ee56433dbec6d78df" kindref="member">catos::Entity::Entity</ref>(<ref refid="a00346" kindref="compound">catos::Entity</ref><sp/>&amp;&amp;entity)<sp/>:<sp/>id(23)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp"/>
   </compounddef>
 </doxygen>

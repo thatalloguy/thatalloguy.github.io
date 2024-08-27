@@ -1,8 +1,6 @@
 var a00266 =
 [
-    [ "color", "a00266.html#aa7ecd21578677765699b8831e0011696", null ],
-    [ "normal", "a00266.html#a3aa35fe84025ecf1acccb5f65f5577fd", null ],
-    [ "position", "a00266.html#a030819fdc241743bbd3e180a6b132ed3", null ],
-    [ "uv_x", "a00266.html#a3c6b70cc0df673dab20ae012fa7a4ce3", null ],
-    [ "uv_y", "a00266.html#a8dfaf04a6d2a62045fee28010aeb92eb", null ]
+    [ "extents", "a00266.html#a65c365448edaaf81a9fd959272e77e8e", null ],
+    [ "origin", "a00266.html#ac18b521fb51a535fa927dc590b1a4652", null ],
+    [ "sphereRadius", "a00266.html#ad29877186534ef5c062724335c443df0", null ]
 ];

@@ -1,6 +1,8 @@
 var a00262 =
 [
-    [ "allocation", "a00262.html#aad4979df72f7e827fd80171e42bfb463", null ],
-    [ "buffer", "a00262.html#afd80ecc9bf0b9e9fbe2cd70c81def540", null ],
-    [ "info", "a00262.html#ae8f702ce1eb0772813fdb282bbcf5083", null ]
+    [ "drawCallCount", "a00262.html#ad2e9038c2125482ce0c3e952ee4a1640", null ],
+    [ "frameTime", "a00262.html#a268de968f518937e5b5a0eabcde74ac1", null ],
+    [ "meshDrawTime", "a00262.html#ab98fff18928718889d9a41f62cb45b5b", null ],
+    [ "sceneUpdateTime", "a00262.html#a63684651caeeea776748ffec6860e3d2", null ],
+    [ "triangleCount", "a00262.html#a09bb44af11d551238f5592baf3192ac0", null ]
 ];

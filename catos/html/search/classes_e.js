@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['string_0',['string',['../a00293.html',1,'Catos']]]
+  ['registry_0',['Registry',['../a00142.html',1,'catos']]],
+  ['renderobject_1',['RenderObject',['../a00218.html',1,'']]]
 ];

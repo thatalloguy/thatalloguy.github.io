@@ -1,245 +1,120 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00158" kind="class" language="C++" prot="public">
-    <compoundname>Camera</compoundname>
-    <includes refid="a00035" local="no">Camera.h</includes>
+  <compounddef id="a00158" kind="struct" language="C++" prot="public">
+    <compoundname>catos::math::Vector3</compoundname>
+    <includes refid="a00029" local="no">vecs.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00158_1a53f64d060f4d084da096f64c99a459cf" prot="public" static="no" mutable="no">
-        <type>glm::vec3</type>
-        <definition>glm::vec3 Camera::velocity</definition>
-        <argsstring></argsstring>
-        <name>velocity</name>
-        <qualifiedname>Camera::velocity</qualifiedname>
-        <initializer>{0, 0, 0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="10" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="10" bodyend="10"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00158_1a04b5db2c530d8630660e8cfb93a4b3b5" prot="public" static="no" mutable="no">
-        <type>glm::vec3</type>
-        <definition>glm::vec3 Camera::position</definition>
-        <argsstring></argsstring>
-        <name>position</name>
-        <qualifiedname>Camera::position</qualifiedname>
-        <initializer>{0, 0, 0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="11" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="11" bodyend="11"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00158_1ab56fcb39f580e8d2159cf2c9c6d9a65a" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00158_1aabf30b0a34d4ec3096451393e2d71913" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float Camera::pitch</definition>
+        <definition>float catos::math::Vector3::x</definition>
         <argsstring></argsstring>
-        <name>pitch</name>
-        <qualifiedname>Camera::pitch</qualifiedname>
-        <initializer>{ 0.f }</initializer>
+        <name>x</name>
+        <qualifiedname>catos::math::Vector3::x</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="14" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="14" bodyend="14"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00158_1ad76701b22630f2df28a0ae15f0497a3a" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00158_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float Camera::yaw</definition>
+        <definition>float catos::math::Vector3::y</definition>
         <argsstring></argsstring>
-        <name>yaw</name>
-        <qualifiedname>Camera::yaw</qualifiedname>
-        <initializer>{ 0.f }</initializer>
+        <name>y</name>
+        <qualifiedname>catos::math::Vector3::y</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="16" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="16" bodyend="16"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00158_1a08d9c6119a859e664d74ca07db4fe3d3" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00158_1a2568eefded1c720de4fcac757a5f164d" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float Camera::roll</definition>
+        <definition>float catos::math::Vector3::z</definition>
         <argsstring></argsstring>
-        <name>roll</name>
-        <qualifiedname>Camera::roll</qualifiedname>
-        <initializer>{0.f}</initializer>
+        <name>z</name>
+        <qualifiedname>catos::math::Vector3::z</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="18" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="18" bodyend="18"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00158_1aff7393c9cfbccd7e369091f00008da93" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float Camera::fov</definition>
-        <argsstring></argsstring>
-        <name>fov</name>
-        <qualifiedname>Camera::fov</qualifiedname>
-        <initializer>{ 90.f}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="20" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="20" bodyend="20"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00158_1ad96efd3e1e4ec33dddb1d25f05d02ff2" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float Camera::near</definition>
-        <argsstring></argsstring>
-        <name>near</name>
-        <qualifiedname>Camera::near</qualifiedname>
-        <initializer>{-0.9f}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="21" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="21" bodyend="21"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00158_1a9f30b77edf6485e001a98d21ff5f17fe" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float Camera::far</definition>
-        <argsstring></argsstring>
-        <name>far</name>
-        <qualifiedname>Camera::far</qualifiedname>
-        <initializer>{0.9f}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="22" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="22" bodyend="22"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00158_1abe6e05381b53e2d9b4d522759338183c" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double Camera::lastY</definition>
-        <argsstring></argsstring>
-        <name>lastY</name>
-        <qualifiedname>Camera::lastY</qualifiedname>
-        <initializer>= 0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="35" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00158_1a619f4bf68c48a4b5ce09e5c6d1e42eca" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double Camera::lastX</definition>
-        <argsstring></argsstring>
-        <name>lastX</name>
-        <qualifiedname>Camera::lastX</qualifiedname>
-        <initializer>= 0</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="36" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="36" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00158_1a5569ca5967e01d3344fbf6aba36d9820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>glm::mat4</type>
-        <definition>glm::mat4 Camera::getViewMatrix</definition>
-        <argsstring>()</argsstring>
-        <name>getViewMatrix</name>
-        <qualifiedname>Camera::getViewMatrix</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="24" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.cpp" bodystart="13" bodyend="17"/>
-      </memberdef>
-      <memberdef kind="function" id="a00158_1aab60f6efb69f691f2036b5de5897f8a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>glm::mat4</type>
-        <definition>glm::mat4 Camera::getRotationMatrix</definition>
-        <argsstring>()</argsstring>
-        <name>getRotationMatrix</name>
-        <qualifiedname>Camera::getRotationMatrix</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="25" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.cpp" bodystart="19" bodyend="27"/>
-      </memberdef>
-      <memberdef kind="function" id="a00158_1a4387bf00e77f807c531be49e24dbd834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Camera::processEvent</definition>
-        <argsstring>(GLFWwindow *window)</argsstring>
-        <name>processEvent</name>
-        <qualifiedname>Camera::processEvent</qualifiedname>
+      <memberdef kind="function" id="a00158_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::math::Vector3::operator==</definition>
+        <argsstring>(Vector3 &amp;b) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>catos::math::Vector3::operator==</qualifiedname>
         <param>
-          <type>GLFWwindow *</type>
-          <declname>window</declname>
+          <type><ref refid="a00158" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>b</declname>
         </param>
         <briefdescription>
-<para>TODO remove this, its just a dummy. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="28" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.cpp" bodystart="29" bodyend="41"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="41" bodyend="43"/>
       </memberdef>
-      <memberdef kind="function" id="a00158_1a42cda7239981a5618660d04bd5893556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Camera::update</definition>
-        <argsstring>()</argsstring>
-        <name>update</name>
-        <qualifiedname>Camera::update</qualifiedname>
+      <memberdef kind="function" id="a00158_1aac3d3c6575283572a19a23b352fca633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00158" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>Vector3 &amp; catos::math::Vector3::operator=</definition>
+        <argsstring>(float val)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>catos::math::Vector3::operator=</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="30" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.cpp" bodystart="43" bodyend="49"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="45" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="a00158_1ac086c01bff23542b26b0b2eef4c52348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::math::Vector3::operator+=</definition>
+        <argsstring>(Vector3 &amp;b)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>catos::math::Vector3::operator+=</qualifiedname>
+        <param>
+          <type><ref refid="a00158" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="53" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="53" bodyend="57"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" line="8" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.h" bodystart="8" bodyend="37"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="37" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="37" bodyend="60"/>
     <listofallmembers>
-      <member refid="a00158_1a9f30b77edf6485e001a98d21ff5f17fe" prot="public" virt="non-virtual"><scope>Camera</scope><name>far</name></member>
-      <member refid="a00158_1aff7393c9cfbccd7e369091f00008da93" prot="public" virt="non-virtual"><scope>Camera</scope><name>fov</name></member>
-      <member refid="a00158_1aab60f6efb69f691f2036b5de5897f8a9" prot="public" virt="non-virtual"><scope>Camera</scope><name>getRotationMatrix</name></member>
-      <member refid="a00158_1a5569ca5967e01d3344fbf6aba36d9820" prot="public" virt="non-virtual"><scope>Camera</scope><name>getViewMatrix</name></member>
-      <member refid="a00158_1a619f4bf68c48a4b5ce09e5c6d1e42eca" prot="private" virt="non-virtual"><scope>Camera</scope><name>lastX</name></member>
-      <member refid="a00158_1abe6e05381b53e2d9b4d522759338183c" prot="private" virt="non-virtual"><scope>Camera</scope><name>lastY</name></member>
-      <member refid="a00158_1ad96efd3e1e4ec33dddb1d25f05d02ff2" prot="public" virt="non-virtual"><scope>Camera</scope><name>near</name></member>
-      <member refid="a00158_1ab56fcb39f580e8d2159cf2c9c6d9a65a" prot="public" virt="non-virtual"><scope>Camera</scope><name>pitch</name></member>
-      <member refid="a00158_1a04b5db2c530d8630660e8cfb93a4b3b5" prot="public" virt="non-virtual"><scope>Camera</scope><name>position</name></member>
-      <member refid="a00158_1a4387bf00e77f807c531be49e24dbd834" prot="public" virt="non-virtual"><scope>Camera</scope><name>processEvent</name></member>
-      <member refid="a00158_1a08d9c6119a859e664d74ca07db4fe3d3" prot="public" virt="non-virtual"><scope>Camera</scope><name>roll</name></member>
-      <member refid="a00158_1a42cda7239981a5618660d04bd5893556" prot="public" virt="non-virtual"><scope>Camera</scope><name>update</name></member>
-      <member refid="a00158_1a53f64d060f4d084da096f64c99a459cf" prot="public" virt="non-virtual"><scope>Camera</scope><name>velocity</name></member>
-      <member refid="a00158_1ad76701b22630f2df28a0ae15f0497a3a" prot="public" virt="non-virtual"><scope>Camera</scope><name>yaw</name></member>
+      <member refid="a00158_1ac086c01bff23542b26b0b2eef4c52348" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator+=</name></member>
+      <member refid="a00158_1aac3d3c6575283572a19a23b352fca633" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator=</name></member>
+      <member refid="a00158_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator==</name></member>
+      <member refid="a00158_1aabf30b0a34d4ec3096451393e2d71913" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>x</name></member>
+      <member refid="a00158_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>y</name></member>
+      <member refid="a00158_1a2568eefded1c720de4fcac757a5f164d" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>z</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

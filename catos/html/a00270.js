@@ -1,6 +1,6 @@
 var a00270 =
 [
-    [ "indexBuffer", "a00270.html#a36072bc102efd91d9cb0a2e2a91fb731", null ],
-    [ "vertexBuffer", "a00270.html#a1492235568eb70ea34448e73fe799334", null ],
-    [ "vertexBufferAddress", "a00270.html#a07320f9b017b3298c541cecad2ca9756", null ]
+    [ "allocation", "a00270.html#aad4979df72f7e827fd80171e42bfb463", null ],
+    [ "buffer", "a00270.html#afd80ecc9bf0b9e9fbe2cd70c81def540", null ],
+    [ "info", "a00270.html#ae8f702ce1eb0772813fdb282bbcf5083", null ]
 ];

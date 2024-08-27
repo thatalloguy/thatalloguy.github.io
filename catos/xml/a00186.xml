@@ -1,141 +1,46 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00186" kind="struct" language="C++" prot="public">
-    <compoundname>FrameData</compoundname>
-    <includes refid="a00047" local="no">VkEngine.h</includes>
+    <compoundname>DescriptorAllocatorGrowable::PoolSizeRatio</compoundname>
+    <includes refid="a00041" local="no">VkDescriptors.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00186_1afd2882c300350dd131bd9d0a631613af" prot="public" static="no" mutable="no">
-        <type>VkCommandPool</type>
-        <definition>VkCommandPool FrameData::_commandPool</definition>
+      <memberdef kind="variable" id="a00186_1a225b758ecd1cfec187eff382cf678e24" prot="public" static="no" mutable="no">
+        <type>VkDescriptorType</type>
+        <definition>VkDescriptorType DescriptorAllocatorGrowable::PoolSizeRatio::type</definition>
         <argsstring></argsstring>
-        <name>_commandPool</name>
-        <qualifiedname>FrameData::_commandPool</qualifiedname>
+        <name>type</name>
+        <qualifiedname>DescriptorAllocatorGrowable::PoolSizeRatio::type</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="25" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="25" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="46" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="46" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00186_1a0f7ce63c6449cafff984ccfaf99964d4" prot="public" static="no" mutable="no">
-        <type>VkCommandBuffer</type>
-        <definition>VkCommandBuffer FrameData::_mainCommandBuffer</definition>
+      <memberdef kind="variable" id="a00186_1ab81f0e5da32fc800faa04f6add9b3e29" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float DescriptorAllocatorGrowable::PoolSizeRatio::ratio</definition>
         <argsstring></argsstring>
-        <name>_mainCommandBuffer</name>
-        <qualifiedname>FrameData::_mainCommandBuffer</qualifiedname>
+        <name>ratio</name>
+        <qualifiedname>DescriptorAllocatorGrowable::PoolSizeRatio::ratio</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="26" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="26" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00186_1aab25fa2b65e6e60a8f6e64a14bbb6d6c" prot="public" static="no" mutable="no">
-        <type>VkSemaphore</type>
-        <definition>VkSemaphore FrameData::_swapchainSemaphore</definition>
-        <argsstring></argsstring>
-        <name>_swapchainSemaphore</name>
-        <qualifiedname>FrameData::_swapchainSemaphore</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="28" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="28" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00186_1a383e503475e5ebda98abe12d2f31d9a3" prot="public" static="no" mutable="no">
-        <type>VkSemaphore</type>
-        <definition>VkSemaphore FrameData::_renderSemaphore</definition>
-        <argsstring></argsstring>
-        <name>_renderSemaphore</name>
-        <qualifiedname>FrameData::_renderSemaphore</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="28" column="37" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="28" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00186_1af1c1a353cca71e2c370f7b9d46962daf" prot="public" static="no" mutable="no">
-        <type>VkFence</type>
-        <definition>VkFence FrameData::_renderFence</definition>
-        <argsstring></argsstring>
-        <name>_renderFence</name>
-        <qualifiedname>FrameData::_renderFence</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="29" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="29" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00186_1aca8a4d6ba793aa45bee87a83dca1a2e7" prot="public" static="no" mutable="no">
-        <type><ref refid="a00290" kindref="compound">DeletionQueue</ref></type>
-        <definition>DeletionQueue FrameData::_deletionQueue</definition>
-        <argsstring></argsstring>
-        <name>_deletionQueue</name>
-        <qualifiedname>FrameData::_deletionQueue</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="31" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="31" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00186_1a8a642e7d6c19cc5ff3340c5e4d267188" prot="public" static="no" mutable="no">
-        <type><ref refid="a00174" kindref="compound">DescriptorAllocatorGrowable</ref></type>
-        <definition>DescriptorAllocatorGrowable FrameData::_frameDescriptors</definition>
-        <argsstring></argsstring>
-        <name>_frameDescriptors</name>
-        <qualifiedname>FrameData::_frameDescriptors</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="32" column="33" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="32" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="47" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="47" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="2">
-        <label>DeletionQueue</label>
-        <link refid="a00290"/>
-      </node>
-      <node id="3">
-        <label>DescriptorAllocatorGrowable</label>
-        <link refid="a00174"/>
-      </node>
-      <node id="1">
-        <label>FrameData</label>
-        <link refid="a00186"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>_deletionQueue</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>_frameDescriptors</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="23" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="23" bodyend="33"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="45" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="45" bodyend="48"/>
     <listofallmembers>
-      <member refid="a00186_1afd2882c300350dd131bd9d0a631613af" prot="public" virt="non-virtual"><scope>FrameData</scope><name>_commandPool</name></member>
-      <member refid="a00186_1aca8a4d6ba793aa45bee87a83dca1a2e7" prot="public" virt="non-virtual"><scope>FrameData</scope><name>_deletionQueue</name></member>
-      <member refid="a00186_1a8a642e7d6c19cc5ff3340c5e4d267188" prot="public" virt="non-virtual"><scope>FrameData</scope><name>_frameDescriptors</name></member>
-      <member refid="a00186_1a0f7ce63c6449cafff984ccfaf99964d4" prot="public" virt="non-virtual"><scope>FrameData</scope><name>_mainCommandBuffer</name></member>
-      <member refid="a00186_1af1c1a353cca71e2c370f7b9d46962daf" prot="public" virt="non-virtual"><scope>FrameData</scope><name>_renderFence</name></member>
-      <member refid="a00186_1a383e503475e5ebda98abe12d2f31d9a3" prot="public" virt="non-virtual"><scope>FrameData</scope><name>_renderSemaphore</name></member>
-      <member refid="a00186_1aab25fa2b65e6e60a8f6e64a14bbb6d6c" prot="public" virt="non-virtual"><scope>FrameData</scope><name>_swapchainSemaphore</name></member>
+      <member refid="a00186_1ab81f0e5da32fc800faa04f6add9b3e29" prot="public" virt="non-virtual"><scope>DescriptorAllocatorGrowable::PoolSizeRatio</scope><name>ratio</name></member>
+      <member refid="a00186_1a225b758ecd1cfec187eff382cf678e24" prot="public" virt="non-virtual"><scope>DescriptorAllocatorGrowable::PoolSizeRatio</scope><name>type</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

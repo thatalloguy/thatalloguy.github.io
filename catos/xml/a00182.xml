@@ -1,148 +1,85 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00182" kind="struct" language="C++" prot="public">
-    <compoundname>DescriptorWriter</compoundname>
+  <compounddef id="a00182" kind="class" language="C++" prot="public">
+    <compoundname>DescriptorAllocatorGrowable</compoundname>
     <includes refid="a00041" local="no">VkDescriptors.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00182_1a1a8fd25b760653c787354b53792fd123" prot="public" static="no" mutable="no">
-        <type>std::deque&lt; VkDescriptorImageInfo &gt;</type>
-        <definition>std::deque&lt;VkDescriptorImageInfo&gt; DescriptorWriter::imageInfos</definition>
+    <innerclass refid="a00186" prot="public">DescriptorAllocatorGrowable::PoolSizeRatio</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00182_1a3b416daae1c9ac2db8afdd00e91987ca" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="a00186" kindref="compound">PoolSizeRatio</ref> &gt;</type>
+        <definition>std::vector&lt;PoolSizeRatio&gt; DescriptorAllocatorGrowable::ratios</definition>
         <argsstring></argsstring>
-        <name>imageInfos</name>
-        <qualifiedname>DescriptorWriter::imageInfos</qualifiedname>
+        <name>ratios</name>
+        <qualifiedname>DescriptorAllocatorGrowable::ratios</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="71" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="71" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="61" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="61" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00182_1ab4afed3f867ffe490c2bcb18d739d5fc" prot="public" static="no" mutable="no">
-        <type>std::deque&lt; VkDescriptorBufferInfo &gt;</type>
-        <definition>std::deque&lt;VkDescriptorBufferInfo&gt; DescriptorWriter::bufferInfos</definition>
+      <memberdef kind="variable" id="a00182_1addbc3458b5f7c051aab8570f5c95105d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkDescriptorPool &gt;</type>
+        <definition>std::vector&lt;VkDescriptorPool&gt; DescriptorAllocatorGrowable::fullPools</definition>
         <argsstring></argsstring>
-        <name>bufferInfos</name>
-        <qualifiedname>DescriptorWriter::bufferInfos</qualifiedname>
+        <name>fullPools</name>
+        <qualifiedname>DescriptorAllocatorGrowable::fullPools</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="72" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="62" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="62" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00182_1ac22018161ff02865aa9ef6e652c89d5e" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; VkWriteDescriptorSet &gt;</type>
-        <definition>std::vector&lt;VkWriteDescriptorSet&gt; DescriptorWriter::writes</definition>
+      <memberdef kind="variable" id="a00182_1a943abb13559d5d3fbc651d7c13d64ec2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; VkDescriptorPool &gt;</type>
+        <definition>std::vector&lt;VkDescriptorPool&gt; DescriptorAllocatorGrowable::readyPools</definition>
         <argsstring></argsstring>
-        <name>writes</name>
-        <qualifiedname>DescriptorWriter::writes</qualifiedname>
+        <name>readyPools</name>
+        <qualifiedname>DescriptorAllocatorGrowable::readyPools</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="73" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="73" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="63" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00182_1afbd4da12192209a5e88408558f16d3bd" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t DescriptorAllocatorGrowable::setsPerPool</definition>
+        <argsstring></argsstring>
+        <name>setsPerPool</name>
+        <qualifiedname>DescriptorAllocatorGrowable::setsPerPool</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="65" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="65" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00182_1a2a892146e50f1e47f2e5e2f84fb0eb66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="a00182_1af5cae4856149623867934153486e9b45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void DescriptorWriter::writeImage</definition>
-        <argsstring>(int binding, VkImageView image, VkSampler sampler, VkImageLayout layout, VkDescriptorType type)</argsstring>
-        <name>writeImage</name>
-        <qualifiedname>DescriptorWriter::writeImage</qualifiedname>
-        <param>
-          <type>int</type>
-          <declname>binding</declname>
-        </param>
-        <param>
-          <type>VkImageView</type>
-          <declname>image</declname>
-        </param>
-        <param>
-          <type>VkSampler</type>
-          <declname>sampler</declname>
-        </param>
-        <param>
-          <type>VkImageLayout</type>
-          <declname>layout</declname>
-        </param>
-        <param>
-          <type>VkDescriptorType</type>
-          <declname>type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="75" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="196" bodyend="212"/>
-      </memberdef>
-      <memberdef kind="function" id="a00182_1a24d1efff56cfd0a03ffe5aa3ce7e17bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void DescriptorWriter::writeBuffer</definition>
-        <argsstring>(int binding, VkBuffer buffer, size_t size, size_t offset, VkDescriptorType type)</argsstring>
-        <name>writeBuffer</name>
-        <qualifiedname>DescriptorWriter::writeBuffer</qualifiedname>
-        <param>
-          <type>int</type>
-          <declname>binding</declname>
-        </param>
-        <param>
-          <type>VkBuffer</type>
-          <declname>buffer</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>size</declname>
-        </param>
-        <param>
-          <type>size_t</type>
-          <declname>offset</declname>
-        </param>
-        <param>
-          <type>VkDescriptorType</type>
-          <declname>type</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="76" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="214" bodyend="230"/>
-      </memberdef>
-      <memberdef kind="function" id="a00182_1ad2f603a5f4382aeed806d6a25f4fc9d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void DescriptorWriter::clear</definition>
-        <argsstring>()</argsstring>
-        <name>clear</name>
-        <qualifiedname>DescriptorWriter::clear</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="78" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="232" bodyend="236"/>
-      </memberdef>
-      <memberdef kind="function" id="a00182_1aa6d2deed567c313417fc333e55647814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void DescriptorWriter::updateSet</definition>
-        <argsstring>(VkDevice device, VkDescriptorSet set)</argsstring>
-        <name>updateSet</name>
-        <qualifiedname>DescriptorWriter::updateSet</qualifiedname>
+        <definition>void DescriptorAllocatorGrowable::init</definition>
+        <argsstring>(VkDevice device, uint32_t maxSets, std::span&lt; PoolSizeRatio &gt; poolRatios)</argsstring>
+        <name>init</name>
+        <qualifiedname>DescriptorAllocatorGrowable::init</qualifiedname>
         <param>
           <type>VkDevice</type>
           <declname>device</declname>
         </param>
         <param>
-          <type>VkDescriptorSet</type>
-          <declname>set</declname>
+          <type>uint32_t</type>
+          <declname>maxSets</declname>
+        </param>
+        <param>
+          <type>std::span&lt; <ref refid="a00186" kindref="compound">PoolSizeRatio</ref> &gt;</type>
+          <declname>poolRatios</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -150,22 +87,129 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="79" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="238" bodyend="244"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="50" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="79" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="a00182_1a4fbeabc0aea9829cf922f7e9cce2fa53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DescriptorAllocatorGrowable::clearPools</definition>
+        <argsstring>(VkDevice device)</argsstring>
+        <name>clearPools</name>
+        <qualifiedname>DescriptorAllocatorGrowable::clearPools</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="51" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="93" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="a00182_1a9be93476cebaaba27b5e6a41650b1c25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DescriptorAllocatorGrowable::destroyPools</definition>
+        <argsstring>(VkDevice device)</argsstring>
+        <name>destroyPools</name>
+        <qualifiedname>DescriptorAllocatorGrowable::destroyPools</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="52" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="104" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="a00182_1a6db84a1399339f8008d6a0745383b591" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkDescriptorSet</type>
+        <definition>VkDescriptorSet DescriptorAllocatorGrowable::allocate</definition>
+        <argsstring>(VkDevice device, VkDescriptorSetLayout layout)</argsstring>
+        <name>allocate</name>
+        <qualifiedname>DescriptorAllocatorGrowable::allocate</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>VkDescriptorSetLayout</type>
+          <declname>layout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="54" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="116" bodyend="144"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00182_1a0e4ba4b05394029041ff93b44ef90164" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkDescriptorPool</type>
+        <definition>VkDescriptorPool DescriptorAllocatorGrowable::getPool</definition>
+        <argsstring>(VkDevice device)</argsstring>
+        <name>getPool</name>
+        <qualifiedname>DescriptorAllocatorGrowable::getPool</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="58" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="146" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="a00182_1a0b0f4ceff36d7dd44d83f3beefc472cf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VkDescriptorPool</type>
+        <definition>VkDescriptorPool DescriptorAllocatorGrowable::createPool</definition>
+        <argsstring>(VkDevice device, uint32_t setCount, std::span&lt; PoolSizeRatio &gt; poolRatios)</argsstring>
+        <name>createPool</name>
+        <qualifiedname>DescriptorAllocatorGrowable::createPool</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>setCount</declname>
+        </param>
+        <param>
+          <type>std::span&lt; <ref refid="a00186" kindref="compound">PoolSizeRatio</ref> &gt;</type>
+          <declname>poolRatios</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="59" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="166" bodyend="186"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="70" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="70" bodyend="80"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="42" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="42" bodyend="68"/>
     <listofallmembers>
-      <member refid="a00182_1ab4afed3f867ffe490c2bcb18d739d5fc" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>bufferInfos</name></member>
-      <member refid="a00182_1ad2f603a5f4382aeed806d6a25f4fc9d9" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>clear</name></member>
-      <member refid="a00182_1a1a8fd25b760653c787354b53792fd123" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>imageInfos</name></member>
-      <member refid="a00182_1aa6d2deed567c313417fc333e55647814" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>updateSet</name></member>
-      <member refid="a00182_1a24d1efff56cfd0a03ffe5aa3ce7e17bf" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>writeBuffer</name></member>
-      <member refid="a00182_1a2a892146e50f1e47f2e5e2f84fb0eb66" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>writeImage</name></member>
-      <member refid="a00182_1ac22018161ff02865aa9ef6e652c89d5e" prot="public" virt="non-virtual"><scope>DescriptorWriter</scope><name>writes</name></member>
+      <member refid="a00182_1a6db84a1399339f8008d6a0745383b591" prot="public" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>allocate</name></member>
+      <member refid="a00182_1a4fbeabc0aea9829cf922f7e9cce2fa53" prot="public" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>clearPools</name></member>
+      <member refid="a00182_1a0b0f4ceff36d7dd44d83f3beefc472cf" prot="private" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>createPool</name></member>
+      <member refid="a00182_1a9be93476cebaaba27b5e6a41650b1c25" prot="public" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>destroyPools</name></member>
+      <member refid="a00182_1addbc3458b5f7c051aab8570f5c95105d" prot="private" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>fullPools</name></member>
+      <member refid="a00182_1a0e4ba4b05394029041ff93b44ef90164" prot="private" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>getPool</name></member>
+      <member refid="a00182_1af5cae4856149623867934153486e9b45" prot="public" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>init</name></member>
+      <member refid="a00182_1a3b416daae1c9ac2db8afdd00e91987ca" prot="private" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>ratios</name></member>
+      <member refid="a00182_1a943abb13559d5d3fbc651d7c13d64ec2" prot="private" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>readyPools</name></member>
+      <member refid="a00182_1afbd4da12192209a5e88408558f16d3bd" prot="private" virt="non-virtual"><scope>DescriptorAllocatorGrowable</scope><name>setsPerPool</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

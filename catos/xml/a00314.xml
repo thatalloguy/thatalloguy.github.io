@@ -1,135 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00314" kind="struct" language="C++" prot="public">
-    <compoundname>catos::Query</compoundname>
-    <includes refid="a00089" local="no">query.h</includes>
-    <innerclass refid="a00318" prot="public">catos::Query::Iterator</innerclass>
-    <templateparamlist>
-      <param>
-        <type>typename...</type>
-        <declname>Components</declname>
-        <defname>Components</defname>
-      </param>
-    </templateparamlist>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00314_1ac8619d912679e016e3aa313d36f5d50d" prot="public" static="no" mutable="no">
-        <type><ref refid="a00330" kindref="compound">World</ref> *</type>
-        <definition>World* catos::Query&lt; Components &gt;::p_world</definition>
-        <argsstring></argsstring>
-        <name>p_world</name>
-        <qualifiedname>catos::Query::p_world</qualifiedname>
-        <initializer>{nullptr}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/query.h" line="82" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/query.h" bodystart="82" bodyend="82"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00314_1a4843232ab9108698b1b0f62ea66b83de" prot="public" static="no" mutable="no">
-        <type><ref refid="a00101_1ae151ba2b3dceaf31a210e55391499bf3" kindref="member">ComponentMask</ref></type>
-        <definition>ComponentMask catos::Query&lt; Components &gt;::componentMask</definition>
-        <argsstring></argsstring>
-        <name>componentMask</name>
-        <qualifiedname>catos::Query::componentMask</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/query.h" line="83" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/query.h" bodystart="83" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00314_1a4db087574206f51b8bb6621852388286" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool catos::Query&lt; Components &gt;::all</definition>
-        <argsstring></argsstring>
-        <name>all</name>
-        <qualifiedname>catos::Query::all</qualifiedname>
-        <initializer>{false}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/query.h" line="84" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/query.h" bodystart="84" bodyend="84"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00314_1a82ebf0b28fda4a7920c044dff21b0069" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>catos::Query&lt; Components &gt;::Query</definition>
-        <argsstring>(World &amp;world)</argsstring>
-        <name>Query</name>
-        <qualifiedname>catos::Query::Query</qualifiedname>
-        <param>
-          <type><ref refid="a00330" kindref="compound">World</ref> &amp;</type>
-          <declname>world</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/query.h" line="17" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/query.h" bodystart="17" bodyend="29"/>
-      </memberdef>
-      <memberdef kind="function" id="a00314_1a1f1a6a4bdc2851f0906c36873207257c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="a00318" kindref="compound">Iterator</ref></type>
-        <definition>const Iterator catos::Query&lt; Components &gt;::begin</definition>
-        <argsstring>() const</argsstring>
-        <name>begin</name>
-        <qualifiedname>catos::Query::begin</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/query.h" line="65" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/query.h" bodystart="65" bodyend="75"/>
-      </memberdef>
-      <memberdef kind="function" id="a00314_1a729f43371fb8ff50690c3117589ceb09" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>const <ref refid="a00318" kindref="compound">Iterator</ref></type>
-        <definition>const Iterator catos::Query&lt; Components &gt;::end</definition>
-        <argsstring>() const</argsstring>
-        <name>end</name>
-        <qualifiedname>catos::Query::end</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/world/query.h" line="76" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/query.h" bodystart="76" bodyend="78"/>
-      </memberdef>
-    </sectiondef>
+    <compoundname>out_of_range</compoundname>
+    <includes refid="a00092" local="no">vector.h</includes>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="1">
-        <label>catos::Query&lt; Components &gt;</label>
-        <link refid="a00314"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>p_world</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>catos::World</label>
-        <link refid="a00330"/>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/world/query.h" line="14" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/query.h" bodystart="14" bodyend="86"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="10" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="10" bodyend="12"/>
     <listofallmembers>
-      <member refid="a00314_1a4db087574206f51b8bb6621852388286" prot="public" virt="non-virtual"><scope>catos::Query</scope><name>all</name></member>
-      <member refid="a00314_1a1f1a6a4bdc2851f0906c36873207257c" prot="public" virt="non-virtual"><scope>catos::Query</scope><name>begin</name></member>
-      <member refid="a00314_1a4843232ab9108698b1b0f62ea66b83de" prot="public" virt="non-virtual"><scope>catos::Query</scope><name>componentMask</name></member>
-      <member refid="a00314_1a729f43371fb8ff50690c3117589ceb09" prot="public" virt="non-virtual"><scope>catos::Query</scope><name>end</name></member>
-      <member refid="a00314_1ac8619d912679e016e3aa313d36f5d50d" prot="public" virt="non-virtual"><scope>catos::Query</scope><name>p_world</name></member>
-      <member refid="a00314_1a82ebf0b28fda4a7920c044dff21b0069" prot="public" virt="non-virtual"><scope>catos::Query</scope><name>Query</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -1,10 +1,8 @@
 var a00182 =
 [
-    [ "clear", "a00182.html#ad2f603a5f4382aeed806d6a25f4fc9d9", null ],
-    [ "updateSet", "a00182.html#aa6d2deed567c313417fc333e55647814", null ],
-    [ "writeBuffer", "a00182.html#a24d1efff56cfd0a03ffe5aa3ce7e17bf", null ],
-    [ "writeImage", "a00182.html#a2a892146e50f1e47f2e5e2f84fb0eb66", null ],
-    [ "bufferInfos", "a00182.html#ab4afed3f867ffe490c2bcb18d739d5fc", null ],
-    [ "imageInfos", "a00182.html#a1a8fd25b760653c787354b53792fd123", null ],
-    [ "writes", "a00182.html#ac22018161ff02865aa9ef6e652c89d5e", null ]
+    [ "PoolSizeRatio", "a00186.html", "a00186" ],
+    [ "allocate", "a00182.html#a6db84a1399339f8008d6a0745383b591", null ],
+    [ "clearPools", "a00182.html#a4fbeabc0aea9829cf922f7e9cce2fa53", null ],
+    [ "destroyPools", "a00182.html#a9be93476cebaaba27b5e6a41650b1c25", null ],
+    [ "init", "a00182.html#af5cae4856149623867934153486e9b45", null ]
 ];

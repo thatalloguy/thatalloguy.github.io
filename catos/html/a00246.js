@@ -1,14 +1,6 @@
 var a00246 =
 [
-    [ "clearAll", "a00246.html#a57694eaff57520a9d0fcd2f29748cf9b", null ],
-    [ "Draw", "a00246.html#a5cb28e137c9fff7788afaf7aa5e565ac", null ],
-    [ "creator", "a00246.html#ac6263b49db35fbd7492b494ab054552b", null ],
-    [ "descriptorPool", "a00246.html#adf479fe7b1bfabe170b82282a81a5e5e", null ],
-    [ "images", "a00246.html#af8970fbf7b368a7560c68b1b5d9c5f35", null ],
-    [ "materialDataBuffer", "a00246.html#a8237d21c94d7972aa7a3d7c189a00ba5", null ],
-    [ "materials", "a00246.html#af295ba2993c19703f95422d0cffe87ae", null ],
-    [ "meshes", "a00246.html#a0d81dfeaab41142c4f2ab033cdd9f8b8", null ],
-    [ "nodes", "a00246.html#abf50d971f7ff884cf18b10627132e24d", null ],
-    [ "samplers", "a00246.html#a4a2ad17dc3b17f86bd21527a651c166d", null ],
-    [ "topNodes", "a00246.html#a19f8f4de300949b8c9242e6b0f4274cb", null ]
+    [ "meshBuffers", "a00246.html#a27c656c430749b3b3412dcafba2c7b9c", null ],
+    [ "name", "a00246.html#a7abaa0b660e944edd81ce5186c32d367", null ],
+    [ "surfaces", "a00246.html#a40aac10ab4f9e8d1041ea3035336c68a", null ]
 ];

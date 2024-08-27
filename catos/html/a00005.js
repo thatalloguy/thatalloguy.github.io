@@ -1,5 +1,5 @@
 var a00005 =
 [
-    [ "catos::AppCreationInfo", "a00109.html", "a00109" ],
-    [ "catos::App", "a00113.html", "a00113" ]
+    [ "catos::AppCreationInfo", "a00114.html", "a00114" ],
+    [ "catos::App", "a00118.html", "a00118" ]
 ];

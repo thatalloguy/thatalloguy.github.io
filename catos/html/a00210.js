@@ -1,10 +1,6 @@
 var a00210 =
 [
-    [ "bounds", "a00210.html#a14bf8548f4c7a416e787a3508f833a50", null ],
-    [ "firstIndex", "a00210.html#ac0d57e3a8ec65b53d2593224161ace73", null ],
-    [ "indexBuffer", "a00210.html#a30d8bb5f11112733abf3fa034f65f80c", null ],
-    [ "indexCount", "a00210.html#ad804e3c297d2f4d5ea1aabc80f3a2801", null ],
-    [ "material", "a00210.html#ab09c067290de5759d715bfea4487fcf6", null ],
-    [ "transform", "a00210.html#a5aa60e9c01b069dcddebd1a913e0999c", null ],
-    [ "vertexBufferAddress", "a00210.html#a2cb78112987761ab014ca3095c3b0dbf", null ]
+    [ "colorFactors", "a00210.html#a006333f251c1c42685a1327f5e28d2b5", null ],
+    [ "extra", "a00210.html#a897bbbaccb9a421115147a22b6015c4b", null ],
+    [ "metalRoughFactors", "a00210.html#a0879b1b307e3fc6093979270f0d88684", null ]
 ];

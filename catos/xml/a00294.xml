@@ -1,91 +1,74 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00294" kind="struct" language="C++" prot="public">
-    <compoundname>AllocatedImage</compoundname>
+    <compoundname>MaterialInstance</compoundname>
     <includes refid="a00074" local="no">VkTypes.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00294_1a13e4a58bd70b09a3743df9effc0dc9f6" prot="public" static="no" mutable="no">
-        <type>VkImage</type>
-        <definition>VkImage AllocatedImage::image</definition>
+      <memberdef kind="variable" id="a00294_1a6270ec8b9754e8071ad89436e9b307c7" prot="public" static="no" mutable="no">
+        <type><ref refid="a00290" kindref="compound">MaterialPipeline</ref> *</type>
+        <definition>MaterialPipeline* MaterialInstance::pipeline</definition>
         <argsstring></argsstring>
-        <name>image</name>
-        <qualifiedname>AllocatedImage::image</qualifiedname>
+        <name>pipeline</name>
+        <qualifiedname>MaterialInstance::pipeline</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="136" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="136" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="113" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="113" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00294_1ad124234921b26ec7e9b0cc5f603d5726" prot="public" static="no" mutable="no">
-        <type>VkImageView</type>
-        <definition>VkImageView AllocatedImage::imageView</definition>
+      <memberdef kind="variable" id="a00294_1a0d388ba1aded5dcdd49c622a51e1bf92" prot="public" static="no" mutable="no">
+        <type>VkDescriptorSet</type>
+        <definition>VkDescriptorSet MaterialInstance::materialSet</definition>
         <argsstring></argsstring>
-        <name>imageView</name>
-        <qualifiedname>AllocatedImage::imageView</qualifiedname>
+        <name>materialSet</name>
+        <qualifiedname>MaterialInstance::materialSet</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="137" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="137" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="114" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="114" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00294_1a6374bbe549aabc16f21c58b717329028" prot="public" static="no" mutable="no">
-        <type>VmaAllocation</type>
-        <definition>VmaAllocation AllocatedImage::allocation</definition>
+      <memberdef kind="variable" id="a00294_1ab6a8270117524873601400f0bcb401db" prot="public" static="no" mutable="no">
+        <type><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" kindref="member">MaterialPass</ref></type>
+        <definition>MaterialPass MaterialInstance::passType</definition>
         <argsstring></argsstring>
-        <name>allocation</name>
-        <qualifiedname>AllocatedImage::allocation</qualifiedname>
+        <name>passType</name>
+        <qualifiedname>MaterialInstance::passType</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="138" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="138" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00294_1a3c0016e1c5c44bb21f336486da7c9d66" prot="public" static="no" mutable="no">
-        <type>VkExtent3D</type>
-        <definition>VkExtent3D AllocatedImage::imageExtent</definition>
-        <argsstring></argsstring>
-        <name>imageExtent</name>
-        <qualifiedname>AllocatedImage::imageExtent</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="139" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="139" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00294_1ae4ccf662c664f3b9bdafa7459b746d8b" prot="public" static="no" mutable="no">
-        <type>VkFormat</type>
-        <definition>VkFormat AllocatedImage::imageFormat</definition>
-        <argsstring></argsstring>
-        <name>imageFormat</name>
-        <qualifiedname>AllocatedImage::imageFormat</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="140" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="140" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="115" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="115" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="135" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="135" bodyend="141"/>
+    <collaborationgraph>
+      <node id="1">
+        <label>MaterialInstance</label>
+        <link refid="a00294"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>pipeline</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MaterialPipeline</label>
+        <link refid="a00290"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="112" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="112" bodyend="116"/>
     <listofallmembers>
-      <member refid="a00294_1a6374bbe549aabc16f21c58b717329028" prot="public" virt="non-virtual"><scope>AllocatedImage</scope><name>allocation</name></member>
-      <member refid="a00294_1a13e4a58bd70b09a3743df9effc0dc9f6" prot="public" virt="non-virtual"><scope>AllocatedImage</scope><name>image</name></member>
-      <member refid="a00294_1a3c0016e1c5c44bb21f336486da7c9d66" prot="public" virt="non-virtual"><scope>AllocatedImage</scope><name>imageExtent</name></member>
-      <member refid="a00294_1ae4ccf662c664f3b9bdafa7459b746d8b" prot="public" virt="non-virtual"><scope>AllocatedImage</scope><name>imageFormat</name></member>
-      <member refid="a00294_1ad124234921b26ec7e9b0cc5f603d5726" prot="public" virt="non-virtual"><scope>AllocatedImage</scope><name>imageView</name></member>
+      <member refid="a00294_1a0d388ba1aded5dcdd49c622a51e1bf92" prot="public" virt="non-virtual"><scope>MaterialInstance</scope><name>materialSet</name></member>
+      <member refid="a00294_1ab6a8270117524873601400f0bcb401db" prot="public" virt="non-virtual"><scope>MaterialInstance</scope><name>passType</name></member>
+      <member refid="a00294_1a6270ec8b9754e8071ad89436e9b307c7" prot="public" virt="non-virtual"><scope>MaterialInstance</scope><name>pipeline</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

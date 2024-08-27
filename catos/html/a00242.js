@@ -1,9 +1,7 @@
 var a00242 =
 [
-    [ "Draw", "a00242.html#a6870e549c7f428dbcd4f61d43eaa2f4b", null ],
-    [ "refreshTransform", "a00242.html#a04e0eff14682dca41284af38d0cb51a5", null ],
-    [ "childern", "a00242.html#a0f9591e9fa0bf1680b1e3ac8c32739aa", null ],
-    [ "localTransform", "a00242.html#a633dd4c9cfe7d73b9964bd90c0b9c28f", null ],
-    [ "parent", "a00242.html#a99e65d6b9186c551371b95ea3845b6fd", null ],
-    [ "worldTransform", "a00242.html#a080e37187a37353df15596dc9250e700", null ]
+    [ "bounds", "a00242.html#ad8e3399fe5d911224a61f379cbfcd4d9", null ],
+    [ "count", "a00242.html#a5bfc701fbd45f395a990f9a0063b8975", null ],
+    [ "material", "a00242.html#af0c192263057788d4136d4b73a63ead4", null ],
+    [ "startIndex", "a00242.html#ab6fd9aebf929934ca3b679e11b984e88", null ]
 ];

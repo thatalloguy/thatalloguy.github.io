@@ -1,5 +1,9 @@
 var a00214 =
 [
-    [ "OpaqueSurfaces", "a00214.html#a92fc7232c72c6f3b5dc4e12dd6606f17", null ],
-    [ "TransparentSurfaces", "a00214.html#ad057160f65e0657e137a740ec37d31c2", null ]
+    [ "colorImage", "a00214.html#a3dd3a1bd7517a31b58583f30940c3441", null ],
+    [ "colorSampler", "a00214.html#a14de3bb8c602f204bcf5d6c2ccb7ee2a", null ],
+    [ "dataBuffer", "a00214.html#af0402d122ad15ba381be88d540c77fa7", null ],
+    [ "dataBufferOffset", "a00214.html#a7f4e87b350163adac17d662bef1eab3b", null ],
+    [ "metalRoughImage", "a00214.html#af7791b1215a1fee0b5897e1d39a3c9ed", null ],
+    [ "metalRoughSampler", "a00214.html#aad3abdd50028f1774271881c1de7dc85", null ]
 ];

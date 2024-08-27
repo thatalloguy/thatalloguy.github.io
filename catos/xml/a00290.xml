@@ -1,67 +1,46 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00290" kind="struct" language="C++" prot="public">
-    <compoundname>DeletionQueue</compoundname>
+    <compoundname>MaterialPipeline</compoundname>
     <includes refid="a00074" local="no">VkTypes.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" prot="public" static="no" mutable="no">
-        <type>std::deque&lt; std::function&lt; void()&gt; &gt;</type>
-        <definition>std::deque&lt;std::function&lt;void()&gt; &gt; DeletionQueue::deletors</definition>
+      <memberdef kind="variable" id="a00290_1a5500b751b3a9fb3017151b515b577ad7" prot="public" static="no" mutable="no">
+        <type>VkPipeline</type>
+        <definition>VkPipeline MaterialPipeline::pipeline</definition>
         <argsstring></argsstring>
-        <name>deletors</name>
-        <qualifiedname>DeletionQueue::deletors</qualifiedname>
+        <name>pipeline</name>
+        <qualifiedname>MaterialPipeline::pipeline</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="120" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="120" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="102" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="102" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00290_1a91bdce3808d2f96671f38a610810c67b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void DeletionQueue::pushFunction</definition>
-        <argsstring>(std::function&lt; void()&gt; &amp;&amp;function)</argsstring>
-        <name>pushFunction</name>
-        <qualifiedname>DeletionQueue::pushFunction</qualifiedname>
-        <param>
-          <type>std::function&lt; void()&gt; &amp;&amp;</type>
-          <declname>function</declname>
-        </param>
+      <memberdef kind="variable" id="a00290_1a54c031a905193c1d35539d1566775f00" prot="public" static="no" mutable="no">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout MaterialPipeline::layout</definition>
+        <argsstring></argsstring>
+        <name>layout</name>
+        <qualifiedname>MaterialPipeline::layout</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="122" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="122" bodyend="124"/>
-      </memberdef>
-      <memberdef kind="function" id="a00290_1ad8258e84b869dbf3800178a61cc51cb3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void DeletionQueue::flush</definition>
-        <argsstring>()</argsstring>
-        <name>flush</name>
-        <qualifiedname>DeletionQueue::flush</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="126" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="126" bodyend="132"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="103" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="103" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="119" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="119" bodyend="133"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="101" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="101" bodyend="104"/>
     <listofallmembers>
-      <member refid="a00290_1a2781e3877aacfbbee0294daf2a0d36b8" prot="public" virt="non-virtual"><scope>DeletionQueue</scope><name>deletors</name></member>
-      <member refid="a00290_1ad8258e84b869dbf3800178a61cc51cb3" prot="public" virt="non-virtual"><scope>DeletionQueue</scope><name>flush</name></member>
-      <member refid="a00290_1a91bdce3808d2f96671f38a610810c67b" prot="public" virt="non-virtual"><scope>DeletionQueue</scope><name>pushFunction</name></member>
+      <member refid="a00290_1a54c031a905193c1d35539d1566775f00" prot="public" virt="non-virtual"><scope>MaterialPipeline</scope><name>layout</name></member>
+      <member refid="a00290_1a5500b751b3a9fb3017151b515b577ad7" prot="public" virt="non-virtual"><scope>MaterialPipeline</scope><name>pipeline</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

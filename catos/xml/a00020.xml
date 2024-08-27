@@ -233,10 +233,10 @@
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="a00098" kindref="compound">catos</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="a00104" kindref="compound">catos</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><ref refid="a00145_1a17960ca89f793bac084a8203f1a7d3e6" kindref="member">Window::Window</ref>(<ref refid="a00141" kindref="compound">catos::WindowCreationInfo</ref><sp/>&amp;creationInfo)<sp/>:<sp/>_createInfo(creationInfo)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="a00150_1a17960ca89f793bac084a8203f1a7d3e6" kindref="member">Window::Window</ref>(<ref refid="a00146" kindref="compound">catos::WindowCreationInfo</ref><sp/>&amp;creationInfo)<sp/>:<sp/>_createInfo(creationInfo)<sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
@@ -251,26 +251,26 @@
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>GLFWmonitor*<sp/>monitor;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(creationInfo.<ref refid="a00141_1a2afaf94058c62aee02391616b88bd63c" kindref="member">is_fullscreen</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(creationInfo.<ref refid="a00146_1a2afaf94058c62aee02391616b88bd63c" kindref="member">is_fullscreen</ref>)<sp/>{</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>monitor<sp/>=<sp/>glfwGetPrimaryMonitor();</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>monitor<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>_raw_window<sp/>=<sp/>glfwCreateWindow(creationInfo.<ref refid="a00141_1ae968365d3c684b7865dbd44a9b58a0d4" kindref="member">size</ref>.<ref refid="a00149_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref>,<sp/>creationInfo.<ref refid="a00141_1ae968365d3c684b7865dbd44a9b58a0d4" kindref="member">size</ref>.<ref refid="a00149_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>,<sp/>creationInfo.<ref refid="a00141_1a93cc9ee1f3794b1621f46ccf5ca1c91d" kindref="member">title</ref>,<sp/>monitor,<sp/>NULL);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>_raw_window<sp/>=<sp/>glfwCreateWindow(creationInfo.<ref refid="a00146_1ae968365d3c684b7865dbd44a9b58a0d4" kindref="member">size</ref>.<ref refid="a00154_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref>,<sp/>creationInfo.<ref refid="a00146_1ae968365d3c684b7865dbd44a9b58a0d4" kindref="member">size</ref>.<ref refid="a00154_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>,<sp/>creationInfo.<ref refid="a00146_1a93cc9ee1f3794b1621f46ccf5ca1c91d" kindref="member">title</ref>,<sp/>monitor,<sp/>NULL);</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_raw_window)<sp/>{</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::error(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>create<sp/>Window&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(creationInfo.<ref refid="a00141_1af4e7fb2bc7459c373e17b77a30565680" kindref="member">enable_darktheme</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(creationInfo.<ref refid="a00146_1af4e7fb2bc7459c373e17b77a30565680" kindref="member">enable_darktheme</ref>)<sp/>{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enable_dark_theme();</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"></highlight></codeline>
 <codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwMakeContextCurrent(_raw_window);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><ref refid="a00145_1a245d821e6016fa1f6970ccbbedd635f6" kindref="member">Window::~Window</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><ref refid="a00150_1a245d821e6016fa1f6970ccbbedd635f6" kindref="member">Window::~Window</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="53"><highlight class="normal"></highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwDestroyWindow(_raw_window);</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwTerminate();</highlight></codeline>
@@ -292,25 +292,25 @@
 <codeline lineno="71"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><ref refid="a00149" kindref="compound">math::Vector2</ref><sp/><ref refid="a00145_1a7666877758d915dca4176786fc0a7925" kindref="member">Window::getMonitorSize</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="a00154" kindref="compound">math::Vector2</ref><sp/><ref refid="a00150_1a7666877758d915dca4176786fc0a7925" kindref="member">Window::getMonitorSize</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"></highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwInit();</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>glfwGetVideoMode(glfwGetPrimaryMonitor());</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00149" kindref="compound">math::Vector2</ref>{.<ref refid="a00149_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref><sp/>=<sp/>(float)<sp/>mode-&gt;width,<sp/>.y<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>mode-&gt;height};</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00154" kindref="compound">math::Vector2</ref>{.<ref refid="a00154_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref><sp/>=<sp/>(float)<sp/>mode-&gt;width,<sp/>.y<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>mode-&gt;height};</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
 <codeline lineno="82"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00145_1a6df30484abfd5cc491a5ed2055692859" kindref="member">Window::should_window_close</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00150_1a6df30484abfd5cc491a5ed2055692859" kindref="member">Window::should_window_close</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glfwWindowShouldClose(_raw_window);</highlight></codeline>
 <codeline lineno="86"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00145_1a59515fc5a56e86d5a46d771595daac55" kindref="member">Window::update</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00150_1a59515fc5a56e86d5a46d771595daac55" kindref="member">Window::update</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwPollEvents();</highlight></codeline>
 <codeline lineno="90"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal">GLFWwindow<sp/>*<ref refid="a00145_1afc3176914723cab13d809b6ae8f3d6d2" kindref="member">Window::get_glfw_window</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">GLFWwindow<sp/>*<ref refid="a00150_1afc3176914723cab13d809b6ae8f3d6d2" kindref="member">Window::get_glfw_window</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_raw_window;</highlight></codeline>
 <codeline lineno="94"><highlight class="normal">}</highlight></codeline>
     </programlisting>

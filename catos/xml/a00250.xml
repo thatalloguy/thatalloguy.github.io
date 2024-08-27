@@ -1,178 +1,78 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00250" kind="class" language="C++" prot="public">
-    <compoundname>PipelineBuilder</compoundname>
-    <includes refid="a00071" local="no">VkPipelines.h</includes>
+  <compounddef id="a00250" kind="struct" language="C++" prot="public">
+    <compoundname>Node</compoundname>
+    <basecompoundref refid="a00234" prot="public" virt="non-virtual">IRenderable</basecompoundref>
+    <derivedcompoundref refid="a00226" prot="public" virt="non-virtual">MeshNode</derivedcompoundref>
+    <includes refid="a00065" local="no">VkLoader.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; VkPipelineShaderStageCreateInfo &gt;</type>
-        <definition>std::vector&lt;VkPipelineShaderStageCreateInfo&gt; PipelineBuilder::_shaderStages</definition>
+      <memberdef kind="variable" id="a00250_1a99e65d6b9186c551371b95ea3845b6fd" prot="public" static="no" mutable="no">
+        <type>std::weak_ptr&lt; <ref refid="a00250" kindref="compound">Node</ref> &gt;</type>
+        <definition>std::weak_ptr&lt;Node&gt; Node::parent</definition>
         <argsstring></argsstring>
-        <name>_shaderStages</name>
-        <qualifiedname>PipelineBuilder::_shaderStages</qualifiedname>
+        <name>parent</name>
+        <qualifiedname>Node::parent</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="30" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="30" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="63" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="63" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00250_1a9c96fd4cfd4451053618317e8dc2742d" prot="public" static="no" mutable="no">
-        <type>VkPipelineInputAssemblyStateCreateInfo</type>
-        <definition>VkPipelineInputAssemblyStateCreateInfo PipelineBuilder::_inputAssembly</definition>
+      <memberdef kind="variable" id="a00250_1a0f9591e9fa0bf1680b1e3ac8c32739aa" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::shared_ptr&lt; <ref refid="a00250" kindref="compound">Node</ref> &gt; &gt;</type>
+        <definition>std::vector&lt;std::shared_ptr&lt;Node&gt; &gt; Node::childern</definition>
         <argsstring></argsstring>
-        <name>_inputAssembly</name>
-        <qualifiedname>PipelineBuilder::_inputAssembly</qualifiedname>
+        <name>childern</name>
+        <qualifiedname>Node::childern</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="32" column="44" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="32" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="64" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="64" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00250_1a08020325183ad1d38da46c6df00d5f56" prot="public" static="no" mutable="no">
-        <type>VkPipelineRasterizationStateCreateInfo</type>
-        <definition>VkPipelineRasterizationStateCreateInfo PipelineBuilder::_rasterizer</definition>
+      <memberdef kind="variable" id="a00250_1a633dd4c9cfe7d73b9964bd90c0b9c28f" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 Node::localTransform</definition>
         <argsstring></argsstring>
-        <name>_rasterizer</name>
-        <qualifiedname>PipelineBuilder::_rasterizer</qualifiedname>
+        <name>localTransform</name>
+        <qualifiedname>Node::localTransform</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="33" column="44" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="33" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="66" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="66" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00250_1aa6733f7766a65f0aa7d78807b33da630" prot="public" static="no" mutable="no">
-        <type>VkPipelineColorBlendAttachmentState</type>
-        <definition>VkPipelineColorBlendAttachmentState PipelineBuilder::_colorBlendAttachment</definition>
+      <memberdef kind="variable" id="a00250_1a080e37187a37353df15596dc9250e700" prot="public" static="no" mutable="no">
+        <type>glm::mat4</type>
+        <definition>glm::mat4 Node::worldTransform</definition>
         <argsstring></argsstring>
-        <name>_colorBlendAttachment</name>
-        <qualifiedname>PipelineBuilder::_colorBlendAttachment</qualifiedname>
+        <name>worldTransform</name>
+        <qualifiedname>Node::worldTransform</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="34" column="42" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="34" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00250_1abbd337208ef05b087f450185fa2cde2e" prot="public" static="no" mutable="no">
-        <type>VkPipelineMultisampleStateCreateInfo</type>
-        <definition>VkPipelineMultisampleStateCreateInfo PipelineBuilder::_multisampling</definition>
-        <argsstring></argsstring>
-        <name>_multisampling</name>
-        <qualifiedname>PipelineBuilder::_multisampling</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="35" column="42" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="35" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00250_1a27a3416b889bde0dcce7c28bbb15ed46" prot="public" static="no" mutable="no">
-        <type>VkPipelineLayout</type>
-        <definition>VkPipelineLayout PipelineBuilder::_pipelineLayout</definition>
-        <argsstring></argsstring>
-        <name>_pipelineLayout</name>
-        <qualifiedname>PipelineBuilder::_pipelineLayout</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="36" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="36" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" prot="public" static="no" mutable="no">
-        <type>VkPipelineDepthStencilStateCreateInfo</type>
-        <definition>VkPipelineDepthStencilStateCreateInfo PipelineBuilder::_depthStencil</definition>
-        <argsstring></argsstring>
-        <name>_depthStencil</name>
-        <qualifiedname>PipelineBuilder::_depthStencil</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="37" column="43" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="37" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00250_1a15beb7114c2a59de1d8022dcc9d8219a" prot="public" static="no" mutable="no">
-        <type>VkPipelineRenderingCreateInfo</type>
-        <definition>VkPipelineRenderingCreateInfo PipelineBuilder::_renderInfo</definition>
-        <argsstring></argsstring>
-        <name>_renderInfo</name>
-        <qualifiedname>PipelineBuilder::_renderInfo</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="38" column="35" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="38" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00250_1a8a163243157a769336a712d8df4fd2ff" prot="public" static="no" mutable="no">
-        <type>VkFormat</type>
-        <definition>VkFormat PipelineBuilder::_colorAttachmentformat</definition>
-        <argsstring></argsstring>
-        <name>_colorAttachmentformat</name>
-        <qualifiedname>PipelineBuilder::_colorAttachmentformat</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="39" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="67" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="67" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00250_1a08bb82589a05c27fdde547e4a53c8a16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>PipelineBuilder::PipelineBuilder</definition>
-        <argsstring>()</argsstring>
-        <name>PipelineBuilder</name>
-        <qualifiedname>PipelineBuilder::PipelineBuilder</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="41" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="41" bodyend="41"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a10f1778c78c6b0d4c6b2b92b13b2191b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="a00250_1a04e0eff14682dca41284af38d0cb51a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void PipelineBuilder::clear</definition>
-        <argsstring>()</argsstring>
-        <name>clear</name>
-        <qualifiedname>PipelineBuilder::clear</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="43" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="48" bodyend="66"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a2228754d15d46e04d91c45974282716a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::setShaders</definition>
-        <argsstring>(VkShaderModule vertexShader, VkShaderModule fragmentShader)</argsstring>
-        <name>setShaders</name>
-        <qualifiedname>PipelineBuilder::setShaders</qualifiedname>
+        <definition>void Node::refreshTransform</definition>
+        <argsstring>(const glm::mat4 &amp;parentMatrix)</argsstring>
+        <name>refreshTransform</name>
+        <qualifiedname>Node::refreshTransform</qualifiedname>
         <param>
-          <type>VkShaderModule</type>
-          <declname>vertexShader</declname>
-        </param>
-        <param>
-          <type>VkShaderModule</type>
-          <declname>fragmentShader</declname>
+          <type>const glm::mat4 &amp;</type>
+          <declname>parentMatrix</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -180,243 +80,76 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="45" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="126" bodyend="136"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="69" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="69" bodyend="74"/>
       </memberdef>
-      <memberdef kind="function" id="a00250_1ac64ce97ba92f9226bbb11ce387b52661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="a00250_1a6870e549c7f428dbcd4f61d43eaa2f4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
-        <definition>void PipelineBuilder::setInputToplogy</definition>
-        <argsstring>(VkPrimitiveTopology topology)</argsstring>
-        <name>setInputToplogy</name>
-        <qualifiedname>PipelineBuilder::setInputToplogy</qualifiedname>
+        <definition>virtual void Node::Draw</definition>
+        <argsstring>(const glm::mat4 &amp;topMatrix, DrawContext &amp;ctx)</argsstring>
+        <name>Draw</name>
+        <qualifiedname>Node::Draw</qualifiedname>
+        <reimplements refid="a00234_1ae49bac0820d1ec198e844e29bf4420f4">Draw</reimplements>
+        <reimplementedby refid="a00226_1a8d5ed2175240d27f97e058508b110b51">Draw</reimplementedby>
         <param>
-          <type>VkPrimitiveTopology</type>
-          <declname>topology</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="46" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="138" bodyend="143"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a692362aaf0f61503d00b0f4ff5cfb134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::setPolygonMode</definition>
-        <argsstring>(VkPolygonMode mode)</argsstring>
-        <name>setPolygonMode</name>
-        <qualifiedname>PipelineBuilder::setPolygonMode</qualifiedname>
-        <param>
-          <type>VkPolygonMode</type>
-          <declname>mode</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="47" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="145" bodyend="149"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a4bba978feda490ecd639e05cf5df0dad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::setCullMode</definition>
-        <argsstring>(VkCullModeFlags cullMode, VkFrontFace frontFace)</argsstring>
-        <name>setCullMode</name>
-        <qualifiedname>PipelineBuilder::setCullMode</qualifiedname>
-        <param>
-          <type>VkCullModeFlags</type>
-          <declname>cullMode</declname>
+          <type>const glm::mat4 &amp;</type>
+          <declname>topMatrix</declname>
         </param>
         <param>
-          <type>VkFrontFace</type>
-          <declname>frontFace</declname>
+          <type><ref refid="a00222" kindref="compound">DrawContext</ref> &amp;</type>
+          <declname>ctx</declname>
         </param>
         <briefdescription>
+<para>TODO define <ref refid="a00222" kindref="compound">DrawContext</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="48" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="192" bodyend="195"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a586cf4dd2fa96f3a3e546ed5ee9aae0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::setMultisamplingNone</definition>
-        <argsstring>()</argsstring>
-        <name>setMultisamplingNone</name>
-        <qualifiedname>PipelineBuilder::setMultisamplingNone</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="49" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="151" bodyend="160"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a647ed08fe336a4e19382e20f6dfe8c51" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::disableBlending</definition>
-        <argsstring>()</argsstring>
-        <name>disableBlending</name>
-        <qualifiedname>PipelineBuilder::disableBlending</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="50" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="162" bodyend="166"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a98e8a722b30d50f7f9e224172a768061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::setColorAttachmentFormat</definition>
-        <argsstring>(VkFormat format)</argsstring>
-        <name>setColorAttachmentFormat</name>
-        <qualifiedname>PipelineBuilder::setColorAttachmentFormat</qualifiedname>
-        <param>
-          <type>VkFormat</type>
-          <declname>format</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="51" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="168" bodyend="173"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a8e9c83acd93cfcb0e9e21024d75c27cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::setDepthFormat</definition>
-        <argsstring>(VkFormat format)</argsstring>
-        <name>setDepthFormat</name>
-        <qualifiedname>PipelineBuilder::setDepthFormat</qualifiedname>
-        <param>
-          <type>VkFormat</type>
-          <declname>format</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="52" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="175" bodyend="178"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a965014baa4b56a3ad6c6c8981c2b001e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::disableDepthtest</definition>
-        <argsstring>()</argsstring>
-        <name>disableDepthtest</name>
-        <qualifiedname>PipelineBuilder::disableDepthtest</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="53" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="180" bodyend="190"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1a4ebe0b6e3f37ac498322d7dda1ec8a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::enableDepthtest</definition>
-        <argsstring>(bool depthWriteEnable, VkCompareOp op)</argsstring>
-        <name>enableDepthtest</name>
-        <qualifiedname>PipelineBuilder::enableDepthtest</qualifiedname>
-        <param>
-          <type>bool</type>
-          <declname>depthWriteEnable</declname>
-        </param>
-        <param>
-          <type>VkCompareOp</type>
-          <declname>op</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="54" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="197" bodyend="208"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1aa8a8b5d264a156de7a8beea3508723c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::enableBlendingAdditive</definition>
-        <argsstring>()</argsstring>
-        <name>enableBlendingAdditive</name>
-        <qualifiedname>PipelineBuilder::enableBlendingAdditive</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="55" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="210" bodyend="219"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1adbe69d479e856129f73056f6db4b4ebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void PipelineBuilder::enableBlendingAlphablend</definition>
-        <argsstring>()</argsstring>
-        <name>enableBlendingAlphablend</name>
-        <qualifiedname>PipelineBuilder::enableBlendingAlphablend</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="56" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="221" bodyend="230"/>
-      </memberdef>
-      <memberdef kind="function" id="a00250_1ab68e37be1873638547e1912ee287a19e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkPipeline</type>
-        <definition>VkPipeline PipelineBuilder::buildPipeline</definition>
-        <argsstring>(VkDevice device)</argsstring>
-        <name>buildPipeline</name>
-        <qualifiedname>PipelineBuilder::buildPipeline</qualifiedname>
-        <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="58" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.cpp" bodystart="68" bodyend="124"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="76" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="76" bodyend="81"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="27" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="27" bodyend="60"/>
+    <inheritancegraph>
+      <node id="2">
+        <label>IRenderable</label>
+        <link refid="a00234"/>
+      </node>
+      <node id="3">
+        <label>MeshNode</label>
+        <link refid="a00226"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Node</label>
+        <link refid="a00250"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>IRenderable</label>
+        <link refid="a00234"/>
+      </node>
+      <node id="1">
+        <label>Node</label>
+        <link refid="a00250"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="61" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="61" bodyend="82"/>
     <listofallmembers>
-      <member refid="a00250_1a8a163243157a769336a712d8df4fd2ff" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_colorAttachmentformat</name></member>
-      <member refid="a00250_1aa6733f7766a65f0aa7d78807b33da630" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_colorBlendAttachment</name></member>
-      <member refid="a00250_1a9ad4350c6c2916fe6d8735646e6b3268" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_depthStencil</name></member>
-      <member refid="a00250_1a9c96fd4cfd4451053618317e8dc2742d" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_inputAssembly</name></member>
-      <member refid="a00250_1abbd337208ef05b087f450185fa2cde2e" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_multisampling</name></member>
-      <member refid="a00250_1a27a3416b889bde0dcce7c28bbb15ed46" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_pipelineLayout</name></member>
-      <member refid="a00250_1a08020325183ad1d38da46c6df00d5f56" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_rasterizer</name></member>
-      <member refid="a00250_1a15beb7114c2a59de1d8022dcc9d8219a" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_renderInfo</name></member>
-      <member refid="a00250_1a67aa642c13dc5c0a1eb901bd2d47051d" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>_shaderStages</name></member>
-      <member refid="a00250_1ab68e37be1873638547e1912ee287a19e" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>buildPipeline</name></member>
-      <member refid="a00250_1a10f1778c78c6b0d4c6b2b92b13b2191b" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>clear</name></member>
-      <member refid="a00250_1a647ed08fe336a4e19382e20f6dfe8c51" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>disableBlending</name></member>
-      <member refid="a00250_1a965014baa4b56a3ad6c6c8981c2b001e" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>disableDepthtest</name></member>
-      <member refid="a00250_1aa8a8b5d264a156de7a8beea3508723c8" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>enableBlendingAdditive</name></member>
-      <member refid="a00250_1adbe69d479e856129f73056f6db4b4ebf" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>enableBlendingAlphablend</name></member>
-      <member refid="a00250_1a4ebe0b6e3f37ac498322d7dda1ec8a2d" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>enableDepthtest</name></member>
-      <member refid="a00250_1a08bb82589a05c27fdde547e4a53c8a16" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>PipelineBuilder</name></member>
-      <member refid="a00250_1a98e8a722b30d50f7f9e224172a768061" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>setColorAttachmentFormat</name></member>
-      <member refid="a00250_1a4bba978feda490ecd639e05cf5df0dad" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>setCullMode</name></member>
-      <member refid="a00250_1a8e9c83acd93cfcb0e9e21024d75c27cd" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>setDepthFormat</name></member>
-      <member refid="a00250_1ac64ce97ba92f9226bbb11ce387b52661" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>setInputToplogy</name></member>
-      <member refid="a00250_1a586cf4dd2fa96f3a3e546ed5ee9aae0d" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>setMultisamplingNone</name></member>
-      <member refid="a00250_1a692362aaf0f61503d00b0f4ff5cfb134" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>setPolygonMode</name></member>
-      <member refid="a00250_1a2228754d15d46e04d91c45974282716a" prot="public" virt="non-virtual"><scope>PipelineBuilder</scope><name>setShaders</name></member>
+      <member refid="a00250_1a0f9591e9fa0bf1680b1e3ac8c32739aa" prot="public" virt="non-virtual"><scope>Node</scope><name>childern</name></member>
+      <member refid="a00250_1a6870e549c7f428dbcd4f61d43eaa2f4b" prot="public" virt="virtual"><scope>Node</scope><name>Draw</name></member>
+      <member refid="a00250_1a633dd4c9cfe7d73b9964bd90c0b9c28f" prot="public" virt="non-virtual"><scope>Node</scope><name>localTransform</name></member>
+      <member refid="a00250_1a99e65d6b9186c551371b95ea3845b6fd" prot="public" virt="non-virtual"><scope>Node</scope><name>parent</name></member>
+      <member refid="a00250_1a04e0eff14682dca41284af38d0cb51a5" prot="public" virt="non-virtual"><scope>Node</scope><name>refreshTransform</name></member>
+      <member refid="a00250_1a080e37187a37353df15596dc9250e700" prot="public" virt="non-virtual"><scope>Node</scope><name>worldTransform</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

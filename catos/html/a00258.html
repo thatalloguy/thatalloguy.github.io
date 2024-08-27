@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): Member List</title>
+<title>Catos Engine (Source): PipelineBuilder Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a00261.html',''); initResizable(); });
+$(function(){initNavTree('a00258.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,18 +94,479 @@ $(function(){initNavTree('a00261.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Vertex Member List</div></div>
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00255.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">PipelineBuilder Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00261.html">Vertex</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00261.html#aa7ecd21578677765699b8831e0011696">color</a></td><td class="entry"><a class="el" href="a00261.html">Vertex</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00261.html#a3aa35fe84025ecf1acccb5f65f5577fd">normal</a></td><td class="entry"><a class="el" href="a00261.html">Vertex</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00261.html#a030819fdc241743bbd3e180a6b132ed3">position</a></td><td class="entry"><a class="el" href="a00261.html">Vertex</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00261.html#a3c6b70cc0df673dab20ae012fa7a4ce3">uv_x</a></td><td class="entry"><a class="el" href="a00261.html">Vertex</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00261.html#a8dfaf04a6d2a62045fee28010aeb92eb">uv_y</a></td><td class="entry"><a class="el" href="a00261.html">Vertex</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="a00071_source.html">VkPipelines.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a08bb82589a05c27fdde547e4a53c8a16" id="r_a08bb82589a05c27fdde547e4a53c8a16"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08bb82589a05c27fdde547e4a53c8a16">PipelineBuilder</a> ()</td></tr>
+<tr class="separator:a08bb82589a05c27fdde547e4a53c8a16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10f1778c78c6b0d4c6b2b92b13b2191b" id="r_a10f1778c78c6b0d4c6b2b92b13b2191b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a10f1778c78c6b0d4c6b2b92b13b2191b">clear</a> ()</td></tr>
+<tr class="separator:a10f1778c78c6b0d4c6b2b92b13b2191b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2228754d15d46e04d91c45974282716a" id="r_a2228754d15d46e04d91c45974282716a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2228754d15d46e04d91c45974282716a">setShaders</a> (VkShaderModule vertexShader, VkShaderModule fragmentShader)</td></tr>
+<tr class="separator:a2228754d15d46e04d91c45974282716a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac64ce97ba92f9226bbb11ce387b52661" id="r_ac64ce97ba92f9226bbb11ce387b52661"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac64ce97ba92f9226bbb11ce387b52661">setInputToplogy</a> (VkPrimitiveTopology topology)</td></tr>
+<tr class="separator:ac64ce97ba92f9226bbb11ce387b52661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692362aaf0f61503d00b0f4ff5cfb134" id="r_a692362aaf0f61503d00b0f4ff5cfb134"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a692362aaf0f61503d00b0f4ff5cfb134">setPolygonMode</a> (VkPolygonMode mode)</td></tr>
+<tr class="separator:a692362aaf0f61503d00b0f4ff5cfb134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bba978feda490ecd639e05cf5df0dad" id="r_a4bba978feda490ecd639e05cf5df0dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bba978feda490ecd639e05cf5df0dad">setCullMode</a> (VkCullModeFlags cullMode, VkFrontFace frontFace)</td></tr>
+<tr class="separator:a4bba978feda490ecd639e05cf5df0dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a586cf4dd2fa96f3a3e546ed5ee9aae0d" id="r_a586cf4dd2fa96f3a3e546ed5ee9aae0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a586cf4dd2fa96f3a3e546ed5ee9aae0d">setMultisamplingNone</a> ()</td></tr>
+<tr class="separator:a586cf4dd2fa96f3a3e546ed5ee9aae0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a647ed08fe336a4e19382e20f6dfe8c51" id="r_a647ed08fe336a4e19382e20f6dfe8c51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a647ed08fe336a4e19382e20f6dfe8c51">disableBlending</a> ()</td></tr>
+<tr class="separator:a647ed08fe336a4e19382e20f6dfe8c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98e8a722b30d50f7f9e224172a768061" id="r_a98e8a722b30d50f7f9e224172a768061"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98e8a722b30d50f7f9e224172a768061">setColorAttachmentFormat</a> (VkFormat format)</td></tr>
+<tr class="separator:a98e8a722b30d50f7f9e224172a768061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e9c83acd93cfcb0e9e21024d75c27cd" id="r_a8e9c83acd93cfcb0e9e21024d75c27cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8e9c83acd93cfcb0e9e21024d75c27cd">setDepthFormat</a> (VkFormat format)</td></tr>
+<tr class="separator:a8e9c83acd93cfcb0e9e21024d75c27cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a965014baa4b56a3ad6c6c8981c2b001e" id="r_a965014baa4b56a3ad6c6c8981c2b001e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a965014baa4b56a3ad6c6c8981c2b001e">disableDepthtest</a> ()</td></tr>
+<tr class="separator:a965014baa4b56a3ad6c6c8981c2b001e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ebe0b6e3f37ac498322d7dda1ec8a2d" id="r_a4ebe0b6e3f37ac498322d7dda1ec8a2d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ebe0b6e3f37ac498322d7dda1ec8a2d">enableDepthtest</a> (bool depthWriteEnable, VkCompareOp op)</td></tr>
+<tr class="separator:a4ebe0b6e3f37ac498322d7dda1ec8a2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8a8b5d264a156de7a8beea3508723c8" id="r_aa8a8b5d264a156de7a8beea3508723c8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8a8b5d264a156de7a8beea3508723c8">enableBlendingAdditive</a> ()</td></tr>
+<tr class="separator:aa8a8b5d264a156de7a8beea3508723c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe69d479e856129f73056f6db4b4ebf" id="r_adbe69d479e856129f73056f6db4b4ebf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbe69d479e856129f73056f6db4b4ebf">enableBlendingAlphablend</a> ()</td></tr>
+<tr class="separator:adbe69d479e856129f73056f6db4b4ebf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab68e37be1873638547e1912ee287a19e" id="r_ab68e37be1873638547e1912ee287a19e"><td class="memItemLeft" align="right" valign="top">VkPipeline&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab68e37be1873638547e1912ee287a19e">buildPipeline</a> (VkDevice device)</td></tr>
+<tr class="separator:ab68e37be1873638547e1912ee287a19e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a67aa642c13dc5c0a1eb901bd2d47051d" id="r_a67aa642c13dc5c0a1eb901bd2d47051d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; VkPipelineShaderStageCreateInfo &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a67aa642c13dc5c0a1eb901bd2d47051d">_shaderStages</a></td></tr>
+<tr class="separator:a67aa642c13dc5c0a1eb901bd2d47051d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c96fd4cfd4451053618317e8dc2742d" id="r_a9c96fd4cfd4451053618317e8dc2742d"><td class="memItemLeft" align="right" valign="top">VkPipelineInputAssemblyStateCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c96fd4cfd4451053618317e8dc2742d">_inputAssembly</a></td></tr>
+<tr class="separator:a9c96fd4cfd4451053618317e8dc2742d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08020325183ad1d38da46c6df00d5f56" id="r_a08020325183ad1d38da46c6df00d5f56"><td class="memItemLeft" align="right" valign="top">VkPipelineRasterizationStateCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a08020325183ad1d38da46c6df00d5f56">_rasterizer</a></td></tr>
+<tr class="separator:a08020325183ad1d38da46c6df00d5f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6733f7766a65f0aa7d78807b33da630" id="r_aa6733f7766a65f0aa7d78807b33da630"><td class="memItemLeft" align="right" valign="top">VkPipelineColorBlendAttachmentState&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6733f7766a65f0aa7d78807b33da630">_colorBlendAttachment</a></td></tr>
+<tr class="separator:aa6733f7766a65f0aa7d78807b33da630"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd337208ef05b087f450185fa2cde2e" id="r_abbd337208ef05b087f450185fa2cde2e"><td class="memItemLeft" align="right" valign="top">VkPipelineMultisampleStateCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abbd337208ef05b087f450185fa2cde2e">_multisampling</a></td></tr>
+<tr class="separator:abbd337208ef05b087f450185fa2cde2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27a3416b889bde0dcce7c28bbb15ed46" id="r_a27a3416b889bde0dcce7c28bbb15ed46"><td class="memItemLeft" align="right" valign="top">VkPipelineLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a27a3416b889bde0dcce7c28bbb15ed46">_pipelineLayout</a></td></tr>
+<tr class="separator:a27a3416b889bde0dcce7c28bbb15ed46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ad4350c6c2916fe6d8735646e6b3268" id="r_a9ad4350c6c2916fe6d8735646e6b3268"><td class="memItemLeft" align="right" valign="top">VkPipelineDepthStencilStateCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9ad4350c6c2916fe6d8735646e6b3268">_depthStencil</a></td></tr>
+<tr class="separator:a9ad4350c6c2916fe6d8735646e6b3268"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15beb7114c2a59de1d8022dcc9d8219a" id="r_a15beb7114c2a59de1d8022dcc9d8219a"><td class="memItemLeft" align="right" valign="top">VkPipelineRenderingCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15beb7114c2a59de1d8022dcc9d8219a">_renderInfo</a></td></tr>
+<tr class="separator:a15beb7114c2a59de1d8022dcc9d8219a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a163243157a769336a712d8df4fd2ff" id="r_a8a163243157a769336a712d8df4fd2ff"><td class="memItemLeft" align="right" valign="top">VkFormat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a163243157a769336a712d8df4fd2ff">_colorAttachmentformat</a></td></tr>
+<tr class="separator:a8a163243157a769336a712d8df4fd2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a08bb82589a05c27fdde547e4a53c8a16" name="a08bb82589a05c27fdde547e4a53c8a16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08bb82589a05c27fdde547e4a53c8a16">&#9670;&#160;</a></span>PipelineBuilder()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">PipelineBuilder::PipelineBuilder </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab68e37be1873638547e1912ee287a19e" name="ab68e37be1873638547e1912ee287a19e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab68e37be1873638547e1912ee287a19e">&#9670;&#160;</a></span>buildPipeline()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipeline PipelineBuilder::buildPipeline </td>
+          <td>(</td>
+          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a10f1778c78c6b0d4c6b2b92b13b2191b" name="a10f1778c78c6b0d4c6b2b92b13b2191b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10f1778c78c6b0d4c6b2b92b13b2191b">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a647ed08fe336a4e19382e20f6dfe8c51" name="a647ed08fe336a4e19382e20f6dfe8c51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a647ed08fe336a4e19382e20f6dfe8c51">&#9670;&#160;</a></span>disableBlending()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::disableBlending </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a965014baa4b56a3ad6c6c8981c2b001e" name="a965014baa4b56a3ad6c6c8981c2b001e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a965014baa4b56a3ad6c6c8981c2b001e">&#9670;&#160;</a></span>disableDepthtest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::disableDepthtest </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8a8b5d264a156de7a8beea3508723c8" name="aa8a8b5d264a156de7a8beea3508723c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8a8b5d264a156de7a8beea3508723c8">&#9670;&#160;</a></span>enableBlendingAdditive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::enableBlendingAdditive </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbe69d479e856129f73056f6db4b4ebf" name="adbe69d479e856129f73056f6db4b4ebf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbe69d479e856129f73056f6db4b4ebf">&#9670;&#160;</a></span>enableBlendingAlphablend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::enableBlendingAlphablend </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ebe0b6e3f37ac498322d7dda1ec8a2d" name="a4ebe0b6e3f37ac498322d7dda1ec8a2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ebe0b6e3f37ac498322d7dda1ec8a2d">&#9670;&#160;</a></span>enableDepthtest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::enableDepthtest </td>
+          <td>(</td>
+          <td class="paramtype">bool</td>          <td class="paramname"><span class="paramname"><em>depthWriteEnable</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkCompareOp</td>          <td class="paramname"><span class="paramname"><em>op</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a98e8a722b30d50f7f9e224172a768061" name="a98e8a722b30d50f7f9e224172a768061"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98e8a722b30d50f7f9e224172a768061">&#9670;&#160;</a></span>setColorAttachmentFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::setColorAttachmentFormat </td>
+          <td>(</td>
+          <td class="paramtype">VkFormat</td>          <td class="paramname"><span class="paramname"><em>format</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bba978feda490ecd639e05cf5df0dad" name="a4bba978feda490ecd639e05cf5df0dad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bba978feda490ecd639e05cf5df0dad">&#9670;&#160;</a></span>setCullMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::setCullMode </td>
+          <td>(</td>
+          <td class="paramtype">VkCullModeFlags</td>          <td class="paramname"><span class="paramname"><em>cullMode</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkFrontFace</td>          <td class="paramname"><span class="paramname"><em>frontFace</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e9c83acd93cfcb0e9e21024d75c27cd" name="a8e9c83acd93cfcb0e9e21024d75c27cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e9c83acd93cfcb0e9e21024d75c27cd">&#9670;&#160;</a></span>setDepthFormat()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::setDepthFormat </td>
+          <td>(</td>
+          <td class="paramtype">VkFormat</td>          <td class="paramname"><span class="paramname"><em>format</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac64ce97ba92f9226bbb11ce387b52661" name="ac64ce97ba92f9226bbb11ce387b52661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac64ce97ba92f9226bbb11ce387b52661">&#9670;&#160;</a></span>setInputToplogy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::setInputToplogy </td>
+          <td>(</td>
+          <td class="paramtype">VkPrimitiveTopology</td>          <td class="paramname"><span class="paramname"><em>topology</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a586cf4dd2fa96f3a3e546ed5ee9aae0d" name="a586cf4dd2fa96f3a3e546ed5ee9aae0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a586cf4dd2fa96f3a3e546ed5ee9aae0d">&#9670;&#160;</a></span>setMultisamplingNone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::setMultisamplingNone </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a692362aaf0f61503d00b0f4ff5cfb134" name="a692362aaf0f61503d00b0f4ff5cfb134"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a692362aaf0f61503d00b0f4ff5cfb134">&#9670;&#160;</a></span>setPolygonMode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::setPolygonMode </td>
+          <td>(</td>
+          <td class="paramtype">VkPolygonMode</td>          <td class="paramname"><span class="paramname"><em>mode</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2228754d15d46e04d91c45974282716a" name="a2228754d15d46e04d91c45974282716a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2228754d15d46e04d91c45974282716a">&#9670;&#160;</a></span>setShaders()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PipelineBuilder::setShaders </td>
+          <td>(</td>
+          <td class="paramtype">VkShaderModule</td>          <td class="paramname"><span class="paramname"><em>vertexShader</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkShaderModule</td>          <td class="paramname"><span class="paramname"><em>fragmentShader</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a8a163243157a769336a712d8df4fd2ff" name="a8a163243157a769336a712d8df4fd2ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a163243157a769336a712d8df4fd2ff">&#9670;&#160;</a></span>_colorAttachmentformat</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkFormat PipelineBuilder::_colorAttachmentformat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa6733f7766a65f0aa7d78807b33da630" name="aa6733f7766a65f0aa7d78807b33da630"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6733f7766a65f0aa7d78807b33da630">&#9670;&#160;</a></span>_colorBlendAttachment</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipelineColorBlendAttachmentState PipelineBuilder::_colorBlendAttachment</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9ad4350c6c2916fe6d8735646e6b3268" name="a9ad4350c6c2916fe6d8735646e6b3268"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ad4350c6c2916fe6d8735646e6b3268">&#9670;&#160;</a></span>_depthStencil</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipelineDepthStencilStateCreateInfo PipelineBuilder::_depthStencil</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9c96fd4cfd4451053618317e8dc2742d" name="a9c96fd4cfd4451053618317e8dc2742d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c96fd4cfd4451053618317e8dc2742d">&#9670;&#160;</a></span>_inputAssembly</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipelineInputAssemblyStateCreateInfo PipelineBuilder::_inputAssembly</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbd337208ef05b087f450185fa2cde2e" name="abbd337208ef05b087f450185fa2cde2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd337208ef05b087f450185fa2cde2e">&#9670;&#160;</a></span>_multisampling</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipelineMultisampleStateCreateInfo PipelineBuilder::_multisampling</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a27a3416b889bde0dcce7c28bbb15ed46" name="a27a3416b889bde0dcce7c28bbb15ed46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27a3416b889bde0dcce7c28bbb15ed46">&#9670;&#160;</a></span>_pipelineLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipelineLayout PipelineBuilder::_pipelineLayout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a08020325183ad1d38da46c6df00d5f56" name="a08020325183ad1d38da46c6df00d5f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08020325183ad1d38da46c6df00d5f56">&#9670;&#160;</a></span>_rasterizer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipelineRasterizationStateCreateInfo PipelineBuilder::_rasterizer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15beb7114c2a59de1d8022dcc9d8219a" name="a15beb7114c2a59de1d8022dcc9d8219a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15beb7114c2a59de1d8022dcc9d8219a">&#9670;&#160;</a></span>_renderInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkPipelineRenderingCreateInfo PipelineBuilder::_renderInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a67aa642c13dc5c0a1eb901bd2d47051d" name="a67aa642c13dc5c0a1eb901bd2d47051d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67aa642c13dc5c0a1eb901bd2d47051d">&#9670;&#160;</a></span>_shaderStages</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;VkPipelineShaderStageCreateInfo&gt; PipelineBuilder::_shaderStages</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="a00071_source.html">VkPipelines.h</a></li>
+<li><a class="el" href="a00068.html">VkPipelines.cpp</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

@@ -1,106 +1,91 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00274" kind="struct" language="C++" prot="public">
-    <compoundname>GPUSceneData</compoundname>
+    <compoundname>Vertex</compoundname>
     <includes refid="a00074" local="no">VkTypes.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00274_1a11a59cecab808ab8f32a2229cb9cbc05" prot="public" static="no" mutable="no">
-        <type>glm::mat4</type>
-        <definition>glm::mat4 GPUSceneData::view</definition>
+      <memberdef kind="variable" id="a00274_1a030819fdc241743bbd3e180a6b132ed3" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 Vertex::position</definition>
         <argsstring></argsstring>
-        <name>view</name>
-        <qualifiedname>GPUSceneData::view</qualifiedname>
+        <name>position</name>
+        <qualifiedname>Vertex::position</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="86" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="86" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="71" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="71" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00274_1a94a8aebb2509f463fdd5930a18e220a9" prot="public" static="no" mutable="no">
-        <type>glm::mat4</type>
-        <definition>glm::mat4 GPUSceneData::proj</definition>
+      <memberdef kind="variable" id="a00274_1a3c6b70cc0df673dab20ae012fa7a4ce3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Vertex::uv_x</definition>
         <argsstring></argsstring>
-        <name>proj</name>
-        <qualifiedname>GPUSceneData::proj</qualifiedname>
+        <name>uv_x</name>
+        <qualifiedname>Vertex::uv_x</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="87" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="87" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="72" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="72" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00274_1a1eb16232bc41fa47f782f3848e6d5419" prot="public" static="no" mutable="no">
-        <type>glm::mat4</type>
-        <definition>glm::mat4 GPUSceneData::viewproj</definition>
+      <memberdef kind="variable" id="a00274_1a3aa35fe84025ecf1acccb5f65f5577fd" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 Vertex::normal</definition>
         <argsstring></argsstring>
-        <name>viewproj</name>
-        <qualifiedname>GPUSceneData::viewproj</qualifiedname>
+        <name>normal</name>
+        <qualifiedname>Vertex::normal</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="88" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="88" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="73" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="73" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00274_1a80aa527f0dd23ad93ce82ccae46a2bb8" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00274_1a8dfaf04a6d2a62045fee28010aeb92eb" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Vertex::uv_y</definition>
+        <argsstring></argsstring>
+        <name>uv_y</name>
+        <qualifiedname>Vertex::uv_y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="74" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00274_1aa7ecd21578677765699b8831e0011696" prot="public" static="no" mutable="no">
         <type>glm::vec4</type>
-        <definition>glm::vec4 GPUSceneData::ambientColor</definition>
+        <definition>glm::vec4 Vertex::color</definition>
         <argsstring></argsstring>
-        <name>ambientColor</name>
-        <qualifiedname>GPUSceneData::ambientColor</qualifiedname>
+        <name>color</name>
+        <qualifiedname>Vertex::color</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="89" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="89" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00274_1a0d0ad9dbe48fd5cffa61d7b7e7a08026" prot="public" static="no" mutable="no">
-        <type>glm::vec4</type>
-        <definition>glm::vec4 GPUSceneData::sunLightDirection</definition>
-        <argsstring></argsstring>
-        <name>sunLightDirection</name>
-        <qualifiedname>GPUSceneData::sunLightDirection</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="90" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="90" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00274_1ae6655907e76d7de3832f5d9d15bb812f" prot="public" static="no" mutable="no">
-        <type>glm::vec4</type>
-        <definition>glm::vec4 GPUSceneData::sunlightColor</definition>
-        <argsstring></argsstring>
-        <name>sunlightColor</name>
-        <qualifiedname>GPUSceneData::sunlightColor</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="91" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="91" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="75" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="75" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="85" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="85" bodyend="92"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="70" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="70" bodyend="76"/>
     <listofallmembers>
-      <member refid="a00274_1a80aa527f0dd23ad93ce82ccae46a2bb8" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>ambientColor</name></member>
-      <member refid="a00274_1a94a8aebb2509f463fdd5930a18e220a9" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>proj</name></member>
-      <member refid="a00274_1ae6655907e76d7de3832f5d9d15bb812f" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>sunlightColor</name></member>
-      <member refid="a00274_1a0d0ad9dbe48fd5cffa61d7b7e7a08026" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>sunLightDirection</name></member>
-      <member refid="a00274_1a11a59cecab808ab8f32a2229cb9cbc05" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>view</name></member>
-      <member refid="a00274_1a1eb16232bc41fa47f782f3848e6d5419" prot="public" virt="non-virtual"><scope>GPUSceneData</scope><name>viewproj</name></member>
+      <member refid="a00274_1aa7ecd21578677765699b8831e0011696" prot="public" virt="non-virtual"><scope>Vertex</scope><name>color</name></member>
+      <member refid="a00274_1a3aa35fe84025ecf1acccb5f65f5577fd" prot="public" virt="non-virtual"><scope>Vertex</scope><name>normal</name></member>
+      <member refid="a00274_1a030819fdc241743bbd3e180a6b132ed3" prot="public" virt="non-virtual"><scope>Vertex</scope><name>position</name></member>
+      <member refid="a00274_1a3c6b70cc0df673dab20ae012fa7a4ce3" prot="public" virt="non-virtual"><scope>Vertex</scope><name>uv_x</name></member>
+      <member refid="a00274_1a8dfaf04a6d2a62045fee28010aeb92eb" prot="public" virt="non-virtual"><scope>Vertex</scope><name>uv_y</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

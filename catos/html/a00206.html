@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): Member List</title>
+<title>Catos Engine (Source): GLTFMetallic_roughness Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -68,7 +68,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(function(){initNavTree('a00209.html',''); initResizable(); });
+$(function(){initNavTree('a00206.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -94,15 +94,196 @@ $(function(){initNavTree('a00209.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">DrawContext Member List</div></div>
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="a00203.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">GLTFMetallic_roughness Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00209.html">DrawContext</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00209.html#a92fc7232c72c6f3b5dc4e12dd6606f17">OpaqueSurfaces</a></td><td class="entry"><a class="el" href="a00209.html">DrawContext</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00209.html#ad057160f65e0657e137a740ec37d31c2">TransparentSurfaces</a></td><td class="entry"><a class="el" href="a00209.html">DrawContext</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="a00047_source.html">VkEngine.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html">MaterialConstants</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html">MaterialResources</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ac6b86602d156a5555b3799b9172c674e" id="r_ac6b86602d156a5555b3799b9172c674e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6b86602d156a5555b3799b9172c674e">buildPipelines</a> (<a class="el" href="a00230.html">VulkanEngine</a> *engine)</td></tr>
+<tr class="separator:ac6b86602d156a5555b3799b9172c674e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdddc2beb7cc303daabfa28404afa2c9" id="r_acdddc2beb7cc303daabfa28404afa2c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdddc2beb7cc303daabfa28404afa2c9">clearResources</a> (VkDevice device)</td></tr>
+<tr class="separator:acdddc2beb7cc303daabfa28404afa2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a744d03ddb8fe03ea8ee07f2ae3b42de5" id="r_a744d03ddb8fe03ea8ee07f2ae3b42de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00294.html">MaterialInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a744d03ddb8fe03ea8ee07f2ae3b42de5">writeMaterial</a> (VkDevice device, <a class="el" href="a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a> pass, const <a class="el" href="a00214.html">MaterialResources</a> &amp;resources, <a class="el" href="a00182.html">DescriptorAllocatorGrowable</a> descriptorAllocator)</td></tr>
+<tr class="separator:a744d03ddb8fe03ea8ee07f2ae3b42de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96ff6cb8fd8d01b16921be3900827939" id="r_a96ff6cb8fd8d01b16921be3900827939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96ff6cb8fd8d01b16921be3900827939">destroy</a> (VkDevice device, <a class="el" href="a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a> passType)</td></tr>
+<tr class="separator:a96ff6cb8fd8d01b16921be3900827939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a14e8a4c07862539d98a1793cf7be2e24" id="r_a14e8a4c07862539d98a1793cf7be2e24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00290.html">MaterialPipeline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14e8a4c07862539d98a1793cf7be2e24">opaquePipeline</a></td></tr>
+<tr class="separator:a14e8a4c07862539d98a1793cf7be2e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20a1e6318217b3d3e63e91439022a4d8" id="r_a20a1e6318217b3d3e63e91439022a4d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00290.html">MaterialPipeline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a1e6318217b3d3e63e91439022a4d8">transparentPipeline</a></td></tr>
+<tr class="separator:a20a1e6318217b3d3e63e91439022a4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a269aa1b48852004420322491f8e03e4a" id="r_a269aa1b48852004420322491f8e03e4a"><td class="memItemLeft" align="right" valign="top">VkDescriptorSetLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a269aa1b48852004420322491f8e03e4a">materialLayout</a></td></tr>
+<tr class="separator:a269aa1b48852004420322491f8e03e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90094ab356bc8a5426f8012f76c1326f" id="r_a90094ab356bc8a5426f8012f76c1326f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00190.html">DescriptorWriter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90094ab356bc8a5426f8012f76c1326f">writer</a></td></tr>
+<tr class="separator:a90094ab356bc8a5426f8012f76c1326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac6b86602d156a5555b3799b9172c674e" name="ac6b86602d156a5555b3799b9172c674e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6b86602d156a5555b3799b9172c674e">&#9670;&#160;</a></span>buildPipelines()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLTFMetallic_roughness::buildPipelines </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00230.html">VulkanEngine</a> *</td>          <td class="paramname"><span class="paramname"><em>engine</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdddc2beb7cc303daabfa28404afa2c9" name="acdddc2beb7cc303daabfa28404afa2c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdddc2beb7cc303daabfa28404afa2c9">&#9670;&#160;</a></span>clearResources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLTFMetallic_roughness::clearResources </td>
+          <td>(</td>
+          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>EMPTY?</p>
+
+</div>
+</div>
+<a id="a96ff6cb8fd8d01b16921be3900827939" name="a96ff6cb8fd8d01b16921be3900827939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96ff6cb8fd8d01b16921be3900827939">&#9670;&#160;</a></span>destroy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void GLTFMetallic_roughness::destroy </td>
+          <td>(</td>
+          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a></td>          <td class="paramname"><span class="paramname"><em>passType</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a744d03ddb8fe03ea8ee07f2ae3b42de5" name="a744d03ddb8fe03ea8ee07f2ae3b42de5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a744d03ddb8fe03ea8ee07f2ae3b42de5">&#9670;&#160;</a></span>writeMaterial()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00294.html">MaterialInstance</a> GLTFMetallic_roughness::writeMaterial </td>
+          <td>(</td>
+          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a></td>          <td class="paramname"><span class="paramname"><em>pass</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="a00214.html">MaterialResources</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>resources</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00182.html">DescriptorAllocatorGrowable</a></td>          <td class="paramname"><span class="paramname"><em>descriptorAllocator</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a269aa1b48852004420322491f8e03e4a" name="a269aa1b48852004420322491f8e03e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a269aa1b48852004420322491f8e03e4a">&#9670;&#160;</a></span>materialLayout</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkDescriptorSetLayout GLTFMetallic_roughness::materialLayout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14e8a4c07862539d98a1793cf7be2e24" name="a14e8a4c07862539d98a1793cf7be2e24"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14e8a4c07862539d98a1793cf7be2e24">&#9670;&#160;</a></span>opaquePipeline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00290.html">MaterialPipeline</a> GLTFMetallic_roughness::opaquePipeline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20a1e6318217b3d3e63e91439022a4d8" name="a20a1e6318217b3d3e63e91439022a4d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20a1e6318217b3d3e63e91439022a4d8">&#9670;&#160;</a></span>transparentPipeline</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00290.html">MaterialPipeline</a> GLTFMetallic_roughness::transparentPipeline</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90094ab356bc8a5426f8012f76c1326f" name="a90094ab356bc8a5426f8012f76c1326f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90094ab356bc8a5426f8012f76c1326f">&#9670;&#160;</a></span>writer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00190.html">DescriptorWriter</a> GLTFMetallic_roughness::writer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="a00047_source.html">VkEngine.h</a></li>
+<li><a class="el" href="a00044.html">VkEngine.cpp</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

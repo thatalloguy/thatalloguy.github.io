@@ -2,10 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="dir_4c1af30473a9e10bbf0089f4a009f125" kind="dir">
     <compoundname>stl</compoundname>
-    <innerfile refid="a00077">string.cpp</innerfile>
-    <innerfile refid="a00080">string.h</innerfile>
-    <innerfile refid="a00083">vector.cpp</innerfile>
-    <innerfile refid="a00086">vector.h</innerfile>
+    <innerfile refid="a00083">string.cpp</innerfile>
+    <innerfile refid="a00086">string.h</innerfile>
+    <innerfile refid="a00089">vector.cpp</innerfile>
+    <innerfile refid="a00092">vector.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
