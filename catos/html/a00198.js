@@ -1,7 +1,5 @@
 var a00198 =
 [
-    [ "data1", "a00198.html#af1b14859e4a196ab2313734dde81428a", null ],
-    [ "data2", "a00198.html#aaa6359f4ea37d85e40f2881ef732826b", null ],
-    [ "data3", "a00198.html#a5035e7701b815f7e95c3fd525b6e075e", null ],
-    [ "data4", "a00198.html#ad1b7e85d855000abe4f3c62ca6b9e85e", null ]
+    [ "ratio", "a00198.html#ab81f0e5da32fc800faa04f6add9b3e29", null ],
+    [ "type", "a00198.html#a225b758ecd1cfec187eff382cf678e24", null ]
 ];

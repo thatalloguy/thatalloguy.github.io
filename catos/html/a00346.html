@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): catos::Entity Class Reference</title>
+<title>Catos Engine (Source): catos::Pair&lt; K, V &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,125 +95,62 @@ $(function(){initNavTree('a00346.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00343.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">catos::Entity Class Reference</div></div>
+  <div class="headertitle"><div class="title">catos::Pair&lt; K, V &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>An empty model for representing any object in the (game) world.  
+<p>Simple struct to hold 2 objects.  
  <a href="#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="a00101_source.html">world.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00092_source.html">pair.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:aa64e01f4ef9c5a8ee56433dbec6d78df" id="r_aa64e01f4ef9c5a8ee56433dbec6d78df"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa64e01f4ef9c5a8ee56433dbec6d78df">Entity</a> ()</td></tr>
-<tr class="memdesc:aa64e01f4ef9c5a8ee56433dbec6d78df"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates the entity.  <br /></td></tr>
-<tr class="separator:aa64e01f4ef9c5a8ee56433dbec6d78df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bc0234ba129f76c6457d0180b796443" id="r_a7bc0234ba129f76c6457d0180b796443"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7bc0234ba129f76c6457d0180b796443">Entity</a> (<a class="el" href="a00346.html">Entity</a> &amp;&amp;entity)</td></tr>
-<tr class="memdesc:a7bc0234ba129f76c6457d0180b796443"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys the entity and its allocated resources.  <br /></td></tr>
-<tr class="separator:a7bc0234ba129f76c6457d0180b796443"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bd9c6cb4b32e383ac6244dcf6fe8b8a" id="r_a5bd9c6cb4b32e383ac6244dcf6fe8b8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00342.html">Transform</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bd9c6cb4b32e383ac6244dcf6fe8b8a">getTransform</a> ()</td></tr>
-<tr class="memdesc:a5bd9c6cb4b32e383ac6244dcf6fe8b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a REFERENCE to the private transform.  <br /></td></tr>
-<tr class="separator:a5bd9c6cb4b32e383ac6244dcf6fe8b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a2a440205eae919719088513015c3865e" id="r_a2a440205eae919719088513015c3865e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="a00104.html#a378b7638d7f5500d23e49f3e6e9b1ec6">EntityID</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a440205eae919719088513015c3865e">id</a></td></tr>
-<tr class="memdesc:a2a440205eae919719088513015c3865e"><td class="mdescLeft">&#160;</td><td class="mdescRight">its ID represented by an uint  <br /></td></tr>
-<tr class="separator:a2a440205eae919719088513015c3865e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3137be321adbf3d39fd0704347ba0d" id="r_afd3137be321adbf3d39fd0704347ba0d"><td class="memItemLeft" align="right" valign="top">K&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afd3137be321adbf3d39fd0704347ba0d">first</a></td></tr>
+<tr class="separator:afd3137be321adbf3d39fd0704347ba0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68c4137fc03048a0b7da4c84cd4a253" id="r_ad68c4137fc03048a0b7da4c84cd4a253"><td class="memItemLeft" align="right" valign="top">V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad68c4137fc03048a0b7da4c84cd4a253">second</a></td></tr>
+<tr class="separator:ad68c4137fc03048a0b7da4c84cd4a253"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An empty model for representing any object in the (game) world. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aa64e01f4ef9c5a8ee56433dbec6d78df" name="aa64e01f4ef9c5a8ee56433dbec6d78df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa64e01f4ef9c5a8ee56433dbec6d78df">&#9670;&#160;</a></span>Entity() <span class="overload">[1/2]</span></h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename K, typename V&gt;<br />
+struct catos::Pair&lt; K, V &gt;</div><p>Simple struct to hold 2 objects. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="afd3137be321adbf3d39fd0704347ba0d" name="afd3137be321adbf3d39fd0704347ba0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3137be321adbf3d39fd0704347ba0d">&#9670;&#160;</a></span>first</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">catos::Entity::Entity </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
+          <td class="memname">K <a class="el" href="a00346.html">catos::Pair</a>&lt; K, V &gt;::first</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>creates the entity. </p>
-
 </div>
 </div>
-<a id="a7bc0234ba129f76c6457d0180b796443" name="a7bc0234ba129f76c6457d0180b796443"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7bc0234ba129f76c6457d0180b796443">&#9670;&#160;</a></span>Entity() <span class="overload">[2/2]</span></h2>
+<a id="ad68c4137fc03048a0b7da4c84cd4a253" name="ad68c4137fc03048a0b7da4c84cd4a253"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68c4137fc03048a0b7da4c84cd4a253">&#9670;&#160;</a></span>second</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">catos::Entity::Entity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00346.html">catos::Entity</a> &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>entity</em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">V <a class="el" href="a00346.html">catos::Pair</a>&lt; K, V &gt;::second</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Destroys the entity and its allocated resources. </p>
-
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5bd9c6cb4b32e383ac6244dcf6fe8b8a" name="a5bd9c6cb4b32e383ac6244dcf6fe8b8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bd9c6cb4b32e383ac6244dcf6fe8b8a">&#9670;&#160;</a></span>getTransform()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00342.html">Transform</a> &amp; catos::Entity::getTransform </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a REFERENCE to the private transform. </p>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2a440205eae919719088513015c3865e" name="a2a440205eae919719088513015c3865e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a440205eae919719088513015c3865e">&#9670;&#160;</a></span>id</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="a00104.html#a378b7638d7f5500d23e49f3e6e9b1ec6">EntityID</a> catos::Entity::id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>its ID represented by an uint </p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="a00101_source.html">world.h</a></li>
-<li><a class="el" href="a00098.html">world.cpp</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a00092_source.html">pair.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

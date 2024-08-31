@@ -1,126 +1,213 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00146" kind="struct" language="C++" prot="public">
-    <compoundname>catos::WindowCreationInfo</compoundname>
-    <includes refid="a00023" local="no">window.h</includes>
+  <compounddef id="a00146" kind="class" language="C++" prot="public">
+    <compoundname>catos::Method</compoundname>
+    <includes refid="a00011" local="no">registry.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00146_1ae968365d3c684b7865dbd44a9b58a0d4" prot="public" static="no" mutable="no">
-        <type><ref refid="a00154" kindref="compound">math::Vector2</ref></type>
-        <definition>math::Vector2 catos::WindowCreationInfo::size</definition>
-        <argsstring></argsstring>
-        <name>size</name>
-        <qualifiedname>catos::WindowCreationInfo::size</qualifiedname>
-        <initializer>{100, 100}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="20" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="20" bodyend="20"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00146_1aec4ef506b269d318933637e3f8cb04b9" prot="public" static="no" mutable="no">
-        <type><ref refid="a00154" kindref="compound">math::Vector2</ref></type>
-        <definition>math::Vector2 catos::WindowCreationInfo::position</definition>
-        <argsstring></argsstring>
-        <name>position</name>
-        <qualifiedname>catos::WindowCreationInfo::position</qualifiedname>
-        <initializer>{ 50, 50}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="21" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="21" bodyend="21"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00146_1a93cc9ee1f3794b1621f46ccf5ca1c91d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00146_1a5621be029379a77b80f5fb6f7e91cf88" prot="public" static="no" mutable="no">
         <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-        <definition>cstr catos::WindowCreationInfo::title</definition>
+        <definition>cstr catos::Method::desc</definition>
         <argsstring></argsstring>
-        <name>title</name>
-        <qualifiedname>catos::WindowCreationInfo::title</qualifiedname>
-        <initializer>= &quot;Catos Application &quot;</initializer>
+        <name>desc</name>
+        <qualifiedname>catos::Method::desc</qualifiedname>
+        <initializer>= &quot;NONE&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="22" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="22" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="204" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="204" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00146_1a2afaf94058c62aee02391616b88bd63c" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool catos::WindowCreationInfo::is_fullscreen</definition>
+      <memberdef kind="variable" id="a00146_1a0b06cd150b4dc8a0b35d356d6f134442" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string catos::Method::returnName</definition>
         <argsstring></argsstring>
-        <name>is_fullscreen</name>
-        <qualifiedname>catos::WindowCreationInfo::is_fullscreen</qualifiedname>
-        <initializer>= false</initializer>
+        <name>returnName</name>
+        <qualifiedname>catos::Method::returnName</qualifiedname>
+        <initializer>= &quot;void&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="23" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="23" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="205" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="205" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00146_1a3cc89a85c712fc2945e50dcb1d99e378" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool catos::WindowCreationInfo::borderless</definition>
+      <memberdef kind="variable" id="a00146_1aec3f9c676b863394c22100937548995c" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string catos::Method::parameters</definition>
         <argsstring></argsstring>
-        <name>borderless</name>
-        <qualifiedname>catos::WindowCreationInfo::borderless</qualifiedname>
-        <initializer>= false</initializer>
+        <name>parameters</name>
+        <qualifiedname>catos::Method::parameters</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="24" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="24" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="207" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="207" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00146_1af4e7fb2bc7459c373e17b77a30565680" prot="public" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool catos::WindowCreationInfo::enable_darktheme</definition>
+      <memberdef kind="variable" id="a00146_1acb8b27e43adc06a52a1b2e2303b4a34e" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string catos::Method::parameterNames</definition>
         <argsstring></argsstring>
-        <name>enable_darktheme</name>
-        <qualifiedname>catos::WindowCreationInfo::enable_darktheme</qualifiedname>
-        <initializer>= true</initializer>
+        <name>parameterNames</name>
+        <qualifiedname>catos::Method::parameterNames</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="25" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="25" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="208" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00146_1a4b8737f52ca1d169e4742141f3dc88c6" prot="private" static="no" mutable="no">
+        <type>std::any</type>
+        <definition>std::any catos::Method::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <qualifiedname>catos::Method::ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="211" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00146_1af512b6f07768acb200d4bb9f84a04573" prot="private" static="no" mutable="no">
+        <type>std::any</type>
+        <definition>std::any catos::Method::_mFunc</definition>
+        <argsstring></argsstring>
+        <name>_mFunc</name>
+        <qualifiedname>catos::Method::_mFunc</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="212" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00146_1a40350e2564f0207cc7e730c34153ea6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ReturnType</type>
+          </param>
+          <param>
+            <type>class ClassType</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type></type>
+        <definition>catos::Method::Method</definition>
+        <argsstring>(ReturnType(ClassType::*method)(Args...), bool doCoolShit=false)</argsstring>
+        <name>Method</name>
+        <qualifiedname>catos::Method::Method</qualifiedname>
+        <param>
+          <type>ReturnType(ClassType::*)(Args...)</type>
+          <declname>method</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>doCoolShit</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="150" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="150" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="a00146_1a5250d5fb0e0066d91dd83ea80f1fb15c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename R</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>R</type>
+        <definition>R catos::Method::invoke_function</definition>
+        <argsstring>(void *instance, Args... args)</argsstring>
+        <name>invoke_function</name>
+        <qualifiedname>catos::Method::invoke_function</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="194" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="194" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="a00146_1a6563134c767668a602c02cd0ec13d610" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void catos::Method::invoke_function</definition>
+        <argsstring>(void *instance, Args... args)</argsstring>
+        <name>invoke_function</name>
+        <qualifiedname>catos::Method::invoke_function</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>instance</declname>
+        </param>
+        <param>
+          <type>Args...</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="199" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="199" bodyend="201"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Stores a function pointer for running it. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="1">
-        <label>catos::WindowCreationInfo</label>
-        <link refid="a00146"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>position</edgelabel>
-          <edgelabel>size</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>catos::math::Vector2</label>
-        <link refid="a00154"/>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="19" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="19" bodyend="26"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="146" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="146" bodyend="213"/>
     <listofallmembers>
-      <member refid="a00146_1a3cc89a85c712fc2945e50dcb1d99e378" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>borderless</name></member>
-      <member refid="a00146_1af4e7fb2bc7459c373e17b77a30565680" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>enable_darktheme</name></member>
-      <member refid="a00146_1a2afaf94058c62aee02391616b88bd63c" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>is_fullscreen</name></member>
-      <member refid="a00146_1aec4ef506b269d318933637e3f8cb04b9" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>position</name></member>
-      <member refid="a00146_1ae968365d3c684b7865dbd44a9b58a0d4" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>size</name></member>
-      <member refid="a00146_1a93cc9ee1f3794b1621f46ccf5ca1c91d" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>title</name></member>
+      <member refid="a00146_1af512b6f07768acb200d4bb9f84a04573" prot="private" virt="non-virtual"><scope>catos::Method</scope><name>_mFunc</name></member>
+      <member refid="a00146_1a5621be029379a77b80f5fb6f7e91cf88" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>desc</name></member>
+      <member refid="a00146_1a5250d5fb0e0066d91dd83ea80f1fb15c" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>invoke_function</name></member>
+      <member refid="a00146_1a6563134c767668a602c02cd0ec13d610" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>invoke_function</name></member>
+      <member refid="a00146_1a40350e2564f0207cc7e730c34153ea6b" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>Method</name></member>
+      <member refid="a00146_1acb8b27e43adc06a52a1b2e2303b4a34e" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>parameterNames</name></member>
+      <member refid="a00146_1aec3f9c676b863394c22100937548995c" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>parameters</name></member>
+      <member refid="a00146_1a4b8737f52ca1d169e4742141f3dc88c6" prot="private" virt="non-virtual"><scope>catos::Method</scope><name>ptr</name></member>
+      <member refid="a00146_1a0b06cd150b4dc8a0b35d356d6f134442" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>returnName</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

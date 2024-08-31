@@ -1,195 +1,179 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00113" kind="class" language="C++" prot="public">
-    <compoundname>catos::App</compoundname>
-    <includes refid="a00005" local="no">application.h</includes>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00113_1ade360a10f6c158d74d0fdd9ed1659672" prot="private" static="no" mutable="no">
-        <type><ref refid="a00109" kindref="compound">AppCreationInfo</ref> *</type>
-        <definition>AppCreationInfo* catos::App::_info</definition>
-        <argsstring></argsstring>
-        <name>_info</name>
-        <qualifiedname>catos::App::_info</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="61" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="61" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00113_1a86114b77047af86111dda9b2dcdc25a7" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool catos::App::_is_alive</definition>
-        <argsstring></argsstring>
-        <name>_is_alive</name>
-        <qualifiedname>catos::App::_is_alive</qualifiedname>
-        <initializer>= false</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="62" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="62" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00113_1ae9535fe5bd3e21e1ee14b5fca23695c9" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; size_t, const void * &gt;</type>
-        <definition>std::unordered_map&lt;size_t, const void* &gt; catos::App::_instance_register</definition>
-        <argsstring></argsstring>
-        <name>_instance_register</name>
-        <qualifiedname>catos::App::_instance_register</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="64" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="64" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00113_1a20c936adde996793bc36c33650b12a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::App::App</definition>
-        <argsstring>(AppCreationInfo *creationInfo)</argsstring>
-        <name>App</name>
-        <qualifiedname>catos::App::App</qualifiedname>
-        <param>
-          <type><ref refid="a00109" kindref="compound">AppCreationInfo</ref> *</type>
-          <declname>creationInfo</declname>
-        </param>
-        <briefdescription>
-<para>Initializes the Application (Also registers all &quot;known&quot; class to the registry) </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="30" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="9" bodyend="16"/>
-      </memberdef>
-      <memberdef kind="function" id="a00113_1ae2beda1820f2fb8b3d2b690e9cd7742b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::App::~App</definition>
-        <argsstring>()</argsstring>
-        <name>~App</name>
-        <qualifiedname>catos::App::~App</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="31" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="18" bodyend="23"/>
-      </memberdef>
-      <memberdef kind="function" id="a00113_1ac7ee8e55850651b7549a64789904ea62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool catos::App::is_alive</definition>
-        <argsstring>()</argsstring>
-        <name>is_alive</name>
-        <qualifiedname>catos::App::is_alive</qualifiedname>
-        <briefdescription>
-<para>Returns if the app is still running. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="34" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="39" bodyend="41"/>
-      </memberdef>
-      <memberdef kind="function" id="a00113_1a5bd26fdeb5142a62fe81620461de1007" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename A</type>
-          </param>
-        </templateparamlist>
-        <type>void</type>
-        <definition>void catos::App::bind</definition>
-        <argsstring>(const void *instance)</argsstring>
-        <name>bind</name>
-        <qualifiedname>catos::App::bind</qualifiedname>
-        <param>
-          <type>const void *</type>
-          <declname>instance</declname>
-        </param>
-        <briefdescription>
-<para>Used to bind an instance to an type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="41" bodyend="43"/>
-      </memberdef>
-      <memberdef kind="function" id="a00113_1a2d9f5a50cb0cf5a883d77d27068e3ad2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename A</type>
-          </param>
-        </templateparamlist>
-        <type>A *</type>
-        <definition>A * catos::App::get</definition>
-        <argsstring>()</argsstring>
-        <name>get</name>
-        <qualifiedname>catos::App::get</qualifiedname>
-        <briefdescription>
-<para>Returns the registered instance. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="47" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="47" bodyend="49"/>
-      </memberdef>
-      <memberdef kind="function" id="a00113_1a4f1ce2929d6062c9d27921d6ed50faa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="a00109" kindref="compound">AppCreationInfo</ref> *</type>
-        <definition>catos::AppCreationInfo * catos::App::getAppInfo</definition>
-        <argsstring>()</argsstring>
-        <name>getAppInfo</name>
-        <qualifiedname>catos::App::getAppInfo</qualifiedname>
-        <briefdescription>
-<para>Returns a pointer to the info with what the application is made. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="53" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="43" bodyend="45"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-func">
-      <memberdef kind="function" id="a00113_1aa95c160232eb5fe780bec480c5bea272" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void catos::App::init_registry</definition>
-        <argsstring>()</argsstring>
-        <name>init_registry</name>
-        <qualifiedname>catos::App::init_registry</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="58" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="25" bodyend="36"/>
-      </memberdef>
-    </sectiondef>
+  <compounddef id="a00113" kind="file" language="C++">
+    <compoundname>world.h</compoundname>
+    <includes local="no">unordered_map</includes>
+    <includes refid="a00104" local="yes">stl/vector.h</includes>
+    <includes refid="a00029" local="yes">math/vecs.h</includes>
+    <includedby refid="a00080" local="yes">ScriptingEngine.h</includedby>
+    <includedby refid="a00107" local="yes">main.cpp</includedby>
+    <includedby refid="a00110" local="yes">world.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>math/vecs.h</label>
+        <link refid="a00029"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stl/vector.h</label>
+        <link refid="a00104"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>world.h</label>
+        <link refid="a00113"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>cstring</label>
+      </node>
+      <node id="6">
+        <label>glm/glm.hpp</label>
+      </node>
+      <node id="2">
+        <label>unordered_map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>ScriptingEngine.cpp</label>
+        <link refid="a00077"/>
+      </node>
+      <node id="2">
+        <label>ScriptingEngine.h</label>
+        <link refid="a00080"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>main.cpp</label>
+        <link refid="a00107"/>
+      </node>
+      <node id="5">
+        <label>world.cpp</label>
+        <link refid="a00110"/>
+      </node>
+      <node id="1">
+        <label>world.h</label>
+        <link refid="a00113"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00378" prot="public">catos::Script</innerclass>
+    <innerclass refid="a00382" prot="public">catos::Transform</innerclass>
+    <innerclass refid="a00386" prot="public">catos::Entity</innerclass>
+    <innerclass refid="a00390" prot="public">catos::World</innerclass>
+    <innernamespace refid="a00116">catos</innernamespace>
     <briefdescription>
-<para>Main class that holds all information. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="25" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="25" bodyend="65"/>
-    <listofallmembers>
-      <member refid="a00113_1ade360a10f6c158d74d0fdd9ed1659672" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_info</name></member>
-      <member refid="a00113_1ae9535fe5bd3e21e1ee14b5fca23695c9" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_instance_register</name></member>
-      <member refid="a00113_1a86114b77047af86111dda9b2dcdc25a7" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_is_alive</name></member>
-      <member refid="a00113_1a20c936adde996793bc36c33650b12a23" prot="public" virt="non-virtual"><scope>catos::App</scope><name>App</name></member>
-      <member refid="a00113_1a5bd26fdeb5142a62fe81620461de1007" prot="public" virt="non-virtual"><scope>catos::App</scope><name>bind</name></member>
-      <member refid="a00113_1a2d9f5a50cb0cf5a883d77d27068e3ad2" prot="public" virt="non-virtual"><scope>catos::App</scope><name>get</name></member>
-      <member refid="a00113_1a4f1ce2929d6062c9d27921d6ed50faa5" prot="public" virt="non-virtual"><scope>catos::App</scope><name>getAppInfo</name></member>
-      <member refid="a00113_1aa95c160232eb5fe780bec480c5bea272" prot="private" virt="non-virtual"><scope>catos::App</scope><name>init_registry</name></member>
-      <member refid="a00113_1ac7ee8e55850651b7549a64789904ea62" prot="public" virt="non-virtual"><scope>catos::App</scope><name>is_alive</name></member>
-      <member refid="a00113_1ae2beda1820f2fb8b3d2b690e9cd7742b" prot="public" virt="non-virtual"><scope>catos::App</scope><name>~App</name></member>
-    </listofallmembers>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unordered_map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00104" kindref="compound">stl/vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00029" kindref="compound">math/vecs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00116" kindref="compound">catos</ref><sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="a00116_1a378b7638d7f5500d23e49f3e6e9b1ec6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00116_1a378b7638d7f5500d23e49f3e6e9b1ec6" kindref="member">EntityID</ref>;</highlight></codeline>
+<codeline lineno="11" refid="a00116_1aa8ae59b738110021406e08c16a4428d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00116_1aa8ae59b738110021406e08c16a4428d1" kindref="member">WorldID</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="a00378" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00378" kindref="compound">Script</ref><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="a00378_1a1d2844c55704b9d31d713b824da00e14" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00378_1a1d2844c55704b9d31d713b824da00e14" kindref="member">Script</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="a00378_1af279e5aad0ff44fe62ce8698886ed0bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00378_1af279e5aad0ff44fe62ce8698886ed0bd" kindref="member">update</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="a00378_1ad93a5bc97f52f9913c5b60f18ca492ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00378_1ad93a5bc97f52f9913c5b60f18ca492ec" kindref="member">end</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="a00382" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00382" kindref="compound">Transform</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="a00382_1a81cda806c9b534e9bdb1eecd52f755e8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00170" kindref="compound">math::Vector3</ref><sp/><ref refid="a00382_1a81cda806c9b534e9bdb1eecd52f755e8" kindref="member">position</ref>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="36" refid="a00382_1ac348bcf64022bd20df70bbba9370bd08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00170" kindref="compound">math::Vector3</ref><sp/><ref refid="a00382_1ac348bcf64022bd20df70bbba9370bd08" kindref="member">size</ref>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="37" refid="a00382_1a06faef0a9f62db80a7e604bd0c29be09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00174" kindref="compound">math::Quaternion</ref><sp/><ref refid="a00382_1a06faef0a9f62db80a7e604bd0c29be09" kindref="member">rotation</ref>{0,<sp/>0,<sp/>0};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="a00386" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00386" kindref="compound">Entity</ref><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00386_1aa64e01f4ef9c5a8ee56433dbec6d78df" kindref="member">Entity</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00386_1aa64e01f4ef9c5a8ee56433dbec6d78df" kindref="member">Entity</ref>(<ref refid="a00386" kindref="compound">Entity</ref>&amp;&amp;<sp/>entity);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="a00386_1a2a440205eae919719088513015c3865e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00116_1a378b7638d7f5500d23e49f3e6e9b1ec6" kindref="member">EntityID</ref><sp/><sp/><ref refid="a00386_1a2a440205eae919719088513015c3865e" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="a00386_1a5bd9c6cb4b32e383ac6244dcf6fe8b8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00382" kindref="compound">Transform</ref>&amp;<sp/><ref refid="a00386_1a5bd9c6cb4b32e383ac6244dcf6fe8b8a" kindref="member">getTransform</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_transform;<sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00382" kindref="compound">Transform</ref><sp/>_transform{};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="a00390" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00390" kindref="compound">World</ref><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00390_1aec8c71d7eecca01b11a340178050b3ff" kindref="member">World</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00390_1aec8c71d7eecca01b11a340178050b3ff" kindref="member">World</ref>(<ref refid="a00390" kindref="compound">World</ref>&amp;&amp;<sp/>obj)<sp/>noexcept<sp/>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00390_1aec8c71d7eecca01b11a340178050b3ff" kindref="member">World</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00390" kindref="compound">World</ref>&amp;<sp/>obj);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00390_1af060899be4360927761d988573fa6c8d" kindref="member">~World</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00386" kindref="compound">Entity</ref>*<sp/><ref refid="a00390_1a5ec053434585afa253bbdca453e295d5" kindref="member">getEntity</ref>(<ref refid="a00116_1a378b7638d7f5500d23e49f3e6e9b1ec6" kindref="member">EntityID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00390_1a34468b42dbfca5d02cea291c29b68a9d" kindref="member">spawnEntity</ref>();</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00386" kindref="compound">Entity</ref>*<sp/><ref refid="a00390_1a579b68331dcc443cb3f142ca496c8360" kindref="member">getLastEntity</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cleanUp();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getNewWorldID();</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getNewEntityID();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358" kindref="compound">catos::vector&lt;Entity*&gt;</ref><sp/>instances;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="a00390" kindref="compound">World</ref>*<sp/>getCurrentWorld();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="a00390" kindref="compound">World</ref>*<sp/>setCurrentWorld(<ref refid="a00116_1aa8ae59b738110021406e08c16a4428d1" kindref="member">WorldID</ref><sp/>ID);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="a00390" kindref="compound">World</ref>*<sp/>getWorldViaID(<ref refid="a00116_1aa8ae59b738110021406e08c16a4428d1" kindref="member">WorldID</ref><sp/>ID);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h"/>
   </compounddef>
 </doxygen>

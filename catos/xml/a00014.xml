@@ -30,18 +30,20 @@
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="8">
         <label>registry.cpp</label>
         <link refid="a00008"/>
       </node>
       <node id="5">
         <label>registry.h</label>
         <link refid="a00011"/>
+        <childnode refid="6" relation="include">
+        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -51,22 +53,32 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="8">
+      <node id="10">
         <label>window.cpp</label>
         <link refid="a00020"/>
       </node>
-      <node id="7">
+      <node id="9">
         <label>window.h</label>
         <link refid="a00023"/>
-        <childnode refid="8" relation="include">
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ScriptingEngine.cpp</label>
+        <link refid="a00077"/>
+      </node>
+      <node id="6">
+        <label>ScriptingEngine.h</label>
+        <link refid="a00080"/>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="4">
         <label>main.cpp</label>
-        <link refid="a00095"/>
+        <link refid="a00107"/>
       </node>
     </invincdepgraph>
     <sectiondef kind="typedef">

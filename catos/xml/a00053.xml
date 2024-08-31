@@ -34,7 +34,7 @@
         </childnode>
       </node>
     </invincdepgraph>
-    <innernamespace refid="a00107">VkUtil</innernamespace>
+    <innernamespace refid="a00119">VkUtil</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -53,12 +53,12 @@
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vulkan/vulkan.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="a00107" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00107" kindref="compound">VkUtil</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="a00119" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00119" kindref="compound">VkUtil</ref><sp/>{</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00107_1a875b1e47dc0c1a3d683aa56a048004a1" kindref="member">transitionImage</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>image,<sp/>VkImageLayout<sp/>currentLayout,<sp/>VkImageLayout<sp/>newLayout);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00107_1aaf415273879926840c4ba3f273ced282" kindref="member">copyImageToImage</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>source,<sp/>VkImage<sp/>destination,<sp/>VkExtent2D<sp/>srcSize,<sp/>VkExtent2D<sp/>dstSize);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00119_1a875b1e47dc0c1a3d683aa56a048004a1" kindref="member">transitionImage</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>image,<sp/>VkImageLayout<sp/>currentLayout,<sp/>VkImageLayout<sp/>newLayout);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00119_1aaf415273879926840c4ba3f273ced282" kindref="member">copyImageToImage</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>source,<sp/>VkImage<sp/>destination,<sp/>VkExtent2D<sp/>srcSize,<sp/>VkExtent2D<sp/>dstSize);</highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00107_1ab2f70afca891c15b7a86f4d2d5c67931" kindref="member">generateMipMaps</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>image,<sp/>VkExtent2D<sp/>imageSize);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00119_1ab2f70afca891c15b7a86f4d2d5c67931" kindref="member">generateMipMaps</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>image,<sp/>VkExtent2D<sp/>imageSize);</highlight></codeline>
 <codeline lineno="20"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.h"/>

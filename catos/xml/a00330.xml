@@ -1,81 +1,31 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00330" kind="struct" language="C++" prot="public">
-    <compoundname>TransformComponent</compoundname>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00330_1a30d1678c82cfa095b35ecb9a180bb697" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float TransformComponent::x</definition>
-        <argsstring></argsstring>
-        <name>x</name>
-        <qualifiedname>TransformComponent::x</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="25" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="25" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00330_1a8661b2f37bf9926ed19e7a4a8fc2d41b" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float TransformComponent::y</definition>
-        <argsstring></argsstring>
-        <name>y</name>
-        <qualifiedname>TransformComponent::y</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="25" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="25" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00330_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float TransformComponent::z</definition>
-        <argsstring></argsstring>
-        <name>z</name>
-        <qualifiedname>TransformComponent::z</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="25" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="25" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
+    <compoundname>catos::key_not_found</compoundname>
+    <includes refid="a00086" local="no">hashmap.h</includes>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00330_1a418d776f12e6e744c9ac7beed11bb3cf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool TransformComponent::operator!=</definition>
-        <argsstring>(TransformComponent &amp;b)</argsstring>
-        <name>operator!=</name>
-        <qualifiedname>TransformComponent::operator!=</qualifiedname>
-        <param>
-          <type><ref refid="a00330" kindref="compound">TransformComponent</ref> &amp;</type>
-          <declname>b</declname>
-        </param>
+      <memberdef kind="function" id="a00330_1a4124b3708acd53b4d9d851d8e828c0d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * catos::key_not_found::what</definition>
+        <argsstring>()</argsstring>
+        <name>what</name>
+        <qualifiedname>catos::key_not_found::what</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="27" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="27" bodyend="29"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="18" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="18" bodyend="20"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="24" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="24" bodyend="30"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="17" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="17" bodyend="21"/>
     <listofallmembers>
-      <member refid="a00330_1a418d776f12e6e744c9ac7beed11bb3cf" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>operator!=</name></member>
-      <member refid="a00330_1a30d1678c82cfa095b35ecb9a180bb697" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>x</name></member>
-      <member refid="a00330_1a8661b2f37bf9926ed19e7a4a8fc2d41b" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>y</name></member>
-      <member refid="a00330_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" prot="public" virt="non-virtual"><scope>TransformComponent</scope><name>z</name></member>
+      <member refid="a00330_1a4124b3708acd53b4d9d851d8e828c0d2" prot="public" virt="non-virtual"><scope>catos::key_not_found</scope><name>what</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

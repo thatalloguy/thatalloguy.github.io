@@ -107,26 +107,85 @@ $(function(){initNavTree('a00080_source.html',''); initResizable(); });
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00104.html">catos</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="a00306.html">    8</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00306.html">ScriptingEngine</a> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="a00306.html#ac4024d018e6782db826fa00daaac70a1">   11</a></span>        <span class="keyword">static</span> <a class="code hl_class" href="a00306.html">ScriptingEngine</a>&amp; <a class="code hl_function" href="a00306.html#ac4024d018e6782db826fa00daaac70a1">getInstance</a>();</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="a00011.html">core/registry.h</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="a00098.html">stl/string.h</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="a00104.html">stl/vector.h</a>&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="a00113.html">world/world.h</a>&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="a00092.html">stl/pair.h</a>&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="a00306.html#a86e85faa189694bbe81da7e4067a4cc0">   13</a></span>        <a class="code hl_function" href="a00306.html#a86e85faa189694bbe81da7e4067a4cc0">ScriptingEngine</a>();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00306.html#a7b8081c15524b4ce43b6ae938a397d4c">   14</a></span>        <a class="code hl_function" href="a00306.html#a7b8081c15524b4ce43b6ae938a397d4c">~ScriptingEngine</a>();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;pybind11/internal/class.h&quot;</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;pybind11/pybind11.h&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    };</div>
-</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span>py = pybind11;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="ttc" id="aa00104_html"><div class="ttname"><a href="a00104.html">catos</a></div><div class="ttdef"><b>Definition</b> application.h:13</div></div>
-<div class="ttc" id="aa00306_html"><div class="ttname"><a href="a00306.html">catos::ScriptingEngine</a></div><div class="ttdef"><b>Definition</b> ScriptingEngine.h:8</div></div>
-<div class="ttc" id="aa00306_html_a7b8081c15524b4ce43b6ae938a397d4c"><div class="ttname"><a href="a00306.html#a7b8081c15524b4ce43b6ae938a397d4c">catos::ScriptingEngine::~ScriptingEngine</a></div><div class="ttdeci">~ScriptingEngine()</div></div>
-<div class="ttc" id="aa00306_html_a86e85faa189694bbe81da7e4067a4cc0"><div class="ttname"><a href="a00306.html#a86e85faa189694bbe81da7e4067a4cc0">catos::ScriptingEngine::ScriptingEngine</a></div><div class="ttdeci">ScriptingEngine()</div></div>
-<div class="ttc" id="aa00306_html_ac4024d018e6782db826fa00daaac70a1"><div class="ttname"><a href="a00306.html#ac4024d018e6782db826fa00daaac70a1">catos::ScriptingEngine::getInstance</a></div><div class="ttdeci">static ScriptingEngine &amp; getInstance()</div></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00116.html">catos</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="a00318.html">   23</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="a00318.html">ScriptInfo</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="a00318.html#abe58c79d1dcde12e669a829f538239d1">   24</a></span>        <a class="code hl_class" href="a00350.html">catos::string</a> <a class="code hl_variable" href="a00318.html#abe58c79d1dcde12e669a829f538239d1">src</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="a00318.html#af1434441e10ec367d6721e9ec4443b19">   25</a></span>        <a class="code hl_class" href="a00350.html">catos::string</a> <a class="code hl_variable" href="a00318.html#af1434441e10ec367d6721e9ec4443b19">className</a>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    };</div>
+</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="};">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="a00322.html">   31</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00322.html">ScriptingEngine</a> {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="a00322.html#ac7b716e6d41ff508ad2d8e5dad655d72">   35</a></span>        <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="a00154.html">Registry</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">static</span> <a class="code hl_class" href="a00322.html">ScriptingEngine</a>&amp; <a class="code hl_function" href="a00322.html#a8b55daad4edbed63c8a40c2df5ee4c12">getInstance</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <a class="code hl_function" href="a00322.html#a86e85faa189694bbe81da7e4067a4cc0">ScriptingEngine</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_function" href="a00322.html#a7b8081c15524b4ce43b6ae938a397d4c">~ScriptingEngine</a>();</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00322.html#a055f269e131f3551ee53902b2062ea39">registerNewScript</a>(<a class="code hl_class" href="a00350.html">catos::string</a>&amp; pathToPythonFile);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00322.html#a382ee3821ad868a82549920ad8c3f360">startScripts</a>();</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00322.html#a380736b746364b090839f33b7bc303ad">updateScripts</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="a00322.html#ad959b74ea8fbe5c00c2e5bf74af97b33">endScripts</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <a class="code hl_class" href="a00358.html">catos::vector&lt;catos::Pair&lt;py::object* , ScriptInfo&gt;</a>&gt; _scripts;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    };</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="ttc" id="aa00011_html"><div class="ttname"><a href="a00011.html">registry.h</a></div></div>
+<div class="ttc" id="aa00092_html"><div class="ttname"><a href="a00092.html">pair.h</a></div></div>
+<div class="ttc" id="aa00098_html"><div class="ttname"><a href="a00098.html">string.h</a></div></div>
+<div class="ttc" id="aa00104_html"><div class="ttname"><a href="a00104.html">vector.h</a></div></div>
+<div class="ttc" id="aa00113_html"><div class="ttname"><a href="a00113.html">world.h</a></div></div>
+<div class="ttc" id="aa00116_html"><div class="ttname"><a href="a00116.html">catos</a></div><div class="ttdef"><b>Definition</b> application.h:13</div></div>
+<div class="ttc" id="aa00154_html"><div class="ttname"><a href="a00154.html">catos::Registry</a></div><div class="ttdoc">The registry is the core system and provides reflection to the rest of the engine.</div><div class="ttdef"><b>Definition</b> registry.h:291</div></div>
+<div class="ttc" id="aa00318_html"><div class="ttname"><a href="a00318.html">catos::ScriptInfo</a></div><div class="ttdoc">Object that holds info about a Script.</div><div class="ttdef"><b>Definition</b> ScriptingEngine.h:23</div></div>
+<div class="ttc" id="aa00318_html_abe58c79d1dcde12e669a829f538239d1"><div class="ttname"><a href="a00318.html#abe58c79d1dcde12e669a829f538239d1">catos::ScriptInfo::src</a></div><div class="ttdeci">catos::string src</div><div class="ttdef"><b>Definition</b> ScriptingEngine.h:24</div></div>
+<div class="ttc" id="aa00318_html_af1434441e10ec367d6721e9ec4443b19"><div class="ttname"><a href="a00318.html#af1434441e10ec367d6721e9ec4443b19">catos::ScriptInfo::className</a></div><div class="ttdeci">catos::string className</div><div class="ttdef"><b>Definition</b> ScriptingEngine.h:25</div></div>
+<div class="ttc" id="aa00322_html"><div class="ttname"><a href="a00322.html">catos::ScriptingEngine</a></div><div class="ttdef"><b>Definition</b> ScriptingEngine.h:31</div></div>
+<div class="ttc" id="aa00322_html_a055f269e131f3551ee53902b2062ea39"><div class="ttname"><a href="a00322.html#a055f269e131f3551ee53902b2062ea39">catos::ScriptingEngine::registerNewScript</a></div><div class="ttdeci">void registerNewScript(catos::string &amp;pathToPythonFile)</div><div class="ttdef"><b>Definition</b> ScriptingEngine.cpp:29</div></div>
+<div class="ttc" id="aa00322_html_a380736b746364b090839f33b7bc303ad"><div class="ttname"><a href="a00322.html#a380736b746364b090839f33b7bc303ad">catos::ScriptingEngine::updateScripts</a></div><div class="ttdeci">void updateScripts()</div><div class="ttdef"><b>Definition</b> ScriptingEngine.cpp:101</div></div>
+<div class="ttc" id="aa00322_html_a382ee3821ad868a82549920ad8c3f360"><div class="ttname"><a href="a00322.html#a382ee3821ad868a82549920ad8c3f360">catos::ScriptingEngine::startScripts</a></div><div class="ttdeci">void startScripts()</div><div class="ttdef"><b>Definition</b> ScriptingEngine.cpp:84</div></div>
+<div class="ttc" id="aa00322_html_a7b8081c15524b4ce43b6ae938a397d4c"><div class="ttname"><a href="a00322.html#a7b8081c15524b4ce43b6ae938a397d4c">catos::ScriptingEngine::~ScriptingEngine</a></div><div class="ttdeci">~ScriptingEngine()</div><div class="ttdef"><b>Definition</b> ScriptingEngine.cpp:25</div></div>
+<div class="ttc" id="aa00322_html_a86e85faa189694bbe81da7e4067a4cc0"><div class="ttname"><a href="a00322.html#a86e85faa189694bbe81da7e4067a4cc0">catos::ScriptingEngine::ScriptingEngine</a></div><div class="ttdeci">ScriptingEngine()</div><div class="ttdef"><b>Definition</b> ScriptingEngine.cpp:21</div></div>
+<div class="ttc" id="aa00322_html_a8b55daad4edbed63c8a40c2df5ee4c12"><div class="ttname"><a href="a00322.html#a8b55daad4edbed63c8a40c2df5ee4c12">catos::ScriptingEngine::getInstance</a></div><div class="ttdeci">static ScriptingEngine &amp; getInstance()</div><div class="ttdoc">singleton :D</div><div class="ttdef"><b>Definition</b> ScriptingEngine.cpp:16</div></div>
+<div class="ttc" id="aa00322_html_ad959b74ea8fbe5c00c2e5bf74af97b33"><div class="ttname"><a href="a00322.html#ad959b74ea8fbe5c00c2e5bf74af97b33">catos::ScriptingEngine::endScripts</a></div><div class="ttdeci">void endScripts()</div><div class="ttdef"><b>Definition</b> ScriptingEngine.cpp:113</div></div>
+<div class="ttc" id="aa00350_html"><div class="ttname"><a href="a00350.html">catos::string</a></div><div class="ttdoc">Custom string class that functions as dynamic C_str.</div><div class="ttdef"><b>Definition</b> string.h:11</div></div>
+<div class="ttc" id="aa00358_html"><div class="ttname"><a href="a00358.html">catos::vector</a></div><div class="ttdef"><b>Definition</b> vector.h:22</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <p>

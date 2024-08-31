@@ -1,11 +1,9 @@
 var a00162 =
 [
-    [ "operator+", "a00162.html#a1cddf6ae46991af3d46855935b34f75a", null ],
-    [ "operator=", "a00162.html#af27fb9153ec0fcb930a73aa9cd7e2d09", null ],
-    [ "operator==", "a00162.html#a1c6bdfef17a8d70344a9af3a20d8b130", null ],
-    [ "sIdentity", "a00162.html#a203266c0dc325bac87c20c3ae822a567", null ],
-    [ "w", "a00162.html#a4ea592d10bfb621eab8f3a5dbb6e8645", null ],
-    [ "x", "a00162.html#a94b0c157ed7151923b1d51f2754b6b0f", null ],
-    [ "y", "a00162.html#a2c481d6a952719618213fc6b921f67c0", null ],
-    [ "z", "a00162.html#a9e8b8c73d6afd0531e7f4c8141f469c9", null ]
+    [ "Window", "a00162.html#a17960ca89f793bac084a8203f1a7d3e6", null ],
+    [ "~Window", "a00162.html#a245d821e6016fa1f6970ccbbedd635f6", null ],
+    [ "get_glfw_window", "a00162.html#afc3176914723cab13d809b6ae8f3d6d2", null ],
+    [ "should_window_close", "a00162.html#a6df30484abfd5cc491a5ed2055692859", null ],
+    [ "update", "a00162.html#a59515fc5a56e86d5a46d771595daac55", null ],
+    [ "App", "a00162.html#a4097b3e04a4f8ece21f5abe1b10e6323", null ]
 ];

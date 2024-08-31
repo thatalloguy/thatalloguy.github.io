@@ -1,6 +1,6 @@
 var a00278 =
 [
-    [ "indexBuffer", "a00278.html#a36072bc102efd91d9cb0a2e2a91fb731", null ],
-    [ "vertexBuffer", "a00278.html#a1492235568eb70ea34448e73fe799334", null ],
-    [ "vertexBufferAddress", "a00278.html#a07320f9b017b3298c541cecad2ca9756", null ]
+    [ "extents", "a00278.html#a65c365448edaaf81a9fd959272e77e8e", null ],
+    [ "origin", "a00278.html#ac18b521fb51a535fa927dc590b1a4652", null ],
+    [ "sphereRadius", "a00278.html#ad29877186534ef5c062724335c443df0", null ]
 ];

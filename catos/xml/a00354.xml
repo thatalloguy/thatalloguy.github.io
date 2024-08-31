@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00354" kind="struct" language="C++" prot="public">
+    <compoundname>out_of_range</compoundname>
+    <includes refid="a00104" local="no">vector.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00354_1a4ef6fabfd6536c402adef9d4238b8aaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * out_of_range::what</definition>
+        <argsstring>()</argsstring>
+        <name>what</name>
+        <qualifiedname>out_of_range::what</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="12" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="12" bodyend="14"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="10" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="10" bodyend="16"/>
+    <listofallmembers>
+      <member refid="a00354_1a4ef6fabfd6536c402adef9d4238b8aaf" prot="public" virt="non-virtual"><scope>out_of_range</scope><name>what</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

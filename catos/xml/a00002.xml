@@ -108,7 +108,7 @@
 <codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00011" kindref="compound">core/registry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"><ref refid="a00118_1a20c936adde996793bc36c33650b12a23" kindref="member">catos::App::App</ref>(<ref refid="a00114" kindref="compound">AppCreationInfo</ref>*<sp/>creationInfo)<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="a00130_1a20c936adde996793bc36c33650b12a23" kindref="member">catos::App::App</ref>(<ref refid="a00126" kindref="compound">AppCreationInfo</ref>*<sp/>creationInfo)<sp/>{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>_info<sp/>=<sp/>creationInfo;</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
@@ -117,7 +117,7 @@
 <codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>_is_alive<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><ref refid="a00118_1ae2beda1820f2fb8b3d2b690e9cd7742b" kindref="member">catos::App::~App</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="a00130_1ae2beda1820f2fb8b3d2b690e9cd7742b" kindref="member">catos::App::~App</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>registry<sp/>=<sp/>get&lt;Registry&gt;();</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
 <codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>registry;</highlight></codeline>
@@ -128,7 +128,7 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="27"><highlight class="normal"></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>bind&lt;Registry&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="a00142" kindref="compound">Registry</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>bind&lt;Registry&gt;(</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="a00154" kindref="compound">Registry</ref>);</highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>registry<sp/>=<sp/>*get&lt;Registry&gt;();</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
@@ -138,11 +138,11 @@
 <codeline lineno="36"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"></highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00118_1ac7ee8e55850651b7549a64789904ea62" kindref="member">catos::App::is_alive</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00130_1ac7ee8e55850651b7549a64789904ea62" kindref="member">catos::App::is_alive</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_is_alive;</highlight></codeline>
 <codeline lineno="41"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><ref refid="a00114" kindref="compound">catos::AppCreationInfo</ref><sp/>*<ref refid="a00118_1a4f1ce2929d6062c9d27921d6ed50faa5" kindref="member">catos::App::getAppInfo</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="a00126" kindref="compound">catos::AppCreationInfo</ref><sp/>*<ref refid="a00130_1a4f1ce2929d6062c9d27921d6ed50faa5" kindref="member">catos::App::getAppInfo</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_info;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"></highlight></codeline>

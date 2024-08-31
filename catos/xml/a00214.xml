@@ -1,92 +1,64 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00214" kind="struct" language="C++" prot="public">
-    <compoundname>GLTFMetallic_roughness::MaterialResources</compoundname>
+    <compoundname>ComputeEffect</compoundname>
     <includes refid="a00047" local="no">VkEngine.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00214_1a3dd3a1bd7517a31b58583f30940c3441" prot="public" static="no" mutable="no">
-        <type><ref refid="a00302" kindref="compound">AllocatedImage</ref></type>
-        <definition>AllocatedImage GLTFMetallic_roughness::MaterialResources::colorImage</definition>
+      <memberdef kind="variable" id="a00214_1abddbf819b22623f6a100da0296f22c79" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* ComputeEffect::name</definition>
         <argsstring></argsstring>
-        <name>colorImage</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::colorImage</qualifiedname>
+        <name>name</name>
+        <qualifiedname>ComputeEffect::name</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="67" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="67" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="44" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="44" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00214_1a14de3bb8c602f204bcf5d6c2ccb7ee2a" prot="public" static="no" mutable="no">
-        <type>VkSampler</type>
-        <definition>VkSampler GLTFMetallic_roughness::MaterialResources::colorSampler</definition>
+      <memberdef kind="variable" id="a00214_1ae88c49abeaebead8e1886f771f49fdfe" prot="public" static="no" mutable="no">
+        <type>VkPipeline</type>
+        <definition>VkPipeline ComputeEffect::pipeline</definition>
         <argsstring></argsstring>
-        <name>colorSampler</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::colorSampler</qualifiedname>
+        <name>pipeline</name>
+        <qualifiedname>ComputeEffect::pipeline</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="68" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="68" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="46" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="46" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00214_1af7791b1215a1fee0b5897e1d39a3c9ed" prot="public" static="no" mutable="no">
-        <type><ref refid="a00302" kindref="compound">AllocatedImage</ref></type>
-        <definition>AllocatedImage GLTFMetallic_roughness::MaterialResources::metalRoughImage</definition>
+      <memberdef kind="variable" id="a00214_1a03d2cd14a02f2d2e86ec6618299eab78" prot="public" static="no" mutable="no">
+        <type>VkPipelineLayout</type>
+        <definition>VkPipelineLayout ComputeEffect::layout</definition>
         <argsstring></argsstring>
-        <name>metalRoughImage</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::metalRoughImage</qualifiedname>
+        <name>layout</name>
+        <qualifiedname>ComputeEffect::layout</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="69" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="69" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="47" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="47" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00214_1aad3abdd50028f1774271881c1de7dc85" prot="public" static="no" mutable="no">
-        <type>VkSampler</type>
-        <definition>VkSampler GLTFMetallic_roughness::MaterialResources::metalRoughSampler</definition>
+      <memberdef kind="variable" id="a00214_1a8f0ff7eafb00783dbcc2a31a344a424f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00210" kindref="compound">ComputePushConstants</ref></type>
+        <definition>ComputePushConstants ComputeEffect::data</definition>
         <argsstring></argsstring>
-        <name>metalRoughSampler</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::metalRoughSampler</qualifiedname>
+        <name>data</name>
+        <qualifiedname>ComputeEffect::data</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="70" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="70" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00214_1af0402d122ad15ba381be88d540c77fa7" prot="public" static="no" mutable="no">
-        <type>VkBuffer</type>
-        <definition>VkBuffer GLTFMetallic_roughness::MaterialResources::dataBuffer</definition>
-        <argsstring></argsstring>
-        <name>dataBuffer</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::dataBuffer</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="71" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="71" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00214_1a7f4e87b350163adac17d662bef1eab3b" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t GLTFMetallic_roughness::MaterialResources::dataBufferOffset</definition>
-        <argsstring></argsstring>
-        <name>dataBufferOffset</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::dataBufferOffset</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="72" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="49" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="49" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -94,27 +66,24 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="2">
-        <label>AllocatedImage</label>
-        <link refid="a00302"/>
-      </node>
       <node id="1">
-        <label>GLTFMetallic_roughness::MaterialResources</label>
+        <label>ComputeEffect</label>
         <link refid="a00214"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>colorImage</edgelabel>
-          <edgelabel>metalRoughImage</edgelabel>
+          <edgelabel>data</edgelabel>
         </childnode>
       </node>
+      <node id="2">
+        <label>ComputePushConstants</label>
+        <link refid="a00210"/>
+      </node>
     </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="66" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="66" bodyend="73"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="43" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="43" bodyend="50"/>
     <listofallmembers>
-      <member refid="a00214_1a3dd3a1bd7517a31b58583f30940c3441" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>colorImage</name></member>
-      <member refid="a00214_1a14de3bb8c602f204bcf5d6c2ccb7ee2a" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>colorSampler</name></member>
-      <member refid="a00214_1af0402d122ad15ba381be88d540c77fa7" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>dataBuffer</name></member>
-      <member refid="a00214_1a7f4e87b350163adac17d662bef1eab3b" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>dataBufferOffset</name></member>
-      <member refid="a00214_1af7791b1215a1fee0b5897e1d39a3c9ed" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>metalRoughImage</name></member>
-      <member refid="a00214_1aad3abdd50028f1774271881c1de7dc85" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>metalRoughSampler</name></member>
+      <member refid="a00214_1a8f0ff7eafb00783dbcc2a31a344a424f" prot="public" virt="non-virtual"><scope>ComputeEffect</scope><name>data</name></member>
+      <member refid="a00214_1a03d2cd14a02f2d2e86ec6618299eab78" prot="public" virt="non-virtual"><scope>ComputeEffect</scope><name>layout</name></member>
+      <member refid="a00214_1abddbf819b22623f6a100da0296f22c79" prot="public" virt="non-virtual"><scope>ComputeEffect</scope><name>name</name></member>
+      <member refid="a00214_1ae88c49abeaebead8e1886f771f49fdfe" prot="public" virt="non-virtual"><scope>ComputeEffect</scope><name>pipeline</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

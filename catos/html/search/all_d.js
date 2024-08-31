@@ -1,25 +1,9 @@
 var searchData=
 [
-  ['parameternames_0',['parameterNames',['../a00134.html#acb8b27e43adc06a52a1b2e2303b4a34e',1,'catos::Method']]],
-  ['parameters_1',['parameters',['../a00134.html#aec3f9c676b863394c22100937548995c',1,'catos::Method']]],
-  ['parent_2',['parent',['../a00250.html#a99e65d6b9186c551371b95ea3845b6fd',1,'Node']]],
-  ['passtype_3',['passType',['../a00294.html#ab6a8270117524873601400f0bcb401db',1,'MaterialInstance']]],
-  ['pipeline_4',['pipeline',['../a00202.html#ae88c49abeaebead8e1886f771f49fdfe',1,'ComputeEffect::pipeline'],['../a00290.html#a5500b751b3a9fb3017151b515b577ad7',1,'MaterialPipeline::pipeline'],['../a00294.html#a6270ec8b9754e8071ad89436e9b307c7',1,'MaterialInstance::pipeline']]],
-  ['pipelinebuilder_5',['PipelineBuilder',['../a00258.html',1,'PipelineBuilder'],['../a00258.html#a08bb82589a05c27fdde547e4a53c8a16',1,'PipelineBuilder::PipelineBuilder()']]],
-  ['pipelinelayoutcreateinfo_6',['pipelineLayoutCreateInfo',['../a00108.html#ae22d46467876562f521852203947a73c',1,'VkInit']]],
-  ['pipelineshaderstagecreateinfo_7',['pipelineShaderStageCreateInfo',['../a00108.html#af12b035c84d7a8af0915e626e68b29f0',1,'VkInit']]],
-  ['pitch_8',['pitch',['../a00166.html#ab56fcb39f580e8d2159cf2c9c6d9a65a',1,'Camera']]],
-  ['pool_9',['pool',['../a00174.html#a51150b1aad092cd0707378078ec0e35c',1,'DescriptorAllocator']]],
-  ['poolsizeratio_10',['PoolSizeRatio',['../a00178.html',1,'DescriptorAllocator::PoolSizeRatio'],['../a00186.html',1,'DescriptorAllocatorGrowable::PoolSizeRatio']]],
-  ['position_11',['position',['../a00146.html#aec4ef506b269d318933637e3f8cb04b9',1,'catos::WindowCreationInfo::position'],['../a00166.html#a04b5db2c530d8630660e8cfb93a4b3b5',1,'Camera::position'],['../a00274.html#a030819fdc241743bbd3e180a6b132ed3',1,'Vertex::position'],['../a00342.html#a81cda806c9b534e9bdb1eecd52f755e8',1,'catos::Transform::position']]],
-  ['presentinfo_12',['presentInfo',['../a00108.html#a89cdca6f147b3cacbef67ef0fcddb5a4',1,'VkInit']]],
-  ['print_5fcurrent_5fregister_13',['print_current_register',['../a00142.html#a3ff740e516ed706e2d202086df6f12b9',1,'catos::Registry']]],
-  ['processevent_14',['processEvent',['../a00166.html#a4387bf00e77f807c531be49e24dbd834',1,'Camera']]],
-  ['proj_15',['proj',['../a00282.html#a94a8aebb2509f463fdd5930a18e220a9',1,'GPUSceneData']]],
-  ['properties_16',['properties',['../a00138.html#a7cbfa52dbf039cfe37ff79d1c97db144',1,'catos::TypeInfo']]],
-  ['property_17',['Property',['../a00122.html',1,'catos']]],
-  ['property_18',['property',['../a00138.html#adb9288a8ea5edbb41cf884f82d2e5322',1,'catos::TypeInfo']]],
-  ['propertyimpl_19',['PropertyImpl',['../a00126.html',1,'catos::PropertyImpl&lt; T, U &gt;'],['../a00126.html#ac0cf2f99603c800a6054af6c9c21c74f',1,'catos::PropertyImpl::PropertyImpl()']]],
-  ['push_5fback_20',['push_back',['../a00318.html#ab8197cdb46bc1d75b6cd45a10f16c217',1,'catos::vector']]],
-  ['pushfunction_21',['pushFunction',['../a00298.html#a91bdce3808d2f96671f38a610810c67b',1,'DeletionQueue']]]
+  ['name_0',['name',['../a00138.html#a6f9a11dc26ec88bce95a6d7e0131da9f',1,'catos::PropertyImpl::name'],['../a00150.html#ae0b2ff915a7ee07932398ea73ba22943',1,'catos::TypeInfo::name'],['../a00214.html#abddbf819b22623f6a100da0296f22c79',1,'ComputeEffect::name'],['../a00258.html#a7abaa0b660e944edd81ce5186c32d367',1,'MeshAsset::name']]],
+  ['near_1',['near',['../a00178.html#ad96efd3e1e4ec33dddb1d25f05d02ff2',1,'Camera']]],
+  ['no_5fitem_5ffound_2',['no_item_found',['../a00326.html',1,'catos']]],
+  ['node_3',['Node',['../a00262.html',1,'']]],
+  ['nodes_4',['nodes',['../a00266.html#abf50d971f7ff884cf18b10627132e24d',1,'LoadedGLTF']]],
+  ['normal_5',['normal',['../a00286.html#a3aa35fe84025ecf1acccb5f65f5577fd',1,'Vertex']]]
 ];

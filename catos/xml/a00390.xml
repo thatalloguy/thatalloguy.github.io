@@ -1,0 +1,205 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00390" kind="class" language="C++" prot="public">
+    <compoundname>catos::World</compoundname>
+    <includes refid="a00113" local="no">world.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00390_1aacf1104d261928267fad98dbb1ba3d90" prot="private" static="no" mutable="no">
+        <type><ref refid="a00358" kindref="compound">catos::vector</ref>&lt; <ref refid="a00386" kindref="compound">Entity</ref> * &gt;</type>
+        <definition>catos::vector&lt;Entity*&gt; catos::World::instances</definition>
+        <argsstring></argsstring>
+        <name>instances</name>
+        <qualifiedname>catos::World::instances</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="100" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00390_1aec8c71d7eecca01b11a340178050b3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::World::World</definition>
+        <argsstring>()</argsstring>
+        <name>World</name>
+        <qualifiedname>catos::World::World</qualifiedname>
+        <briefdescription>
+<para>Creates the world and allocates some data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="72" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="4" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="a00390_1ab12299b17ac57c83d84a4334668fbd0c" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::World::World</definition>
+        <argsstring>(World &amp;&amp;obj) noexcept</argsstring>
+        <name>World</name>
+        <qualifiedname>catos::World::World</qualifiedname>
+        <param>
+          <type><ref refid="a00390" kindref="compound">World</ref> &amp;&amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>move constructor </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="75" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="8" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="a00390_1aa532af8ba019456b2557773d7d311f52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::World::World</definition>
+        <argsstring>(const World &amp;obj)</argsstring>
+        <name>World</name>
+        <qualifiedname>catos::World::World</qualifiedname>
+        <param>
+          <type>const <ref refid="a00390" kindref="compound">World</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>copy constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="78" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="12" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="a00390_1af060899be4360927761d988573fa6c8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::World::~World</definition>
+        <argsstring>()</argsstring>
+        <name>~World</name>
+        <qualifiedname>catos::World::~World</qualifiedname>
+        <briefdescription>
+<para>Destroys the world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="81" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="16" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="a00390_1a5ec053434585afa253bbdca453e295d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00386" kindref="compound">Entity</ref> *</type>
+        <definition>catos::Entity * catos::World::getEntity</definition>
+        <argsstring>(EntityID id)</argsstring>
+        <name>getEntity</name>
+        <qualifiedname>catos::World::getEntity</qualifiedname>
+        <param>
+          <type><ref refid="a00116_1a378b7638d7f5500d23e49f3e6e9b1ec6" kindref="member">EntityID</ref></type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Returns the <ref refid="a00386" kindref="compound">Entity</ref> with the corresponding ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="84" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="20" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="a00390_1a34468b42dbfca5d02cea291c29b68a9d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::World::spawnEntity</definition>
+        <argsstring>()</argsstring>
+        <name>spawnEntity</name>
+        <qualifiedname>catos::World::spawnEntity</qualifiedname>
+        <briefdescription>
+<para>Creates a new <ref refid="a00386" kindref="compound">Entity</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="88" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="39" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="a00390_1a579b68331dcc443cb3f142ca496c8360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00386" kindref="compound">Entity</ref> *</type>
+        <definition>catos::Entity * catos::World::getLastEntity</definition>
+        <argsstring>()</argsstring>
+        <name>getLastEntity</name>
+        <qualifiedname>catos::World::getLastEntity</qualifiedname>
+        <briefdescription>
+<para>returns the last created <ref refid="a00386" kindref="compound">Entity</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="91" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="43" bodyend="45"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00390_1a7b03a20b210a451a133389f5cb246def" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::World::cleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>cleanUp</name>
+        <qualifiedname>catos::World::cleanUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="95" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="24" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="a00390_1adc2ac43620e8ae27bcd9583bab480066" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::World::getNewWorldID</definition>
+        <argsstring>()</argsstring>
+        <name>getNewWorldID</name>
+        <qualifiedname>catos::World::getNewWorldID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="97" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="31" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="a00390_1a5b17fe89fdb6f86b2fef389637120852" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::World::getNewEntityID</definition>
+        <argsstring>()</argsstring>
+        <name>getNewEntityID</name>
+        <qualifiedname>catos::World::getNewEntityID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="98" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.cpp" bodystart="35" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>A <ref refid="a00390" kindref="compound">World</ref> is an object that holds entities. (Also known as level or scene). </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="66" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="66" bodyend="102"/>
+    <listofallmembers>
+      <member refid="a00390_1a7b03a20b210a451a133389f5cb246def" prot="private" virt="non-virtual"><scope>catos::World</scope><name>cleanUp</name></member>
+      <member refid="a00390_1a5ec053434585afa253bbdca453e295d5" prot="public" virt="non-virtual"><scope>catos::World</scope><name>getEntity</name></member>
+      <member refid="a00390_1a579b68331dcc443cb3f142ca496c8360" prot="public" virt="non-virtual"><scope>catos::World</scope><name>getLastEntity</name></member>
+      <member refid="a00390_1a5b17fe89fdb6f86b2fef389637120852" prot="private" virt="non-virtual"><scope>catos::World</scope><name>getNewEntityID</name></member>
+      <member refid="a00390_1adc2ac43620e8ae27bcd9583bab480066" prot="private" virt="non-virtual"><scope>catos::World</scope><name>getNewWorldID</name></member>
+      <member refid="a00390_1aacf1104d261928267fad98dbb1ba3d90" prot="private" virt="non-virtual"><scope>catos::World</scope><name>instances</name></member>
+      <member refid="a00390_1a34468b42dbfca5d02cea291c29b68a9d" prot="public" virt="non-virtual"><scope>catos::World</scope><name>spawnEntity</name></member>
+      <member refid="a00390_1aec8c71d7eecca01b11a340178050b3ff" prot="public" virt="non-virtual"><scope>catos::World</scope><name>World</name></member>
+      <member refid="a00390_1ab12299b17ac57c83d84a4334668fbd0c" prot="public" virt="non-virtual"><scope>catos::World</scope><name>World</name></member>
+      <member refid="a00390_1aa532af8ba019456b2557773d7d311f52" prot="public" virt="non-virtual"><scope>catos::World</scope><name>World</name></member>
+      <member refid="a00390_1af060899be4360927761d988573fa6c8d" prot="public" virt="non-virtual"><scope>catos::World</scope><name>~World</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

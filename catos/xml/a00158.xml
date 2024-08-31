@@ -1,120 +1,126 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00158" kind="struct" language="C++" prot="public">
-    <compoundname>catos::math::Vector3</compoundname>
-    <includes refid="a00029" local="no">vecs.h</includes>
+    <compoundname>catos::WindowCreationInfo</compoundname>
+    <includes refid="a00023" local="no">window.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00158_1aabf30b0a34d4ec3096451393e2d71913" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float catos::math::Vector3::x</definition>
+      <memberdef kind="variable" id="a00158_1ae968365d3c684b7865dbd44a9b58a0d4" prot="public" static="no" mutable="no">
+        <type><ref refid="a00166" kindref="compound">math::Vector2</ref></type>
+        <definition>math::Vector2 catos::WindowCreationInfo::size</definition>
         <argsstring></argsstring>
-        <name>x</name>
-        <qualifiedname>catos::math::Vector3::x</qualifiedname>
+        <name>size</name>
+        <qualifiedname>catos::WindowCreationInfo::size</qualifiedname>
+        <initializer>{100, 100}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="20" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="20" bodyend="20"/>
       </memberdef>
-      <memberdef kind="variable" id="a00158_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float catos::math::Vector3::y</definition>
+      <memberdef kind="variable" id="a00158_1aec4ef506b269d318933637e3f8cb04b9" prot="public" static="no" mutable="no">
+        <type><ref refid="a00166" kindref="compound">math::Vector2</ref></type>
+        <definition>math::Vector2 catos::WindowCreationInfo::position</definition>
         <argsstring></argsstring>
-        <name>y</name>
-        <qualifiedname>catos::math::Vector3::y</qualifiedname>
+        <name>position</name>
+        <qualifiedname>catos::WindowCreationInfo::position</qualifiedname>
+        <initializer>{ 50, 50}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="21" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="21" bodyend="21"/>
       </memberdef>
-      <memberdef kind="variable" id="a00158_1a2568eefded1c720de4fcac757a5f164d" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float catos::math::Vector3::z</definition>
+      <memberdef kind="variable" id="a00158_1a93cc9ee1f3794b1621f46ccf5ca1c91d" prot="public" static="no" mutable="no">
+        <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+        <definition>cstr catos::WindowCreationInfo::title</definition>
         <argsstring></argsstring>
-        <name>z</name>
-        <qualifiedname>catos::math::Vector3::z</qualifiedname>
+        <name>title</name>
+        <qualifiedname>catos::WindowCreationInfo::title</qualifiedname>
+        <initializer>= &quot;Catos Application &quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="22" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="22" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00158_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="variable" id="a00158_1a2afaf94058c62aee02391616b88bd63c" prot="public" static="no" mutable="no">
         <type>bool</type>
-        <definition>bool catos::math::Vector3::operator==</definition>
-        <argsstring>(Vector3 &amp;b) const</argsstring>
-        <name>operator==</name>
-        <qualifiedname>catos::math::Vector3::operator==</qualifiedname>
-        <param>
-          <type><ref refid="a00158" kindref="compound">Vector3</ref> &amp;</type>
-          <declname>b</declname>
-        </param>
+        <definition>bool catos::WindowCreationInfo::is_fullscreen</definition>
+        <argsstring></argsstring>
+        <name>is_fullscreen</name>
+        <qualifiedname>catos::WindowCreationInfo::is_fullscreen</qualifiedname>
+        <initializer>= false</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="41" bodyend="43"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="23" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="23" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="a00158_1aac3d3c6575283572a19a23b352fca633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="a00158" kindref="compound">Vector3</ref> &amp;</type>
-        <definition>Vector3 &amp; catos::math::Vector3::operator=</definition>
-        <argsstring>(float val)</argsstring>
-        <name>operator=</name>
-        <qualifiedname>catos::math::Vector3::operator=</qualifiedname>
-        <param>
-          <type>float</type>
-          <declname>val</declname>
-        </param>
+      <memberdef kind="variable" id="a00158_1a3cc89a85c712fc2945e50dcb1d99e378" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool catos::WindowCreationInfo::borderless</definition>
+        <argsstring></argsstring>
+        <name>borderless</name>
+        <qualifiedname>catos::WindowCreationInfo::borderless</qualifiedname>
+        <initializer>= false</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="45" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="45" bodyend="50"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="24" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="24" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="a00158_1ac086c01bff23542b26b0b2eef4c52348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void catos::math::Vector3::operator+=</definition>
-        <argsstring>(Vector3 &amp;b)</argsstring>
-        <name>operator+=</name>
-        <qualifiedname>catos::math::Vector3::operator+=</qualifiedname>
-        <param>
-          <type><ref refid="a00158" kindref="compound">Vector3</ref> &amp;</type>
-          <declname>b</declname>
-        </param>
+      <memberdef kind="variable" id="a00158_1af4e7fb2bc7459c373e17b77a30565680" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool catos::WindowCreationInfo::enable_darktheme</definition>
+        <argsstring></argsstring>
+        <name>enable_darktheme</name>
+        <qualifiedname>catos::WindowCreationInfo::enable_darktheme</qualifiedname>
+        <initializer>= true</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="53" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="53" bodyend="57"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="25" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="25" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="37" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="37" bodyend="60"/>
+    <collaborationgraph>
+      <node id="1">
+        <label>catos::WindowCreationInfo</label>
+        <link refid="a00158"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>position</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>catos::math::Vector2</label>
+        <link refid="a00166"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="19" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="19" bodyend="26"/>
     <listofallmembers>
-      <member refid="a00158_1ac086c01bff23542b26b0b2eef4c52348" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator+=</name></member>
-      <member refid="a00158_1aac3d3c6575283572a19a23b352fca633" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator=</name></member>
-      <member refid="a00158_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator==</name></member>
-      <member refid="a00158_1aabf30b0a34d4ec3096451393e2d71913" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>x</name></member>
-      <member refid="a00158_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>y</name></member>
-      <member refid="a00158_1a2568eefded1c720de4fcac757a5f164d" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>z</name></member>
+      <member refid="a00158_1a3cc89a85c712fc2945e50dcb1d99e378" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>borderless</name></member>
+      <member refid="a00158_1af4e7fb2bc7459c373e17b77a30565680" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>enable_darktheme</name></member>
+      <member refid="a00158_1a2afaf94058c62aee02391616b88bd63c" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>is_fullscreen</name></member>
+      <member refid="a00158_1aec4ef506b269d318933637e3f8cb04b9" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>position</name></member>
+      <member refid="a00158_1ae968365d3c684b7865dbd44a9b58a0d4" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>size</name></member>
+      <member refid="a00158_1a93cc9ee1f3794b1621f46ccf5ca1c91d" prot="public" virt="non-virtual"><scope>catos::WindowCreationInfo</scope><name>title</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

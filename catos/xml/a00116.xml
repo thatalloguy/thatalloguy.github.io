@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00116" kind="namespace" language="C++">
+    <compoundname>catos</compoundname>
+    <innerclass refid="a00130" prot="public">catos::App</innerclass>
+    <innerclass refid="a00126" prot="public">catos::AppCreationInfo</innerclass>
+    <innerclass refid="a00386" prot="public">catos::Entity</innerclass>
+    <innerclass refid="a00338" prot="public">catos::HashFunc</innerclass>
+    <innerclass refid="a00342" prot="public">catos::hashmap</innerclass>
+    <innerclass refid="a00334" prot="public">catos::hashnode</innerclass>
+    <innerclass refid="a00330" prot="public">catos::key_not_found</innerclass>
+    <innerclass refid="a00146" prot="public">catos::Method</innerclass>
+    <innerclass refid="a00142" prot="public">catos::MethodInvoker</innerclass>
+    <innerclass refid="a00326" prot="public">catos::no_item_found</innerclass>
+    <innerclass refid="a00346" prot="public">catos::Pair</innerclass>
+    <innerclass refid="a00134" prot="public">catos::Property</innerclass>
+    <innerclass refid="a00138" prot="public">catos::PropertyImpl</innerclass>
+    <innerclass refid="a00154" prot="public">catos::Registry</innerclass>
+    <innerclass refid="a00378" prot="public">catos::Script</innerclass>
+    <innerclass refid="a00318" prot="public">catos::ScriptInfo</innerclass>
+    <innerclass refid="a00322" prot="public">catos::ScriptingEngine</innerclass>
+    <innerclass refid="a00350" prot="public">catos::string</innerclass>
+    <innerclass refid="a00382" prot="public">catos::Transform</innerclass>
+    <innerclass refid="a00150" prot="public">catos::TypeInfo</innerclass>
+    <innerclass refid="a00358" prot="public">catos::vector</innerclass>
+    <innerclass refid="a00162" prot="public">catos::Window</innerclass>
+    <innerclass refid="a00158" prot="public">catos::WindowCreationInfo</innerclass>
+    <innerclass refid="a00390" prot="public">catos::World</innerclass>
+    <innernamespace refid="a00118">catos::math</innernamespace>
+    <innernamespace refid="a00122">catos::tests</innernamespace>
+    <innernamespace refid="a00117">catos::type_utils</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00116_1a378b7638d7f5500d23e49f3e6e9b1ec6" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int catos::EntityID</definition>
+        <argsstring></argsstring>
+        <name>EntityID</name>
+        <qualifiedname>catos::EntityID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="10" column="30" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00116_1aa8ae59b738110021406e08c16a4428d1" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int catos::WorldID</definition>
+        <argsstring></argsstring>
+        <name>WorldID</name>
+        <qualifiedname>catos::WorldID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="11" column="30" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="a00116_1a15a9986d23699b6fe1fa103e412aad9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string catos::getNames</definition>
+        <argsstring>()</argsstring>
+        <name>getNames</name>
+        <qualifiedname>catos::getNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="120" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="120" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="a00116_1ab2f55e47d4a482511ba7dd433fb857f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string catos::getArgNames</definition>
+        <argsstring>()</argsstring>
+        <name>getArgNames</name>
+        <qualifiedname>catos::getArgNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="129" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="129" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="a00116_1afacaf95cff1c1ae9563c095bb850db2a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00390" kindref="compound">World</ref> *</type>
+        <definition>static World * catos::getCurrentWorld</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentWorld</name>
+        <qualifiedname>catos::getCurrentWorld</qualifiedname>
+        <briefdescription>
+<para>Returns the current active world. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="106" column="22" declfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" declline="106" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="a00116_1a697333b31480f4bbacb19f562e56d567" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00390" kindref="compound">World</ref> *</type>
+        <definition>static World * catos::setCurrentWorld</definition>
+        <argsstring>(WorldID ID)</argsstring>
+        <name>setCurrentWorld</name>
+        <qualifiedname>catos::setCurrentWorld</qualifiedname>
+        <param>
+          <type><ref refid="a00116_1aa8ae59b738110021406e08c16a4428d1" kindref="member">WorldID</ref></type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+<para>changes the world via ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="109" column="22" declfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" declline="109" declcolumn="22"/>
+      </memberdef>
+      <memberdef kind="function" id="a00116_1ab26550cc05ffa7c3feac9b1d0b7ce4d8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00390" kindref="compound">World</ref> *</type>
+        <definition>static World * catos::getWorldViaID</definition>
+        <argsstring>(WorldID ID)</argsstring>
+        <name>getWorldViaID</name>
+        <qualifiedname>catos::getWorldViaID</qualifiedname>
+        <param>
+          <type><ref refid="a00116_1aa8ae59b738110021406e08c16a4428d1" kindref="member">WorldID</ref></type>
+          <declname>ID</declname>
+        </param>
+        <briefdescription>
+<para>Returns a world Via ID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="112" column="22" declfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" declline="112" declcolumn="22"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="13" column="1"/>
+  </compounddef>
+</doxygen>

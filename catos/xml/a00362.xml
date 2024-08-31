@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00362" kind="class" language="C++" prot="public">
+    <compoundname>catos::vector::iterator</compoundname>
+    <includes refid="a00104" local="no">vector.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00362_1ab7bca85f1f6840ede38062dd28ed27db" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* catos::vector&lt; T &gt;::iterator::_curr</definition>
+        <argsstring></argsstring>
+        <name>_curr</name>
+        <qualifiedname>catos::vector::iterator::_curr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="261" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00362_1ab0e775cb0f1d8c0a0a068920bedb766d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::vector&lt; T &gt;::iterator::iterator</definition>
+        <argsstring>(T *p)</argsstring>
+        <name>iterator</name>
+        <qualifiedname>catos::vector::iterator::iterator</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="229" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="229" bodyend="231"/>
+      </memberdef>
+      <memberdef kind="function" id="a00362_1a17a82b93222cdeb02a1c08097db8bdbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00362" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator &amp; catos::vector&lt; T &gt;::iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>catos::vector::iterator::operator++</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="233" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="233" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="a00362_1a366ed031708b5b46d97890c0ce249b07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00362" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator &amp; catos::vector&lt; T &gt;::iterator::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <qualifiedname>catos::vector::iterator::operator--</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="239" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="239" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="a00362_1a60ac124ebcadcd904ea45b3f1c7f30ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; catos::vector&lt; T &gt;::iterator::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <qualifiedname>catos::vector::iterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="245" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="a00362_1a2c4489a63561f426f93ac1692f22ec86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::vector&lt; T &gt;::iterator::operator==</definition>
+        <argsstring>(const iterator &amp;b) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>catos::vector::iterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="a00362" kindref="compound">iterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="250" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="a00362_1aa29fbef28977148af1ca11ebcf80e08a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::vector&lt; T &gt;::iterator::operator!=</definition>
+        <argsstring>(const iterator &amp;b) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>catos::vector::iterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="a00362" kindref="compound">iterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="255" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="255" bodyend="258"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="226" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="227" bodyend="267"/>
+    <listofallmembers>
+      <member refid="a00362_1ab7bca85f1f6840ede38062dd28ed27db" prot="private" virt="non-virtual"><scope>catos::vector::iterator</scope><name>_curr</name></member>
+      <member refid="a00362_1ab0e775cb0f1d8c0a0a068920bedb766d" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>iterator</name></member>
+      <member refid="a00362_1aa29fbef28977148af1ca11ebcf80e08a" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator!=</name></member>
+      <member refid="a00362_1a60ac124ebcadcd904ea45b3f1c7f30ae" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator*</name></member>
+      <member refid="a00362_1a17a82b93222cdeb02a1c08097db8bdbc" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator++</name></member>
+      <member refid="a00362_1a366ed031708b5b46d97890c0ce249b07" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator--</name></member>
+      <member refid="a00362_1a2c4489a63561f426f93ac1692f22ec86" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator==</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

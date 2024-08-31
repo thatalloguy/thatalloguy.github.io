@@ -1,5 +1,6 @@
 var a00222 =
 [
-    [ "OpaqueSurfaces", "a00222.html#a92fc7232c72c6f3b5dc4e12dd6606f17", null ],
-    [ "TransparentSurfaces", "a00222.html#ad057160f65e0657e137a740ec37d31c2", null ]
+    [ "colorFactors", "a00222.html#a006333f251c1c42685a1327f5e28d2b5", null ],
+    [ "extra", "a00222.html#a897bbbaccb9a421115147a22b6015c4b", null ],
+    [ "metalRoughFactors", "a00222.html#a0879b1b307e3fc6093979270f0d88684", null ]
 ];

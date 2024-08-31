@@ -1,75 +1,61 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00278" kind="struct" language="C++" prot="public">
-    <compoundname>GPUMeshBuffers</compoundname>
+    <compoundname>Bounds</compoundname>
     <includes refid="a00074" local="no">VkTypes.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00278_1a36072bc102efd91d9cb0a2e2a91fb731" prot="public" static="no" mutable="no">
-        <type><ref refid="a00270" kindref="compound">AllocatedBuffer</ref></type>
-        <definition>AllocatedBuffer GPUMeshBuffers::indexBuffer</definition>
+      <memberdef kind="variable" id="a00278_1ac18b521fb51a535fa927dc590b1a4652" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 Bounds::origin</definition>
         <argsstring></argsstring>
-        <name>indexBuffer</name>
-        <qualifiedname>GPUMeshBuffers::indexBuffer</qualifiedname>
+        <name>origin</name>
+        <qualifiedname>Bounds::origin</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="80" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="80" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="58" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="58" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00278_1a1492235568eb70ea34448e73fe799334" prot="public" static="no" mutable="no">
-        <type><ref refid="a00270" kindref="compound">AllocatedBuffer</ref></type>
-        <definition>AllocatedBuffer GPUMeshBuffers::vertexBuffer</definition>
+      <memberdef kind="variable" id="a00278_1ad29877186534ef5c062724335c443df0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Bounds::sphereRadius</definition>
         <argsstring></argsstring>
-        <name>vertexBuffer</name>
-        <qualifiedname>GPUMeshBuffers::vertexBuffer</qualifiedname>
+        <name>sphereRadius</name>
+        <qualifiedname>Bounds::sphereRadius</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="81" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="81" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="59" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="59" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00278_1a07320f9b017b3298c541cecad2ca9756" prot="public" static="no" mutable="no">
-        <type>VkDeviceAddress</type>
-        <definition>VkDeviceAddress GPUMeshBuffers::vertexBufferAddress</definition>
+      <memberdef kind="variable" id="a00278_1a65c365448edaaf81a9fd959272e77e8e" prot="public" static="no" mutable="no">
+        <type>glm::vec3</type>
+        <definition>glm::vec3 Bounds::extents</definition>
         <argsstring></argsstring>
-        <name>vertexBufferAddress</name>
-        <qualifiedname>GPUMeshBuffers::vertexBufferAddress</qualifiedname>
+        <name>extents</name>
+        <qualifiedname>Bounds::extents</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="82" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="82" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="60" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="60" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="2">
-        <label>AllocatedBuffer</label>
-        <link refid="a00270"/>
-      </node>
-      <node id="1">
-        <label>GPUMeshBuffers</label>
-        <link refid="a00278"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>indexBuffer</edgelabel>
-          <edgelabel>vertexBuffer</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="79" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="79" bodyend="83"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="57" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="57" bodyend="61"/>
     <listofallmembers>
-      <member refid="a00278_1a36072bc102efd91d9cb0a2e2a91fb731" prot="public" virt="non-virtual"><scope>GPUMeshBuffers</scope><name>indexBuffer</name></member>
-      <member refid="a00278_1a1492235568eb70ea34448e73fe799334" prot="public" virt="non-virtual"><scope>GPUMeshBuffers</scope><name>vertexBuffer</name></member>
-      <member refid="a00278_1a07320f9b017b3298c541cecad2ca9756" prot="public" virt="non-virtual"><scope>GPUMeshBuffers</scope><name>vertexBufferAddress</name></member>
+      <member refid="a00278_1a65c365448edaaf81a9fd959272e77e8e" prot="public" virt="non-virtual"><scope>Bounds</scope><name>extents</name></member>
+      <member refid="a00278_1ac18b521fb51a535fa927dc590b1a4652" prot="public" virt="non-virtual"><scope>Bounds</scope><name>origin</name></member>
+      <member refid="a00278_1ad29877186534ef5c062724335c443df0" prot="public" virt="non-virtual"><scope>Bounds</scope><name>sphereRadius</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): VkUtil Namespace Reference</title>
+<title>Catos Engine (Source): main.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,136 +95,93 @@ $(function(){initNavTree('a00107.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">VkUtil Namespace Reference</div></div>
+  <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<table class="memberdecls">
+<div class="textblock"><code>#include &quot;../doctest/doctest/doctest.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00017_source.html">core/type_utils.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00011_source.html">core/registry.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00005_source.html">core/application.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00113_source.html">world/world.h</a>&quot;</code><br />
+<code>#include &quot;spdlog/spdlog.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00104_source.html">stl/vector.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00098_source.html">stl/string.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00029_source.html">math/vecs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="a00086_source.html">stl/hashmap.h</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00366.html">Foo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00370.html">TransformComponent</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00374.html">ComponentTest</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00116" id="r_a00116"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00116.html">catos</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00122" id="r_a00122"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html">catos::tests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:adf980eb1ed0df2191c56fd3d218c2819" id="r_adf980eb1ed0df2191c56fd3d218c2819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf980eb1ed0df2191c56fd3d218c2819">DOCTEST_CONFIG_IMPLEMENT</a></td></tr>
+<tr class="separator:adf980eb1ed0df2191c56fd3d218c2819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a875b1e47dc0c1a3d683aa56a048004a1" id="r_a875b1e47dc0c1a3d683aa56a048004a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a875b1e47dc0c1a3d683aa56a048004a1">transitionImage</a> (VkCommandBuffer cmd, VkImage image, VkImageLayout currentLayout, VkImageLayout newLayout)</td></tr>
-<tr class="separator:a875b1e47dc0c1a3d683aa56a048004a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf415273879926840c4ba3f273ced282" id="r_aaf415273879926840c4ba3f273ced282"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf415273879926840c4ba3f273ced282">copyImageToImage</a> (VkCommandBuffer cmd, VkImage source, VkImage destination, VkExtent2D srcSize, VkExtent2D dstSize)</td></tr>
-<tr class="separator:aaf415273879926840c4ba3f273ced282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2f70afca891c15b7a86f4d2d5c67931" id="r_ab2f70afca891c15b7a86f4d2d5c67931"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab2f70afca891c15b7a86f4d2d5c67931">generateMipMaps</a> (VkCommandBuffer cmd, VkImage image, VkExtent2D imageSize)</td></tr>
-<tr class="separator:ab2f70afca891c15b7a86f4d2d5c67931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73da1142a76da292c64a9499aacf5bc2" id="r_a73da1142a76da292c64a9499aacf5bc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73da1142a76da292c64a9499aacf5bc2">loadShaderModule</a> (const char *filePath, VkDevice device, VkShaderModule *outShaderModule)</td></tr>
-<tr class="separator:a73da1142a76da292c64a9499aacf5bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d55793e34b921efea74b9b57c975082" id="r_a3d55793e34b921efea74b9b57c975082"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a3d55793e34b921efea74b9b57c975082">catos::tests::TEST_CASE</a> (&quot;REGISTRY::GET_TYPE_NAME&quot;)</td></tr>
+<tr class="separator:a3d55793e34b921efea74b9b57c975082"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86b61aaa802336f02f0614acceac24c6" id="r_a86b61aaa802336f02f0614acceac24c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a86b61aaa802336f02f0614acceac24c6">catos::tests::TEST_CASE</a> (&quot;REGISTRY::FIELDS&quot;)</td></tr>
+<tr class="separator:a86b61aaa802336f02f0614acceac24c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a994753c9053093b19e7c46057ffcf719" id="r_a994753c9053093b19e7c46057ffcf719"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a994753c9053093b19e7c46057ffcf719">catos::tests::TEST_CASE</a> (&quot;REGISTRY::METHODS&quot;)</td></tr>
+<tr class="separator:a994753c9053093b19e7c46057ffcf719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afda5b3504e78b229f5b2607e5b8789f2" id="r_afda5b3504e78b229f5b2607e5b8789f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#afda5b3504e78b229f5b2607e5b8789f2">catos::tests::TEST_CASE</a> (&quot;Application::INSTANCES&quot;)</td></tr>
+<tr class="separator:afda5b3504e78b229f5b2607e5b8789f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd1c23b15d8a936aecd76a884dd82d0" id="r_adfd1c23b15d8a936aecd76a884dd82d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#adfd1c23b15d8a936aecd76a884dd82d0">catos::tests::TEST_CASE</a> (&quot;STL::VECTORS&quot;)</td></tr>
+<tr class="separator:adfd1c23b15d8a936aecd76a884dd82d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f30a292f157c260e3c01fc4099c84f" id="r_a95f30a292f157c260e3c01fc4099c84f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a95f30a292f157c260e3c01fc4099c84f">catos::tests::TEST_CASE</a> (&quot;STL::HASHMAPS&quot;)</td></tr>
+<tr class="separator:a95f30a292f157c260e3c01fc4099c84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="adf980eb1ed0df2191c56fd3d218c2819" name="adf980eb1ed0df2191c56fd3d218c2819"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf980eb1ed0df2191c56fd3d218c2819">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="aaf415273879926840c4ba3f273ced282" name="aaf415273879926840c4ba3f273ced282"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaf415273879926840c4ba3f273ced282">&#9670;&#160;</a></span>copyImageToImage()</h2>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void VkUtil::copyImageToImage </td>
+          <td class="memname">int main </td>
           <td>(</td>
-          <td class="paramtype">VkCommandBuffer</td>          <td class="paramname"><span class="paramname"><em>cmd</em>, </span></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">VkImage</td>          <td class="paramname"><span class="paramname"><em>source</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkImage</td>          <td class="paramname"><span class="paramname"><em>destination</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkExtent2D</td>          <td class="paramname"><span class="paramname"><em>srcSize</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkExtent2D</td>          <td class="paramname"><span class="paramname"><em>dstSize</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab2f70afca891c15b7a86f4d2d5c67931" name="ab2f70afca891c15b7a86f4d2d5c67931"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2f70afca891c15b7a86f4d2d5c67931">&#9670;&#160;</a></span>generateMipMaps()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VkUtil::generateMipMaps </td>
-          <td>(</td>
-          <td class="paramtype">VkCommandBuffer</td>          <td class="paramname"><span class="paramname"><em>cmd</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkImage</td>          <td class="paramname"><span class="paramname"><em>image</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkExtent2D</td>          <td class="paramname"><span class="paramname"><em>imageSize</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a73da1142a76da292c64a9499aacf5bc2" name="a73da1142a76da292c64a9499aacf5bc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73da1142a76da292c64a9499aacf5bc2">&#9670;&#160;</a></span>loadShaderModule()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool VkUtil::loadShaderModule </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>filePath</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkShaderModule *</td>          <td class="paramname"><span class="paramname"><em>outShaderModule</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a875b1e47dc0c1a3d683aa56a048004a1" name="a875b1e47dc0c1a3d683aa56a048004a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a875b1e47dc0c1a3d683aa56a048004a1">&#9670;&#160;</a></span>transitionImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void VkUtil::transitionImage </td>
-          <td>(</td>
-          <td class="paramtype">VkCommandBuffer</td>          <td class="paramname"><span class="paramname"><em>cmd</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkImage</td>          <td class="paramname"><span class="paramname"><em>image</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkImageLayout</td>          <td class="paramname"><span class="paramname"><em>currentLayout</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkImageLayout</td>          <td class="paramname"><span class="paramname"><em>newLayout</em></span>&#160;)</td>
+          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

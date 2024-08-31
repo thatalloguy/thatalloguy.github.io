@@ -1,91 +1,91 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00274" kind="struct" language="C++" prot="public">
-    <compoundname>Vertex</compoundname>
+    <compoundname>EngineStats</compoundname>
     <includes refid="a00074" local="no">VkTypes.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00274_1a030819fdc241743bbd3e180a6b132ed3" prot="public" static="no" mutable="no">
-        <type>glm::vec3</type>
-        <definition>glm::vec3 Vertex::position</definition>
-        <argsstring></argsstring>
-        <name>position</name>
-        <qualifiedname>Vertex::position</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="71" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="71" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00274_1a3c6b70cc0df673dab20ae012fa7a4ce3" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00274_1a268de968f518937e5b5a0eabcde74ac1" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float Vertex::uv_x</definition>
+        <definition>float EngineStats::frameTime</definition>
         <argsstring></argsstring>
-        <name>uv_x</name>
-        <qualifiedname>Vertex::uv_x</qualifiedname>
+        <name>frameTime</name>
+        <qualifiedname>EngineStats::frameTime</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="72" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="50" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="50" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00274_1a3aa35fe84025ecf1acccb5f65f5577fd" prot="public" static="no" mutable="no">
-        <type>glm::vec3</type>
-        <definition>glm::vec3 Vertex::normal</definition>
+      <memberdef kind="variable" id="a00274_1a09bb44af11d551238f5592baf3192ac0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EngineStats::triangleCount</definition>
         <argsstring></argsstring>
-        <name>normal</name>
-        <qualifiedname>Vertex::normal</qualifiedname>
+        <name>triangleCount</name>
+        <qualifiedname>EngineStats::triangleCount</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="73" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="73" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="51" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="51" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00274_1a8dfaf04a6d2a62045fee28010aeb92eb" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00274_1ad2e9038c2125482ce0c3e952ee4a1640" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int EngineStats::drawCallCount</definition>
+        <argsstring></argsstring>
+        <name>drawCallCount</name>
+        <qualifiedname>EngineStats::drawCallCount</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="52" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00274_1a63684651caeeea776748ffec6860e3d2" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float Vertex::uv_y</definition>
+        <definition>float EngineStats::sceneUpdateTime</definition>
         <argsstring></argsstring>
-        <name>uv_y</name>
-        <qualifiedname>Vertex::uv_y</qualifiedname>
+        <name>sceneUpdateTime</name>
+        <qualifiedname>EngineStats::sceneUpdateTime</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="74" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="74" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="53" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="53" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00274_1aa7ecd21578677765699b8831e0011696" prot="public" static="no" mutable="no">
-        <type>glm::vec4</type>
-        <definition>glm::vec4 Vertex::color</definition>
+      <memberdef kind="variable" id="a00274_1ab98fff18928718889d9a41f62cb45b5b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float EngineStats::meshDrawTime</definition>
         <argsstring></argsstring>
-        <name>color</name>
-        <qualifiedname>Vertex::color</qualifiedname>
+        <name>meshDrawTime</name>
+        <qualifiedname>EngineStats::meshDrawTime</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="75" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="75" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="54" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="54" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="70" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="70" bodyend="76"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" line="49" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkTypes.h" bodystart="49" bodyend="55"/>
     <listofallmembers>
-      <member refid="a00274_1aa7ecd21578677765699b8831e0011696" prot="public" virt="non-virtual"><scope>Vertex</scope><name>color</name></member>
-      <member refid="a00274_1a3aa35fe84025ecf1acccb5f65f5577fd" prot="public" virt="non-virtual"><scope>Vertex</scope><name>normal</name></member>
-      <member refid="a00274_1a030819fdc241743bbd3e180a6b132ed3" prot="public" virt="non-virtual"><scope>Vertex</scope><name>position</name></member>
-      <member refid="a00274_1a3c6b70cc0df673dab20ae012fa7a4ce3" prot="public" virt="non-virtual"><scope>Vertex</scope><name>uv_x</name></member>
-      <member refid="a00274_1a8dfaf04a6d2a62045fee28010aeb92eb" prot="public" virt="non-virtual"><scope>Vertex</scope><name>uv_y</name></member>
+      <member refid="a00274_1ad2e9038c2125482ce0c3e952ee4a1640" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>drawCallCount</name></member>
+      <member refid="a00274_1a268de968f518937e5b5a0eabcde74ac1" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>frameTime</name></member>
+      <member refid="a00274_1ab98fff18928718889d9a41f62cb45b5b" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>meshDrawTime</name></member>
+      <member refid="a00274_1a63684651caeeea776748ffec6860e3d2" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>sceneUpdateTime</name></member>
+      <member refid="a00274_1a09bb44af11d551238f5592baf3192ac0" prot="public" virt="non-virtual"><scope>EngineStats</scope><name>triangleCount</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

@@ -1,9 +1,11 @@
 var a00150 =
 [
-    [ "Window", "a00150.html#a17960ca89f793bac084a8203f1a7d3e6", null ],
-    [ "~Window", "a00150.html#a245d821e6016fa1f6970ccbbedd635f6", null ],
-    [ "get_glfw_window", "a00150.html#afc3176914723cab13d809b6ae8f3d6d2", null ],
-    [ "should_window_close", "a00150.html#a6df30484abfd5cc491a5ed2055692859", null ],
-    [ "update", "a00150.html#a59515fc5a56e86d5a46d771595daac55", null ],
-    [ "App", "a00150.html#a4097b3e04a4f8ece21f5abe1b10e6323", null ]
+    [ "get_method", "a00150.html#aae56ec26c2e744b449f3da7cd11667c3", null ],
+    [ "get_property", "a00150.html#a2e3be86b60d107455570b7b5f1d9fd43", null ],
+    [ "method", "a00150.html#ab07220b87a27baec193e958522f3a157", null ],
+    [ "property", "a00150.html#adb9288a8ea5edbb41cf884f82d2e5322", null ],
+    [ "methods", "a00150.html#a9c4b2bf58d22a49d4e52dc27ff248ed2", null ],
+    [ "name", "a00150.html#ae0b2ff915a7ee07932398ea73ba22943", null ],
+    [ "properties", "a00150.html#a7cbfa52dbf039cfe37ff79d1c97db144", null ],
+    [ "type_hash", "a00150.html#a9a4c20fb31a1759ef8aa1d5c8acfeabd", null ]
 ];

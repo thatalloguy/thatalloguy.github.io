@@ -1,46 +1,61 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00222" kind="struct" language="C++" prot="public">
-    <compoundname>DrawContext</compoundname>
+    <compoundname>GLTFMetallic_roughness::MaterialConstants</compoundname>
     <includes refid="a00047" local="no">VkEngine.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00222_1a92fc7232c72c6f3b5dc4e12dd6606f17" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00218" kindref="compound">RenderObject</ref> &gt;</type>
-        <definition>std::vector&lt;RenderObject&gt; DrawContext::OpaqueSurfaces</definition>
+      <memberdef kind="variable" id="a00222_1a006333f251c1c42685a1327f5e28d2b5" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 GLTFMetallic_roughness::MaterialConstants::colorFactors</definition>
         <argsstring></argsstring>
-        <name>OpaqueSurfaces</name>
-        <qualifiedname>DrawContext::OpaqueSurfaces</qualifiedname>
+        <name>colorFactors</name>
+        <qualifiedname>GLTFMetallic_roughness::MaterialConstants::colorFactors</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="100" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="100" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="59" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="59" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00222_1ad057160f65e0657e137a740ec37d31c2" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00218" kindref="compound">RenderObject</ref> &gt;</type>
-        <definition>std::vector&lt;RenderObject&gt; DrawContext::TransparentSurfaces</definition>
+      <memberdef kind="variable" id="a00222_1a0879b1b307e3fc6093979270f0d88684" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 GLTFMetallic_roughness::MaterialConstants::metalRoughFactors</definition>
         <argsstring></argsstring>
-        <name>TransparentSurfaces</name>
-        <qualifiedname>DrawContext::TransparentSurfaces</qualifiedname>
+        <name>metalRoughFactors</name>
+        <qualifiedname>GLTFMetallic_roughness::MaterialConstants::metalRoughFactors</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="101" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="101" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="60" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00222_1a897bbbaccb9a421115147a22b6015c4b" prot="public" static="no" mutable="no">
+        <type>glm::vec4</type>
+        <definition>glm::vec4 GLTFMetallic_roughness::MaterialConstants::extra[14]</definition>
+        <argsstring>[14]</argsstring>
+        <name>extra</name>
+        <qualifiedname>GLTFMetallic_roughness::MaterialConstants::extra</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="63" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="63" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="99" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="99" bodyend="102"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="58" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="58" bodyend="64"/>
     <listofallmembers>
-      <member refid="a00222_1a92fc7232c72c6f3b5dc4e12dd6606f17" prot="public" virt="non-virtual"><scope>DrawContext</scope><name>OpaqueSurfaces</name></member>
-      <member refid="a00222_1ad057160f65e0657e137a740ec37d31c2" prot="public" virt="non-virtual"><scope>DrawContext</scope><name>TransparentSurfaces</name></member>
+      <member refid="a00222_1a006333f251c1c42685a1327f5e28d2b5" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialConstants</scope><name>colorFactors</name></member>
+      <member refid="a00222_1a897bbbaccb9a421115147a22b6015c4b" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialConstants</scope><name>extra</name></member>
+      <member refid="a00222_1a0879b1b307e3fc6093979270f0d88684" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialConstants</scope><name>metalRoughFactors</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

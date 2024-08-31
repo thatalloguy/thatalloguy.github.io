@@ -1,9 +1,7 @@
 var a00214 =
 [
-    [ "colorImage", "a00214.html#a3dd3a1bd7517a31b58583f30940c3441", null ],
-    [ "colorSampler", "a00214.html#a14de3bb8c602f204bcf5d6c2ccb7ee2a", null ],
-    [ "dataBuffer", "a00214.html#af0402d122ad15ba381be88d540c77fa7", null ],
-    [ "dataBufferOffset", "a00214.html#a7f4e87b350163adac17d662bef1eab3b", null ],
-    [ "metalRoughImage", "a00214.html#af7791b1215a1fee0b5897e1d39a3c9ed", null ],
-    [ "metalRoughSampler", "a00214.html#aad3abdd50028f1774271881c1de7dc85", null ]
+    [ "data", "a00214.html#a8f0ff7eafb00783dbcc2a31a344a424f", null ],
+    [ "layout", "a00214.html#a03d2cd14a02f2d2e86ec6618299eab78", null ],
+    [ "name", "a00214.html#abddbf819b22623f6a100da0296f22c79", null ],
+    [ "pipeline", "a00214.html#ae88c49abeaebead8e1886f771f49fdfe", null ]
 ];

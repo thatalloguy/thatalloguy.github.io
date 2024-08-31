@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['quaternion_0',['Quaternion',['../a00162.html',1,'catos::math']]]
+  ['out_5fof_5frange_0',['out_of_range',['../a00354.html',1,'']]]
 ];

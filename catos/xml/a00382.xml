@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
+  <compounddef id="a00382" kind="class" language="C++" prot="public">
+    <compoundname>catos::Transform</compoundname>
+    <includes refid="a00113" local="no">world.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00382_1a81cda806c9b534e9bdb1eecd52f755e8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00170" kindref="compound">math::Vector3</ref></type>
+        <definition>math::Vector3 catos::Transform::position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <qualifiedname>catos::Transform::position</qualifiedname>
+        <initializer>{0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="35" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="35" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00382_1ac348bcf64022bd20df70bbba9370bd08" prot="public" static="no" mutable="no">
+        <type><ref refid="a00170" kindref="compound">math::Vector3</ref></type>
+        <definition>math::Vector3 catos::Transform::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>catos::Transform::size</qualifiedname>
+        <initializer>{0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="36" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00382_1a06faef0a9f62db80a7e604bd0c29be09" prot="public" static="no" mutable="no">
+        <type><ref refid="a00174" kindref="compound">math::Quaternion</ref></type>
+        <definition>math::Quaternion catos::Transform::rotation</definition>
+        <argsstring></argsstring>
+        <name>rotation</name>
+        <qualifiedname>catos::Transform::rotation</qualifiedname>
+        <initializer>{0, 0, 0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="37" column="30" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>An mathematical-object to represent an object in space. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>catos::Transform</label>
+        <link refid="a00382"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>position</edgelabel>
+          <edgelabel>size</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>rotation</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>catos::math::Quaternion</label>
+        <link refid="a00174"/>
+      </node>
+      <node id="2">
+        <label>catos::math::Vector3</label>
+        <link refid="a00170"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/world/world.h" line="31" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/world/world.h" bodystart="31" bodyend="39"/>
+    <listofallmembers>
+      <member refid="a00382_1a81cda806c9b534e9bdb1eecd52f755e8" prot="public" virt="non-virtual"><scope>catos::Transform</scope><name>position</name></member>
+      <member refid="a00382_1a06faef0a9f62db80a7e604bd0c29be09" prot="public" virt="non-virtual"><scope>catos::Transform</scope><name>rotation</name></member>
+      <member refid="a00382_1ac348bcf64022bd20df70bbba9370bd08" prot="public" virt="non-virtual"><scope>catos::Transform</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

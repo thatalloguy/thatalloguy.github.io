@@ -1,10 +1,13 @@
 var a00350 =
 [
-    [ "World", "a00350.html#aec8c71d7eecca01b11a340178050b3ff", null ],
-    [ "World", "a00350.html#ab12299b17ac57c83d84a4334668fbd0c", null ],
-    [ "World", "a00350.html#aa532af8ba019456b2557773d7d311f52", null ],
-    [ "~World", "a00350.html#af060899be4360927761d988573fa6c8d", null ],
-    [ "getEntity", "a00350.html#a5ec053434585afa253bbdca453e295d5", null ],
-    [ "getLastEntity", "a00350.html#a579b68331dcc443cb3f142ca496c8360", null ],
-    [ "spawnEntity", "a00350.html#a34468b42dbfca5d02cea291c29b68a9d", null ]
+    [ "string", "a00350.html#a32c0f06b59c6dbc67cc64d5a8f732c15", null ],
+    [ "string", "a00350.html#a4480db1c850badf5b99173e8f86bccd3", null ],
+    [ "string", "a00350.html#a8cdf82a90bb1bb97d5bce6a314522f3f", null ],
+    [ "string", "a00350.html#a50ce9d299797565f2c234d3adf560b36", null ],
+    [ "~string", "a00350.html#a89e269e90755ca7d7b39a8ebfe54faab", null ],
+    [ "c_str", "a00350.html#a7c36e8de782d34d3a872cae8a2f0f63e", null ],
+    [ "length", "a00350.html#afba456b6f8ebdfde5dbc52f1be6dc745", null ],
+    [ "operator+", "a00350.html#a207bb13fd445130cb78fc359d8193768", null ],
+    [ "operator=", "a00350.html#ac2861229098a713d2a6be51886b3d3cc", null ],
+    [ "operator=", "a00350.html#a38f07859d81f5ad65f1c6a5435f9f4c2", null ]
 ];

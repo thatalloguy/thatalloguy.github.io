@@ -1,69 +1,46 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00234" kind="class" language="C++" prot="public" abstract="yes">
-    <compoundname>IRenderable</compoundname>
-    <derivedcompoundref refid="a00254" prot="public" virt="non-virtual">LoadedGLTF</derivedcompoundref>
-    <derivedcompoundref refid="a00250" prot="public" virt="non-virtual">Node</derivedcompoundref>
-    <includes refid="a00065" local="no">VkLoader.h</includes>
-    <sectiondef kind="private-func">
-      <memberdef kind="function" id="a00234_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
-        <definition>virtual void IRenderable::Draw</definition>
-        <argsstring>(const glm::mat4 &amp;topMatrix, DrawContext &amp;ctx)=0</argsstring>
-        <name>Draw</name>
-        <qualifiedname>IRenderable::Draw</qualifiedname>
-        <reimplementedby refid="a00250_1a6870e549c7f428dbcd4f61d43eaa2f4b">Draw</reimplementedby>
-        <reimplementedby refid="a00254_1a5cb28e137c9fff7788afaf7aa5e565ac">Draw</reimplementedby>
-        <reimplementedby refid="a00226_1a8d5ed2175240d27f97e058508b110b51">Draw</reimplementedby>
-        <param>
-          <type>const glm::mat4 &amp;</type>
-          <declname>topMatrix</declname>
-        </param>
-        <param>
-          <type><ref refid="a00222" kindref="compound">DrawContext</ref> &amp;</type>
-          <declname>ctx</declname>
-        </param>
+  <compounddef id="a00234" kind="struct" language="C++" prot="public">
+    <compoundname>DrawContext</compoundname>
+    <includes refid="a00047" local="no">VkEngine.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00234_1a92fc7232c72c6f3b5dc4e12dd6606f17" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="a00230" kindref="compound">RenderObject</ref> &gt;</type>
+        <definition>std::vector&lt;RenderObject&gt; DrawContext::OpaqueSurfaces</definition>
+        <argsstring></argsstring>
+        <name>OpaqueSurfaces</name>
+        <qualifiedname>DrawContext::OpaqueSurfaces</qualifiedname>
         <briefdescription>
-<para>TODO define <ref refid="a00222" kindref="compound">DrawContext</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="33" column="18"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="100" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00234_1ad057160f65e0657e137a740ec37d31c2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="a00230" kindref="compound">RenderObject</ref> &gt;</type>
+        <definition>std::vector&lt;RenderObject&gt; DrawContext::TransparentSurfaces</definition>
+        <argsstring></argsstring>
+        <name>TransparentSurfaces</name>
+        <qualifiedname>DrawContext::TransparentSurfaces</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="101" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="101" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>IRenderable</label>
-        <link refid="a00234"/>
-      </node>
-      <node id="2">
-        <label>LoadedGLTF</label>
-        <link refid="a00254"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>MeshNode</label>
-        <link refid="a00226"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>Node</label>
-        <link refid="a00250"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="31" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="31" bodyend="34"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="99" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="99" bodyend="102"/>
     <listofallmembers>
-      <member refid="a00234_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" virt="pure-virtual"><scope>IRenderable</scope><name>Draw</name></member>
+      <member refid="a00234_1a92fc7232c72c6f3b5dc4e12dd6606f17" prot="public" virt="non-virtual"><scope>DrawContext</scope><name>OpaqueSurfaces</name></member>
+      <member refid="a00234_1ad057160f65e0657e137a740ec37d31c2" prot="public" virt="non-virtual"><scope>DrawContext</scope><name>TransparentSurfaces</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

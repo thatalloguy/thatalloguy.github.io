@@ -1,10 +1,13 @@
 var a00218 =
 [
-    [ "bounds", "a00218.html#a14bf8548f4c7a416e787a3508f833a50", null ],
-    [ "firstIndex", "a00218.html#ac0d57e3a8ec65b53d2593224161ace73", null ],
-    [ "indexBuffer", "a00218.html#a30d8bb5f11112733abf3fa034f65f80c", null ],
-    [ "indexCount", "a00218.html#ad804e3c297d2f4d5ea1aabc80f3a2801", null ],
-    [ "material", "a00218.html#ab09c067290de5759d715bfea4487fcf6", null ],
-    [ "transform", "a00218.html#a5aa60e9c01b069dcddebd1a913e0999c", null ],
-    [ "vertexBufferAddress", "a00218.html#a2cb78112987761ab014ca3095c3b0dbf", null ]
+    [ "MaterialConstants", "a00222.html", "a00222" ],
+    [ "MaterialResources", "a00226.html", "a00226" ],
+    [ "buildPipelines", "a00218.html#ac6b86602d156a5555b3799b9172c674e", null ],
+    [ "clearResources", "a00218.html#acdddc2beb7cc303daabfa28404afa2c9", null ],
+    [ "destroy", "a00218.html#a96ff6cb8fd8d01b16921be3900827939", null ],
+    [ "writeMaterial", "a00218.html#a744d03ddb8fe03ea8ee07f2ae3b42de5", null ],
+    [ "materialLayout", "a00218.html#a269aa1b48852004420322491f8e03e4a", null ],
+    [ "opaquePipeline", "a00218.html#a14e8a4c07862539d98a1793cf7be2e24", null ],
+    [ "transparentPipeline", "a00218.html#a20a1e6318217b3d3e63e91439022a4d8", null ],
+    [ "writer", "a00218.html#a90094ab356bc8a5426f8012f76c1326f", null ]
 ];

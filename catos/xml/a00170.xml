@@ -1,38 +1,62 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00170" kind="struct" language="C++" prot="public">
-    <compoundname>DescriptorLayoutBuilder</compoundname>
-    <includes refid="a00041" local="no">VkDescriptors.h</includes>
+    <compoundname>catos::math::Vector3</compoundname>
+    <includes refid="a00029" local="no">vecs.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00170_1a84964bc1535f1164c65c682d8abc1ae6" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; VkDescriptorSetLayoutBinding &gt;</type>
-        <definition>std::vector&lt;VkDescriptorSetLayoutBinding&gt; DescriptorLayoutBuilder::bindings</definition>
+      <memberdef kind="variable" id="a00170_1aabf30b0a34d4ec3096451393e2d71913" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float catos::math::Vector3::x</definition>
         <argsstring></argsstring>
-        <name>bindings</name>
-        <qualifiedname>DescriptorLayoutBuilder::bindings</qualifiedname>
+        <name>x</name>
+        <qualifiedname>catos::math::Vector3::x</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="18" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="18" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00170_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float catos::math::Vector3::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>catos::math::Vector3::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00170_1a2568eefded1c720de4fcac757a5f164d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float catos::math::Vector3::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>catos::math::Vector3::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00170_1afc94cce99812e98162990b38dc7a2fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void DescriptorLayoutBuilder::addBinding</definition>
-        <argsstring>(uint32_t binding, VkDescriptorType type)</argsstring>
-        <name>addBinding</name>
-        <qualifiedname>DescriptorLayoutBuilder::addBinding</qualifiedname>
+      <memberdef kind="function" id="a00170_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::math::Vector3::operator==</definition>
+        <argsstring>(Vector3 &amp;b) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>catos::math::Vector3::operator==</qualifiedname>
         <param>
-          <type>uint32_t</type>
-          <declname>binding</declname>
-        </param>
-        <param>
-          <type>VkDescriptorType</type>
-          <declname>type</declname>
+          <type><ref refid="a00170" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>b</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -40,35 +64,35 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="20" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="7" bodyend="15"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="41" bodyend="43"/>
       </memberdef>
-      <memberdef kind="function" id="a00170_1a458ab671e6690342e749cd8f71bb41bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void DescriptorLayoutBuilder::clear</definition>
-        <argsstring>()</argsstring>
-        <name>clear</name>
-        <qualifiedname>DescriptorLayoutBuilder::clear</qualifiedname>
+      <memberdef kind="function" id="a00170_1aac3d3c6575283572a19a23b352fca633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00170" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>Vector3 &amp; catos::math::Vector3::operator=</definition>
+        <argsstring>(float val)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>catos::math::Vector3::operator=</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="21" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="17" bodyend="19"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="45" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="45" bodyend="50"/>
       </memberdef>
-      <memberdef kind="function" id="a00170_1a797241e8070455929166f95a9de86163" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkDescriptorSetLayout</type>
-        <definition>VkDescriptorSetLayout DescriptorLayoutBuilder::build</definition>
-        <argsstring>(VkDevice device, VkShaderStageFlags shaderStages)</argsstring>
-        <name>build</name>
-        <qualifiedname>DescriptorLayoutBuilder::build</qualifiedname>
+      <memberdef kind="function" id="a00170_1ac086c01bff23542b26b0b2eef4c52348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::math::Vector3::operator+=</definition>
+        <argsstring>(Vector3 &amp;b)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>catos::math::Vector3::operator+=</qualifiedname>
         <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type>VkShaderStageFlags</type>
-          <declname>shaderStages</declname>
+          <type><ref refid="a00170" kindref="compound">Vector3</ref> &amp;</type>
+          <declname>b</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -76,19 +100,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="23" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="21" bodyend="37"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="53" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="53" bodyend="57"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="16" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="16" bodyend="24"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="37" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="37" bodyend="60"/>
     <listofallmembers>
-      <member refid="a00170_1afc94cce99812e98162990b38dc7a2fd0" prot="public" virt="non-virtual"><scope>DescriptorLayoutBuilder</scope><name>addBinding</name></member>
-      <member refid="a00170_1a84964bc1535f1164c65c682d8abc1ae6" prot="public" virt="non-virtual"><scope>DescriptorLayoutBuilder</scope><name>bindings</name></member>
-      <member refid="a00170_1a797241e8070455929166f95a9de86163" prot="public" virt="non-virtual"><scope>DescriptorLayoutBuilder</scope><name>build</name></member>
-      <member refid="a00170_1a458ab671e6690342e749cd8f71bb41bc" prot="public" virt="non-virtual"><scope>DescriptorLayoutBuilder</scope><name>clear</name></member>
+      <member refid="a00170_1ac086c01bff23542b26b0b2eef4c52348" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator+=</name></member>
+      <member refid="a00170_1aac3d3c6575283572a19a23b352fca633" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator=</name></member>
+      <member refid="a00170_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator==</name></member>
+      <member refid="a00170_1aabf30b0a34d4ec3096451393e2d71913" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>x</name></member>
+      <member refid="a00170_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>y</name></member>
+      <member refid="a00170_1a2568eefded1c720de4fcac757a5f164d" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>z</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

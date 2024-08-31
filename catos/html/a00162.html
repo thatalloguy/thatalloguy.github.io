@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): catos::math::Quaternion Struct Reference</title>
+<title>Catos Engine (Source): catos::Window Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,64 +96,93 @@ $(function(){initNavTree('a00162.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="a00159.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">catos::math::Quaternion Struct Reference</div></div>
+  <div class="headertitle"><div class="title">catos::Window Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00029_source.html">vecs.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00023_source.html">window.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1c6bdfef17a8d70344a9af3a20d8b130" id="r_a1c6bdfef17a8d70344a9af3a20d8b130"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c6bdfef17a8d70344a9af3a20d8b130">operator==</a> (<a class="el" href="a00162.html">Quaternion</a> &amp;b) const</td></tr>
-<tr class="separator:a1c6bdfef17a8d70344a9af3a20d8b130"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af27fb9153ec0fcb930a73aa9cd7e2d09" id="r_af27fb9153ec0fcb930a73aa9cd7e2d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00162.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af27fb9153ec0fcb930a73aa9cd7e2d09">operator=</a> (float val)</td></tr>
-<tr class="separator:af27fb9153ec0fcb930a73aa9cd7e2d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cddf6ae46991af3d46855935b34f75a" id="r_a1cddf6ae46991af3d46855935b34f75a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cddf6ae46991af3d46855935b34f75a">operator+</a> (<a class="el" href="a00162.html">Quaternion</a> &amp;b)</td></tr>
-<tr class="separator:a1cddf6ae46991af3d46855935b34f75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a203266c0dc325bac87c20c3ae822a567" id="r_a203266c0dc325bac87c20c3ae822a567"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a203266c0dc325bac87c20c3ae822a567">sIdentity</a> ()</td></tr>
-<tr class="separator:a203266c0dc325bac87c20c3ae822a567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17960ca89f793bac084a8203f1a7d3e6" id="r_a17960ca89f793bac084a8203f1a7d3e6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a17960ca89f793bac084a8203f1a7d3e6">Window</a> (<a class="el" href="a00158.html">WindowCreationInfo</a> &amp;creationInfo)</td></tr>
+<tr class="separator:a17960ca89f793bac084a8203f1a7d3e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245d821e6016fa1f6970ccbbedd635f6" id="r_a245d821e6016fa1f6970ccbbedd635f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a245d821e6016fa1f6970ccbbedd635f6">~Window</a> ()</td></tr>
+<tr class="separator:a245d821e6016fa1f6970ccbbedd635f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df30484abfd5cc491a5ed2055692859" id="r_a6df30484abfd5cc491a5ed2055692859"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6df30484abfd5cc491a5ed2055692859">should_window_close</a> ()</td></tr>
+<tr class="separator:a6df30484abfd5cc491a5ed2055692859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59515fc5a56e86d5a46d771595daac55" id="r_a59515fc5a56e86d5a46d771595daac55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59515fc5a56e86d5a46d771595daac55">update</a> ()</td></tr>
+<tr class="separator:a59515fc5a56e86d5a46d771595daac55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc3176914723cab13d809b6ae8f3d6d2" id="r_afc3176914723cab13d809b6ae8f3d6d2"><td class="memItemLeft" align="right" valign="top">GLFWwindow *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc3176914723cab13d809b6ae8f3d6d2">get_glfw_window</a> ()</td></tr>
+<tr class="separator:afc3176914723cab13d809b6ae8f3d6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a94b0c157ed7151923b1d51f2754b6b0f" id="r_a94b0c157ed7151923b1d51f2754b6b0f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b0c157ed7151923b1d51f2754b6b0f">x</a></td></tr>
-<tr class="separator:a94b0c157ed7151923b1d51f2754b6b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c481d6a952719618213fc6b921f67c0" id="r_a2c481d6a952719618213fc6b921f67c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c481d6a952719618213fc6b921f67c0">y</a></td></tr>
-<tr class="separator:a2c481d6a952719618213fc6b921f67c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e8b8c73d6afd0531e7f4c8141f469c9" id="r_a9e8b8c73d6afd0531e7f4c8141f469c9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e8b8c73d6afd0531e7f4c8141f469c9">z</a></td></tr>
-<tr class="separator:a9e8b8c73d6afd0531e7f4c8141f469c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ea592d10bfb621eab8f3a5dbb6e8645" id="r_a4ea592d10bfb621eab8f3a5dbb6e8645"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ea592d10bfb621eab8f3a5dbb6e8645">w</a></td></tr>
-<tr class="separator:a4ea592d10bfb621eab8f3a5dbb6e8645"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a7666877758d915dca4176786fc0a7925" id="r_a7666877758d915dca4176786fc0a7925"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00166.html">math::Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7666877758d915dca4176786fc0a7925">getMonitorSize</a> ()</td></tr>
+<tr class="separator:a7666877758d915dca4176786fc0a7925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:a4097b3e04a4f8ece21f5abe1b10e6323" id="r_a4097b3e04a4f8ece21f5abe1b10e6323"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4097b3e04a4f8ece21f5abe1b10e6323">App</a></td></tr>
+<tr class="separator:a4097b3e04a4f8ece21f5abe1b10e6323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a17960ca89f793bac084a8203f1a7d3e6" name="a17960ca89f793bac084a8203f1a7d3e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17960ca89f793bac084a8203f1a7d3e6">&#9670;&#160;</a></span>Window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Window::Window </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00158.html">catos::WindowCreationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>creationInfo</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a245d821e6016fa1f6970ccbbedd635f6" name="a245d821e6016fa1f6970ccbbedd635f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245d821e6016fa1f6970ccbbedd635f6">&#9670;&#160;</a></span>~Window()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Window::~Window </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1cddf6ae46991af3d46855935b34f75a" name="a1cddf6ae46991af3d46855935b34f75a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1cddf6ae46991af3d46855935b34f75a">&#9670;&#160;</a></span>operator+()</h2>
+<a id="afc3176914723cab13d809b6ae8f3d6d2" name="afc3176914723cab13d809b6ae8f3d6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc3176914723cab13d809b6ae8f3d6d2">&#9670;&#160;</a></span>get_glfw_window()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void catos::math::Quaternion::operator+ </td>
+          <td class="memname">GLFWwindow * Window::get_glfw_window </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00162.html">Quaternion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af27fb9153ec0fcb930a73aa9cd7e2d09" name="af27fb9153ec0fcb930a73aa9cd7e2d09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af27fb9153ec0fcb930a73aa9cd7e2d09">&#9670;&#160;</a></span>operator=()</h2>
+<a id="a7666877758d915dca4176786fc0a7925" name="a7666877758d915dca4176786fc0a7925"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7666877758d915dca4176786fc0a7925">&#9670;&#160;</a></span>getMonitorSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,57 +191,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00162.html">Quaternion</a> &amp; catos::math::Quaternion::operator= </td>
-          <td>(</td>
-          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1c6bdfef17a8d70344a9af3a20d8b130" name="a1c6bdfef17a8d70344a9af3a20d8b130"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c6bdfef17a8d70344a9af3a20d8b130">&#9670;&#160;</a></span>operator==()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool catos::math::Quaternion::operator== </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00162.html">Quaternion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a203266c0dc325bac87c20c3ae822a567" name="a203266c0dc325bac87c20c3ae822a567"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a203266c0dc325bac87c20c3ae822a567">&#9670;&#160;</a></span>sIdentity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void catos::math::Quaternion::sIdentity </td>
+          <td class="memname"><a class="el" href="a00166.html">math::Vector2</a> Window::getMonitorSize </td>
           <td>(</td>
           <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -220,72 +199,73 @@ Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a4ea592d10bfb621eab8f3a5dbb6e8645" name="a4ea592d10bfb621eab8f3a5dbb6e8645"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ea592d10bfb621eab8f3a5dbb6e8645">&#9670;&#160;</a></span>w</h2>
+<a id="a6df30484abfd5cc491a5ed2055692859" name="a6df30484abfd5cc491a5ed2055692859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6df30484abfd5cc491a5ed2055692859">&#9670;&#160;</a></span>should_window_close()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float catos::math::Quaternion::w</td>
+          <td class="memname">bool Window::should_window_close </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a94b0c157ed7151923b1d51f2754b6b0f" name="a94b0c157ed7151923b1d51f2754b6b0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94b0c157ed7151923b1d51f2754b6b0f">&#9670;&#160;</a></span>x</h2>
+<a id="a59515fc5a56e86d5a46d771595daac55" name="a59515fc5a56e86d5a46d771595daac55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59515fc5a56e86d5a46d771595daac55">&#9670;&#160;</a></span>update()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float catos::math::Quaternion::x</td>
+          <td class="memname">void Window::update </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2c481d6a952719618213fc6b921f67c0" name="a2c481d6a952719618213fc6b921f67c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c481d6a952719618213fc6b921f67c0">&#9670;&#160;</a></span>y</h2>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="a4097b3e04a4f8ece21f5abe1b10e6323" name="a4097b3e04a4f8ece21f5abe1b10e6323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4097b3e04a4f8ece21f5abe1b10e6323">&#9670;&#160;</a></span>App</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">float catos::math::Quaternion::y</td>
+          <td class="memname">friend class <a class="el" href="a00130.html">App</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9e8b8c73d6afd0531e7f4c8141f469c9" name="a9e8b8c73d6afd0531e7f4c8141f469c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e8b8c73d6afd0531e7f4c8141f469c9">&#9670;&#160;</a></span>z</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">float catos::math::Quaternion::z</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00029_source.html">vecs.h</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="a00023_source.html">window.h</a></li>
+<li><a class="el" href="a00020.html">window.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

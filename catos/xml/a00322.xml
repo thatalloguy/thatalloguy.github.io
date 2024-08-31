@@ -1,135 +1,170 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00322" kind="class" language="C++" prot="public">
-    <compoundname>catos::vector::iterator</compoundname>
-    <includes refid="a00092" local="no">vector.h</includes>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00322_1ab7bca85f1f6840ede38062dd28ed27db" prot="private" static="no" mutable="no">
-        <type>T *</type>
-        <definition>T* catos::vector&lt; T &gt;::iterator::_curr</definition>
+    <compoundname>catos::ScriptingEngine</compoundname>
+    <includes refid="a00080" local="no">ScriptingEngine.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="a00322_1ac7b716e6d41ff508ad2d8e5dad655d72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Registry</definition>
         <argsstring></argsstring>
-        <name>_curr</name>
-        <qualifiedname>catos::vector::iterator::_curr</qualifiedname>
+        <name>Registry</name>
+        <qualifiedname>catos::ScriptingEngine::Registry</qualifiedname>
+        <param>
+          <type><ref refid="a00154" kindref="compound">Registry</ref></type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="248" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="248" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="35" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00322_1a535ae6a8f9c62dc1bedbb3d4cf727306" prot="private" static="no" mutable="no">
+        <type><ref refid="a00358" kindref="compound">catos::vector</ref>&lt; <ref refid="a00346" kindref="compound">catos::Pair</ref>&lt; py::object *, <ref refid="a00318" kindref="compound">ScriptInfo</ref> &gt; &gt;</type>
+        <definition>catos::vector&lt;catos::Pair&lt;py::object* , ScriptInfo&gt; &gt; catos::ScriptingEngine::_scripts</definition>
+        <argsstring></argsstring>
+        <name>_scripts</name>
+        <qualifiedname>catos::ScriptingEngine::_scripts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="55" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00322_1a8b55daad4edbed63c8a40c2df5ee4c12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00322" kindref="compound">ScriptingEngine</ref> &amp;</type>
+        <definition>catos::ScriptingEngine &amp; catos::ScriptingEngine::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>catos::ScriptingEngine::getInstance</qualifiedname>
+        <briefdescription>
+<para>singleton :D </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="38" column="32" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="16" bodyend="19"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00322_1ab0e775cb0f1d8c0a0a068920bedb766d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="a00322_1a86e85faa189694bbe81da7e4067a4cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
-        <definition>catos::vector&lt; T &gt;::iterator::iterator</definition>
-        <argsstring>(T *p)</argsstring>
-        <name>iterator</name>
-        <qualifiedname>catos::vector::iterator::iterator</qualifiedname>
+        <definition>catos::ScriptingEngine::ScriptingEngine</definition>
+        <argsstring>()</argsstring>
+        <name>ScriptingEngine</name>
+        <qualifiedname>catos::ScriptingEngine::ScriptingEngine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="40" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="21" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="a00322_1a7b8081c15524b4ce43b6ae938a397d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::ScriptingEngine::~ScriptingEngine</definition>
+        <argsstring>()</argsstring>
+        <name>~ScriptingEngine</name>
+        <qualifiedname>catos::ScriptingEngine::~ScriptingEngine</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="41" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="25" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="a00322_1a055f269e131f3551ee53902b2062ea39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::registerNewScript</definition>
+        <argsstring>(catos::string &amp;pathToPythonFile)</argsstring>
+        <name>registerNewScript</name>
+        <qualifiedname>catos::ScriptingEngine::registerNewScript</qualifiedname>
         <param>
-          <type>T *</type>
-          <declname>p</declname>
+          <type><ref refid="a00350" kindref="compound">catos::string</ref> &amp;</type>
+          <declname>pathToPythonFile</declname>
         </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>First read the contents of the file given to us and validate it.</para>
+<para>Create a scriptInfo</para>
+<para>Find the name of the user defined script object</para>
+<para>Do a nullptr here cuz we allocate the mem for a script obj in the <ref refid="a00322_1a382ee3821ad868a82549920ad8c3f360" kindref="member">ScriptingEngine::startScripts()</ref>;</para>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="216" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="216" bodyend="218"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="43" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="29" bodyend="82"/>
       </memberdef>
-      <memberdef kind="function" id="a00322_1a17a82b93222cdeb02a1c08097db8bdbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="a00322" kindref="compound">iterator</ref> &amp;</type>
-        <definition>iterator &amp; catos::vector&lt; T &gt;::iterator::operator++</definition>
+      <memberdef kind="function" id="a00322_1a382ee3821ad868a82549920ad8c3f360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScriptingEngine::startScripts</definition>
         <argsstring>()</argsstring>
-        <name>operator++</name>
-        <qualifiedname>catos::vector::iterator::operator++</qualifiedname>
+        <name>startScripts</name>
+        <qualifiedname>catos::ScriptingEngine::startScripts</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>execute the script;</para>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="220" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="220" bodyend="224"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="45" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="84" bodyend="99"/>
       </memberdef>
-      <memberdef kind="function" id="a00322_1a366ed031708b5b46d97890c0ce249b07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="a00322" kindref="compound">iterator</ref> &amp;</type>
-        <definition>iterator &amp; catos::vector&lt; T &gt;::iterator::operator--</definition>
+      <memberdef kind="function" id="a00322_1a380736b746364b090839f33b7bc303ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScriptingEngine::updateScripts</definition>
         <argsstring>()</argsstring>
-        <name>operator--</name>
-        <qualifiedname>catos::vector::iterator::operator--</qualifiedname>
+        <name>updateScripts</name>
+        <qualifiedname>catos::ScriptingEngine::updateScripts</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="226" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="226" bodyend="230"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="46" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="101" bodyend="111"/>
       </memberdef>
-      <memberdef kind="function" id="a00322_1a60ac124ebcadcd904ea45b3f1c7f30ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>T &amp;</type>
-        <definition>T &amp; catos::vector&lt; T &gt;::iterator::operator*</definition>
+      <memberdef kind="function" id="a00322_1ad959b74ea8fbe5c00c2e5bf74af97b33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScriptingEngine::endScripts</definition>
         <argsstring>()</argsstring>
-        <name>operator*</name>
-        <qualifiedname>catos::vector::iterator::operator*</qualifiedname>
+        <name>endScripts</name>
+        <qualifiedname>catos::ScriptingEngine::endScripts</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="232" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="232" bodyend="235"/>
-      </memberdef>
-      <memberdef kind="function" id="a00322_1a2c4489a63561f426f93ac1692f22ec86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool catos::vector&lt; T &gt;::iterator::operator==</definition>
-        <argsstring>(const iterator &amp;b) const</argsstring>
-        <name>operator==</name>
-        <qualifiedname>catos::vector::iterator::operator==</qualifiedname>
-        <param>
-          <type>const <ref refid="a00322" kindref="compound">iterator</ref> &amp;</type>
-          <declname>b</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="237" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="237" bodyend="240"/>
-      </memberdef>
-      <memberdef kind="function" id="a00322_1aa29fbef28977148af1ca11ebcf80e08a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool catos::vector&lt; T &gt;::iterator::operator!=</definition>
-        <argsstring>(const iterator &amp;b) const</argsstring>
-        <name>operator!=</name>
-        <qualifiedname>catos::vector::iterator::operator!=</qualifiedname>
-        <param>
-          <type>const <ref refid="a00322" kindref="compound">iterator</ref> &amp;</type>
-          <declname>b</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="242" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="242" bodyend="245"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="47" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="113" bodyend="124"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="213" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="214" bodyend="254"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="31" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="31" bodyend="57"/>
     <listofallmembers>
-      <member refid="a00322_1ab7bca85f1f6840ede38062dd28ed27db" prot="private" virt="non-virtual"><scope>catos::vector::iterator</scope><name>_curr</name></member>
-      <member refid="a00322_1ab0e775cb0f1d8c0a0a068920bedb766d" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>iterator</name></member>
-      <member refid="a00322_1aa29fbef28977148af1ca11ebcf80e08a" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator!=</name></member>
-      <member refid="a00322_1a60ac124ebcadcd904ea45b3f1c7f30ae" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator*</name></member>
-      <member refid="a00322_1a17a82b93222cdeb02a1c08097db8bdbc" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator++</name></member>
-      <member refid="a00322_1a366ed031708b5b46d97890c0ce249b07" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator--</name></member>
-      <member refid="a00322_1a2c4489a63561f426f93ac1692f22ec86" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator==</name></member>
+      <member refid="a00322_1a535ae6a8f9c62dc1bedbb3d4cf727306" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>_scripts</name></member>
+      <member refid="a00322_1ad959b74ea8fbe5c00c2e5bf74af97b33" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>endScripts</name></member>
+      <member refid="a00322_1a8b55daad4edbed63c8a40c2df5ee4c12" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>getInstance</name></member>
+      <member refid="a00322_1a055f269e131f3551ee53902b2062ea39" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>registerNewScript</name></member>
+      <member refid="a00322_1ac7b716e6d41ff508ad2d8e5dad655d72" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>Registry</name></member>
+      <member refid="a00322_1a86e85faa189694bbe81da7e4067a4cc0" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>ScriptingEngine</name></member>
+      <member refid="a00322_1a382ee3821ad868a82549920ad8c3f360" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>startScripts</name></member>
+      <member refid="a00322_1a380736b746364b090839f33b7bc303ad" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>updateScripts</name></member>
+      <member refid="a00322_1a7b8081c15524b4ce43b6ae938a397d4c" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>~ScriptingEngine</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

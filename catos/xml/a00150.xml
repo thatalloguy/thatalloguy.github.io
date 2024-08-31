@@ -1,67 +1,210 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00150" kind="class" language="C++" prot="public">
-    <compoundname>catos::Window</compoundname>
-    <includes refid="a00023" local="no">window.h</includes>
-    <sectiondef kind="friend">
-      <memberdef kind="friend" id="a00150_1a4097b3e04a4f8ece21f5abe1b10e6323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>class</type>
-        <definition>friend class App</definition>
+    <compoundname>catos::TypeInfo</compoundname>
+    <includes refid="a00011" local="no">registry.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00150_1a9a4c20fb31a1759ef8aa1d5c8acfeabd" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t catos::TypeInfo::type_hash</definition>
         <argsstring></argsstring>
-        <name>App</name>
-        <qualifiedname>catos::Window::App</qualifiedname>
-        <param>
-          <type><ref refid="a00118" kindref="compound">App</ref></type>
-        </param>
+        <name>type_hash</name>
+        <qualifiedname>catos::TypeInfo::type_hash</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="32" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="32" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="224" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="224" bodyend="-1"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00150_1ab7994356dd1b1d7d9de8e064339b19c8" prot="private" static="no" mutable="no">
-        <type>GLFWwindow *</type>
-        <definition>GLFWwindow* catos::Window::_raw_window</definition>
+      <memberdef kind="variable" id="a00150_1ae0b2ff915a7ee07932398ea73ba22943" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string catos::TypeInfo::name</definition>
         <argsstring></argsstring>
-        <name>_raw_window</name>
-        <qualifiedname>catos::Window::_raw_window</qualifiedname>
+        <name>name</name>
+        <qualifiedname>catos::TypeInfo::name</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="47" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="47" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="225" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="225" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00150_1a33dc31c1903b6bb9b7684217cc553d7f" prot="private" static="no" mutable="no">
-        <type><ref refid="a00146" kindref="compound">WindowCreationInfo</ref> &amp;</type>
-        <definition>WindowCreationInfo&amp; catos::Window::_createInfo</definition>
+      <memberdef kind="variable" id="a00150_1a7cbfa52dbf039cfe37ff79d1c97db144" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="a00134" kindref="compound">Property</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string , Property* &gt; catos::TypeInfo::properties</definition>
         <argsstring></argsstring>
-        <name>_createInfo</name>
-        <qualifiedname>catos::Window::_createInfo</qualifiedname>
+        <name>properties</name>
+        <qualifiedname>catos::TypeInfo::properties</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="48" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="48" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="285" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00150_1a9c4b2bf58d22a49d4e52dc27ff248ed2" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="a00146" kindref="compound">Method</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string , Method* &gt; catos::TypeInfo::methods</definition>
+        <argsstring></argsstring>
+        <name>methods</name>
+        <qualifiedname>catos::TypeInfo::methods</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="286" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="286" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00150_1a17960ca89f793bac084a8203f1a7d3e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Window::Window</definition>
-        <argsstring>(WindowCreationInfo &amp;creationInfo)</argsstring>
-        <name>Window</name>
-        <qualifiedname>catos::Window::Window</qualifiedname>
+      <memberdef kind="function" id="a00150_1adb9288a8ea5edbb41cf884f82d2e5322" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="a00150" kindref="compound">TypeInfo</ref> &amp;</type>
+        <definition>TypeInfo &amp; catos::TypeInfo::property</definition>
+        <argsstring>(const char *property_name, U T::*member, cstr description)</argsstring>
+        <name>property</name>
+        <qualifiedname>catos::TypeInfo::property</qualifiedname>
         <param>
-          <type><ref refid="a00146" kindref="compound">WindowCreationInfo</ref> &amp;</type>
-          <declname>creationInfo</declname>
+          <type>const char *</type>
+          <declname>property_name</declname>
+        </param>
+        <param>
+          <type>U T::*</type>
+          <declname>member</declname>
+        </param>
+        <param>
+          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+<para>Registers a property with a name and a member pointer (Returns itself). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="230" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="230" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="a00150_1ab07220b87a27baec193e958522f3a157" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ClassT</type>
+          </param>
+          <param>
+            <type>typename ReturnV</type>
+          </param>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>constexpr <ref refid="a00150" kindref="compound">TypeInfo</ref> &amp;</type>
+        <definition>constexpr TypeInfo &amp; catos::TypeInfo::method</definition>
+        <argsstring>(const char *method_name, ReturnV(ClassT::*ptr)(Args...), cstr description)</argsstring>
+        <name>method</name>
+        <qualifiedname>catos::TypeInfo::method</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>method_name</declname>
+        </param>
+        <param>
+          <type>ReturnV(ClassT::*)(Args...)</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+<para>Registers a method with a name and a member function pointer (returns the Type object again). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="246" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="246" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="a00150_1a2e3be86b60d107455570b7b5f1d9fd43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00134" kindref="compound">Property</ref> *</type>
+        <definition>Property * catos::TypeInfo::get_property</definition>
+        <argsstring>(const char *property_name)</argsstring>
+        <name>get_property</name>
+        <qualifiedname>catos::TypeInfo::get_property</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>property_name</declname>
+        </param>
+        <briefdescription>
+<para>Returns a property object based on the name given. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="255" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="255" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="a00150_1aae56ec26c2e744b449f3da7cd11667c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00146" kindref="compound">Method</ref> *</type>
+        <definition>Method * catos::TypeInfo::get_method</definition>
+        <argsstring>(const char *method_name)</argsstring>
+        <name>get_method</name>
+        <qualifiedname>catos::TypeInfo::get_method</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>method_name</declname>
+        </param>
+        <briefdescription>
+<para>Returns a method object based on the name given. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="270" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="270" bodyend="278"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00150_1a267bd4ae8f4c123f604e8f733d4f7aa6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool catos::TypeInfo::is_valid</definition>
+        <argsstring>(Property *ptr)</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>catos::TypeInfo::is_valid</qualifiedname>
+        <param>
+          <type><ref refid="a00134" kindref="compound">Property</ref> *</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+<para>Checks wether or not the ptr is a nullptr;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="282" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="282" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="a00150_1a59fec13410de1cba52ac86212587f5aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool catos::TypeInfo::is_valid</definition>
+        <argsstring>(Method *ptr)</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>catos::TypeInfo::is_valid</qualifiedname>
+        <param>
+          <type><ref refid="a00146" kindref="compound">Method</ref> *</type>
+          <declname>ptr</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -69,113 +212,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="34" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.cpp" bodystart="18" bodyend="50"/>
-      </memberdef>
-      <memberdef kind="function" id="a00150_1a245d821e6016fa1f6970ccbbedd635f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Window::~Window</definition>
-        <argsstring>()</argsstring>
-        <name>~Window</name>
-        <qualifiedname>catos::Window::~Window</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="35" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.cpp" bodystart="52" bodyend="56"/>
-      </memberdef>
-      <memberdef kind="function" id="a00150_1a6df30484abfd5cc491a5ed2055692859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool Window::should_window_close</definition>
-        <argsstring>()</argsstring>
-        <name>should_window_close</name>
-        <qualifiedname>catos::Window::should_window_close</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="39" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.cpp" bodystart="84" bodyend="86"/>
-      </memberdef>
-      <memberdef kind="function" id="a00150_1a59515fc5a56e86d5a46d771595daac55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Window::update</definition>
-        <argsstring>()</argsstring>
-        <name>update</name>
-        <qualifiedname>catos::Window::update</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.cpp" bodystart="88" bodyend="90"/>
-      </memberdef>
-      <memberdef kind="function" id="a00150_1afc3176914723cab13d809b6ae8f3d6d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>GLFWwindow *</type>
-        <definition>GLFWwindow * Window::get_glfw_window</definition>
-        <argsstring>()</argsstring>
-        <name>get_glfw_window</name>
-        <qualifiedname>catos::Window::get_glfw_window</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="43" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.cpp" bodystart="92" bodyend="94"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="a00150_1a7666877758d915dca4176786fc0a7925" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="a00154" kindref="compound">math::Vector2</ref></type>
-        <definition>math::Vector2 Window::getMonitorSize</definition>
-        <argsstring>()</argsstring>
-        <name>getMonitorSize</name>
-        <qualifiedname>catos::Window::getMonitorSize</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="37" column="30" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.cpp" bodystart="74" bodyend="82"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-func">
-      <memberdef kind="function" id="a00150_1a28daab9434c88ba9e1330e3462cf0517" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Window::enable_dark_theme</definition>
-        <argsstring>()</argsstring>
-        <name>enable_dark_theme</name>
-        <qualifiedname>catos::Window::enable_dark_theme</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="50" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.cpp" bodystart="58" bodyend="71"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="283" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="283" bodyend="283"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Typeinfo is an object that holds all information about a specific type. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.h" line="29" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/window.h" bodystart="29" bodyend="52"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="220" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="220" bodyend="287"/>
     <listofallmembers>
-      <member refid="a00150_1a33dc31c1903b6bb9b7684217cc553d7f" prot="private" virt="non-virtual"><scope>catos::Window</scope><name>_createInfo</name></member>
-      <member refid="a00150_1ab7994356dd1b1d7d9de8e064339b19c8" prot="private" virt="non-virtual"><scope>catos::Window</scope><name>_raw_window</name></member>
-      <member refid="a00150_1a4097b3e04a4f8ece21f5abe1b10e6323" prot="public" virt="non-virtual"><scope>catos::Window</scope><name>App</name></member>
-      <member refid="a00150_1a28daab9434c88ba9e1330e3462cf0517" prot="private" virt="non-virtual"><scope>catos::Window</scope><name>enable_dark_theme</name></member>
-      <member refid="a00150_1afc3176914723cab13d809b6ae8f3d6d2" prot="public" virt="non-virtual"><scope>catos::Window</scope><name>get_glfw_window</name></member>
-      <member refid="a00150_1a7666877758d915dca4176786fc0a7925" prot="public" virt="non-virtual"><scope>catos::Window</scope><name>getMonitorSize</name></member>
-      <member refid="a00150_1a6df30484abfd5cc491a5ed2055692859" prot="public" virt="non-virtual"><scope>catos::Window</scope><name>should_window_close</name></member>
-      <member refid="a00150_1a59515fc5a56e86d5a46d771595daac55" prot="public" virt="non-virtual"><scope>catos::Window</scope><name>update</name></member>
-      <member refid="a00150_1a17960ca89f793bac084a8203f1a7d3e6" prot="public" virt="non-virtual"><scope>catos::Window</scope><name>Window</name></member>
-      <member refid="a00150_1a245d821e6016fa1f6970ccbbedd635f6" prot="public" virt="non-virtual"><scope>catos::Window</scope><name>~Window</name></member>
+      <member refid="a00150_1aae56ec26c2e744b449f3da7cd11667c3" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>get_method</name></member>
+      <member refid="a00150_1a2e3be86b60d107455570b7b5f1d9fd43" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>get_property</name></member>
+      <member refid="a00150_1a267bd4ae8f4c123f604e8f733d4f7aa6" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>is_valid</name></member>
+      <member refid="a00150_1a59fec13410de1cba52ac86212587f5aa" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>is_valid</name></member>
+      <member refid="a00150_1ab07220b87a27baec193e958522f3a157" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>method</name></member>
+      <member refid="a00150_1a9c4b2bf58d22a49d4e52dc27ff248ed2" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>methods</name></member>
+      <member refid="a00150_1ae0b2ff915a7ee07932398ea73ba22943" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>name</name></member>
+      <member refid="a00150_1a7cbfa52dbf039cfe37ff79d1c97db144" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>properties</name></member>
+      <member refid="a00150_1adb9288a8ea5edbb41cf884f82d2e5322" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>property</name></member>
+      <member refid="a00150_1a9a4c20fb31a1759ef8aa1d5c8acfeabd" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>type_hash</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

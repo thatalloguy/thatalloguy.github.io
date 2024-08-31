@@ -1,8 +1,5 @@
 var a00142 =
 [
-    [ "gen_cs_bindings_file", "a00142.html#ad344d7a045a558fa8a24e4f1ce095a05", null ],
-    [ "gen_python_bindings_file", "a00142.html#aa9d8e58c1258eebb008a292f8b8b1c44", null ],
-    [ "get_type", "a00142.html#a03c494fdb9fb9daafaea972f273de633", null ],
-    [ "print_current_register", "a00142.html#a3ff740e516ed706e2d202086df6f12b9", null ],
-    [ "register_class", "a00142.html#a3c1a3c07e51224b5745cd9764407efff", null ]
+    [ "MethodInvoker", "a00142.html#a1553e3e36fee4658a51d9f652d330928", null ],
+    [ "memPtr", "a00142.html#a0a1005231c6d3687fd607b65a2771fb8", null ]
 ];

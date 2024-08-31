@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): DescriptorLayoutBuilder Struct Reference</title>
+<title>Catos Engine (Source): catos::math::Vector3 Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,104 +98,151 @@ $(function(){initNavTree('a00170.html',''); initResizable(); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00167.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DescriptorLayoutBuilder Struct Reference</div></div>
+  <div class="headertitle"><div class="title">catos::math::Vector3 Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00041_source.html">VkDescriptors.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00029_source.html">vecs.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afc94cce99812e98162990b38dc7a2fd0" id="r_afc94cce99812e98162990b38dc7a2fd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc94cce99812e98162990b38dc7a2fd0">addBinding</a> (uint32_t binding, VkDescriptorType type)</td></tr>
-<tr class="separator:afc94cce99812e98162990b38dc7a2fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a458ab671e6690342e749cd8f71bb41bc" id="r_a458ab671e6690342e749cd8f71bb41bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a458ab671e6690342e749cd8f71bb41bc">clear</a> ()</td></tr>
-<tr class="separator:a458ab671e6690342e749cd8f71bb41bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a797241e8070455929166f95a9de86163" id="r_a797241e8070455929166f95a9de86163"><td class="memItemLeft" align="right" valign="top">VkDescriptorSetLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a797241e8070455929166f95a9de86163">build</a> (VkDevice device, VkShaderStageFlags shaderStages)</td></tr>
-<tr class="separator:a797241e8070455929166f95a9de86163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb52a2eb1453bc4ac15c0a8ab3d7143c" id="r_acb52a2eb1453bc4ac15c0a8ab3d7143c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acb52a2eb1453bc4ac15c0a8ab3d7143c">operator==</a> (<a class="el" href="a00170.html">Vector3</a> &amp;b) const</td></tr>
+<tr class="separator:acb52a2eb1453bc4ac15c0a8ab3d7143c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac3d3c6575283572a19a23b352fca633" id="r_aac3d3c6575283572a19a23b352fca633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00170.html">Vector3</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac3d3c6575283572a19a23b352fca633">operator=</a> (float val)</td></tr>
+<tr class="separator:aac3d3c6575283572a19a23b352fca633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac086c01bff23542b26b0b2eef4c52348" id="r_ac086c01bff23542b26b0b2eef4c52348"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac086c01bff23542b26b0b2eef4c52348">operator+=</a> (<a class="el" href="a00170.html">Vector3</a> &amp;b)</td></tr>
+<tr class="separator:ac086c01bff23542b26b0b2eef4c52348"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a84964bc1535f1164c65c682d8abc1ae6" id="r_a84964bc1535f1164c65c682d8abc1ae6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; VkDescriptorSetLayoutBinding &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84964bc1535f1164c65c682d8abc1ae6">bindings</a></td></tr>
-<tr class="separator:a84964bc1535f1164c65c682d8abc1ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf30b0a34d4ec3096451393e2d71913" id="r_aabf30b0a34d4ec3096451393e2d71913"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aabf30b0a34d4ec3096451393e2d71913">x</a></td></tr>
+<tr class="separator:aabf30b0a34d4ec3096451393e2d71913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa835783e4604f1d188de6fbdee1cd7c9" id="r_aa835783e4604f1d188de6fbdee1cd7c9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa835783e4604f1d188de6fbdee1cd7c9">y</a></td></tr>
+<tr class="separator:aa835783e4604f1d188de6fbdee1cd7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2568eefded1c720de4fcac757a5f164d" id="r_a2568eefded1c720de4fcac757a5f164d"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2568eefded1c720de4fcac757a5f164d">z</a></td></tr>
+<tr class="separator:a2568eefded1c720de4fcac757a5f164d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afc94cce99812e98162990b38dc7a2fd0" name="afc94cce99812e98162990b38dc7a2fd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc94cce99812e98162990b38dc7a2fd0">&#9670;&#160;</a></span>addBinding()</h2>
+<a id="ac086c01bff23542b26b0b2eef4c52348" name="ac086c01bff23542b26b0b2eef4c52348"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac086c01bff23542b26b0b2eef4c52348">&#9670;&#160;</a></span>operator+=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorLayoutBuilder::addBinding </td>
+          <td class="memname">void catos::math::Vector3::operator+= </td>
           <td>(</td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>binding</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00170.html">Vector3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">VkDescriptorType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a797241e8070455929166f95a9de86163" name="a797241e8070455929166f95a9de86163"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a797241e8070455929166f95a9de86163">&#9670;&#160;</a></span>build()</h2>
+<a id="aac3d3c6575283572a19a23b352fca633" name="aac3d3c6575283572a19a23b352fca633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac3d3c6575283572a19a23b352fca633">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VkDescriptorSetLayout DescriptorLayoutBuilder::build </td>
+          <td class="memname"><a class="el" href="a00170.html">Vector3</a> &amp; catos::math::Vector3::operator= </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">VkShaderStageFlags</td>          <td class="paramname"><span class="paramname"><em>shaderStages</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a458ab671e6690342e749cd8f71bb41bc" name="a458ab671e6690342e749cd8f71bb41bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a458ab671e6690342e749cd8f71bb41bc">&#9670;&#160;</a></span>clear()</h2>
+<a id="acb52a2eb1453bc4ac15c0a8ab3d7143c" name="acb52a2eb1453bc4ac15c0a8ab3d7143c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb52a2eb1453bc4ac15c0a8ab3d7143c">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorLayoutBuilder::clear </td>
+          <td class="memname">bool catos::math::Vector3::operator== </td>
           <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a00170.html">Vector3</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a84964bc1535f1164c65c682d8abc1ae6" name="a84964bc1535f1164c65c682d8abc1ae6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84964bc1535f1164c65c682d8abc1ae6">&#9670;&#160;</a></span>bindings</h2>
+<a id="aabf30b0a34d4ec3096451393e2d71913" name="aabf30b0a34d4ec3096451393e2d71913"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabf30b0a34d4ec3096451393e2d71913">&#9670;&#160;</a></span>x</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;VkDescriptorSetLayoutBinding&gt; DescriptorLayoutBuilder::bindings</td>
+          <td class="memname">float catos::math::Vector3::x</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li><a class="el" href="a00041_source.html">VkDescriptors.h</a></li>
-<li><a class="el" href="a00038.html">VkDescriptors.cpp</a></li>
+<a id="aa835783e4604f1d188de6fbdee1cd7c9" name="aa835783e4604f1d188de6fbdee1cd7c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa835783e4604f1d188de6fbdee1cd7c9">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float catos::math::Vector3::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2568eefded1c720de4fcac757a5f164d" name="a2568eefded1c720de4fcac757a5f164d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2568eefded1c720de4fcac757a5f164d">&#9670;&#160;</a></span>z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float catos::math::Vector3::z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a00029_source.html">vecs.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

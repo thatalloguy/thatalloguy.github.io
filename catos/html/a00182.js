@@ -1,8 +1,7 @@
 var a00182 =
 [
-    [ "PoolSizeRatio", "a00186.html", "a00186" ],
-    [ "allocate", "a00182.html#a6db84a1399339f8008d6a0745383b591", null ],
-    [ "clearPools", "a00182.html#a4fbeabc0aea9829cf922f7e9cce2fa53", null ],
-    [ "destroyPools", "a00182.html#a9be93476cebaaba27b5e6a41650b1c25", null ],
-    [ "init", "a00182.html#af5cae4856149623867934153486e9b45", null ]
+    [ "addBinding", "a00182.html#afc94cce99812e98162990b38dc7a2fd0", null ],
+    [ "build", "a00182.html#a797241e8070455929166f95a9de86163", null ],
+    [ "clear", "a00182.html#a458ab671e6690342e749cd8f71bb41bc", null ],
+    [ "bindings", "a00182.html#a84964bc1535f1164c65c682d8abc1ae6", null ]
 ];

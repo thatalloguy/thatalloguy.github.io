@@ -1,13 +1,6 @@
 var a00310 =
 [
-    [ "string", "a00310.html#a32c0f06b59c6dbc67cc64d5a8f732c15", null ],
-    [ "string", "a00310.html#a4480db1c850badf5b99173e8f86bccd3", null ],
-    [ "string", "a00310.html#a8cdf82a90bb1bb97d5bce6a314522f3f", null ],
-    [ "string", "a00310.html#a50ce9d299797565f2c234d3adf560b36", null ],
-    [ "~string", "a00310.html#a89e269e90755ca7d7b39a8ebfe54faab", null ],
-    [ "c_str", "a00310.html#a7c36e8de782d34d3a872cae8a2f0f63e", null ],
-    [ "length", "a00310.html#afba456b6f8ebdfde5dbc52f1be6dc745", null ],
-    [ "operator+", "a00310.html#a207bb13fd445130cb78fc359d8193768", null ],
-    [ "operator=", "a00310.html#ac2861229098a713d2a6be51886b3d3cc", null ],
-    [ "operator=", "a00310.html#a38f07859d81f5ad65f1c6a5435f9f4c2", null ]
+    [ "flush", "a00310.html#ad8258e84b869dbf3800178a61cc51cb3", null ],
+    [ "pushFunction", "a00310.html#a91bdce3808d2f96671f38a610810c67b", null ],
+    [ "deletors", "a00310.html#a2781e3877aacfbbee0294daf2a0d36b8", null ]
 ];

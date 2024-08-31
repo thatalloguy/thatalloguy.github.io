@@ -1,9 +1,8 @@
 var a00154 =
 [
-    [ "operator+", "a00154.html#a82c0de289dd8ec25a6e77497098f9064", null ],
-    [ "operator+", "a00154.html#a1f396224b6250ad2400cb01d60b1b4ec", null ],
-    [ "operator==", "a00154.html#a7a5f74f94f6515ff5371aad50873cee2", null ],
-    [ "operator==", "a00154.html#a47758ee7db6b46dcf0c68e85cdb53e86", null ],
-    [ "x", "a00154.html#a442e5ef4dd0744758b5db87ca36aed90", null ],
-    [ "y", "a00154.html#a58d259a2d9057efd9c5bbb69f418d601", null ]
+    [ "gen_cs_bindings_file", "a00154.html#ad344d7a045a558fa8a24e4f1ce095a05", null ],
+    [ "gen_python_bindings_file", "a00154.html#aa9d8e58c1258eebb008a292f8b8b1c44", null ],
+    [ "get_type", "a00154.html#a03c494fdb9fb9daafaea972f273de633", null ],
+    [ "print_current_register", "a00154.html#a3ff740e516ed706e2d202086df6f12b9", null ],
+    [ "register_class", "a00154.html#a3c1a3c07e51224b5745cd9764407efff", null ]
 ];

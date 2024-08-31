@@ -1,106 +1,157 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00218" kind="struct" language="C++" prot="public">
-    <compoundname>RenderObject</compoundname>
+    <compoundname>GLTFMetallic_roughness</compoundname>
     <includes refid="a00047" local="no">VkEngine.h</includes>
+    <innerclass refid="a00222" prot="public">GLTFMetallic_roughness::MaterialConstants</innerclass>
+    <innerclass refid="a00226" prot="public">GLTFMetallic_roughness::MaterialResources</innerclass>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00218_1ad804e3c297d2f4d5ea1aabc80f3a2801" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t RenderObject::indexCount</definition>
+      <memberdef kind="variable" id="a00218_1a14e8a4c07862539d98a1793cf7be2e24" prot="public" static="no" mutable="no">
+        <type><ref refid="a00302" kindref="compound">MaterialPipeline</ref></type>
+        <definition>MaterialPipeline GLTFMetallic_roughness::opaquePipeline</definition>
         <argsstring></argsstring>
-        <name>indexCount</name>
-        <qualifiedname>RenderObject::indexCount</qualifiedname>
+        <name>opaquePipeline</name>
+        <qualifiedname>GLTFMetallic_roughness::opaquePipeline</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="86" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="86" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="53" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="53" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1ac0d57e3a8ec65b53d2593224161ace73" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t RenderObject::firstIndex</definition>
+      <memberdef kind="variable" id="a00218_1a20a1e6318217b3d3e63e91439022a4d8" prot="public" static="no" mutable="no">
+        <type><ref refid="a00302" kindref="compound">MaterialPipeline</ref></type>
+        <definition>MaterialPipeline GLTFMetallic_roughness::transparentPipeline</definition>
         <argsstring></argsstring>
-        <name>firstIndex</name>
-        <qualifiedname>RenderObject::firstIndex</qualifiedname>
+        <name>transparentPipeline</name>
+        <qualifiedname>GLTFMetallic_roughness::transparentPipeline</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="87" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="87" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="54" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="54" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1a30d8bb5f11112733abf3fa034f65f80c" prot="public" static="no" mutable="no">
-        <type>VkBuffer</type>
-        <definition>VkBuffer RenderObject::indexBuffer</definition>
+      <memberdef kind="variable" id="a00218_1a269aa1b48852004420322491f8e03e4a" prot="public" static="no" mutable="no">
+        <type>VkDescriptorSetLayout</type>
+        <definition>VkDescriptorSetLayout GLTFMetallic_roughness::materialLayout</definition>
         <argsstring></argsstring>
-        <name>indexBuffer</name>
-        <qualifiedname>RenderObject::indexBuffer</qualifiedname>
+        <name>materialLayout</name>
+        <qualifiedname>GLTFMetallic_roughness::materialLayout</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="88" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="88" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="56" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="56" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1ab09c067290de5759d715bfea4487fcf6" prot="public" static="no" mutable="no">
-        <type><ref refid="a00294" kindref="compound">MaterialInstance</ref> *</type>
-        <definition>MaterialInstance* RenderObject::material</definition>
+      <memberdef kind="variable" id="a00218_1a90094ab356bc8a5426f8012f76c1326f" prot="public" static="no" mutable="no">
+        <type><ref refid="a00202" kindref="compound">DescriptorWriter</ref></type>
+        <definition>DescriptorWriter GLTFMetallic_roughness::writer</definition>
         <argsstring></argsstring>
-        <name>material</name>
-        <qualifiedname>RenderObject::material</qualifiedname>
+        <name>writer</name>
+        <qualifiedname>GLTFMetallic_roughness::writer</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="90" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="90" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="75" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="75" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1a14bf8548f4c7a416e787a3508f833a50" prot="public" static="no" mutable="no">
-        <type><ref refid="a00266" kindref="compound">Bounds</ref></type>
-        <definition>Bounds RenderObject::bounds</definition>
-        <argsstring></argsstring>
-        <name>bounds</name>
-        <qualifiedname>RenderObject::bounds</qualifiedname>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00218_1ac6b86602d156a5555b3799b9172c674e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GLTFMetallic_roughness::buildPipelines</definition>
+        <argsstring>(VulkanEngine *engine)</argsstring>
+        <name>buildPipelines</name>
+        <qualifiedname>GLTFMetallic_roughness::buildPipelines</qualifiedname>
+        <param>
+          <type><ref refid="a00242" kindref="compound">VulkanEngine</ref> *</type>
+          <declname>engine</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="92" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="92" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="77" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1462" bodyend="1538"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1a5aa60e9c01b069dcddebd1a913e0999c" prot="public" static="no" mutable="no">
-        <type>glm::mat4</type>
-        <definition>glm::mat4 RenderObject::transform</definition>
-        <argsstring></argsstring>
-        <name>transform</name>
-        <qualifiedname>RenderObject::transform</qualifiedname>
+      <memberdef kind="function" id="a00218_1acdddc2beb7cc303daabfa28404afa2c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GLTFMetallic_roughness::clearResources</definition>
+        <argsstring>(VkDevice device)</argsstring>
+        <name>clearResources</name>
+        <qualifiedname>GLTFMetallic_roughness::clearResources</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
+<para>EMPTY?</para>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="94" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="94" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="78" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1540" bodyend="1542"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1a2cb78112987761ab014ca3095c3b0dbf" prot="public" static="no" mutable="no">
-        <type>VkDeviceAddress</type>
-        <definition>VkDeviceAddress RenderObject::vertexBufferAddress</definition>
-        <argsstring></argsstring>
-        <name>vertexBufferAddress</name>
-        <qualifiedname>RenderObject::vertexBufferAddress</qualifiedname>
+      <memberdef kind="function" id="a00218_1a744d03ddb8fe03ea8ee07f2ae3b42de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00306" kindref="compound">MaterialInstance</ref></type>
+        <definition>MaterialInstance GLTFMetallic_roughness::writeMaterial</definition>
+        <argsstring>(VkDevice device, MaterialPass pass, const MaterialResources &amp;resources, DescriptorAllocatorGrowable descriptorAllocator)</argsstring>
+        <name>writeMaterial</name>
+        <qualifiedname>GLTFMetallic_roughness::writeMaterial</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" kindref="member">MaterialPass</ref></type>
+          <declname>pass</declname>
+        </param>
+        <param>
+          <type>const <ref refid="a00226" kindref="compound">MaterialResources</ref> &amp;</type>
+          <declname>resources</declname>
+        </param>
+        <param>
+          <type><ref refid="a00194" kindref="compound">DescriptorAllocatorGrowable</ref></type>
+          <declname>descriptorAllocator</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="95" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="95" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="80" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1544" bodyend="1567"/>
+      </memberdef>
+      <memberdef kind="function" id="a00218_1a96ff6cb8fd8d01b16921be3900827939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GLTFMetallic_roughness::destroy</definition>
+        <argsstring>(VkDevice device, MaterialPass passType)</argsstring>
+        <name>destroy</name>
+        <qualifiedname>GLTFMetallic_roughness::destroy</qualifiedname>
+        <param>
+          <type>VkDevice</type>
+          <declname>device</declname>
+        </param>
+        <param>
+          <type><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" kindref="member">MaterialPass</ref></type>
+          <declname>passType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="81" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1569" bodyend="1579"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -108,41 +159,36 @@
     <detaileddescription>
     </detaileddescription>
     <collaborationgraph>
-      <node id="4">
-        <label>Bounds</label>
-        <link refid="a00266"/>
-      </node>
-      <node id="2">
-        <label>MaterialInstance</label>
-        <link refid="a00294"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>pipeline</edgelabel>
-        </childnode>
-      </node>
       <node id="3">
-        <label>MaterialPipeline</label>
-        <link refid="a00290"/>
+        <label>DescriptorWriter</label>
+        <link refid="a00202"/>
       </node>
       <node id="1">
-        <label>RenderObject</label>
+        <label>GLTFMetallic_roughness</label>
         <link refid="a00218"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>material</edgelabel>
+          <edgelabel>opaquePipeline</edgelabel>
+          <edgelabel>transparentPipeline</edgelabel>
         </childnode>
-        <childnode refid="4" relation="usage">
-          <edgelabel>bounds</edgelabel>
+        <childnode refid="3" relation="usage">
+          <edgelabel>writer</edgelabel>
         </childnode>
       </node>
+      <node id="2">
+        <label>MaterialPipeline</label>
+        <link refid="a00302"/>
+      </node>
     </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="85" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="85" bodyend="96"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="52" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="52" bodyend="82"/>
     <listofallmembers>
-      <member refid="a00218_1a14bf8548f4c7a416e787a3508f833a50" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>bounds</name></member>
-      <member refid="a00218_1ac0d57e3a8ec65b53d2593224161ace73" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>firstIndex</name></member>
-      <member refid="a00218_1a30d8bb5f11112733abf3fa034f65f80c" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>indexBuffer</name></member>
-      <member refid="a00218_1ad804e3c297d2f4d5ea1aabc80f3a2801" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>indexCount</name></member>
-      <member refid="a00218_1ab09c067290de5759d715bfea4487fcf6" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>material</name></member>
-      <member refid="a00218_1a5aa60e9c01b069dcddebd1a913e0999c" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>transform</name></member>
-      <member refid="a00218_1a2cb78112987761ab014ca3095c3b0dbf" prot="public" virt="non-virtual"><scope>RenderObject</scope><name>vertexBufferAddress</name></member>
+      <member refid="a00218_1ac6b86602d156a5555b3799b9172c674e" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>buildPipelines</name></member>
+      <member refid="a00218_1acdddc2beb7cc303daabfa28404afa2c9" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>clearResources</name></member>
+      <member refid="a00218_1a96ff6cb8fd8d01b16921be3900827939" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>destroy</name></member>
+      <member refid="a00218_1a269aa1b48852004420322491f8e03e4a" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>materialLayout</name></member>
+      <member refid="a00218_1a14e8a4c07862539d98a1793cf7be2e24" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>opaquePipeline</name></member>
+      <member refid="a00218_1a20a1e6318217b3d3e63e91439022a4d8" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>transparentPipeline</name></member>
+      <member refid="a00218_1a744d03ddb8fe03ea8ee07f2ae3b42de5" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>writeMaterial</name></member>
+      <member refid="a00218_1a90094ab356bc8a5426f8012f76c1326f" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>writer</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

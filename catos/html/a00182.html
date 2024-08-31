@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): DescriptorAllocatorGrowable Class Reference</title>
+<title>Catos Engine (Source): DescriptorLayoutBuilder Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,63 +95,82 @@ $(function(){initNavTree('a00182.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00179.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DescriptorAllocatorGrowable Class Reference</div></div>
+  <div class="headertitle"><div class="title">DescriptorLayoutBuilder Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="a00041_source.html">VkDescriptors.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00186.html">PoolSizeRatio</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af5cae4856149623867934153486e9b45" id="r_af5cae4856149623867934153486e9b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5cae4856149623867934153486e9b45">init</a> (VkDevice device, uint32_t maxSets, std::span&lt; <a class="el" href="a00186.html">PoolSizeRatio</a> &gt; poolRatios)</td></tr>
-<tr class="separator:af5cae4856149623867934153486e9b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fbeabc0aea9829cf922f7e9cce2fa53" id="r_a4fbeabc0aea9829cf922f7e9cce2fa53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fbeabc0aea9829cf922f7e9cce2fa53">clearPools</a> (VkDevice device)</td></tr>
-<tr class="separator:a4fbeabc0aea9829cf922f7e9cce2fa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be93476cebaaba27b5e6a41650b1c25" id="r_a9be93476cebaaba27b5e6a41650b1c25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9be93476cebaaba27b5e6a41650b1c25">destroyPools</a> (VkDevice device)</td></tr>
-<tr class="separator:a9be93476cebaaba27b5e6a41650b1c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db84a1399339f8008d6a0745383b591" id="r_a6db84a1399339f8008d6a0745383b591"><td class="memItemLeft" align="right" valign="top">VkDescriptorSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6db84a1399339f8008d6a0745383b591">allocate</a> (VkDevice device, VkDescriptorSetLayout layout)</td></tr>
-<tr class="separator:a6db84a1399339f8008d6a0745383b591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc94cce99812e98162990b38dc7a2fd0" id="r_afc94cce99812e98162990b38dc7a2fd0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afc94cce99812e98162990b38dc7a2fd0">addBinding</a> (uint32_t binding, VkDescriptorType type)</td></tr>
+<tr class="separator:afc94cce99812e98162990b38dc7a2fd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a458ab671e6690342e749cd8f71bb41bc" id="r_a458ab671e6690342e749cd8f71bb41bc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a458ab671e6690342e749cd8f71bb41bc">clear</a> ()</td></tr>
+<tr class="separator:a458ab671e6690342e749cd8f71bb41bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a797241e8070455929166f95a9de86163" id="r_a797241e8070455929166f95a9de86163"><td class="memItemLeft" align="right" valign="top">VkDescriptorSetLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a797241e8070455929166f95a9de86163">build</a> (VkDevice device, VkShaderStageFlags shaderStages)</td></tr>
+<tr class="separator:a797241e8070455929166f95a9de86163"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a84964bc1535f1164c65c682d8abc1ae6" id="r_a84964bc1535f1164c65c682d8abc1ae6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; VkDescriptorSetLayoutBinding &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a84964bc1535f1164c65c682d8abc1ae6">bindings</a></td></tr>
+<tr class="separator:a84964bc1535f1164c65c682d8abc1ae6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6db84a1399339f8008d6a0745383b591" name="a6db84a1399339f8008d6a0745383b591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6db84a1399339f8008d6a0745383b591">&#9670;&#160;</a></span>allocate()</h2>
+<a id="afc94cce99812e98162990b38dc7a2fd0" name="afc94cce99812e98162990b38dc7a2fd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc94cce99812e98162990b38dc7a2fd0">&#9670;&#160;</a></span>addBinding()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VkDescriptorSet DescriptorAllocatorGrowable::allocate </td>
+          <td class="memname">void DescriptorLayoutBuilder::addBinding </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>binding</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VkDescriptorType</td>          <td class="paramname"><span class="paramname"><em>type</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a797241e8070455929166f95a9de86163" name="a797241e8070455929166f95a9de86163"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a797241e8070455929166f95a9de86163">&#9670;&#160;</a></span>build()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VkDescriptorSetLayout DescriptorLayoutBuilder::build </td>
           <td>(</td>
           <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">VkDescriptorSetLayout</td>          <td class="paramname"><span class="paramname"><em>layout</em></span>&#160;)</td>
+          <td class="paramtype">VkShaderStageFlags</td>          <td class="paramname"><span class="paramname"><em>shaderStages</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4fbeabc0aea9829cf922f7e9cce2fa53" name="a4fbeabc0aea9829cf922f7e9cce2fa53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fbeabc0aea9829cf922f7e9cce2fa53">&#9670;&#160;</a></span>clearPools()</h2>
+<a id="a458ab671e6690342e749cd8f71bb41bc" name="a458ab671e6690342e749cd8f71bb41bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a458ab671e6690342e749cd8f71bb41bc">&#9670;&#160;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorAllocatorGrowable::clearPools </td>
+          <td class="memname">void DescriptorLayoutBuilder::clear </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -159,50 +178,22 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9be93476cebaaba27b5e6a41650b1c25" name="a9be93476cebaaba27b5e6a41650b1c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9be93476cebaaba27b5e6a41650b1c25">&#9670;&#160;</a></span>destroyPools()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a84964bc1535f1164c65c682d8abc1ae6" name="a84964bc1535f1164c65c682d8abc1ae6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84964bc1535f1164c65c682d8abc1ae6">&#9670;&#160;</a></span>bindings</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorAllocatorGrowable::destroyPools </td>
-          <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">std::vector&lt;VkDescriptorSetLayoutBinding&gt; DescriptorLayoutBuilder::bindings</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af5cae4856149623867934153486e9b45" name="af5cae4856149623867934153486e9b45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5cae4856149623867934153486e9b45">&#9670;&#160;</a></span>init()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DescriptorAllocatorGrowable::init </td>
-          <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>maxSets</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::span&lt; <a class="el" href="a00186.html">PoolSizeRatio</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>poolRatios</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li><a class="el" href="a00041_source.html">VkDescriptors.h</a></li>
 <li><a class="el" href="a00038.html">VkDescriptors.cpp</a></li>
 </ul>

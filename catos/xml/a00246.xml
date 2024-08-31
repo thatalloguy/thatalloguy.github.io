@@ -1,82 +1,69 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00246" kind="struct" language="C++" prot="public">
-    <compoundname>MeshAsset</compoundname>
+  <compounddef id="a00246" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>IRenderable</compoundname>
+    <derivedcompoundref refid="a00266" prot="public" virt="non-virtual">LoadedGLTF</derivedcompoundref>
+    <derivedcompoundref refid="a00262" prot="public" virt="non-virtual">Node</derivedcompoundref>
     <includes refid="a00065" local="no">VkLoader.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00246_1a7abaa0b660e944edd81ce5186c32d367" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string MeshAsset::name</definition>
-        <argsstring></argsstring>
-        <name>name</name>
-        <qualifiedname>MeshAsset::name</qualifiedname>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00246_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void IRenderable::Draw</definition>
+        <argsstring>(const glm::mat4 &amp;topMatrix, DrawContext &amp;ctx)=0</argsstring>
+        <name>Draw</name>
+        <qualifiedname>IRenderable::Draw</qualifiedname>
+        <reimplementedby refid="a00262_1a6870e549c7f428dbcd4f61d43eaa2f4b">Draw</reimplementedby>
+        <reimplementedby refid="a00266_1a5cb28e137c9fff7788afaf7aa5e565ac">Draw</reimplementedby>
+        <reimplementedby refid="a00238_1a8d5ed2175240d27f97e058508b110b51">Draw</reimplementedby>
+        <param>
+          <type>const glm::mat4 &amp;</type>
+          <declname>topMatrix</declname>
+        </param>
+        <param>
+          <type><ref refid="a00234" kindref="compound">DrawContext</ref> &amp;</type>
+          <declname>ctx</declname>
+        </param>
         <briefdescription>
+<para>TODO define <ref refid="a00234" kindref="compound">DrawContext</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="51" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="51" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00246_1a40aac10ab4f9e8d1041ea3035336c68a" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00242" kindref="compound">GeoSurface</ref> &gt;</type>
-        <definition>std::vector&lt;GeoSurface&gt; MeshAsset::surfaces</definition>
-        <argsstring></argsstring>
-        <name>surfaces</name>
-        <qualifiedname>MeshAsset::surfaces</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="53" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="53" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00246_1a27c656c430749b3b3412dcafba2c7b9c" prot="public" static="no" mutable="no">
-        <type><ref refid="a00278" kindref="compound">GPUMeshBuffers</ref></type>
-        <definition>GPUMeshBuffers MeshAsset::meshBuffers</definition>
-        <argsstring></argsstring>
-        <name>meshBuffers</name>
-        <qualifiedname>MeshAsset::meshBuffers</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="54" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="54" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="33" column="18"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="3">
-        <label>AllocatedBuffer</label>
-        <link refid="a00270"/>
+    <inheritancegraph>
+      <node id="1">
+        <label>IRenderable</label>
+        <link refid="a00246"/>
       </node>
       <node id="2">
-        <label>GPUMeshBuffers</label>
-        <link refid="a00278"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>indexBuffer</edgelabel>
-          <edgelabel>vertexBuffer</edgelabel>
+        <label>LoadedGLTF</label>
+        <link refid="a00266"/>
+        <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="1">
-        <label>MeshAsset</label>
-        <link refid="a00246"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>meshBuffers</edgelabel>
+      <node id="4">
+        <label>MeshNode</label>
+        <link refid="a00238"/>
+        <childnode refid="3" relation="public-inheritance">
         </childnode>
       </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="50" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="50" bodyend="55"/>
+      <node id="3">
+        <label>Node</label>
+        <link refid="a00262"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="31" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="31" bodyend="34"/>
     <listofallmembers>
-      <member refid="a00246_1a27c656c430749b3b3412dcafba2c7b9c" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>meshBuffers</name></member>
-      <member refid="a00246_1a7abaa0b660e944edd81ce5186c32d367" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>name</name></member>
-      <member refid="a00246_1a40aac10ab4f9e8d1041ea3035336c68a" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>surfaces</name></member>
+      <member refid="a00246_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" virt="pure-virtual"><scope>IRenderable</scope><name>Draw</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

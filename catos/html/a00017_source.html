@@ -106,21 +106,21 @@ $(function(){initNavTree('a00017_source.html',''); initResizable(); });
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;typeinfo&gt;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="a00105.html">    4</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00105.html">catos::type_utils</a> {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="a00117.html">    4</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00117.html">catos::type_utils</a> {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="comment">// -----Returns the name of the given type-----</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="a00105.html#ae8ba5a0350572f3f742754d626557e59">    8</a></span>    std::string <a class="code hl_function" href="a00105.html#ae8ba5a0350572f3f742754d626557e59">get_type_name</a>() {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keywordflow">return</span> std::string(<span class="keyword">typeid</span>(<a class="code hl_function" href="a00105.html#a984a08d43e4be51d38568b267ed64092">T</a>).name());</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="a00117.html#ae8ba5a0350572f3f742754d626557e59">    8</a></span>    std::string <a class="code hl_function" href="a00117.html#ae8ba5a0350572f3f742754d626557e59">get_type_name</a>() {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        <span class="keywordflow">return</span> std::string(<span class="keyword">typeid</span>(<a class="code hl_function" href="a00117.html#a984a08d43e4be51d38568b267ed64092">T</a>).name());</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    };</div>
 </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="comment">// -----Returns the hash of the given Type-----</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00105.html#a984a08d43e4be51d38568b267ed64092">   14</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="a00105.html#a984a08d43e4be51d38568b267ed64092">get_type_hash</a>() {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">return</span> <span class="keyword">typeid</span>(<a class="code hl_function" href="a00105.html#a984a08d43e4be51d38568b267ed64092">T</a>).<a class="code hl_function" href="a00105.html#a984a08d43e4be51d38568b267ed64092">hash_code</a>();</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00117.html#a984a08d43e4be51d38568b267ed64092">   14</a></span>    <span class="keywordtype">size_t</span> <a class="code hl_function" href="a00117.html#a984a08d43e4be51d38568b267ed64092">get_type_hash</a>() {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">return</span> <span class="keyword">typeid</span>(<a class="code hl_function" href="a00117.html#a984a08d43e4be51d38568b267ed64092">T</a>).<a class="code hl_function" href="a00117.html#a984a08d43e4be51d38568b267ed64092">hash_code</a>();</div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
 </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
@@ -128,9 +128,9 @@ $(function(){initNavTree('a00017_source.html',''); initResizable(); });
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
 </div>
-<div class="ttc" id="aa00105_html"><div class="ttname"><a href="a00105.html">catos::type_utils</a></div><div class="ttdef"><b>Definition</b> type_utils.h:4</div></div>
-<div class="ttc" id="aa00105_html_a984a08d43e4be51d38568b267ed64092"><div class="ttname"><a href="a00105.html#a984a08d43e4be51d38568b267ed64092">catos::type_utils::get_type_hash</a></div><div class="ttdeci">size_t get_type_hash()</div><div class="ttdef"><b>Definition</b> type_utils.h:14</div></div>
-<div class="ttc" id="aa00105_html_ae8ba5a0350572f3f742754d626557e59"><div class="ttname"><a href="a00105.html#ae8ba5a0350572f3f742754d626557e59">catos::type_utils::get_type_name</a></div><div class="ttdeci">std::string get_type_name()</div><div class="ttdef"><b>Definition</b> type_utils.h:8</div></div>
+<div class="ttc" id="aa00117_html"><div class="ttname"><a href="a00117.html">catos::type_utils</a></div><div class="ttdef"><b>Definition</b> type_utils.h:4</div></div>
+<div class="ttc" id="aa00117_html_a984a08d43e4be51d38568b267ed64092"><div class="ttname"><a href="a00117.html#a984a08d43e4be51d38568b267ed64092">catos::type_utils::get_type_hash</a></div><div class="ttdeci">size_t get_type_hash()</div><div class="ttdef"><b>Definition</b> type_utils.h:14</div></div>
+<div class="ttc" id="aa00117_html_ae8ba5a0350572f3f742754d626557e59"><div class="ttname"><a href="a00117.html#ae8ba5a0350572f3f742754d626557e59">catos::type_utils::get_type_name</a></div><div class="ttdeci">std::string get_type_name()</div><div class="ttdef"><b>Definition</b> type_utils.h:8</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <p>

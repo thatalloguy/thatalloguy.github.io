@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['transform_0',['Transform',['../a00342.html',1,'catos']]],
-  ['transformcomponent_1',['TransformComponent',['../a00330.html',1,'']]],
-  ['typeinfo_2',['TypeInfo',['../a00138.html',1,'catos']]]
+  ['registry_0',['Registry',['../a00154.html',1,'catos']]],
+  ['renderobject_1',['RenderObject',['../a00230.html',1,'']]]
 ];

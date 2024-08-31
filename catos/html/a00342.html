@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): catos::Transform Class Reference</title>
+<title>Catos Engine (Source): catos::hashmap&lt; K, V, F &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,73 +95,214 @@ $(function(){initNavTree('a00342.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a00339.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">catos::Transform Class Reference</div></div>
+  <div class="headertitle"><div class="title">catos::hashmap&lt; K, V, F &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>An mathematical-object to represent an object in space.  
- <a href="#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="a00101_source.html">world.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00086_source.html">hashmap.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a81cda806c9b534e9bdb1eecd52f755e8" id="r_a81cda806c9b534e9bdb1eecd52f755e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00158.html">math::Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a81cda806c9b534e9bdb1eecd52f755e8">position</a> {0, 0, 0}</td></tr>
-<tr class="separator:a81cda806c9b534e9bdb1eecd52f755e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac348bcf64022bd20df70bbba9370bd08" id="r_ac348bcf64022bd20df70bbba9370bd08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00158.html">math::Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac348bcf64022bd20df70bbba9370bd08">size</a> {0, 0, 0}</td></tr>
-<tr class="separator:ac348bcf64022bd20df70bbba9370bd08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06faef0a9f62db80a7e604bd0c29be09" id="r_a06faef0a9f62db80a7e604bd0c29be09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00162.html">math::Quaternion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a06faef0a9f62db80a7e604bd0c29be09">rotation</a> {0, 0, 0}</td></tr>
-<tr class="separator:a06faef0a9f62db80a7e604bd0c29be09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af81f92cfaa62b53e7aa90cd3c7e3e050" id="r_af81f92cfaa62b53e7aa90cd3c7e3e050"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af81f92cfaa62b53e7aa90cd3c7e3e050">hashmap</a> (int startSize=8)</td></tr>
+<tr class="memdesc:af81f92cfaa62b53e7aa90cd3c7e3e050"><td class="mdescLeft">&#160;</td><td class="mdescRight">Basic constructor with a startSize of 8.  <br /></td></tr>
+<tr class="separator:af81f92cfaa62b53e7aa90cd3c7e3e050"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b95dee3c9f26723f6fe7797d38c007" id="r_a14b95dee3c9f26723f6fe7797d38c007"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14b95dee3c9f26723f6fe7797d38c007">~hashmap</a> ()</td></tr>
+<tr class="separator:a14b95dee3c9f26723f6fe7797d38c007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9404f2ec83113e4e1558d6b4985f0dae" id="r_a9404f2ec83113e4e1558d6b4985f0dae"><td class="memItemLeft" align="right" valign="top">V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9404f2ec83113e4e1558d6b4985f0dae">get</a> (const K &amp;key)</td></tr>
+<tr class="memdesc:a9404f2ec83113e4e1558d6b4985f0dae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the value based on the key given.  <br /></td></tr>
+<tr class="separator:a9404f2ec83113e4e1558d6b4985f0dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa53edace488e9a5824fdc08d14520380" id="r_aa53edace488e9a5824fdc08d14520380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa53edace488e9a5824fdc08d14520380">put</a> (const K &amp;key, const V &amp;value)</td></tr>
+<tr class="memdesc:aa53edace488e9a5824fdc08d14520380"><td class="mdescLeft">&#160;</td><td class="mdescRight">puts an item in the table.  <br /></td></tr>
+<tr class="separator:aa53edace488e9a5824fdc08d14520380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7044ee024f8701f8217d44197d30ff47" id="r_a7044ee024f8701f8217d44197d30ff47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7044ee024f8701f8217d44197d30ff47">remove</a> (const K &amp;key)</td></tr>
+<tr class="memdesc:a7044ee024f8701f8217d44197d30ff47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the item.  <br /></td></tr>
+<tr class="separator:a7044ee024f8701f8217d44197d30ff47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04aa13e9054b087a1feeae6130c67ae5" id="r_a04aa13e9054b087a1feeae6130c67ae5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04aa13e9054b087a1feeae6130c67ae5">rehash</a> (int newSize)</td></tr>
+<tr class="memdesc:a04aa13e9054b087a1feeae6130c67ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new table of the given size and rehash all of the previous items.  <br /></td></tr>
+<tr class="separator:a04aa13e9054b087a1feeae6130c67ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An mathematical-object to represent an object in space. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="a81cda806c9b534e9bdb1eecd52f755e8" name="a81cda806c9b534e9bdb1eecd52f755e8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a81cda806c9b534e9bdb1eecd52f755e8">&#9670;&#160;</a></span>position</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af81f92cfaa62b53e7aa90cd3c7e3e050" name="af81f92cfaa62b53e7aa90cd3c7e3e050"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81f92cfaa62b53e7aa90cd3c7e3e050">&#9670;&#160;</a></span>hashmap()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename F  = HashFunc&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00158.html">math::Vector3</a> catos::Transform::position {0, 0, 0}</td>
+          <td class="memname"><a class="el" href="a00342.html">catos::hashmap</a>&lt; K, V, F &gt;::hashmap </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>startSize</em><span class="paramdefsep"> = </span><span class="paramdefval">8</span></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Basic constructor with a startSize of 8. </p>
+
+</div>
+</div>
+<a id="a14b95dee3c9f26723f6fe7797d38c007" name="a14b95dee3c9f26723f6fe7797d38c007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14b95dee3c9f26723f6fe7797d38c007">&#9670;&#160;</a></span>~hashmap()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename F  = HashFunc&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00342.html">catos::hashmap</a>&lt; K, V, F &gt;::~<a class="el" href="a00342.html">hashmap</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a06faef0a9f62db80a7e604bd0c29be09" name="a06faef0a9f62db80a7e604bd0c29be09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06faef0a9f62db80a7e604bd0c29be09">&#9670;&#160;</a></span>rotation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9404f2ec83113e4e1558d6b4985f0dae" name="a9404f2ec83113e4e1558d6b4985f0dae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9404f2ec83113e4e1558d6b4985f0dae">&#9670;&#160;</a></span>get()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename F  = HashFunc&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00162.html">math::Quaternion</a> catos::Transform::rotation {0, 0, 0}</td>
+          <td class="memname">V <a class="el" href="a00342.html">catos::hashmap</a>&lt; K, V, F &gt;::get </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Gets the value based on the key given. </p>
 
 </div>
 </div>
-<a id="ac348bcf64022bd20df70bbba9370bd08" name="ac348bcf64022bd20df70bbba9370bd08"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac348bcf64022bd20df70bbba9370bd08">&#9670;&#160;</a></span>size</h2>
+<a id="aa53edace488e9a5824fdc08d14520380" name="aa53edace488e9a5824fdc08d14520380"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa53edace488e9a5824fdc08d14520380">&#9670;&#160;</a></span>put()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename F  = HashFunc&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00158.html">math::Vector3</a> catos::Transform::size {0, 0, 0}</td>
+          <td class="memname">void <a class="el" href="a00342.html">catos::hashmap</a>&lt; K, V, F &gt;::put </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const V &amp;</td>          <td class="paramname"><span class="paramname"><em>value</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>puts an item in the table. </p>
+
+</div>
+</div>
+<a id="a04aa13e9054b087a1feeae6130c67ae5" name="a04aa13e9054b087a1feeae6130c67ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04aa13e9054b087a1feeae6130c67ae5">&#9670;&#160;</a></span>rehash()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename F  = HashFunc&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00342.html">catos::hashmap</a>&lt; K, V, F &gt;::rehash </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>newSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new table of the given size and rehash all of the previous items. </p>
+
+</div>
+</div>
+<a id="a7044ee024f8701f8217d44197d30ff47" name="a7044ee024f8701f8217d44197d30ff47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7044ee024f8701f8217d44197d30ff47">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V , typename F  = HashFunc&lt;K&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00342.html">catos::hashmap</a>&lt; K, V, F &gt;::remove </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the item. </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="a00101_source.html">world.h</a></li>
+<li><a class="el" href="a00086_source.html">hashmap.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

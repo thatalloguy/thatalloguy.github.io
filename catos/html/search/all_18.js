@@ -1,10 +1,5 @@
 var searchData=
 [
-  ['_7eapp_0',['~App',['../a00118.html#ae2beda1820f2fb8b3d2b690e9cd7742b',1,'catos::App']]],
-  ['_7eproperty_1',['~Property',['../a00122.html#aadf32bd1d8c607a993f117ea2db3cadd',1,'catos::Property']]],
-  ['_7escriptingengine_2',['~ScriptingEngine',['../a00306.html#a7b8081c15524b4ce43b6ae938a397d4c',1,'catos::ScriptingEngine']]],
-  ['_7estring_3',['~string',['../a00310.html#a89e269e90755ca7d7b39a8ebfe54faab',1,'catos::string']]],
-  ['_7evector_4',['~vector',['../a00318.html#a34ab28bf95ca02c28b01024daa5016a6',1,'catos::vector']]],
-  ['_7ewindow_5',['~Window',['../a00150.html#a245d821e6016fa1f6970ccbbedd635f6',1,'catos::Window']]],
-  ['_7eworld_6',['~World',['../a00350.html#af060899be4360927761d988573fa6c8d',1,'catos::World']]]
+  ['y_0',['y',['../a00166.html#a58d259a2d9057efd9c5bbb69f418d601',1,'catos::math::Vector2::y'],['../a00170.html#aa835783e4604f1d188de6fbdee1cd7c9',1,'catos::math::Vector3::y'],['../a00174.html#a2c481d6a952719618213fc6b921f67c0',1,'catos::math::Quaternion::y'],['../a00370.html#a8661b2f37bf9926ed19e7a4a8fc2d41b',1,'TransformComponent::y']]],
+  ['yaw_1',['yaw',['../a00178.html#ad76701b22630f2df28a0ae15f0497a3a',1,'Camera']]]
 ];

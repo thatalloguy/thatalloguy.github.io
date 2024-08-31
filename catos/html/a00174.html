@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): DescriptorAllocator Struct Reference</title>
+<title>Catos Engine (Source): catos::math::Quaternion Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,137 +95,197 @@ $(function(){initNavTree('a00174.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00171.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DescriptorAllocator Struct Reference</div></div>
+  <div class="headertitle"><div class="title">catos::math::Quaternion Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00041_source.html">VkDescriptors.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00029_source.html">vecs.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00178.html">PoolSizeRatio</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af462a503a5c26ba20338c56d009eea48" id="r_af462a503a5c26ba20338c56d009eea48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af462a503a5c26ba20338c56d009eea48">initPool</a> (VkDevice device, uint32_t maxSets, std::span&lt; <a class="el" href="a00178.html">PoolSizeRatio</a> &gt; poolRatios)</td></tr>
-<tr class="separator:af462a503a5c26ba20338c56d009eea48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7824d1b20b807681a834dd53c0bd1315" id="r_a7824d1b20b807681a834dd53c0bd1315"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7824d1b20b807681a834dd53c0bd1315">clearDescriptors</a> (VkDevice device)</td></tr>
-<tr class="separator:a7824d1b20b807681a834dd53c0bd1315"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a574cc72d9888d2cf0a4ab77fa56093d7" id="r_a574cc72d9888d2cf0a4ab77fa56093d7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a574cc72d9888d2cf0a4ab77fa56093d7">destroyPool</a> (VkDevice device)</td></tr>
-<tr class="separator:a574cc72d9888d2cf0a4ab77fa56093d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a334e8652789e38e59f911c89aeea2dc6" id="r_a334e8652789e38e59f911c89aeea2dc6"><td class="memItemLeft" align="right" valign="top">VkDescriptorSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a334e8652789e38e59f911c89aeea2dc6">allocate</a> (VkDevice device, VkDescriptorSetLayout layout)</td></tr>
-<tr class="separator:a334e8652789e38e59f911c89aeea2dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c6bdfef17a8d70344a9af3a20d8b130" id="r_a1c6bdfef17a8d70344a9af3a20d8b130"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c6bdfef17a8d70344a9af3a20d8b130">operator==</a> (<a class="el" href="a00174.html">Quaternion</a> &amp;b) const</td></tr>
+<tr class="separator:a1c6bdfef17a8d70344a9af3a20d8b130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af27fb9153ec0fcb930a73aa9cd7e2d09" id="r_af27fb9153ec0fcb930a73aa9cd7e2d09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00174.html">Quaternion</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af27fb9153ec0fcb930a73aa9cd7e2d09">operator=</a> (float val)</td></tr>
+<tr class="separator:af27fb9153ec0fcb930a73aa9cd7e2d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cddf6ae46991af3d46855935b34f75a" id="r_a1cddf6ae46991af3d46855935b34f75a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1cddf6ae46991af3d46855935b34f75a">operator+</a> (<a class="el" href="a00174.html">Quaternion</a> &amp;b)</td></tr>
+<tr class="separator:a1cddf6ae46991af3d46855935b34f75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a203266c0dc325bac87c20c3ae822a567" id="r_a203266c0dc325bac87c20c3ae822a567"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a203266c0dc325bac87c20c3ae822a567">sIdentity</a> ()</td></tr>
+<tr class="separator:a203266c0dc325bac87c20c3ae822a567"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a51150b1aad092cd0707378078ec0e35c" id="r_a51150b1aad092cd0707378078ec0e35c"><td class="memItemLeft" align="right" valign="top">VkDescriptorPool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a51150b1aad092cd0707378078ec0e35c">pool</a></td></tr>
-<tr class="separator:a51150b1aad092cd0707378078ec0e35c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b0c157ed7151923b1d51f2754b6b0f" id="r_a94b0c157ed7151923b1d51f2754b6b0f"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94b0c157ed7151923b1d51f2754b6b0f">x</a></td></tr>
+<tr class="separator:a94b0c157ed7151923b1d51f2754b6b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c481d6a952719618213fc6b921f67c0" id="r_a2c481d6a952719618213fc6b921f67c0"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2c481d6a952719618213fc6b921f67c0">y</a></td></tr>
+<tr class="separator:a2c481d6a952719618213fc6b921f67c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8b8c73d6afd0531e7f4c8141f469c9" id="r_a9e8b8c73d6afd0531e7f4c8141f469c9"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e8b8c73d6afd0531e7f4c8141f469c9">z</a></td></tr>
+<tr class="separator:a9e8b8c73d6afd0531e7f4c8141f469c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea592d10bfb621eab8f3a5dbb6e8645" id="r_a4ea592d10bfb621eab8f3a5dbb6e8645"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ea592d10bfb621eab8f3a5dbb6e8645">w</a></td></tr>
+<tr class="separator:a4ea592d10bfb621eab8f3a5dbb6e8645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a334e8652789e38e59f911c89aeea2dc6" name="a334e8652789e38e59f911c89aeea2dc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a334e8652789e38e59f911c89aeea2dc6">&#9670;&#160;</a></span>allocate()</h2>
+<a id="a1cddf6ae46991af3d46855935b34f75a" name="a1cddf6ae46991af3d46855935b34f75a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cddf6ae46991af3d46855935b34f75a">&#9670;&#160;</a></span>operator+()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VkDescriptorSet DescriptorAllocator::allocate </td>
+          <td class="memname">void catos::math::Quaternion::operator+ </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00174.html">Quaternion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">VkDescriptorSetLayout</td>          <td class="paramname"><span class="paramname"><em>layout</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a7824d1b20b807681a834dd53c0bd1315" name="a7824d1b20b807681a834dd53c0bd1315"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7824d1b20b807681a834dd53c0bd1315">&#9670;&#160;</a></span>clearDescriptors()</h2>
+<a id="af27fb9153ec0fcb930a73aa9cd7e2d09" name="af27fb9153ec0fcb930a73aa9cd7e2d09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af27fb9153ec0fcb930a73aa9cd7e2d09">&#9670;&#160;</a></span>operator=()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorAllocator::clearDescriptors </td>
+          <td class="memname"><a class="el" href="a00174.html">Quaternion</a> &amp; catos::math::Quaternion::operator= </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
+          <td class="paramtype">float</td>          <td class="paramname"><span class="paramname"><em>val</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a574cc72d9888d2cf0a4ab77fa56093d7" name="a574cc72d9888d2cf0a4ab77fa56093d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a574cc72d9888d2cf0a4ab77fa56093d7">&#9670;&#160;</a></span>destroyPool()</h2>
+<a id="a1c6bdfef17a8d70344a9af3a20d8b130" name="a1c6bdfef17a8d70344a9af3a20d8b130"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c6bdfef17a8d70344a9af3a20d8b130">&#9670;&#160;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorAllocator::destroyPool </td>
+          <td class="memname">bool catos::math::Quaternion::operator== </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
-          <td></td>
+          <td class="paramtype"><a class="el" href="a00174.html">Quaternion</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af462a503a5c26ba20338c56d009eea48" name="af462a503a5c26ba20338c56d009eea48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af462a503a5c26ba20338c56d009eea48">&#9670;&#160;</a></span>initPool()</h2>
+<a id="a203266c0dc325bac87c20c3ae822a567" name="a203266c0dc325bac87c20c3ae822a567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a203266c0dc325bac87c20c3ae822a567">&#9670;&#160;</a></span>sIdentity()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorAllocator::initPool </td>
+          <td class="memname">void catos::math::Quaternion::sIdentity </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>maxSets</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::span&lt; <a class="el" href="a00178.html">PoolSizeRatio</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>poolRatios</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a51150b1aad092cd0707378078ec0e35c" name="a51150b1aad092cd0707378078ec0e35c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51150b1aad092cd0707378078ec0e35c">&#9670;&#160;</a></span>pool</h2>
+<a id="a4ea592d10bfb621eab8f3a5dbb6e8645" name="a4ea592d10bfb621eab8f3a5dbb6e8645"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ea592d10bfb621eab8f3a5dbb6e8645">&#9670;&#160;</a></span>w</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VkDescriptorPool DescriptorAllocator::pool</td>
+          <td class="memname">float catos::math::Quaternion::w</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li><a class="el" href="a00041_source.html">VkDescriptors.h</a></li>
-<li><a class="el" href="a00038.html">VkDescriptors.cpp</a></li>
+<a id="a94b0c157ed7151923b1d51f2754b6b0f" name="a94b0c157ed7151923b1d51f2754b6b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b0c157ed7151923b1d51f2754b6b0f">&#9670;&#160;</a></span>x</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float catos::math::Quaternion::x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c481d6a952719618213fc6b921f67c0" name="a2c481d6a952719618213fc6b921f67c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c481d6a952719618213fc6b921f67c0">&#9670;&#160;</a></span>y</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float catos::math::Quaternion::y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e8b8c73d6afd0531e7f4c8141f469c9" name="a9e8b8c73d6afd0531e7f4c8141f469c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e8b8c73d6afd0531e7f4c8141f469c9">&#9670;&#160;</a></span>z</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float catos::math::Quaternion::z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a00029_source.html">vecs.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

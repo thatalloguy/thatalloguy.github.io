@@ -1,30 +1,178 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00334" kind="struct" language="C++" prot="public">
-    <compoundname>ComponentTest</compoundname>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00334_1a3814e0099de95993b4e149af850b780f" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float ComponentTest::d</definition>
+  <compounddef id="a00334" kind="class" language="C++" prot="public">
+    <compoundname>catos::hashnode</compoundname>
+    <includes refid="a00086" local="no">hashmap.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename K</type>
+      </param>
+      <param>
+        <type>typename V</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00334_1a300dbecc250694c96071b6b9412b2515" prot="private" static="no" mutable="no">
+        <type>K</type>
+        <definition>K catos::hashnode&lt; K, V &gt;::key</definition>
         <argsstring></argsstring>
-        <name>d</name>
-        <qualifiedname>ComponentTest::d</qualifiedname>
+        <name>key</name>
+        <qualifiedname>catos::hashnode::key</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="33" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="33" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="54" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00334_1a7251a20cfc54b298817fb5acc54ea8e7" prot="private" static="no" mutable="no">
+        <type>V</type>
+        <definition>V catos::hashnode&lt; K, V &gt;::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <qualifiedname>catos::hashnode::value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="55" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00334_1a22941925f184dd2a765879ee1a6a3954" prot="private" static="no" mutable="no">
+        <type><ref refid="a00334" kindref="compound">hashnode</ref> *</type>
+        <definition>hashnode* catos::hashnode&lt; K, V &gt;::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <qualifiedname>catos::hashnode::next</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="56" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00334_1ac83063219f7a89f05fb650a2b32d7bba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::hashnode&lt; K, V &gt;::hashnode</definition>
+        <argsstring>(const K &amp;key, const V &amp;value)</argsstring>
+        <name>hashnode</name>
+        <qualifiedname>catos::hashnode::hashnode</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const V &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="30" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="a00334_1aa7260d31bcc7b6506397dd45c7c1ee4f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>K</type>
+        <definition>K catos::hashnode&lt; K, V &gt;::getKey</definition>
+        <argsstring>() const</argsstring>
+        <name>getKey</name>
+        <qualifiedname>catos::hashnode::getKey</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="33" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="33" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="a00334_1a54b36cad0b3ec6bfcf0eeff057177333" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>V</type>
+        <definition>V catos::hashnode&lt; K, V &gt;::getValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getValue</name>
+        <qualifiedname>catos::hashnode::getValue</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="37" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="37" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="a00334_1a526a3b62b166699798481ad0ea03a21d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00334" kindref="compound">hashnode</ref> *</type>
+        <definition>hashnode * catos::hashnode&lt; K, V &gt;::getNext</definition>
+        <argsstring>() const</argsstring>
+        <name>getNext</name>
+        <qualifiedname>catos::hashnode::getNext</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="41" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="41" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="a00334_1a969cd602a093c31b7f5763472033d878" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::hashnode&lt; K, V &gt;::setValue</definition>
+        <argsstring>(V newVal)</argsstring>
+        <name>setValue</name>
+        <qualifiedname>catos::hashnode::setValue</qualifiedname>
+        <param>
+          <type>V</type>
+          <declname>newVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="45" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="45" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="a00334_1ac1d633c2ccd206a30b971355268d9e5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::hashnode&lt; K, V &gt;::setNext</definition>
+        <argsstring>(hashnode *newNext)</argsstring>
+        <name>setNext</name>
+        <qualifiedname>catos::hashnode::setNext</qualifiedname>
+        <param>
+          <type><ref refid="a00334" kindref="compound">hashnode</ref> *</type>
+          <declname>newNext</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="49" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="49" bodyend="51"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="32" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="32" bodyend="34"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="27" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="27" bodyend="58"/>
     <listofallmembers>
-      <member refid="a00334_1a3814e0099de95993b4e149af850b780f" prot="public" virt="non-virtual"><scope>ComponentTest</scope><name>d</name></member>
+      <member refid="a00334_1aa7260d31bcc7b6506397dd45c7c1ee4f" prot="public" virt="non-virtual"><scope>catos::hashnode</scope><name>getKey</name></member>
+      <member refid="a00334_1a526a3b62b166699798481ad0ea03a21d" prot="public" virt="non-virtual"><scope>catos::hashnode</scope><name>getNext</name></member>
+      <member refid="a00334_1a54b36cad0b3ec6bfcf0eeff057177333" prot="public" virt="non-virtual"><scope>catos::hashnode</scope><name>getValue</name></member>
+      <member refid="a00334_1ac83063219f7a89f05fb650a2b32d7bba" prot="public" virt="non-virtual"><scope>catos::hashnode</scope><name>hashnode</name></member>
+      <member refid="a00334_1a300dbecc250694c96071b6b9412b2515" prot="private" virt="non-virtual"><scope>catos::hashnode</scope><name>key</name></member>
+      <member refid="a00334_1a22941925f184dd2a765879ee1a6a3954" prot="private" virt="non-virtual"><scope>catos::hashnode</scope><name>next</name></member>
+      <member refid="a00334_1ac1d633c2ccd206a30b971355268d9e5d" prot="public" virt="non-virtual"><scope>catos::hashnode</scope><name>setNext</name></member>
+      <member refid="a00334_1a969cd602a093c31b7f5763472033d878" prot="public" virt="non-virtual"><scope>catos::hashnode</scope><name>setValue</name></member>
+      <member refid="a00334_1a7251a20cfc54b298817fb5acc54ea8e7" prot="private" virt="non-virtual"><scope>catos::hashnode</scope><name>value</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>
