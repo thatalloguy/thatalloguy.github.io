@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): GeoSurface Struct Reference</title>
+<title>Catos Engine (Source): catos::vector&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,84 +95,809 @@ $(function(){initNavTree('a00254.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a00251.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">GeoSurface Struct Reference</div></div>
+  <div class="headertitle"><div class="title">catos::vector&lt; T &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00065_source.html">VkLoader.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00101_source.html">vector.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ab6fd9aebf929934ca3b679e11b984e88" id="r_ab6fd9aebf929934ca3b679e11b984e88"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab6fd9aebf929934ca3b679e11b984e88">startIndex</a></td></tr>
-<tr class="separator:ab6fd9aebf929934ca3b679e11b984e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5bfc701fbd45f395a990f9a0063b8975" id="r_a5bfc701fbd45f395a990f9a0063b8975"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5bfc701fbd45f395a990f9a0063b8975">count</a></td></tr>
-<tr class="separator:a5bfc701fbd45f395a990f9a0063b8975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8e3399fe5d911224a61f379cbfcd4d9" id="r_ad8e3399fe5d911224a61f379cbfcd4d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00278.html">Bounds</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad8e3399fe5d911224a61f379cbfcd4d9">bounds</a></td></tr>
-<tr class="separator:ad8e3399fe5d911224a61f379cbfcd4d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0c192263057788d4136d4b73a63ead4" id="r_af0c192263057788d4136d4b73a63ead4"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="a00250.html">GLTFMaterial</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af0c192263057788d4136d4b73a63ead4">material</a></td></tr>
-<tr class="separator:af0c192263057788d4136d4b73a63ead4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00258.html">iterator</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa1db0b578d5d91b59a2a54ccf8dd3393" id="r_aa1db0b578d5d91b59a2a54ccf8dd3393"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1db0b578d5d91b59a2a54ccf8dd3393">vector</a> ()</td></tr>
+<tr class="memdesc:aa1db0b578d5d91b59a2a54ccf8dd3393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the vector to empty.  <br /></td></tr>
+<tr class="separator:aa1db0b578d5d91b59a2a54ccf8dd3393"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ffbbbf217c6c3e3f503b7f506a9939" id="r_ac8ffbbbf217c6c3e3f503b7f506a9939"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac8ffbbbf217c6c3e3f503b7f506a9939">vector</a> (const <a class="el" href="a00254.html">vector</a> &amp;obj)</td></tr>
+<tr class="memdesc:ac8ffbbbf217c6c3e3f503b7f506a9939"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy Constructor.  <br /></td></tr>
+<tr class="separator:ac8ffbbbf217c6c3e3f503b7f506a9939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4a4c09136e74ac3a36306871df7f55" id="r_a0b4a4c09136e74ac3a36306871df7f55"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b4a4c09136e74ac3a36306871df7f55">vector</a> (<a class="el" href="a00254.html">vector</a> &amp;&amp;obj)</td></tr>
+<tr class="memdesc:a0b4a4c09136e74ac3a36306871df7f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move Constructor.  <br /></td></tr>
+<tr class="separator:a0b4a4c09136e74ac3a36306871df7f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66f6477f53cd424911a0221c0a1de1b1" id="r_a66f6477f53cd424911a0221c0a1de1b1"><td class="memTemplParams" colspan="2">template&lt;typename ... Args&gt; </td></tr>
+<tr class="memitem:a66f6477f53cd424911a0221c0a1de1b1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a66f6477f53cd424911a0221c0a1de1b1">vector</a> (Args &amp;&amp;...args)</td></tr>
+<tr class="memdesc:a66f6477f53cd424911a0221c0a1de1b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes and calls push_back for all elements given.  <br /></td></tr>
+<tr class="separator:a66f6477f53cd424911a0221c0a1de1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad98d3e0c21c7fd0dc1e34d3d582387ca" id="r_ad98d3e0c21c7fd0dc1e34d3d582387ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00254.html">vector</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad98d3e0c21c7fd0dc1e34d3d582387ca">operator=</a> (const <a class="el" href="a00254.html">vector</a>&lt; T &gt; &amp;obj)</td></tr>
+<tr class="memdesc:ad98d3e0c21c7fd0dc1e34d3d582387ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copies the obj.  <br /></td></tr>
+<tr class="separator:ad98d3e0c21c7fd0dc1e34d3d582387ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb580c6afde40c40b6ab5ddb107a33c1" id="r_afb580c6afde40c40b6ab5ddb107a33c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afb580c6afde40c40b6ab5ddb107a33c1">reserve</a> (unsigned int amount)</td></tr>
+<tr class="memdesc:afb580c6afde40c40b6ab5ddb107a33c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">allocates enough memory for the amount given.  <br /></td></tr>
+<tr class="separator:afb580c6afde40c40b6ab5ddb107a33c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0a2274e7ae2472021d841e662d55d2" id="r_a5f0a2274e7ae2472021d841e662d55d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f0a2274e7ae2472021d841e662d55d2">resize</a> (unsigned int newSize)</td></tr>
+<tr class="separator:a5f0a2274e7ae2472021d841e662d55d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8197cdb46bc1d75b6cd45a10f16c217" id="r_ab8197cdb46bc1d75b6cd45a10f16c217"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab8197cdb46bc1d75b6cd45a10f16c217">push_back</a> (T obj)</td></tr>
+<tr class="memdesc:ab8197cdb46bc1d75b6cd45a10f16c217"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds the new item to the array.  <br /></td></tr>
+<tr class="separator:ab8197cdb46bc1d75b6cd45a10f16c217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472e024bdfa70d37c1c2d15e1e4fa14f" id="r_a472e024bdfa70d37c1c2d15e1e4fa14f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a472e024bdfa70d37c1c2d15e1e4fa14f">clear</a> ()</td></tr>
+<tr class="memdesc:a472e024bdfa70d37c1c2d15e1e4fa14f"><td class="mdescLeft">&#160;</td><td class="mdescRight">clears the buffer  <br /></td></tr>
+<tr class="separator:a472e024bdfa70d37c1c2d15e1e4fa14f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38786e83997d9c87fdaadde122c4179d" id="r_a38786e83997d9c87fdaadde122c4179d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a38786e83997d9c87fdaadde122c4179d">remove</a> (int index)</td></tr>
+<tr class="memdesc:a38786e83997d9c87fdaadde122c4179d"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes the item at the index  <br /></td></tr>
+<tr class="separator:a38786e83997d9c87fdaadde122c4179d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbd7bd53f0e9dfc6e3914f62fbd4717" id="r_a6bbd7bd53f0e9dfc6e3914f62fbd4717"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6bbd7bd53f0e9dfc6e3914f62fbd4717">at</a> (int index)</td></tr>
+<tr class="memdesc:a6bbd7bd53f0e9dfc6e3914f62fbd4717"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the item at the desired index.  <br /></td></tr>
+<tr class="separator:a6bbd7bd53f0e9dfc6e3914f62fbd4717"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d44c666a912ce9fea777c41a912176" id="r_a22d44c666a912ce9fea777c41a912176"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a22d44c666a912ce9fea777c41a912176">back</a> ()</td></tr>
+<tr class="memdesc:a22d44c666a912ce9fea777c41a912176"><td class="mdescLeft">&#160;</td><td class="mdescRight">gives the last item.  <br /></td></tr>
+<tr class="separator:a22d44c666a912ce9fea777c41a912176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcf1e2beecd5bb1c15ea487bc3f54043" id="r_afcf1e2beecd5bb1c15ea487bc3f54043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcf1e2beecd5bb1c15ea487bc3f54043">pop_back</a> ()</td></tr>
+<tr class="memdesc:afcf1e2beecd5bb1c15ea487bc3f54043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the last item.  <br /></td></tr>
+<tr class="separator:afcf1e2beecd5bb1c15ea487bc3f54043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ad892115e4eaa96a31946f7edb1809" id="r_a58ad892115e4eaa96a31946f7edb1809"><td class="memItemLeft" align="right" valign="top">T *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a58ad892115e4eaa96a31946f7edb1809">data</a> ()</td></tr>
+<tr class="memdesc:a58ad892115e4eaa96a31946f7edb1809"><td class="mdescLeft">&#160;</td><td class="mdescRight">gives the internal buffer  <br /></td></tr>
+<tr class="separator:a58ad892115e4eaa96a31946f7edb1809"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addb4d5f92ee7c9c5e1acbc6dfb2498dc" id="r_addb4d5f92ee7c9c5e1acbc6dfb2498dc"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addb4d5f92ee7c9c5e1acbc6dfb2498dc">length</a> ()</td></tr>
+<tr class="memdesc:addb4d5f92ee7c9c5e1acbc6dfb2498dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the amount of objects in the internal buffer.  <br /></td></tr>
+<tr class="separator:addb4d5f92ee7c9c5e1acbc6dfb2498dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ccade0b24020d64816ed63de032cbcc" id="r_a4ccade0b24020d64816ed63de032cbcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ccade0b24020d64816ed63de032cbcc">empty</a> ()</td></tr>
+<tr class="memdesc:a4ccade0b24020d64816ed63de032cbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns if the size is &lt;= 0.  <br /></td></tr>
+<tr class="separator:a4ccade0b24020d64816ed63de032cbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab13b0017e4f38aa3c6049b413b4fdcb2" id="r_ab13b0017e4f38aa3c6049b413b4fdcb2"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab13b0017e4f38aa3c6049b413b4fdcb2">maxLength</a> ()</td></tr>
+<tr class="memdesc:ab13b0017e4f38aa3c6049b413b4fdcb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the maximum amount of objects in our internal buffer  <br /></td></tr>
+<tr class="separator:ab13b0017e4f38aa3c6049b413b4fdcb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af986a5dac1b8d1bb361fcb3dcf5f3703" id="r_af986a5dac1b8d1bb361fcb3dcf5f3703"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af986a5dac1b8d1bb361fcb3dcf5f3703">operator[]</a> (int i)</td></tr>
+<tr class="memdesc:af986a5dac1b8d1bb361fcb3dcf5f3703"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the obj for the given index.  <br /></td></tr>
+<tr class="separator:af986a5dac1b8d1bb361fcb3dcf5f3703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34ab28bf95ca02c28b01024daa5016a6" id="r_a34ab28bf95ca02c28b01024daa5016a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a34ab28bf95ca02c28b01024daa5016a6">~vector</a> ()</td></tr>
+<tr class="memdesc:a34ab28bf95ca02c28b01024daa5016a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the allocated objects.  <br /></td></tr>
+<tr class="separator:a34ab28bf95ca02c28b01024daa5016a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a741aba9ff6c86c0b6b0cefcb0775428a" id="r_a741aba9ff6c86c0b6b0cefcb0775428a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00258.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a741aba9ff6c86c0b6b0cefcb0775428a">begin</a> ()</td></tr>
+<tr class="separator:a741aba9ff6c86c0b6b0cefcb0775428a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bd228b5e81ee37d775260f6b7d62598" id="r_a4bd228b5e81ee37d775260f6b7d62598"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00258.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4bd228b5e81ee37d775260f6b7d62598">begin</a> () const</td></tr>
+<tr class="separator:a4bd228b5e81ee37d775260f6b7d62598"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49d21a45f3948ecb372b9808d93852b2" id="r_a49d21a45f3948ecb372b9808d93852b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00258.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a49d21a45f3948ecb372b9808d93852b2">end</a> ()</td></tr>
+<tr class="separator:a49d21a45f3948ecb372b9808d93852b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8f9d8d894768f3c83b6e9cabd8d1a2c" id="r_af8f9d8d894768f3c83b6e9cabd8d1a2c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00258.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8f9d8d894768f3c83b6e9cabd8d1a2c">end</a> () const</td></tr>
+<tr class="separator:af8f9d8d894768f3c83b6e9cabd8d1a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac421a3bceb92419a3ceb89a1c6d1a281" id="r_ac421a3bceb92419a3ceb89a1c6d1a281"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00258.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac421a3bceb92419a3ceb89a1c6d1a281">cbegin</a> () const</td></tr>
+<tr class="separator:ac421a3bceb92419a3ceb89a1c6d1a281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6acb786c18ead678a418366600330bed" id="r_a6acb786c18ead678a418366600330bed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00258.html">iterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6acb786c18ead678a418366600330bed">cend</a> () const</td></tr>
+<tr class="separator:a6acb786c18ead678a418366600330bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad8e3399fe5d911224a61f379cbfcd4d9" name="ad8e3399fe5d911224a61f379cbfcd4d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8e3399fe5d911224a61f379cbfcd4d9">&#9670;&#160;</a></span>bounds</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa1db0b578d5d91b59a2a54ccf8dd3393" name="aa1db0b578d5d91b59a2a54ccf8dd3393"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1db0b578d5d91b59a2a54ccf8dd3393">&#9670;&#160;</a></span>vector() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00278.html">Bounds</a> GeoSurface::bounds</td>
+          <td class="memname"><a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::vector </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes the vector to empty. </p>
+
+</div>
+</div>
+<a id="ac8ffbbbf217c6c3e3f503b7f506a9939" name="ac8ffbbbf217c6c3e3f503b7f506a9939"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac8ffbbbf217c6c3e3f503b7f506a9939">&#9670;&#160;</a></span>vector() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::vector </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00254.html">vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy Constructor. </p>
+
+</div>
+</div>
+<a id="a0b4a4c09136e74ac3a36306871df7f55" name="a0b4a4c09136e74ac3a36306871df7f55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b4a4c09136e74ac3a36306871df7f55">&#9670;&#160;</a></span>vector() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::vector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="a00254.html">vector</a>&lt; T &gt; &amp;&amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Move Constructor. </p>
+
+</div>
+</div>
+<a id="a66f6477f53cd424911a0221c0a1de1b1" name="a66f6477f53cd424911a0221c0a1de1b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66f6477f53cd424911a0221c0a1de1b1">&#9670;&#160;</a></span>vector() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<div class="memtemplate">
+template&lt;typename ... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::vector </td>
+          <td>(</td>
+          <td class="paramtype">Args &amp;&amp;...</td>          <td class="paramname"><span class="paramname"><em>args</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes and calls push_back for all elements given. </p>
+
+</div>
+</div>
+<a id="a34ab28bf95ca02c28b01024daa5016a6" name="a34ab28bf95ca02c28b01024daa5016a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34ab28bf95ca02c28b01024daa5016a6">&#9670;&#160;</a></span>~vector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::~<a class="el" href="a00254.html">vector</a> </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes the allocated objects. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6bbd7bd53f0e9dfc6e3914f62fbd4717" name="a6bbd7bd53f0e9dfc6e3914f62fbd4717"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbd7bd53f0e9dfc6e3914f62fbd4717">&#9670;&#160;</a></span>at()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::at </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the item at the desired index. </p>
+
+</div>
+</div>
+<a id="a22d44c666a912ce9fea777c41a912176" name="a22d44c666a912ce9fea777c41a912176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22d44c666a912ce9fea777c41a912176">&#9670;&#160;</a></span>back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::back </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gives the last item. </p>
+
+</div>
+</div>
+<a id="a741aba9ff6c86c0b6b0cefcb0775428a" name="a741aba9ff6c86c0b6b0cefcb0775428a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a741aba9ff6c86c0b6b0cefcb0775428a">&#9670;&#160;</a></span>begin() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00254.html">vector</a>&lt; T &gt;::iterator <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5bfc701fbd45f395a990f9a0063b8975" name="a5bfc701fbd45f395a990f9a0063b8975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bfc701fbd45f395a990f9a0063b8975">&#9670;&#160;</a></span>count</h2>
+<a id="a4bd228b5e81ee37d775260f6b7d62598" name="a4bd228b5e81ee37d775260f6b7d62598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bd228b5e81ee37d775260f6b7d62598">&#9670;&#160;</a></span>begin() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t GeoSurface::count</td>
+          <td class="memname"><a class="el" href="a00254.html">vector</a>&lt; T &gt;::iterator <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::begin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af0c192263057788d4136d4b73a63ead4" name="af0c192263057788d4136d4b73a63ead4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0c192263057788d4136d4b73a63ead4">&#9670;&#160;</a></span>material</h2>
+<a id="ac421a3bceb92419a3ceb89a1c6d1a281" name="ac421a3bceb92419a3ceb89a1c6d1a281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac421a3bceb92419a3ceb89a1c6d1a281">&#9670;&#160;</a></span>cbegin()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::shared_ptr&lt;<a class="el" href="a00250.html">GLTFMaterial</a>&gt; GeoSurface::material</td>
+          <td class="memname"><a class="el" href="a00254.html">vector</a>&lt; T &gt;::iterator <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::cbegin </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ab6fd9aebf929934ca3b679e11b984e88" name="ab6fd9aebf929934ca3b679e11b984e88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6fd9aebf929934ca3b679e11b984e88">&#9670;&#160;</a></span>startIndex</h2>
+<a id="a6acb786c18ead678a418366600330bed" name="a6acb786c18ead678a418366600330bed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6acb786c18ead678a418366600330bed">&#9670;&#160;</a></span>cend()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t GeoSurface::startIndex</td>
+          <td class="memname"><a class="el" href="a00254.html">vector</a>&lt; T &gt;::iterator <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::cend </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00065_source.html">VkLoader.h</a></li>
+<a id="a472e024bdfa70d37c1c2d15e1e4fa14f" name="a472e024bdfa70d37c1c2d15e1e4fa14f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a472e024bdfa70d37c1c2d15e1e4fa14f">&#9670;&#160;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>clears the buffer </p>
+
+</div>
+</div>
+<a id="a58ad892115e4eaa96a31946f7edb1809" name="a58ad892115e4eaa96a31946f7edb1809"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58ad892115e4eaa96a31946f7edb1809">&#9670;&#160;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T * <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::data </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>gives the internal buffer </p>
+
+</div>
+</div>
+<a id="a4ccade0b24020d64816ed63de032cbcc" name="a4ccade0b24020d64816ed63de032cbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ccade0b24020d64816ed63de032cbcc">&#9670;&#160;</a></span>empty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns if the size is &lt;= 0. </p>
+
+</div>
+</div>
+<a id="a49d21a45f3948ecb372b9808d93852b2" name="a49d21a45f3948ecb372b9808d93852b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49d21a45f3948ecb372b9808d93852b2">&#9670;&#160;</a></span>end() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00254.html">vector</a>&lt; T &gt;::iterator <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af8f9d8d894768f3c83b6e9cabd8d1a2c" name="af8f9d8d894768f3c83b6e9cabd8d1a2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8f9d8d894768f3c83b6e9cabd8d1a2c">&#9670;&#160;</a></span>end() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00254.html">vector</a>&lt; T &gt;::iterator <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::end </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addb4d5f92ee7c9c5e1acbc6dfb2498dc" name="addb4d5f92ee7c9c5e1acbc6dfb2498dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addb4d5f92ee7c9c5e1acbc6dfb2498dc">&#9670;&#160;</a></span>length()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::length </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the amount of objects in the internal buffer. </p>
+
+</div>
+</div>
+<a id="ab13b0017e4f38aa3c6049b413b4fdcb2" name="ab13b0017e4f38aa3c6049b413b4fdcb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab13b0017e4f38aa3c6049b413b4fdcb2">&#9670;&#160;</a></span>maxLength()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::maxLength </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the maximum amount of objects in our internal buffer </p>
+
+</div>
+</div>
+<a id="ad98d3e0c21c7fd0dc1e34d3d582387ca" name="ad98d3e0c21c7fd0dc1e34d3d582387ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad98d3e0c21c7fd0dc1e34d3d582387ca">&#9670;&#160;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00254.html">vector</a>&lt; T &gt; &amp; <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00254.html">vector</a>&lt; T &gt; &amp;</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copies the obj. </p>
+
+</div>
+</div>
+<a id="af986a5dac1b8d1bb361fcb3dcf5f3703" name="af986a5dac1b8d1bb361fcb3dcf5f3703"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af986a5dac1b8d1bb361fcb3dcf5f3703">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">T &amp; <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>i</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the obj for the given index. </p>
+
+</div>
+</div>
+<a id="afcf1e2beecd5bb1c15ea487bc3f54043" name="afcf1e2beecd5bb1c15ea487bc3f54043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf1e2beecd5bb1c15ea487bc3f54043">&#9670;&#160;</a></span>pop_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::pop_back </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the last item. </p>
+
+</div>
+</div>
+<a id="ab8197cdb46bc1d75b6cd45a10f16c217" name="ab8197cdb46bc1d75b6cd45a10f16c217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8197cdb46bc1d75b6cd45a10f16c217">&#9670;&#160;</a></span>push_back()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::push_back </td>
+          <td>(</td>
+          <td class="paramtype">T</td>          <td class="paramname"><span class="paramname"><em>obj</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds the new item to the array. </p>
+
+</div>
+</div>
+<a id="a38786e83997d9c87fdaadde122c4179d" name="a38786e83997d9c87fdaadde122c4179d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38786e83997d9c87fdaadde122c4179d">&#9670;&#160;</a></span>remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::remove </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>removes the item at the index </p>
+
+</div>
+</div>
+<a id="afb580c6afde40c40b6ab5ddb107a33c1" name="afb580c6afde40c40b6ab5ddb107a33c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb580c6afde40c40b6ab5ddb107a33c1">&#9670;&#160;</a></span>reserve()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::reserve </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>amount</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>allocates enough memory for the amount given. </p>
+
+</div>
+</div>
+<a id="a5f0a2274e7ae2472021d841e662d55d2" name="a5f0a2274e7ae2472021d841e662d55d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0a2274e7ae2472021d841e662d55d2">&#9670;&#160;</a></span>resize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="a00254.html">catos::vector</a>&lt; T &gt;::resize </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int</td>          <td class="paramname"><span class="paramname"><em>newSize</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="a00101_source.html">vector.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): VkImages.h Source File</title>
+<title>Catos Engine (Source): renderer.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -99,35 +99,93 @@ $(function(){initNavTree('a00053_source.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">VkImages.h</div></div>
+  <div class="headertitle"><div class="title">renderer.h</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="a00053.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">//</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by allos on 2/10/2024.</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// Created by allos on 10/16/2024.</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">//</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * Purpose of this file for future reference:</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * This will contain image related vulkan helpers</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="a00065.html">renderer/renderPipeline.h</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="a00059.html">renderer/renderPass.h</a>&gt;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00107.html">catos</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;vulkan/vulkan.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="a00119.html">   14</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="a00119.html">VkUtil</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="a00119.html#a875b1e47dc0c1a3d683aa56a048004a1">transitionImage</a>(VkCommandBuffer cmd, VkImage image, VkImageLayout currentLayout, VkImageLayout newLayout);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="a00119.html#aaf415273879926840c4ba3f273ced282">copyImageToImage</a>(VkCommandBuffer cmd, VkImage source, VkImage destination, VkExtent2D srcSize, VkExtent2D dstSize);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="a00119.html#ab2f70afca891c15b7a86f4d2d5c67931">generateMipMaps</a>(VkCommandBuffer cmd, VkImage image, VkExtent2D imageSize);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>}</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="a00107.html#ac617635d2b87a1969d411fcf09f8d983">   13</a></span>    <span class="keyword">enum class</span> <a class="code hl_enumeration" href="a00107.html#ac617635d2b87a1969d411fcf09f8d983">RenderBackendType</a>: <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <a class="code hl_enumvalue" href="a00107.html#ac617635d2b87a1969d411fcf09f8d983a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a> = 0,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <a class="code hl_enumvalue" href="a00107.html#ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71">OPENGL_4_2</a> = 1,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    };</div>
 </div>
-<div class="ttc" id="aa00119_html"><div class="ttname"><a href="a00119.html">VkUtil</a></div><div class="ttdef"><b>Definition</b> VkImages.h:14</div></div>
-<div class="ttc" id="aa00119_html_a875b1e47dc0c1a3d683aa56a048004a1"><div class="ttname"><a href="a00119.html#a875b1e47dc0c1a3d683aa56a048004a1">VkUtil::transitionImage</a></div><div class="ttdeci">void transitionImage(VkCommandBuffer cmd, VkImage image, VkImageLayout currentLayout, VkImageLayout newLayout)</div><div class="ttdef"><b>Definition</b> VkImages.cpp:9</div></div>
-<div class="ttc" id="aa00119_html_aaf415273879926840c4ba3f273ced282"><div class="ttname"><a href="a00119.html#aaf415273879926840c4ba3f273ced282">VkUtil::copyImageToImage</a></div><div class="ttdeci">void copyImageToImage(VkCommandBuffer cmd, VkImage source, VkImage destination, VkExtent2D srcSize, VkExtent2D dstSize)</div><div class="ttdef"><b>Definition</b> VkImages.cpp:35</div></div>
-<div class="ttc" id="aa00119_html_ab2f70afca891c15b7a86f4d2d5c67931"><div class="ttname"><a href="a00119.html#ab2f70afca891c15b7a86f4d2d5c67931">VkUtil::generateMipMaps</a></div><div class="ttdeci">void generateMipMaps(VkCommandBuffer cmd, VkImage image, VkExtent2D imageSize)</div><div class="ttdef"><b>Definition</b> VkImages.cpp:69</div></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00019" data-start="{" data-end="};">
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844">   19</a></span>    <span class="keyword">enum</span> <a class="code hl_enumeration" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844">RenderStatus</a>: <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f">   20</a></span>        <a class="code hl_enumvalue" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f">SUCCESSFUL</a> = 0,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c">   22</a></span>        <a class="code hl_enumvalue" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c">RENDERER_ALREADY_INITIALIZED</a> = 1,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    };</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="};">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="a00186.html">   26</a></span>    <span class="keyword">struct </span><a class="code hl_struct" href="a00186.html">RendererCreateInfo</a> {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="a00186.html#af75d3309a1a01b0ff3ab582b709a8b9a">   27</a></span>        <a class="code hl_enumeration" href="a00107.html#ac617635d2b87a1969d411fcf09f8d983">RenderBackendType</a> <a class="code hl_variable" href="a00186.html#af75d3309a1a01b0ff3ab582b709a8b9a">backendType</a> = <a class="code hl_enumvalue" href="a00107.html#ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71">RenderBackendType::OPENGL_4_2</a>;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    };</div>
+</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="};">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="a00190.html">   32</a></span>    <span class="keyword">class </span><a class="code hl_class" href="a00190.html">Renderer</a> {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keyword">static</span> <a class="code hl_class" href="a00190.html">Renderer</a>&amp; <a class="code hl_function" href="a00190.html#a9abc0b2f88cab6de481b5ed03b33bf40">getInstance</a>();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <a class="code hl_function" href="a00190.html#a77b6706531afda679e25e1a768461c7a">~Renderer</a>();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <a class="code hl_enumeration" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844">RenderStatus</a> <a class="code hl_function" href="a00190.html#a80632fc4bf3b4bfd4adf53942e1082b2">init</a>(<span class="keyword">const</span> <a class="code hl_struct" href="a00186.html">RendererCreateInfo</a>&amp; createInfo);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <a class="code hl_enumeration" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844">RenderStatus</a> <a class="code hl_function" href="a00190.html#ae4bc8cfbd577da01b4dedf353da9d80e">renderObjects</a>(<span class="keyword">const</span> <a class="code hl_class" href="a00202.html">RenderPipeline</a>&amp; pipeline, <span class="keywordtype">void</span>* data, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> objectAmount);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <a class="code hl_enumeration" href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844">RenderStatus</a> <a class="code hl_function" href="a00190.html#aa5bd4659694cca3566bc5f2cb7df1e98">renderPassToScreen</a>(<a class="code hl_class" href="a00198.html">RenderPass</a>&amp; pass);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordtype">void</span> setupFinalRenderPlane();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordtype">bool</span> initialized = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> renderVAO;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> renderVBO;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <a class="code hl_class" href="a00210.html">Shader</a> screenShader;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    };</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="ttc" id="aa00059_html"><div class="ttname"><a href="a00059.html">renderPass.h</a></div></div>
+<div class="ttc" id="aa00065_html"><div class="ttname"><a href="a00065.html">renderPipeline.h</a></div></div>
+<div class="ttc" id="aa00107_html"><div class="ttname"><a href="a00107.html">catos</a></div><div class="ttdef"><b>Definition</b> application.h:13</div></div>
+<div class="ttc" id="aa00107_html_aa9c2c77c5cf5336b2278a774bbbc0844"><div class="ttname"><a href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844">catos::RenderStatus</a></div><div class="ttdeci">RenderStatus</div><div class="ttdoc">The statuses of the renderer's operation.</div><div class="ttdef"><b>Definition</b> renderer.h:19</div></div>
+<div class="ttc" id="aa00107_html_aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f"><div class="ttname"><a href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f">catos::SUCCESSFUL</a></div><div class="ttdeci">@ SUCCESSFUL</div><div class="ttdef"><b>Definition</b> renderer.h:20</div></div>
+<div class="ttc" id="aa00107_html_aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c"><div class="ttname"><a href="a00107.html#aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c">catos::RENDERER_ALREADY_INITIALIZED</a></div><div class="ttdeci">@ RENDERER_ALREADY_INITIALIZED</div><div class="ttdef"><b>Definition</b> renderer.h:22</div></div>
+<div class="ttc" id="aa00107_html_ac617635d2b87a1969d411fcf09f8d983"><div class="ttname"><a href="a00107.html#ac617635d2b87a1969d411fcf09f8d983">catos::RenderBackendType</a></div><div class="ttdeci">RenderBackendType</div><div class="ttdoc">What backend the renderer should use. NOTE: ONLY OPENGL 4.2 SUPPORTED.</div><div class="ttdef"><b>Definition</b> renderer.h:13</div></div>
+<div class="ttc" id="aa00107_html_ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71"><div class="ttname"><a href="a00107.html#ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71">catos::RenderBackendType::OPENGL_4_2</a></div><div class="ttdeci">@ OPENGL_4_2</div></div>
+<div class="ttc" id="aa00107_html_ac617635d2b87a1969d411fcf09f8d983a696b031073e74bf2cb98e5ef201d4aa3"><div class="ttname"><a href="a00107.html#ac617635d2b87a1969d411fcf09f8d983a696b031073e74bf2cb98e5ef201d4aa3">catos::RenderBackendType::UNKNOWN</a></div><div class="ttdeci">@ UNKNOWN</div></div>
+<div class="ttc" id="aa00186_html"><div class="ttname"><a href="a00186.html">catos::RendererCreateInfo</a></div><div class="ttdef"><b>Definition</b> renderer.h:26</div></div>
+<div class="ttc" id="aa00186_html_af75d3309a1a01b0ff3ab582b709a8b9a"><div class="ttname"><a href="a00186.html#af75d3309a1a01b0ff3ab582b709a8b9a">catos::RendererCreateInfo::backendType</a></div><div class="ttdeci">RenderBackendType backendType</div><div class="ttdef"><b>Definition</b> renderer.h:27</div></div>
+<div class="ttc" id="aa00190_html"><div class="ttname"><a href="a00190.html">catos::Renderer</a></div><div class="ttdoc">The renderer is the Master class that handles everything getting drawn properly.</div><div class="ttdef"><b>Definition</b> renderer.h:32</div></div>
+<div class="ttc" id="aa00190_html_a77b6706531afda679e25e1a768461c7a"><div class="ttname"><a href="a00190.html#a77b6706531afda679e25e1a768461c7a">catos::Renderer::~Renderer</a></div><div class="ttdeci">~Renderer()</div><div class="ttdef"><b>Definition</b> renderer.cpp:48</div></div>
+<div class="ttc" id="aa00190_html_a80632fc4bf3b4bfd4adf53942e1082b2"><div class="ttname"><a href="a00190.html#a80632fc4bf3b4bfd4adf53942e1082b2">catos::Renderer::init</a></div><div class="ttdeci">RenderStatus init(const RendererCreateInfo &amp;createInfo)</div><div class="ttdoc">If the renderer isnt already initialized then it initializes.</div><div class="ttdef"><b>Definition</b> renderer.cpp:55</div></div>
+<div class="ttc" id="aa00190_html_a9abc0b2f88cab6de481b5ed03b33bf40"><div class="ttname"><a href="a00190.html#a9abc0b2f88cab6de481b5ed03b33bf40">catos::Renderer::getInstance</a></div><div class="ttdeci">static Renderer &amp; getInstance()</div><div class="ttdoc">Singleton.</div><div class="ttdef"><b>Definition</b> renderer.cpp:42</div></div>
+<div class="ttc" id="aa00190_html_aa5bd4659694cca3566bc5f2cb7df1e98"><div class="ttname"><a href="a00190.html#aa5bd4659694cca3566bc5f2cb7df1e98">catos::Renderer::renderPassToScreen</a></div><div class="ttdeci">RenderStatus renderPassToScreen(RenderPass &amp;pass)</div><div class="ttdoc">Renders the given pass to the screen. NOTE: its public for overriding.</div><div class="ttdef"><b>Definition</b> renderer.cpp:90</div></div>
+<div class="ttc" id="aa00190_html_ae4bc8cfbd577da01b4dedf353da9d80e"><div class="ttname"><a href="a00190.html#ae4bc8cfbd577da01b4dedf353da9d80e">catos::Renderer::renderObjects</a></div><div class="ttdeci">RenderStatus renderObjects(const RenderPipeline &amp;pipeline, void *data, unsigned int objectAmount)</div><div class="ttdoc">Renders all objects via the pipeline given.</div><div class="ttdef"><b>Definition</b> renderer.cpp:82</div></div>
+<div class="ttc" id="aa00198_html"><div class="ttname"><a href="a00198.html">catos::RenderPass</a></div><div class="ttdef"><b>Definition</b> renderPass.h:45</div></div>
+<div class="ttc" id="aa00202_html"><div class="ttname"><a href="a00202.html">catos::RenderPipeline</a></div><div class="ttdef"><b>Definition</b> renderPipeline.h:10</div></div>
+<div class="ttc" id="aa00210_html"><div class="ttname"><a href="a00210.html">catos::Shader</a></div><div class="ttdef"><b>Definition</b> shader.h:35</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <p>

@@ -1,47 +1,61 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00166" kind="struct" language="C++" prot="public">
-    <compoundname>catos::math::Vector2</compoundname>
+    <compoundname>catos::math::Vector3</compoundname>
     <includes refid="a00029" local="no">vecs.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00166_1a442e5ef4dd0744758b5db87ca36aed90" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00166_1aabf30b0a34d4ec3096451393e2d71913" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float catos::math::Vector2::x</definition>
+        <definition>float catos::math::Vector3::x</definition>
         <argsstring></argsstring>
         <name>x</name>
-        <qualifiedname>catos::math::Vector2::x</qualifiedname>
+        <qualifiedname>catos::math::Vector3::x</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="15" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="15" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00166_1a58d259a2d9057efd9c5bbb69f418d601" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00166_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float catos::math::Vector2::y</definition>
+        <definition>float catos::math::Vector3::y</definition>
         <argsstring></argsstring>
         <name>y</name>
-        <qualifiedname>catos::math::Vector2::y</qualifiedname>
+        <qualifiedname>catos::math::Vector3::y</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="15" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="15" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00166_1a2568eefded1c720de4fcac757a5f164d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float catos::math::Vector3::z</definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <qualifiedname>catos::math::Vector3::z</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00166_1a47758ee7db6b46dcf0c68e85cdb53e86" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="a00166_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool catos::math::Vector2::operator==</definition>
-        <argsstring>(Vector2 &amp;b)</argsstring>
+        <definition>bool catos::math::Vector3::operator==</definition>
+        <argsstring>(Vector3 &amp;b) const</argsstring>
         <name>operator==</name>
-        <qualifiedname>catos::math::Vector2::operator==</qualifiedname>
+        <qualifiedname>catos::math::Vector3::operator==</qualifiedname>
         <param>
-          <type><ref refid="a00166" kindref="compound">Vector2</ref> &amp;</type>
+          <type><ref refid="a00166" kindref="compound">Vector3</ref> &amp;</type>
           <declname>b</declname>
         </param>
         <briefdescription>
@@ -50,17 +64,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="17" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="17" bodyend="19"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="41" bodyend="43"/>
       </memberdef>
-      <memberdef kind="function" id="a00166_1a7a5f74f94f6515ff5371aad50873cee2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool catos::math::Vector2::operator==</definition>
-        <argsstring>(glm::vec2 &amp;b)</argsstring>
-        <name>operator==</name>
-        <qualifiedname>catos::math::Vector2::operator==</qualifiedname>
+      <memberdef kind="function" id="a00166_1aac3d3c6575283572a19a23b352fca633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00166" kindref="compound">Vector3</ref> &amp;</type>
+        <definition>Vector3 &amp; catos::math::Vector3::operator=</definition>
+        <argsstring>(float val)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>catos::math::Vector3::operator=</qualifiedname>
         <param>
-          <type>glm::vec2 &amp;</type>
-          <declname>b</declname>
+          <type>float</type>
+          <declname>val</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -68,16 +82,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="21" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="21" bodyend="23"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="45" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="45" bodyend="50"/>
       </memberdef>
-      <memberdef kind="function" id="a00166_1a1f396224b6250ad2400cb01d60b1b4ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="a00166_1ac086c01bff23542b26b0b2eef4c52348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void catos::math::Vector2::operator+</definition>
-        <argsstring>(Vector2 &amp;b)</argsstring>
-        <name>operator+</name>
-        <qualifiedname>catos::math::Vector2::operator+</qualifiedname>
+        <definition>void catos::math::Vector3::operator+=</definition>
+        <argsstring>(Vector3 &amp;b)</argsstring>
+        <name>operator+=</name>
+        <qualifiedname>catos::math::Vector3::operator+=</qualifiedname>
         <param>
-          <type><ref refid="a00166" kindref="compound">Vector2</ref> &amp;</type>
+          <type><ref refid="a00166" kindref="compound">Vector3</ref> &amp;</type>
           <declname>b</declname>
         </param>
         <briefdescription>
@@ -86,39 +100,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="25" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="25" bodyend="28"/>
-      </memberdef>
-      <memberdef kind="function" id="a00166_1a82c0de289dd8ec25a6e77497098f9064" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void catos::math::Vector2::operator+</definition>
-        <argsstring>(glm::vec2 &amp;b)</argsstring>
-        <name>operator+</name>
-        <qualifiedname>catos::math::Vector2::operator+</qualifiedname>
-        <param>
-          <type>glm::vec2 &amp;</type>
-          <declname>b</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="30" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="30" bodyend="33"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="53" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="53" bodyend="57"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="13" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="13" bodyend="34"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="37" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="37" bodyend="60"/>
     <listofallmembers>
-      <member refid="a00166_1a1f396224b6250ad2400cb01d60b1b4ec" prot="public" virt="non-virtual"><scope>catos::math::Vector2</scope><name>operator+</name></member>
-      <member refid="a00166_1a82c0de289dd8ec25a6e77497098f9064" prot="public" virt="non-virtual"><scope>catos::math::Vector2</scope><name>operator+</name></member>
-      <member refid="a00166_1a47758ee7db6b46dcf0c68e85cdb53e86" prot="public" virt="non-virtual"><scope>catos::math::Vector2</scope><name>operator==</name></member>
-      <member refid="a00166_1a7a5f74f94f6515ff5371aad50873cee2" prot="public" virt="non-virtual"><scope>catos::math::Vector2</scope><name>operator==</name></member>
-      <member refid="a00166_1a442e5ef4dd0744758b5db87ca36aed90" prot="public" virt="non-virtual"><scope>catos::math::Vector2</scope><name>x</name></member>
-      <member refid="a00166_1a58d259a2d9057efd9c5bbb69f418d601" prot="public" virt="non-virtual"><scope>catos::math::Vector2</scope><name>y</name></member>
+      <member refid="a00166_1ac086c01bff23542b26b0b2eef4c52348" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator+=</name></member>
+      <member refid="a00166_1aac3d3c6575283572a19a23b352fca633" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator=</name></member>
+      <member refid="a00166_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator==</name></member>
+      <member refid="a00166_1aabf30b0a34d4ec3096451393e2d71913" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>x</name></member>
+      <member refid="a00166_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>y</name></member>
+      <member refid="a00166_1a2568eefded1c720de4fcac757a5f164d" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>z</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

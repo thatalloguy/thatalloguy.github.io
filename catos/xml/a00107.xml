@@ -1,370 +1,319 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00107" kind="file" language="C++">
-    <compoundname>main.cpp</compoundname>
-    <includes local="yes">../doctest/doctest/doctest.h</includes>
-    <includes refid="a00017" local="yes">core/type_utils.h</includes>
-    <includes refid="a00011" local="yes">core/registry.h</includes>
-    <includes refid="a00005" local="yes">core/application.h</includes>
-    <includes refid="a00113" local="yes">world/world.h</includes>
-    <includes local="yes">spdlog/spdlog.h</includes>
-    <includes refid="a00104" local="yes">stl/vector.h</includes>
-    <includes refid="a00098" local="yes">stl/string.h</includes>
-    <includes refid="a00029" local="yes">math/vecs.h</includes>
-    <includes refid="a00086" local="yes">stl/hashmap.h</includes>
-    <incdepgraph>
-      <node id="2">
-        <label>../doctest/doctest/doctest.h</label>
-      </node>
-      <node id="17">
-        <label>core/application.h</label>
-        <link refid="a00005"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>core/registry.h</label>
-        <link refid="a00011"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>core/type_utils.h</label>
-        <link refid="a00017"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="9">
-        <label>types.h</label>
-        <link refid="a00014"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>math/vecs.h</label>
-        <link refid="a00029"/>
-        <childnode refid="22" relation="include">
-        </childnode>
-      </node>
-      <node id="25">
-        <label>stl/hashmap.h</label>
-        <link refid="a00086"/>
-      </node>
-      <node id="24">
-        <label>stl/string.h</label>
-        <link refid="a00098"/>
-      </node>
-      <node id="19">
-        <label>stl/vector.h</label>
-        <link refid="a00104"/>
-        <childnode refid="20" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>main.cpp</label>
-        <link refid="a00107"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-      </node>
-      <node id="18">
-        <label>world/world.h</label>
-        <link refid="a00113"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>any</label>
-      </node>
-      <node id="20">
-        <label>cstring</label>
-      </node>
-      <node id="13">
-        <label>deque</label>
-      </node>
-      <node id="14">
-        <label>fstream</label>
-      </node>
-      <node id="12">
-        <label>functional</label>
-      </node>
-      <node id="22">
-        <label>glm/glm.hpp</label>
-      </node>
-      <node id="7">
-        <label>iostream</label>
-      </node>
-      <node id="11">
-        <label>mono/metadata/loader.h</label>
-      </node>
-      <node id="16">
-        <label>regex</label>
-      </node>
-      <node id="23">
-        <label>spdlog/spdlog.h</label>
-      </node>
-      <node id="10">
-        <label>string</label>
-      </node>
-      <node id="15">
-        <label>typeindex</label>
-      </node>
-      <node id="4">
-        <label>typeinfo</label>
-      </node>
-      <node id="6">
-        <label>unordered_map</label>
-      </node>
-    </incdepgraph>
-    <innerclass refid="a00366" prot="public">Foo</innerclass>
-    <innerclass refid="a00370" prot="public">TransformComponent</innerclass>
-    <innerclass refid="a00374" prot="public">ComponentTest</innerclass>
-    <innernamespace refid="a00116">catos</innernamespace>
-    <innernamespace refid="a00122">catos::tests</innernamespace>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="a00107_1adf980eb1ed0df2191c56fd3d218c2819" prot="public" static="no">
-        <name>DOCTEST_CONFIG_IMPLEMENT</name>
+  <compounddef id="a00107" kind="namespace" language="C++">
+    <compoundname>catos</compoundname>
+    <innerclass refid="a00118" prot="public">catos::App</innerclass>
+    <innerclass refid="a00114" prot="public">catos::AppCreationInfo</innerclass>
+    <innerclass refid="a00234" prot="public">catos::HashFunc</innerclass>
+    <innerclass refid="a00238" prot="public">catos::hashmap</innerclass>
+    <innerclass refid="a00230" prot="public">catos::hashnode</innerclass>
+    <innerclass refid="a00226" prot="public">catos::key_not_found</innerclass>
+    <innerclass refid="a00142" prot="public">catos::Method</innerclass>
+    <innerclass refid="a00130" prot="public">catos::MethodHolder</innerclass>
+    <innerclass refid="a00134" prot="public">catos::MethodHolderImpl</innerclass>
+    <innerclass refid="a00138" prot="public">catos::MethodInvoker</innerclass>
+    <innerclass refid="a00222" prot="public">catos::no_item_found</innerclass>
+    <innerclass refid="a00174" prot="public">catos::Node</innerclass>
+    <innerclass refid="a00242" prot="public">catos::Pair</innerclass>
+    <innerclass refid="a00122" prot="public">catos::Property</innerclass>
+    <innerclass refid="a00126" prot="public">catos::PropertyImpl</innerclass>
+    <innerclass refid="a00150" prot="public">catos::Registry</innerclass>
+    <innerclass refid="a00190" prot="public">catos::Renderer</innerclass>
+    <innerclass refid="a00186" prot="public">catos::RendererCreateInfo</innerclass>
+    <innerclass refid="a00198" prot="public">catos::RenderPass</innerclass>
+    <innerclass refid="a00194" prot="public">catos::RenderPassCreationInfo</innerclass>
+    <innerclass refid="a00202" prot="public">catos::RenderPipeline</innerclass>
+    <innerclass refid="a00214" prot="public">catos::ScriptInfo</innerclass>
+    <innerclass refid="a00218" prot="public">catos::ScriptingEngine</innerclass>
+    <innerclass refid="a00210" prot="public">catos::Shader</innerclass>
+    <innerclass refid="a00206" prot="public">catos::ShaderCreateInfo</innerclass>
+    <innerclass refid="a00246" prot="public">catos::string</innerclass>
+    <innerclass refid="a00146" prot="public">catos::TypeInfo</innerclass>
+    <innerclass refid="a00254" prot="public">catos::vector</innerclass>
+    <innerclass refid="a00158" prot="public">catos::Window</innerclass>
+    <innerclass refid="a00154" prot="public">catos::WindowCreationInfo</innerclass>
+    <innernamespace refid="a00109">catos::math</innernamespace>
+    <innernamespace refid="a00110">catos::tests</innernamespace>
+    <innernamespace refid="a00108">catos::type_utils</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="a00107_1ac617635d2b87a1969d411fcf09f8d983" prot="public" static="no" strong="yes">
+        <type>unsigned int</type>
+        <name>RenderBackendType</name>
+        <qualifiedname>catos::RenderBackendType</qualifiedname>
+        <enumvalue id="a00107_1ac617635d2b87a1969d411fcf09f8d983a696b031073e74bf2cb98e5ef201d4aa3" prot="public">
+          <name>UNKNOWN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00107_1ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71" prot="public">
+          <name>OPENGL_4_2</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>What backend the renderer should use. NOTE: ONLY OPENGL 4.2 SUPPORTED. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="13" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="13" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844" prot="public" static="no" strong="no">
+        <type>unsigned int</type>
+        <name>RenderStatus</name>
+        <qualifiedname>catos::RenderStatus</qualifiedname>
+        <enumvalue id="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f" prot="public">
+          <name>SUCCESSFUL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c" prot="public">
+          <name>RENDERER_ALREADY_INITIALIZED</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>The statuses of the renderer&apos;s operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="19" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="19" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00107_1acf4b328a657463e6461ec5aaad0031f3" prot="public" static="no" strong="no">
+        <type>unsigned int</type>
+        <name>PassType</name>
+        <qualifiedname>catos::PassType</qualifiedname>
+        <enumvalue id="a00107_1acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099" prot="public">
+          <name>COLOR</name>
+          <initializer>=  0x8CE0</initializer>
+          <briefdescription>
+<para>All colors. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00107_1acf4b328a657463e6461ec5aaad0031f3ab0de4c916a68e9027b6b38dce8f84d3f" prot="public">
+          <name>COLOR_SINGLE</name>
+          <initializer>= 0x8CE1</initializer>
+          <briefdescription>
+<para>1 single color support </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00107_1acf4b328a657463e6461ec5aaad0031f3af4faf9b95b96cc9be34794cf7a31edd4" prot="public">
+          <name>DEPTH</name>
+          <initializer>= 0x8D00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00107_1acf4b328a657463e6461ec5aaad0031f3aff83f06b107ff2059d3410d27e7ac3b0" prot="public">
+          <name>STENCIL</name>
+          <initializer>= 0x8D20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>What kind of type the Pass Should be. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="18" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00107_1a265824fb2d204e156f2c6441780e2b72" prot="public" static="no" strong="yes">
+        <type>unsigned int</type>
+        <name>ShaderStatus</name>
+        <qualifiedname>catos::ShaderStatus</qualifiedname>
+        <enumvalue id="a00107_1a265824fb2d204e156f2c6441780e2b72add1dab546c7769f17e9d4e8e4f2f1bf4" prot="public">
+          <name>SUCCESSFUL</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00107_1a265824fb2d204e156f2c6441780e2b72a554e3b301969b7f7e5029eb62105ebfb" prot="public">
+          <name>UNKNOWN_SOURCE</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00107_1a265824fb2d204e156f2c6441780e2b72a4662e1e02abdf1af767a5e0df1d86fd0" prot="public">
+          <name>COMPILATION_FAILED</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Statuses for shader operations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/shader.h" line="14" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/shader.h" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="enum" id="a00107_1a1248e610959a287262cd6873908d97e5" prot="public" static="no" strong="no">
+        <type>unsigned int</type>
+        <name>ShaderType</name>
+        <qualifiedname>catos::ShaderType</qualifiedname>
+        <enumvalue id="a00107_1a1248e610959a287262cd6873908d97e5ae2f77ec0f5e09c8a4b77e3f50a99661a" prot="public">
+          <name>VERTEX</name>
+          <initializer>= 0x8B31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="a00107_1a1248e610959a287262cd6873908d97e5a37c1a4a2b64a7009588fe0d951ba7bb4" prot="public">
+          <name>FRAGMENT</name>
+          <initializer>= 0x8B30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para><ref refid="a00210" kindref="compound">Shader</ref> Type (more to be added in the future such as geometry). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/shader.h" line="22" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/shader.h" bodystart="22" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="a00107_1a45b8ee8e2bc6a9703ca2728c4d20680a" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int catos::ColorBuffer</definition>
+        <argsstring></argsstring>
+        <name>ColorBuffer</name>
+        <qualifiedname>catos::ColorBuffer</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="2" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="2" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="13" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00107_1a4613316b0ca1f3fdbf463888395735b6" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int catos::FrameBuffer</definition>
+        <argsstring></argsstring>
+        <name>FrameBuffer</name>
+        <qualifiedname>catos::FrameBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="14" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00107_1a66a574b855759e9da3f9fe39824b3245" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int catos::RenderBuffer</definition>
+        <argsstring></argsstring>
+        <name>RenderBuffer</name>
+        <qualifiedname>catos::RenderBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="15" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="a00107_1a62ed9b6c5638f605322435f5461d34ea" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int catos::ShaderProgram</definition>
+        <argsstring></argsstring>
+        <name>ShaderProgram</name>
+        <qualifiedname>catos::ShaderProgram</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/shader.h" line="11" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/shader.h" bodystart="11" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="func">
-      <memberdef kind="function" id="a00107_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int main</definition>
-        <argsstring>(int argc, char **argv)</argsstring>
-        <name>main</name>
-        <param>
-          <type>int</type>
-          <declname>argc</declname>
-        </param>
-        <param>
-          <type>char **</type>
-          <declname>argv</declname>
-        </param>
+      <memberdef kind="function" id="a00107_1a15a9986d23699b6fe1fa103e412aad9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string catos::getNames</definition>
+        <argsstring>()</argsstring>
+        <name>getNames</name>
+        <qualifiedname>catos::getNames</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="147" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="147" bodyend="157"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="151" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="151" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="a00107_1ab2f55e47d4a482511ba7dd433fb857f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename...</type>
+            <declname>Args</declname>
+            <defname>Args</defname>
+          </param>
+        </templateparamlist>
+        <type>std::string</type>
+        <definition>std::string catos::getArgNames</definition>
+        <argsstring>()</argsstring>
+        <name>getArgNames</name>
+        <qualifiedname>catos::getArgNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="160" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="160" bodyend="172"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOCTEST_CONFIG_IMPLEMENT</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../doctest/doctest/doctest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00017" kindref="compound">core/type_utils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00011" kindref="compound">core/registry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00005" kindref="compound">core/application.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00113" kindref="compound">world/world.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spdlog/spdlog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00104" kindref="compound">stl/vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00098" kindref="compound">stl/string.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00029" kindref="compound">math/vecs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00086" kindref="compound">stl/hashmap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="a00366" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00366" kindref="compound">Foo</ref><sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>=<sp/>2;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00366_1a48d3d5772799f8f7cc35939108de7cc9" kindref="member">get_data</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref>;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="a00370" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00370" kindref="compound">TransformComponent</ref><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00370_1a30d1678c82cfa095b35ecb9a180bb697" kindref="member">x</ref>,<sp/><ref refid="a00370_1a8661b2f37bf9926ed19e7a4a8fc2d41b" kindref="member">y</ref>,<sp/><ref refid="a00370_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" kindref="member">z</ref>;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00370_1a418d776f12e6e744c9ac7beed11bb3cf" kindref="member">operator!=</ref>(<ref refid="a00370" kindref="compound">TransformComponent</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33" refid="a00374" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00374" kindref="compound">ComponentTest</ref><sp/>{</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00374_1a3814e0099de95993b4e149af850b780f" kindref="member">d</ref>;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37" refid="a00122" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00122" kindref="compound">catos::tests</ref><sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00122_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;REGISTRY::GET_TYPE_NAME&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK((std::string)<sp/></highlight><highlight class="stringliteral">&quot;int&quot;</highlight><highlight class="normal"><sp/>==<sp/><ref refid="a00117_1a984a08d43e4be51d38568b267ed64092" kindref="member">catos::type_utils::get_type_name&lt;int&gt;</ref>());</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00122_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;REGISTRY::FIELDS&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00154" kindref="compound">Registry</ref><sp/>registry;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00366" kindref="compound">Foo</ref><sp/>foo;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foo.<ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>=<sp/>4;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>field<sp/>=<sp/>registry.<ref refid="a00154_1a3c1a3c07e51224b5745cd9764407efff" kindref="member">register_class</ref>&lt;<ref refid="a00366" kindref="compound">Foo</ref>&gt;().property(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">Foo::data</ref>,<sp/></highlight><highlight class="stringliteral">&quot;dummy&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00134" kindref="compound">Property</ref>*<sp/>test<sp/>=<sp/>field.get_property(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>testFloat<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*)<sp/>(test-&gt;<ref refid="a00134_1a658e2343fa5565207592286b665c82e5" kindref="member">get_value</ref>(&amp;foo));</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(foo.<ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>==<sp/>*testFloat);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00122_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;REGISTRY::METHODS&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00154" kindref="compound">Registry</ref><sp/>registry;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00366" kindref="compound">Foo</ref><sp/>foo;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foo.<ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>=<sp/>4;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>field<sp/>=<sp/>registry.<ref refid="a00154_1a3c1a3c07e51224b5745cd9764407efff" kindref="member">register_class</ref>&lt;<ref refid="a00366" kindref="compound">Foo</ref>&gt;()</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.property(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">Foo::data</ref>,<sp/></highlight><highlight class="stringliteral">&quot;dummy<sp/>variable&quot;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.method(</highlight><highlight class="stringliteral">&quot;get_data&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="a00366_1a48d3d5772799f8f7cc35939108de7cc9" kindref="member">Foo::get_data</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Returns<sp/>the<sp/>data<sp/>of<sp/>Foo&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00134" kindref="compound">Property</ref>*<sp/>test<sp/>=<sp/>field.get_property(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00146" kindref="compound">Method</ref>*<sp/>meth<sp/>=<sp/>field.get_method(</highlight><highlight class="stringliteral">&quot;get_data&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>testFloat<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*)<sp/>(test-&gt;<ref refid="a00134_1a658e2343fa5565207592286b665c82e5" kindref="member">get_value</ref>(&amp;foo));</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(*testFloat<sp/>==<sp/>meth-&gt;<ref refid="a00146_1a5250d5fb0e0066d91dd83ea80f1fb15c" kindref="member">invoke_function</ref>&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(&amp;foo));</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00122_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Application::INSTANCES&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00126" kindref="compound">AppCreationInfo</ref><sp/>appinfo{};</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00130" kindref="compound">App</ref><sp/>app{&amp;appinfo};</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(app.is_alive());</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00366" kindref="compound">Foo</ref><sp/>foo;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foo.<ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>=<sp/>3.4f;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>app.bind&lt;<ref refid="a00366" kindref="compound">Foo</ref>&gt;(&amp;foo);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>test<sp/>=<sp/>app.get&lt;<ref refid="a00366" kindref="compound">Foo</ref>&gt;();</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(foo.<ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>==<sp/>test-&gt;<ref refid="a00366_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref>);</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00122_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;STL::VECTORS&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358" kindref="compound">catos::vector&lt;int&gt;</ref><sp/>test;</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>test.<ref refid="a00358_1afb580c6afde40c40b6ab5ddb107a33c1" kindref="member">reserve</ref>(7);</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>7;<sp/>i++)</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>test.<ref refid="a00358_1ab8197cdb46bc1d75b6cd45a10f16c217" kindref="member">push_back</ref>(i);</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>obj<sp/>:<sp/>test)<sp/>{</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(obj<sp/>==<sp/>test[i]);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00122_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;STL::HASHMAPS&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00342" kindref="compound">catos::hashmap&lt;int, int&gt;</ref><sp/>map;</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;100;<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map.<ref refid="a00342_1aa53edace488e9a5824fdc08d14520380" kindref="member">put</ref>(i,<sp/>i<sp/>+<sp/>60);</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(map.<ref refid="a00342_1a9404f2ec83113e4e1558d6b4985f0dae" kindref="member">get</ref>(40)<sp/>==<sp/>100);</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00107_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)<sp/>{</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>doctest::Context<sp/>context;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>context.applyCommandLine(argc,<sp/>argv);</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>context.setOption(</highlight><highlight class="stringliteral">&quot;no-breaks&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res<sp/>=<sp/>context.run();</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
-<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"></highlight></codeline>
-    </programlisting>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="13" column="1"/>
   </compounddef>
 </doxygen>

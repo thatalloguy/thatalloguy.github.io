@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): VkTypes.h File Reference</title>
+<title>Catos Engine (Source): ScriptingEngine.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -94,137 +94,14 @@ $(function(){initNavTree('a00074.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
-  <div class="headertitle"><div class="title">VkTypes.h File Reference</div></div>
+  <div class="headertitle"><div class="title">ScriptingEngine.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
-<code>#include &lt;optional&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;span&gt;</code><br />
-<code>#include &lt;array&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;deque&gt;</code><br />
-<code>#include &lt;GLFW/glfw3.h&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;vulkan/vulkan.h&gt;</code><br />
-<code>#include &lt;vulkan/vk_enum_string_helper.h&gt;</code><br />
-<code>#include &lt;vk_mem_alloc.h&gt;</code><br />
-<code>#include &lt;VkBootstrap.h&gt;</code><br />
-<code>#include &lt;spdlog/spdlog.h&gt;</code><br />
-<code>#include &lt;glm/mat4x4.hpp&gt;</code><br />
-<code>#include &lt;glm/vec4.hpp&gt;</code><br />
-<code>#include &lt;glm/glm.hpp&gt;</code><br />
-<code>#include &lt;glm/common.hpp&gt;</code><br />
-</div>
-<p><a href="a00074_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00274.html">EngineStats</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00278.html">Bounds</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00282.html">AllocatedBuffer</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00286.html">Vertex</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00290.html">GPUMeshBuffers</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00294.html">GPUSceneData</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00298.html">GPUDrawPushConstants</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00302.html">MaterialPipeline</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00306.html">MaterialInstance</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00310.html">DeletionQueue</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00314.html">AllocatedImage</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ab91f325a54d3e35fe831a86d6382c2a9" id="r_ab91f325a54d3e35fe831a86d6382c2a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab91f325a54d3e35fe831a86d6382c2a9">GLFW_INCLUDE_VULKAN</a></td></tr>
-<tr class="separator:ab91f325a54d3e35fe831a86d6382c2a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d55e176cc77828a9adaa05ac4413b99" id="r_a3d55e176cc77828a9adaa05ac4413b99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d55e176cc77828a9adaa05ac4413b99">VK_CHECK</a>(x)</td></tr>
-<tr class="separator:a3d55e176cc77828a9adaa05ac4413b99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a5d0f6bec114ddc0ce218cc9986d7bcac" id="r_a5d0f6bec114ddc0ce218cc9986d7bcac"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a> : uint8_t { <a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529">MainColor</a>
-, <a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63">Transparent</a>
-, <a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1">Other</a>
- }</td></tr>
-<tr class="separator:a5d0f6bec114ddc0ce218cc9986d7bcac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ab91f325a54d3e35fe831a86d6382c2a9" name="ab91f325a54d3e35fe831a86d6382c2a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab91f325a54d3e35fe831a86d6382c2a9">&#9670;&#160;</a></span>GLFW_INCLUDE_VULKAN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GLFW_INCLUDE_VULKAN</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d55e176cc77828a9adaa05ac4413b99" name="a3d55e176cc77828a9adaa05ac4413b99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d55e176cc77828a9adaa05ac4413b99">&#9670;&#160;</a></span>VK_CHECK</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VK_CHECK</td>
-          <td>(</td>
-          <td class="paramtype"></td>          <td class="paramname"><span class="paramname">x</span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">do</span> {                                                                 \</div>
-<div class="line">        VkResult err = x;                                                \</div>
-<div class="line">        if (err != VK_SUCCESS) {                                         \</div>
-<div class="line">            spdlog::info(<span class="stringliteral">&quot;ruh roh&quot;</span>);                                                             \</div>
-<div class="line">            spdlog::error(<span class="stringliteral">&quot;Detected Vulkan error at {}: {}&quot;</span>, __FILE__, __LINE__); \</div>
-<div class="line">            abort();                                                     \</div>
-<div class="line">        }                                                          \</div>
-<div class="line">    } <span class="keywordflow">while</span> (0)</div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a5d0f6bec114ddc0ce218cc9986d7bcac" name="a5d0f6bec114ddc0ce218cc9986d7bcac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d0f6bec114ddc0ce218cc9986d7bcac">&#9670;&#160;</a></span>MaterialPass</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a> : uint8_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529" name="a5d0f6bec114ddc0ce218cc9986d7bcacaef066d570813444bb800489925d3f529"></a>MainColor&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63" name="a5d0f6bec114ddc0ce218cc9986d7bcacac719d3f34968bcf992d4c0c48841cf63"></a>Transparent&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1" name="a5d0f6bec114ddc0ce218cc9986d7bcacab41fe07a134a62397420ef854d35c7b1"></a>Other&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &quot;<a class="el" href="a00077_source.html">ScriptingEngine.h</a>&quot;</code><br />
+<code>#include &quot;spdlog/spdlog.h&quot;</code><br />
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): catos::TypeInfo Class Reference</title>
+<title>Catos Engine (Source): catos::Registry Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -96,59 +96,41 @@ $(function(){initNavTree('a00150.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00147.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">catos::TypeInfo Class Reference</div></div>
+  <div class="headertitle"><div class="title">catos::Registry Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Typeinfo is an object that holds all information about a specific type.  
+<p>The registry is the core system and provides reflection to the rest of the engine.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="a00011_source.html">registry.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:adb9288a8ea5edbb41cf884f82d2e5322" id="r_adb9288a8ea5edbb41cf884f82d2e5322"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
-<tr class="memitem:adb9288a8ea5edbb41cf884f82d2e5322"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00150.html">TypeInfo</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#adb9288a8ea5edbb41cf884f82d2e5322">property</a> (const char *property_name, U T::*member, <a class="el" href="a00014.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a> description)</td></tr>
-<tr class="memdesc:adb9288a8ea5edbb41cf884f82d2e5322"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a property with a name and a member pointer (Returns itself).  <br /></td></tr>
-<tr class="separator:adb9288a8ea5edbb41cf884f82d2e5322"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab07220b87a27baec193e958522f3a157" id="r_ab07220b87a27baec193e958522f3a157"><td class="memTemplParams" colspan="2">template&lt;typename ClassT , typename ReturnV , typename... Args&gt; </td></tr>
-<tr class="memitem:ab07220b87a27baec193e958522f3a157"><td class="memTemplItemLeft" align="right" valign="top">constexpr <a class="el" href="a00150.html">TypeInfo</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab07220b87a27baec193e958522f3a157">method</a> (const char *method_name, ReturnV(ClassT::*ptr)(Args...), <a class="el" href="a00014.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a> description)</td></tr>
-<tr class="memdesc:ab07220b87a27baec193e958522f3a157"><td class="mdescLeft">&#160;</td><td class="mdescRight">Registers a method with a name and a member function pointer (returns the Type object again).  <br /></td></tr>
-<tr class="separator:ab07220b87a27baec193e958522f3a157"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e3be86b60d107455570b7b5f1d9fd43" id="r_a2e3be86b60d107455570b7b5f1d9fd43"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00134.html">Property</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2e3be86b60d107455570b7b5f1d9fd43">get_property</a> (const char *property_name)</td></tr>
-<tr class="memdesc:a2e3be86b60d107455570b7b5f1d9fd43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a property object based on the name given.  <br /></td></tr>
-<tr class="separator:a2e3be86b60d107455570b7b5f1d9fd43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae56ec26c2e744b449f3da7cd11667c3" id="r_aae56ec26c2e744b449f3da7cd11667c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00146.html">Method</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae56ec26c2e744b449f3da7cd11667c3">get_method</a> (const char *method_name)</td></tr>
-<tr class="memdesc:aae56ec26c2e744b449f3da7cd11667c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a method object based on the name given.  <br /></td></tr>
-<tr class="separator:aae56ec26c2e744b449f3da7cd11667c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a267bd4ae8f4c123f604e8f733d4f7aa6" id="r_a267bd4ae8f4c123f604e8f733d4f7aa6"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a267bd4ae8f4c123f604e8f733d4f7aa6">is_valid</a> (<a class="el" href="a00134.html">Property</a> *ptr)</td></tr>
-<tr class="memdesc:a267bd4ae8f4c123f604e8f733d4f7aa6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks wether or not the ptr is a nullptr;.  <br /></td></tr>
-<tr class="separator:a267bd4ae8f4c123f604e8f733d4f7aa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59fec13410de1cba52ac86212587f5aa" id="r_a59fec13410de1cba52ac86212587f5aa"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a59fec13410de1cba52ac86212587f5aa">is_valid</a> (<a class="el" href="a00146.html">Method</a> *ptr)</td></tr>
-<tr class="separator:a59fec13410de1cba52ac86212587f5aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a9a4c20fb31a1759ef8aa1d5c8acfeabd" id="r_a9a4c20fb31a1759ef8aa1d5c8acfeabd"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a4c20fb31a1759ef8aa1d5c8acfeabd">type_hash</a></td></tr>
-<tr class="separator:a9a4c20fb31a1759ef8aa1d5c8acfeabd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0b2ff915a7ee07932398ea73ba22943" id="r_ae0b2ff915a7ee07932398ea73ba22943"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0b2ff915a7ee07932398ea73ba22943">name</a></td></tr>
-<tr class="separator:ae0b2ff915a7ee07932398ea73ba22943"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cbfa52dbf039cfe37ff79d1c97db144" id="r_a7cbfa52dbf039cfe37ff79d1c97db144"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="a00134.html">Property</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7cbfa52dbf039cfe37ff79d1c97db144">properties</a></td></tr>
-<tr class="separator:a7cbfa52dbf039cfe37ff79d1c97db144"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c4b2bf58d22a49d4e52dc27ff248ed2" id="r_a9c4b2bf58d22a49d4e52dc27ff248ed2"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="a00146.html">Method</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c4b2bf58d22a49d4e52dc27ff248ed2">methods</a></td></tr>
-<tr class="separator:a9c4b2bf58d22a49d4e52dc27ff248ed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c1a3c07e51224b5745cd9764407efff" id="r_a3c1a3c07e51224b5745cd9764407efff"><td class="memTemplParams" colspan="2">template&lt;typename A &gt; </td></tr>
+<tr class="memitem:a3c1a3c07e51224b5745cd9764407efff"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00146.html">TypeInfo</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a3c1a3c07e51224b5745cd9764407efff">register_class</a> ()</td></tr>
+<tr class="memdesc:a3c1a3c07e51224b5745cd9764407efff"><td class="mdescLeft">&#160;</td><td class="mdescRight">With this function you register a class to the <a class="el" href="a00150.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>.  <br /></td></tr>
+<tr class="separator:a3c1a3c07e51224b5745cd9764407efff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d8e58c1258eebb008a292f8b8b1c44" id="r_aa9d8e58c1258eebb008a292f8b8b1c44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9d8e58c1258eebb008a292f8b8b1c44">gen_python_bindings_file</a> ()</td></tr>
+<tr class="memdesc:aa9d8e58c1258eebb008a292f8b8b1c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deprecated!!!  <br /></td></tr>
+<tr class="separator:aa9d8e58c1258eebb008a292f8b8b1c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad344d7a045a558fa8a24e4f1ce095a05" id="r_ad344d7a045a558fa8a24e4f1ce095a05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad344d7a045a558fa8a24e4f1ce095a05">gen_cs_bindings_file</a> ()</td></tr>
+<tr class="memdesc:ad344d7a045a558fa8a24e4f1ce095a05"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO this shit is so ugly ;-;.  <br /></td></tr>
+<tr class="separator:ad344d7a045a558fa8a24e4f1ce095a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c494fdb9fb9daafaea972f273de633" id="r_a03c494fdb9fb9daafaea972f273de633"><td class="memTemplParams" colspan="2">template&lt;typename A &gt; </td></tr>
+<tr class="memitem:a03c494fdb9fb9daafaea972f273de633"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="a00146.html">TypeInfo</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a03c494fdb9fb9daafaea972f273de633">get_type</a> ()</td></tr>
+<tr class="memdesc:a03c494fdb9fb9daafaea972f273de633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the registered Type.  <br /></td></tr>
+<tr class="separator:a03c494fdb9fb9daafaea972f273de633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff740e516ed706e2d202086df6f12b9" id="r_a3ff740e516ed706e2d202086df6f12b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3ff740e516ed706e2d202086df6f12b9">print_current_register</a> ()</td></tr>
+<tr class="memdesc:a3ff740e516ed706e2d202086df6f12b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints out the items in the <a class="el" href="a00150.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>.  <br /></td></tr>
+<tr class="separator:a3ff740e516ed706e2d202086df6f12b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Typeinfo is an object that holds all information about a specific type. </p>
+<div class="textblock"><p>The registry is the core system and provides reflection to the rest of the engine. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aae56ec26c2e744b449f3da7cd11667c3" name="aae56ec26c2e744b449f3da7cd11667c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae56ec26c2e744b449f3da7cd11667c3">&#9670;&#160;</a></span>get_method()</h2>
+<a id="ad344d7a045a558fa8a24e4f1ce095a05" name="ad344d7a045a558fa8a24e4f1ce095a05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad344d7a045a558fa8a24e4f1ce095a05">&#9670;&#160;</a></span>gen_cs_bindings_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -157,9 +139,9 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00146.html">Method</a> * catos::TypeInfo::get_method </td>
+          <td class="memname">void catos::Registry::gen_cs_bindings_file </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>method_name</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -170,12 +152,12 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a method object based on the name given. </p>
+<p>TODO this shit is so ugly ;-;. </p>
 
 </div>
 </div>
-<a id="a2e3be86b60d107455570b7b5f1d9fd43" name="a2e3be86b60d107455570b7b5f1d9fd43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2e3be86b60d107455570b7b5f1d9fd43">&#9670;&#160;</a></span>get_property()</h2>
+<a id="aa9d8e58c1258eebb008a292f8b8b1c44" name="aa9d8e58c1258eebb008a292f8b8b1c44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9d8e58c1258eebb008a292f8b8b1c44">&#9670;&#160;</a></span>gen_python_bindings_file()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -184,9 +166,9 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00134.html">Property</a> * catos::TypeInfo::get_property </td>
+          <td class="memname">void catos::Registry::gen_python_bindings_file </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>property_name</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -197,125 +179,26 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Returns a property object based on the name given. </p>
+<p>Deprecated!!! </p>
 
 </div>
 </div>
-<a id="a59fec13410de1cba52ac86212587f5aa" name="a59fec13410de1cba52ac86212587f5aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59fec13410de1cba52ac86212587f5aa">&#9670;&#160;</a></span>is_valid() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool catos::TypeInfo::is_valid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00146.html">Method</a> *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a267bd4ae8f4c123f604e8f733d4f7aa6" name="a267bd4ae8f4c123f604e8f733d4f7aa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a267bd4ae8f4c123f604e8f733d4f7aa6">&#9670;&#160;</a></span>is_valid() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool catos::TypeInfo::is_valid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00134.html">Property</a> *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Checks wether or not the ptr is a nullptr;. </p>
-
-</div>
-</div>
-<a id="ab07220b87a27baec193e958522f3a157" name="ab07220b87a27baec193e958522f3a157"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab07220b87a27baec193e958522f3a157">&#9670;&#160;</a></span>method()</h2>
+<a id="a03c494fdb9fb9daafaea972f273de633" name="a03c494fdb9fb9daafaea972f273de633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c494fdb9fb9daafaea972f273de633">&#9670;&#160;</a></span>get_type()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ClassT , typename ReturnV , typename... Args&gt; </div>
+template&lt;typename A &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="a00150.html">TypeInfo</a> &amp; catos::TypeInfo::method </td>
+          <td class="memname"><a class="el" href="a00146.html">TypeInfo</a> &amp; catos::Registry::get_type </td>
           <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>method_name</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">ReturnV(ClassT::*)(Args...)</td>          <td class="paramname"><span class="paramname"><em>ptr</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00014.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td>          <td class="paramname"><span class="paramname"><em>description</em></span>&#160;)</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Registers a method with a name and a member function pointer (returns the Type object again). </p>
-
-</div>
-</div>
-<a id="adb9288a8ea5edbb41cf884f82d2e5322" name="adb9288a8ea5edbb41cf884f82d2e5322"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb9288a8ea5edbb41cf884f82d2e5322">&#9670;&#160;</a></span>property()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename T , typename U &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00150.html">TypeInfo</a> &amp; catos::TypeInfo::property </td>
-          <td>(</td>
-          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>property_name</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">U T::*</td>          <td class="paramname"><span class="paramname"><em>member</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="a00014.html#a8fa5a7ddaf7b4d44d3dde63343d8d844">cstr</a></td>          <td class="paramname"><span class="paramname"><em>description</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
@@ -325,64 +208,63 @@ template&lt;typename T , typename U &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Registers a property with a name and a member pointer (Returns itself). </p>
+<p>Returns the registered Type. </p>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9c4b2bf58d22a49d4e52dc27ff248ed2" name="a9c4b2bf58d22a49d4e52dc27ff248ed2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c4b2bf58d22a49d4e52dc27ff248ed2">&#9670;&#160;</a></span>methods</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt;std::string , <a class="el" href="a00146.html">Method</a>* &gt; catos::TypeInfo::methods</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae0b2ff915a7ee07932398ea73ba22943" name="ae0b2ff915a7ee07932398ea73ba22943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0b2ff915a7ee07932398ea73ba22943">&#9670;&#160;</a></span>name</h2>
+<a id="a3ff740e516ed706e2d202086df6f12b9" name="a3ff740e516ed706e2d202086df6f12b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ff740e516ed706e2d202086df6f12b9">&#9670;&#160;</a></span>print_current_register()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::string catos::TypeInfo::name</td>
+          <td class="memname">void catos::Registry::print_current_register </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Prints out the items in the <a class="el" href="a00150.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>. </p>
 
 </div>
 </div>
-<a id="a7cbfa52dbf039cfe37ff79d1c97db144" name="a7cbfa52dbf039cfe37ff79d1c97db144"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cbfa52dbf039cfe37ff79d1c97db144">&#9670;&#160;</a></span>properties</h2>
+<a id="a3c1a3c07e51224b5745cd9764407efff" name="a3c1a3c07e51224b5745cd9764407efff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c1a3c07e51224b5745cd9764407efff">&#9670;&#160;</a></span>register_class()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename A &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;std::string , <a class="el" href="a00134.html">Property</a>* &gt; catos::TypeInfo::properties</td>
+          <td class="memname"><a class="el" href="a00146.html">TypeInfo</a> &amp; catos::Registry::register_class </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a9a4c20fb31a1759ef8aa1d5c8acfeabd" name="a9a4c20fb31a1759ef8aa1d5c8acfeabd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a4c20fb31a1759ef8aa1d5c8acfeabd">&#9670;&#160;</a></span>type_hash</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t catos::TypeInfo::type_hash</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>With this function you register a class to the <a class="el" href="a00150.html" title="The registry is the core system and provides reflection to the rest of the engine.">Registry</a>. </p>
 
 </div>
 </div>

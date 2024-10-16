@@ -1,119 +1,14 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00109" kind="namespace" language="C++">
-    <compoundname>VkLoader</compoundname>
-    <sectiondef kind="func">
-      <memberdef kind="function" id="a00109_1a442b1c7be484b0f1b4b53f176d1aaa0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::optional&lt; std::vector&lt; std::shared_ptr&lt; <ref refid="a00246" kindref="compound">MeshAsset</ref> &gt; &gt; &gt;</type>
-        <definition>std::optional&lt; std::vector&lt; std::shared_ptr&lt; MeshAsset &gt; &gt; &gt; VkLoader::loadGltfMeshes</definition>
-        <argsstring>(VulkanEngine *engine, std::filesystem::path filePath)</argsstring>
-        <name>loadGltfMeshes</name>
-        <qualifiedname>VkLoader::loadGltfMeshes</qualifiedname>
-        <param>
-          <type><ref refid="a00230" kindref="compound">VulkanEngine</ref> *</type>
-          <declname>engine</declname>
-        </param>
-        <param>
-          <type>std::filesystem::path</type>
-          <declname>filePath</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" line="16" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" bodystart="16" bodyend="131" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" declline="116" declcolumn="19"/>
-      </memberdef>
-      <memberdef kind="function" id="a00109_1a5dc041b91ac2b9f98dde07fd06dedfb9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::optional&lt; std::shared_ptr&lt; <ref refid="a00254" kindref="compound">LoadedGLTF</ref> &gt; &gt;</type>
-        <definition>std::optional&lt; std::shared_ptr&lt; LoadedGLTF &gt; &gt; VkLoader::loadGltf</definition>
-        <argsstring>(VulkanEngine *engine, std::string_view filePath)</argsstring>
-        <name>loadGltf</name>
-        <qualifiedname>VkLoader::loadGltf</qualifiedname>
-        <param>
-          <type><ref refid="a00230" kindref="compound">VulkanEngine</ref> *</type>
-          <declname>engine</declname>
-        </param>
-        <param>
-          <type>std::string_view</type>
-          <declname>filePath</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" line="133" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" bodystart="133" bodyend="423" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" declline="117" declcolumn="19"/>
-      </memberdef>
-      <memberdef kind="function" id="a00109_1a194340dfa7859815574193cea66f2371" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkFilter</type>
-        <definition>VkFilter VkLoader::extractFilter</definition>
-        <argsstring>(fastgltf::Filter filter)</argsstring>
-        <name>extractFilter</name>
-        <qualifiedname>VkLoader::extractFilter</qualifiedname>
-        <param>
-          <type>fastgltf::Filter</type>
-          <declname>filter</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" line="425" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" bodystart="425" bodyend="440" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" declline="118" declcolumn="14"/>
-      </memberdef>
-      <memberdef kind="function" id="a00109_1a39631db68d0c201f90fbfd1a48264113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkSamplerMipmapMode</type>
-        <definition>VkSamplerMipmapMode VkLoader::extractMipmapMode</definition>
-        <argsstring>(fastgltf::Filter filter)</argsstring>
-        <name>extractMipmapMode</name>
-        <qualifiedname>VkLoader::extractMipmapMode</qualifiedname>
-        <param>
-          <type>fastgltf::Filter</type>
-          <declname>filter</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" line="442" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" bodystart="442" bodyend="453" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" declline="119" declcolumn="25"/>
-      </memberdef>
-      <memberdef kind="function" id="a00109_1ae9a802f8df4fdc64b9d8c76222147ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>std::optional&lt; <ref refid="a00302" kindref="compound">AllocatedImage</ref> &gt;</type>
-        <definition>std::optional&lt; AllocatedImage &gt; VkLoader::loadImage</definition>
-        <argsstring>(VulkanEngine *engine, fastgltf::Asset &amp;asset, fastgltf::Image &amp;image)</argsstring>
-        <name>loadImage</name>
-        <qualifiedname>VkLoader::loadImage</qualifiedname>
-        <param>
-          <type><ref refid="a00230" kindref="compound">VulkanEngine</ref> *</type>
-          <declname>engine</declname>
-        </param>
-        <param>
-          <type>fastgltf::Asset &amp;</type>
-          <declname>asset</declname>
-        </param>
-        <param>
-          <type>fastgltf::Image &amp;</type>
-          <declname>image</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" line="455" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" bodystart="455" bodyend="536" declfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" declline="121" declcolumn="19"/>
-      </memberdef>
-    </sectiondef>
+    <compoundname>catos::math</compoundname>
+    <innerclass refid="a00170" prot="public">catos::math::Quaternion</innerclass>
+    <innerclass refid="a00162" prot="public">catos::math::Vector2</innerclass>
+    <innerclass refid="a00166" prot="public">catos::math::Vector3</innerclass>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.cpp" line="14" column="1"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="10" column="1"/>
   </compounddef>
 </doxygen>

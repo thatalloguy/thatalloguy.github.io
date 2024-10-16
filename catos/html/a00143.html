@@ -94,19 +94,23 @@ $(function(){initNavTree('a00146.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">catos::Method Member List</div></div>
+  <div class="headertitle"><div class="title">catos::TypeInfo Member List</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00146.html">catos::Method</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00146.html">catos::TypeInfo</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00146.html#a5621be029379a77b80f5fb6f7e91cf88">desc</a></td><td class="entry"><a class="el" href="a00146.html">catos::Method</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00146.html#a5250d5fb0e0066d91dd83ea80f1fb15c">invoke_function</a>(void *instance, Args... args)</td><td class="entry"><a class="el" href="a00146.html">catos::Method</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00146.html#a6563134c767668a602c02cd0ec13d610">invoke_function</a>(void *instance, Args... args)</td><td class="entry"><a class="el" href="a00146.html">catos::Method</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00146.html#a40350e2564f0207cc7e730c34153ea6b">Method</a>(ReturnType(ClassType::*method)(Args...), bool doCoolShit=false)</td><td class="entry"><a class="el" href="a00146.html">catos::Method</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00146.html#acb8b27e43adc06a52a1b2e2303b4a34e">parameterNames</a></td><td class="entry"><a class="el" href="a00146.html">catos::Method</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00146.html#aec3f9c676b863394c22100937548995c">parameters</a></td><td class="entry"><a class="el" href="a00146.html">catos::Method</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00146.html#a0b06cd150b4dc8a0b35d356d6f134442">returnName</a></td><td class="entry"><a class="el" href="a00146.html">catos::Method</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00146.html#aae56ec26c2e744b449f3da7cd11667c3">get_method</a>(const char *method_name)</td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00146.html#a2e3be86b60d107455570b7b5f1d9fd43">get_property</a>(const char *property_name)</td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00146.html#a267bd4ae8f4c123f604e8f733d4f7aa6">is_valid</a>(Property *ptr)</td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00146.html#a59fec13410de1cba52ac86212587f5aa">is_valid</a>(Method *ptr)</td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00146.html#ab07220b87a27baec193e958522f3a157">method</a>(const char *method_name, ReturnV(ClassT::*ptr)(Args...), cstr description)</td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00146.html#a9c4b2bf58d22a49d4e52dc27ff248ed2">methods</a></td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00146.html#ae0b2ff915a7ee07932398ea73ba22943">name</a></td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00146.html#a7cbfa52dbf039cfe37ff79d1c97db144">properties</a></td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00146.html#adb9288a8ea5edbb41cf884f82d2e5322">property</a>(const char *property_name, U T::*member, cstr description)</td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00146.html#aa6c91426df65c6b0482ad268b528ea79">registerToPython</a>()</td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00146.html#a9a4c20fb31a1759ef8aa1d5c8acfeabd">type_hash</a></td><td class="entry"><a class="el" href="a00146.html">catos::TypeInfo</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <p>

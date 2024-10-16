@@ -1,217 +1,31 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00032" kind="file" language="C++">
-    <compoundname>Camera.cpp</compoundname>
-    <includes refid="a00035" local="yes">Camera.h</includes>
-    <includes local="no">glm/gtx/quaternion.hpp</includes>
-    <includes local="no">glm/detail/type_quat.hpp</includes>
-    <includes local="no">glm/ext/quaternion_trigonometric.hpp</includes>
-    <includes local="no">glm/ext/matrix_transform.hpp</includes>
+    <compoundname>node.cpp</compoundname>
+    <includes refid="a00035" local="yes">node.h</includes>
     <incdepgraph>
       <node id="1">
-        <label>Camera.cpp</label>
+        <label>node.cpp</label>
         <link refid="a00032"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
       </node>
       <node id="2">
-        <label>Camera.h</label>
+        <label>node.h</label>
         <link refid="a00035"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>VkTypes.h</label>
-        <link refid="a00074"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>GLFW/glfw3.h</label>
-      </node>
-      <node id="18">
-        <label>VkBootstrap.h</label>
-      </node>
-      <node id="9">
-        <label>array</label>
-      </node>
-      <node id="13">
-        <label>chrono</label>
-      </node>
-      <node id="11">
-        <label>deque</label>
-      </node>
-      <node id="10">
-        <label>functional</label>
-      </node>
-      <node id="23">
-        <label>glm/common.hpp</label>
-      </node>
-      <node id="25">
-        <label>glm/detail/type_quat.hpp</label>
-      </node>
-      <node id="27">
-        <label>glm/ext/matrix_transform.hpp</label>
-      </node>
-      <node id="26">
-        <label>glm/ext/quaternion_trigonometric.hpp</label>
-      </node>
-      <node id="22">
-        <label>glm/glm.hpp</label>
-      </node>
-      <node id="24">
-        <label>glm/gtx/quaternion.hpp</label>
-      </node>
-      <node id="20">
-        <label>glm/mat4x4.hpp</label>
-      </node>
-      <node id="21">
-        <label>glm/vec4.hpp</label>
-      </node>
-      <node id="4">
-        <label>memory</label>
-      </node>
-      <node id="5">
-        <label>optional</label>
-      </node>
-      <node id="8">
-        <label>span</label>
-      </node>
-      <node id="19">
-        <label>spdlog/spdlog.h</label>
-      </node>
-      <node id="6">
-        <label>string</label>
-      </node>
-      <node id="14">
-        <label>thread</label>
-      </node>
-      <node id="7">
-        <label>vector</label>
-      </node>
-      <node id="17">
-        <label>vk_mem_alloc.h</label>
-      </node>
-      <node id="16">
-        <label>vulkan/vk_enum_string_helper.h</label>
-      </node>
-      <node id="15">
-        <label>vulkan/vulkan.h</label>
       </node>
     </incdepgraph>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="a00032_1abd75661fe7969e19439052a5f69ba5d1" prot="public" static="no">
-        <name>GLM_ENABLE_EXPERIMENTAL</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.cpp" line="7" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.cpp" bodystart="7" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>4/23/2024.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>9/29/2024.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00035" kindref="compound">Camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLM_ENABLE_EXPERIMENTAL</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/gtx/quaternion.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/detail/type_quat.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/ext/quaternion_trigonometric.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/ext/matrix_transform.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal">glm::mat4<sp/><ref refid="a00178_1a5569ca5967e01d3344fbf6aba36d9820" kindref="member">Camera::getViewMatrix</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/>cameraTranslation<sp/>=<sp/>glm::translate(glm::mat4(1.f),<sp/><ref refid="a00178_1a04b5db2c530d8630660e8cfb93a4b3b5" kindref="member">position</ref>);</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/>cameraRotation<sp/>=<sp/><ref refid="a00178_1aab60f6efb69f691f2036b5de5897f8a9" kindref="member">getRotationMatrix</ref>();</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glm::inverse(cameraTranslation<sp/>*<sp/>cameraRotation);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal">glm::mat4<sp/><ref refid="a00178_1aab60f6efb69f691f2036b5de5897f8a9" kindref="member">Camera::getRotationMatrix</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//TODO<sp/>missing<sp/>Roll</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::quat<sp/>pitchRotation<sp/>=<sp/>glm::angleAxis(<ref refid="a00178_1ab56fcb39f580e8d2159cf2c9c6d9a65a" kindref="member">pitch</ref>,<sp/>glm::vec3<sp/>{<sp/>-1.f,<sp/>0.f,<sp/>0.f<sp/>});</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::quat<sp/>yawRotation<sp/>=<sp/>glm::angleAxis(<ref refid="a00178_1ad76701b22630f2df28a0ae15f0497a3a" kindref="member">yaw</ref>,<sp/>glm::vec3<sp/>{<sp/>0.f,<sp/>-1.f,<sp/>0.f<sp/>});</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glm::toMat4(yawRotation)<sp/>*<sp/>glm::toMat4(pitchRotation);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00178_1a4387bf00e77f807c531be49e24dbd834" kindref="member">Camera::processEvent</ref>(GLFWwindow<sp/>*window)<sp/>{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(glfwGetKey(window,<sp/>GLFW_KEY_W)<sp/>==<sp/>GLFW_PRESS)<sp/>{<sp/><ref refid="a00178_1a53f64d060f4d084da096f64c99a459cf" kindref="member">velocity</ref>.z<sp/>=<sp/>-1;<sp/>}<sp/></highlight><highlight class="comment">//else<sp/>{<sp/>velocity.z<sp/>=<sp/>0;}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(glfwGetKey(window,<sp/>GLFW_KEY_S)<sp/>==<sp/>GLFW_PRESS)<sp/>{<sp/><ref refid="a00178_1a53f64d060f4d084da096f64c99a459cf" kindref="member">velocity</ref>.z<sp/>=<sp/><sp/>1;<sp/>}<sp/></highlight><highlight class="comment">//else<sp/>{<sp/>velocity.z<sp/>=<sp/>0;}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(glfwGetKey(window,<sp/>GLFW_KEY_A)<sp/>==<sp/>GLFW_PRESS)<sp/>{<sp/><ref refid="a00178_1a53f64d060f4d084da096f64c99a459cf" kindref="member">velocity</ref>.x<sp/>=<sp/>-1;<sp/>}<sp/></highlight><highlight class="comment">//else<sp/>{<sp/>velocity.x<sp/>=<sp/>0;}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(glfwGetKey(window,<sp/>GLFW_KEY_D)<sp/>==<sp/>GLFW_PRESS)<sp/>{<sp/><ref refid="a00178_1a53f64d060f4d084da096f64c99a459cf" kindref="member">velocity</ref>.x<sp/>=<sp/><sp/>1;<sp/>}<sp/></highlight><highlight class="comment">//else<sp/>{<sp/>velocity.x<sp/>=<sp/>0;}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xPos,<sp/>yPos;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwGetCursorPos(window,<sp/>&amp;xPos,<sp/>&amp;yPos);</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//yaw<sp/>+=<sp/>(float)<sp/>(xPos<sp/>-<sp/>lastX)<sp/>/<sp/>1000.0f;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//pitch<sp/>-=<sp/>(float)<sp/>(yPos<sp/>-<sp/>lastY)<sp/>/<sp/>1000.0f;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>lastX<sp/>=<sp/>xPos;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>lastY<sp/>=<sp/>yPos;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00178_1a42cda7239981a5618660d04bd5893556" kindref="member">Camera::update</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>glm::mat4<sp/>cameraRotation<sp/>=<sp/><ref refid="a00178_1aab60f6efb69f691f2036b5de5897f8a9" kindref="member">getRotationMatrix</ref>();</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00178_1a04b5db2c530d8630660e8cfb93a4b3b5" kindref="member">position</ref><sp/>+=<sp/>glm::vec3(cameraRotation<sp/>*<sp/>glm::vec4(<ref refid="a00178_1a53f64d060f4d084da096f64c99a459cf" kindref="member">velocity</ref><sp/>*<sp/>0.5f,<sp/>0.f));</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00178_1a53f64d060f4d084da096f64c99a459cf" kindref="member">velocity</ref>.x<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00178_1a53f64d060f4d084da096f64c99a459cf" kindref="member">velocity</ref>.y<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00178_1a53f64d060f4d084da096f64c99a459cf" kindref="member">velocity</ref>.z<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00035" kindref="compound">node.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/Camera.cpp"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/objects/node.cpp"/>
   </compounddef>
 </doxygen>

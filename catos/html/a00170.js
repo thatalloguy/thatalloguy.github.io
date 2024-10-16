@@ -1,9 +1,11 @@
 var a00170 =
 [
-    [ "operator+=", "a00170.html#ac086c01bff23542b26b0b2eef4c52348", null ],
-    [ "operator=", "a00170.html#aac3d3c6575283572a19a23b352fca633", null ],
-    [ "operator==", "a00170.html#acb52a2eb1453bc4ac15c0a8ab3d7143c", null ],
-    [ "x", "a00170.html#aabf30b0a34d4ec3096451393e2d71913", null ],
-    [ "y", "a00170.html#aa835783e4604f1d188de6fbdee1cd7c9", null ],
-    [ "z", "a00170.html#a2568eefded1c720de4fcac757a5f164d", null ]
+    [ "operator+", "a00170.html#a1cddf6ae46991af3d46855935b34f75a", null ],
+    [ "operator=", "a00170.html#af27fb9153ec0fcb930a73aa9cd7e2d09", null ],
+    [ "operator==", "a00170.html#a1c6bdfef17a8d70344a9af3a20d8b130", null ],
+    [ "sIdentity", "a00170.html#a203266c0dc325bac87c20c3ae822a567", null ],
+    [ "w", "a00170.html#a4ea592d10bfb621eab8f3a5dbb6e8645", null ],
+    [ "x", "a00170.html#a94b0c157ed7151923b1d51f2754b6b0f", null ],
+    [ "y", "a00170.html#a2c481d6a952719618213fc6b921f67c0", null ],
+    [ "z", "a00170.html#a9e8b8c73d6afd0531e7f4c8141f469c9", null ]
 ];

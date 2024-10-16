@@ -2,8 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="dir_632f350b2b713f3bb6eec6c6b8217127" kind="dir">
     <compoundname>scripting</compoundname>
-    <innerfile refid="a00077">ScriptingEngine.cpp</innerfile>
-    <innerfile refid="a00080">ScriptingEngine.h</innerfile>
+    <innerfile refid="a00074">ScriptingEngine.cpp</innerfile>
+    <innerfile refid="a00077">ScriptingEngine.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): VkLoader Namespace Reference</title>
+<title>Catos Engine (Source): catos::math Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,127 +95,20 @@ $(function(){initNavTree('a00109.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">VkLoader Namespace Reference</div></div>
+<a href="#nested-classes">Classes</a>  </div>
+  <div class="headertitle"><div class="title">catos::math Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a442b1c7be484b0f1b4b53f176d1aaa0f" id="r_a442b1c7be484b0f1b4b53f176d1aaa0f"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::vector&lt; std::shared_ptr&lt; <a class="el" href="a00246.html">MeshAsset</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a442b1c7be484b0f1b4b53f176d1aaa0f">loadGltfMeshes</a> (<a class="el" href="a00230.html">VulkanEngine</a> *engine, std::filesystem::path filePath)</td></tr>
-<tr class="separator:a442b1c7be484b0f1b4b53f176d1aaa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5dc041b91ac2b9f98dde07fd06dedfb9" id="r_a5dc041b91ac2b9f98dde07fd06dedfb9"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00254.html">LoadedGLTF</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5dc041b91ac2b9f98dde07fd06dedfb9">loadGltf</a> (<a class="el" href="a00230.html">VulkanEngine</a> *engine, std::string_view filePath)</td></tr>
-<tr class="separator:a5dc041b91ac2b9f98dde07fd06dedfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a194340dfa7859815574193cea66f2371" id="r_a194340dfa7859815574193cea66f2371"><td class="memItemLeft" align="right" valign="top">VkFilter&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a194340dfa7859815574193cea66f2371">extractFilter</a> (fastgltf::Filter filter)</td></tr>
-<tr class="separator:a194340dfa7859815574193cea66f2371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39631db68d0c201f90fbfd1a48264113" id="r_a39631db68d0c201f90fbfd1a48264113"><td class="memItemLeft" align="right" valign="top">VkSamplerMipmapMode&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a39631db68d0c201f90fbfd1a48264113">extractMipmapMode</a> (fastgltf::Filter filter)</td></tr>
-<tr class="separator:a39631db68d0c201f90fbfd1a48264113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a802f8df4fdc64b9d8c76222147ae2" id="r_ae9a802f8df4fdc64b9d8c76222147ae2"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="a00302.html">AllocatedImage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae9a802f8df4fdc64b9d8c76222147ae2">loadImage</a> (<a class="el" href="a00230.html">VulkanEngine</a> *engine, fastgltf::Asset &amp;asset, fastgltf::Image &amp;image)</td></tr>
-<tr class="separator:ae9a802f8df4fdc64b9d8c76222147ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00170.html">Quaternion</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00162.html">Vector2</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00166.html">Vector3</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a194340dfa7859815574193cea66f2371" name="a194340dfa7859815574193cea66f2371"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a194340dfa7859815574193cea66f2371">&#9670;&#160;</a></span>extractFilter()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VkFilter VkLoader::extractFilter </td>
-          <td>(</td>
-          <td class="paramtype">fastgltf::Filter</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a39631db68d0c201f90fbfd1a48264113" name="a39631db68d0c201f90fbfd1a48264113"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39631db68d0c201f90fbfd1a48264113">&#9670;&#160;</a></span>extractMipmapMode()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">VkSamplerMipmapMode VkLoader::extractMipmapMode </td>
-          <td>(</td>
-          <td class="paramtype">fastgltf::Filter</td>          <td class="paramname"><span class="paramname"><em>filter</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5dc041b91ac2b9f98dde07fd06dedfb9" name="a5dc041b91ac2b9f98dde07fd06dedfb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5dc041b91ac2b9f98dde07fd06dedfb9">&#9670;&#160;</a></span>loadGltf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt; std::shared_ptr&lt; <a class="el" href="a00254.html">LoadedGLTF</a> &gt; &gt; VkLoader::loadGltf </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00230.html">VulkanEngine</a> *</td>          <td class="paramname"><span class="paramname"><em>engine</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::string_view</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a442b1c7be484b0f1b4b53f176d1aaa0f" name="a442b1c7be484b0f1b4b53f176d1aaa0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a442b1c7be484b0f1b4b53f176d1aaa0f">&#9670;&#160;</a></span>loadGltfMeshes()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt; std::vector&lt; std::shared_ptr&lt; <a class="el" href="a00246.html">MeshAsset</a> &gt; &gt; &gt; VkLoader::loadGltfMeshes </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00230.html">VulkanEngine</a> *</td>          <td class="paramname"><span class="paramname"><em>engine</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::filesystem::path</td>          <td class="paramname"><span class="paramname"><em>filePath</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae9a802f8df4fdc64b9d8c76222147ae2" name="ae9a802f8df4fdc64b9d8c76222147ae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9a802f8df4fdc64b9d8c76222147ae2">&#9670;&#160;</a></span>loadImage()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt; <a class="el" href="a00302.html">AllocatedImage</a> &gt; VkLoader::loadImage </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="a00230.html">VulkanEngine</a> *</td>          <td class="paramname"><span class="paramname"><em>engine</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">fastgltf::Asset &amp;</td>          <td class="paramname"><span class="paramname"><em>asset</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">fastgltf::Image &amp;</td>          <td class="paramname"><span class="paramname"><em>image</em></span>&#160;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <p>

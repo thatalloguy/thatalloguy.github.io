@@ -1,61 +1,31 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00222" kind="struct" language="C++" prot="public">
-    <compoundname>GLTFMetallic_roughness::MaterialConstants</compoundname>
-    <includes refid="a00047" local="no">VkEngine.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00222_1a006333f251c1c42685a1327f5e28d2b5" prot="public" static="no" mutable="no">
-        <type>glm::vec4</type>
-        <definition>glm::vec4 GLTFMetallic_roughness::MaterialConstants::colorFactors</definition>
-        <argsstring></argsstring>
-        <name>colorFactors</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialConstants::colorFactors</qualifiedname>
+    <compoundname>catos::no_item_found</compoundname>
+    <includes refid="a00083" local="no">hashmap.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00222_1ae7b60cb4dfd962888efd8684a6499ba1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * catos::no_item_found::what</definition>
+        <argsstring>()</argsstring>
+        <name>what</name>
+        <qualifiedname>catos::no_item_found::what</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="59" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="59" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00222_1a0879b1b307e3fc6093979270f0d88684" prot="public" static="no" mutable="no">
-        <type>glm::vec4</type>
-        <definition>glm::vec4 GLTFMetallic_roughness::MaterialConstants::metalRoughFactors</definition>
-        <argsstring></argsstring>
-        <name>metalRoughFactors</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialConstants::metalRoughFactors</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="60" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="60" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00222_1a897bbbaccb9a421115147a22b6015c4b" prot="public" static="no" mutable="no">
-        <type>glm::vec4</type>
-        <definition>glm::vec4 GLTFMetallic_roughness::MaterialConstants::extra[14]</definition>
-        <argsstring>[14]</argsstring>
-        <name>extra</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialConstants::extra</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="63" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="63" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="12" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="12" bodyend="14"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="58" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="58" bodyend="64"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="11" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="11" bodyend="15"/>
     <listofallmembers>
-      <member refid="a00222_1a006333f251c1c42685a1327f5e28d2b5" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialConstants</scope><name>colorFactors</name></member>
-      <member refid="a00222_1a897bbbaccb9a421115147a22b6015c4b" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialConstants</scope><name>extra</name></member>
-      <member refid="a00222_1a0879b1b307e3fc6093979270f0d88684" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialConstants</scope><name>metalRoughFactors</name></member>
+      <member refid="a00222_1ae7b60cb4dfd962888efd8684a6499ba1" prot="public" virt="non-virtual"><scope>catos::no_item_found</scope><name>what</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

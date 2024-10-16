@@ -2,114 +2,8 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00020" kind="file" language="C++">
     <compoundname>window.cpp</compoundname>
-    <includes refid="a00023" local="yes">window.h</includes>
+    <includes local="yes">spdlog/spdlog.h</includes>
     <incdepgraph>
-      <node id="36">
-        <label>Camera.h</label>
-        <link refid="a00035"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="27">
-        <label>VkDescriptors.h</label>
-        <link refid="a00041"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>Renderer/VkEngine.h</label>
-        <link refid="a00047"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>VkInitializers.h</label>
-        <link refid="a00059"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="28">
-        <label>VkLoader.h</label>
-        <link refid="a00065"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>VkTypes.h</label>
-        <link refid="a00074"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
-      <node id="37">
-        <label>types.h</label>
-        <link refid="a00014"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
       <node id="1">
         <label>window.cpp</label>
         <link refid="a00020"/>
@@ -117,101 +11,7 @@
         </childnode>
       </node>
       <node id="2">
-        <label>window.h</label>
-        <link refid="a00023"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>math/vecs.h</label>
-        <link refid="a00029"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
-      <node id="16">
-        <label>GLFW/glfw3.h</label>
-      </node>
-      <node id="22">
-        <label>VkBootstrap.h</label>
-      </node>
-      <node id="13">
-        <label>array</label>
-      </node>
-      <node id="17">
-        <label>chrono</label>
-      </node>
-      <node id="15">
-        <label>deque</label>
-      </node>
-      <node id="34">
-        <label>fastgltf/core.hpp</label>
-      </node>
-      <node id="32">
-        <label>fastgltf/glm_element_traits.hpp</label>
-      </node>
-      <node id="33">
-        <label>fastgltf/tools.hpp</label>
-      </node>
-      <node id="35">
-        <label>fastgltf/util.hpp</label>
-      </node>
-      <node id="30">
-        <label>filesystem</label>
-      </node>
-      <node id="14">
-        <label>functional</label>
-      </node>
-      <node id="26">
-        <label>glm/common.hpp</label>
-      </node>
-      <node id="4">
-        <label>glm/glm.hpp</label>
-      </node>
-      <node id="31">
-        <label>glm/gtx/quaternion.hpp</label>
-      </node>
-      <node id="24">
-        <label>glm/mat4x4.hpp</label>
-      </node>
-      <node id="25">
-        <label>glm/vec4.hpp</label>
-      </node>
-      <node id="8">
-        <label>memory</label>
-      </node>
-      <node id="9">
-        <label>optional</label>
-      </node>
-      <node id="12">
-        <label>span</label>
-      </node>
-      <node id="23">
         <label>spdlog/spdlog.h</label>
-      </node>
-      <node id="10">
-        <label>string</label>
-      </node>
-      <node id="18">
-        <label>thread</label>
-      </node>
-      <node id="29">
-        <label>unordered_map</label>
-      </node>
-      <node id="11">
-        <label>vector</label>
-      </node>
-      <node id="21">
-        <label>vk_mem_alloc.h</label>
-      </node>
-      <node id="20">
-        <label>vulkan/vk_enum_string_helper.h</label>
-      </node>
-      <node id="19">
-        <label>vulkan/vulkan.h</label>
       </node>
     </incdepgraph>
     <briefdescription>
@@ -222,97 +22,104 @@
 <codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>5/16/2024.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00023" kindref="compound">window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;GLFW/glfw3native.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Windows.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dwmapi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00023" kindref="compound">window.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GLFW_EXPOSE_NATIVE_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;GLFW/glfw3native.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;dwmapi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="a00116" kindref="compound">catos</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spdlog/spdlog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><ref refid="a00162_1a17960ca89f793bac084a8203f1a7d3e6" kindref="member">Window::Window</ref>(<ref refid="a00158" kindref="compound">catos::WindowCreationInfo</ref><sp/>&amp;creationInfo)<sp/>:<sp/>_createInfo(creationInfo)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="a00107" kindref="compound">catos</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="a00158_1a17960ca89f793bac084a8203f1a7d3e6" kindref="member">Window::Window</ref>(<ref refid="a00154" kindref="compound">catos::WindowCreationInfo</ref><sp/>&amp;creationInfo)<sp/>:<sp/>_createInfo(creationInfo)<sp/>{</highlight></codeline>
 <codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!glfwInit())<sp/>{</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::error(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>initialize<sp/>GLFW!&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-11);<sp/></highlight><highlight class="comment">//<sp/>For<sp/>the<sp/>game<sp/>to<sp/>run<sp/>we<sp/>would<sp/>need<sp/>glfw</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwWindowHint(GLFW_CLIENT_API,<sp/>GLFW_NO_API);</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!glfwInit())<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::error(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>initialize<sp/>GLFW!&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>exit(-11);<sp/></highlight><highlight class="comment">//<sp/>For<sp/>the<sp/>game<sp/>to<sp/>run<sp/>we<sp/>would<sp/>need<sp/>glfw</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>GLFWmonitor*<sp/>monitor;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(creationInfo.<ref refid="a00158_1a2afaf94058c62aee02391616b88bd63c" kindref="member">is_fullscreen</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>monitor<sp/>=<sp/>glfwGetPrimaryMonitor();</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>monitor<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>do<sp/>opengl<sp/>4.2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR,<sp/>4);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR,<sp/>2);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwWindowHint(GLFW_OPENGL_PROFILE,<sp/>GLFW_OPENGL_CORE_PROFILE);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>GLFWmonitor*<sp/>monitor;</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>_raw_window<sp/>=<sp/>glfwCreateWindow(creationInfo.<ref refid="a00158_1ae968365d3c684b7865dbd44a9b58a0d4" kindref="member">size</ref>.<ref refid="a00166_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref>,<sp/>creationInfo.<ref refid="a00158_1ae968365d3c684b7865dbd44a9b58a0d4" kindref="member">size</ref>.<ref refid="a00166_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>,<sp/>creationInfo.<ref refid="a00158_1a93cc9ee1f3794b1621f46ccf5ca1c91d" kindref="member">title</ref>,<sp/>monitor,<sp/>NULL);</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_raw_window)<sp/>{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::error(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>create<sp/>Window&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(creationInfo.<ref refid="a00154_1a2afaf94058c62aee02391616b88bd63c" kindref="member">is_fullscreen</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>monitor<sp/>=<sp/>glfwGetPrimaryMonitor();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>monitor<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(creationInfo.<ref refid="a00158_1af4e7fb2bc7459c373e17b77a30565680" kindref="member">enable_darktheme</ref>)<sp/>{</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enable_dark_theme();</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwMakeContextCurrent(_raw_window);</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><ref refid="a00162_1a245d821e6016fa1f6970ccbbedd635f6" kindref="member">Window::~Window</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwDestroyWindow(_raw_window);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwTerminate();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>_raw_window<sp/>=<sp/>glfwCreateWindow(creationInfo.<ref refid="a00154_1ae968365d3c684b7865dbd44a9b58a0d4" kindref="member">size</ref>.<ref refid="a00162_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref>,<sp/>creationInfo.<ref refid="a00154_1ae968365d3c684b7865dbd44a9b58a0d4" kindref="member">size</ref>.<ref refid="a00162_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>,<sp/>creationInfo.<ref refid="a00154_1a93cc9ee1f3794b1621f46ccf5ca1c91d" kindref="member">title</ref>,<sp/>monitor,<sp/>NULL);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!_raw_window)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::error(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>create<sp/>Window&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(creationInfo.<ref refid="a00154_1af4e7fb2bc7459c373e17b77a30565680" kindref="member">enable_darktheme</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enable_dark_theme();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwMakeContextCurrent(_raw_window);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Window::enable_dark_theme()<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="a00158_1a245d821e6016fa1f6970ccbbedd635f6" kindref="member">Window::~Window</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>USE_DARK_MODE<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwDestroyWindow(_raw_window);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwTerminate();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>status<sp/>=<sp/>SUCCEEDED(DwmSetWindowAttribute(</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwGetWin32Window(_raw_window),<sp/>DWMWINDOWATTRIBUTE::DWMWA_USE_IMMERSIVE_DARK_MODE,</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;USE_DARK_MODE,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(USE_DARK_MODE)</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>));</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><ref refid="a00166" kindref="compound">math::Vector2</ref><sp/><ref refid="a00162_1a7666877758d915dca4176786fc0a7925" kindref="member">Window::getMonitorSize</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwInit();</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>glfwGetVideoMode(glfwGetPrimaryMonitor());</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Window::enable_dark_theme()<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_WIN32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>USE_DARK_MODE<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>status<sp/>=<sp/>SUCCEEDED(DwmSetWindowAttribute(</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>glfwGetWin32Window(_raw_window),<sp/>DWMWINDOWATTRIBUTE::DWMWA_USE_IMMERSIVE_DARK_MODE,</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;USE_DARK_MODE,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(USE_DARK_MODE)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>));</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00166" kindref="compound">math::Vector2</ref>{.<ref refid="a00166_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref><sp/>=<sp/>(float)<sp/>mode-&gt;width,<sp/>.y<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>mode-&gt;height};</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><ref refid="a00162" kindref="compound">math::Vector2</ref><sp/><ref refid="a00158_1a7666877758d915dca4176786fc0a7925" kindref="member">Window::getMonitorSize</ref>()<sp/>{</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00162_1a6df30484abfd5cc491a5ed2055692859" kindref="member">Window::should_window_close</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glfwWindowShouldClose(_raw_window);</highlight></codeline>
-<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwInit();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>mode<sp/>=<sp/>glfwGetVideoMode(glfwGetPrimaryMonitor());</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00162" kindref="compound">math::Vector2</ref>{.<ref refid="a00162_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref><sp/>=<sp/>(float)<sp/>mode-&gt;width,<sp/>.y<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>mode-&gt;height};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00162_1a59515fc5a56e86d5a46d771595daac55" kindref="member">Window::update</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwPollEvents();</highlight></codeline>
-<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal">GLFWwindow<sp/>*<ref refid="a00162_1afc3176914723cab13d809b6ae8f3d6d2" kindref="member">Window::get_glfw_window</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_raw_window;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00158_1a6df30484abfd5cc491a5ed2055692859" kindref="member">Window::should_window_close</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>glfwWindowShouldClose(_raw_window);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00158_1a59515fc5a56e86d5a46d771595daac55" kindref="member">Window::update</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwPollEvents();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>glfwSwapBuffers(_raw_window);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">GLFWwindow<sp/>*<ref refid="a00158_1afc3176914723cab13d809b6ae8f3d6d2" kindref="member">Window::get_glfw_window</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_raw_window;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/allos/source/Catos/Runtime/src/core/window.cpp"/>
   </compounddef>

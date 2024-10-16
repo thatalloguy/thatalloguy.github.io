@@ -1,46 +1,44 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00234" kind="struct" language="C++" prot="public">
-    <compoundname>DrawContext</compoundname>
-    <includes refid="a00047" local="no">VkEngine.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00234_1a92fc7232c72c6f3b5dc4e12dd6606f17" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00230" kindref="compound">RenderObject</ref> &gt;</type>
-        <definition>std::vector&lt;RenderObject&gt; DrawContext::OpaqueSurfaces</definition>
-        <argsstring></argsstring>
-        <name>OpaqueSurfaces</name>
-        <qualifiedname>DrawContext::OpaqueSurfaces</qualifiedname>
+    <compoundname>catos::HashFunc</compoundname>
+    <includes refid="a00083" local="no">hashmap.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename K</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00234_1a0221d03828ae37a83b2e8a40d912224b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t catos::HashFunc&lt; K &gt;::operator()</definition>
+        <argsstring>(const K &amp;key, int Size) const</argsstring>
+        <name>operator()</name>
+        <qualifiedname>catos::HashFunc::operator()</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>Size</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="100" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="100" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00234_1ad057160f65e0657e137a740ec37d31c2" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00230" kindref="compound">RenderObject</ref> &gt;</type>
-        <definition>std::vector&lt;RenderObject&gt; DrawContext::TransparentSurfaces</definition>
-        <argsstring></argsstring>
-        <name>TransparentSurfaces</name>
-        <qualifiedname>DrawContext::TransparentSurfaces</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="101" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="101" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="62" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="62" bodyend="64"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="99" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="99" bodyend="102"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="61" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="61" bodyend="65"/>
     <listofallmembers>
-      <member refid="a00234_1a92fc7232c72c6f3b5dc4e12dd6606f17" prot="public" virt="non-virtual"><scope>DrawContext</scope><name>OpaqueSurfaces</name></member>
-      <member refid="a00234_1ad057160f65e0657e137a740ec37d31c2" prot="public" virt="non-virtual"><scope>DrawContext</scope><name>TransparentSurfaces</name></member>
+      <member refid="a00234_1a0221d03828ae37a83b2e8a40d912224b" prot="public" virt="non-virtual"><scope>catos::HashFunc</scope><name>operator()</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

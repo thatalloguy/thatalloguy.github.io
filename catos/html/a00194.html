@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): DescriptorAllocatorGrowable Class Reference</title>
+<title>Catos Engine (Source): catos::RenderPassCreationInfo Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,116 +95,98 @@ $(function(){initNavTree('a00194.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00191.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DescriptorAllocatorGrowable Class Reference</div></div>
+  <div class="headertitle"><div class="title">catos::RenderPassCreationInfo Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00041_source.html">VkDescriptors.h</a>&gt;</code></p>
+<p>Info about how the <a class="el" href="a00198.html">RenderPass</a> should be created.  
+ <a href="#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="a00059_source.html">renderPass.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00198.html">PoolSizeRatio</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:af5cae4856149623867934153486e9b45" id="r_af5cae4856149623867934153486e9b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5cae4856149623867934153486e9b45">init</a> (VkDevice device, uint32_t maxSets, std::span&lt; <a class="el" href="a00198.html">PoolSizeRatio</a> &gt; poolRatios)</td></tr>
-<tr class="separator:af5cae4856149623867934153486e9b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4fbeabc0aea9829cf922f7e9cce2fa53" id="r_a4fbeabc0aea9829cf922f7e9cce2fa53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4fbeabc0aea9829cf922f7e9cce2fa53">clearPools</a> (VkDevice device)</td></tr>
-<tr class="separator:a4fbeabc0aea9829cf922f7e9cce2fa53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9be93476cebaaba27b5e6a41650b1c25" id="r_a9be93476cebaaba27b5e6a41650b1c25"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9be93476cebaaba27b5e6a41650b1c25">destroyPools</a> (VkDevice device)</td></tr>
-<tr class="separator:a9be93476cebaaba27b5e6a41650b1c25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6db84a1399339f8008d6a0745383b591" id="r_a6db84a1399339f8008d6a0745383b591"><td class="memItemLeft" align="right" valign="top">VkDescriptorSet&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6db84a1399339f8008d6a0745383b591">allocate</a> (VkDevice device, VkDescriptorSetLayout layout)</td></tr>
-<tr class="separator:a6db84a1399339f8008d6a0745383b591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a4ee01b85a8bdd9d2774f4b8b27de7fe0" id="r_a4ee01b85a8bdd9d2774f4b8b27de7fe0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4ee01b85a8bdd9d2774f4b8b27de7fe0">willBeVisible</a> = false</td></tr>
+<tr class="memdesc:a4ee01b85a8bdd9d2774f4b8b27de7fe0"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the Pass will be presented to the <a class="el" href="a00158.html">Window</a>.  <br /></td></tr>
+<tr class="separator:a4ee01b85a8bdd9d2774f4b8b27de7fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75e57189ccc167d9e9e1bb627d314e80" id="r_a75e57189ccc167d9e9e1bb627d314e80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00162.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a75e57189ccc167d9e9e1bb627d314e80">size</a> {512, 512}</td></tr>
+<tr class="memdesc:a75e57189ccc167d9e9e1bb627d314e80"><td class="mdescLeft">&#160;</td><td class="mdescRight">The size of the Pass's image.  <br /></td></tr>
+<tr class="separator:a75e57189ccc167d9e9e1bb627d314e80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c462e5cf8c3770fc1f823cf486d1fbe" id="r_a3c462e5cf8c3770fc1f823cf486d1fbe"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c462e5cf8c3770fc1f823cf486d1fbe">resizeToRenderSize</a> = false</td></tr>
+<tr class="memdesc:a3c462e5cf8c3770fc1f823cf486d1fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the pass should resize to the global Render size.  <br /></td></tr>
+<tr class="separator:a3c462e5cf8c3770fc1f823cf486d1fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8046364e68b319cd39390d16cef7b45" id="r_aa8046364e68b319cd39390d16cef7b45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3">PassType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa8046364e68b319cd39390d16cef7b45">passType</a> = <a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099">PassType::COLOR</a></td></tr>
+<tr class="separator:aa8046364e68b319cd39390d16cef7b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6db84a1399339f8008d6a0745383b591" name="a6db84a1399339f8008d6a0745383b591"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6db84a1399339f8008d6a0745383b591">&#9670;&#160;</a></span>allocate()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Info about how the <a class="el" href="a00198.html">RenderPass</a> should be created. </p>
+</div><h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa8046364e68b319cd39390d16cef7b45" name="aa8046364e68b319cd39390d16cef7b45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8046364e68b319cd39390d16cef7b45">&#9670;&#160;</a></span>passType</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VkDescriptorSet DescriptorAllocatorGrowable::allocate </td>
-          <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">VkDescriptorSetLayout</td>          <td class="paramname"><span class="paramname"><em>layout</em></span>&#160;)</td>
+          <td class="memname"><a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3">PassType</a> catos::RenderPassCreationInfo::passType = <a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099">PassType::COLOR</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4fbeabc0aea9829cf922f7e9cce2fa53" name="a4fbeabc0aea9829cf922f7e9cce2fa53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4fbeabc0aea9829cf922f7e9cce2fa53">&#9670;&#160;</a></span>clearPools()</h2>
+<a id="a3c462e5cf8c3770fc1f823cf486d1fbe" name="a3c462e5cf8c3770fc1f823cf486d1fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c462e5cf8c3770fc1f823cf486d1fbe">&#9670;&#160;</a></span>resizeToRenderSize</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorAllocatorGrowable::clearPools </td>
-          <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
-          <td></td>
+          <td class="memname">bool catos::RenderPassCreationInfo::resizeToRenderSize = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>If the pass should resize to the global Render size. </p>
+
 </div>
 </div>
-<a id="a9be93476cebaaba27b5e6a41650b1c25" name="a9be93476cebaaba27b5e6a41650b1c25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9be93476cebaaba27b5e6a41650b1c25">&#9670;&#160;</a></span>destroyPools()</h2>
+<a id="a75e57189ccc167d9e9e1bb627d314e80" name="a75e57189ccc167d9e9e1bb627d314e80"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75e57189ccc167d9e9e1bb627d314e80">&#9670;&#160;</a></span>size</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorAllocatorGrowable::destroyPools </td>
-          <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
-          <td></td>
+          <td class="memname"><a class="el" href="a00162.html">Vector2</a> catos::RenderPassCreationInfo::size {512, 512}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>The size of the Pass's image. </p>
+
 </div>
 </div>
-<a id="af5cae4856149623867934153486e9b45" name="af5cae4856149623867934153486e9b45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af5cae4856149623867934153486e9b45">&#9670;&#160;</a></span>init()</h2>
+<a id="a4ee01b85a8bdd9d2774f4b8b27de7fe0" name="a4ee01b85a8bdd9d2774f4b8b27de7fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ee01b85a8bdd9d2774f4b8b27de7fe0">&#9670;&#160;</a></span>willBeVisible</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void DescriptorAllocatorGrowable::init </td>
-          <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t</td>          <td class="paramname"><span class="paramname"><em>maxSets</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::span&lt; <a class="el" href="a00198.html">PoolSizeRatio</a> &gt;</td>          <td class="paramname"><span class="paramname"><em>poolRatios</em></span>&#160;)</td>
+          <td class="memname">bool catos::RenderPassCreationInfo::willBeVisible = false</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>If the Pass will be presented to the <a class="el" href="a00158.html">Window</a>. </p>
+
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="a00041_source.html">VkDescriptors.h</a></li>
-<li><a class="el" href="a00038.html">VkDescriptors.cpp</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a00059_source.html">renderPass.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

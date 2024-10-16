@@ -1,244 +1,140 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00059" kind="file" language="C++">
-    <compoundname>VkInitializers.h</compoundname>
-    <includes refid="a00074" local="yes">VkTypes.h</includes>
-    <includedby refid="a00047" local="yes">VkEngine.h</includedby>
-    <includedby refid="a00050" local="yes">VkImages.cpp</includedby>
-    <includedby refid="a00056" local="yes">VkInitializers.cpp</includedby>
-    <includedby refid="a00062" local="yes">VkLoader.cpp</includedby>
-    <includedby refid="a00071" local="yes">VkPipelines.h</includedby>
+    <compoundname>renderPass.h</compoundname>
+    <includes refid="a00029" local="no">math/vecs.h</includes>
+    <includes refid="a00071" local="no">renderer/shader.h</includes>
+    <includedby refid="a00056" local="yes">renderPass.cpp</includedby>
+    <includedby refid="a00053" local="no">renderer.h</includedby>
     <incdepgraph>
+      <node id="2">
+        <label>math/vecs.h</label>
+        <link refid="a00029"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
       <node id="1">
-        <label>VkInitializers.h</label>
+        <label>renderPass.h</label>
         <link refid="a00059"/>
         <childnode refid="2" relation="include">
         </childnode>
-      </node>
-      <node id="2">
-        <label>VkTypes.h</label>
-        <link refid="a00074"/>
-        <childnode refid="3" relation="include">
-        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-      </node>
-      <node id="11">
-        <label>GLFW/glfw3.h</label>
-      </node>
-      <node id="17">
-        <label>VkBootstrap.h</label>
-      </node>
-      <node id="8">
-        <label>array</label>
-      </node>
-      <node id="12">
-        <label>chrono</label>
-      </node>
-      <node id="10">
-        <label>deque</label>
-      </node>
-      <node id="9">
-        <label>functional</label>
-      </node>
-      <node id="22">
-        <label>glm/common.hpp</label>
-      </node>
-      <node id="21">
-        <label>glm/glm.hpp</label>
-      </node>
-      <node id="19">
-        <label>glm/mat4x4.hpp</label>
-      </node>
-      <node id="20">
-        <label>glm/vec4.hpp</label>
-      </node>
-      <node id="3">
-        <label>memory</label>
       </node>
       <node id="4">
-        <label>optional</label>
+        <label>renderer/shader.h</label>
+        <link refid="a00071"/>
       </node>
-      <node id="7">
-        <label>span</label>
-      </node>
-      <node id="18">
-        <label>spdlog/spdlog.h</label>
-      </node>
-      <node id="5">
-        <label>string</label>
-      </node>
-      <node id="13">
-        <label>thread</label>
-      </node>
-      <node id="6">
-        <label>vector</label>
-      </node>
-      <node id="16">
-        <label>vk_mem_alloc.h</label>
-      </node>
-      <node id="15">
-        <label>vulkan/vk_enum_string_helper.h</label>
-      </node>
-      <node id="14">
-        <label>vulkan/vulkan.h</label>
+      <node id="3">
+        <label>glm/glm.hpp</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
-        <label>VkEngine.cpp</label>
-        <link refid="a00044"/>
-      </node>
       <node id="2">
-        <label>VkEngine.h</label>
-        <link refid="a00047"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>VkImages.cpp</label>
-        <link refid="a00050"/>
-      </node>
-      <node id="8">
-        <label>VkInitializers.cpp</label>
+        <label>renderPass.cpp</label>
         <link refid="a00056"/>
       </node>
       <node id="1">
-        <label>VkInitializers.h</label>
+        <label>renderPass.h</label>
         <link refid="a00059"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
       </node>
       <node id="4">
-        <label>VkLoader.cpp</label>
-        <link refid="a00062"/>
+        <label>renderer.cpp</label>
+        <link refid="a00050"/>
       </node>
-      <node id="10">
-        <label>VkPipelines.cpp</label>
-        <link refid="a00068"/>
-      </node>
-      <node id="9">
-        <label>VkPipelines.h</label>
-        <link refid="a00071"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="6">
-        <label>window.cpp</label>
-        <link refid="a00020"/>
-      </node>
-      <node id="5">
-        <label>window.h</label>
-        <link refid="a00023"/>
-        <childnode refid="6" relation="include">
+      <node id="3">
+        <label>renderer.h</label>
+        <link refid="a00053"/>
+        <childnode refid="4" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
-    <innernamespace refid="a00120">VkInit</innernamespace>
+    <innerclass refid="a00194" prot="public">catos::RenderPassCreationInfo</innerclass>
+    <innerclass refid="a00198" prot="public">catos::RenderPass</innerclass>
+    <innernamespace refid="a00107">catos</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>2/10/2024.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>10/16/2024.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Purpose<sp/>of<sp/>this<sp/>file<sp/>for<sp/>future<sp/>reference:</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>This<sp/>will<sp/>contain<sp/>helpers<sp/>to<sp/>create<sp/>vulkan<sp/>structures</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="a00029" kindref="compound">math/vecs.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="a00071" kindref="compound">renderer/shader.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="a00109" kindref="compound">catos::math</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00107" kindref="compound">catos</ref><sp/>{</highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00074" kindref="compound">VkTypes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="a00107_1a45b8ee8e2bc6a9703ca2728c4d20680a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00107_1a45b8ee8e2bc6a9703ca2728c4d20680a" kindref="member">ColorBuffer</ref>;</highlight></codeline>
+<codeline lineno="14" refid="a00107_1a4613316b0ca1f3fdbf463888395735b6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00107_1a4613316b0ca1f3fdbf463888395735b6" kindref="member">FrameBuffer</ref>;</highlight></codeline>
+<codeline lineno="15" refid="a00107_1a66a574b855759e9da3f9fe39824b3245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00107_1a66a574b855759e9da3f9fe39824b3245" kindref="member">RenderBuffer</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="a00120" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00120" kindref="compound">VkInit</ref><sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPresentInfoKHR<sp/><ref refid="a00120_1a89cdca6f147b3cacbef67ef0fcddb5a4" kindref="member">presentInfo</ref>();</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>VkCommandPoolCreateInfo<sp/><ref refid="a00120_1a3cdef4e7c3a16175ef52084187f27428" kindref="member">commandPoolCreateInfo</ref>(uint32_t<sp/>queueFamilyIndex,<sp/>VkCommandPoolCreateFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>VkCommandBufferAllocateInfo<sp/><ref refid="a00120_1a8fe7cf8c5c6f45b1cbec1c04a3fb2801" kindref="member">commandBufferAllocateInfo</ref>(VkCommandPool<sp/>pool,<sp/>uint32_t<sp/>count<sp/></highlight><highlight class="comment">/*=<sp/>1*/</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>VkFenceCreateInfo<sp/><ref refid="a00120_1a58ec443d7114304aafcc6dfe40aa91cf" kindref="member">fenceCreateInfo</ref>(VkFenceCreateFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>VkSemaphoreCreateInfo<sp/><ref refid="a00120_1ad350c43673bc9b3f7994cd67053d601a" kindref="member">semaphoreCreateInfo</ref>(VkSemaphoreCreateFlags<sp/>flags<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="18" refid="a00107_1acf4b328a657463e6461ec5aaad0031f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3" kindref="member">PassType</ref>:<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="a00107_1acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099" kindref="member">COLOR</ref><sp/>=<sp/><sp/>0x8CE0,</highlight></codeline>
+<codeline lineno="22" refid="a00107_1acf4b328a657463e6461ec5aaad0031f3ab0de4c916a68e9027b6b38dce8f84d3f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3ab0de4c916a68e9027b6b38dce8f84d3f" kindref="member">COLOR_SINGLE</ref><sp/>=<sp/>0x8CE1,</highlight></codeline>
+<codeline lineno="23" refid="a00107_1acf4b328a657463e6461ec5aaad0031f3af4faf9b95b96cc9be34794cf7a31edd4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3af4faf9b95b96cc9be34794cf7a31edd4" kindref="member">DEPTH</ref><sp/>=<sp/>0x8D00,</highlight></codeline>
+<codeline lineno="24" refid="a00107_1acf4b328a657463e6461ec5aaad0031f3aff83f06b107ff2059d3410d27e7ac3b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3aff83f06b107ff2059d3410d27e7ac3b0" kindref="member">STENCIL</ref><sp/>=<sp/>0x8D20,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>VkCommandBufferBeginInfo<sp/><ref refid="a00120_1a4f27583522b48fbb2794b4f6eff37c5b" kindref="member">commandBufferBeginInfo</ref>(VkCommandBufferUsageFlags<sp/>flags<sp/></highlight><highlight class="comment">/*=<sp/>0*/</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageSubresourceRange<sp/><ref refid="a00120_1abe7cc27c092869928fc3c6428219e858" kindref="member">imageSubresourceRange</ref>(VkImageAspectFlags<sp/>aspectMask);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>VkSemaphoreSubmitInfo<sp/><ref refid="a00120_1a255af650bfd089f6febd85848d58c6c5" kindref="member">semaphoreSubmitInfo</ref>(VkPipelineStageFlags2<sp/>stageMask,<sp/>VkSemaphore<sp/>semaphore);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>VkCommandBufferSubmitInfo<sp/><ref refid="a00120_1a4e3740324c0b56d48e31d4201841fbce" kindref="member">commandBufferSubmitInfo</ref>(VkCommandBuffer<sp/>cmd);</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>VkSubmitInfo2<sp/><ref refid="a00120_1a2cef7fa07f55a58eb23a2aa4de6cb956" kindref="member">submitInfo</ref>(VkCommandBufferSubmitInfo*<sp/>cmd,<sp/>VkSemaphoreSubmitInfo*<sp/>signalSemaphoreInfo,<sp/>VkSemaphoreSubmitInfo*<sp/>waitSemaphoreInfo);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageCreateInfo<sp/><ref refid="a00120_1af6244bbb89d93fabe28d83cb4203da94" kindref="member">imageCreateInfo</ref>(VkFormat<sp/>format,<sp/>VkImageUsageFlags<sp/>usageFlags,<sp/>VkExtent3D<sp/>extent);</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageViewCreateInfo<sp/><ref refid="a00120_1a57731c73c6a5a9b41a591f594bedd96c" kindref="member">imageViewCreateInfo</ref>(VkFormat<sp/>format,<sp/>VkImage<sp/>image,<sp/>VkImageAspectFlags<sp/><sp/>aspectFlags);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>VkRenderingAttachmentInfo<sp/><ref refid="a00120_1a76bde95c72a4bf604cd433e439b2fa1b" kindref="member">attachmentInfo</ref>(VkImageView<sp/>view,<sp/>VkClearValue*<sp/>clear,<sp/>VkImageLayout<sp/>layout);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>VkRenderingAttachmentInfo<sp/><ref refid="a00120_1afd70e1da9064d67d0f17d4d415f0761d" kindref="member">depthAttachmentInfo</ref>(VkImageView<sp/>view,<sp/>VkImageLayout<sp/>layout);</highlight></codeline>
+<codeline lineno="28" refid="a00194" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00194" kindref="compound">RenderPassCreationInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="a00194_1a4ee01b85a8bdd9d2774f4b8b27de7fe0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00194_1a4ee01b85a8bdd9d2774f4b8b27de7fe0" kindref="member">willBeVisible</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="a00194_1a75e57189ccc167d9e9e1bb627d314e80" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00162" kindref="compound">Vector2</ref><sp/><ref refid="a00194_1a75e57189ccc167d9e9e1bb627d314e80" kindref="member">size</ref>{512,<sp/>512};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="a00194_1a3c462e5cf8c3770fc1f823cf486d1fbe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00194_1a3c462e5cf8c3770fc1f823cf486d1fbe" kindref="member">resizeToRenderSize</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="a00194_1aa8046364e68b319cd39390d16cef7b45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3" kindref="member">PassType</ref><sp/><ref refid="a00194_1aa8046364e68b319cd39390d16cef7b45" kindref="member">passType</ref><sp/>=<sp/><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099" kindref="member">PassType::COLOR</ref>;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>VkRenderingInfo<sp/><ref refid="a00120_1a5e07e2e66058b5c4e6fb30840c396ab3" kindref="member">renderingInfo</ref>(VkExtent2D<sp/>renderExtent,<sp/>VkRenderingAttachmentInfo*<sp/>colorAttachment,</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkRenderingAttachmentInfo*<sp/>depthAttachment);</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineShaderStageCreateInfo<sp/><ref refid="a00120_1af12b035c84d7a8af0915e626e68b29f0" kindref="member">pipelineShaderStageCreateInfo</ref>(VkShaderStageFlagBits<sp/>stage,<sp/>VkShaderModule<sp/>shaderModule,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/>entry<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;main&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineLayoutCreateInfo<sp/><ref refid="a00120_1ae22d46467876562f521852203947a73c" kindref="member">pipelineLayoutCreateInfo</ref>();</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>a<sp/>RenderPass<sp/>is<sp/>a<sp/>object<sp/>that<sp/>renders<sp/>everything<sp/>with<sp/>a<sp/>given<sp/>shader</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>then<sp/>generates<sp/>a<sp/>texture<sp/>which<sp/>can<sp/>be<sp/>used<sp/>for<sp/>displaying<sp/>or<sp/>info<sp/>for<sp/>a<sp/>different<sp/>pass<sp/>/<sp/>shader.</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="a00198" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00198" kindref="compound">RenderPass</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00198_1a4321b2129b7f6c4a80e799a4f5f5c42f" kindref="member">RenderPass</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00194" kindref="compound">RenderPassCreationInfo</ref>&amp;<sp/>info,<sp/><ref refid="a00210" kindref="compound">Shader</ref>&amp;<sp/>shaderToUse);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00198_1a3918c3c7e214c6367f0bf0d93f7d337b" kindref="member">~RenderPass</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00198_1a89994820e4f723d64659de3d9c26cf34" kindref="member">bindPass</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00198_1a5f28d8d3877c4ed34e7faeca6c3409f3" kindref="member">unbindPass</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="a00198_1a5b83037d838ea8311ff2b5af294147c5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a4613316b0ca1f3fdbf463888395735b6" kindref="member">FrameBuffer</ref><sp/><ref refid="a00198_1a5b83037d838ea8311ff2b5af294147c5" kindref="member">getFrameBuffer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>frameBuffer;<sp/>};</highlight></codeline>
+<codeline lineno="58" refid="a00198_1a9b873b18d3e44a61183e6141038e7536" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a45b8ee8e2bc6a9703ca2728c4d20680a" kindref="member">ColorBuffer</ref><sp/><ref refid="a00198_1a9b873b18d3e44a61183e6141038e7536" kindref="member">getPassTexture</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>colorBuffer;<sp/>};</highlight></codeline>
+<codeline lineno="59" refid="a00198_1aec48b82a9b70405e6fcc683604e0dbc5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a66a574b855759e9da3f9fe39824b3245" kindref="member">RenderBuffer</ref><sp/><ref refid="a00198_1aec48b82a9b70405e6fcc683604e0dbc5" kindref="member">getRenderBuffer</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>renderBuffer;<sp/>};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="a00198_1a9aacdeee122f237f76c2aaae2dfd5cb6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00198_1a9aacdeee122f237f76c2aaae2dfd5cb6" kindref="member">isFinal</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_isFinal;<sp/>};</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generateFrameBuffer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00162" kindref="compound">Vector2</ref>&amp;<sp/>size);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generateColorBuffer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00162" kindref="compound">Vector2</ref>&amp;<sp/>size,<sp/><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3" kindref="member">PassType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>generateRenderBuffer(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00162" kindref="compound">Vector2</ref>&amp;<sp/>size);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>frameBuffer;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colorBuffer;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>renderBuffer;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_isFinal<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_shouldResize<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00210" kindref="compound">Shader</ref>&amp;<sp/>shader;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkInitializers.h"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h"/>
   </compounddef>
 </doxygen>

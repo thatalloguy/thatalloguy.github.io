@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): main.cpp File Reference</title>
+<title>Catos Engine (Source): catos Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,93 +95,363 @@ $(function(){initNavTree('a00107.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">main.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">catos Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;../doctest/doctest/doctest.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00017_source.html">core/type_utils.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00011_source.html">core/registry.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00005_source.html">core/application.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00113_source.html">world/world.h</a>&quot;</code><br />
-<code>#include &quot;spdlog/spdlog.h&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00104_source.html">stl/vector.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00098_source.html">stl/string.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00029_source.html">math/vecs.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00086_source.html">stl/hashmap.h</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00366.html">Foo</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00370.html">TransformComponent</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00374.html">ComponentTest</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00116" id="r_a00116"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00116.html">catos</a></td></tr>
+<tr class="memitem:a00109" id="r_a00109"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00109.html">math</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00122" id="r_a00122"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html">catos::tests</a></td></tr>
+<tr class="memitem:a00110" id="r_a00110"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00110.html">tests</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00108" id="r_a00108"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00108.html">type_utils</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:adf980eb1ed0df2191c56fd3d218c2819" id="r_adf980eb1ed0df2191c56fd3d218c2819"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf980eb1ed0df2191c56fd3d218c2819">DOCTEST_CONFIG_IMPLEMENT</a></td></tr>
-<tr class="separator:adf980eb1ed0df2191c56fd3d218c2819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00118.html">App</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main class that holds all information.  <a href="a00118.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00114.html">AppCreationInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A struct that holds all info the application needs at launch.  <a href="a00114.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00234.html">HashFunc</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00238.html">hashmap</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00230.html">hashnode</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html">key_not_found</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00142.html">Method</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores a function pointer for running it.  <a href="a00142.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00130.html">MethodHolder</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00134.html">MethodHolderImpl</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00138.html">MethodInvoker</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00138.html" title="MethodInvoker invokes the method (with args) given at creation.">MethodInvoker</a> invokes the method (with args) given at creation.  <a href="a00138.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00222.html">no_item_found</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00174.html">Node</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00242.html">Pair</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple struct to hold 2 objects.  <a href="a00242.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html">Property</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="a00126.html" title="PropertyImpl implements Property and holds an member function pointer. Used to get an value of an fie...">PropertyImpl</a> for details.  <a href="a00122.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00126.html">PropertyImpl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="a00126.html" title="PropertyImpl implements Property and holds an member function pointer. Used to get an value of an fie...">PropertyImpl</a> implements <a class="el" href="a00122.html" title="See PropertyImpl for details.">Property</a> and holds an member function pointer. Used to get an value of an field of an Type's instance.  <a href="a00126.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00150.html">Registry</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The registry is the core system and provides reflection to the rest of the engine.  <a href="a00150.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00190.html">Renderer</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The renderer is the Master class that handles everything getting drawn properly.  <a href="a00190.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00186.html">RendererCreateInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00198.html">RenderPass</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00194.html">RenderPassCreationInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info about how the <a class="el" href="a00198.html">RenderPass</a> should be created.  <a href="a00194.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00202.html">RenderPipeline</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00214.html">ScriptInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Object that holds info about a Script.  <a href="a00214.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00218.html">ScriptingEngine</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html">Shader</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html">ShaderCreateInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00246.html">string</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom string class that functions as dynamic C_str.  <a href="a00246.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00146.html">TypeInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Typeinfo is an object that holds all information about a specific type.  <a href="a00146.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00254.html">vector</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00158.html">Window</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00154.html">WindowCreationInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a45b8ee8e2bc6a9703ca2728c4d20680a" id="r_a45b8ee8e2bc6a9703ca2728c4d20680a"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a45b8ee8e2bc6a9703ca2728c4d20680a">ColorBuffer</a></td></tr>
+<tr class="separator:a45b8ee8e2bc6a9703ca2728c4d20680a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4613316b0ca1f3fdbf463888395735b6" id="r_a4613316b0ca1f3fdbf463888395735b6"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4613316b0ca1f3fdbf463888395735b6">FrameBuffer</a></td></tr>
+<tr class="separator:a4613316b0ca1f3fdbf463888395735b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a574b855759e9da3f9fe39824b3245" id="r_a66a574b855759e9da3f9fe39824b3245"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a66a574b855759e9da3f9fe39824b3245">RenderBuffer</a></td></tr>
+<tr class="separator:a66a574b855759e9da3f9fe39824b3245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62ed9b6c5638f605322435f5461d34ea" id="r_a62ed9b6c5638f605322435f5461d34ea"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a62ed9b6c5638f605322435f5461d34ea">ShaderProgram</a></td></tr>
+<tr class="separator:a62ed9b6c5638f605322435f5461d34ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ac617635d2b87a1969d411fcf09f8d983" id="r_ac617635d2b87a1969d411fcf09f8d983"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac617635d2b87a1969d411fcf09f8d983">RenderBackendType</a> : unsigned int { <a class="el" href="#ac617635d2b87a1969d411fcf09f8d983a696b031073e74bf2cb98e5ef201d4aa3">UNKNOWN</a> = 0
+, <a class="el" href="#ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71">OPENGL_4_2</a> = 1
+ }</td></tr>
+<tr class="memdesc:ac617635d2b87a1969d411fcf09f8d983"><td class="mdescLeft">&#160;</td><td class="mdescRight">What backend the renderer should use. NOTE: ONLY OPENGL 4.2 SUPPORTED.  <a href="#ac617635d2b87a1969d411fcf09f8d983">More...</a><br /></td></tr>
+<tr class="separator:ac617635d2b87a1969d411fcf09f8d983"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c2c77c5cf5336b2278a774bbbc0844" id="r_aa9c2c77c5cf5336b2278a774bbbc0844"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa9c2c77c5cf5336b2278a774bbbc0844">RenderStatus</a> : unsigned int { <a class="el" href="#aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f">SUCCESSFUL</a> = 0
+, <a class="el" href="#aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c">RENDERER_ALREADY_INITIALIZED</a> = 1
+ }</td></tr>
+<tr class="memdesc:aa9c2c77c5cf5336b2278a774bbbc0844"><td class="mdescLeft">&#160;</td><td class="mdescRight">The statuses of the renderer's operation.  <a href="#aa9c2c77c5cf5336b2278a774bbbc0844">More...</a><br /></td></tr>
+<tr class="separator:aa9c2c77c5cf5336b2278a774bbbc0844"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf4b328a657463e6461ec5aaad0031f3" id="r_acf4b328a657463e6461ec5aaad0031f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf4b328a657463e6461ec5aaad0031f3">PassType</a> : unsigned int { <a class="el" href="#acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099">COLOR</a> = 0x8CE0
+, <a class="el" href="#acf4b328a657463e6461ec5aaad0031f3ab0de4c916a68e9027b6b38dce8f84d3f">COLOR_SINGLE</a> = 0x8CE1
+, <a class="el" href="#acf4b328a657463e6461ec5aaad0031f3af4faf9b95b96cc9be34794cf7a31edd4">DEPTH</a> = 0x8D00
+, <a class="el" href="#acf4b328a657463e6461ec5aaad0031f3aff83f06b107ff2059d3410d27e7ac3b0">STENCIL</a> = 0x8D20
+ }</td></tr>
+<tr class="memdesc:acf4b328a657463e6461ec5aaad0031f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">What kind of type the Pass Should be.  <a href="#acf4b328a657463e6461ec5aaad0031f3">More...</a><br /></td></tr>
+<tr class="separator:acf4b328a657463e6461ec5aaad0031f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a265824fb2d204e156f2c6441780e2b72" id="r_a265824fb2d204e156f2c6441780e2b72"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a265824fb2d204e156f2c6441780e2b72">ShaderStatus</a> : unsigned int { <a class="el" href="#a265824fb2d204e156f2c6441780e2b72add1dab546c7769f17e9d4e8e4f2f1bf4">SUCCESSFUL</a> = 0
+, <a class="el" href="#a265824fb2d204e156f2c6441780e2b72a554e3b301969b7f7e5029eb62105ebfb">UNKNOWN_SOURCE</a> = 1
+, <a class="el" href="#a265824fb2d204e156f2c6441780e2b72a4662e1e02abdf1af767a5e0df1d86fd0">COMPILATION_FAILED</a> = 2
+ }</td></tr>
+<tr class="memdesc:a265824fb2d204e156f2c6441780e2b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statuses for shader operations.  <a href="#a265824fb2d204e156f2c6441780e2b72">More...</a><br /></td></tr>
+<tr class="separator:a265824fb2d204e156f2c6441780e2b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1248e610959a287262cd6873908d97e5" id="r_a1248e610959a287262cd6873908d97e5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1248e610959a287262cd6873908d97e5">ShaderType</a> : unsigned int { <a class="el" href="#a1248e610959a287262cd6873908d97e5ae2f77ec0f5e09c8a4b77e3f50a99661a">VERTEX</a> = 0x8B31
+, <a class="el" href="#a1248e610959a287262cd6873908d97e5a37c1a4a2b64a7009588fe0d951ba7bb4">FRAGMENT</a> = 0x8B30
+ }</td></tr>
+<tr class="memdesc:a1248e610959a287262cd6873908d97e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader Type (more to be added in the future such as geometry).  <a href="#a1248e610959a287262cd6873908d97e5">More...</a><br /></td></tr>
+<tr class="separator:a1248e610959a287262cd6873908d97e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3d55793e34b921efea74b9b57c975082" id="r_a3d55793e34b921efea74b9b57c975082"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a3d55793e34b921efea74b9b57c975082">catos::tests::TEST_CASE</a> (&quot;REGISTRY::GET_TYPE_NAME&quot;)</td></tr>
-<tr class="separator:a3d55793e34b921efea74b9b57c975082"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86b61aaa802336f02f0614acceac24c6" id="r_a86b61aaa802336f02f0614acceac24c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a86b61aaa802336f02f0614acceac24c6">catos::tests::TEST_CASE</a> (&quot;REGISTRY::FIELDS&quot;)</td></tr>
-<tr class="separator:a86b61aaa802336f02f0614acceac24c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a994753c9053093b19e7c46057ffcf719" id="r_a994753c9053093b19e7c46057ffcf719"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a994753c9053093b19e7c46057ffcf719">catos::tests::TEST_CASE</a> (&quot;REGISTRY::METHODS&quot;)</td></tr>
-<tr class="separator:a994753c9053093b19e7c46057ffcf719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afda5b3504e78b229f5b2607e5b8789f2" id="r_afda5b3504e78b229f5b2607e5b8789f2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#afda5b3504e78b229f5b2607e5b8789f2">catos::tests::TEST_CASE</a> (&quot;Application::INSTANCES&quot;)</td></tr>
-<tr class="separator:afda5b3504e78b229f5b2607e5b8789f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfd1c23b15d8a936aecd76a884dd82d0" id="r_adfd1c23b15d8a936aecd76a884dd82d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#adfd1c23b15d8a936aecd76a884dd82d0">catos::tests::TEST_CASE</a> (&quot;STL::VECTORS&quot;)</td></tr>
-<tr class="separator:adfd1c23b15d8a936aecd76a884dd82d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a95f30a292f157c260e3c01fc4099c84f" id="r_a95f30a292f157c260e3c01fc4099c84f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00122.html#a95f30a292f157c260e3c01fc4099c84f">catos::tests::TEST_CASE</a> (&quot;STL::HASHMAPS&quot;)</td></tr>
-<tr class="separator:a95f30a292f157c260e3c01fc4099c84f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
-<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15a9986d23699b6fe1fa103e412aad9e" id="r_a15a9986d23699b6fe1fa103e412aad9e"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:a15a9986d23699b6fe1fa103e412aad9e"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a15a9986d23699b6fe1fa103e412aad9e">getNames</a> ()</td></tr>
+<tr class="separator:a15a9986d23699b6fe1fa103e412aad9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2f55e47d4a482511ba7dd433fb857f1" id="r_ab2f55e47d4a482511ba7dd433fb857f1"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
+<tr class="memitem:ab2f55e47d4a482511ba7dd433fb857f1"><td class="memTemplItemLeft" align="right" valign="top">std::string&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#ab2f55e47d4a482511ba7dd433fb857f1">getArgNames</a> ()</td></tr>
+<tr class="separator:ab2f55e47d4a482511ba7dd433fb857f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="adf980eb1ed0df2191c56fd3d218c2819" name="adf980eb1ed0df2191c56fd3d218c2819"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf980eb1ed0df2191c56fd3d218c2819">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT</h2>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a45b8ee8e2bc6a9703ca2728c4d20680a" name="a45b8ee8e2bc6a9703ca2728c4d20680a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45b8ee8e2bc6a9703ca2728c4d20680a">&#9670;&#160;</a></span>ColorBuffer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT</td>
+          <td class="memname">typedef unsigned int <a class="el" href="#a45b8ee8e2bc6a9703ca2728c4d20680a">catos::ColorBuffer</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+<a id="a4613316b0ca1f3fdbf463888395735b6" name="a4613316b0ca1f3fdbf463888395735b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4613316b0ca1f3fdbf463888395735b6">&#9670;&#160;</a></span>FrameBuffer</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int main </td>
-          <td>(</td>
-          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>argc</em>, </span></td>
+          <td class="memname">typedef unsigned int <a class="el" href="#a4613316b0ca1f3fdbf463888395735b6">catos::FrameBuffer</a></td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a66a574b855759e9da3f9fe39824b3245" name="a66a574b855759e9da3f9fe39824b3245"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a574b855759e9da3f9fe39824b3245">&#9670;&#160;</a></span>RenderBuffer</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">typedef unsigned int <a class="el" href="#a66a574b855759e9da3f9fe39824b3245">catos::RenderBuffer</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62ed9b6c5638f605322435f5461d34ea" name="a62ed9b6c5638f605322435f5461d34ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62ed9b6c5638f605322435f5461d34ea">&#9670;&#160;</a></span>ShaderProgram</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef unsigned int <a class="el" href="#a62ed9b6c5638f605322435f5461d34ea">catos::ShaderProgram</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="acf4b328a657463e6461ec5aaad0031f3" name="acf4b328a657463e6461ec5aaad0031f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf4b328a657463e6461ec5aaad0031f3">&#9670;&#160;</a></span>PassType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#acf4b328a657463e6461ec5aaad0031f3">catos::PassType</a> : unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>What kind of type the Pass Should be. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099" name="acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099"></a>COLOR&#160;</td><td class="fielddoc"><p>All colors. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf4b328a657463e6461ec5aaad0031f3ab0de4c916a68e9027b6b38dce8f84d3f" name="acf4b328a657463e6461ec5aaad0031f3ab0de4c916a68e9027b6b38dce8f84d3f"></a>COLOR_SINGLE&#160;</td><td class="fielddoc"><p>1 single color support </p>
+</td></tr>
+<tr><td class="fieldname"><a id="acf4b328a657463e6461ec5aaad0031f3af4faf9b95b96cc9be34794cf7a31edd4" name="acf4b328a657463e6461ec5aaad0031f3af4faf9b95b96cc9be34794cf7a31edd4"></a>DEPTH&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="acf4b328a657463e6461ec5aaad0031f3aff83f06b107ff2059d3410d27e7ac3b0" name="acf4b328a657463e6461ec5aaad0031f3aff83f06b107ff2059d3410d27e7ac3b0"></a>STENCIL&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="ac617635d2b87a1969d411fcf09f8d983" name="ac617635d2b87a1969d411fcf09f8d983"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac617635d2b87a1969d411fcf09f8d983">&#9670;&#160;</a></span>RenderBackendType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#ac617635d2b87a1969d411fcf09f8d983">catos::RenderBackendType</a> : unsigned int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>What backend the renderer should use. NOTE: ONLY OPENGL 4.2 SUPPORTED. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac617635d2b87a1969d411fcf09f8d983a696b031073e74bf2cb98e5ef201d4aa3" name="ac617635d2b87a1969d411fcf09f8d983a696b031073e74bf2cb98e5ef201d4aa3"></a>UNKNOWN&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71" name="ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71"></a>OPENGL_4_2&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="aa9c2c77c5cf5336b2278a774bbbc0844" name="aa9c2c77c5cf5336b2278a774bbbc0844"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9c2c77c5cf5336b2278a774bbbc0844">&#9670;&#160;</a></span>RenderStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#aa9c2c77c5cf5336b2278a774bbbc0844">catos::RenderStatus</a> : unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The statuses of the renderer's operation. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f" name="aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f"></a>SUCCESSFUL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c" name="aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c"></a>RENDERER_ALREADY_INITIALIZED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a265824fb2d204e156f2c6441780e2b72" name="a265824fb2d204e156f2c6441780e2b72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a265824fb2d204e156f2c6441780e2b72">&#9670;&#160;</a></span>ShaderStatus</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="#a265824fb2d204e156f2c6441780e2b72">catos::ShaderStatus</a> : unsigned int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Statuses for shader operations. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a265824fb2d204e156f2c6441780e2b72add1dab546c7769f17e9d4e8e4f2f1bf4" name="a265824fb2d204e156f2c6441780e2b72add1dab546c7769f17e9d4e8e4f2f1bf4"></a>SUCCESSFUL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a265824fb2d204e156f2c6441780e2b72a554e3b301969b7f7e5029eb62105ebfb" name="a265824fb2d204e156f2c6441780e2b72a554e3b301969b7f7e5029eb62105ebfb"></a>UNKNOWN_SOURCE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a265824fb2d204e156f2c6441780e2b72a4662e1e02abdf1af767a5e0df1d86fd0" name="a265824fb2d204e156f2c6441780e2b72a4662e1e02abdf1af767a5e0df1d86fd0"></a>COMPILATION_FAILED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a1248e610959a287262cd6873908d97e5" name="a1248e610959a287262cd6873908d97e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1248e610959a287262cd6873908d97e5">&#9670;&#160;</a></span>ShaderType</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="#a1248e610959a287262cd6873908d97e5">catos::ShaderType</a> : unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><a class="el" href="a00210.html">Shader</a> Type (more to be added in the future such as geometry). </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a1248e610959a287262cd6873908d97e5ae2f77ec0f5e09c8a4b77e3f50a99661a" name="a1248e610959a287262cd6873908d97e5ae2f77ec0f5e09c8a4b77e3f50a99661a"></a>VERTEX&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1248e610959a287262cd6873908d97e5a37c1a4a2b64a7009588fe0d951ba7bb4" name="a1248e610959a287262cd6873908d97e5a37c1a4a2b64a7009588fe0d951ba7bb4"></a>FRAGMENT&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ab2f55e47d4a482511ba7dd433fb857f1" name="ab2f55e47d4a482511ba7dd433fb857f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2f55e47d4a482511ba7dd433fb857f1">&#9670;&#160;</a></span>getArgNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string catos::getArgNames </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">char **</td>          <td class="paramname"><span class="paramname"><em>argv</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15a9986d23699b6fe1fa103e412aad9e" name="a15a9986d23699b6fe1fa103e412aad9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15a9986d23699b6fe1fa103e412aad9e">&#9670;&#160;</a></span>getNames()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... Args&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string catos::getNames </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">

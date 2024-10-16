@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): VkPipelines.h File Reference</title>
+<title>Catos Engine (Source): shader.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -97,51 +97,45 @@ $(function(){initNavTree('a00071.html',''); initResizable(); });
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">VkPipelines.h File Reference</div></div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
+  <div class="headertitle"><div class="title">shader.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
-<code>#include &quot;<a class="el" href="a00059_source.html">VkInitializers.h</a>&quot;</code><br />
-</div>
+
 <p><a href="a00071_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00270.html">PipelineBuilder</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00206.html">catos::ShaderCreateInfo</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00210.html">catos::Shader</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:a00119" id="r_a00119"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00119.html">VkUtil</a></td></tr>
+<tr class="memitem:a00107" id="r_a00107"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html">catos</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:acf55208507a986f3bce7bf1dc150b896" id="r_acf55208507a986f3bce7bf1dc150b896"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf55208507a986f3bce7bf1dc150b896">ATOMUSVULKAN_VKPIPELINES_H</a></td></tr>
-<tr class="separator:acf55208507a986f3bce7bf1dc150b896"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a62ed9b6c5638f605322435f5461d34ea" id="r_a62ed9b6c5638f605322435f5461d34ea"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a62ed9b6c5638f605322435f5461d34ea">catos::ShaderProgram</a></td></tr>
+<tr class="separator:a62ed9b6c5638f605322435f5461d34ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a73da1142a76da292c64a9499aacf5bc2" id="r_a73da1142a76da292c64a9499aacf5bc2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00119.html#a73da1142a76da292c64a9499aacf5bc2">VkUtil::loadShaderModule</a> (const char *filePath, VkDevice device, VkShaderModule *outShaderModule)</td></tr>
-<tr class="separator:a73da1142a76da292c64a9499aacf5bc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a265824fb2d204e156f2c6441780e2b72" id="r_a265824fb2d204e156f2c6441780e2b72"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a265824fb2d204e156f2c6441780e2b72">catos::ShaderStatus</a> : unsigned int { <a class="el" href="a00107.html#a265824fb2d204e156f2c6441780e2b72add1dab546c7769f17e9d4e8e4f2f1bf4">catos::SUCCESSFUL</a> = 0
+, <a class="el" href="a00107.html#a265824fb2d204e156f2c6441780e2b72a554e3b301969b7f7e5029eb62105ebfb">catos::UNKNOWN_SOURCE</a> = 1
+, <a class="el" href="a00107.html#a265824fb2d204e156f2c6441780e2b72a4662e1e02abdf1af767a5e0df1d86fd0">catos::COMPILATION_FAILED</a> = 2
+ }</td></tr>
+<tr class="memdesc:a265824fb2d204e156f2c6441780e2b72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Statuses for shader operations.  <a href="a00107.html#a265824fb2d204e156f2c6441780e2b72">More...</a><br /></td></tr>
+<tr class="separator:a265824fb2d204e156f2c6441780e2b72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1248e610959a287262cd6873908d97e5" id="r_a1248e610959a287262cd6873908d97e5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a1248e610959a287262cd6873908d97e5">catos::ShaderType</a> : unsigned int { <a class="el" href="a00107.html#a1248e610959a287262cd6873908d97e5ae2f77ec0f5e09c8a4b77e3f50a99661a">catos::VERTEX</a> = 0x8B31
+, <a class="el" href="a00107.html#a1248e610959a287262cd6873908d97e5a37c1a4a2b64a7009588fe0d951ba7bb4">catos::FRAGMENT</a> = 0x8B30
+ }</td></tr>
+<tr class="memdesc:a1248e610959a287262cd6873908d97e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shader Type (more to be added in the future such as geometry).  <a href="a00107.html#a1248e610959a287262cd6873908d97e5">More...</a><br /></td></tr>
+<tr class="separator:a1248e610959a287262cd6873908d97e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="acf55208507a986f3bce7bf1dc150b896" name="acf55208507a986f3bce7bf1dc150b896"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf55208507a986f3bce7bf1dc150b896">&#9670;&#160;</a></span>ATOMUSVULKAN_VKPIPELINES_H</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ATOMUSVULKAN_VKPIPELINES_H</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <p>

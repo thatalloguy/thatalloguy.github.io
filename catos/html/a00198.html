@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): DescriptorAllocatorGrowable::PoolSizeRatio Struct Reference</title>
+<title>Catos Engine (Source): catos::RenderPass Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,52 +95,219 @@ $(function(){initNavTree('a00198.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a00195.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DescriptorAllocatorGrowable::PoolSizeRatio Struct Reference</div></div>
+  <div class="headertitle"><div class="title">catos::RenderPass Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00041_source.html">VkDescriptors.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00059_source.html">renderPass.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a225b758ecd1cfec187eff382cf678e24" id="r_a225b758ecd1cfec187eff382cf678e24"><td class="memItemLeft" align="right" valign="top">VkDescriptorType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a225b758ecd1cfec187eff382cf678e24">type</a></td></tr>
-<tr class="separator:a225b758ecd1cfec187eff382cf678e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81f0e5da32fc800faa04f6add9b3e29" id="r_ab81f0e5da32fc800faa04f6add9b3e29"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab81f0e5da32fc800faa04f6add9b3e29">ratio</a></td></tr>
-<tr class="separator:ab81f0e5da32fc800faa04f6add9b3e29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a4321b2129b7f6c4a80e799a4f5f5c42f" id="r_a4321b2129b7f6c4a80e799a4f5f5c42f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4321b2129b7f6c4a80e799a4f5f5c42f">RenderPass</a> (const <a class="el" href="a00194.html">RenderPassCreationInfo</a> &amp;info, <a class="el" href="a00210.html">Shader</a> &amp;shaderToUse)</td></tr>
+<tr class="separator:a4321b2129b7f6c4a80e799a4f5f5c42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3918c3c7e214c6367f0bf0d93f7d337b" id="r_a3918c3c7e214c6367f0bf0d93f7d337b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3918c3c7e214c6367f0bf0d93f7d337b">~RenderPass</a> ()</td></tr>
+<tr class="separator:a3918c3c7e214c6367f0bf0d93f7d337b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89994820e4f723d64659de3d9c26cf34" id="r_a89994820e4f723d64659de3d9c26cf34"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a89994820e4f723d64659de3d9c26cf34">bindPass</a> ()</td></tr>
+<tr class="memdesc:a89994820e4f723d64659de3d9c26cf34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds and cleans the pass.  <br /></td></tr>
+<tr class="separator:a89994820e4f723d64659de3d9c26cf34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f28d8d3877c4ed34e7faeca6c3409f3" id="r_a5f28d8d3877c4ed34e7faeca6c3409f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f28d8d3877c4ed34e7faeca6c3409f3">unbindPass</a> ()</td></tr>
+<tr class="memdesc:a5f28d8d3877c4ed34e7faeca6c3409f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">UnBinds and cleans the pass.  <br /></td></tr>
+<tr class="separator:a5f28d8d3877c4ed34e7faeca6c3409f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b83037d838ea8311ff2b5af294147c5" id="r_a5b83037d838ea8311ff2b5af294147c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00107.html#a4613316b0ca1f3fdbf463888395735b6">FrameBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5b83037d838ea8311ff2b5af294147c5">getFrameBuffer</a> ()</td></tr>
+<tr class="separator:a5b83037d838ea8311ff2b5af294147c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b873b18d3e44a61183e6141038e7536" id="r_a9b873b18d3e44a61183e6141038e7536"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00107.html#a45b8ee8e2bc6a9703ca2728c4d20680a">ColorBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9b873b18d3e44a61183e6141038e7536">getPassTexture</a> ()</td></tr>
+<tr class="separator:a9b873b18d3e44a61183e6141038e7536"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec48b82a9b70405e6fcc683604e0dbc5" id="r_aec48b82a9b70405e6fcc683604e0dbc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00107.html#a66a574b855759e9da3f9fe39824b3245">RenderBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec48b82a9b70405e6fcc683604e0dbc5">getRenderBuffer</a> ()</td></tr>
+<tr class="separator:aec48b82a9b70405e6fcc683604e0dbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9aacdeee122f237f76c2aaae2dfd5cb6" id="r_a9aacdeee122f237f76c2aaae2dfd5cb6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aacdeee122f237f76c2aaae2dfd5cb6">isFinal</a> ()</td></tr>
+<tr class="memdesc:a9aacdeee122f237f76c2aaae2dfd5cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">isFinal is wether or not the User will see this texture.  <br /></td></tr>
+<tr class="separator:a9aacdeee122f237f76c2aaae2dfd5cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab81f0e5da32fc800faa04f6add9b3e29" name="ab81f0e5da32fc800faa04f6add9b3e29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab81f0e5da32fc800faa04f6add9b3e29">&#9670;&#160;</a></span>ratio</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a4321b2129b7f6c4a80e799a4f5f5c42f" name="a4321b2129b7f6c4a80e799a4f5f5c42f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4321b2129b7f6c4a80e799a4f5f5c42f">&#9670;&#160;</a></span>RenderPass()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">float DescriptorAllocatorGrowable::PoolSizeRatio::ratio</td>
+          <td class="memname">catos::RenderPass::RenderPass </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="a00194.html">RenderPassCreationInfo</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>info</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="a00210.html">catos::Shader</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>shaderToUse</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a225b758ecd1cfec187eff382cf678e24" name="a225b758ecd1cfec187eff382cf678e24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a225b758ecd1cfec187eff382cf678e24">&#9670;&#160;</a></span>type</h2>
+<a id="a3918c3c7e214c6367f0bf0d93f7d337b" name="a3918c3c7e214c6367f0bf0d93f7d337b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3918c3c7e214c6367f0bf0d93f7d337b">&#9670;&#160;</a></span>~RenderPass()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VkDescriptorType DescriptorAllocatorGrowable::PoolSizeRatio::type</td>
+          <td class="memname">catos::RenderPass::~RenderPass </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00041_source.html">VkDescriptors.h</a></li>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a89994820e4f723d64659de3d9c26cf34" name="a89994820e4f723d64659de3d9c26cf34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89994820e4f723d64659de3d9c26cf34">&#9670;&#160;</a></span>bindPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::RenderPass::bindPass </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Binds and cleans the pass. </p>
+
+</div>
+</div>
+<a id="a5b83037d838ea8311ff2b5af294147c5" name="a5b83037d838ea8311ff2b5af294147c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b83037d838ea8311ff2b5af294147c5">&#9670;&#160;</a></span>getFrameBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00107.html#a4613316b0ca1f3fdbf463888395735b6">FrameBuffer</a> catos::RenderPass::getFrameBuffer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b873b18d3e44a61183e6141038e7536" name="a9b873b18d3e44a61183e6141038e7536"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b873b18d3e44a61183e6141038e7536">&#9670;&#160;</a></span>getPassTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00107.html#a45b8ee8e2bc6a9703ca2728c4d20680a">ColorBuffer</a> catos::RenderPass::getPassTexture </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aec48b82a9b70405e6fcc683604e0dbc5" name="aec48b82a9b70405e6fcc683604e0dbc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec48b82a9b70405e6fcc683604e0dbc5">&#9670;&#160;</a></span>getRenderBuffer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="a00107.html#a66a574b855759e9da3f9fe39824b3245">RenderBuffer</a> catos::RenderPass::getRenderBuffer </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9aacdeee122f237f76c2aaae2dfd5cb6" name="a9aacdeee122f237f76c2aaae2dfd5cb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9aacdeee122f237f76c2aaae2dfd5cb6">&#9670;&#160;</a></span>isFinal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool catos::RenderPass::isFinal </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>isFinal is wether or not the User will see this texture. </p>
+
+</div>
+</div>
+<a id="a5f28d8d3877c4ed34e7faeca6c3409f3" name="a5f28d8d3877c4ed34e7faeca6c3409f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f28d8d3877c4ed34e7faeca6c3409f3">&#9670;&#160;</a></span>unbindPass()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::RenderPass::unbindPass </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>UnBinds and cleans the pass. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="a00059_source.html">renderPass.h</a></li>
+<li><a class="el" href="a00056.html">renderPass.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

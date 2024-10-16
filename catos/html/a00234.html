@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): DrawContext Struct Reference</title>
+<title>Catos Engine (Source): catos::HashFunc&lt; K &gt; Struct Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,52 +95,53 @@ $(function(){initNavTree('a00234.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="a00231.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">DrawContext Struct Reference</div></div>
+  <div class="headertitle"><div class="title">catos::HashFunc&lt; K &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00047_source.html">VkEngine.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00083_source.html">hashmap.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a92fc7232c72c6f3b5dc4e12dd6606f17" id="r_a92fc7232c72c6f3b5dc4e12dd6606f17"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00230.html">RenderObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a92fc7232c72c6f3b5dc4e12dd6606f17">OpaqueSurfaces</a></td></tr>
-<tr class="separator:a92fc7232c72c6f3b5dc4e12dd6606f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad057160f65e0657e137a740ec37d31c2" id="r_ad057160f65e0657e137a740ec37d31c2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="a00230.html">RenderObject</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad057160f65e0657e137a740ec37d31c2">TransparentSurfaces</a></td></tr>
-<tr class="separator:ad057160f65e0657e137a740ec37d31c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0221d03828ae37a83b2e8a40d912224b" id="r_a0221d03828ae37a83b2e8a40d912224b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0221d03828ae37a83b2e8a40d912224b">operator()</a> (const K &amp;key, int Size) const</td></tr>
+<tr class="separator:a0221d03828ae37a83b2e8a40d912224b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a92fc7232c72c6f3b5dc4e12dd6606f17" name="a92fc7232c72c6f3b5dc4e12dd6606f17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92fc7232c72c6f3b5dc4e12dd6606f17">&#9670;&#160;</a></span>OpaqueSurfaces</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0221d03828ae37a83b2e8a40d912224b" name="a0221d03828ae37a83b2e8a40d912224b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0221d03828ae37a83b2e8a40d912224b">&#9670;&#160;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename K &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="a00230.html">RenderObject</a>&gt; DrawContext::OpaqueSurfaces</td>
+          <td class="memname">size_t <a class="el" href="a00234.html">catos::HashFunc</a>&lt; K &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;</td>          <td class="paramname"><span class="paramname"><em>key</em>, </span></td>
         </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad057160f65e0657e137a740ec37d31c2" name="ad057160f65e0657e137a740ec37d31c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad057160f65e0657e137a740ec37d31c2">&#9670;&#160;</a></span>TransparentSurfaces</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="a00230.html">RenderObject</a>&gt; DrawContext::TransparentSurfaces</td>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>Size</em></span>&#160;) const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="a00047_source.html">VkEngine.h</a></li>
+<li><a class="el" href="a00083_source.html">hashmap.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

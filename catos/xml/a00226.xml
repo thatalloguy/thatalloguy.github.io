@@ -1,120 +1,31 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00226" kind="struct" language="C++" prot="public">
-    <compoundname>GLTFMetallic_roughness::MaterialResources</compoundname>
-    <includes refid="a00047" local="no">VkEngine.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00226_1a3dd3a1bd7517a31b58583f30940c3441" prot="public" static="no" mutable="no">
-        <type><ref refid="a00314" kindref="compound">AllocatedImage</ref></type>
-        <definition>AllocatedImage GLTFMetallic_roughness::MaterialResources::colorImage</definition>
-        <argsstring></argsstring>
-        <name>colorImage</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::colorImage</qualifiedname>
+    <compoundname>catos::key_not_found</compoundname>
+    <includes refid="a00083" local="no">hashmap.h</includes>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00226_1a4124b3708acd53b4d9d851d8e828c0d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * catos::key_not_found::what</definition>
+        <argsstring>()</argsstring>
+        <name>what</name>
+        <qualifiedname>catos::key_not_found::what</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="67" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="67" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00226_1a14de3bb8c602f204bcf5d6c2ccb7ee2a" prot="public" static="no" mutable="no">
-        <type>VkSampler</type>
-        <definition>VkSampler GLTFMetallic_roughness::MaterialResources::colorSampler</definition>
-        <argsstring></argsstring>
-        <name>colorSampler</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::colorSampler</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="68" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="68" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00226_1af7791b1215a1fee0b5897e1d39a3c9ed" prot="public" static="no" mutable="no">
-        <type><ref refid="a00314" kindref="compound">AllocatedImage</ref></type>
-        <definition>AllocatedImage GLTFMetallic_roughness::MaterialResources::metalRoughImage</definition>
-        <argsstring></argsstring>
-        <name>metalRoughImage</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::metalRoughImage</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="69" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="69" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00226_1aad3abdd50028f1774271881c1de7dc85" prot="public" static="no" mutable="no">
-        <type>VkSampler</type>
-        <definition>VkSampler GLTFMetallic_roughness::MaterialResources::metalRoughSampler</definition>
-        <argsstring></argsstring>
-        <name>metalRoughSampler</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::metalRoughSampler</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="70" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="70" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00226_1af0402d122ad15ba381be88d540c77fa7" prot="public" static="no" mutable="no">
-        <type>VkBuffer</type>
-        <definition>VkBuffer GLTFMetallic_roughness::MaterialResources::dataBuffer</definition>
-        <argsstring></argsstring>
-        <name>dataBuffer</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::dataBuffer</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="71" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="71" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00226_1a7f4e87b350163adac17d662bef1eab3b" prot="public" static="no" mutable="no">
-        <type>uint32_t</type>
-        <definition>uint32_t GLTFMetallic_roughness::MaterialResources::dataBufferOffset</definition>
-        <argsstring></argsstring>
-        <name>dataBufferOffset</name>
-        <qualifiedname>GLTFMetallic_roughness::MaterialResources::dataBufferOffset</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="72" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="18" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="18" bodyend="20"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="2">
-        <label>AllocatedImage</label>
-        <link refid="a00314"/>
-      </node>
-      <node id="1">
-        <label>GLTFMetallic_roughness::MaterialResources</label>
-        <link refid="a00226"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>colorImage</edgelabel>
-          <edgelabel>metalRoughImage</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="66" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="66" bodyend="73"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="17" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="17" bodyend="21"/>
     <listofallmembers>
-      <member refid="a00226_1a3dd3a1bd7517a31b58583f30940c3441" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>colorImage</name></member>
-      <member refid="a00226_1a14de3bb8c602f204bcf5d6c2ccb7ee2a" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>colorSampler</name></member>
-      <member refid="a00226_1af0402d122ad15ba381be88d540c77fa7" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>dataBuffer</name></member>
-      <member refid="a00226_1a7f4e87b350163adac17d662bef1eab3b" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>dataBufferOffset</name></member>
-      <member refid="a00226_1af7791b1215a1fee0b5897e1d39a3c9ed" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>metalRoughImage</name></member>
-      <member refid="a00226_1aad3abdd50028f1774271881c1de7dc85" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness::MaterialResources</scope><name>metalRoughSampler</name></member>
+      <member refid="a00226_1a4124b3708acd53b4d9d851d8e828c0d2" prot="public" virt="non-virtual"><scope>catos::key_not_found</scope><name>what</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

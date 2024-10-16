@@ -1,82 +1,135 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00258" kind="struct" language="C++" prot="public">
-    <compoundname>MeshAsset</compoundname>
-    <includes refid="a00065" local="no">VkLoader.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00258_1a7abaa0b660e944edd81ce5186c32d367" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string MeshAsset::name</definition>
+  <compounddef id="a00258" kind="class" language="C++" prot="public">
+    <compoundname>catos::vector::iterator</compoundname>
+    <includes refid="a00101" local="no">vector.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00258_1ab7bca85f1f6840ede38062dd28ed27db" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* catos::vector&lt; T &gt;::iterator::_curr</definition>
         <argsstring></argsstring>
-        <name>name</name>
-        <qualifiedname>MeshAsset::name</qualifiedname>
+        <name>_curr</name>
+        <qualifiedname>catos::vector::iterator::_curr</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="51" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="51" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="274" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="274" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00258_1a40aac10ab4f9e8d1041ea3035336c68a" prot="public" static="no" mutable="no">
-        <type>std::vector&lt; <ref refid="a00254" kindref="compound">GeoSurface</ref> &gt;</type>
-        <definition>std::vector&lt;GeoSurface&gt; MeshAsset::surfaces</definition>
-        <argsstring></argsstring>
-        <name>surfaces</name>
-        <qualifiedname>MeshAsset::surfaces</qualifiedname>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00258_1ab0e775cb0f1d8c0a0a068920bedb766d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::vector&lt; T &gt;::iterator::iterator</definition>
+        <argsstring>(T *p)</argsstring>
+        <name>iterator</name>
+        <qualifiedname>catos::vector::iterator::iterator</qualifiedname>
+        <param>
+          <type>T *</type>
+          <declname>p</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="53" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="53" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="242" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="242" bodyend="244"/>
       </memberdef>
-      <memberdef kind="variable" id="a00258_1a27c656c430749b3b3412dcafba2c7b9c" prot="public" static="no" mutable="no">
-        <type><ref refid="a00290" kindref="compound">GPUMeshBuffers</ref></type>
-        <definition>GPUMeshBuffers MeshAsset::meshBuffers</definition>
-        <argsstring></argsstring>
-        <name>meshBuffers</name>
-        <qualifiedname>MeshAsset::meshBuffers</qualifiedname>
+      <memberdef kind="function" id="a00258_1a17a82b93222cdeb02a1c08097db8bdbc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00258" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator &amp; catos::vector&lt; T &gt;::iterator::operator++</definition>
+        <argsstring>()</argsstring>
+        <name>operator++</name>
+        <qualifiedname>catos::vector::iterator::operator++</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="54" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="54" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="246" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="246" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="a00258_1a366ed031708b5b46d97890c0ce249b07" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00258" kindref="compound">iterator</ref> &amp;</type>
+        <definition>iterator &amp; catos::vector&lt; T &gt;::iterator::operator--</definition>
+        <argsstring>()</argsstring>
+        <name>operator--</name>
+        <qualifiedname>catos::vector::iterator::operator--</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="252" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="252" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="a00258_1a60ac124ebcadcd904ea45b3f1c7f30ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; catos::vector&lt; T &gt;::iterator::operator*</definition>
+        <argsstring>()</argsstring>
+        <name>operator*</name>
+        <qualifiedname>catos::vector::iterator::operator*</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="258" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="a00258_1a2c4489a63561f426f93ac1692f22ec86" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::vector&lt; T &gt;::iterator::operator==</definition>
+        <argsstring>(const iterator &amp;b) const</argsstring>
+        <name>operator==</name>
+        <qualifiedname>catos::vector::iterator::operator==</qualifiedname>
+        <param>
+          <type>const <ref refid="a00258" kindref="compound">iterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="263" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="263" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="a00258_1aa29fbef28977148af1ca11ebcf80e08a" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::vector&lt; T &gt;::iterator::operator!=</definition>
+        <argsstring>(const iterator &amp;b) const</argsstring>
+        <name>operator!=</name>
+        <qualifiedname>catos::vector::iterator::operator!=</qualifiedname>
+        <param>
+          <type>const <ref refid="a00258" kindref="compound">iterator</ref> &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="268" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="268" bodyend="271"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="3">
-        <label>AllocatedBuffer</label>
-        <link refid="a00282"/>
-      </node>
-      <node id="2">
-        <label>GPUMeshBuffers</label>
-        <link refid="a00290"/>
-        <childnode refid="3" relation="usage">
-          <edgelabel>indexBuffer</edgelabel>
-          <edgelabel>vertexBuffer</edgelabel>
-        </childnode>
-      </node>
-      <node id="1">
-        <label>MeshAsset</label>
-        <link refid="a00258"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>meshBuffers</edgelabel>
-        </childnode>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="50" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="50" bodyend="55"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" line="239" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h" bodystart="240" bodyend="280"/>
     <listofallmembers>
-      <member refid="a00258_1a27c656c430749b3b3412dcafba2c7b9c" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>meshBuffers</name></member>
-      <member refid="a00258_1a7abaa0b660e944edd81ce5186c32d367" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>name</name></member>
-      <member refid="a00258_1a40aac10ab4f9e8d1041ea3035336c68a" prot="public" virt="non-virtual"><scope>MeshAsset</scope><name>surfaces</name></member>
+      <member refid="a00258_1ab7bca85f1f6840ede38062dd28ed27db" prot="private" virt="non-virtual"><scope>catos::vector::iterator</scope><name>_curr</name></member>
+      <member refid="a00258_1ab0e775cb0f1d8c0a0a068920bedb766d" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>iterator</name></member>
+      <member refid="a00258_1aa29fbef28977148af1ca11ebcf80e08a" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator!=</name></member>
+      <member refid="a00258_1a60ac124ebcadcd904ea45b3f1c7f30ae" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator*</name></member>
+      <member refid="a00258_1a17a82b93222cdeb02a1c08097db8bdbc" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator++</name></member>
+      <member refid="a00258_1a366ed031708b5b46d97890c0ce249b07" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator--</name></member>
+      <member refid="a00258_1a2c4489a63561f426f93ac1692f22ec86" prot="public" virt="non-virtual"><scope>catos::vector::iterator</scope><name>operator==</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

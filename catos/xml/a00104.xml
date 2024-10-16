@@ -1,373 +1,358 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00104" kind="file" language="C++">
-    <compoundname>vector.h</compoundname>
-    <includes local="no">cstring</includes>
-    <includedby refid="a00080" local="yes">ScriptingEngine.h</includedby>
-    <includedby refid="a00107" local="yes">main.cpp</includedby>
-    <includedby refid="a00101" local="yes">vector.cpp</includedby>
-    <includedby refid="a00113" local="yes">world.h</includedby>
+    <compoundname>main.cpp</compoundname>
+    <includes local="yes">../doctest/doctest/doctest.h</includes>
+    <includes refid="a00017" local="yes">core/type_utils.h</includes>
+    <includes refid="a00011" local="yes">core/registry.h</includes>
+    <includes refid="a00005" local="yes">core/application.h</includes>
+    <includes refid="a00101" local="yes">stl/vector.h</includes>
+    <includes refid="a00083" local="yes">stl/hashmap.h</includes>
     <incdepgraph>
-      <node id="1">
-        <label>vector.h</label>
-        <link refid="a00104"/>
-        <childnode refid="2" relation="include">
+      <node id="2">
+        <label>../doctest/doctest/doctest.h</label>
+      </node>
+      <node id="24">
+        <label>core/application.h</label>
+        <link refid="a00005"/>
+        <childnode refid="17" relation="include">
         </childnode>
-      </node>
-      <node id="2">
-        <label>cstring</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="3">
-        <label>ScriptingEngine.cpp</label>
-        <link refid="a00077"/>
-      </node>
-      <node id="2">
-        <label>ScriptingEngine.h</label>
-        <link refid="a00080"/>
         <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
       </node>
       <node id="5">
-        <label>vector.cpp</label>
+        <label>core/registry.h</label>
+        <link refid="a00011"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>core/type_utils.h</label>
+        <link refid="a00017"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>types.h</label>
+        <link refid="a00014"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>scripting/ScriptingEngine.h</label>
+        <link refid="a00077"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>stl/hashmap.h</label>
+        <link refid="a00083"/>
+      </node>
+      <node id="10">
+        <label>stl/pair.h</label>
+        <link refid="a00089"/>
+      </node>
+      <node id="7">
+        <label>stl/string.h</label>
+        <link refid="a00095"/>
+      </node>
+      <node id="8">
+        <label>stl/vector.h</label>
         <link refid="a00101"/>
+        <childnode refid="9" relation="include">
+        </childnode>
       </node>
       <node id="1">
-        <label>vector.h</label>
+        <label>main.cpp</label>
         <link refid="a00104"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>any</label>
+      </node>
+      <node id="9">
+        <label>cstring</label>
+      </node>
+      <node id="20">
+        <label>deque</label>
+      </node>
+      <node id="21">
+        <label>fstream</label>
+      </node>
+      <node id="19">
+        <label>functional</label>
+      </node>
+      <node id="16">
+        <label>iostream</label>
+      </node>
+      <node id="12">
+        <label>pocketpy/pocketpy.h</label>
+      </node>
+      <node id="13">
+        <label>pybind11.h</label>
+      </node>
+      <node id="23">
+        <label>regex</label>
+      </node>
+      <node id="18">
+        <label>string</label>
+      </node>
+      <node id="22">
+        <label>typeindex</label>
       </node>
       <node id="4">
-        <label>main.cpp</label>
-        <link refid="a00107"/>
+        <label>typeinfo</label>
       </node>
-      <node id="7">
-        <label>world.cpp</label>
-        <link refid="a00110"/>
+      <node id="15">
+        <label>unordered_map</label>
       </node>
-      <node id="6">
-        <label>world.h</label>
-        <link refid="a00113"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-    </invincdepgraph>
-    <innerclass refid="a00354" prot="public">out_of_range</innerclass>
-    <innerclass refid="a00358" prot="public">catos::vector</innerclass>
-    <innerclass refid="a00362" prot="public">catos::vector::iterator</innerclass>
-    <innernamespace refid="a00116">catos</innernamespace>
+    </incdepgraph>
+    <innerclass refid="a00262" prot="public">Foo</innerclass>
+    <innerclass refid="a00266" prot="public">TransformComponent</innerclass>
+    <innerclass refid="a00270" prot="public">ComponentTest</innerclass>
+    <innernamespace refid="a00107">catos</innernamespace>
+    <innernamespace refid="a00110">catos::tests</innernamespace>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="a00104_1adf980eb1ed0df2191c56fd3d218c2819" prot="public" static="no">
+        <name>DOCTEST_CONFIG_IMPLEMENT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="2" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="2" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="a00104_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="144" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="144" bodyend="154"/>
+      </memberdef>
+    </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>8/22/2024.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOCTEST_CONFIG_IMPLEMENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../doctest/doctest/doctest.h&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CATOS_VECTOR_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CATOS_VECTOR_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="a00354" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00354" kindref="compound">out_of_range</ref><sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00017" kindref="compound">core/type_utils.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00011" kindref="compound">core/registry.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00005" kindref="compound">core/application.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00101" kindref="compound">stl/vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00083" kindref="compound">stl/hashmap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12" refid="a00354_1a4ef6fabfd6536c402adef9d4238b8aaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="a00354_1a4ef6fabfd6536c402adef9d4238b8aaf" kindref="member">what</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;Vector<sp/>out<sp/>of<sp/>range&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="a00262" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00262" kindref="compound">Foo</ref><sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>=<sp/>2;</highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00116" kindref="compound">catos</ref><sp/>{</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00262_1a48d3d5772799f8f7cc35939108de7cc9" kindref="member">get_data</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="22" refid="a00358" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00358" kindref="compound">vector</ref><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="a00266" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00266" kindref="compound">TransformComponent</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00266_1a30d1678c82cfa095b35ecb9a180bb697" kindref="member">x</ref>,<sp/><ref refid="a00266_1a8661b2f37bf9926ed19e7a4a8fc2d41b" kindref="member">y</ref>,<sp/><ref refid="a00266_1a054fd9da0e88b2e9a2d8bb28b3e0dde8" kindref="member">z</ref>;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="a00358_1aa1db0b578d5d91b59a2a54ccf8dd3393" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1aa1db0b578d5d91b59a2a54ccf8dd3393" kindref="member">vector</ref>():<sp/>buf(nullptr),<sp/>size(0)<sp/>{};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00266_1a418d776f12e6e744c9ac7beed11bb3cf" kindref="member">operator!=</ref>(<ref refid="a00266" kindref="compound">TransformComponent</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30" refid="a00358_1ac8ffbbbf217c6c3e3f503b7f506a9939" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1ac8ffbbbf217c6c3e3f503b7f506a9939" kindref="member">vector</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00358" kindref="compound">vector</ref>&amp;<sp/>obj)<sp/>{</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Allocate<sp/>enough<sp/>mem<sp/>then<sp/>copy<sp/>the<sp/>item<sp/>values</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxSize<sp/>&gt;=<sp/>obj.size)</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1afb580c6afde40c40b6ab5ddb107a33c1" kindref="member">reserve</ref>(obj.size);</highlight></codeline>
+<codeline lineno="29" refid="a00270" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00270" kindref="compound">ComponentTest</ref><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00270_1a3814e0099de95993b4e149af850b780f" kindref="member">d</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="a00110" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00110" kindref="compound">catos::tests</ref><sp/>{</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;obj.size;<sp/>i++)</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf[i]<sp/>=<sp/>obj.buf[i];</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41" refid="a00358_1a0b4a4c09136e74ac3a36306871df7f55" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1a0b4a4c09136e74ac3a36306871df7f55" kindref="member">vector</ref>(<ref refid="a00358" kindref="compound">vector</ref>&amp;&amp;<sp/>obj)<sp/>{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>=<sp/>obj.buf;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/>obj.size;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxSize<sp/>=<sp/>obj.size;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00110_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;REGISTRY::GET_TYPE_NAME&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK((std::string)<sp/></highlight><highlight class="stringliteral">&quot;int&quot;</highlight><highlight class="normal"><sp/>==<sp/><ref refid="a00108_1a984a08d43e4be51d38568b267ed64092" kindref="member">catos::type_utils::get_type_name&lt;int&gt;</ref>());</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00110_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;REGISTRY::FIELDS&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00150" kindref="compound">Registry</ref><sp/>registry;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00262" kindref="compound">Foo</ref><sp/>foo;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
 <codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foo.<ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>=<sp/>4;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>...<sp/>Args&gt;</highlight></codeline>
-<codeline lineno="50" refid="a00358_1a66f6477f53cd424911a0221c0a1de1b1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1a66f6477f53cd424911a0221c0a1de1b1" kindref="member">vector</ref>(Args&amp;&amp;<sp/>...args):<sp/>buf(nullptr),<sp/>size(0)<sp/>{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1afb580c6afde40c40b6ab5ddb107a33c1" kindref="member">reserve</ref>((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">...(Args));</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="a00358_1ab8197cdb46bc1d75b6cd45a10f16c217" kindref="member">push_back</ref>(args),<sp/>...);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58" refid="a00358_1ad98d3e0c21c7fd0dc1e34d3d582387ca" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358" kindref="compound">vector&lt;T&gt;</ref>&amp;<sp/><ref refid="a00358_1ad98d3e0c21c7fd0dc1e34d3d582387ca" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00358" kindref="compound">vector&lt;T&gt;</ref>&amp;<sp/>obj)<sp/>{</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>obj)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>no<sp/>self<sp/>asignment.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>field<sp/>=<sp/>registry.<ref refid="a00150_1a3c1a3c07e51224b5745cd9764407efff" kindref="member">register_class</ref>&lt;<ref refid="a00262" kindref="compound">Foo</ref>&gt;().property(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">Foo::data</ref>,<sp/></highlight><highlight class="stringliteral">&quot;dummy&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00122" kindref="compound">Property</ref>*<sp/>test<sp/>=<sp/>field.get_property(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>testFloat<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*)<sp/>(test-&gt;<ref refid="a00122_1a658e2343fa5565207592286b665c82e5" kindref="member">get_value</ref>(&amp;foo));</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(foo.<ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>==<sp/>*testFloat);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(maxSize<sp/>&gt;=<sp/>obj.size)</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1afb580c6afde40c40b6ab5ddb107a33c1" kindref="member">reserve</ref>(obj.size);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00110_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;REGISTRY::METHODS&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00150" kindref="compound">Registry</ref><sp/>registry;</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;obj.size;<sp/>i++)</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf[i]<sp/>=<sp/>obj.buf[i];</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00262" kindref="compound">Foo</ref><sp/>foo;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73" refid="a00358_1afb580c6afde40c40b6ab5ddb107a33c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00358_1afb580c6afde40c40b6ab5ddb107a33c1" kindref="member">reserve</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>amount)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foo.<ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>=<sp/>4;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>field<sp/>=<sp/>registry.<ref refid="a00150_1a3c1a3c07e51224b5745cd9764407efff" kindref="member">register_class</ref>&lt;<ref refid="a00262" kindref="compound">Foo</ref>&gt;()</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.property(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">Foo::data</ref>,<sp/></highlight><highlight class="stringliteral">&quot;dummy<sp/>variable&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.method(</highlight><highlight class="stringliteral">&quot;get_data&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="a00262_1a48d3d5772799f8f7cc35939108de7cc9" kindref="member">Foo::get_data</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Returns<sp/>the<sp/>data<sp/>of<sp/>Foo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>need<sp/>if<sp/>its<sp/>the<sp/>smaller<sp/>or<sp/>same<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(amount<sp/>&lt;=<sp/>maxSize)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00122" kindref="compound">Property</ref>*<sp/>test<sp/>=<sp/>field.get_property(</highlight><highlight class="stringliteral">&quot;data&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00142" kindref="compound">Method</ref>*<sp/>meth<sp/>=<sp/>field.get_method(</highlight><highlight class="stringliteral">&quot;get_data&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//allocate<sp/>a<sp/>new<sp/>buffer<sp/>with<sp/>the<sp/>desired<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>temp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T[amount];</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">*<sp/>testFloat<sp/>=<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*)<sp/>(test-&gt;<ref refid="a00122_1a658e2343fa5565207592286b665c82e5" kindref="member">get_value</ref>(&amp;foo));</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>copy<sp/>our<sp/>current<sp/>items<sp/>to<sp/>that<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>size;<sp/>i++)</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp[i]<sp/>=<sp/>buf[i];</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(*testFloat<sp/>==<sp/>meth-&gt;<ref refid="a00142_1a5250d5fb0e0066d91dd83ea80f1fb15c" kindref="member">invoke_function</ref>&lt;</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">&gt;(&amp;foo));</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//destroy<sp/>our<sp/>previous<sp/>allocated<sp/>memory;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>buf;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00110_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;Application::INSTANCES&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>our<sp/>buffer<sp/>should<sp/>point<sp/>to<sp/>the<sp/>newly<sp/>allocated<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>=<sp/>temp;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxSize<sp/>=<sp/>amount;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00114" kindref="compound">AppCreationInfo</ref><sp/>appinfo{};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00118" kindref="compound">App</ref><sp/>app{&amp;appinfo};</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95" refid="a00358_1a5f0a2274e7ae2472021d841e662d55d2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00358_1a5f0a2274e7ae2472021d841e662d55d2" kindref="member">resize</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newSize)<sp/>{</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>need<sp/>if<sp/>its<sp/>the<sp/>smaller<sp/>or<sp/>same<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newSize<sp/>==<sp/>maxSize)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(app.is_alive());</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00262" kindref="compound">Foo</ref><sp/>foo;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(newSize<sp/>&gt;<sp/>size)<sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/><ref refid="a00354" kindref="compound">out_of_range</ref>();</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>foo.<ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>=<sp/>3.4f;</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//allocate<sp/>a<sp/>new<sp/>buffer<sp/>with<sp/>the<sp/>desired<sp/>size.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>temp<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T[newSize];</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>copy<sp/>our<sp/>current<sp/>items<sp/>to<sp/>that<sp/>array.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>newSize;<sp/>i++)</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>temp[i]<sp/>=<sp/>buf[i];</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>app.bind&lt;<ref refid="a00262" kindref="compound">Foo</ref>&gt;(&amp;foo);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>test<sp/>=<sp/>app.get&lt;<ref refid="a00262" kindref="compound">Foo</ref>&gt;();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(foo.<ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref><sp/>==<sp/>test-&gt;<ref refid="a00262_1a580ffca91bd258c922ab02aaa7ec44c6" kindref="member">data</ref>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//destroy<sp/>our<sp/>previous<sp/>allocated<sp/>memory;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>buf;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00110_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;STL::VECTORS&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>our<sp/>buffer<sp/>should<sp/>point<sp/>to<sp/>the<sp/>newly<sp/>allocated<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf<sp/>=<sp/>temp;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxSize<sp/>=<sp/>newSize;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00254" kindref="compound">catos::vector&lt;int&gt;</ref><sp/>test;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>test.<ref refid="a00254_1afb580c6afde40c40b6ab5ddb107a33c1" kindref="member">reserve</ref>(7);</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120" refid="a00358_1ab8197cdb46bc1d75b6cd45a10f16c217" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00358_1ab8197cdb46bc1d75b6cd45a10f16c217" kindref="member">push_back</ref>(T<sp/>obj)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i<sp/>&lt;<sp/>7;<sp/>i++)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>test.<ref refid="a00254_1ab8197cdb46bc1d75b6cd45a10f16c217" kindref="member">push_back</ref>(i);</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(size<sp/>&gt;=<sp/>maxSize)<sp/>{</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>8<sp/>so<sp/>that<sp/>we<sp/>dont<sp/>have<sp/>to<sp/>allocate<sp/>every<sp/>push_back.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1afb580c6afde40c40b6ab5ddb107a33c1" kindref="member">reserve</ref>(maxSize<sp/>+<sp/>8);</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//add<sp/>the<sp/>object<sp/>to<sp/>the<sp/>internal<sp/>array</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf[size]<sp/>=<sp/>obj;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>obj<sp/>:<sp/>test)<sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(obj<sp/>==<sp/>test[i]);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//increase<sp/>the<sp/>size;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size++;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136" refid="a00358_1a472e024bdfa70d37c1c2d15e1e4fa14f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00358_1a472e024bdfa70d37c1c2d15e1e4fa14f" kindref="member">clear</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00110_1a3d55793e34b921efea74b9b57c975082" kindref="member">TEST_CASE</ref>(</highlight><highlight class="stringliteral">&quot;STL::HASHMAPS&quot;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00238" kindref="compound">catos::hashmap&lt;int, int&gt;</ref><sp/>map;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;100;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map.<ref refid="a00238_1aa53edace488e9a5824fdc08d14520380" kindref="member">put</ref>(i,<sp/>i<sp/>+<sp/>60);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(buf<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>buf;</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CHECK(map.<ref refid="a00238_1a9404f2ec83113e4e1558d6b4985f0dae" kindref="member">get</ref>(40)<sp/>==<sp/>100);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>maxSize<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00104_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)<sp/>{</highlight></codeline>
 <codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149" refid="a00358_1a38786e83997d9c87fdaadde122c4179d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00358_1a38786e83997d9c87fdaadde122c4179d" kindref="member">remove</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>{</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>index;<sp/>i<sp/>&lt;<sp/>size<sp/>-<sp/>1;<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buf[i]<sp/>=<sp/>buf[i<sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size--;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="159" refid="a00358_1a6bbd7bd53f0e9dfc6e3914f62fbd4717" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="a00358_1a6bbd7bd53f0e9dfc6e3914f62fbd4717" kindref="member">at</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>{</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf[index];</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="166" refid="a00358_1a58ad892115e4eaa96a31946f7edb1809" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/><ref refid="a00358_1a58ad892115e4eaa96a31946f7edb1809" kindref="member">data</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf;<sp/>};</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169" refid="a00358_1addb4d5f92ee7c9c5e1acbc6dfb2498dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00358_1addb4d5f92ee7c9c5e1acbc6dfb2498dc" kindref="member">length</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size;</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="174" refid="a00358_1ab13b0017e4f38aa3c6049b413b4fdcb2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00358_1ab13b0017e4f38aa3c6049b413b4fdcb2" kindref="member">maxLength</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxSize;</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"></highlight></codeline>
-<codeline lineno="179" refid="a00358_1af986a5dac1b8d1bb361fcb3dcf5f3703" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="a00358_1af986a5dac1b8d1bb361fcb3dcf5f3703" kindref="member">operator[]</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/>{</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf[i];</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"></highlight></codeline>
-<codeline lineno="184"><highlight class="normal"></highlight></codeline>
-<codeline lineno="186" refid="a00358_1a34ab28bf95ca02c28b01024daa5016a6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00358_1a34ab28bf95ca02c28b01024daa5016a6" kindref="member">~vector</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"></highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(buf<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>buf;</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"></highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal"></highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>---<sp/>Iterator<sp/>stuff<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">iterator;</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight></codeline>
-<codeline lineno="199" refid="a00358_1a741aba9ff6c86c0b6b0cefcb0775428a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iterator<sp/><ref refid="a00358_1a741aba9ff6c86c0b6b0cefcb0775428a" kindref="member">begin</ref>();</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight></codeline>
-<codeline lineno="201" refid="a00358_1a4bd228b5e81ee37d775260f6b7d62598" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iterator<sp/><ref refid="a00358_1a4bd228b5e81ee37d775260f6b7d62598" kindref="member">begin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"></highlight></codeline>
-<codeline lineno="203" refid="a00358_1a49d21a45f3948ecb372b9808d93852b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iterator<sp/><ref refid="a00358_1a49d21a45f3948ecb372b9808d93852b2" kindref="member">end</ref>();</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"></highlight></codeline>
-<codeline lineno="205" refid="a00358_1af8f9d8d894768f3c83b6e9cabd8d1a2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iterator<sp/><ref refid="a00358_1af8f9d8d894768f3c83b6e9cabd8d1a2c" kindref="member">end</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"></highlight></codeline>
-<codeline lineno="207" refid="a00358_1ac421a3bceb92419a3ceb89a1c6d1a281" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iterator<sp/><ref refid="a00358_1ac421a3bceb92419a3ceb89a1c6d1a281" kindref="member">cbegin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"></highlight></codeline>
-<codeline lineno="209" refid="a00358_1a6acb786c18ead678a418366600330bed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iterator<sp/><ref refid="a00358_1a6acb786c18ead678a418366600330bed" kindref="member">cend</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="211"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>buf<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>actual<sp/>amount<sp/>of<sp/>items<sp/>in<sp/>the<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>max<sp/>amount<sp/>of<sp/>items<sp/>in<sp/>the<sp/>buffer.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxSize<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"></highlight></codeline>
-<codeline lineno="224"><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="normal"></highlight></codeline>
-<codeline lineno="226" refid="a00362" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00358" kindref="compound">vector</ref>&lt;T&gt;::<ref refid="a00362" kindref="compound">iterator</ref></highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="229" refid="a00362_1ab0e775cb0f1d8c0a0a068920bedb766d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00362_1ab0e775cb0f1d8c0a0a068920bedb766d" kindref="member">iterator</ref>(T*<sp/>p)</highlight></codeline>
-<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:_curr(p)</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
-<codeline lineno="232"><highlight class="normal"></highlight></codeline>
-<codeline lineno="233" refid="a00362_1a17a82b93222cdeb02a1c08097db8bdbc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00362" kindref="compound">iterator</ref>&amp;<sp/><ref refid="a00362_1a17a82b93222cdeb02a1c08097db8bdbc" kindref="member">operator++</ref>()</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_curr++;</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"></highlight></codeline>
-<codeline lineno="239" refid="a00362_1a366ed031708b5b46d97890c0ce249b07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00362" kindref="compound">iterator</ref>&amp;<sp/><ref refid="a00362_1a366ed031708b5b46d97890c0ce249b07" kindref="member">operator--</ref>()</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_curr--;</highlight></codeline>
-<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"></highlight></codeline>
-<codeline lineno="245" refid="a00362_1a60ac124ebcadcd904ea45b3f1c7f30ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="a00362_1a60ac124ebcadcd904ea45b3f1c7f30ae" kindref="member">operator*</ref>()</highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*_curr;</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"></highlight></codeline>
-<codeline lineno="250" refid="a00362_1a2c4489a63561f426f93ac1692f22ec86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00362_1a2c4489a63561f426f93ac1692f22ec86" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">iterator</ref>&amp;<sp/>b)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="251"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*_curr<sp/>==<sp/>*b._curr;</highlight></codeline>
-<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"></highlight></codeline>
-<codeline lineno="255" refid="a00362_1aa29fbef28977148af1ca11ebcf80e08a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00362_1aa29fbef28977148af1ca11ebcf80e08a" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">iterator</ref>&amp;<sp/>b)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="256"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_curr<sp/>!=<sp/>b._curr;</highlight></codeline>
-<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"></highlight></codeline>
-<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T*<sp/>_curr;</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"></highlight></codeline>
-<codeline lineno="263"><highlight class="normal"></highlight></codeline>
-<codeline lineno="264"><highlight class="normal"></highlight></codeline>
-<codeline lineno="265"><highlight class="normal"></highlight></codeline>
-<codeline lineno="266"><highlight class="normal"></highlight></codeline>
-<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="268"><highlight class="normal"></highlight></codeline>
-<codeline lineno="269"><highlight class="normal"></highlight></codeline>
-<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="271" refid="a00358_1a741aba9ff6c86c0b6b0cefcb0775428a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref><sp/><ref refid="a00358_1a741aba9ff6c86c0b6b0cefcb0775428a" kindref="member">vector&lt;T&gt;::begin</ref>()</highlight></codeline>
-<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref>(&amp;buf[0]);</highlight></codeline>
-<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="275"><highlight class="normal"></highlight></codeline>
-<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="277" refid="a00358_1a4bd228b5e81ee37d775260f6b7d62598" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref><sp/><ref refid="a00358_1a741aba9ff6c86c0b6b0cefcb0775428a" kindref="member">vector&lt;T&gt;::begin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref>(&amp;buf[0]);</highlight></codeline>
-<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="280"><highlight class="normal"></highlight></codeline>
-<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="282" refid="a00358_1a49d21a45f3948ecb372b9808d93852b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref><sp/><ref refid="a00358_1a49d21a45f3948ecb372b9808d93852b2" kindref="member">vector&lt;T&gt;::end</ref>()</highlight></codeline>
-<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref>(&amp;buf[size]);</highlight></codeline>
-<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="286"><highlight class="normal"></highlight></codeline>
-<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="288" refid="a00358_1af8f9d8d894768f3c83b6e9cabd8d1a2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref><sp/><ref refid="a00358_1a49d21a45f3948ecb372b9808d93852b2" kindref="member">vector&lt;T&gt;::end</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref>(&amp;buf[size]);</highlight></codeline>
-<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="291"><highlight class="normal"></highlight></codeline>
-<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="293" refid="a00358_1ac421a3bceb92419a3ceb89a1c6d1a281" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref><sp/><ref refid="a00358_1ac421a3bceb92419a3ceb89a1c6d1a281" kindref="member">vector&lt;T&gt;::cbegin</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref>(&amp;buf[0]);</highlight></codeline>
-<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="296"><highlight class="normal"></highlight></codeline>
-<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="298" refid="a00358_1a6acb786c18ead678a418366600330bed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref><sp/><ref refid="a00358_1a6acb786c18ead678a418366600330bed" kindref="member">vector&lt;T&gt;::cend</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00362" kindref="compound">vector&lt;T&gt;::iterator</ref>(&amp;buf[size]);</highlight></codeline>
-<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="301"><highlight class="normal"></highlight></codeline>
-<codeline lineno="302"><highlight class="normal"></highlight></codeline>
-<codeline lineno="303"><highlight class="normal"></highlight></codeline>
-<codeline lineno="304"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="305"><highlight class="normal"></highlight></codeline>
-<codeline lineno="306"><highlight class="normal"></highlight></codeline>
-<codeline lineno="307"><highlight class="normal"></highlight></codeline>
-<codeline lineno="308"><highlight class="normal"></highlight></codeline>
-<codeline lineno="309"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//CATOS_VECTOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>doctest::Context<sp/>context;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>context.applyCommandLine(argc,<sp/>argv);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>context.setOption(</highlight><highlight class="stringliteral">&quot;no-breaks&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>res<sp/>=<sp/>context.run();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/vector.h"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp"/>
   </compounddef>
 </doxygen>

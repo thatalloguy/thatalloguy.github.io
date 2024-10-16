@@ -1,46 +1,304 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00198" kind="struct" language="C++" prot="public">
-    <compoundname>DescriptorAllocatorGrowable::PoolSizeRatio</compoundname>
-    <includes refid="a00041" local="no">VkDescriptors.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00198_1a225b758ecd1cfec187eff382cf678e24" prot="public" static="no" mutable="no">
-        <type>VkDescriptorType</type>
-        <definition>VkDescriptorType DescriptorAllocatorGrowable::PoolSizeRatio::type</definition>
+  <compounddef id="a00198" kind="class" language="C++" prot="public">
+    <compoundname>catos::RenderPass</compoundname>
+    <includes refid="a00059" local="no">renderPass.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00198_1a1c501f028bec15f80a18569f4fda7b94" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int catos::RenderPass::frameBuffer</definition>
         <argsstring></argsstring>
-        <name>type</name>
-        <qualifiedname>DescriptorAllocatorGrowable::PoolSizeRatio::type</qualifiedname>
+        <name>frameBuffer</name>
+        <qualifiedname>catos::RenderPass::frameBuffer</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="46" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="46" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="71" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="71" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00198_1ab81f0e5da32fc800faa04f6add9b3e29" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float DescriptorAllocatorGrowable::PoolSizeRatio::ratio</definition>
+      <memberdef kind="variable" id="a00198_1a65b1e486aa9e1a3acd80246a8008a184" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int catos::RenderPass::colorBuffer</definition>
         <argsstring></argsstring>
-        <name>ratio</name>
-        <qualifiedname>DescriptorAllocatorGrowable::PoolSizeRatio::ratio</qualifiedname>
+        <name>colorBuffer</name>
+        <qualifiedname>catos::RenderPass::colorBuffer</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="47" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="47" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="72" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00198_1adfcac7b34d83e2754d40b1180b61483f" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int catos::RenderPass::renderBuffer</definition>
+        <argsstring></argsstring>
+        <name>renderBuffer</name>
+        <qualifiedname>catos::RenderPass::renderBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="73" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00198_1a956b83fbb1d61adcb6173a24a530f674" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool catos::RenderPass::_isFinal</definition>
+        <argsstring></argsstring>
+        <name>_isFinal</name>
+        <qualifiedname>catos::RenderPass::_isFinal</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="75" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00198_1af52bf86759bd8f2fdda72d54583c67b0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool catos::RenderPass::_shouldResize</definition>
+        <argsstring></argsstring>
+        <name>_shouldResize</name>
+        <qualifiedname>catos::RenderPass::_shouldResize</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="76" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00198_1a756f55e1ace6e07aa079caedf2a835a2" prot="private" static="no" mutable="no">
+        <type><ref refid="a00210" kindref="compound">Shader</ref> &amp;</type>
+        <definition>Shader&amp; catos::RenderPass::shader</definition>
+        <argsstring></argsstring>
+        <name>shader</name>
+        <qualifiedname>catos::RenderPass::shader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="78" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00198_1a4321b2129b7f6c4a80e799a4f5f5c42f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::RenderPass::RenderPass</definition>
+        <argsstring>(const RenderPassCreationInfo &amp;info, Shader &amp;shaderToUse)</argsstring>
+        <name>RenderPass</name>
+        <qualifiedname>catos::RenderPass::RenderPass</qualifiedname>
+        <param>
+          <type>const <ref refid="a00194" kindref="compound">RenderPassCreationInfo</ref> &amp;</type>
+          <declname>info</declname>
+        </param>
+        <param>
+          <type><ref refid="a00210" kindref="compound">Shader</ref> &amp;</type>
+          <declname>shaderToUse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="49" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.cpp" bodystart="9" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1a3918c3c7e214c6367f0bf0d93f7d337b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::RenderPass::~RenderPass</definition>
+        <argsstring>()</argsstring>
+        <name>~RenderPass</name>
+        <qualifiedname>catos::RenderPass::~RenderPass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="50" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.cpp" bodystart="27" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1a89994820e4f723d64659de3d9c26cf34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::RenderPass::bindPass</definition>
+        <argsstring>()</argsstring>
+        <name>bindPass</name>
+        <qualifiedname>catos::RenderPass::bindPass</qualifiedname>
+        <briefdescription>
+<para>Binds and cleans the pass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="53" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.cpp" bodystart="59" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1a5f28d8d3877c4ed34e7faeca6c3409f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::RenderPass::unbindPass</definition>
+        <argsstring>()</argsstring>
+        <name>unbindPass</name>
+        <qualifiedname>catos::RenderPass::unbindPass</qualifiedname>
+        <briefdescription>
+<para>UnBinds and cleans the pass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="55" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.cpp" bodystart="72" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1a5b83037d838ea8311ff2b5af294147c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00107_1a4613316b0ca1f3fdbf463888395735b6" kindref="member">FrameBuffer</ref></type>
+        <definition>FrameBuffer catos::RenderPass::getFrameBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getFrameBuffer</name>
+        <qualifiedname>catos::RenderPass::getFrameBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="57" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="57" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1a9b873b18d3e44a61183e6141038e7536" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00107_1a45b8ee8e2bc6a9703ca2728c4d20680a" kindref="member">ColorBuffer</ref></type>
+        <definition>ColorBuffer catos::RenderPass::getPassTexture</definition>
+        <argsstring>()</argsstring>
+        <name>getPassTexture</name>
+        <qualifiedname>catos::RenderPass::getPassTexture</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="58" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1aec48b82a9b70405e6fcc683604e0dbc5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00107_1a66a574b855759e9da3f9fe39824b3245" kindref="member">RenderBuffer</ref></type>
+        <definition>RenderBuffer catos::RenderPass::getRenderBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>getRenderBuffer</name>
+        <qualifiedname>catos::RenderPass::getRenderBuffer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="59" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1a9aacdeee122f237f76c2aaae2dfd5cb6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool catos::RenderPass::isFinal</definition>
+        <argsstring>()</argsstring>
+        <name>isFinal</name>
+        <qualifiedname>catos::RenderPass::isFinal</qualifiedname>
+        <briefdescription>
+<para>isFinal is wether or not the User will see this texture. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="62" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="62" bodyend="62"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00198_1aa954ef3059297c56416520a37ab7ae69" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::RenderPass::generateFrameBuffer</definition>
+        <argsstring>(const Vector2 &amp;size)</argsstring>
+        <name>generateFrameBuffer</name>
+        <qualifiedname>catos::RenderPass::generateFrameBuffer</qualifiedname>
+        <param>
+          <type>const <ref refid="a00162" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="66" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.cpp" bodystart="33" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1a761e3a8fb62ebf3e856e33060b0517e4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::RenderPass::generateColorBuffer</definition>
+        <argsstring>(const Vector2 &amp;size, PassType type)</argsstring>
+        <name>generateColorBuffer</name>
+        <qualifiedname>catos::RenderPass::generateColorBuffer</qualifiedname>
+        <param>
+          <type>const <ref refid="a00162" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type><ref refid="a00107_1acf4b328a657463e6461ec5aaad0031f3" kindref="member">PassType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="67" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.cpp" bodystart="38" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="a00198_1aaf672b31a94be59f41a8a949a82d6cbd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::RenderPass::generateRenderBuffer</definition>
+        <argsstring>(const Vector2 &amp;size)</argsstring>
+        <name>generateRenderBuffer</name>
+        <qualifiedname>catos::RenderPass::generateRenderBuffer</qualifiedname>
+        <param>
+          <type>const <ref refid="a00162" kindref="compound">Vector2</ref> &amp;</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="68" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.cpp" bodystart="50" bodyend="56"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="45" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="45" bodyend="48"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" line="45" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderPass.h" bodystart="45" bodyend="80"/>
     <listofallmembers>
-      <member refid="a00198_1ab81f0e5da32fc800faa04f6add9b3e29" prot="public" virt="non-virtual"><scope>DescriptorAllocatorGrowable::PoolSizeRatio</scope><name>ratio</name></member>
-      <member refid="a00198_1a225b758ecd1cfec187eff382cf678e24" prot="public" virt="non-virtual"><scope>DescriptorAllocatorGrowable::PoolSizeRatio</scope><name>type</name></member>
+      <member refid="a00198_1a956b83fbb1d61adcb6173a24a530f674" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>_isFinal</name></member>
+      <member refid="a00198_1af52bf86759bd8f2fdda72d54583c67b0" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>_shouldResize</name></member>
+      <member refid="a00198_1a89994820e4f723d64659de3d9c26cf34" prot="public" virt="non-virtual"><scope>catos::RenderPass</scope><name>bindPass</name></member>
+      <member refid="a00198_1a65b1e486aa9e1a3acd80246a8008a184" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>colorBuffer</name></member>
+      <member refid="a00198_1a1c501f028bec15f80a18569f4fda7b94" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>frameBuffer</name></member>
+      <member refid="a00198_1a761e3a8fb62ebf3e856e33060b0517e4" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>generateColorBuffer</name></member>
+      <member refid="a00198_1aa954ef3059297c56416520a37ab7ae69" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>generateFrameBuffer</name></member>
+      <member refid="a00198_1aaf672b31a94be59f41a8a949a82d6cbd" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>generateRenderBuffer</name></member>
+      <member refid="a00198_1a5b83037d838ea8311ff2b5af294147c5" prot="public" virt="non-virtual"><scope>catos::RenderPass</scope><name>getFrameBuffer</name></member>
+      <member refid="a00198_1a9b873b18d3e44a61183e6141038e7536" prot="public" virt="non-virtual"><scope>catos::RenderPass</scope><name>getPassTexture</name></member>
+      <member refid="a00198_1aec48b82a9b70405e6fcc683604e0dbc5" prot="public" virt="non-virtual"><scope>catos::RenderPass</scope><name>getRenderBuffer</name></member>
+      <member refid="a00198_1a9aacdeee122f237f76c2aaae2dfd5cb6" prot="public" virt="non-virtual"><scope>catos::RenderPass</scope><name>isFinal</name></member>
+      <member refid="a00198_1adfcac7b34d83e2754d40b1180b61483f" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>renderBuffer</name></member>
+      <member refid="a00198_1a4321b2129b7f6c4a80e799a4f5f5c42f" prot="public" virt="non-virtual"><scope>catos::RenderPass</scope><name>RenderPass</name></member>
+      <member refid="a00198_1a756f55e1ace6e07aa079caedf2a835a2" prot="private" virt="non-virtual"><scope>catos::RenderPass</scope><name>shader</name></member>
+      <member refid="a00198_1a5f28d8d3877c4ed34e7faeca6c3409f3" prot="public" virt="non-virtual"><scope>catos::RenderPass</scope><name>unbindPass</name></member>
+      <member refid="a00198_1a3918c3c7e214c6367f0bf0d93f7d337b" prot="public" virt="non-virtual"><scope>catos::RenderPass</scope><name>~RenderPass</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

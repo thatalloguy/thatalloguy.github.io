@@ -1,106 +1,109 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00146" kind="class" language="C++" prot="public">
-    <compoundname>catos::Method</compoundname>
+    <compoundname>catos::TypeInfo</compoundname>
     <includes refid="a00011" local="no">registry.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00146_1a5621be029379a77b80f5fb6f7e91cf88" prot="public" static="no" mutable="no">
-        <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
-        <definition>cstr catos::Method::desc</definition>
+      <memberdef kind="variable" id="a00146_1a9a4c20fb31a1759ef8aa1d5c8acfeabd" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t catos::TypeInfo::type_hash</definition>
         <argsstring></argsstring>
-        <name>desc</name>
-        <qualifiedname>catos::Method::desc</qualifiedname>
-        <initializer>= &quot;NONE&quot;</initializer>
+        <name>type_hash</name>
+        <qualifiedname>catos::TypeInfo::type_hash</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="204" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="204" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="264" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="264" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00146_1a0b06cd150b4dc8a0b35d356d6f134442" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00146_1ae0b2ff915a7ee07932398ea73ba22943" prot="public" static="no" mutable="no">
         <type>std::string</type>
-        <definition>std::string catos::Method::returnName</definition>
+        <definition>std::string catos::TypeInfo::name</definition>
         <argsstring></argsstring>
-        <name>returnName</name>
-        <qualifiedname>catos::Method::returnName</qualifiedname>
-        <initializer>= &quot;void&quot;</initializer>
+        <name>name</name>
+        <qualifiedname>catos::TypeInfo::name</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="205" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="205" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="265" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="265" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00146_1aec3f9c676b863394c22100937548995c" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string catos::Method::parameters</definition>
+      <memberdef kind="variable" id="a00146_1a7cbfa52dbf039cfe37ff79d1c97db144" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="a00122" kindref="compound">Property</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string , Property* &gt; catos::TypeInfo::properties</definition>
         <argsstring></argsstring>
-        <name>parameters</name>
-        <qualifiedname>catos::Method::parameters</qualifiedname>
+        <name>properties</name>
+        <qualifiedname>catos::TypeInfo::properties</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="207" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="207" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="345" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="345" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00146_1acb8b27e43adc06a52a1b2e2303b4a34e" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string catos::Method::parameterNames</definition>
+      <memberdef kind="variable" id="a00146_1a9c4b2bf58d22a49d4e52dc27ff248ed2" prot="public" static="no" mutable="no">
+        <type>std::unordered_map&lt; std::string, <ref refid="a00142" kindref="compound">Method</ref> * &gt;</type>
+        <definition>std::unordered_map&lt;std::string , Method* &gt; catos::TypeInfo::methods</definition>
         <argsstring></argsstring>
-        <name>parameterNames</name>
-        <qualifiedname>catos::Method::parameterNames</qualifiedname>
+        <name>methods</name>
+        <qualifiedname>catos::TypeInfo::methods</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="208" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="208" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00146_1a4b8737f52ca1d169e4742141f3dc88c6" prot="private" static="no" mutable="no">
-        <type>std::any</type>
-        <definition>std::any catos::Method::ptr</definition>
-        <argsstring></argsstring>
-        <name>ptr</name>
-        <qualifiedname>catos::Method::ptr</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="211" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="211" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00146_1af512b6f07768acb200d4bb9f84a04573" prot="private" static="no" mutable="no">
-        <type>std::any</type>
-        <definition>std::any catos::Method::_mFunc</definition>
-        <argsstring></argsstring>
-        <name>_mFunc</name>
-        <qualifiedname>catos::Method::_mFunc</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="212" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="212" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="346" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="346" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00146_1a40350e2564f0207cc7e730c34153ea6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="a00146_1adb9288a8ea5edbb41cf884f82d2e5322" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
-            <type>typename ReturnType</type>
+            <type>typename T</type>
           </param>
           <param>
-            <type>class ClassType</type>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="a00146" kindref="compound">TypeInfo</ref> &amp;</type>
+        <definition>TypeInfo &amp; catos::TypeInfo::property</definition>
+        <argsstring>(const char *property_name, U T::*member, cstr description)</argsstring>
+        <name>property</name>
+        <qualifiedname>catos::TypeInfo::property</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>property_name</declname>
+        </param>
+        <param>
+          <type>U T::*</type>
+          <declname>member</declname>
+        </param>
+        <param>
+          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+<para>Registers a property with a name and a member pointer (Returns itself). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="270" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="270" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="a00146_1ab07220b87a27baec193e958522f3a157" prot="public" static="no" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ClassT</type>
+          </param>
+          <param>
+            <type>typename ReturnV</type>
           </param>
           <param>
             <type>typename...</type>
@@ -108,80 +111,119 @@
             <defname>Args</defname>
           </param>
         </templateparamlist>
-        <type></type>
-        <definition>catos::Method::Method</definition>
-        <argsstring>(ReturnType(ClassType::*method)(Args...), bool doCoolShit=false)</argsstring>
-        <name>Method</name>
-        <qualifiedname>catos::Method::Method</qualifiedname>
+        <type>constexpr <ref refid="a00146" kindref="compound">TypeInfo</ref> &amp;</type>
+        <definition>constexpr TypeInfo &amp; catos::TypeInfo::method</definition>
+        <argsstring>(const char *method_name, ReturnV(ClassT::*ptr)(Args...), cstr description)</argsstring>
+        <name>method</name>
+        <qualifiedname>catos::TypeInfo::method</qualifiedname>
         <param>
-          <type>ReturnType(ClassType::*)(Args...)</type>
-          <declname>method</declname>
+          <type>const char *</type>
+          <declname>method_name</declname>
         </param>
         <param>
-          <type>bool</type>
-          <declname>doCoolShit</declname>
-          <defval>false</defval>
+          <type>ReturnV(ClassT::*)(Args...)</type>
+          <declname>ptr</declname>
+        </param>
+        <param>
+          <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+          <declname>description</declname>
         </param>
         <briefdescription>
+<para>Registers a method with a name and a member function pointer (returns the Type object again). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="150" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="150" bodyend="190"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="286" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="286" bodyend="292"/>
       </memberdef>
-      <memberdef kind="function" id="a00146_1a5250d5fb0e0066d91dd83ea80f1fb15c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename R</type>
-          </param>
-          <param>
-            <type>typename...</type>
-            <declname>Args</declname>
-            <defname>Args</defname>
-          </param>
-        </templateparamlist>
-        <type>R</type>
-        <definition>R catos::Method::invoke_function</definition>
-        <argsstring>(void *instance, Args... args)</argsstring>
-        <name>invoke_function</name>
-        <qualifiedname>catos::Method::invoke_function</qualifiedname>
+      <memberdef kind="function" id="a00146_1a2e3be86b60d107455570b7b5f1d9fd43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00122" kindref="compound">Property</ref> *</type>
+        <definition>Property * catos::TypeInfo::get_property</definition>
+        <argsstring>(const char *property_name)</argsstring>
+        <name>get_property</name>
+        <qualifiedname>catos::TypeInfo::get_property</qualifiedname>
         <param>
-          <type>void *</type>
-          <declname>instance</declname>
-        </param>
-        <param>
-          <type>Args...</type>
-          <declname>args</declname>
+          <type>const char *</type>
+          <declname>property_name</declname>
         </param>
         <briefdescription>
+<para>Returns a property object based on the name given. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="194" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="194" bodyend="196"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="295" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="295" bodyend="307"/>
       </memberdef>
-      <memberdef kind="function" id="a00146_1a6563134c767668a602c02cd0ec13d610" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="a00146_1aae56ec26c2e744b449f3da7cd11667c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00142" kindref="compound">Method</ref> *</type>
+        <definition>Method * catos::TypeInfo::get_method</definition>
+        <argsstring>(const char *method_name)</argsstring>
+        <name>get_method</name>
+        <qualifiedname>catos::TypeInfo::get_method</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>method_name</declname>
+        </param>
+        <briefdescription>
+<para>Returns a method object based on the name given. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="310" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="310" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="a00146_1aa6c91426df65c6b0482ad268b528ea79" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
           <param>
-            <type>typename...</type>
-            <declname>Args</declname>
-            <defname>Args</defname>
+            <type>typename T</type>
           </param>
         </templateparamlist>
         <type>void</type>
-        <definition>void catos::Method::invoke_function</definition>
-        <argsstring>(void *instance, Args... args)</argsstring>
-        <name>invoke_function</name>
-        <qualifiedname>catos::Method::invoke_function</qualifiedname>
+        <definition>void catos::TypeInfo::registerToPython</definition>
+        <argsstring>()</argsstring>
+        <name>registerToPython</name>
+        <qualifiedname>catos::TypeInfo::registerToPython</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="321" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="321" bodyend="339"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00146_1a267bd4ae8f4c123f604e8f733d4f7aa6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool catos::TypeInfo::is_valid</definition>
+        <argsstring>(Property *ptr)</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>catos::TypeInfo::is_valid</qualifiedname>
         <param>
-          <type>void *</type>
-          <declname>instance</declname>
+          <type><ref refid="a00122" kindref="compound">Property</ref> *</type>
+          <declname>ptr</declname>
         </param>
+        <briefdescription>
+<para>Checks wether or not the ptr is a nullptr;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="342" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="342" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="a00146_1a59fec13410de1cba52ac86212587f5aa" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool catos::TypeInfo::is_valid</definition>
+        <argsstring>(Method *ptr)</argsstring>
+        <name>is_valid</name>
+        <qualifiedname>catos::TypeInfo::is_valid</qualifiedname>
         <param>
-          <type>Args...</type>
-          <declname>args</declname>
+          <type><ref refid="a00142" kindref="compound">Method</ref> *</type>
+          <declname>ptr</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -189,25 +231,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="199" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="199" bodyend="201"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="343" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="343" bodyend="343"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Stores a function pointer for running it. </para>
+<para>Typeinfo is an object that holds all information about a specific type. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="146" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="146" bodyend="213"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="260" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="260" bodyend="347"/>
     <listofallmembers>
-      <member refid="a00146_1af512b6f07768acb200d4bb9f84a04573" prot="private" virt="non-virtual"><scope>catos::Method</scope><name>_mFunc</name></member>
-      <member refid="a00146_1a5621be029379a77b80f5fb6f7e91cf88" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>desc</name></member>
-      <member refid="a00146_1a5250d5fb0e0066d91dd83ea80f1fb15c" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>invoke_function</name></member>
-      <member refid="a00146_1a6563134c767668a602c02cd0ec13d610" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>invoke_function</name></member>
-      <member refid="a00146_1a40350e2564f0207cc7e730c34153ea6b" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>Method</name></member>
-      <member refid="a00146_1acb8b27e43adc06a52a1b2e2303b4a34e" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>parameterNames</name></member>
-      <member refid="a00146_1aec3f9c676b863394c22100937548995c" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>parameters</name></member>
-      <member refid="a00146_1a4b8737f52ca1d169e4742141f3dc88c6" prot="private" virt="non-virtual"><scope>catos::Method</scope><name>ptr</name></member>
-      <member refid="a00146_1a0b06cd150b4dc8a0b35d356d6f134442" prot="public" virt="non-virtual"><scope>catos::Method</scope><name>returnName</name></member>
+      <member refid="a00146_1aae56ec26c2e744b449f3da7cd11667c3" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>get_method</name></member>
+      <member refid="a00146_1a2e3be86b60d107455570b7b5f1d9fd43" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>get_property</name></member>
+      <member refid="a00146_1a267bd4ae8f4c123f604e8f733d4f7aa6" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>is_valid</name></member>
+      <member refid="a00146_1a59fec13410de1cba52ac86212587f5aa" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>is_valid</name></member>
+      <member refid="a00146_1ab07220b87a27baec193e958522f3a157" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>method</name></member>
+      <member refid="a00146_1a9c4b2bf58d22a49d4e52dc27ff248ed2" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>methods</name></member>
+      <member refid="a00146_1ae0b2ff915a7ee07932398ea73ba22943" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>name</name></member>
+      <member refid="a00146_1a7cbfa52dbf039cfe37ff79d1c97db144" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>properties</name></member>
+      <member refid="a00146_1adb9288a8ea5edbb41cf884f82d2e5322" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>property</name></member>
+      <member refid="a00146_1aa6c91426df65c6b0482ad268b528ea79" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>registerToPython</name></member>
+      <member refid="a00146_1a9a4c20fb31a1759ef8aa1d5c8acfeabd" prot="public" virt="non-virtual"><scope>catos::TypeInfo</scope><name>type_hash</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

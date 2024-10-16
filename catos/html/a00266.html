@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): LoadedGLTF Struct Reference</title>
+<title>Catos Engine (Source): TransformComponent Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -98,62 +98,27 @@ $(function(){initNavTree('a00266.html',''); initResizable(); });
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="a00263.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">LoadedGLTF Struct Reference</div></div>
+  <div class="headertitle"><div class="title">TransformComponent Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p><code>#include &lt;<a class="el" href="a00065_source.html">VkLoader.h</a>&gt;</code></p>
-
-<p>Inherits <a class="el" href="a00246.html">IRenderable</a>.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a5cb28e137c9fff7788afaf7aa5e565ac" id="r_a5cb28e137c9fff7788afaf7aa5e565ac"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cb28e137c9fff7788afaf7aa5e565ac">Draw</a> (const glm::mat4 &amp;topMatrix, <a class="el" href="a00234.html">DrawContext</a> &amp;ctx)</td></tr>
-<tr class="separator:a5cb28e137c9fff7788afaf7aa5e565ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57694eaff57520a9d0fcd2f29748cf9b" id="r_a57694eaff57520a9d0fcd2f29748cf9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a57694eaff57520a9d0fcd2f29748cf9b">clearAll</a> ()</td></tr>
-<tr class="separator:a57694eaff57520a9d0fcd2f29748cf9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a418d776f12e6e744c9ac7beed11bb3cf" id="r_a418d776f12e6e744c9ac7beed11bb3cf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a418d776f12e6e744c9ac7beed11bb3cf">operator!=</a> (<a class="el" href="a00266.html">TransformComponent</a> &amp;b)</td></tr>
+<tr class="separator:a418d776f12e6e744c9ac7beed11bb3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a0d81dfeaab41142c4f2ab033cdd9f8b8" id="r_a0d81dfeaab41142c4f2ab033cdd9f8b8"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::shared_ptr&lt; <a class="el" href="a00258.html">MeshAsset</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0d81dfeaab41142c4f2ab033cdd9f8b8">meshes</a></td></tr>
-<tr class="separator:a0d81dfeaab41142c4f2ab033cdd9f8b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf50d971f7ff884cf18b10627132e24d" id="r_abf50d971f7ff884cf18b10627132e24d"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::shared_ptr&lt; <a class="el" href="a00262.html">Node</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abf50d971f7ff884cf18b10627132e24d">nodes</a></td></tr>
-<tr class="separator:abf50d971f7ff884cf18b10627132e24d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8970fbf7b368a7560c68b1b5d9c5f35" id="r_af8970fbf7b368a7560c68b1b5d9c5f35"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, <a class="el" href="a00314.html">AllocatedImage</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8970fbf7b368a7560c68b1b5d9c5f35">images</a></td></tr>
-<tr class="separator:af8970fbf7b368a7560c68b1b5d9c5f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af295ba2993c19703f95422d0cffe87ae" id="r_af295ba2993c19703f95422d0cffe87ae"><td class="memItemLeft" align="right" valign="top">std::unordered_map&lt; std::string, std::shared_ptr&lt; <a class="el" href="a00250.html">GLTFMaterial</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af295ba2993c19703f95422d0cffe87ae">materials</a></td></tr>
-<tr class="separator:af295ba2993c19703f95422d0cffe87ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19f8f4de300949b8c9242e6b0f4274cb" id="r_a19f8f4de300949b8c9242e6b0f4274cb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::shared_ptr&lt; <a class="el" href="a00262.html">Node</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a19f8f4de300949b8c9242e6b0f4274cb">topNodes</a></td></tr>
-<tr class="separator:a19f8f4de300949b8c9242e6b0f4274cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a2ad17dc3b17f86bd21527a651c166d" id="r_a4a2ad17dc3b17f86bd21527a651c166d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; VkSampler &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4a2ad17dc3b17f86bd21527a651c166d">samplers</a></td></tr>
-<tr class="separator:a4a2ad17dc3b17f86bd21527a651c166d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf479fe7b1bfabe170b82282a81a5e5e" id="r_adf479fe7b1bfabe170b82282a81a5e5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00194.html">DescriptorAllocatorGrowable</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf479fe7b1bfabe170b82282a81a5e5e">descriptorPool</a></td></tr>
-<tr class="separator:adf479fe7b1bfabe170b82282a81a5e5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8237d21c94d7972aa7a3d7c189a00ba5" id="r_a8237d21c94d7972aa7a3d7c189a00ba5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00282.html">AllocatedBuffer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8237d21c94d7972aa7a3d7c189a00ba5">materialDataBuffer</a></td></tr>
-<tr class="separator:a8237d21c94d7972aa7a3d7c189a00ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6263b49db35fbd7492b494ab054552b" id="r_ac6263b49db35fbd7492b494ab054552b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00242.html">VulkanEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6263b49db35fbd7492b494ab054552b">creator</a></td></tr>
-<tr class="separator:ac6263b49db35fbd7492b494ab054552b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30d1678c82cfa095b35ecb9a180bb697" id="r_a30d1678c82cfa095b35ecb9a180bb697"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30d1678c82cfa095b35ecb9a180bb697">x</a></td></tr>
+<tr class="separator:a30d1678c82cfa095b35ecb9a180bb697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8661b2f37bf9926ed19e7a4a8fc2d41b" id="r_a8661b2f37bf9926ed19e7a4a8fc2d41b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8661b2f37bf9926ed19e7a4a8fc2d41b">y</a></td></tr>
+<tr class="separator:a8661b2f37bf9926ed19e7a4a8fc2d41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a054fd9da0e88b2e9a2d8bb28b3e0dde8" id="r_a054fd9da0e88b2e9a2d8bb28b3e0dde8"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a054fd9da0e88b2e9a2d8bb28b3e0dde8">z</a></td></tr>
+<tr class="separator:a054fd9da0e88b2e9a2d8bb28b3e0dde8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a57694eaff57520a9d0fcd2f29748cf9b" name="a57694eaff57520a9d0fcd2f29748cf9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57694eaff57520a9d0fcd2f29748cf9b">&#9670;&#160;</a></span>clearAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void LoadedGLTF::clearAll </td>
-          <td>(</td>
-          <td class="paramname"><span class="paramname"></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5cb28e137c9fff7788afaf7aa5e565ac" name="a5cb28e137c9fff7788afaf7aa5e565ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cb28e137c9fff7788afaf7aa5e565ac">&#9670;&#160;</a></span>Draw()</h2>
+<a id="a418d776f12e6e744c9ac7beed11bb3cf" name="a418d776f12e6e744c9ac7beed11bb3cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a418d776f12e6e744c9ac7beed11bb3cf">&#9670;&#160;</a></span>operator!=()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,158 +127,66 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void LoadedGLTF::Draw </td>
+          <td class="memname">bool TransformComponent::operator!= </td>
           <td>(</td>
-          <td class="paramtype">const glm::mat4 &amp;</td>          <td class="paramname"><span class="paramname"><em>topMatrix</em>, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype"><a class="el" href="a00266.html">TransformComponent</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>b</em></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00234.html">DrawContext</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>ctx</em></span>&#160;)</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Do this manual instead :) ~LoadedGLTF() { <a class="el" href="#a57694eaff57520a9d0fcd2f29748cf9b">clearAll()</a>; }; </p>
-
-<p>Implements <a class="el" href="a00246.html">IRenderable</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac6263b49db35fbd7492b494ab054552b" name="ac6263b49db35fbd7492b494ab054552b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6263b49db35fbd7492b494ab054552b">&#9670;&#160;</a></span>creator</h2>
+<a id="a30d1678c82cfa095b35ecb9a180bb697" name="a30d1678c82cfa095b35ecb9a180bb697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30d1678c82cfa095b35ecb9a180bb697">&#9670;&#160;</a></span>x</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00242.html">VulkanEngine</a>* LoadedGLTF::creator</td>
+          <td class="memname">float TransformComponent::x</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="adf479fe7b1bfabe170b82282a81a5e5e" name="adf479fe7b1bfabe170b82282a81a5e5e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf479fe7b1bfabe170b82282a81a5e5e">&#9670;&#160;</a></span>descriptorPool</h2>
+<a id="a8661b2f37bf9926ed19e7a4a8fc2d41b" name="a8661b2f37bf9926ed19e7a4a8fc2d41b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8661b2f37bf9926ed19e7a4a8fc2d41b">&#9670;&#160;</a></span>y</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00194.html">DescriptorAllocatorGrowable</a> LoadedGLTF::descriptorPool</td>
+          <td class="memname">float TransformComponent::y</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af8970fbf7b368a7560c68b1b5d9c5f35" name="af8970fbf7b368a7560c68b1b5d9c5f35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8970fbf7b368a7560c68b1b5d9c5f35">&#9670;&#160;</a></span>images</h2>
+<a id="a054fd9da0e88b2e9a2d8bb28b3e0dde8" name="a054fd9da0e88b2e9a2d8bb28b3e0dde8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a054fd9da0e88b2e9a2d8bb28b3e0dde8">&#9670;&#160;</a></span>z</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::unordered_map&lt;std::string, <a class="el" href="a00314.html">AllocatedImage</a>&gt; LoadedGLTF::images</td>
+          <td class="memname">float TransformComponent::z</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a8237d21c94d7972aa7a3d7c189a00ba5" name="a8237d21c94d7972aa7a3d7c189a00ba5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8237d21c94d7972aa7a3d7c189a00ba5">&#9670;&#160;</a></span>materialDataBuffer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00282.html">AllocatedBuffer</a> LoadedGLTF::materialDataBuffer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af295ba2993c19703f95422d0cffe87ae" name="af295ba2993c19703f95422d0cffe87ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af295ba2993c19703f95422d0cffe87ae">&#9670;&#160;</a></span>materials</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt;std::string, std::shared_ptr&lt;<a class="el" href="a00250.html">GLTFMaterial</a>&gt; &gt; LoadedGLTF::materials</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0d81dfeaab41142c4f2ab033cdd9f8b8" name="a0d81dfeaab41142c4f2ab033cdd9f8b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d81dfeaab41142c4f2ab033cdd9f8b8">&#9670;&#160;</a></span>meshes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt;std::string, std::shared_ptr&lt;<a class="el" href="a00258.html">MeshAsset</a>&gt; &gt; LoadedGLTF::meshes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abf50d971f7ff884cf18b10627132e24d" name="abf50d971f7ff884cf18b10627132e24d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf50d971f7ff884cf18b10627132e24d">&#9670;&#160;</a></span>nodes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::unordered_map&lt;std::string, std::shared_ptr&lt;<a class="el" href="a00262.html">Node</a>&gt; &gt; LoadedGLTF::nodes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4a2ad17dc3b17f86bd21527a651c166d" name="a4a2ad17dc3b17f86bd21527a651c166d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a2ad17dc3b17f86bd21527a651c166d">&#9670;&#160;</a></span>samplers</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;VkSampler&gt; LoadedGLTF::samplers</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a19f8f4de300949b8c9242e6b0f4274cb" name="a19f8f4de300949b8c9242e6b0f4274cb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19f8f4de300949b8c9242e6b0f4274cb">&#9670;&#160;</a></span>topNodes</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::shared_ptr&lt;<a class="el" href="a00262.html">Node</a>&gt; &gt; LoadedGLTF::topNodes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li><a class="el" href="a00065_source.html">VkLoader.h</a></li>
-<li><a class="el" href="a00062.html">VkLoader.cpp</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="a00104.html">main.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

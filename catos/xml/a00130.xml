@@ -1,195 +1,49 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00130" kind="class" language="C++" prot="public">
-    <compoundname>catos::App</compoundname>
-    <includes refid="a00005" local="no">application.h</includes>
-    <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="a00130_1ade360a10f6c158d74d0fdd9ed1659672" prot="private" static="no" mutable="no">
-        <type><ref refid="a00126" kindref="compound">AppCreationInfo</ref> *</type>
-        <definition>AppCreationInfo* catos::App::_info</definition>
-        <argsstring></argsstring>
-        <name>_info</name>
-        <qualifiedname>catos::App::_info</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="61" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="61" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00130_1a86114b77047af86111dda9b2dcdc25a7" prot="private" static="no" mutable="no">
-        <type>bool</type>
-        <definition>bool catos::App::_is_alive</definition>
-        <argsstring></argsstring>
-        <name>_is_alive</name>
-        <qualifiedname>catos::App::_is_alive</qualifiedname>
-        <initializer>= false</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="62" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="62" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="a00130_1ae9535fe5bd3e21e1ee14b5fca23695c9" prot="private" static="no" mutable="no">
-        <type>std::unordered_map&lt; size_t, const void * &gt;</type>
-        <definition>std::unordered_map&lt;size_t, const void* &gt; catos::App::_instance_register</definition>
-        <argsstring></argsstring>
-        <name>_instance_register</name>
-        <qualifiedname>catos::App::_instance_register</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="64" column="28" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="64" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
+  <compounddef id="a00130" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>catos::MethodHolder</compoundname>
+    <derivedcompoundref refid="a00134" prot="public" virt="non-virtual">catos::MethodHolderImpl&lt; ReturnType, ClassType, Args &gt;</derivedcompoundref>
+    <includes refid="a00011" local="no">registry.h</includes>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00130_1a20c936adde996793bc36c33650b12a23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::App::App</definition>
-        <argsstring>(AppCreationInfo *creationInfo)</argsstring>
-        <name>App</name>
-        <qualifiedname>catos::App::App</qualifiedname>
+      <memberdef kind="function" id="a00130_1a4027f2299345c6f251743662543480ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void catos::MethodHolder::registerToPy</definition>
+        <argsstring>(const char *name)=0</argsstring>
+        <name>registerToPy</name>
+        <qualifiedname>catos::MethodHolder::registerToPy</qualifiedname>
+        <reimplementedby refid="a00134_1a10e08caa7bdf394f0bd18894a9ee0efe">registerToPy</reimplementedby>
         <param>
-          <type><ref refid="a00126" kindref="compound">AppCreationInfo</ref> *</type>
-          <declname>creationInfo</declname>
+          <type>const char *</type>
+          <declname>name</declname>
         </param>
         <briefdescription>
-<para>Initializes the Application (Also registers all &quot;known&quot; class to the registry) </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="30" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="9" bodyend="16"/>
-      </memberdef>
-      <memberdef kind="function" id="a00130_1ae2beda1820f2fb8b3d2b690e9cd7742b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::App::~App</definition>
-        <argsstring>()</argsstring>
-        <name>~App</name>
-        <qualifiedname>catos::App::~App</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="31" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="18" bodyend="23"/>
-      </memberdef>
-      <memberdef kind="function" id="a00130_1ac7ee8e55850651b7549a64789904ea62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool catos::App::is_alive</definition>
-        <argsstring>()</argsstring>
-        <name>is_alive</name>
-        <qualifiedname>catos::App::is_alive</qualifiedname>
-        <briefdescription>
-<para>Returns if the app is still running. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="34" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="39" bodyend="41"/>
-      </memberdef>
-      <memberdef kind="function" id="a00130_1a5bd26fdeb5142a62fe81620461de1007" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename A</type>
-          </param>
-        </templateparamlist>
-        <type>void</type>
-        <definition>void catos::App::bind</definition>
-        <argsstring>(const void *instance)</argsstring>
-        <name>bind</name>
-        <qualifiedname>catos::App::bind</qualifiedname>
-        <param>
-          <type>const void *</type>
-          <declname>instance</declname>
-        </param>
-        <briefdescription>
-<para>Used to bind an instance to an type. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="41" bodyend="43"/>
-      </memberdef>
-      <memberdef kind="function" id="a00130_1a2d9f5a50cb0cf5a883d77d27068e3ad2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <templateparamlist>
-          <param>
-            <type>typename A</type>
-          </param>
-        </templateparamlist>
-        <type>A *</type>
-        <definition>A * catos::App::get</definition>
-        <argsstring>()</argsstring>
-        <name>get</name>
-        <qualifiedname>catos::App::get</qualifiedname>
-        <briefdescription>
-<para>Returns the registered instance. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="47" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="47" bodyend="49"/>
-      </memberdef>
-      <memberdef kind="function" id="a00130_1a4f1ce2929d6062c9d27921d6ed50faa5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="a00126" kindref="compound">AppCreationInfo</ref> *</type>
-        <definition>catos::AppCreationInfo * catos::App::getAppInfo</definition>
-        <argsstring>()</argsstring>
-        <name>getAppInfo</name>
-        <qualifiedname>catos::App::getAppInfo</qualifiedname>
-        <briefdescription>
-<para>Returns a pointer to the info with what the application is made. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="53" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="43" bodyend="45"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-func">
-      <memberdef kind="function" id="a00130_1aa95c160232eb5fe780bec480c5bea272" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void catos::App::init_registry</definition>
-        <argsstring>()</argsstring>
-        <name>init_registry</name>
-        <qualifiedname>catos::App::init_registry</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="58" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.cpp" bodystart="25" bodyend="36"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="110" column="22"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
-<para>Main class that holds all information. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/core/application.h" line="25" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/application.h" bodystart="25" bodyend="65"/>
+    <inheritancegraph>
+      <node id="1">
+        <label>catos::MethodHolder</label>
+        <link refid="a00130"/>
+      </node>
+      <node id="2">
+        <label>catos::MethodHolderImpl&lt; ReturnType, ClassType, Args &gt;</label>
+        <link refid="a00134"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="107" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="107" bodyend="111"/>
     <listofallmembers>
-      <member refid="a00130_1ade360a10f6c158d74d0fdd9ed1659672" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_info</name></member>
-      <member refid="a00130_1ae9535fe5bd3e21e1ee14b5fca23695c9" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_instance_register</name></member>
-      <member refid="a00130_1a86114b77047af86111dda9b2dcdc25a7" prot="private" virt="non-virtual"><scope>catos::App</scope><name>_is_alive</name></member>
-      <member refid="a00130_1a20c936adde996793bc36c33650b12a23" prot="public" virt="non-virtual"><scope>catos::App</scope><name>App</name></member>
-      <member refid="a00130_1a5bd26fdeb5142a62fe81620461de1007" prot="public" virt="non-virtual"><scope>catos::App</scope><name>bind</name></member>
-      <member refid="a00130_1a2d9f5a50cb0cf5a883d77d27068e3ad2" prot="public" virt="non-virtual"><scope>catos::App</scope><name>get</name></member>
-      <member refid="a00130_1a4f1ce2929d6062c9d27921d6ed50faa5" prot="public" virt="non-virtual"><scope>catos::App</scope><name>getAppInfo</name></member>
-      <member refid="a00130_1aa95c160232eb5fe780bec480c5bea272" prot="private" virt="non-virtual"><scope>catos::App</scope><name>init_registry</name></member>
-      <member refid="a00130_1ac7ee8e55850651b7549a64789904ea62" prot="public" virt="non-virtual"><scope>catos::App</scope><name>is_alive</name></member>
-      <member refid="a00130_1ae2beda1820f2fb8b3d2b690e9cd7742b" prot="public" virt="non-virtual"><scope>catos::App</scope><name>~App</name></member>
+      <member refid="a00130_1a4027f2299345c6f251743662543480ae" prot="public" virt="pure-virtual"><scope>catos::MethodHolder</scope><name>registerToPy</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

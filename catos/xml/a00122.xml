@@ -1,50 +1,52 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00122" kind="namespace" language="C++">
-    <compoundname>catos::tests</compoundname>
-    <sectiondef kind="func">
-      <memberdef kind="function" id="a00122_1a3d55793e34b921efea74b9b57c975082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;REGISTRY::GET_TYPE_NAME&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;REGISTRY::GET_TYPE_NAME&quot;</type>
-        </param>
+  <compounddef id="a00122" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>catos::Property</compoundname>
+    <derivedcompoundref refid="a00126" prot="public" virt="non-virtual">catos::PropertyImpl&lt; T, U &gt;</derivedcompoundref>
+    <includes refid="a00011" local="no">registry.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="a00122_1aabfc2935e5ce159303cdd8c760fe3e43" prot="public" static="no" mutable="no">
+        <type><ref refid="a00014_1a8fa5a7ddaf7b4d44d3dde63343d8d844" kindref="member">cstr</ref></type>
+        <definition>cstr catos::Property::desc</definition>
+        <argsstring></argsstring>
+        <name>desc</name>
+        <qualifiedname>catos::Property::desc</qualifiedname>
+        <initializer>= &quot;NONE&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="39" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="39" bodyend="41"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="45" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="45" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="function" id="a00122_1a86b61aaa802336f02f0614acceac24c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00122_1aadf32bd1d8c607a993f117ea2db3cadd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;REGISTRY::FIELDS&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;REGISTRY::FIELDS&quot;</type>
-        </param>
+        <definition>virtual catos::Property::~Property</definition>
+        <argsstring>()</argsstring>
+        <name>~Property</name>
+        <qualifiedname>catos::Property::~Property</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
+<para>Stores an member pointer to a field of an type. NOTE see the <ref refid="a00126" kindref="compound">PropertyImpl</ref> for further documentation </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="43" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="43" bodyend="61"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="34" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="34" bodyend="34"/>
       </memberdef>
-      <memberdef kind="function" id="a00122_1a994753c9053093b19e7c46057ffcf719" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;REGISTRY::METHODS&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
+      <memberdef kind="function" id="a00122_1a658e2343fa5565207592286b665c82e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">void</ref> *</type>
+        <definition>virtual void * catos::Property::get_value</definition>
+        <argsstring>(const void *obj_ptr)=0</argsstring>
+        <name>get_value</name>
+        <qualifiedname>catos::Property::get_value</qualifiedname>
+        <reimplementedby refid="a00126_1aa89fca9f010b109d612eab9df84fa386">get_value</reimplementedby>
         <param>
-          <type>&quot;REGISTRY::METHODS&quot;</type>
+          <type><ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">const</ref> <ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">void</ref> *</type>
+          <declname>obj_ptr</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -52,50 +54,63 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="65" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="65" bodyend="89"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="36" column="22"/>
       </memberdef>
-      <memberdef kind="function" id="a00122_1afda5b3504e78b229f5b2607e5b8789f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;Application::INSTANCES&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;Application::INSTANCES&quot;</type>
-        </param>
+      <memberdef kind="function" id="a00122_1ae2346543825d185fd3397262fd09d4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">const</ref> <ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">char</ref> *</type>
+        <definition>virtual const char * catos::Property::get_name</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_name</name>
+        <qualifiedname>catos::Property::get_name</qualifiedname>
+        <reimplementedby refid="a00126_1a24f8b788dd92d969611c1a04f9bbd452">get_name</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="92" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="92" bodyend="113"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="37" column="28"/>
       </memberdef>
-      <memberdef kind="function" id="a00122_1adfd1c23b15d8a936aecd76a884dd82d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;STL::VECTORS&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
-        <param>
-          <type>&quot;STL::VECTORS&quot;</type>
-        </param>
+      <memberdef kind="function" id="a00122_1ade91b642390d463208dcc397143a1a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">const</ref> <ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">char</ref> *</type>
+        <definition>virtual const char * catos::Property::get_type_name</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_type_name</name>
+        <qualifiedname>catos::Property::get_type_name</qualifiedname>
+        <reimplementedby refid="a00126_1af278bcec34c8085f5e7d167678158a87">get_type_name</reimplementedby>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="116" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="116" bodyend="132"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="38" column="28"/>
       </memberdef>
-      <memberdef kind="function" id="a00122_1a95f30a292f157c260e3c01fc4099c84f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>catos::tests::TEST_CASE</definition>
-        <argsstring>(&quot;STL::HASHMAPS&quot;)</argsstring>
-        <name>TEST_CASE</name>
-        <qualifiedname>catos::tests::TEST_CASE</qualifiedname>
+      <memberdef kind="function" id="a00122_1a2048e2c564639ddbe4b2632749f417da" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t &amp;</type>
+        <definition>virtual size_t &amp; catos::Property::get_type_hash</definition>
+        <argsstring>()=0</argsstring>
+        <name>get_type_hash</name>
+        <qualifiedname>catos::Property::get_type_hash</qualifiedname>
+        <reimplementedby refid="a00126_1ab2faac90acb74e92242075e332ee34af">get_type_hash</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="39" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="a00122_1a14c6ded73ec5e93149fda506c540a34f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">void</ref></type>
+        <definition>virtual void catos::Property::set_name</definition>
+        <argsstring>(const char *name)=0</argsstring>
+        <name>set_name</name>
+        <qualifiedname>catos::Property::set_name</qualifiedname>
+        <reimplementedby refid="a00126_1a65aa9409bbd99020c1516dce375f7d42">set_name</reimplementedby>
         <param>
-          <type>&quot;STL::HASHMAPS&quot;</type>
+          <type><ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">const</ref> <ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">char</ref> *</type>
+          <declname>name</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -103,13 +118,51 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="134" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" bodystart="134" bodyend="143"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="41" column="22"/>
+      </memberdef>
+      <memberdef kind="function" id="a00122_1a9c2e5c8b67cc0f0bcf12d659392fb965" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="a00122_1a2048e2c564639ddbe4b2632749f417da" kindref="member">void</ref></type>
+        <definition>virtual void catos::Property::registerToPy</definition>
+        <argsstring>()=0</argsstring>
+        <name>registerToPy</name>
+        <qualifiedname>catos::Property::registerToPy</qualifiedname>
+        <reimplementedby refid="a00126_1a95d29519ae3b38ab6143aceeda207534">registerToPy</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="43" column="22"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>See <ref refid="a00126" kindref="compound">PropertyImpl</ref> for details. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/tests/main.cpp" line="37" column="1"/>
+    <inheritancegraph>
+      <node id="1">
+        <label>catos::Property</label>
+        <link refid="a00122"/>
+      </node>
+      <node id="2">
+        <label>catos::PropertyImpl&lt; T, U &gt;</label>
+        <link refid="a00126"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" line="28" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/core/registry.h" bodystart="28" bodyend="46"/>
+    <listofallmembers>
+      <member refid="a00122_1aabfc2935e5ce159303cdd8c760fe3e43" prot="public" virt="non-virtual"><scope>catos::Property</scope><name>desc</name></member>
+      <member refid="a00122_1ae2346543825d185fd3397262fd09d4cf" prot="public" virt="pure-virtual"><scope>catos::Property</scope><name>get_name</name></member>
+      <member refid="a00122_1a2048e2c564639ddbe4b2632749f417da" prot="public" virt="pure-virtual"><scope>catos::Property</scope><name>get_type_hash</name></member>
+      <member refid="a00122_1ade91b642390d463208dcc397143a1a95" prot="public" virt="pure-virtual"><scope>catos::Property</scope><name>get_type_name</name></member>
+      <member refid="a00122_1a658e2343fa5565207592286b665c82e5" prot="public" virt="pure-virtual"><scope>catos::Property</scope><name>get_value</name></member>
+      <member refid="a00122_1a9c2e5c8b67cc0f0bcf12d659392fb965" prot="public" virt="pure-virtual"><scope>catos::Property</scope><name>registerToPy</name></member>
+      <member refid="a00122_1a14c6ded73ec5e93149fda506c540a34f" prot="public" virt="pure-virtual"><scope>catos::Property</scope><name>set_name</name></member>
+      <member refid="a00122_1aadf32bd1d8c607a993f117ea2db3cadd" prot="public" virt="virtual"><scope>catos::Property</scope><name>~Property</name></member>
+    </listofallmembers>
   </compounddef>
 </doxygen>

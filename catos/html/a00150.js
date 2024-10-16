@@ -1,11 +1,8 @@
 var a00150 =
 [
-    [ "get_method", "a00150.html#aae56ec26c2e744b449f3da7cd11667c3", null ],
-    [ "get_property", "a00150.html#a2e3be86b60d107455570b7b5f1d9fd43", null ],
-    [ "method", "a00150.html#ab07220b87a27baec193e958522f3a157", null ],
-    [ "property", "a00150.html#adb9288a8ea5edbb41cf884f82d2e5322", null ],
-    [ "methods", "a00150.html#a9c4b2bf58d22a49d4e52dc27ff248ed2", null ],
-    [ "name", "a00150.html#ae0b2ff915a7ee07932398ea73ba22943", null ],
-    [ "properties", "a00150.html#a7cbfa52dbf039cfe37ff79d1c97db144", null ],
-    [ "type_hash", "a00150.html#a9a4c20fb31a1759ef8aa1d5c8acfeabd", null ]
+    [ "gen_cs_bindings_file", "a00150.html#ad344d7a045a558fa8a24e4f1ce095a05", null ],
+    [ "gen_python_bindings_file", "a00150.html#aa9d8e58c1258eebb008a292f8b8b1c44", null ],
+    [ "get_type", "a00150.html#a03c494fdb9fb9daafaea972f273de633", null ],
+    [ "print_current_register", "a00150.html#a3ff740e516ed706e2d202086df6f12b9", null ],
+    [ "register_class", "a00150.html#a3c1a3c07e51224b5745cd9764407efff", null ]
 ];

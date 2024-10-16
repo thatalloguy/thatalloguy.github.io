@@ -1,10 +1,12 @@
 var a00146 =
 [
-    [ "Method", "a00146.html#a40350e2564f0207cc7e730c34153ea6b", null ],
-    [ "invoke_function", "a00146.html#a5250d5fb0e0066d91dd83ea80f1fb15c", null ],
-    [ "invoke_function", "a00146.html#a6563134c767668a602c02cd0ec13d610", null ],
-    [ "desc", "a00146.html#a5621be029379a77b80f5fb6f7e91cf88", null ],
-    [ "parameterNames", "a00146.html#acb8b27e43adc06a52a1b2e2303b4a34e", null ],
-    [ "parameters", "a00146.html#aec3f9c676b863394c22100937548995c", null ],
-    [ "returnName", "a00146.html#a0b06cd150b4dc8a0b35d356d6f134442", null ]
+    [ "get_method", "a00146.html#aae56ec26c2e744b449f3da7cd11667c3", null ],
+    [ "get_property", "a00146.html#a2e3be86b60d107455570b7b5f1d9fd43", null ],
+    [ "method", "a00146.html#ab07220b87a27baec193e958522f3a157", null ],
+    [ "property", "a00146.html#adb9288a8ea5edbb41cf884f82d2e5322", null ],
+    [ "registerToPython", "a00146.html#aa6c91426df65c6b0482ad268b528ea79", null ],
+    [ "methods", "a00146.html#a9c4b2bf58d22a49d4e52dc27ff248ed2", null ],
+    [ "name", "a00146.html#ae0b2ff915a7ee07932398ea73ba22943", null ],
+    [ "properties", "a00146.html#a7cbfa52dbf039cfe37ff79d1c97db144", null ],
+    [ "type_hash", "a00146.html#a9a4c20fb31a1759ef8aa1d5c8acfeabd", null ]
 ];

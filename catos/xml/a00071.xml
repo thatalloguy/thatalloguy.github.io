@@ -1,235 +1,117 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00071" kind="file" language="C++">
-    <compoundname>VkPipelines.h</compoundname>
-    <includes local="no">fstream</includes>
-    <includes refid="a00059" local="yes">VkInitializers.h</includes>
-    <includedby refid="a00044" local="yes">VkEngine.cpp</includedby>
-    <includedby refid="a00068" local="yes">VkPipelines.cpp</includedby>
-    <incdepgraph>
+    <compoundname>shader.h</compoundname>
+    <includedby refid="a00059" local="no">renderPass.h</includedby>
+    <includedby refid="a00068" local="yes">shader.cpp</includedby>
+    <invincdepgraph>
       <node id="3">
-        <label>VkInitializers.h</label>
+        <label>renderPass.cpp</label>
+        <link refid="a00056"/>
+      </node>
+      <node id="2">
+        <label>renderPass.h</label>
         <link refid="a00059"/>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
       </node>
-      <node id="1">
-        <label>VkPipelines.h</label>
-        <link refid="a00071"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
+      <node id="5">
+        <label>renderer.cpp</label>
+        <link refid="a00050"/>
       </node>
       <node id="4">
-        <label>VkTypes.h</label>
-        <link refid="a00074"/>
+        <label>renderer.h</label>
+        <link refid="a00053"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-      </node>
-      <node id="13">
-        <label>GLFW/glfw3.h</label>
-      </node>
-      <node id="19">
-        <label>VkBootstrap.h</label>
-      </node>
-      <node id="10">
-        <label>array</label>
-      </node>
-      <node id="14">
-        <label>chrono</label>
-      </node>
-      <node id="12">
-        <label>deque</label>
-      </node>
-      <node id="2">
-        <label>fstream</label>
-      </node>
-      <node id="11">
-        <label>functional</label>
-      </node>
-      <node id="24">
-        <label>glm/common.hpp</label>
-      </node>
-      <node id="23">
-        <label>glm/glm.hpp</label>
-      </node>
-      <node id="21">
-        <label>glm/mat4x4.hpp</label>
-      </node>
-      <node id="22">
-        <label>glm/vec4.hpp</label>
-      </node>
-      <node id="5">
-        <label>memory</label>
       </node>
       <node id="6">
-        <label>optional</label>
-      </node>
-      <node id="9">
-        <label>span</label>
-      </node>
-      <node id="20">
-        <label>spdlog/spdlog.h</label>
-      </node>
-      <node id="7">
-        <label>string</label>
-      </node>
-      <node id="15">
-        <label>thread</label>
-      </node>
-      <node id="8">
-        <label>vector</label>
-      </node>
-      <node id="18">
-        <label>vk_mem_alloc.h</label>
-      </node>
-      <node id="17">
-        <label>vulkan/vk_enum_string_helper.h</label>
-      </node>
-      <node id="16">
-        <label>vulkan/vulkan.h</label>
-      </node>
-    </incdepgraph>
-    <invincdepgraph>
-      <node id="2">
-        <label>VkEngine.cpp</label>
-        <link refid="a00044"/>
-      </node>
-      <node id="3">
-        <label>VkPipelines.cpp</label>
+        <label>shader.cpp</label>
         <link refid="a00068"/>
       </node>
       <node id="1">
-        <label>VkPipelines.h</label>
+        <label>shader.h</label>
         <link refid="a00071"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
-    <innerclass refid="a00270" prot="public">PipelineBuilder</innerclass>
-    <innernamespace refid="a00119">VkUtil</innernamespace>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="a00071_1acf55208507a986f3bce7bf1dc150b896" prot="public" static="no">
-        <name>ATOMUSVULKAN_VKPIPELINES_H</name>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" line="14" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h" bodystart="14" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
+    <innerclass refid="a00206" prot="public">catos::ShaderCreateInfo</innerclass>
+    <innerclass refid="a00210" prot="public">catos::Shader</innerclass>
+    <innernamespace refid="a00107">catos</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>2/10/2024.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>10/16/2024.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>Purpose<sp/>of<sp/>this<sp/>file<sp/>for<sp/>future<sp/>reference:</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Will<sp/>contain<sp/>abstractions<sp/>for<sp/>pipelines</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CATOS_SHADER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CATOS_SHADER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00107" kindref="compound">catos</ref><sp/>{</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ATOMUSVULKAN_VKPIPELINES_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14" refid="a00071_1acf55208507a986f3bce7bf1dc150b896" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATOMUSVULKAN_VKPIPELINES_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="a00107_1a62ed9b6c5638f605322435f5461d34ea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00107_1a62ed9b6c5638f605322435f5461d34ea" kindref="member">ShaderProgram</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="a00107_1a265824fb2d204e156f2c6441780e2b72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="a00107_1a265824fb2d204e156f2c6441780e2b72" kindref="member">ShaderStatus</ref>:<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f" kindref="member">SUCCESSFUL</ref><sp/>=<sp/>0,</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00059" kindref="compound">VkInitializers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a265824fb2d204e156f2c6441780e2b72a554e3b301969b7f7e5029eb62105ebfb" kindref="member">UNKNOWN_SOURCE</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a265824fb2d204e156f2c6441780e2b72a4662e1e02abdf1af767a5e0df1d86fd0" kindref="member">COMPILATION_FAILED</ref><sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00119" kindref="compound">VkUtil</ref><sp/>{</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00119_1a73da1142a76da292c64a9499aacf5bc2" kindref="member">loadShaderModule</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filePath,</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkDevice<sp/>device,</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkShaderModule*<sp/>outShaderModule);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22" refid="a00107_1a1248e610959a287262cd6873908d97e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="a00107_1a1248e610959a287262cd6873908d97e5" kindref="member">ShaderType</ref>:<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="23" refid="a00107_1a1248e610959a287262cd6873908d97e5ae2f77ec0f5e09c8a4b77e3f50a99661a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a1248e610959a287262cd6873908d97e5ae2f77ec0f5e09c8a4b77e3f50a99661a" kindref="member">VERTEX</ref><sp/>=<sp/>0x8B31,</highlight></codeline>
+<codeline lineno="24" refid="a00107_1a1248e610959a287262cd6873908d97e5a37c1a4a2b64a7009588fe0d951ba7bb4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a1248e610959a287262cd6873908d97e5a37c1a4a2b64a7009588fe0d951ba7bb4" kindref="member">FRAGMENT</ref><sp/>=<sp/>0x8B30,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27" refid="a00270" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00270" kindref="compound">PipelineBuilder</ref><sp/>{</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="30" refid="a00270_1a67aa642c13dc5c0a1eb901bd2d47051d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;VkPipelineShaderStageCreateInfo&gt;<sp/><ref refid="a00270_1a67aa642c13dc5c0a1eb901bd2d47051d" kindref="member">_shaderStages</ref>;</highlight></codeline>
+<codeline lineno="27" refid="a00206" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00206" kindref="compound">ShaderCreateInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="28" refid="a00206_1abfa69aa891385e8b204c4b046d2e571c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="a00206_1abfa69aa891385e8b204c4b046d2e571c" kindref="member">vertexSRC</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29" refid="a00206_1a36ec77cfcca4d214197b6e4f549a6641" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="a00206_1a36ec77cfcca4d214197b6e4f549a6641" kindref="member">fragmentSRC</ref><sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="a00270_1a9c96fd4cfd4451053618317e8dc2742d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineInputAssemblyStateCreateInfo<sp/><ref refid="a00270_1a9c96fd4cfd4451053618317e8dc2742d" kindref="member">_inputAssembly</ref>;</highlight></codeline>
-<codeline lineno="33" refid="a00270_1a08020325183ad1d38da46c6df00d5f56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineRasterizationStateCreateInfo<sp/><ref refid="a00270_1a08020325183ad1d38da46c6df00d5f56" kindref="member">_rasterizer</ref>;</highlight></codeline>
-<codeline lineno="34" refid="a00270_1aa6733f7766a65f0aa7d78807b33da630" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineColorBlendAttachmentState<sp/><sp/><ref refid="a00270_1aa6733f7766a65f0aa7d78807b33da630" kindref="member">_colorBlendAttachment</ref>;</highlight></codeline>
-<codeline lineno="35" refid="a00270_1abbd337208ef05b087f450185fa2cde2e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineMultisampleStateCreateInfo<sp/><ref refid="a00270_1abbd337208ef05b087f450185fa2cde2e" kindref="member">_multisampling</ref>;</highlight></codeline>
-<codeline lineno="36" refid="a00270_1a27a3416b889bde0dcce7c28bbb15ed46" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineLayout<sp/><ref refid="a00270_1a27a3416b889bde0dcce7c28bbb15ed46" kindref="member">_pipelineLayout</ref>;</highlight></codeline>
-<codeline lineno="37" refid="a00270_1a9ad4350c6c2916fe6d8735646e6b3268" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineDepthStencilStateCreateInfo<sp/><ref refid="a00270_1a9ad4350c6c2916fe6d8735646e6b3268" kindref="member">_depthStencil</ref>;</highlight></codeline>
-<codeline lineno="38" refid="a00270_1a15beb7114c2a59de1d8022dcc9d8219a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipelineRenderingCreateInfo<sp/><ref refid="a00270_1a15beb7114c2a59de1d8022dcc9d8219a" kindref="member">_renderInfo</ref>;</highlight></codeline>
-<codeline lineno="39" refid="a00270_1a8a163243157a769336a712d8df4fd2ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>VkFormat<sp/><ref refid="a00270_1a8a163243157a769336a712d8df4fd2ff" kindref="member">_colorAttachmentformat</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>A<sp/>Shader<sp/>is<sp/>a<sp/>object<sp/>that<sp/>holds<sp/>a<sp/>program<sp/>that<sp/>runs<sp/>on<sp/>the<sp/>GPU.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="a00210" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00210" kindref="compound">Shader</ref><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00210_1a1597e5d99f26e7910f5a361a8d93b8cf" kindref="member">Shader</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00210_1a4756e50a9e74d1fda6bfb065d41bd554" kindref="member">~Shader</ref>();</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41" refid="a00270_1a08bb82589a05c27fdde547e4a53c8a16" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00270_1a08bb82589a05c27fdde547e4a53c8a16" kindref="member">PipelineBuilder</ref>(){<sp/><ref refid="a00270_1a10f1778c78c6b0d4c6b2b92b13b2191b" kindref="member">clear</ref>();<sp/>};</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a10f1778c78c6b0d4c6b2b92b13b2191b" kindref="member">clear</ref>();</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a2228754d15d46e04d91c45974282716a" kindref="member">setShaders</ref>(VkShaderModule<sp/>vertexShader,<sp/>VkShaderModule<sp/>fragmentShader);</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1ac64ce97ba92f9226bbb11ce387b52661" kindref="member">setInputToplogy</ref>(VkPrimitiveTopology<sp/>topology);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a692362aaf0f61503d00b0f4ff5cfb134" kindref="member">setPolygonMode</ref>(VkPolygonMode<sp/>mode);</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a4bba978feda490ecd639e05cf5df0dad" kindref="member">setCullMode</ref>(VkCullModeFlags<sp/>cullMode,<sp/>VkFrontFace<sp/>frontFace);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a586cf4dd2fa96f3a3e546ed5ee9aae0d" kindref="member">setMultisamplingNone</ref>();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a647ed08fe336a4e19382e20f6dfe8c51" kindref="member">disableBlending</ref>();</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a98e8a722b30d50f7f9e224172a768061" kindref="member">setColorAttachmentFormat</ref>(VkFormat<sp/>format);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a8e9c83acd93cfcb0e9e21024d75c27cd" kindref="member">setDepthFormat</ref>(VkFormat<sp/>format);</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a965014baa4b56a3ad6c6c8981c2b001e" kindref="member">disableDepthtest</ref>();</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1a4ebe0b6e3f37ac498322d7dda1ec8a2d" kindref="member">enableDepthtest</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>depthWriteEnable,<sp/>VkCompareOp<sp/>op);</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1aa8a8b5d264a156de7a8beea3508723c8" kindref="member">enableBlendingAdditive</ref>();</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00270_1adbe69d479e856129f73056f6db4b4ebf" kindref="member">enableBlendingAlphablend</ref>();</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>VkPipeline<sp/><ref refid="a00270_1ab68e37be1873638547e1912ee287a19e" kindref="member">buildPipeline</ref>(VkDevice<sp/>device);</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00210_1af3ddfa27ac2c46deb7536da49cb0b1fe" kindref="member">init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00206" kindref="compound">ShaderCreateInfo</ref>&amp;<sp/>createInfo);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a265824fb2d204e156f2c6441780e2b72" kindref="member">ShaderStatus</ref><sp/><ref refid="a00210_1a123b6799f9c42896b19fcd9f3dbf3f73" kindref="member">addSubShader</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src,<sp/><ref refid="a00107_1a1248e610959a287262cd6873908d97e5" kindref="member">ShaderType</ref><sp/>type);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="a00210_1a5b826fee95f9d0109c38d80e3aec1ae0" kindref="member">getCompilationErrorMessage</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="a00210_1af47aec6808dd6194a7848b67c9177d69" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a62ed9b6c5638f605322435f5461d34ea" kindref="member">ShaderProgram</ref><sp/><ref refid="a00210_1af47aec6808dd6194a7848b67c9177d69" kindref="member">getShaderProgram</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>shaderProgram;<sp/>};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00210_1a9efd84af708b6d33831209394d1eea29" kindref="member">bind</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00210_1a1c696c8f64a499bd99fa0261cacee791" kindref="member">setInt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a62ed9b6c5638f605322435f5461d34ea" kindref="member">ShaderProgram</ref><sp/>loadShader(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>src,<sp/><ref refid="a00107_1a1248e610959a287262cd6873908d97e5" kindref="member">ShaderType</ref><sp/>type);</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ATOMUSVULKAN_VKPIPELINES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00107_1a62ed9b6c5638f605322435f5461d34ea" kindref="member">ShaderProgram</ref><sp/>shaderProgram;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//CATOS_SHADER_H</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkPipelines.h"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/shader.h"/>
   </compounddef>
 </doxygen>

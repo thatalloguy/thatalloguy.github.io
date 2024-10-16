@@ -1,61 +1,75 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00170" kind="struct" language="C++" prot="public">
-    <compoundname>catos::math::Vector3</compoundname>
+    <compoundname>catos::math::Quaternion</compoundname>
     <includes refid="a00029" local="no">vecs.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00170_1aabf30b0a34d4ec3096451393e2d71913" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00170_1a94b0c157ed7151923b1d51f2754b6b0f" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float catos::math::Vector3::x</definition>
+        <definition>float catos::math::Quaternion::x</definition>
         <argsstring></argsstring>
         <name>x</name>
-        <qualifiedname>catos::math::Vector3::x</qualifiedname>
+        <qualifiedname>catos::math::Quaternion::x</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="64" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="64" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00170_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00170_1a2c481d6a952719618213fc6b921f67c0" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float catos::math::Vector3::y</definition>
+        <definition>float catos::math::Quaternion::y</definition>
         <argsstring></argsstring>
         <name>y</name>
-        <qualifiedname>catos::math::Vector3::y</qualifiedname>
+        <qualifiedname>catos::math::Quaternion::y</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="64" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="64" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00170_1a2568eefded1c720de4fcac757a5f164d" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="a00170_1a9e8b8c73d6afd0531e7f4c8141f469c9" prot="public" static="no" mutable="no">
         <type>float</type>
-        <definition>float catos::math::Vector3::z</definition>
+        <definition>float catos::math::Quaternion::z</definition>
         <argsstring></argsstring>
         <name>z</name>
-        <qualifiedname>catos::math::Vector3::z</qualifiedname>
+        <qualifiedname>catos::math::Quaternion::z</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="39" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="64" column="19" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00170_1a4ea592d10bfb621eab8f3a5dbb6e8645" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float catos::math::Quaternion::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>catos::math::Quaternion::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="64" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="64" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00170_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="a00170_1a1c6bdfef17a8d70344a9af3a20d8b130" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool catos::math::Vector3::operator==</definition>
-        <argsstring>(Vector3 &amp;b) const</argsstring>
+        <definition>bool catos::math::Quaternion::operator==</definition>
+        <argsstring>(Quaternion &amp;b) const</argsstring>
         <name>operator==</name>
-        <qualifiedname>catos::math::Vector3::operator==</qualifiedname>
+        <qualifiedname>catos::math::Quaternion::operator==</qualifiedname>
         <param>
-          <type><ref refid="a00170" kindref="compound">Vector3</ref> &amp;</type>
+          <type><ref refid="a00170" kindref="compound">Quaternion</ref> &amp;</type>
           <declname>b</declname>
         </param>
         <briefdescription>
@@ -64,14 +78,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="41" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="41" bodyend="43"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="66" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="66" bodyend="68"/>
       </memberdef>
-      <memberdef kind="function" id="a00170_1aac3d3c6575283572a19a23b352fca633" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type><ref refid="a00170" kindref="compound">Vector3</ref> &amp;</type>
-        <definition>Vector3 &amp; catos::math::Vector3::operator=</definition>
+      <memberdef kind="function" id="a00170_1af27fb9153ec0fcb930a73aa9cd7e2d09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="a00170" kindref="compound">Quaternion</ref> &amp;</type>
+        <definition>Quaternion &amp; catos::math::Quaternion::operator=</definition>
         <argsstring>(float val)</argsstring>
         <name>operator=</name>
-        <qualifiedname>catos::math::Vector3::operator=</qualifiedname>
+        <qualifiedname>catos::math::Quaternion::operator=</qualifiedname>
         <param>
           <type>float</type>
           <declname>val</declname>
@@ -82,16 +96,16 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="45" column="17" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="45" bodyend="50"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="70" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="70" bodyend="76"/>
       </memberdef>
-      <memberdef kind="function" id="a00170_1ac086c01bff23542b26b0b2eef4c52348" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="a00170_1a1cddf6ae46991af3d46855935b34f75a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void catos::math::Vector3::operator+=</definition>
-        <argsstring>(Vector3 &amp;b)</argsstring>
-        <name>operator+=</name>
-        <qualifiedname>catos::math::Vector3::operator+=</qualifiedname>
+        <definition>void catos::math::Quaternion::operator+</definition>
+        <argsstring>(Quaternion &amp;b)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>catos::math::Quaternion::operator+</qualifiedname>
         <param>
-          <type><ref refid="a00170" kindref="compound">Vector3</ref> &amp;</type>
+          <type><ref refid="a00170" kindref="compound">Quaternion</ref> &amp;</type>
           <declname>b</declname>
         </param>
         <briefdescription>
@@ -100,21 +114,37 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="53" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="53" bodyend="57"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="78" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="a00170_1a203266c0dc325bac87c20c3ae822a567" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::math::Quaternion::sIdentity</definition>
+        <argsstring>()</argsstring>
+        <name>sIdentity</name>
+        <qualifiedname>catos::math::Quaternion::sIdentity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="85" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="85" bodyend="87"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="37" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="37" bodyend="60"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" line="62" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/math/vecs.h" bodystart="62" bodyend="89"/>
     <listofallmembers>
-      <member refid="a00170_1ac086c01bff23542b26b0b2eef4c52348" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator+=</name></member>
-      <member refid="a00170_1aac3d3c6575283572a19a23b352fca633" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator=</name></member>
-      <member refid="a00170_1acb52a2eb1453bc4ac15c0a8ab3d7143c" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>operator==</name></member>
-      <member refid="a00170_1aabf30b0a34d4ec3096451393e2d71913" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>x</name></member>
-      <member refid="a00170_1aa835783e4604f1d188de6fbdee1cd7c9" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>y</name></member>
-      <member refid="a00170_1a2568eefded1c720de4fcac757a5f164d" prot="public" virt="non-virtual"><scope>catos::math::Vector3</scope><name>z</name></member>
+      <member refid="a00170_1a1cddf6ae46991af3d46855935b34f75a" prot="public" virt="non-virtual"><scope>catos::math::Quaternion</scope><name>operator+</name></member>
+      <member refid="a00170_1af27fb9153ec0fcb930a73aa9cd7e2d09" prot="public" virt="non-virtual"><scope>catos::math::Quaternion</scope><name>operator=</name></member>
+      <member refid="a00170_1a1c6bdfef17a8d70344a9af3a20d8b130" prot="public" virt="non-virtual"><scope>catos::math::Quaternion</scope><name>operator==</name></member>
+      <member refid="a00170_1a203266c0dc325bac87c20c3ae822a567" prot="public" virt="non-virtual"><scope>catos::math::Quaternion</scope><name>sIdentity</name></member>
+      <member refid="a00170_1a4ea592d10bfb621eab8f3a5dbb6e8645" prot="public" virt="non-virtual"><scope>catos::math::Quaternion</scope><name>w</name></member>
+      <member refid="a00170_1a94b0c157ed7151923b1d51f2754b6b0f" prot="public" virt="non-virtual"><scope>catos::math::Quaternion</scope><name>x</name></member>
+      <member refid="a00170_1a2c481d6a952719618213fc6b921f67c0" prot="public" virt="non-virtual"><scope>catos::math::Quaternion</scope><name>y</name></member>
+      <member refid="a00170_1a9e8b8c73d6afd0531e7f4c8141f469c9" prot="public" virt="non-virtual"><scope>catos::math::Quaternion</scope><name>z</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

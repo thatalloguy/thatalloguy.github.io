@@ -1,151 +1,121 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00050" kind="file" language="C++">
-    <compoundname>VkImages.cpp</compoundname>
-    <includes local="no">stb_image.h</includes>
-    <includes refid="a00053" local="yes">VkImages.h</includes>
-    <includes refid="a00059" local="yes">VkInitializers.h</includes>
+    <compoundname>renderer.cpp</compoundname>
+    <includes refid="a00053" local="yes">renderer.h</includes>
+    <includes local="yes">glad/glad.h</includes>
     <incdepgraph>
-      <node id="1">
-        <label>VkImages.cpp</label>
-        <link refid="a00050"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>VkImages.h</label>
-        <link refid="a00053"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-      </node>
       <node id="5">
-        <label>VkInitializers.h</label>
-        <link refid="a00059"/>
+        <label>math/vecs.h</label>
+        <link refid="a00029"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="6">
-        <label>VkTypes.h</label>
-        <link refid="a00074"/>
+      <node id="4">
+        <label>renderer/renderPass.h</label>
+        <link refid="a00059"/>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>renderer/renderPipeline.h</label>
+        <link refid="a00065"/>
+      </node>
+      <node id="1">
+        <label>renderer.cpp</label>
+        <link refid="a00050"/>
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
+      </node>
+      <node id="2">
+        <label>renderer.h</label>
+        <link refid="a00053"/>
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>GLFW/glfw3.h</label>
-      </node>
-      <node id="20">
-        <label>VkBootstrap.h</label>
-      </node>
-      <node id="12">
-        <label>array</label>
-      </node>
-      <node id="16">
-        <label>chrono</label>
-      </node>
-      <node id="14">
-        <label>deque</label>
-      </node>
-      <node id="13">
-        <label>functional</label>
-      </node>
-      <node id="25">
-        <label>glm/common.hpp</label>
-      </node>
-      <node id="24">
-        <label>glm/glm.hpp</label>
-      </node>
-      <node id="22">
-        <label>glm/mat4x4.hpp</label>
-      </node>
-      <node id="23">
-        <label>glm/vec4.hpp</label>
       </node>
       <node id="7">
-        <label>memory</label>
+        <label>renderer/shader.h</label>
+        <link refid="a00071"/>
       </node>
       <node id="8">
-        <label>optional</label>
+        <label>glad/glad.h</label>
       </node>
-      <node id="11">
-        <label>span</label>
-      </node>
-      <node id="21">
-        <label>spdlog/spdlog.h</label>
-      </node>
-      <node id="2">
-        <label>stb_image.h</label>
-      </node>
-      <node id="9">
-        <label>string</label>
-      </node>
-      <node id="17">
-        <label>thread</label>
-      </node>
-      <node id="10">
-        <label>vector</label>
-      </node>
-      <node id="19">
-        <label>vk_mem_alloc.h</label>
-      </node>
-      <node id="18">
-        <label>vulkan/vk_enum_string_helper.h</label>
-      </node>
-      <node id="4">
-        <label>vulkan/vulkan.h</label>
+      <node id="6">
+        <label>glm/glm.hpp</label>
       </node>
     </incdepgraph>
-    <sectiondef kind="define">
-      <memberdef kind="define" id="a00050_1a18372412ad2fc3ce1e3240b3cf0efe78" prot="public" static="no">
-        <name>STB_IMAGE_IMPLEMENTATION</name>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="a00050_1a9471a46abc74f558a28d0e8e4b126665" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float quadVertices[]</definition>
+        <argsstring>[]</argsstring>
+        <name>quadVertices</name>
+        <initializer>= { 
+        
+        -1.0f,  1.0f,  0.0f, 1.0f,
+        -1.0f, -1.0f,  0.0f, 0.0f,
+        1.0f, -1.0f,  1.0f, 0.0f,
+
+        -1.0f,  1.0f,  0.0f, 1.0f,
+        1.0f, -1.0f,  1.0f, 0.0f,
+        1.0f,  1.0f,  1.0f, 1.0f
+}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.cpp" line="4" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.cpp" bodystart="4" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" line="9" column="7" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="9" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00050_1a72011d4de68914f5054b8b4898d3d470" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* screenVertexSource</definition>
+        <argsstring></argsstring>
+        <name>screenVertexSource</name>
+        <initializer>= &quot;#version 420 core\n&quot;
+                                 &quot;layout (location = 0) in vec3 aPos;\n&quot;
+                                 &quot;layout (location = 1) in vec2 aTexCoords;\n&quot;
+                                 &quot;out vec2 TexCoords; \n&quot;
+                                 &quot;void <ref refid="a00104_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>()\n&quot;
+                                 &quot;{\n&quot;
+                                 &quot;   TexCoords = aTexCoords;\n&quot;
+                                 &quot;   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n&quot;
+                                 &quot;}\0&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" line="20" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00050_1ab041c612ec5b49f76db549e8109d826c" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* screenFragmentSource</definition>
+        <argsstring></argsstring>
+        <name>screenFragmentSource</name>
+        <initializer>= &quot;#version 420 core\n&quot;
+                                   &quot;uniform sampler2D outTexture;\n&quot;
+                                   &quot;in vec2 TexCoords;&quot;
+                                   &quot;out vec4 outColor;\n&quot;
+                                   &quot;void <ref refid="a00104_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref>() {\n&quot;
+                                   &quot; vec3 col = texture(outTexture, TexCoords).rgb;\n&quot;
+                                   &quot; outColor = vec4(col, 1.0);\n&quot;
+                                   &quot;}\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" line="30" column="12" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="30" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -154,148 +124,120 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>2/10/2024.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>10/16/2024.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STB_IMAGE_IMPLEMENTATION</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stb_image.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00053" kindref="compound">VkImages.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00059" kindref="compound">VkInitializers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00119_1a875b1e47dc0c1a3d683aa56a048004a1" kindref="member">VkUtil::transitionImage</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>image,<sp/>VkImageLayout<sp/>currentLayout,<sp/>VkImageLayout<sp/>newLayout)<sp/>{</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageMemoryBarrier2<sp/>imageBarrier<sp/>{VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER_2};</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.srcStageMask<sp/><sp/>=<sp/>VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT;</highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.srcAccessMask<sp/>=<sp/>VK_ACCESS_2_MEMORY_WRITE_BIT;</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.dstStageMask<sp/><sp/>=<sp/>VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.dstAccessMask<sp/>=<sp/>VK_ACCESS_2_MEMORY_WRITE_BIT<sp/>|<sp/>VK_ACCESS_2_MEMORY_READ_BIT;</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.oldLayout<sp/>=<sp/>currentLayout;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.newLayout<sp/>=<sp/>newLayout;</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageAspectFlags<sp/>aspectMask<sp/>=<sp/>(newLayout<sp/>==<sp/>VK_IMAGE_LAYOUT_DEPTH_ATTACHMENT_OPTIMAL)<sp/>?<sp/>VK_IMAGE_ASPECT_DEPTH_BIT<sp/>:<sp/>VK_IMAGE_ASPECT_COLOR_BIT;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.subresourceRange<sp/>=<sp/><ref refid="a00120_1abe7cc27c092869928fc3c6428219e858" kindref="member">VkInit::imageSubresourceRange</ref>(aspectMask);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>imageBarrier.image<sp/>=<sp/>image;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>VkDependencyInfo<sp/>depInfo<sp/>{};</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>depInfo.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_DEPENDENCY_INFO;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>depInfo.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>depInfo.imageMemoryBarrierCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>depInfo.pImageMemoryBarriers<sp/>=<sp/>&amp;imageBarrier;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>vkCmdPipelineBarrier2(cmd,<sp/>&amp;depInfo);</highlight></codeline>
-<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00119_1aaf415273879926840c4ba3f273ced282" kindref="member">VkUtil::copyImageToImage</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>source,<sp/>VkImage<sp/>destination,<sp/>VkExtent2D<sp/>srcSize,<sp/>VkExtent2D<sp/>dstSize)<sp/>{</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>VkImageBlit2<sp/>blitRegion{<sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_IMAGE_BLIT_2,<sp/>.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.srcOffsets[1].x<sp/>=<sp/>srcSize.width;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.srcOffsets[1].y<sp/>=<sp/>srcSize.height;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.srcOffsets[1].z<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00053" kindref="compound">renderer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;glad/glad.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Some<sp/>util<sp/>variables</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00050_1a9471a46abc74f558a28d0e8e4b126665" kindref="member">quadVertices</ref>[]<sp/>=<sp/>{<sp/></highlight><highlight class="comment">//<sp/>vertex<sp/>attributes<sp/>for<sp/>a<sp/>quad<sp/>that<sp/>fills<sp/>the<sp/>entire<sp/>screen<sp/>in<sp/>Normalized<sp/>Device<sp/>Coordinates.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>positions<sp/><sp/><sp/>//<sp/>texCoords</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1.0f,<sp/><sp/>1.0f,<sp/><sp/>0.0f,<sp/>1.0f,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1.0f,<sp/>-1.0f,<sp/><sp/>0.0f,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.0f,<sp/>-1.0f,<sp/><sp/>1.0f,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-1.0f,<sp/><sp/>1.0f,<sp/><sp/>0.0f,<sp/>1.0f,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.0f,<sp/>-1.0f,<sp/><sp/>1.0f,<sp/>0.0f,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1.0f,<sp/><sp/>1.0f,<sp/><sp/>1.0f,<sp/>1.0f</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="a00050_1a72011d4de68914f5054b8b4898d3d470" kindref="member">screenVertexSource</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#version<sp/>420<sp/>core\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;layout<sp/>(location<sp/>=<sp/>0)<sp/>in<sp/>vec3<sp/>aPos;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;layout<sp/>(location<sp/>=<sp/>1)<sp/>in<sp/>vec2<sp/>aTexCoords;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;out<sp/>vec2<sp/>TexCoords;<sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;void<sp/>main()\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;{\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>TexCoords<sp/>=<sp/>aTexCoords;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/><sp/><sp/>gl_Position<sp/>=<sp/>vec4(aPos.x,<sp/>aPos.y,<sp/>aPos.z,<sp/>1.0);\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;}\0&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="a00050_1ab041c612ec5b49f76db549e8109d826c" kindref="member">screenFragmentSource</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;#version<sp/>420<sp/>core\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;uniform<sp/>sampler2D<sp/>outTexture;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;in<sp/>vec2<sp/>TexCoords;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;out<sp/>vec4<sp/>outColor;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;void<sp/>main()<sp/>{\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>vec3<sp/>col<sp/>=<sp/>texture(outTexture,<sp/>TexCoords).rgb;\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;<sp/>outColor<sp/>=<sp/>vec4(col,<sp/>1.0);\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;}\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.dstOffsets[1].x<sp/>=<sp/>dstSize.width;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.dstOffsets[1].y<sp/>=<sp/>dstSize.height;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.dstOffsets[1].z<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.srcSubresource.aspectMask<sp/>=<sp/>VK_IMAGE_ASPECT_COLOR_BIT;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.srcSubresource.baseArrayLayer<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.srcSubresource.layerCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.srcSubresource.mipLevel<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.dstSubresource.aspectMask<sp/>=<sp/>VK_IMAGE_ASPECT_COLOR_BIT;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.dstSubresource.baseArrayLayer<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.dstSubresource.layerCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>blitRegion.dstSubresource.mipLevel<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="a00190" kindref="compound">catos::Renderer</ref><sp/>&amp;<ref refid="a00190_1a9abc0b2f88cab6de481b5ed03b33bf40" kindref="member">catos::Renderer::getInstance</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>Renderer<sp/>_instance{};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_instance;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="a00190_1a77b6706531afda679e25e1a768461c7a" kindref="member">catos::Renderer::~Renderer</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteVertexArrays(1,<sp/>&amp;renderVAO);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>glDeleteBuffers(1,<sp/>&amp;renderVBO);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844" kindref="member">catos::RenderStatus</ref><sp/><ref refid="a00190_1a80632fc4bf3b4bfd4adf53942e1082b2" kindref="member">catos::Renderer::init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00186" kindref="compound">catos::RendererCreateInfo</ref><sp/>&amp;createInfo)<sp/>{</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>VkBlitImageInfo2<sp/>blitInfo{.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_BLIT_IMAGE_INFO_2,<sp/>.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>blitInfo.dstImage<sp/>=<sp/>destination;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>blitInfo.dstImageLayout<sp/>=<sp/>VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>blitInfo.srcImage<sp/>=<sp/>source;</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>blitInfo.srcImageLayout<sp/>=<sp/>VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL;</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>blitInfo.filter<sp/>=<sp/>VK_FILTER_LINEAR;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>blitInfo.regionCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>blitInfo.pRegions<sp/>=<sp/>&amp;blitRegion;</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>vkCmdBlitImage2(cmd,<sp/>&amp;blitInfo);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(initialized)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844afdd03591b253a925e0d2c5c9d87aa68c" kindref="member">RenderStatus::RENDERER_ALREADY_INITIALIZED</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>init<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>ShaderCreateInfo<sp/>screenInfo<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00050_1a72011d4de68914f5054b8b4898d3d470" kindref="member">screenVertexSource</ref>,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00050_1ab041c612ec5b49f76db549e8109d826c" kindref="member">screenFragmentSource</ref></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00119_1ab2f70afca891c15b7a86f4d2d5c67931" kindref="member">VkUtil::generateMipMaps</ref>(VkCommandBuffer<sp/>cmd,<sp/>VkImage<sp/>image,<sp/>VkExtent2D<sp/>imageSize)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>screenShader.init(screenInfo);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mipLevels<sp/>=<sp/>int(std::floor(std::log2(std::max(imageSize.width,<sp/>imageSize.height))))<sp/>+<sp/>1;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mip<sp/>=<sp/>0;<sp/>mip<sp/>&lt;<sp/>mipLevels;<sp/>mip++)<sp/>{</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkExtent2D<sp/>halfSize<sp/>=<sp/>imageSize;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>halfSize.width<sp/>/=<sp/>2;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>halfSize.height<sp/>/=<sp/>2;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>screenShader.bind();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>screenShader.setInt(</highlight><highlight class="stringliteral">&quot;outTexture&quot;</highlight><highlight class="normal">,<sp/>0);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>setupFinalRenderPlane();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f" kindref="member">RenderStatus::SUCCESSFUL</ref>;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkImageMemoryBarrier2<sp/><sp/>imageBarrier{};</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_IMAGE_MEMORY_BARRIER_2;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.srcStageMask<sp/>=<sp/>VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.srcAccessMask<sp/>=<sp/>VK_ACCESS_2_MEMORY_WRITE_BIT;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.dstStageMask<sp/>=<sp/>VK_PIPELINE_STAGE_2_ALL_COMMANDS_BIT;</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.dstAccessMask<sp/>=<sp/>VK_ACCESS_2_MEMORY_WRITE_BIT<sp/>|<sp/>VK_ACCESS_2_MEMORY_READ_BIT;</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.oldLayout<sp/>=<sp/>VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.newLayout<sp/>=<sp/>VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkImageAspectFlags<sp/><sp/>aspectMask<sp/>=<sp/>VK_IMAGE_ASPECT_COLOR_BIT;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.subresourceRange<sp/>=<sp/><ref refid="a00120_1abe7cc27c092869928fc3c6428219e858" kindref="member">VkInit::imageSubresourceRange</ref>(aspectMask);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.subresourceRange.levelCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.subresourceRange.baseMipLevel<sp/>=<sp/>mip;</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageBarrier.image<sp/>=<sp/>image;</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkDependencyInfo<sp/>depInfo{<sp/>.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_DEPENDENCY_INFO,<sp/>.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal"><sp/>};</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>depInfo.imageMemoryBarrierCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>depInfo.pImageMemoryBarriers<sp/>=<sp/>&amp;imageBarrier;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844" kindref="member">catos::RenderStatus</ref><sp/><ref refid="a00190_1ae4bc8cfbd577da01b4dedf353da9d80e" kindref="member">catos::Renderer::renderObjects</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00202" kindref="compound">catos::RenderPipeline</ref><sp/>&amp;pipeline,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>objectAmount)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//do<sp/>stuff.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f" kindref="member">RenderStatus::SUCCESSFUL</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844" kindref="member">catos::RenderStatus</ref><sp/><ref refid="a00190_1aa5bd4659694cca3566bc5f2cb7df1e98" kindref="member">catos::Renderer::renderPassToScreen</ref>(<ref refid="a00198" kindref="compound">catos::RenderPass</ref><sp/>&amp;pass)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindVertexArray(renderVAO);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>glActiveTexture(GL_TEXTURE0);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindTexture(GL_TEXTURE_2D,<sp/>pass.<ref refid="a00198_1a9b873b18d3e44a61183e6141038e7536" kindref="member">getPassTexture</ref>());</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>screenShader.bind();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>glDrawArrays(GL_TRIANGLES,<sp/>0,<sp/>6);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844ab1e088e6b80cf7504134b8b059e4348f" kindref="member">RenderStatus::SUCCESSFUL</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vkCmdPipelineBarrier2(cmd,<sp/>&amp;depInfo);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>catos::Renderer::setupFinalRenderPlane()<sp/>{</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mip<sp/>&lt;<sp/>mipLevels<sp/>-<sp/>1)<sp/>{</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkImageBlit2<sp/>blitRegion<sp/>{.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_IMAGE_BLIT_2,<sp/>.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>glGenVertexArrays(1,<sp/>&amp;renderVAO);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>glGenBuffers(1,<sp/>&amp;renderVBO);</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.srcOffsets[1].x<sp/>=<sp/>imageSize.width;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.srcOffsets[1].y<sp/>=<sp/>imageSize.height;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.srcOffsets[1].z<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.dstOffsets[1].x<sp/>=<sp/>halfSize.width;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.dstOffsets[1].y<sp/>=<sp/>halfSize.height;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.dstOffsets[1].z<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.srcSubresource.aspectMask<sp/>=<sp/>VK_IMAGE_ASPECT_COLOR_BIT;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.srcSubresource.baseArrayLayer<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.srcSubresource.layerCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.srcSubresource.mipLevel<sp/>=<sp/>mip;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.dstSubresource.aspectMask<sp/>=<sp/>VK_IMAGE_ASPECT_COLOR_BIT;</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.dstSubresource.baseArrayLayer<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.dstSubresource.layerCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitRegion.dstSubresource.mipLevel<sp/>=<sp/>mip<sp/>+<sp/>1;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VkBlitImageInfo2<sp/>blitInfo<sp/>{.sType<sp/>=<sp/>VK_STRUCTURE_TYPE_BLIT_IMAGE_INFO_2,<sp/>.pNext<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">};</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitInfo.dstImage<sp/>=<sp/>image;</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitInfo.dstImageLayout<sp/>=<sp/>VK_IMAGE_LAYOUT_TRANSFER_DST_OPTIMAL;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitInfo.srcImage<sp/>=<sp/>image;</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitInfo.srcImageLayout<sp/>=<sp/>VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL;</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitInfo.filter<sp/>=<sp/>VK_FILTER_LINEAR;</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitInfo.regionCount<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>blitInfo.pRegions<sp/>=<sp/>&amp;blitRegion;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vkCmdBlitImage2(cmd,<sp/>&amp;blitInfo);</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>imageSize<sp/>=<sp/>halfSize;</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>transition<sp/>all<sp/>the<sp/>mip<sp/>levels<sp/>into<sp/>the<sp/>final<sp/>read<sp/>only<sp/>layout</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="a00119_1a875b1e47dc0c1a3d683aa56a048004a1" kindref="member">transitionImage</ref>(cmd,<sp/>image,<sp/>VK_IMAGE_LAYOUT_TRANSFER_SRC_OPTIMAL,<sp/>VK_IMAGE_LAYOUT_SHADER_READ_ONLY_OPTIMAL);</highlight></codeline>
-<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindVertexArray(renderVAO);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>glBindBuffer(GL_ARRAY_BUFFER,<sp/>renderVBO);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>glBufferData(GL_ARRAY_BUFFER,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="a00050_1a9471a46abc74f558a28d0e8e4b126665" kindref="member">quadVertices</ref>),<sp/>&amp;<ref refid="a00050_1a9471a46abc74f558a28d0e8e4b126665" kindref="member">quadVertices</ref>,<sp/>GL_STATIC_DRAW);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnableVertexAttribArray(0);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>glVertexAttribPointer(0,<sp/>2,<sp/>GL_FLOAT,<sp/>GL_FALSE,<sp/>4<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">),<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)0);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>glEnableVertexAttribArray(1);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>glVertexAttribPointer(1,<sp/>2,<sp/>GL_FLOAT,<sp/>GL_FALSE,<sp/>4<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">),<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)(2<sp/>*<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)));</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkImages.cpp"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp"/>
   </compounddef>
 </doxygen>

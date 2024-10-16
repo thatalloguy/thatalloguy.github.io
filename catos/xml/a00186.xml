@@ -1,122 +1,32 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00186" kind="struct" language="C++" prot="public">
-    <compoundname>DescriptorAllocator</compoundname>
-    <includes refid="a00041" local="no">VkDescriptors.h</includes>
-    <innerclass refid="a00190" prot="public">DescriptorAllocator::PoolSizeRatio</innerclass>
+    <compoundname>catos::RendererCreateInfo</compoundname>
+    <includes refid="a00053" local="no">renderer.h</includes>
     <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00186_1a51150b1aad092cd0707378078ec0e35c" prot="public" static="no" mutable="no">
-        <type>VkDescriptorPool</type>
-        <definition>VkDescriptorPool DescriptorAllocator::pool</definition>
+      <memberdef kind="variable" id="a00186_1af75d3309a1a01b0ff3ab582b709a8b9a" prot="public" static="no" mutable="no">
+        <type><ref refid="a00107_1ac617635d2b87a1969d411fcf09f8d983" kindref="member">RenderBackendType</ref></type>
+        <definition>RenderBackendType catos::RendererCreateInfo::backendType</definition>
         <argsstring></argsstring>
-        <name>pool</name>
-        <qualifiedname>DescriptorAllocator::pool</qualifiedname>
+        <name>backendType</name>
+        <qualifiedname>catos::RendererCreateInfo::backendType</qualifiedname>
+        <initializer>= <ref refid="a00107_1ac617635d2b87a1969d411fcf09f8d983a4cc921ef0a0b96b2f6320e4184e53e71" kindref="member">RenderBackendType::OPENGL_4_2</ref></initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="32" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="32" bodyend="-1"/>
-      </memberdef>
-    </sectiondef>
-    <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00186_1af462a503a5c26ba20338c56d009eea48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void DescriptorAllocator::initPool</definition>
-        <argsstring>(VkDevice device, uint32_t maxSets, std::span&lt; PoolSizeRatio &gt; poolRatios)</argsstring>
-        <name>initPool</name>
-        <qualifiedname>DescriptorAllocator::initPool</qualifiedname>
-        <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type>uint32_t</type>
-          <declname>maxSets</declname>
-        </param>
-        <param>
-          <type>std::span&lt; <ref refid="a00190" kindref="compound">PoolSizeRatio</ref> &gt;</type>
-          <declname>poolRatios</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="34" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="39" bodyend="56"/>
-      </memberdef>
-      <memberdef kind="function" id="a00186_1a7824d1b20b807681a834dd53c0bd1315" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void DescriptorAllocator::clearDescriptors</definition>
-        <argsstring>(VkDevice device)</argsstring>
-        <name>clearDescriptors</name>
-        <qualifiedname>DescriptorAllocator::clearDescriptors</qualifiedname>
-        <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="35" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="58" bodyend="60"/>
-      </memberdef>
-      <memberdef kind="function" id="a00186_1a574cc72d9888d2cf0a4ab77fa56093d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void DescriptorAllocator::destroyPool</definition>
-        <argsstring>(VkDevice device)</argsstring>
-        <name>destroyPool</name>
-        <qualifiedname>DescriptorAllocator::destroyPool</qualifiedname>
-        <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="36" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="62" bodyend="64"/>
-      </memberdef>
-      <memberdef kind="function" id="a00186_1a334e8652789e38e59f911c89aeea2dc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>VkDescriptorSet</type>
-        <definition>VkDescriptorSet DescriptorAllocator::allocate</definition>
-        <argsstring>(VkDevice device, VkDescriptorSetLayout layout)</argsstring>
-        <name>allocate</name>
-        <qualifiedname>DescriptorAllocator::allocate</qualifiedname>
-        <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type>VkDescriptorSetLayout</type>
-          <declname>layout</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="38" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.cpp" bodystart="66" bodyend="77"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="27" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="27" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="26" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="26" bodyend="39"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="26" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="26" bodyend="28"/>
     <listofallmembers>
-      <member refid="a00186_1a334e8652789e38e59f911c89aeea2dc6" prot="public" virt="non-virtual"><scope>DescriptorAllocator</scope><name>allocate</name></member>
-      <member refid="a00186_1a7824d1b20b807681a834dd53c0bd1315" prot="public" virt="non-virtual"><scope>DescriptorAllocator</scope><name>clearDescriptors</name></member>
-      <member refid="a00186_1a574cc72d9888d2cf0a4ab77fa56093d7" prot="public" virt="non-virtual"><scope>DescriptorAllocator</scope><name>destroyPool</name></member>
-      <member refid="a00186_1af462a503a5c26ba20338c56d009eea48" prot="public" virt="non-virtual"><scope>DescriptorAllocator</scope><name>initPool</name></member>
-      <member refid="a00186_1a51150b1aad092cd0707378078ec0e35c" prot="public" virt="non-virtual"><scope>DescriptorAllocator</scope><name>pool</name></member>
+      <member refid="a00186_1af75d3309a1a01b0ff3ab582b709a8b9a" prot="public" virt="non-virtual"><scope>catos::RendererCreateInfo</scope><name>backendType</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

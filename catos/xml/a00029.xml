@@ -3,9 +3,8 @@
   <compounddef id="a00029" kind="file" language="C++">
     <compoundname>vecs.h</compoundname>
     <includes local="no">glm/glm.hpp</includes>
-    <includedby refid="a00107" local="yes">main.cpp</includedby>
+    <includedby refid="a00059" local="no">renderPass.h</includedby>
     <includedby refid="a00023" local="yes">window.h</includedby>
-    <includedby refid="a00113" local="yes">world.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>vecs.h</label>
@@ -18,60 +17,46 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
-        <label>window.cpp</label>
-        <link refid="a00020"/>
-      </node>
-      <node id="3">
+      <node id="6">
         <label>window.h</label>
         <link refid="a00023"/>
-        <childnode refid="4" relation="include">
-        </childnode>
       </node>
       <node id="1">
         <label>vecs.h</label>
         <link refid="a00029"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>renderPass.cpp</label>
+        <link refid="a00056"/>
+      </node>
+      <node id="2">
+        <label>renderPass.h</label>
+        <link refid="a00059"/>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>renderer.cpp</label>
+        <link refid="a00050"/>
+      </node>
+      <node id="4">
+        <label>renderer.h</label>
+        <link refid="a00053"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="7">
-        <label>ScriptingEngine.cpp</label>
-        <link refid="a00077"/>
-      </node>
-      <node id="6">
-        <label>ScriptingEngine.h</label>
-        <link refid="a00080"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>main.cpp</label>
-        <link refid="a00107"/>
-      </node>
-      <node id="8">
-        <label>world.cpp</label>
-        <link refid="a00110"/>
-      </node>
-      <node id="5">
-        <label>world.h</label>
-        <link refid="a00113"/>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
     </invincdepgraph>
-    <innerclass refid="a00166" prot="public">catos::math::Vector2</innerclass>
-    <innerclass refid="a00170" prot="public">catos::math::Vector3</innerclass>
-    <innerclass refid="a00174" prot="public">catos::math::Quaternion</innerclass>
-    <innernamespace refid="a00116">catos</innernamespace>
-    <innernamespace refid="a00118">catos::math</innernamespace>
+    <innerclass refid="a00162" prot="public">catos::math::Vector2</innerclass>
+    <innerclass refid="a00166" prot="public">catos::math::Vector3</innerclass>
+    <innerclass refid="a00170" prot="public">catos::math::Quaternion</innerclass>
+    <innernamespace refid="a00107">catos</innernamespace>
+    <innernamespace refid="a00109">catos::math</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -86,42 +71,42 @@
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;glm/glm.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10" refid="a00118" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00118" kindref="compound">catos::math</ref><sp/>{</highlight></codeline>
+<codeline lineno="10" refid="a00109" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00109" kindref="compound">catos::math</ref><sp/>{</highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13" refid="a00166" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00166" kindref="compound">Vector2</ref><sp/>{</highlight></codeline>
+<codeline lineno="13" refid="a00162" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00162" kindref="compound">Vector2</ref><sp/>{</highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15" refid="a00166_1a442e5ef4dd0744758b5db87ca36aed90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00166_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref>,<sp/><ref refid="a00166_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="15" refid="a00162_1a442e5ef4dd0744758b5db87ca36aed90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00162_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref>,<sp/><ref refid="a00162_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>;</highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="a00166_1a47758ee7db6b46dcf0c68e85cdb53e86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00166_1a47758ee7db6b46dcf0c68e85cdb53e86" kindref="member">operator==</ref>(<ref refid="a00166" kindref="compound">Vector2</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;x<sp/>==<sp/>b.<ref refid="a00166_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref><sp/>&amp;&amp;<sp/>this-&gt;y<sp/>==<sp/>b.<ref refid="a00166_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>);</highlight></codeline>
+<codeline lineno="17" refid="a00162_1a47758ee7db6b46dcf0c68e85cdb53e86" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00162_1a47758ee7db6b46dcf0c68e85cdb53e86" kindref="member">operator==</ref>(<ref refid="a00162" kindref="compound">Vector2</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;x<sp/>==<sp/>b.<ref refid="a00162_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref><sp/>&amp;&amp;<sp/>this-&gt;y<sp/>==<sp/>b.<ref refid="a00162_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>);</highlight></codeline>
 <codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21" refid="a00166_1a7a5f74f94f6515ff5371aad50873cee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00166_1a7a5f74f94f6515ff5371aad50873cee2" kindref="member">operator==</ref>(glm::vec2&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="21" refid="a00162_1a7a5f74f94f6515ff5371aad50873cee2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00162_1a7a5f74f94f6515ff5371aad50873cee2" kindref="member">operator==</ref>(glm::vec2&amp;<sp/>b)<sp/>{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;x<sp/>==<sp/>b.x<sp/>&amp;&amp;<sp/>this-&gt;y<sp/>==<sp/>b.y);</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25" refid="a00166_1a1f396224b6250ad2400cb01d60b1b4ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00166_1a1f396224b6250ad2400cb01d60b1b4ec" kindref="member">operator+</ref>(<ref refid="a00166" kindref="compound">Vector2</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>+=<sp/>b.<ref refid="a00166_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref>;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>+=<sp/>b.<ref refid="a00166_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="25" refid="a00162_1a1f396224b6250ad2400cb01d60b1b4ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00162_1a1f396224b6250ad2400cb01d60b1b4ec" kindref="member">operator+</ref>(<ref refid="a00162" kindref="compound">Vector2</ref>&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>+=<sp/>b.<ref refid="a00162_1a442e5ef4dd0744758b5db87ca36aed90" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>+=<sp/>b.<ref refid="a00162_1a58d259a2d9057efd9c5bbb69f418d601" kindref="member">y</ref>;</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30" refid="a00166_1a82c0de289dd8ec25a6e77497098f9064" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00166_1a82c0de289dd8ec25a6e77497098f9064" kindref="member">operator+</ref>(glm::vec2&amp;<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="30" refid="a00162_1a82c0de289dd8ec25a6e77497098f9064" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00162_1a82c0de289dd8ec25a6e77497098f9064" kindref="member">operator+</ref>(glm::vec2&amp;<sp/>b)<sp/>{</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>+=<sp/>b.x;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>+=<sp/>b.y;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37" refid="a00170" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00170" kindref="compound">Vector3</ref><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="a00166" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00166" kindref="compound">Vector3</ref><sp/>{</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39" refid="a00170_1aabf30b0a34d4ec3096451393e2d71913" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00170_1aabf30b0a34d4ec3096451393e2d71913" kindref="member">x</ref>,<sp/><ref refid="a00170_1aa835783e4604f1d188de6fbdee1cd7c9" kindref="member">y</ref>,<sp/><ref refid="a00170_1a2568eefded1c720de4fcac757a5f164d" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="39" refid="a00166_1aabf30b0a34d4ec3096451393e2d71913" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00166_1aabf30b0a34d4ec3096451393e2d71913" kindref="member">x</ref>,<sp/><ref refid="a00166_1aa835783e4604f1d188de6fbdee1cd7c9" kindref="member">y</ref>,<sp/><ref refid="a00166_1a2568eefded1c720de4fcac757a5f164d" kindref="member">z</ref>;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"></highlight></codeline>
-<codeline lineno="41" refid="a00170_1acb52a2eb1453bc4ac15c0a8ab3d7143c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00170_1acb52a2eb1453bc4ac15c0a8ab3d7143c" kindref="member">operator==</ref>(<ref refid="a00170" kindref="compound">Vector3</ref><sp/>&amp;b)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;x<sp/>==<sp/>b.<ref refid="a00170_1aabf30b0a34d4ec3096451393e2d71913" kindref="member">x</ref><sp/>&amp;&amp;<sp/>this-&gt;y<sp/>==<sp/>b.<ref refid="a00170_1aa835783e4604f1d188de6fbdee1cd7c9" kindref="member">y</ref><sp/>&amp;&amp;<sp/>this-&gt;z<sp/>==<sp/>b.<ref refid="a00170_1a2568eefded1c720de4fcac757a5f164d" kindref="member">z</ref>);</highlight></codeline>
+<codeline lineno="41" refid="a00166_1acb52a2eb1453bc4ac15c0a8ab3d7143c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00166_1acb52a2eb1453bc4ac15c0a8ab3d7143c" kindref="member">operator==</ref>(<ref refid="a00166" kindref="compound">Vector3</ref><sp/>&amp;b)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;x<sp/>==<sp/>b.<ref refid="a00166_1aabf30b0a34d4ec3096451393e2d71913" kindref="member">x</ref><sp/>&amp;&amp;<sp/>this-&gt;y<sp/>==<sp/>b.<ref refid="a00166_1aa835783e4604f1d188de6fbdee1cd7c9" kindref="member">y</ref><sp/>&amp;&amp;<sp/>this-&gt;z<sp/>==<sp/>b.<ref refid="a00166_1a2568eefded1c720de4fcac757a5f164d" kindref="member">z</ref>);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"></highlight></codeline>
-<codeline lineno="45" refid="a00170_1aac3d3c6575283572a19a23b352fca633" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00170" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="a00170_1aac3d3c6575283572a19a23b352fca633" kindref="member">operator=</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="45" refid="a00166_1aac3d3c6575283572a19a23b352fca633" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00166" kindref="compound">Vector3</ref>&amp;<sp/><ref refid="a00166_1aac3d3c6575283572a19a23b352fca633" kindref="member">operator=</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val)<sp/>{</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>=<sp/>val;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>=<sp/>val;</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;z<sp/>=<sp/>val;</highlight></codeline>
@@ -129,24 +114,24 @@
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="51"><highlight class="normal"></highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53" refid="a00170_1ac086c01bff23542b26b0b2eef4c52348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00170_1ac086c01bff23542b26b0b2eef4c52348" kindref="member">operator+=</ref>(<ref refid="a00170" kindref="compound">Vector3</ref><sp/>&amp;b)<sp/>{</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>+=<sp/>b.<ref refid="a00170_1aabf30b0a34d4ec3096451393e2d71913" kindref="member">x</ref>;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>+=<sp/>b.<ref refid="a00170_1aa835783e4604f1d188de6fbdee1cd7c9" kindref="member">y</ref>;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;z<sp/>+=<sp/>b.<ref refid="a00170_1a2568eefded1c720de4fcac757a5f164d" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="53" refid="a00166_1ac086c01bff23542b26b0b2eef4c52348" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00166_1ac086c01bff23542b26b0b2eef4c52348" kindref="member">operator+=</ref>(<ref refid="a00166" kindref="compound">Vector3</ref><sp/>&amp;b)<sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>+=<sp/>b.<ref refid="a00166_1aabf30b0a34d4ec3096451393e2d71913" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>+=<sp/>b.<ref refid="a00166_1aa835783e4604f1d188de6fbdee1cd7c9" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;z<sp/>+=<sp/>b.<ref refid="a00166_1a2568eefded1c720de4fcac757a5f164d" kindref="member">z</ref>;</highlight></codeline>
 <codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62" refid="a00174" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00174" kindref="compound">Quaternion</ref><sp/>{</highlight></codeline>
+<codeline lineno="62" refid="a00170" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00170" kindref="compound">Quaternion</ref><sp/>{</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64" refid="a00174_1a4ea592d10bfb621eab8f3a5dbb6e8645" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00174_1a94b0c157ed7151923b1d51f2754b6b0f" kindref="member">x</ref>,<sp/><ref refid="a00174_1a2c481d6a952719618213fc6b921f67c0" kindref="member">y</ref>,<sp/><ref refid="a00174_1a9e8b8c73d6afd0531e7f4c8141f469c9" kindref="member">z</ref>,<sp/><ref refid="a00174_1a4ea592d10bfb621eab8f3a5dbb6e8645" kindref="member">w</ref>;</highlight></codeline>
+<codeline lineno="64" refid="a00170_1a4ea592d10bfb621eab8f3a5dbb6e8645" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="a00170_1a94b0c157ed7151923b1d51f2754b6b0f" kindref="member">x</ref>,<sp/><ref refid="a00170_1a2c481d6a952719618213fc6b921f67c0" kindref="member">y</ref>,<sp/><ref refid="a00170_1a9e8b8c73d6afd0531e7f4c8141f469c9" kindref="member">z</ref>,<sp/><ref refid="a00170_1a4ea592d10bfb621eab8f3a5dbb6e8645" kindref="member">w</ref>;</highlight></codeline>
 <codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66" refid="a00174_1a1c6bdfef17a8d70344a9af3a20d8b130" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00174_1a1c6bdfef17a8d70344a9af3a20d8b130" kindref="member">operator==</ref>(<ref refid="a00174" kindref="compound">Quaternion</ref><sp/>&amp;b)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;x<sp/>==<sp/>b.<ref refid="a00174_1a94b0c157ed7151923b1d51f2754b6b0f" kindref="member">x</ref><sp/>&amp;&amp;<sp/>this-&gt;y<sp/>==<sp/>b.<ref refid="a00174_1a2c481d6a952719618213fc6b921f67c0" kindref="member">y</ref><sp/>&amp;&amp;<sp/>this-&gt;z<sp/>==<sp/>b.<ref refid="a00174_1a9e8b8c73d6afd0531e7f4c8141f469c9" kindref="member">z</ref><sp/>&amp;&amp;<sp/>this-&gt;w<sp/>==<sp/>b.<ref refid="a00174_1a4ea592d10bfb621eab8f3a5dbb6e8645" kindref="member">w</ref>);</highlight></codeline>
+<codeline lineno="66" refid="a00170_1a1c6bdfef17a8d70344a9af3a20d8b130" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="a00170_1a1c6bdfef17a8d70344a9af3a20d8b130" kindref="member">operator==</ref>(<ref refid="a00170" kindref="compound">Quaternion</ref><sp/>&amp;b)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(this-&gt;x<sp/>==<sp/>b.<ref refid="a00170_1a94b0c157ed7151923b1d51f2754b6b0f" kindref="member">x</ref><sp/>&amp;&amp;<sp/>this-&gt;y<sp/>==<sp/>b.<ref refid="a00170_1a2c481d6a952719618213fc6b921f67c0" kindref="member">y</ref><sp/>&amp;&amp;<sp/>this-&gt;z<sp/>==<sp/>b.<ref refid="a00170_1a9e8b8c73d6afd0531e7f4c8141f469c9" kindref="member">z</ref><sp/>&amp;&amp;<sp/>this-&gt;w<sp/>==<sp/>b.<ref refid="a00170_1a4ea592d10bfb621eab8f3a5dbb6e8645" kindref="member">w</ref>);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70" refid="a00174_1af27fb9153ec0fcb930a73aa9cd7e2d09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00174" kindref="compound">Quaternion</ref>&amp;<sp/><ref refid="a00174_1af27fb9153ec0fcb930a73aa9cd7e2d09" kindref="member">operator=</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="70" refid="a00170_1af27fb9153ec0fcb930a73aa9cd7e2d09" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00170" kindref="compound">Quaternion</ref>&amp;<sp/><ref refid="a00170_1af27fb9153ec0fcb930a73aa9cd7e2d09" kindref="member">operator=</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val)<sp/>{</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>=<sp/>val;</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>=<sp/>val;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;z<sp/>=<sp/>val;</highlight></codeline>
@@ -154,15 +139,15 @@
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78" refid="a00174_1a1cddf6ae46991af3d46855935b34f75a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00174_1a1cddf6ae46991af3d46855935b34f75a" kindref="member">operator+</ref>(<ref refid="a00174" kindref="compound">Quaternion</ref><sp/>&amp;b)<sp/>{</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>+=<sp/>b.<ref refid="a00174_1a94b0c157ed7151923b1d51f2754b6b0f" kindref="member">x</ref>;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>+=<sp/>b.<ref refid="a00174_1a2c481d6a952719618213fc6b921f67c0" kindref="member">y</ref>;</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;z<sp/>+=<sp/>b.<ref refid="a00174_1a9e8b8c73d6afd0531e7f4c8141f469c9" kindref="member">z</ref>;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;w<sp/>+=<sp/>b.<ref refid="a00174_1a9e8b8c73d6afd0531e7f4c8141f469c9" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="78" refid="a00170_1a1cddf6ae46991af3d46855935b34f75a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00170_1a1cddf6ae46991af3d46855935b34f75a" kindref="member">operator+</ref>(<ref refid="a00170" kindref="compound">Quaternion</ref><sp/>&amp;b)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;x<sp/>+=<sp/>b.<ref refid="a00170_1a94b0c157ed7151923b1d51f2754b6b0f" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;y<sp/>+=<sp/>b.<ref refid="a00170_1a2c481d6a952719618213fc6b921f67c0" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;z<sp/>+=<sp/>b.<ref refid="a00170_1a9e8b8c73d6afd0531e7f4c8141f469c9" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;w<sp/>+=<sp/>b.<ref refid="a00170_1a9e8b8c73d6afd0531e7f4c8141f469c9" kindref="member">z</ref>;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85" refid="a00174_1a203266c0dc325bac87c20c3ae822a567" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00174_1a203266c0dc325bac87c20c3ae822a567" kindref="member">sIdentity</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00174_1a4ea592d10bfb621eab8f3a5dbb6e8645" kindref="member">w</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="85" refid="a00170_1a203266c0dc325bac87c20c3ae822a567" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00170_1a203266c0dc325bac87c20c3ae822a567" kindref="member">sIdentity</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00170_1a4ea592d10bfb621eab8f3a5dbb6e8645" kindref="member">w</ref><sp/>=<sp/>1;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"></highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>

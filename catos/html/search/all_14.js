@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['uint_0',['uint',['../a00014.html#a91ad9478d81a7aaf2593e8d9c3d06a14',1,'types.h']]],
-  ['update_1',['update',['../a00162.html#a59515fc5a56e86d5a46d771595daac55',1,'catos::Window::update()'],['../a00178.html#a42cda7239981a5618660d04bd5893556',1,'Camera::update()'],['../a00378.html#af279e5aad0ff44fe62ce8698886ed0bd',1,'catos::Script::update()']]],
-  ['updatescene_2',['updateScene',['../a00242.html#ad2da415dabe3add3882952382efbb926',1,'VulkanEngine']]],
-  ['updatescripts_3',['updateScripts',['../a00322.html#a380736b746364b090839f33b7bc303ad',1,'catos::ScriptingEngine']]],
-  ['updateset_4',['updateSet',['../a00202.html#aa6d2deed567c313417fc333e55647814',1,'DescriptorWriter']]],
-  ['uploadmesh_5',['uploadMesh',['../a00242.html#a2eef35ed3cc46cf090af65c68dc63243',1,'VulkanEngine']]],
-  ['uv_5fx_6',['uv_x',['../a00286.html#a3c6b70cc0df673dab20ae012fa7a4ce3',1,'Vertex']]],
-  ['uv_5fy_7',['uv_y',['../a00286.html#a8dfaf04a6d2a62045fee28010aeb92eb',1,'Vertex']]]
+  ['vecs_2ecpp_0',['vecs.cpp',['../a00026.html',1,'']]],
+  ['vecs_2eh_1',['vecs.h',['../a00029.html',1,'']]],
+  ['vector_2',['vector',['../a00254.html',1,'catos::vector&lt; T &gt;'],['../a00254.html#aa1db0b578d5d91b59a2a54ccf8dd3393',1,'catos::vector::vector()'],['../a00254.html#ac8ffbbbf217c6c3e3f503b7f506a9939',1,'catos::vector::vector(const vector &amp;obj)'],['../a00254.html#a0b4a4c09136e74ac3a36306871df7f55',1,'catos::vector::vector(vector &amp;&amp;obj)'],['../a00254.html#a66f6477f53cd424911a0221c0a1de1b1',1,'catos::vector::vector(Args &amp;&amp;...args)']]],
+  ['vector_2ecpp_3',['vector.cpp',['../a00098.html',1,'']]],
+  ['vector_2eh_4',['vector.h',['../a00101.html',1,'']]],
+  ['vector2_5',['Vector2',['../a00162.html',1,'catos::math']]],
+  ['vector3_6',['Vector3',['../a00166.html',1,'catos::math']]],
+  ['vector_3c_20catos_3a_3apair_3c_20py_3a_3aobject_20_2a_2c_20catos_3a_3ascriptinfo_20_3e_20_3e_7',['vector&lt; catos::Pair&lt; py::object *, catos::ScriptInfo &gt; &gt;',['../a00254.html',1,'catos']]],
+  ['version_8',['version',['../a00114.html#aa955f138a405ff0d97ca029e5a4bf4df',1,'catos::AppCreationInfo']]],
+  ['vertex_9',['VERTEX',['../a00107.html#a1248e610959a287262cd6873908d97e5ae2f77ec0f5e09c8a4b77e3f50a99661a',1,'catos']]],
+  ['vertexsrc_10',['vertexSRC',['../a00206.html#abfa69aa891385e8b204c4b046d2e571c',1,'catos::ShaderCreateInfo']]]
 ];

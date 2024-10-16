@@ -94,20 +94,23 @@ $(function(){initNavTree('a00218.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">GLTFMetallic_roughness Member List</div></div>
+  <div class="headertitle"><div class="title">catos::ScriptingEngine Member List</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="a00218.html">GLTFMetallic_roughness</a>, including all inherited members.</p>
+<p>This is the complete list of members for <a class="el" href="a00218.html">catos::ScriptingEngine</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="a00218.html#ac6b86602d156a5555b3799b9172c674e">buildPipelines</a>(VulkanEngine *engine)</td><td class="entry"><a class="el" href="a00218.html">GLTFMetallic_roughness</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#acdddc2beb7cc303daabfa28404afa2c9">clearResources</a>(VkDevice device)</td><td class="entry"><a class="el" href="a00218.html">GLTFMetallic_roughness</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00218.html#a96ff6cb8fd8d01b16921be3900827939">destroy</a>(VkDevice device, MaterialPass passType)</td><td class="entry"><a class="el" href="a00218.html">GLTFMetallic_roughness</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#a269aa1b48852004420322491f8e03e4a">materialLayout</a></td><td class="entry"><a class="el" href="a00218.html">GLTFMetallic_roughness</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00218.html#a14e8a4c07862539d98a1793cf7be2e24">opaquePipeline</a></td><td class="entry"><a class="el" href="a00218.html">GLTFMetallic_roughness</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#a20a1e6318217b3d3e63e91439022a4d8">transparentPipeline</a></td><td class="entry"><a class="el" href="a00218.html">GLTFMetallic_roughness</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="a00218.html#a744d03ddb8fe03ea8ee07f2ae3b42de5">writeMaterial</a>(VkDevice device, MaterialPass pass, const MaterialResources &amp;resources, DescriptorAllocatorGrowable descriptorAllocator)</td><td class="entry"><a class="el" href="a00218.html">GLTFMetallic_roughness</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#a90094ab356bc8a5426f8012f76c1326f">writer</a></td><td class="entry"><a class="el" href="a00218.html">GLTFMetallic_roughness</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00218.html#a2452603a99b16c170736ae2917f876e3">endScripts</a>()</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#a8b55daad4edbed63c8a40c2df5ee4c12">getInstance</a>()</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00218.html#a236303c168356b8014f394963e6a2c08">registerClass</a>(const char *name)</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#a0a12634ba666a3141a6ea8e6ce1bcee3">registerMethod</a>(const char *name, U T::*ptr)</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00218.html#a7f91b67bb01cd861ee148cf1ab9d613a">registerNewScript</a>(const catos::string &amp;pathToPythonFile)</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#af1883ecee457552523919c63becfb4d6">registerProperty</a>(const char *name, U T::*ptr)</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00218.html#ac7b716e6d41ff508ad2d8e5dad655d72">Registry</a></td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"><span class="mlabel">friend</span></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#a86e85faa189694bbe81da7e4067a4cc0">ScriptingEngine</a>()</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00218.html#a46622ba9112673a2fddf24c91bbc69c6">startScripts</a>()</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"></td></tr>
+  <tr class="odd"><td class="entry"><a class="el" href="a00218.html#a98cfe86e4146738c8e82956dbc0782d3">updateScripts</a>()</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="a00218.html#a7b8081c15524b4ce43b6ae938a397d4c">~ScriptingEngine</a>()</td><td class="entry"><a class="el" href="a00218.html">catos::ScriptingEngine</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 </div><!-- doc-content -->
 <p>

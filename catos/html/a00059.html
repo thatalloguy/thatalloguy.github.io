@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): VkInitializers.h File Reference</title>
+<title>Catos Engine (Source): renderPass.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,57 +95,49 @@ $(function(){initNavTree('a00059.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">VkInitializers.h File Reference</div></div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a>  </div>
+  <div class="headertitle"><div class="title">renderPass.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00074_source.html">VkTypes.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="a00029_source.html">math/vecs.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="a00071_source.html">renderer/shader.h</a>&gt;</code><br />
 </div>
 <p><a href="a00059_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:a00120" id="r_a00120"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html">VkInit</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00194.html">catos::RenderPassCreationInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Info about how the <a class="el" href="a00198.html">RenderPass</a> should be created.  <a href="a00194.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00198.html">catos::RenderPass</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a89cdca6f147b3cacbef67ef0fcddb5a4" id="r_a89cdca6f147b3cacbef67ef0fcddb5a4"><td class="memItemLeft" align="right" valign="top">VkPresentInfoKHR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a89cdca6f147b3cacbef67ef0fcddb5a4">VkInit::presentInfo</a> ()</td></tr>
-<tr class="separator:a89cdca6f147b3cacbef67ef0fcddb5a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cdef4e7c3a16175ef52084187f27428" id="r_a3cdef4e7c3a16175ef52084187f27428"><td class="memItemLeft" align="right" valign="top">VkCommandPoolCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a3cdef4e7c3a16175ef52084187f27428">VkInit::commandPoolCreateInfo</a> (uint32_t queueFamilyIndex, VkCommandPoolCreateFlags flags)</td></tr>
-<tr class="separator:a3cdef4e7c3a16175ef52084187f27428"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fe7cf8c5c6f45b1cbec1c04a3fb2801" id="r_a8fe7cf8c5c6f45b1cbec1c04a3fb2801"><td class="memItemLeft" align="right" valign="top">VkCommandBufferAllocateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a8fe7cf8c5c6f45b1cbec1c04a3fb2801">VkInit::commandBufferAllocateInfo</a> (VkCommandPool pool, uint32_t count)</td></tr>
-<tr class="separator:a8fe7cf8c5c6f45b1cbec1c04a3fb2801"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58ec443d7114304aafcc6dfe40aa91cf" id="r_a58ec443d7114304aafcc6dfe40aa91cf"><td class="memItemLeft" align="right" valign="top">VkFenceCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a58ec443d7114304aafcc6dfe40aa91cf">VkInit::fenceCreateInfo</a> (VkFenceCreateFlags flags)</td></tr>
-<tr class="separator:a58ec443d7114304aafcc6dfe40aa91cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad350c43673bc9b3f7994cd67053d601a" id="r_ad350c43673bc9b3f7994cd67053d601a"><td class="memItemLeft" align="right" valign="top">VkSemaphoreCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#ad350c43673bc9b3f7994cd67053d601a">VkInit::semaphoreCreateInfo</a> (VkSemaphoreCreateFlags flags=0)</td></tr>
-<tr class="separator:ad350c43673bc9b3f7994cd67053d601a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f27583522b48fbb2794b4f6eff37c5b" id="r_a4f27583522b48fbb2794b4f6eff37c5b"><td class="memItemLeft" align="right" valign="top">VkCommandBufferBeginInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a4f27583522b48fbb2794b4f6eff37c5b">VkInit::commandBufferBeginInfo</a> (VkCommandBufferUsageFlags flags)</td></tr>
-<tr class="separator:a4f27583522b48fbb2794b4f6eff37c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe7cc27c092869928fc3c6428219e858" id="r_abe7cc27c092869928fc3c6428219e858"><td class="memItemLeft" align="right" valign="top">VkImageSubresourceRange&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#abe7cc27c092869928fc3c6428219e858">VkInit::imageSubresourceRange</a> (VkImageAspectFlags aspectMask)</td></tr>
-<tr class="separator:abe7cc27c092869928fc3c6428219e858"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a255af650bfd089f6febd85848d58c6c5" id="r_a255af650bfd089f6febd85848d58c6c5"><td class="memItemLeft" align="right" valign="top">VkSemaphoreSubmitInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a255af650bfd089f6febd85848d58c6c5">VkInit::semaphoreSubmitInfo</a> (VkPipelineStageFlags2 stageMask, VkSemaphore semaphore)</td></tr>
-<tr class="separator:a255af650bfd089f6febd85848d58c6c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e3740324c0b56d48e31d4201841fbce" id="r_a4e3740324c0b56d48e31d4201841fbce"><td class="memItemLeft" align="right" valign="top">VkCommandBufferSubmitInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a4e3740324c0b56d48e31d4201841fbce">VkInit::commandBufferSubmitInfo</a> (VkCommandBuffer cmd)</td></tr>
-<tr class="separator:a4e3740324c0b56d48e31d4201841fbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cef7fa07f55a58eb23a2aa4de6cb956" id="r_a2cef7fa07f55a58eb23a2aa4de6cb956"><td class="memItemLeft" align="right" valign="top">VkSubmitInfo2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a2cef7fa07f55a58eb23a2aa4de6cb956">VkInit::submitInfo</a> (VkCommandBufferSubmitInfo *cmd, VkSemaphoreSubmitInfo *signalSemaphoreInfo, VkSemaphoreSubmitInfo *waitSemaphoreInfo)</td></tr>
-<tr class="separator:a2cef7fa07f55a58eb23a2aa4de6cb956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6244bbb89d93fabe28d83cb4203da94" id="r_af6244bbb89d93fabe28d83cb4203da94"><td class="memItemLeft" align="right" valign="top">VkImageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#af6244bbb89d93fabe28d83cb4203da94">VkInit::imageCreateInfo</a> (VkFormat format, VkImageUsageFlags usageFlags, VkExtent3D extent)</td></tr>
-<tr class="separator:af6244bbb89d93fabe28d83cb4203da94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57731c73c6a5a9b41a591f594bedd96c" id="r_a57731c73c6a5a9b41a591f594bedd96c"><td class="memItemLeft" align="right" valign="top">VkImageViewCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a57731c73c6a5a9b41a591f594bedd96c">VkInit::imageViewCreateInfo</a> (VkFormat format, VkImage image, VkImageAspectFlags aspectFlags)</td></tr>
-<tr class="separator:a57731c73c6a5a9b41a591f594bedd96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76bde95c72a4bf604cd433e439b2fa1b" id="r_a76bde95c72a4bf604cd433e439b2fa1b"><td class="memItemLeft" align="right" valign="top">VkRenderingAttachmentInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a76bde95c72a4bf604cd433e439b2fa1b">VkInit::attachmentInfo</a> (VkImageView view, VkClearValue *clear, VkImageLayout layout)</td></tr>
-<tr class="separator:a76bde95c72a4bf604cd433e439b2fa1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afd70e1da9064d67d0f17d4d415f0761d" id="r_afd70e1da9064d67d0f17d4d415f0761d"><td class="memItemLeft" align="right" valign="top">VkRenderingAttachmentInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#afd70e1da9064d67d0f17d4d415f0761d">VkInit::depthAttachmentInfo</a> (VkImageView view, VkImageLayout layout)</td></tr>
-<tr class="separator:afd70e1da9064d67d0f17d4d415f0761d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5e07e2e66058b5c4e6fb30840c396ab3" id="r_a5e07e2e66058b5c4e6fb30840c396ab3"><td class="memItemLeft" align="right" valign="top">VkRenderingInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#a5e07e2e66058b5c4e6fb30840c396ab3">VkInit::renderingInfo</a> (VkExtent2D renderExtent, VkRenderingAttachmentInfo *colorAttachment, VkRenderingAttachmentInfo *depthAttachment)</td></tr>
-<tr class="memdesc:a5e07e2e66058b5c4e6fb30840c396ab3"><td class="mdescLeft">&#160;</td><td class="mdescRight">NOTE custom function i couldnt find vkguide's one.  <br /></td></tr>
-<tr class="separator:a5e07e2e66058b5c4e6fb30840c396ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af12b035c84d7a8af0915e626e68b29f0" id="r_af12b035c84d7a8af0915e626e68b29f0"><td class="memItemLeft" align="right" valign="top">VkPipelineShaderStageCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#af12b035c84d7a8af0915e626e68b29f0">VkInit::pipelineShaderStageCreateInfo</a> (VkShaderStageFlagBits stage, VkShaderModule shaderModule, const char *entry=&quot;main&quot;)</td></tr>
-<tr class="separator:af12b035c84d7a8af0915e626e68b29f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae22d46467876562f521852203947a73c" id="r_ae22d46467876562f521852203947a73c"><td class="memItemLeft" align="right" valign="top">VkPipelineLayoutCreateInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00120.html#ae22d46467876562f521852203947a73c">VkInit::pipelineLayoutCreateInfo</a> ()</td></tr>
-<tr class="separator:ae22d46467876562f521852203947a73c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:a00107" id="r_a00107"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html">catos</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a45b8ee8e2bc6a9703ca2728c4d20680a" id="r_a45b8ee8e2bc6a9703ca2728c4d20680a"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a45b8ee8e2bc6a9703ca2728c4d20680a">catos::ColorBuffer</a></td></tr>
+<tr class="separator:a45b8ee8e2bc6a9703ca2728c4d20680a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4613316b0ca1f3fdbf463888395735b6" id="r_a4613316b0ca1f3fdbf463888395735b6"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a4613316b0ca1f3fdbf463888395735b6">catos::FrameBuffer</a></td></tr>
+<tr class="separator:a4613316b0ca1f3fdbf463888395735b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a574b855759e9da3f9fe39824b3245" id="r_a66a574b855759e9da3f9fe39824b3245"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#a66a574b855759e9da3f9fe39824b3245">catos::RenderBuffer</a></td></tr>
+<tr class="separator:a66a574b855759e9da3f9fe39824b3245"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:acf4b328a657463e6461ec5aaad0031f3" id="r_acf4b328a657463e6461ec5aaad0031f3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3">catos::PassType</a> : unsigned int { <a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3a9a12ec16d2b4f12d8fe0125915a66099">catos::COLOR</a> = 0x8CE0
+, <a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3ab0de4c916a68e9027b6b38dce8f84d3f">catos::COLOR_SINGLE</a> = 0x8CE1
+, <a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3af4faf9b95b96cc9be34794cf7a31edd4">catos::DEPTH</a> = 0x8D00
+, <a class="el" href="a00107.html#acf4b328a657463e6461ec5aaad0031f3aff83f06b107ff2059d3410d27e7ac3b0">catos::STENCIL</a> = 0x8D20
+ }</td></tr>
+<tr class="memdesc:acf4b328a657463e6461ec5aaad0031f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">What kind of type the Pass Should be.  <a href="a00107.html#acf4b328a657463e6461ec5aaad0031f3">More...</a><br /></td></tr>
+<tr class="separator:acf4b328a657463e6461ec5aaad0031f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->

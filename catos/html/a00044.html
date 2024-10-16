@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): VkEngine.cpp File Reference</title>
+<title>Catos Engine (Source): scene.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -94,85 +94,11 @@ $(function(){initNavTree('a00044.html',''); initResizable(); });
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#var-members">Variables</a>  </div>
-  <div class="headertitle"><div class="title">VkEngine.cpp File Reference</div></div>
+  <div class="headertitle"><div class="title">scene.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="a00047_source.html">VkEngine.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00053_source.html">VkImages.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="a00071_source.html">VkPipelines.h</a>&quot;</code><br />
-<code>#include &lt;vk_mem_alloc.h&gt;</code><br />
-<code>#include &lt;imgui.h&gt;</code><br />
-<code>#include &lt;backends/imgui_impl_glfw.h&gt;</code><br />
-<code>#include &lt;backends/imgui_impl_vulkan.h&gt;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:abea80547807da765ebe9fce1c6dd6a8d" id="r_abea80547807da765ebe9fce1c6dd6a8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abea80547807da765ebe9fce1c6dd6a8d">VMA_IMPLEMENTATION</a></td></tr>
-<tr class="separator:abea80547807da765ebe9fce1c6dd6a8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a0f2bcd236403cd740db7ed89ec4e392f" id="r_a0f2bcd236403cd740db7ed89ec4e392f"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f2bcd236403cd740db7ed89ec4e392f">bUseValidationLayers</a> = true</td></tr>
-<tr class="separator:a0f2bcd236403cd740db7ed89ec4e392f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3180bc6bf9f297afa593d69886a475fb" id="r_a3180bc6bf9f297afa593d69886a475fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00242.html">VulkanEngine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3180bc6bf9f297afa593d69886a475fb">loadedEngine</a> = nullptr</td></tr>
-<tr class="separator:a3180bc6bf9f297afa593d69886a475fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="abea80547807da765ebe9fce1c6dd6a8d" name="abea80547807da765ebe9fce1c6dd6a8d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abea80547807da765ebe9fce1c6dd6a8d">&#9670;&#160;</a></span>VMA_IMPLEMENTATION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define VMA_IMPLEMENTATION</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a0f2bcd236403cd740db7ed89ec4e392f" name="a0f2bcd236403cd740db7ed89ec4e392f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0f2bcd236403cd740db7ed89ec4e392f">&#9670;&#160;</a></span>bUseValidationLayers</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr bool bUseValidationLayers = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3180bc6bf9f297afa593d69886a475fb" name="a3180bc6bf9f297afa593d69886a475fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3180bc6bf9f297afa593d69886a475fb">&#9670;&#160;</a></span>loadedEngine</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00242.html">VulkanEngine</a>* loadedEngine = nullptr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-</div><!-- contents -->
+<div class="textblock"><code>#include &quot;<a class="el" href="a00047_source.html">scene.h</a>&quot;</code><br />
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <p>
 </p>

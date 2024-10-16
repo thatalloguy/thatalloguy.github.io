@@ -1,69 +1,252 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00246" kind="class" language="C++" prot="public" abstract="yes">
-    <compoundname>IRenderable</compoundname>
-    <derivedcompoundref refid="a00266" prot="public" virt="non-virtual">LoadedGLTF</derivedcompoundref>
-    <derivedcompoundref refid="a00262" prot="public" virt="non-virtual">Node</derivedcompoundref>
-    <includes refid="a00065" local="no">VkLoader.h</includes>
-    <sectiondef kind="private-func">
-      <memberdef kind="function" id="a00246_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
-        <type>void</type>
-        <definition>virtual void IRenderable::Draw</definition>
-        <argsstring>(const glm::mat4 &amp;topMatrix, DrawContext &amp;ctx)=0</argsstring>
-        <name>Draw</name>
-        <qualifiedname>IRenderable::Draw</qualifiedname>
-        <reimplementedby refid="a00262_1a6870e549c7f428dbcd4f61d43eaa2f4b">Draw</reimplementedby>
-        <reimplementedby refid="a00266_1a5cb28e137c9fff7788afaf7aa5e565ac">Draw</reimplementedby>
-        <reimplementedby refid="a00238_1a8d5ed2175240d27f97e058508b110b51">Draw</reimplementedby>
-        <param>
-          <type>const glm::mat4 &amp;</type>
-          <declname>topMatrix</declname>
-        </param>
-        <param>
-          <type><ref refid="a00234" kindref="compound">DrawContext</ref> &amp;</type>
-          <declname>ctx</declname>
-        </param>
+  <compounddef id="a00246" kind="class" language="C++" prot="public">
+    <compoundname>catos::string</compoundname>
+    <includes refid="a00095" local="no">string.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00246_1af11dd27c457f81bfe90d138e7972dcac" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* catos::string::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>catos::string::buf</qualifiedname>
+        <initializer>= nullptr</initializer>
         <briefdescription>
-<para>TODO define <ref refid="a00234" kindref="compound">DrawContext</ref>. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="33" column="18"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="50" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00246_1a4686f6f4556a0fce6ef9ec3fbb0587df" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int catos::string::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>catos::string::size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="51" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00246_1a32c0f06b59c6dbc67cc64d5a8f732c15" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::string::string</definition>
+        <argsstring>()</argsstring>
+        <name>string</name>
+        <qualifiedname>catos::string::string</qualifiedname>
+        <briefdescription>
+<para>Initializes the internal buff to nullptr and size to 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="16" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1a4480db1c850badf5b99173e8f86bccd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::string::string</definition>
+        <argsstring>(const char *buffer)</argsstring>
+        <name>string</name>
+        <qualifiedname>catos::string::string</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <briefdescription>
+<para>Copies the char array to the internal buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="19" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1a8cdf82a90bb1bb97d5bce6a314522f3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::string::string</definition>
+        <argsstring>(const string &amp;obj)</argsstring>
+        <name>string</name>
+        <qualifiedname>catos::string::string</qualifiedname>
+        <param>
+          <type>const <ref refid="a00246" kindref="compound">string</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Copies string object to its internal values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="22" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="21" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1a50ce9d299797565f2c234d3adf560b36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::string::string</definition>
+        <argsstring>(string &amp;&amp;obj)</argsstring>
+        <name>string</name>
+        <qualifiedname>catos::string::string</qualifiedname>
+        <param>
+          <type><ref refid="a00246" kindref="compound">string</ref> &amp;&amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Transfers ownerShip of buffers to this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="25" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="35" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1ac2861229098a713d2a6be51886b3d3cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00246" kindref="compound">string</ref> &amp;</type>
+        <definition>catos::string &amp; catos::string::operator=</definition>
+        <argsstring>(const string &amp;obj)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>catos::string::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="a00246" kindref="compound">string</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Same as the <ref refid="a00246_1a8cdf82a90bb1bb97d5bce6a314522f3f" kindref="member">string(const string&amp; obj)</ref> constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="28" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1a38f07859d81f5ad65f1c6a5435f9f4c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00246" kindref="compound">string</ref> &amp;</type>
+        <definition>catos::string &amp; catos::string::operator=</definition>
+        <argsstring>(string &amp;&amp;obj)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>catos::string::operator=</qualifiedname>
+        <param>
+          <type><ref refid="a00246" kindref="compound">string</ref> &amp;&amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Transfers ownership from a buffer to this. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="31" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="53" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1a207bb13fd445130cb78fc359d8193768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00246" kindref="compound">string</ref></type>
+        <definition>catos::string catos::string::operator+</definition>
+        <argsstring>(const string &amp;obj)</argsstring>
+        <name>operator+</name>
+        <qualifiedname>catos::string::operator+</qualifiedname>
+        <param>
+          <type>const <ref refid="a00246" kindref="compound">string</ref> &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+<para>Adds a string to itself. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="34" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="67" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1afba456b6f8ebdfde5dbc52f1be6dc745" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int catos::string::length</definition>
+        <argsstring>()</argsstring>
+        <name>length</name>
+        <qualifiedname>catos::string::length</qualifiedname>
+        <briefdescription>
+<para>Returns the size of the internal buffer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="37" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1a7c36e8de782d34d3a872cae8a2f0f63e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * catos::string::c_str</definition>
+        <argsstring>() const</argsstring>
+        <name>c_str</name>
+        <qualifiedname>catos::string::c_str</qualifiedname>
+        <briefdescription>
+<para>Returns the internal buffer;. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="40" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="a00246_1a89e269e90755ca7d7b39a8ebfe54faab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::string::~string</definition>
+        <argsstring>()</argsstring>
+        <name>~string</name>
+        <qualifiedname>catos::string::~string</qualifiedname>
+        <briefdescription>
+<para>Deletes the allocated char array. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="45" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="8" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00246_1a0dd5b1cbe16b9d5e9f80727ce3298c1c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::string::cleanUp</definition>
+        <argsstring>()</argsstring>
+        <name>cleanUp</name>
+        <qualifiedname>catos::string::cleanUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="48" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp" bodystart="47" bodyend="51"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>Custom string class that functions as dynamic C_str. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="1">
-        <label>IRenderable</label>
-        <link refid="a00246"/>
-      </node>
-      <node id="2">
-        <label>LoadedGLTF</label>
-        <link refid="a00266"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="4">
-        <label>MeshNode</label>
-        <link refid="a00238"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="3">
-        <label>Node</label>
-        <link refid="a00262"/>
-        <childnode refid="1" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" line="31" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkLoader.h" bodystart="31" bodyend="34"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" line="11" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/string.h" bodystart="11" bodyend="53"/>
     <listofallmembers>
-      <member refid="a00246_1ae49bac0820d1ec198e844e29bf4420f4" prot="private" virt="pure-virtual"><scope>IRenderable</scope><name>Draw</name></member>
+      <member refid="a00246_1af11dd27c457f81bfe90d138e7972dcac" prot="private" virt="non-virtual"><scope>catos::string</scope><name>buf</name></member>
+      <member refid="a00246_1a7c36e8de782d34d3a872cae8a2f0f63e" prot="public" virt="non-virtual"><scope>catos::string</scope><name>c_str</name></member>
+      <member refid="a00246_1a0dd5b1cbe16b9d5e9f80727ce3298c1c" prot="private" virt="non-virtual"><scope>catos::string</scope><name>cleanUp</name></member>
+      <member refid="a00246_1afba456b6f8ebdfde5dbc52f1be6dc745" prot="public" virt="non-virtual"><scope>catos::string</scope><name>length</name></member>
+      <member refid="a00246_1a207bb13fd445130cb78fc359d8193768" prot="public" virt="non-virtual"><scope>catos::string</scope><name>operator+</name></member>
+      <member refid="a00246_1ac2861229098a713d2a6be51886b3d3cc" prot="public" virt="non-virtual"><scope>catos::string</scope><name>operator=</name></member>
+      <member refid="a00246_1a38f07859d81f5ad65f1c6a5435f9f4c2" prot="public" virt="non-virtual"><scope>catos::string</scope><name>operator=</name></member>
+      <member refid="a00246_1a4686f6f4556a0fce6ef9ec3fbb0587df" prot="private" virt="non-virtual"><scope>catos::string</scope><name>size</name></member>
+      <member refid="a00246_1a32c0f06b59c6dbc67cc64d5a8f732c15" prot="public" virt="non-virtual"><scope>catos::string</scope><name>string</name></member>
+      <member refid="a00246_1a4480db1c850badf5b99173e8f86bccd3" prot="public" virt="non-virtual"><scope>catos::string</scope><name>string</name></member>
+      <member refid="a00246_1a8cdf82a90bb1bb97d5bce6a314522f3f" prot="public" virt="non-virtual"><scope>catos::string</scope><name>string</name></member>
+      <member refid="a00246_1a50ce9d299797565f2c234d3adf560b36" prot="public" virt="non-virtual"><scope>catos::string</scope><name>string</name></member>
+      <member refid="a00246_1a89e269e90755ca7d7b39a8ebfe54faab" prot="public" virt="non-virtual"><scope>catos::string</scope><name>~string</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

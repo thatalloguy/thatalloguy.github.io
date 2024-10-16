@@ -1,100 +1,230 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00238" kind="struct" language="C++" prot="public">
-    <compoundname>MeshNode</compoundname>
-    <basecompoundref refid="a00262" prot="public" virt="non-virtual">Node</basecompoundref>
-    <includes refid="a00047" local="no">VkEngine.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00238_1aad4716b73a0170c5a9af5b58f429ef5a" prot="public" static="no" mutable="no">
-        <type>std::shared_ptr&lt; <ref refid="a00258" kindref="compound">MeshAsset</ref> &gt;</type>
-        <definition>std::shared_ptr&lt;MeshAsset&gt; MeshNode::mesh</definition>
+  <compounddef id="a00238" kind="class" language="C++" prot="public">
+    <compoundname>catos::hashmap</compoundname>
+    <includes refid="a00083" local="no">hashmap.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename K</type>
+      </param>
+      <param>
+        <type>typename V</type>
+      </param>
+      <param>
+        <type>typename F</type>
+        <defval><ref refid="a00234" kindref="compound">HashFunc</ref>&lt;K&gt;</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00238_1aebe27d9d02019fcc772beb137fc33c64" prot="private" static="no" mutable="no">
+        <type>F</type>
+        <definition>F catos::hashmap&lt; K, V, F &gt;::hashFunc</definition>
         <argsstring></argsstring>
-        <name>mesh</name>
-        <qualifiedname>MeshNode::mesh</qualifiedname>
+        <name>hashFunc</name>
+        <qualifiedname>catos::hashmap::hashFunc</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="106" column="21" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="106" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="247" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00238_1ac7e2c354b994f9d221cf22b8787b18d6" prot="private" static="no" mutable="no">
+        <type><ref refid="a00230" kindref="compound">hashnode</ref>&lt; K, V &gt; **</type>
+        <definition>hashnode&lt;K, V&gt;** catos::hashmap&lt; K, V, F &gt;::buf</definition>
+        <argsstring></argsstring>
+        <name>buf</name>
+        <qualifiedname>catos::hashmap::buf</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="249" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00238_1a5c84acabc2500915740266078b6b7d07" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int catos::hashmap&lt; K, V, F &gt;::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>catos::hashmap::size</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="250" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00238_1a48e32798aac0134def7107fccfac5ad7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int catos::hashmap&lt; K, V, F &gt;::maxSize</definition>
+        <argsstring></argsstring>
+        <name>maxSize</name>
+        <qualifiedname>catos::hashmap::maxSize</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="252" column="13" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="252" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00238_1a8d5ed2175240d27f97e058508b110b51" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
-        <type>void</type>
-        <definition>void MeshNode::Draw</definition>
-        <argsstring>(const glm::mat4 &amp;topMatrix, DrawContext &amp;ctx) override</argsstring>
-        <name>Draw</name>
-        <qualifiedname>MeshNode::Draw</qualifiedname>
-        <reimplements refid="a00262_1a6870e549c7f428dbcd4f61d43eaa2f4b">Draw</reimplements>
+      <memberdef kind="function" id="a00238_1af81f92cfaa62b53e7aa90cd3c7e3e050" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::hashmap&lt; K, V, F &gt;::hashmap</definition>
+        <argsstring>(int startSize=8)</argsstring>
+        <name>hashmap</name>
+        <qualifiedname>catos::hashmap::hashmap</qualifiedname>
         <param>
-          <type>const glm::mat4 &amp;</type>
-          <declname>topMatrix</declname>
-        </param>
-        <param>
-          <type><ref refid="a00234" kindref="compound">DrawContext</ref> &amp;</type>
-          <declname>ctx</declname>
+          <type>int</type>
+          <declname>startSize</declname>
+          <defval>8</defval>
         </param>
         <briefdescription>
-<para>TODO define <ref refid="a00234" kindref="compound">DrawContext</ref>. </para>
+<para>Basic constructor with a startSize of 8. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="108" column="18" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1581" bodyend="1607"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="80" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="80" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="a00238_1a14b95dee3c9f26723f6fe7797d38c007" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>catos::hashmap&lt; K, V, F &gt;::~hashmap</definition>
+        <argsstring>()</argsstring>
+        <name>~hashmap</name>
+        <qualifiedname>catos::hashmap::~hashmap</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="84" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="84" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="a00238_1a9404f2ec83113e4e1558d6b4985f0dae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>V</type>
+        <definition>V catos::hashmap&lt; K, V, F &gt;::get</definition>
+        <argsstring>(const K &amp;key)</argsstring>
+        <name>get</name>
+        <qualifiedname>catos::hashmap::get</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Gets the value based on the key given. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="89" column="11" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="89" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="a00238_1aa53edace488e9a5824fdc08d14520380" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::hashmap&lt; K, V, F &gt;::put</definition>
+        <argsstring>(const K &amp;key, const V &amp;value)</argsstring>
+        <name>put</name>
+        <qualifiedname>catos::hashmap::put</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>const V &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>puts an item in the table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="107" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="107" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="a00238_1a7044ee024f8701f8217d44197d30ff47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::hashmap&lt; K, V, F &gt;::remove</definition>
+        <argsstring>(const K &amp;key)</argsstring>
+        <name>remove</name>
+        <qualifiedname>catos::hashmap::remove</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Removes the item. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="140" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="140" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="a00238_1a04aa13e9054b087a1feeae6130c67ae5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::hashmap&lt; K, V, F &gt;::rehash</definition>
+        <argsstring>(int newSize)</argsstring>
+        <name>rehash</name>
+        <qualifiedname>catos::hashmap::rehash</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>newSize</declname>
+        </param>
+        <briefdescription>
+<para>Creates a new table of the given size and rehash all of the previous items. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="170" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="170" bodyend="215"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00238_1adaf2cf8e75b5adda9f90790d85b74988" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::hashmap&lt; K, V, F &gt;::cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>cleanup</name>
+        <qualifiedname>catos::hashmap::cleanup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="219" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="219" bodyend="242"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<para>Hashmap structure object. NOTE: alot of custom types such as <ref refid="a00246" kindref="compound">catos::string</ref> dont work. Which has to do with my hashing func. You can provide your own if you really want it. </para>
     </detaileddescription>
-    <inheritancegraph>
-      <node id="3">
-        <label>IRenderable</label>
-        <link refid="a00246"/>
-      </node>
-      <node id="1">
-        <label>MeshNode</label>
-        <link refid="a00238"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Node</label>
-        <link refid="a00262"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-    </inheritancegraph>
-    <collaborationgraph>
-      <node id="3">
-        <label>IRenderable</label>
-        <link refid="a00246"/>
-      </node>
-      <node id="1">
-        <label>MeshNode</label>
-        <link refid="a00238"/>
-        <childnode refid="2" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>Node</label>
-        <link refid="a00262"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="104" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="104" bodyend="110"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" line="75" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/stl/hashmap.h" bodystart="75" bodyend="254"/>
     <listofallmembers>
-      <member refid="a00262_1a0f9591e9fa0bf1680b1e3ac8c32739aa" prot="public" virt="non-virtual"><scope>MeshNode</scope><name>childern</name></member>
-      <member refid="a00238_1a8d5ed2175240d27f97e058508b110b51" prot="public" virt="virtual"><scope>MeshNode</scope><name>Draw</name></member>
-      <member refid="a00262_1a633dd4c9cfe7d73b9964bd90c0b9c28f" prot="public" virt="non-virtual"><scope>MeshNode</scope><name>localTransform</name></member>
-      <member refid="a00238_1aad4716b73a0170c5a9af5b58f429ef5a" prot="public" virt="non-virtual"><scope>MeshNode</scope><name>mesh</name></member>
-      <member refid="a00262_1a99e65d6b9186c551371b95ea3845b6fd" prot="public" virt="non-virtual"><scope>MeshNode</scope><name>parent</name></member>
-      <member refid="a00262_1a04e0eff14682dca41284af38d0cb51a5" prot="public" virt="non-virtual"><scope>MeshNode</scope><name>refreshTransform</name></member>
-      <member refid="a00262_1a080e37187a37353df15596dc9250e700" prot="public" virt="non-virtual"><scope>MeshNode</scope><name>worldTransform</name></member>
+      <member refid="a00238_1ac7e2c354b994f9d221cf22b8787b18d6" prot="private" virt="non-virtual"><scope>catos::hashmap</scope><name>buf</name></member>
+      <member refid="a00238_1adaf2cf8e75b5adda9f90790d85b74988" prot="private" virt="non-virtual"><scope>catos::hashmap</scope><name>cleanup</name></member>
+      <member refid="a00238_1a9404f2ec83113e4e1558d6b4985f0dae" prot="public" virt="non-virtual"><scope>catos::hashmap</scope><name>get</name></member>
+      <member refid="a00238_1aebe27d9d02019fcc772beb137fc33c64" prot="private" virt="non-virtual"><scope>catos::hashmap</scope><name>hashFunc</name></member>
+      <member refid="a00238_1af81f92cfaa62b53e7aa90cd3c7e3e050" prot="public" virt="non-virtual"><scope>catos::hashmap</scope><name>hashmap</name></member>
+      <member refid="a00238_1a48e32798aac0134def7107fccfac5ad7" prot="private" virt="non-virtual"><scope>catos::hashmap</scope><name>maxSize</name></member>
+      <member refid="a00238_1aa53edace488e9a5824fdc08d14520380" prot="public" virt="non-virtual"><scope>catos::hashmap</scope><name>put</name></member>
+      <member refid="a00238_1a04aa13e9054b087a1feeae6130c67ae5" prot="public" virt="non-virtual"><scope>catos::hashmap</scope><name>rehash</name></member>
+      <member refid="a00238_1a7044ee024f8701f8217d44197d30ff47" prot="public" virt="non-virtual"><scope>catos::hashmap</scope><name>remove</name></member>
+      <member refid="a00238_1a5c84acabc2500915740266078b6b7d07" prot="private" virt="non-virtual"><scope>catos::hashmap</scope><name>size</name></member>
+      <member refid="a00238_1a14b95dee3c9f26723f6fe7797d38c007" prot="public" virt="non-virtual"><scope>catos::hashmap</scope><name>~hashmap</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

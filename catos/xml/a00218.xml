@@ -1,149 +1,211 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00218" kind="struct" language="C++" prot="public">
-    <compoundname>GLTFMetallic_roughness</compoundname>
-    <includes refid="a00047" local="no">VkEngine.h</includes>
-    <innerclass refid="a00222" prot="public">GLTFMetallic_roughness::MaterialConstants</innerclass>
-    <innerclass refid="a00226" prot="public">GLTFMetallic_roughness::MaterialResources</innerclass>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00218_1a14e8a4c07862539d98a1793cf7be2e24" prot="public" static="no" mutable="no">
-        <type><ref refid="a00302" kindref="compound">MaterialPipeline</ref></type>
-        <definition>MaterialPipeline GLTFMetallic_roughness::opaquePipeline</definition>
+  <compounddef id="a00218" kind="class" language="C++" prot="public">
+    <compoundname>catos::ScriptingEngine</compoundname>
+    <includes refid="a00077" local="no">ScriptingEngine.h</includes>
+    <sectiondef kind="friend">
+      <memberdef kind="friend" id="a00218_1ac7b716e6d41ff508ad2d8e5dad655d72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>class</type>
+        <definition>friend class Registry</definition>
         <argsstring></argsstring>
-        <name>opaquePipeline</name>
-        <qualifiedname>GLTFMetallic_roughness::opaquePipeline</qualifiedname>
+        <name>Registry</name>
+        <qualifiedname>catos::ScriptingEngine::Registry</qualifiedname>
+        <param>
+          <type><ref refid="a00150" kindref="compound">Registry</ref></type>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="53" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="53" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="35" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="35" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1a20a1e6318217b3d3e63e91439022a4d8" prot="public" static="no" mutable="no">
-        <type><ref refid="a00302" kindref="compound">MaterialPipeline</ref></type>
-        <definition>MaterialPipeline GLTFMetallic_roughness::transparentPipeline</definition>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00218_1a78bf1ed3734478f22b2cce9cbb9060ac" prot="private" static="no" mutable="no">
+        <type>py::scoped_interpreter *</type>
+        <definition>py::scoped_interpreter* catos::ScriptingEngine::interpreter</definition>
         <argsstring></argsstring>
-        <name>transparentPipeline</name>
-        <qualifiedname>GLTFMetallic_roughness::transparentPipeline</qualifiedname>
+        <name>interpreter</name>
+        <qualifiedname>catos::ScriptingEngine::interpreter</qualifiedname>
+        <initializer>= nullptr</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="54" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="54" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="84" column="32" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="84" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1a269aa1b48852004420322491f8e03e4a" prot="public" static="no" mutable="no">
-        <type>VkDescriptorSetLayout</type>
-        <definition>VkDescriptorSetLayout GLTFMetallic_roughness::materialLayout</definition>
+      <memberdef kind="variable" id="a00218_1adf1dc876cc21df19e66b65972187c23b" prot="private" static="no" mutable="no">
+        <type>py::module</type>
+        <definition>py::module catos::ScriptingEngine::catosPyMod</definition>
         <argsstring></argsstring>
-        <name>materialLayout</name>
-        <qualifiedname>GLTFMetallic_roughness::materialLayout</qualifiedname>
+        <name>catosPyMod</name>
+        <qualifiedname>catos::ScriptingEngine::catosPyMod</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="56" column="27" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="56" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="85" column="20" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="85" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00218_1a90094ab356bc8a5426f8012f76c1326f" prot="public" static="no" mutable="no">
-        <type><ref refid="a00202" kindref="compound">DescriptorWriter</ref></type>
-        <definition>DescriptorWriter GLTFMetallic_roughness::writer</definition>
+      <memberdef kind="variable" id="a00218_1a0463090223fc863a8bff32ff0de96346" prot="private" static="no" mutable="no">
+        <type><ref refid="a00238" kindref="compound">catos::hashmap</ref>&lt; size_t, std::any &gt;</type>
+        <definition>catos::hashmap&lt;size_t, std::any&gt; catos::ScriptingEngine::_pythonClasses</definition>
         <argsstring></argsstring>
-        <name>writer</name>
-        <qualifiedname>GLTFMetallic_roughness::writer</qualifiedname>
+        <name>_pythonClasses</name>
+        <qualifiedname>catos::ScriptingEngine::_pythonClasses</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="75" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="75" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="87" column="24" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00218_1a535ae6a8f9c62dc1bedbb3d4cf727306" prot="private" static="no" mutable="no">
+        <type><ref refid="a00254" kindref="compound">catos::vector</ref>&lt; <ref refid="a00242" kindref="compound">catos::Pair</ref>&lt; py::object *, <ref refid="a00214" kindref="compound">ScriptInfo</ref> &gt; &gt;</type>
+        <definition>catos::vector&lt;catos::Pair&lt;py::object* , ScriptInfo&gt; &gt; catos::ScriptingEngine::_scripts</definition>
+        <argsstring></argsstring>
+        <name>_scripts</name>
+        <qualifiedname>catos::ScriptingEngine::_scripts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="88" column="23" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00218_1a8b55daad4edbed63c8a40c2df5ee4c12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00218" kindref="compound">ScriptingEngine</ref> &amp;</type>
+        <definition>catos::ScriptingEngine &amp; catos::ScriptingEngine::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>catos::ScriptingEngine::getInstance</qualifiedname>
+        <briefdescription>
+<para>singleton :D </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="38" column="32" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="11" bodyend="14"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
-      <memberdef kind="function" id="a00218_1ac6b86602d156a5555b3799b9172c674e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void GLTFMetallic_roughness::buildPipelines</definition>
-        <argsstring>(VulkanEngine *engine)</argsstring>
-        <name>buildPipelines</name>
-        <qualifiedname>GLTFMetallic_roughness::buildPipelines</qualifiedname>
-        <param>
-          <type><ref refid="a00242" kindref="compound">VulkanEngine</ref> *</type>
-          <declname>engine</declname>
-        </param>
+      <memberdef kind="function" id="a00218_1a86e85faa189694bbe81da7e4067a4cc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::ScriptingEngine::ScriptingEngine</definition>
+        <argsstring>()</argsstring>
+        <name>ScriptingEngine</name>
+        <qualifiedname>catos::ScriptingEngine::ScriptingEngine</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="77" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1462" bodyend="1538"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="40" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="16" bodyend="29"/>
       </memberdef>
-      <memberdef kind="function" id="a00218_1acdddc2beb7cc303daabfa28404afa2c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void GLTFMetallic_roughness::clearResources</definition>
-        <argsstring>(VkDevice device)</argsstring>
-        <name>clearResources</name>
-        <qualifiedname>GLTFMetallic_roughness::clearResources</qualifiedname>
-        <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
-        </param>
+      <memberdef kind="function" id="a00218_1a7b8081c15524b4ce43b6ae938a397d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::ScriptingEngine::~ScriptingEngine</definition>
+        <argsstring>()</argsstring>
+        <name>~ScriptingEngine</name>
+        <qualifiedname>catos::ScriptingEngine::~ScriptingEngine</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para>EMPTY?</para>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="78" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1540" bodyend="1542"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="41" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="31" bodyend="33"/>
       </memberdef>
-      <memberdef kind="function" id="a00218_1a744d03ddb8fe03ea8ee07f2ae3b42de5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="a00306" kindref="compound">MaterialInstance</ref></type>
-        <definition>MaterialInstance GLTFMetallic_roughness::writeMaterial</definition>
-        <argsstring>(VkDevice device, MaterialPass pass, const MaterialResources &amp;resources, DescriptorAllocatorGrowable descriptorAllocator)</argsstring>
-        <name>writeMaterial</name>
-        <qualifiedname>GLTFMetallic_roughness::writeMaterial</qualifiedname>
-        <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
-        </param>
-        <param>
-          <type><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" kindref="member">MaterialPass</ref></type>
-          <declname>pass</declname>
-        </param>
-        <param>
-          <type>const <ref refid="a00226" kindref="compound">MaterialResources</ref> &amp;</type>
-          <declname>resources</declname>
-        </param>
-        <param>
-          <type><ref refid="a00194" kindref="compound">DescriptorAllocatorGrowable</ref></type>
-          <declname>descriptorAllocator</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="80" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1544" bodyend="1567"/>
-      </memberdef>
-      <memberdef kind="function" id="a00218_1a96ff6cb8fd8d01b16921be3900827939" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="a00218_1a7f91b67bb01cd861ee148cf1ab9d613a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void GLTFMetallic_roughness::destroy</definition>
-        <argsstring>(VkDevice device, MaterialPass passType)</argsstring>
-        <name>destroy</name>
-        <qualifiedname>GLTFMetallic_roughness::destroy</qualifiedname>
+        <definition>void catos::ScriptingEngine::registerNewScript</definition>
+        <argsstring>(const catos::string &amp;pathToPythonFile)</argsstring>
+        <name>registerNewScript</name>
+        <qualifiedname>catos::ScriptingEngine::registerNewScript</qualifiedname>
         <param>
-          <type>VkDevice</type>
-          <declname>device</declname>
+          <type>const <ref refid="a00246" kindref="compound">catos::string</ref> &amp;</type>
+          <declname>pathToPythonFile</declname>
         </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>First read the contents of the file given to us and validate it.</para>
+<para>Create a scriptInfo</para>
+<para>Find the name of the user defined script object</para>
+<para>Do a nullptr here cuz we allocate the mem for a script obj in the <ref refid="a00218_1a46622ba9112673a2fddf24c91bbc69c6" kindref="member">ScriptingEngine::startScripts()</ref>;</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="43" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="35" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="a00218_1a46622ba9112673a2fddf24c91bbc69c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::startScripts</definition>
+        <argsstring>()</argsstring>
+        <name>startScripts</name>
+        <qualifiedname>catos::ScriptingEngine::startScripts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>execute the script;</para>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="45" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="90" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="a00218_1a98cfe86e4146738c8e82956dbc0782d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::updateScripts</definition>
+        <argsstring>()</argsstring>
+        <name>updateScripts</name>
+        <qualifiedname>catos::ScriptingEngine::updateScripts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="46" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="107" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="a00218_1a2452603a99b16c170736ae2917f876e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::endScripts</definition>
+        <argsstring>()</argsstring>
+        <name>endScripts</name>
+        <qualifiedname>catos::ScriptingEngine::endScripts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="47" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="119" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="a00218_1a236303c168356b8014f394963e6a2c08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::registerClass</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>registerClass</name>
+        <qualifiedname>catos::ScriptingEngine::registerClass</qualifiedname>
         <param>
-          <type><ref refid="a00074_1a5d0f6bec114ddc0ce218cc9986d7bcac" kindref="member">MaterialPass</ref></type>
-          <declname>passType</declname>
+          <type>const char *</type>
+          <declname>name</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -151,44 +213,90 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="81" column="10" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.cpp" bodystart="1569" bodyend="1579"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="51" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="51" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="a00218_1af1883ecee457552523919c63becfb4d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::registerProperty</definition>
+        <argsstring>(const char *name, U T::*ptr)</argsstring>
+        <name>registerProperty</name>
+        <qualifiedname>catos::ScriptingEngine::registerProperty</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>U T::*</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="60" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="60" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="a00218_1a0a12634ba666a3141a6ea8e6ce1bcee3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void catos::ScriptingEngine::registerMethod</definition>
+        <argsstring>(const char *name, U T::*ptr)</argsstring>
+        <name>registerMethod</name>
+        <qualifiedname>catos::ScriptingEngine::registerMethod</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>U T::*</type>
+          <declname>ptr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="72" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="72" bodyend="80"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <collaborationgraph>
-      <node id="3">
-        <label>DescriptorWriter</label>
-        <link refid="a00202"/>
-      </node>
-      <node id="1">
-        <label>GLTFMetallic_roughness</label>
-        <link refid="a00218"/>
-        <childnode refid="2" relation="usage">
-          <edgelabel>opaquePipeline</edgelabel>
-          <edgelabel>transparentPipeline</edgelabel>
-        </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>writer</edgelabel>
-        </childnode>
-      </node>
-      <node id="2">
-        <label>MaterialPipeline</label>
-        <link refid="a00302"/>
-      </node>
-    </collaborationgraph>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" line="52" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkEngine.h" bodystart="52" bodyend="82"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" line="31" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h" bodystart="31" bodyend="90"/>
     <listofallmembers>
-      <member refid="a00218_1ac6b86602d156a5555b3799b9172c674e" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>buildPipelines</name></member>
-      <member refid="a00218_1acdddc2beb7cc303daabfa28404afa2c9" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>clearResources</name></member>
-      <member refid="a00218_1a96ff6cb8fd8d01b16921be3900827939" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>destroy</name></member>
-      <member refid="a00218_1a269aa1b48852004420322491f8e03e4a" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>materialLayout</name></member>
-      <member refid="a00218_1a14e8a4c07862539d98a1793cf7be2e24" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>opaquePipeline</name></member>
-      <member refid="a00218_1a20a1e6318217b3d3e63e91439022a4d8" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>transparentPipeline</name></member>
-      <member refid="a00218_1a744d03ddb8fe03ea8ee07f2ae3b42de5" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>writeMaterial</name></member>
-      <member refid="a00218_1a90094ab356bc8a5426f8012f76c1326f" prot="public" virt="non-virtual"><scope>GLTFMetallic_roughness</scope><name>writer</name></member>
+      <member refid="a00218_1a0463090223fc863a8bff32ff0de96346" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>_pythonClasses</name></member>
+      <member refid="a00218_1a535ae6a8f9c62dc1bedbb3d4cf727306" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>_scripts</name></member>
+      <member refid="a00218_1adf1dc876cc21df19e66b65972187c23b" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>catosPyMod</name></member>
+      <member refid="a00218_1a2452603a99b16c170736ae2917f876e3" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>endScripts</name></member>
+      <member refid="a00218_1a8b55daad4edbed63c8a40c2df5ee4c12" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>getInstance</name></member>
+      <member refid="a00218_1a78bf1ed3734478f22b2cce9cbb9060ac" prot="private" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>interpreter</name></member>
+      <member refid="a00218_1a236303c168356b8014f394963e6a2c08" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>registerClass</name></member>
+      <member refid="a00218_1a0a12634ba666a3141a6ea8e6ce1bcee3" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>registerMethod</name></member>
+      <member refid="a00218_1a7f91b67bb01cd861ee148cf1ab9d613a" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>registerNewScript</name></member>
+      <member refid="a00218_1af1883ecee457552523919c63becfb4d6" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>registerProperty</name></member>
+      <member refid="a00218_1ac7b716e6d41ff508ad2d8e5dad655d72" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>Registry</name></member>
+      <member refid="a00218_1a86e85faa189694bbe81da7e4067a4cc0" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>ScriptingEngine</name></member>
+      <member refid="a00218_1a46622ba9112673a2fddf24c91bbc69c6" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>startScripts</name></member>
+      <member refid="a00218_1a98cfe86e4146738c8e82956dbc0782d3" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>updateScripts</name></member>
+      <member refid="a00218_1a7b8081c15524b4ce43b6ae938a397d4c" prot="public" virt="non-virtual"><scope>catos::ScriptingEngine</scope><name>~ScriptingEngine</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

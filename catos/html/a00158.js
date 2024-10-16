@@ -1,9 +1,9 @@
 var a00158 =
 [
-    [ "borderless", "a00158.html#a3cc89a85c712fc2945e50dcb1d99e378", null ],
-    [ "enable_darktheme", "a00158.html#af4e7fb2bc7459c373e17b77a30565680", null ],
-    [ "is_fullscreen", "a00158.html#a2afaf94058c62aee02391616b88bd63c", null ],
-    [ "position", "a00158.html#aec4ef506b269d318933637e3f8cb04b9", null ],
-    [ "size", "a00158.html#ae968365d3c684b7865dbd44a9b58a0d4", null ],
-    [ "title", "a00158.html#a93cc9ee1f3794b1621f46ccf5ca1c91d", null ]
+    [ "Window", "a00158.html#a17960ca89f793bac084a8203f1a7d3e6", null ],
+    [ "~Window", "a00158.html#a245d821e6016fa1f6970ccbbedd635f6", null ],
+    [ "get_glfw_window", "a00158.html#afc3176914723cab13d809b6ae8f3d6d2", null ],
+    [ "should_window_close", "a00158.html#a6df30484abfd5cc491a5ed2055692859", null ],
+    [ "update", "a00158.html#a59515fc5a56e86d5a46d771595daac55", null ],
+    [ "App", "a00158.html#a4097b3e04a4f8ece21f5abe1b10e6323", null ]
 ];

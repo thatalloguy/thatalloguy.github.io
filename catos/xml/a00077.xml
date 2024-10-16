@@ -1,14 +1,23 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00077" kind="file" language="C++">
-    <compoundname>ScriptingEngine.cpp</compoundname>
-    <includes refid="a00080" local="yes">ScriptingEngine.h</includes>
-    <includes local="yes">spdlog/spdlog.h</includes>
+    <compoundname>ScriptingEngine.h</compoundname>
+    <includes refid="a00095" local="no">stl/string.h</includes>
+    <includes refid="a00101" local="yes">stl/vector.h</includes>
+    <includes refid="a00089" local="yes">stl/pair.h</includes>
+    <includes refid="a00083" local="yes">stl/hashmap.h</includes>
+    <includes local="no">pocketpy/pocketpy.h</includes>
+    <includes local="no">pybind11.h</includes>
+    <includes local="no">any</includes>
+    <includedby refid="a00074" local="yes">ScriptingEngine.cpp</includedby>
+    <includedby refid="a00011" local="yes">registry.h</includedby>
     <incdepgraph>
-      <node id="3">
-        <label>core/registry.h</label>
-        <link refid="a00011"/>
-        <childnode refid="4" relation="include">
+      <node id="1">
+        <label>ScriptingEngine.h</label>
+        <link refid="a00077"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -16,159 +25,81 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>type_utils.h</label>
-        <link refid="a00017"/>
         <childnode refid="8" relation="include">
         </childnode>
-      </node>
-      <node id="9">
-        <label>types.h</label>
-        <link refid="a00014"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-      </node>
-      <node id="21">
-        <label>math/vecs.h</label>
-        <link refid="a00029"/>
-        <childnode refid="22" relation="include">
-        </childnode>
-      </node>
-      <node id="1">
-        <label>ScriptingEngine.cpp</label>
-        <link refid="a00077"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
-      <node id="2">
-        <label>ScriptingEngine.h</label>
-        <link refid="a00080"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-      </node>
-      <node id="23">
-        <label>stl/pair.h</label>
-        <link refid="a00092"/>
-      </node>
-      <node id="17">
-        <label>stl/string.h</label>
-        <link refid="a00098"/>
-      </node>
-      <node id="18">
-        <label>stl/vector.h</label>
-        <link refid="a00104"/>
-        <childnode refid="19" relation="include">
-        </childnode>
-      </node>
-      <node id="20">
-        <label>world/world.h</label>
-        <link refid="a00113"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
       </node>
       <node id="6">
-        <label>any</label>
-      </node>
-      <node id="19">
-        <label>cstring</label>
-      </node>
-      <node id="13">
-        <label>deque</label>
-      </node>
-      <node id="14">
-        <label>fstream</label>
-      </node>
-      <node id="12">
-        <label>functional</label>
-      </node>
-      <node id="22">
-        <label>glm/glm.hpp</label>
+        <label>stl/hashmap.h</label>
+        <link refid="a00083"/>
       </node>
       <node id="5">
-        <label>iostream</label>
+        <label>stl/pair.h</label>
+        <link refid="a00089"/>
       </node>
-      <node id="11">
-        <label>mono/metadata/loader.h</label>
+      <node id="2">
+        <label>stl/string.h</label>
+        <link refid="a00095"/>
       </node>
-      <node id="24">
-        <label>pybind11/internal/class.h</label>
+      <node id="3">
+        <label>stl/vector.h</label>
+        <link refid="a00101"/>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
-      <node id="25">
-        <label>pybind11/pybind11.h</label>
-      </node>
-      <node id="16">
-        <label>regex</label>
-      </node>
-      <node id="26">
-        <label>spdlog/spdlog.h</label>
-      </node>
-      <node id="10">
-        <label>string</label>
-      </node>
-      <node id="15">
-        <label>typeindex</label>
-      </node>
-      <node id="8">
-        <label>typeinfo</label>
+      <node id="9">
+        <label>any</label>
       </node>
       <node id="4">
-        <label>unordered_map</label>
+        <label>cstring</label>
+      </node>
+      <node id="7">
+        <label>pocketpy/pocketpy.h</label>
+      </node>
+      <node id="8">
+        <label>pybind11.h</label>
       </node>
     </incdepgraph>
-    <sectiondef kind="func">
-      <memberdef kind="function" id="a00077_1a9847901402962df74f5dade7b4e3436f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>PYBIND11_EMBEDDED_MODULE</definition>
-        <argsstring>(catos, m)</argsstring>
-        <name>PYBIND11_EMBEDDED_MODULE</name>
-        <param>
-          <type>catos</type>
-        </param>
-        <param>
-          <type>m</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" line="8" column="1" bodyfile="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp" bodystart="8" bodyend="14"/>
-      </memberdef>
-    </sectiondef>
+    <invincdepgraph>
+      <node id="4">
+        <label>application.cpp</label>
+        <link refid="a00002"/>
+      </node>
+      <node id="6">
+        <label>registry.cpp</label>
+        <link refid="a00008"/>
+      </node>
+      <node id="3">
+        <label>registry.h</label>
+        <link refid="a00011"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ScriptingEngine.cpp</label>
+        <link refid="a00074"/>
+      </node>
+      <node id="1">
+        <label>ScriptingEngine.h</label>
+        <link refid="a00077"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>main.cpp</label>
+        <link refid="a00104"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00214" prot="public">catos::ScriptInfo</innerclass>
+    <innerclass refid="a00218" prot="public">catos::ScriptingEngine</innerclass>
+    <innernamespace refid="a00107">catos</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -177,123 +108,97 @@
 <codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>8/27/2024.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00080" kindref="compound">ScriptingEngine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;spdlog/spdlog.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><ref refid="a00077_1a9847901402962df74f5dade7b4e3436f" kindref="member">PYBIND11_EMBEDDED_MODULE</ref>(<ref refid="a00116" kindref="compound">catos</ref>,<sp/>m)<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="a00095" kindref="compound">stl/string.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00101" kindref="compound">stl/vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00089" kindref="compound">stl/pair.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>py::class_&lt;Script&gt;(m,<sp/></highlight><highlight class="stringliteral">&quot;Script&quot;</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.def(py::init&lt;&gt;())</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.def(</highlight><highlight class="stringliteral">&quot;update&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="a00378_1af279e5aad0ff44fe62ce8698886ed0bd" kindref="member">Script::update</ref>)</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.def(</highlight><highlight class="stringliteral">&quot;end&quot;</highlight><highlight class="normal">,<sp/>&amp;<ref refid="a00378_1ad93a5bc97f52f9913c5b60f18ca492ec" kindref="member">Script::end</ref>);</highlight></codeline>
-<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00083" kindref="compound">stl/hashmap.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pocketpy/pocketpy.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pybind11.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;any&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><ref refid="a00322" kindref="compound">catos::ScriptingEngine</ref><sp/>&amp;<ref refid="a00322_1a8b55daad4edbed63c8a40c2df5ee4c12" kindref="member">catos::ScriptingEngine::getInstance</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="a00322" kindref="compound">catos::ScriptingEngine</ref><sp/>instance{};</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>instance;</highlight></codeline>
-<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><ref refid="a00322_1a86e85faa189694bbe81da7e4067a4cc0" kindref="member">catos::ScriptingEngine::ScriptingEngine</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><ref refid="a00322_1a7b8081c15524b4ce43b6ae938a397d4c" kindref="member">catos::ScriptingEngine::~ScriptingEngine</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">py<sp/>=<sp/>pybind11;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00107" kindref="compound">catos</ref><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="a00214" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="a00214" kindref="compound">ScriptInfo</ref><sp/>{</highlight></codeline>
+<codeline lineno="24" refid="a00214_1abe58c79d1dcde12e669a829f538239d1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00246" kindref="compound">catos::string</ref><sp/><ref refid="a00214_1abe58c79d1dcde12e669a829f538239d1" kindref="member">src</ref>;</highlight></codeline>
+<codeline lineno="25" refid="a00214_1af1434441e10ec367d6721e9ec4443b19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00246" kindref="compound">catos::string</ref><sp/><ref refid="a00214_1af1434441e10ec367d6721e9ec4443b19" kindref="member">className</ref>;</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00322_1a055f269e131f3551ee53902b2062ea39" kindref="member">catos::ScriptingEngine::registerNewScript</ref>(<ref refid="a00350" kindref="compound">catos::string</ref><sp/>&amp;pathToPythonFile)<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">try</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ifstream<sp/>file(pathToPythonFile.<ref refid="a00350_1a7c36e8de782d34d3a872cae8a2f0f63e" kindref="member">c_str</ref>());</highlight></codeline>
+<codeline lineno="31" refid="a00218" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00218" kindref="compound">ScriptingEngine</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="a00218_1ac7b716e6d41ff508ad2d8e5dad655d72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00150" kindref="compound">Registry</ref>;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!file.is_open()){</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cerr<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>open<sp/>file&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>-405;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="a00218" kindref="compound">ScriptingEngine</ref>&amp;<sp/><ref refid="a00218_1a8b55daad4edbed63c8a40c2df5ee4c12" kindref="member">getInstance</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00218_1a86e85faa189694bbe81da7e4067a4cc0" kindref="member">ScriptingEngine</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00218_1a7b8081c15524b4ce43b6ae938a397d4c" kindref="member">~ScriptingEngine</ref>();</highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>buffer;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>buffer<sp/>&lt;&lt;<sp/>file.rdbuf();</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00318" kindref="compound">ScriptInfo</ref><sp/>scriptInfo;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scriptInfo.<ref refid="a00318_1abe58c79d1dcde12e669a829f538239d1" kindref="member">src</ref><sp/>=<sp/>buffer.str().<ref refid="a00350_1a7c36e8de782d34d3a872cae8a2f0f63e" kindref="member">c_str</ref>();</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00218_1a7f91b67bb01cd861ee148cf1ab9d613a" kindref="member">registerNewScript</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00246" kindref="compound">catos::string</ref>&amp;<sp/>pathToPythonFile);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00218_1a46622ba9112673a2fddf24c91bbc69c6" kindref="member">startScripts</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00218_1a98cfe86e4146738c8e82956dbc0782d3" kindref="member">updateScripts</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00218_1a2452603a99b16c170736ae2917f876e3" kindref="member">endScripts</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="51" refid="a00218_1a236303c168356b8014f394963e6a2c08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00218_1a236303c168356b8014f394963e6a2c08" kindref="member">registerClass</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name)<sp/>{</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>srcCode<sp/>=<sp/>buffer.str();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>py::class_&lt;T&gt;<sp/>pyClass<sp/>=<sp/>py::class_&lt;T&gt;(catosPyMod,<sp/>name).def(py::init&lt;&gt;());</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>hash<sp/>=<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(T).hash_code();</highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>end<sp/>=<sp/>srcCode.find(</highlight><highlight class="stringliteral">&quot;(catos.Script&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>srcCode.find(</highlight><highlight class="stringliteral">&quot;class<sp/>&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_pythonClasses.<ref refid="a00238_1aa53edace488e9a5824fdc08d14520380" kindref="member">put</ref>(hash,<sp/>pyClass);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(end<sp/>!=<sp/>srcCode.npos<sp/>&amp;&amp;<sp/>start<sp/>!=<sp/>srcCode.npos)<sp/>{</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scriptInfo.<ref refid="a00318_1af1434441e10ec367d6721e9ec4443b19" kindref="member">className</ref><sp/>=<sp/>srcCode.substr(start<sp/>+<sp/>6,<sp/>end<sp/>-<sp/>(start<sp/>+<sp/>6)).<ref refid="a00350_1a7c36e8de782d34d3a872cae8a2f0f63e" kindref="member">c_str</ref>();</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::debug(</highlight><highlight class="stringliteral">&quot;Script<sp/>found<sp/>{}&quot;</highlight><highlight class="normal">,<sp/>scriptInfo.<ref refid="a00318_1af1434441e10ec367d6721e9ec4443b19" kindref="member">className</ref>.<ref refid="a00350_1a7c36e8de782d34d3a872cae8a2f0f63e" kindref="member">c_str</ref>());</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="60" refid="a00218_1af1883ecee457552523919c63becfb4d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00218_1af1883ecee457552523919c63becfb4d6" kindref="member">registerProperty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/>U<sp/>T::*<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>hash<sp/>=<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(T).hash_code();</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::error(</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>Find<sp/>script<sp/>class<sp/>in<sp/>{}&quot;</highlight><highlight class="normal">,<sp/>pathToPythonFile.<ref refid="a00350_1a7c36e8de782d34d3a872cae8a2f0f63e" kindref="member">c_str</ref>());</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>-406;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>obj<sp/>=<sp/>_pythonClasses.<ref refid="a00238_1a9404f2ec83113e4e1558d6b4985f0dae" kindref="member">get</ref>(hash);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pyClass<sp/>=<sp/>std::any_cast&lt;py::class_&lt;T&gt;&gt;(obj);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pyClass.def_readwrite(name,<sp/>ptr);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_scripts.push_back({</highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>scriptInfo});</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
+<codeline lineno="72" refid="a00218_1a0a12634ba666a3141a6ea8e6ce1bcee3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00218_1a0a12634ba666a3141a6ea8e6ce1bcee3" kindref="member">registerMethod</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/>U<sp/>T::*<sp/>ptr)<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>hash<sp/>=<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal">(T).hash_code();</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>obj<sp/>=<sp/>_pythonClasses.<ref refid="a00238_1a9404f2ec83113e4e1558d6b4985f0dae" kindref="member">get</ref>(hash);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">catch</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>e)<sp/>{</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spdlog::error(</highlight><highlight class="stringliteral">&quot;{}&quot;</highlight><highlight class="normal">,<sp/>e);</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pyClass<sp/>=<sp/>std::any_cast&lt;py::class_&lt;T&gt;&gt;(obj);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pyClass.def(name,<sp/>ptr);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00322_1a382ee3821ad868a82549920ad8c3f360" kindref="member">ScriptingEngine::startScripts</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>py::scoped_interpreter*<sp/>interpreter<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>py::module<sp/>catosPyMod;</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;_scripts.length();<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>pair<sp/>=<sp/>_scripts[i];</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>py::exec(pair.second.src.c_str());</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pair.first<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00238" kindref="compound">catos::hashmap&lt;size_t, std::any&gt;</ref><sp/>_pythonClasses;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00254" kindref="compound">catos::vector&lt;catos::Pair&lt;py::object* , ScriptInfo&gt;</ref>&gt;<sp/>_scripts;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
 <codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>(pair.second.className<sp/>+<sp/><ref refid="a00350" kindref="compound">catos::string</ref>(</highlight><highlight class="stringliteral">&quot;()&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
 <codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pair.first<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>py::object(py::eval(t.c_str()));</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00322_1a380736b746364b090839f33b7bc303ad" kindref="member">ScriptingEngine::updateScripts</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;_scripts.length();<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>pair<sp/>=<sp/>_scripts[i];</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>obj<sp/>=<sp/>pair.first;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj-&gt;attr(</highlight><highlight class="stringliteral">&quot;update&quot;</highlight><highlight class="normal">)();</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="a00322_1ad959b74ea8fbe5c00c2e5bf74af97b33" kindref="member">ScriptingEngine::endScripts</ref>()<sp/>{</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>py::scoped_interpreter<sp/>guard{};</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i&lt;_scripts.length();<sp/>i++)<sp/>{</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>obj<sp/>=<sp/>_scripts[i].first;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(obj<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj-&gt;attr(</highlight><highlight class="stringliteral">&quot;end&quot;</highlight><highlight class="normal">)();</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>obj;</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.cpp"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/scripting/ScriptingEngine.h"/>
   </compounddef>
 </doxygen>

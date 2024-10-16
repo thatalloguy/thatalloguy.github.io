@@ -1,26 +1,59 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
   <compounddef id="a00095" kind="file" language="C++">
-    <compoundname>string.cpp</compoundname>
-    <includes local="no">cstring</includes>
-    <includes refid="a00098" local="yes">string.h</includes>
-    <incdepgraph>
-      <node id="1">
-        <label>string.cpp</label>
-        <link refid="a00095"/>
-        <childnode refid="2" relation="include">
+    <compoundname>string.h</compoundname>
+    <includedby refid="a00077" local="no">ScriptingEngine.h</includedby>
+    <includedby refid="a00092" local="yes">string.cpp</includedby>
+    <invincdepgraph>
+      <node id="5">
+        <label>application.cpp</label>
+        <link refid="a00002"/>
+      </node>
+      <node id="7">
+        <label>registry.cpp</label>
+        <link refid="a00008"/>
+      </node>
+      <node id="4">
+        <label>registry.h</label>
+        <link refid="a00011"/>
+        <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
       <node id="3">
-        <label>string.h</label>
-        <link refid="a00098"/>
+        <label>ScriptingEngine.cpp</label>
+        <link refid="a00074"/>
       </node>
       <node id="2">
-        <label>cstring</label>
+        <label>ScriptingEngine.h</label>
+        <link refid="a00077"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
       </node>
-    </incdepgraph>
+      <node id="8">
+        <label>string.cpp</label>
+        <link refid="a00092"/>
+      </node>
+      <node id="1">
+        <label>string.h</label>
+        <link refid="a00095"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>main.cpp</label>
+        <link refid="a00104"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="a00246" prot="public">catos::string</innerclass>
+    <innernamespace refid="a00107">catos</innernamespace>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
@@ -30,78 +63,53 @@
 <codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>allos<sp/>on<sp/>8/22/2024.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="a00098" kindref="compound">string.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CATOS_STRING_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CATOS_STRING_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"><ref refid="a00350_1a89e269e90755ca7d7b39a8ebfe54faab" kindref="member">catos::string::~string</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="a00107" kindref="compound">catos</ref><sp/>{</highlight></codeline>
 <codeline lineno="9"><highlight class="normal"></highlight></codeline>
-<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>cleanUp();</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"><ref refid="a00350_1a32c0f06b59c6dbc67cc64d5a8f732c15" kindref="member">catos::string::string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer)<sp/>{</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>size<sp/>=<sp/>strlen(buffer);</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>buf<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[size<sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy_s(buf,<sp/>size<sp/>+<sp/>1,<sp/>buffer,<sp/>size);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11" refid="a00246" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="a00246" kindref="compound">string</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="a00246_1a32c0f06b59c6dbc67cc64d5a8f732c15" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00246_1a32c0f06b59c6dbc67cc64d5a8f732c15" kindref="member">string</ref>()<sp/>:<sp/>buf(nullptr),<sp/>size(0)<sp/>{};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00246_1a32c0f06b59c6dbc67cc64d5a8f732c15" kindref="member">string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buffer);</highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><ref refid="a00350_1a32c0f06b59c6dbc67cc64d5a8f732c15" kindref="member">catos::string::string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00350" kindref="compound">catos::string</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>size<sp/>=<sp/>obj.size;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>buf<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[size<sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy_s(buf,<sp/>size<sp/>+<sp/>1,<sp/>obj.buf,<sp/>size);</highlight></codeline>
-<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00246_1a32c0f06b59c6dbc67cc64d5a8f732c15" kindref="member">string</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>obj);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00246_1a32c0f06b59c6dbc67cc64d5a8f732c15" kindref="member">string</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;&amp;<sp/>obj);</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><ref refid="a00350" kindref="compound">catos::string</ref><sp/>&amp;<ref refid="a00350_1ac2861229098a713d2a6be51886b3d3cc" kindref="member">catos::string::operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00350" kindref="compound">catos::string</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>size<sp/>=<sp/>obj.size;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>buf<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[size<sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy_s(buf,<sp/>size<sp/>+<sp/>1,<sp/>obj.buf,<sp/>size);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><ref refid="a00350_1a32c0f06b59c6dbc67cc64d5a8f732c15" kindref="member">catos::string::string</ref>(<ref refid="a00350" kindref="compound">catos::string</ref><sp/>&amp;&amp;obj)<sp/>{</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//First<sp/>clean<sp/>up<sp/>to<sp/>get<sp/>rid<sp/>of<sp/>previous<sp/>allocated<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>cleanUp();</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>size<sp/>=<sp/>obj.size;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>buf<sp/>=<sp/>obj.buf;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="a00246_1ac2861229098a713d2a6be51886b3d3cc" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>obj);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="a00246_1ac2861229098a713d2a6be51886b3d3cc" kindref="member">operator=</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;&amp;<sp/>obj);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="a00246_1a207bb13fd445130cb78fc359d8193768" kindref="member">operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>obj);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="a00246_1afba456b6f8ebdfde5dbc52f1be6dc745" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="a00246_1afba456b6f8ebdfde5dbc52f1be6dc745" kindref="member">length</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>size;<sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="a00246_1a7c36e8de782d34d3a872cae8a2f0f63e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="a00246_1a7c36e8de782d34d3a872cae8a2f0f63e" kindref="member">c_str</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf;<sp/>};</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>to<sp/>null,<sp/>because<sp/>we<sp/>now<sp/>handle<sp/>to<sp/>buffer.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>obj.buf<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>catos::string::cleanUp()<sp/>{</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(buf<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>buf;</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="50"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><ref refid="a00350" kindref="compound">catos::string</ref><sp/>&amp;<ref refid="a00350_1ac2861229098a713d2a6be51886b3d3cc" kindref="member">catos::string::operator=</ref>(<ref refid="a00350" kindref="compound">catos::string</ref><sp/>&amp;&amp;obj)<sp/>{</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//First<sp/>clean<sp/>up<sp/>to<sp/>get<sp/>rid<sp/>of<sp/>previous<sp/>allocated<sp/>memory.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>cleanUp();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="a00246_1a89e269e90755ca7d7b39a8ebfe54faab" kindref="member">~string</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>cleanUp();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>size<sp/>=<sp/>obj.size;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>buf<sp/>=<sp/>obj.buf;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
 <codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//set<sp/>to<sp/>null,<sp/>because<sp/>we<sp/>now<sp/>handle<sp/>to<sp/>buffer.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>obj.buf<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><ref refid="a00350" kindref="compound">catos::string</ref><sp/><ref refid="a00350_1a207bb13fd445130cb78fc359d8193768" kindref="member">catos::string::operator+</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="a00350" kindref="compound">catos::string</ref><sp/>&amp;obj)<sp/>{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s;<sp/></highlight><highlight class="comment">//<sp/>new<sp/>string.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>s.size<sp/>=<sp/>this-&gt;size<sp/>+<sp/>obj.size;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>s.buf<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">[s.size<sp/>+<sp/>1];</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy_s(s.buf,<sp/>this-&gt;size<sp/>+<sp/>1,<sp/>this-&gt;buf,<sp/>this-&gt;size);<sp/></highlight><highlight class="comment">//<sp/>first<sp/>copy<sp/>our<sp/>str</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>strncpy_s(s.buf<sp/>+<sp/>this-&gt;size,<sp/>obj.size<sp/>+<sp/>1,<sp/>obj.buf,<sp/>obj.size);<sp/></highlight><highlight class="comment">//<sp/>Then<sp/>the<sp/>other<sp/>obj.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//CATOS_STRING_H</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.cpp"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/stl/string.h"/>
   </compounddef>
 </doxygen>

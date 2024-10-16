@@ -1,46 +1,198 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="en-US">
-  <compounddef id="a00190" kind="struct" language="C++" prot="public">
-    <compoundname>DescriptorAllocator::PoolSizeRatio</compoundname>
-    <includes refid="a00041" local="no">VkDescriptors.h</includes>
-    <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="a00190_1a02c61834a3489dda3bf125c574b177b2" prot="public" static="no" mutable="no">
-        <type>VkDescriptorType</type>
-        <definition>VkDescriptorType DescriptorAllocator::PoolSizeRatio::type</definition>
+  <compounddef id="a00190" kind="class" language="C++" prot="public">
+    <compoundname>catos::Renderer</compoundname>
+    <includes refid="a00053" local="no">renderer.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="a00190_1acbb943b916a1d216ce4a69e53b2c63c5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool catos::Renderer::initialized</definition>
         <argsstring></argsstring>
-        <name>type</name>
-        <qualifiedname>DescriptorAllocator::PoolSizeRatio::type</qualifiedname>
+        <name>initialized</name>
+        <qualifiedname>catos::Renderer::initialized</qualifiedname>
+        <initializer>= false</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="28" column="26" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="54" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="54" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="a00190_1a637dfec791d056803ac8d7f7d399c458" prot="public" static="no" mutable="no">
-        <type>float</type>
-        <definition>float DescriptorAllocator::PoolSizeRatio::ratio</definition>
+      <memberdef kind="variable" id="a00190_1a29b985dbfb33a221641c873a4b3b0e78" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int catos::Renderer::renderVAO</definition>
         <argsstring></argsstring>
-        <name>ratio</name>
-        <qualifiedname>DescriptorAllocator::PoolSizeRatio::ratio</qualifiedname>
+        <name>renderVAO</name>
+        <qualifiedname>catos::Renderer::renderVAO</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="29" column="15" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="29" bodyend="-1"/>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="56" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00190_1a0e4d6aacbe4a23f35012a4583bcadcdc" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int catos::Renderer::renderVBO</definition>
+        <argsstring></argsstring>
+        <name>renderVBO</name>
+        <qualifiedname>catos::Renderer::renderVBO</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="57" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="a00190_1a061ff8bb120b86d2309e4de62b302095" prot="private" static="no" mutable="no">
+        <type><ref refid="a00210" kindref="compound">Shader</ref></type>
+        <definition>Shader catos::Renderer::screenShader</definition>
+        <argsstring></argsstring>
+        <name>screenShader</name>
+        <qualifiedname>catos::Renderer::screenShader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="58" column="16" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="a00190_1a9abc0b2f88cab6de481b5ed03b33bf40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00190" kindref="compound">Renderer</ref> &amp;</type>
+        <definition>catos::Renderer &amp; catos::Renderer::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>catos::Renderer::getInstance</qualifiedname>
+        <briefdescription>
+<para>Singleton. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="37" column="25" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="a00190_1a77b6706531afda679e25e1a768461c7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>catos::Renderer::~Renderer</definition>
+        <argsstring>()</argsstring>
+        <name>~Renderer</name>
+        <qualifiedname>catos::Renderer::~Renderer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="38" column="9" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="48" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="a00190_1a80632fc4bf3b4bfd4adf53942e1082b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844" kindref="member">RenderStatus</ref></type>
+        <definition>catos::RenderStatus catos::Renderer::init</definition>
+        <argsstring>(const RendererCreateInfo &amp;createInfo)</argsstring>
+        <name>init</name>
+        <qualifiedname>catos::Renderer::init</qualifiedname>
+        <param>
+          <type>const <ref refid="a00186" kindref="compound">RendererCreateInfo</ref> &amp;</type>
+          <declname>createInfo</declname>
+        </param>
+        <briefdescription>
+<para>If the renderer isnt already initialized then it initializes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="41" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="55" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="a00190_1ae4bc8cfbd577da01b4dedf353da9d80e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844" kindref="member">RenderStatus</ref></type>
+        <definition>catos::RenderStatus catos::Renderer::renderObjects</definition>
+        <argsstring>(const RenderPipeline &amp;pipeline, void *data, unsigned int objectAmount)</argsstring>
+        <name>renderObjects</name>
+        <qualifiedname>catos::Renderer::renderObjects</qualifiedname>
+        <param>
+          <type>const <ref refid="a00202" kindref="compound">RenderPipeline</ref> &amp;</type>
+          <declname>pipeline</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectAmount</declname>
+        </param>
+        <briefdescription>
+<para>Renders all objects via the pipeline given. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="44" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="82" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="a00190_1aa5bd4659694cca3566bc5f2cb7df1e98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="a00107_1aa9c2c77c5cf5336b2278a774bbbc0844" kindref="member">RenderStatus</ref></type>
+        <definition>catos::RenderStatus catos::Renderer::renderPassToScreen</definition>
+        <argsstring>(RenderPass &amp;pass)</argsstring>
+        <name>renderPassToScreen</name>
+        <qualifiedname>catos::Renderer::renderPassToScreen</qualifiedname>
+        <param>
+          <type><ref refid="a00198" kindref="compound">RenderPass</ref> &amp;</type>
+          <declname>pass</declname>
+        </param>
+        <briefdescription>
+<para>Renders the given pass to the screen. NOTE: its public for overriding. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="47" column="22" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="90" bodyend="99"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="a00190_1a02072f94792767e27cc99c78eb3bfeec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void catos::Renderer::setupFinalRenderPlane</definition>
+        <argsstring>()</argsstring>
+        <name>setupFinalRenderPlane</name>
+        <qualifiedname>catos::Renderer::setupFinalRenderPlane</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="52" column="14" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.cpp" bodystart="101" bodyend="114"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
+<para>The renderer is the Master class that handles everything getting drawn properly. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" line="27" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/Renderer/VkDescriptors.h" bodystart="27" bodyend="30"/>
+    <location file="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" line="32" column="5" bodyfile="C:/Users/allos/source/Catos/Runtime/src/renderer/renderer.h" bodystart="32" bodyend="60"/>
     <listofallmembers>
-      <member refid="a00190_1a637dfec791d056803ac8d7f7d399c458" prot="public" virt="non-virtual"><scope>DescriptorAllocator::PoolSizeRatio</scope><name>ratio</name></member>
-      <member refid="a00190_1a02c61834a3489dda3bf125c574b177b2" prot="public" virt="non-virtual"><scope>DescriptorAllocator::PoolSizeRatio</scope><name>type</name></member>
+      <member refid="a00190_1a9abc0b2f88cab6de481b5ed03b33bf40" prot="public" virt="non-virtual"><scope>catos::Renderer</scope><name>getInstance</name></member>
+      <member refid="a00190_1a80632fc4bf3b4bfd4adf53942e1082b2" prot="public" virt="non-virtual"><scope>catos::Renderer</scope><name>init</name></member>
+      <member refid="a00190_1acbb943b916a1d216ce4a69e53b2c63c5" prot="private" virt="non-virtual"><scope>catos::Renderer</scope><name>initialized</name></member>
+      <member refid="a00190_1ae4bc8cfbd577da01b4dedf353da9d80e" prot="public" virt="non-virtual"><scope>catos::Renderer</scope><name>renderObjects</name></member>
+      <member refid="a00190_1aa5bd4659694cca3566bc5f2cb7df1e98" prot="public" virt="non-virtual"><scope>catos::Renderer</scope><name>renderPassToScreen</name></member>
+      <member refid="a00190_1a29b985dbfb33a221641c873a4b3b0e78" prot="private" virt="non-virtual"><scope>catos::Renderer</scope><name>renderVAO</name></member>
+      <member refid="a00190_1a0e4d6aacbe4a23f35012a4583bcadcdc" prot="private" virt="non-virtual"><scope>catos::Renderer</scope><name>renderVBO</name></member>
+      <member refid="a00190_1a061ff8bb120b86d2309e4de62b302095" prot="private" virt="non-virtual"><scope>catos::Renderer</scope><name>screenShader</name></member>
+      <member refid="a00190_1a02072f94792767e27cc99c78eb3bfeec" prot="private" virt="non-virtual"><scope>catos::Renderer</scope><name>setupFinalRenderPlane</name></member>
+      <member refid="a00190_1a77b6706531afda679e25e1a768461c7a" prot="public" virt="non-virtual"><scope>catos::Renderer</scope><name>~Renderer</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

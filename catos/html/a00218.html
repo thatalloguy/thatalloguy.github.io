@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Catos Engine (Source): GLTFMetallic_roughness Struct Reference</title>
+<title>Catos Engine (Source): catos::ScriptingEngine Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -95,56 +95,97 @@ $(function(){initNavTree('a00218.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#friends">Friends</a> &#124;
 <a href="a00215.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">GLTFMetallic_roughness Struct Reference</div></div>
+  <div class="headertitle"><div class="title">catos::ScriptingEngine Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="a00047_source.html">VkEngine.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="a00077_source.html">ScriptingEngine.h</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00222.html">MaterialConstants</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="a00226.html">MaterialResources</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ac6b86602d156a5555b3799b9172c674e" id="r_ac6b86602d156a5555b3799b9172c674e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac6b86602d156a5555b3799b9172c674e">buildPipelines</a> (<a class="el" href="a00242.html">VulkanEngine</a> *engine)</td></tr>
-<tr class="separator:ac6b86602d156a5555b3799b9172c674e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdddc2beb7cc303daabfa28404afa2c9" id="r_acdddc2beb7cc303daabfa28404afa2c9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdddc2beb7cc303daabfa28404afa2c9">clearResources</a> (VkDevice device)</td></tr>
-<tr class="separator:acdddc2beb7cc303daabfa28404afa2c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a744d03ddb8fe03ea8ee07f2ae3b42de5" id="r_a744d03ddb8fe03ea8ee07f2ae3b42de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00306.html">MaterialInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a744d03ddb8fe03ea8ee07f2ae3b42de5">writeMaterial</a> (VkDevice device, <a class="el" href="a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a> pass, const <a class="el" href="a00226.html">MaterialResources</a> &amp;resources, <a class="el" href="a00194.html">DescriptorAllocatorGrowable</a> descriptorAllocator)</td></tr>
-<tr class="separator:a744d03ddb8fe03ea8ee07f2ae3b42de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96ff6cb8fd8d01b16921be3900827939" id="r_a96ff6cb8fd8d01b16921be3900827939"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a96ff6cb8fd8d01b16921be3900827939">destroy</a> (VkDevice device, <a class="el" href="a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a> passType)</td></tr>
-<tr class="separator:a96ff6cb8fd8d01b16921be3900827939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86e85faa189694bbe81da7e4067a4cc0" id="r_a86e85faa189694bbe81da7e4067a4cc0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a86e85faa189694bbe81da7e4067a4cc0">ScriptingEngine</a> ()</td></tr>
+<tr class="separator:a86e85faa189694bbe81da7e4067a4cc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8081c15524b4ce43b6ae938a397d4c" id="r_a7b8081c15524b4ce43b6ae938a397d4c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b8081c15524b4ce43b6ae938a397d4c">~ScriptingEngine</a> ()</td></tr>
+<tr class="separator:a7b8081c15524b4ce43b6ae938a397d4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f91b67bb01cd861ee148cf1ab9d613a" id="r_a7f91b67bb01cd861ee148cf1ab9d613a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f91b67bb01cd861ee148cf1ab9d613a">registerNewScript</a> (const <a class="el" href="a00246.html">catos::string</a> &amp;pathToPythonFile)</td></tr>
+<tr class="separator:a7f91b67bb01cd861ee148cf1ab9d613a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46622ba9112673a2fddf24c91bbc69c6" id="r_a46622ba9112673a2fddf24c91bbc69c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a46622ba9112673a2fddf24c91bbc69c6">startScripts</a> ()</td></tr>
+<tr class="separator:a46622ba9112673a2fddf24c91bbc69c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98cfe86e4146738c8e82956dbc0782d3" id="r_a98cfe86e4146738c8e82956dbc0782d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a98cfe86e4146738c8e82956dbc0782d3">updateScripts</a> ()</td></tr>
+<tr class="separator:a98cfe86e4146738c8e82956dbc0782d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2452603a99b16c170736ae2917f876e3" id="r_a2452603a99b16c170736ae2917f876e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2452603a99b16c170736ae2917f876e3">endScripts</a> ()</td></tr>
+<tr class="separator:a2452603a99b16c170736ae2917f876e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a236303c168356b8014f394963e6a2c08" id="r_a236303c168356b8014f394963e6a2c08"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a236303c168356b8014f394963e6a2c08"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a236303c168356b8014f394963e6a2c08">registerClass</a> (const char *name)</td></tr>
+<tr class="separator:a236303c168356b8014f394963e6a2c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1883ecee457552523919c63becfb4d6" id="r_af1883ecee457552523919c63becfb4d6"><td class="memTemplParams" colspan="2">template&lt;typename T , typename U &gt; </td></tr>
+<tr class="memitem:af1883ecee457552523919c63becfb4d6"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#af1883ecee457552523919c63becfb4d6">registerProperty</a> (const char *name, U T::*ptr)</td></tr>
+<tr class="separator:af1883ecee457552523919c63becfb4d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a12634ba666a3141a6ea8e6ce1bcee3" id="r_a0a12634ba666a3141a6ea8e6ce1bcee3"><td class="memTemplParams" colspan="2">template&lt;class T , typename U &gt; </td></tr>
+<tr class="memitem:a0a12634ba666a3141a6ea8e6ce1bcee3"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="#a0a12634ba666a3141a6ea8e6ce1bcee3">registerMethod</a> (const char *name, U T::*ptr)</td></tr>
+<tr class="separator:a0a12634ba666a3141a6ea8e6ce1bcee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a14e8a4c07862539d98a1793cf7be2e24" id="r_a14e8a4c07862539d98a1793cf7be2e24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00302.html">MaterialPipeline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a14e8a4c07862539d98a1793cf7be2e24">opaquePipeline</a></td></tr>
-<tr class="separator:a14e8a4c07862539d98a1793cf7be2e24"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20a1e6318217b3d3e63e91439022a4d8" id="r_a20a1e6318217b3d3e63e91439022a4d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00302.html">MaterialPipeline</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a20a1e6318217b3d3e63e91439022a4d8">transparentPipeline</a></td></tr>
-<tr class="separator:a20a1e6318217b3d3e63e91439022a4d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a269aa1b48852004420322491f8e03e4a" id="r_a269aa1b48852004420322491f8e03e4a"><td class="memItemLeft" align="right" valign="top">VkDescriptorSetLayout&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a269aa1b48852004420322491f8e03e4a">materialLayout</a></td></tr>
-<tr class="separator:a269aa1b48852004420322491f8e03e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90094ab356bc8a5426f8012f76c1326f" id="r_a90094ab356bc8a5426f8012f76c1326f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="a00202.html">DescriptorWriter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90094ab356bc8a5426f8012f76c1326f">writer</a></td></tr>
-<tr class="separator:a90094ab356bc8a5426f8012f76c1326f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8b55daad4edbed63c8a40c2df5ee4c12" id="r_a8b55daad4edbed63c8a40c2df5ee4c12"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="a00218.html">ScriptingEngine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8b55daad4edbed63c8a40c2df5ee4c12">getInstance</a> ()</td></tr>
+<tr class="memdesc:a8b55daad4edbed63c8a40c2df5ee4c12"><td class="mdescLeft">&#160;</td><td class="mdescRight">singleton :D  <br /></td></tr>
+<tr class="separator:a8b55daad4edbed63c8a40c2df5ee4c12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
+Friends</h2></td></tr>
+<tr class="memitem:ac7b716e6d41ff508ad2d8e5dad655d72" id="r_ac7b716e6d41ff508ad2d8e5dad655d72"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac7b716e6d41ff508ad2d8e5dad655d72">Registry</a></td></tr>
+<tr class="separator:ac7b716e6d41ff508ad2d8e5dad655d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a86e85faa189694bbe81da7e4067a4cc0" name="a86e85faa189694bbe81da7e4067a4cc0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86e85faa189694bbe81da7e4067a4cc0">&#9670;&#160;</a></span>ScriptingEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">catos::ScriptingEngine::ScriptingEngine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b8081c15524b4ce43b6ae938a397d4c" name="a7b8081c15524b4ce43b6ae938a397d4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8081c15524b4ce43b6ae938a397d4c">&#9670;&#160;</a></span>~ScriptingEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">catos::ScriptingEngine::~ScriptingEngine </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac6b86602d156a5555b3799b9172c674e" name="ac6b86602d156a5555b3799b9172c674e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac6b86602d156a5555b3799b9172c674e">&#9670;&#160;</a></span>buildPipelines()</h2>
+<a id="a2452603a99b16c170736ae2917f876e3" name="a2452603a99b16c170736ae2917f876e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2452603a99b16c170736ae2917f876e3">&#9670;&#160;</a></span>endScripts()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void GLTFMetallic_roughness::buildPipelines </td>
+          <td class="memname">void catos::ScriptingEngine::endScripts </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="a00242.html">VulkanEngine</a> *</td>          <td class="paramname"><span class="paramname"><em>engine</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -152,136 +193,204 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="acdddc2beb7cc303daabfa28404afa2c9" name="acdddc2beb7cc303daabfa28404afa2c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdddc2beb7cc303daabfa28404afa2c9">&#9670;&#160;</a></span>clearResources()</h2>
+<a id="a8b55daad4edbed63c8a40c2df5ee4c12" name="a8b55daad4edbed63c8a40c2df5ee4c12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b55daad4edbed63c8a40c2df5ee4c12">&#9670;&#160;</a></span>getInstance()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GLTFMetallic_roughness::clearResources </td>
+          <td class="memname"><a class="el" href="a00218.html">catos::ScriptingEngine</a> &amp; catos::ScriptingEngine::getInstance </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em></span></td><td>)</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<p>EMPTY?</p>
+
+<p>singleton :D </p>
 
 </div>
 </div>
-<a id="a96ff6cb8fd8d01b16921be3900827939" name="a96ff6cb8fd8d01b16921be3900827939"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96ff6cb8fd8d01b16921be3900827939">&#9670;&#160;</a></span>destroy()</h2>
+<a id="a236303c168356b8014f394963e6a2c08" name="a236303c168356b8014f394963e6a2c08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a236303c168356b8014f394963e6a2c08">&#9670;&#160;</a></span>registerClass()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void GLTFMetallic_roughness::destroy </td>
+          <td class="memname">void catos::ScriptingEngine::registerClass </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a12634ba666a3141a6ea8e6ce1bcee3" name="a0a12634ba666a3141a6ea8e6ce1bcee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a12634ba666a3141a6ea8e6ce1bcee3">&#9670;&#160;</a></span>registerMethod()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::ScriptingEngine::registerMethod </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a></td>          <td class="paramname"><span class="paramname"><em>passType</em></span>&#160;)</td>
+          <td class="paramtype">U T::*</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a744d03ddb8fe03ea8ee07f2ae3b42de5" name="a744d03ddb8fe03ea8ee07f2ae3b42de5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a744d03ddb8fe03ea8ee07f2ae3b42de5">&#9670;&#160;</a></span>writeMaterial()</h2>
+<a id="a7f91b67bb01cd861ee148cf1ab9d613a" name="a7f91b67bb01cd861ee148cf1ab9d613a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f91b67bb01cd861ee148cf1ab9d613a">&#9670;&#160;</a></span>registerNewScript()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="a00306.html">MaterialInstance</a> GLTFMetallic_roughness::writeMaterial </td>
+          <td class="memname">void catos::ScriptingEngine::registerNewScript </td>
           <td>(</td>
-          <td class="paramtype">VkDevice</td>          <td class="paramname"><span class="paramname"><em>device</em>, </span></td>
+          <td class="paramtype">const <a class="el" href="a00246.html">catos::string</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>pathToPythonFile</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>First read the contents of the file given to us and validate it.</p>
+<p>Create a scriptInfo</p>
+<p>Find the name of the user defined script object</p>
+<p>Do a nullptr here cuz we allocate the mem for a script obj in the <a class="el" href="#a46622ba9112673a2fddf24c91bbc69c6">ScriptingEngine::startScripts()</a>;</p>
+
+</div>
+</div>
+<a id="af1883ecee457552523919c63becfb4d6" name="af1883ecee457552523919c63becfb4d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1883ecee457552523919c63becfb4d6">&#9670;&#160;</a></span>registerProperty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename U &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void catos::ScriptingEngine::registerProperty </td>
+          <td>(</td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>name</em>, </span></td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00074.html#a5d0f6bec114ddc0ce218cc9986d7bcac">MaterialPass</a></td>          <td class="paramname"><span class="paramname"><em>pass</em>, </span></td>
+          <td class="paramtype">U T::*</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46622ba9112673a2fddf24c91bbc69c6" name="a46622ba9112673a2fddf24c91bbc69c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46622ba9112673a2fddf24c91bbc69c6">&#9670;&#160;</a></span>startScripts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">void catos::ScriptingEngine::startScripts </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="a00226.html">MaterialResources</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>resources</em>, </span></td>
         </tr>
+      </table>
+</div><div class="memdoc">
+<p>execute the script;</p>
+
+</div>
+</div>
+<a id="a98cfe86e4146738c8e82956dbc0782d3" name="a98cfe86e4146738c8e82956dbc0782d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98cfe86e4146738c8e82956dbc0782d3">&#9670;&#160;</a></span>updateScripts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
+          <td class="memname">void catos::ScriptingEngine::updateScripts </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype"><a class="el" href="a00194.html">DescriptorAllocatorGrowable</a></td>          <td class="paramname"><span class="paramname"><em>descriptorAllocator</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a269aa1b48852004420322491f8e03e4a" name="a269aa1b48852004420322491f8e03e4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a269aa1b48852004420322491f8e03e4a">&#9670;&#160;</a></span>materialLayout</h2>
+<h2 class="groupheader">Friends And Related Symbol Documentation</h2>
+<a id="ac7b716e6d41ff508ad2d8e5dad655d72" name="ac7b716e6d41ff508ad2d8e5dad655d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7b716e6d41ff508ad2d8e5dad655d72">&#9670;&#160;</a></span>Registry</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">VkDescriptorSetLayout GLTFMetallic_roughness::materialLayout</td>
+          <td class="memname">friend class <a class="el" href="a00150.html">Registry</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a14e8a4c07862539d98a1793cf7be2e24" name="a14e8a4c07862539d98a1793cf7be2e24"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14e8a4c07862539d98a1793cf7be2e24">&#9670;&#160;</a></span>opaquePipeline</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00302.html">MaterialPipeline</a> GLTFMetallic_roughness::opaquePipeline</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a20a1e6318217b3d3e63e91439022a4d8" name="a20a1e6318217b3d3e63e91439022a4d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a20a1e6318217b3d3e63e91439022a4d8">&#9670;&#160;</a></span>transparentPipeline</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00302.html">MaterialPipeline</a> GLTFMetallic_roughness::transparentPipeline</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a90094ab356bc8a5426f8012f76c1326f" name="a90094ab356bc8a5426f8012f76c1326f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90094ab356bc8a5426f8012f76c1326f">&#9670;&#160;</a></span>writer</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="a00202.html">DescriptorWriter</a> GLTFMetallic_roughness::writer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following files:<ul>
-<li><a class="el" href="a00047_source.html">VkEngine.h</a></li>
-<li><a class="el" href="a00044.html">VkEngine.cpp</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="a00077_source.html">ScriptingEngine.h</a></li>
+<li><a class="el" href="a00074.html">ScriptingEngine.cpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
