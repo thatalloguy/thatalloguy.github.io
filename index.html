@@ -9,44 +9,24 @@
 </head>
 <body>
 
-    <div class="Computer" id="blur">
-        <img src="images/computer.gif">
-    </div>
-    <!--
-    <script>
-        //blur
-        window.addEventListener('scroll', function() {
-            let num = (window.scrollY / window.innerHeight) - 0.2;
-            
-            document.getElementById('blur').style.webkitFilter = 'blur(' + num + 'vh)'
-        })
-
-
-    </script>
-    -->
-
-    <div class="animated-text" >
-        Hello I'm a <span>
-            
-        </span>
-    </div>
-
-
 
     <div class="titlebar">
 
-        <a href="#blogpage"> <span class="BlogsButton"> Blogs </span> </a>
-        <a href="catos/html/index.html"> <span class="CatosDocs"> Catos Docs </span> </a>
-        <a href="https://github.com/thatalloguy/"> <span class="Projects"> Github</span> </a>
     </div>
-
-
-
 
     <div class="blogholder" id="blogpage">
         
     <span class="holderTitle"> Blogs: </span>
         <!-- NOTE: most recent blog must be on top! -->
+
+        
+        <a href="blogs/bomberman_blog.html"  class="blog">
+            <div>
+                <span class="title"><p>Designing an ECS for Catos </p></span>
+                <span class="desc"> How i designed the ECS for catos, and why i choose ECS over EC. </span>
+            </div>
+        </a>
+
 
         <a href="blogs/ecs_blog_may.html"  class="blog">
             <div>
