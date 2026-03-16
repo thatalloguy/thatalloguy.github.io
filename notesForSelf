@@ -12,3 +12,5 @@ hugo new posts/my-post-title.md
 
 to run:
 hugo server -D
+
+WHY THIS NO WORK?
