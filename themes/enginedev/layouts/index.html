@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="container">
+    <h1>Engine Dev Blog</h1>
+    <p>{{ .Site.Params.description }}</p>
+  </div>
+</section>
+
+<div class="container">
+  <h2 class="section-title">Latest Posts</h2>
+  <div class="card-grid">
+    {{ range first 6 (where .Site.RegularPages "Section" "posts") }}
+    <a href="{{ .Permalink }}" class="card" style="color:inherit">
+      <div class="meta">{{ .Date.Format "Jan 2, 2006" }}</div>
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Summary | truncate 120 }}</p>
+      <div class="tags">
+        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+    </a>
+    {{ end }}
+  </div>
+
+  <h2 class="section-title">Projects</h2>
+  <div class="card-grid">
+    {{ range (where .Site.RegularPages "Section" "projects") }}
+    <div class="card">
+      <h2>{{ .Title }}</h2>
+      <p>{{ .Params.description }}</p>
+      <div class="tags">
+        {{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}
+      </div>
+      <div class="project-links">
+        {{ with .Params.repo }}<a href="{{ . }}">GitHub</a>{{ end }}
+        {{ with .Params.demo }}<a href="{{ . }}">Demo</a>{{ end }}
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

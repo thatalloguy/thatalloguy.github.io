@@ -1,0 +1,14 @@
+DO NOT SHARE WITH ANYBODY!
+
+dont forget to drink water.
+keep up the working out.
+
+to create a new project do;
+hugo new projects/my-cool-engine.md
+
+to create a new blog do:
+hugo new posts/my-post-title.md
+
+
+to run:
+hugo server -D

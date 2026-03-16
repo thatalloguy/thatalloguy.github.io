@@ -1,0 +1,41 @@
+baseURL       = "https://thatalloguy.github.io/"
+languageCode  = "en-us"
+title         = "Engine Dev Blog"
+theme         = "enginedev"
+paginate      = 6
+enableEmoji   = true
+
+[markup]
+  [markup.highlight]
+    style       = "monokai"
+    lineNos     = true
+    guessSyntax = true
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+
+[params]
+  description = "Deep dives into game engine architecture, rendering, physics, and more."
+  author      = "thatalloguy"
+  github      = "https://github.com/thatalloguy"
+
+[menu]
+  [[menu.main]]
+    name   = "Blog"
+    url    = "/posts/"
+    weight = 1
+  [[menu.main]]
+    name   = "Projects"
+    url    = "/projects/"
+    weight = 2
+  [[menu.main]]
+    name   = "Tags"
+    url    = "/tags/"
+    weight = 3
+  [[menu.main]]
+    name   = "About"
+    url    = "/about/"
+    weight = 4
