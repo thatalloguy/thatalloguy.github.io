@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Engine Dev Blog</title>
+    <link>https://thatalloguy.github.io/tags/</link>
+    <description>Recent content in Tags on Engine Dev Blog</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://thatalloguy.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Graphics</title>
+      <link>https://thatalloguy.github.io/tags/graphics/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://thatalloguy.github.io/tags/graphics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Raytracing</title>
+      <link>https://thatalloguy.github.io/tags/raytracing/</link>
+      <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://thatalloguy.github.io/tags/raytracing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>https://thatalloguy.github.io/tags/c&#43;&#43;/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://thatalloguy.github.io/tags/c&#43;&#43;/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ecs</title>
+      <link>https://thatalloguy.github.io/tags/ecs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://thatalloguy.github.io/tags/ecs/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Engine</title>
+      <link>https://thatalloguy.github.io/tags/engine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://thatalloguy.github.io/tags/engine/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
