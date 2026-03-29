@@ -18,7 +18,7 @@ enableEmoji   = true
   category = "categories"
 
 [params]
-  description = "Deep dives into game engine architecture, rendering, physics, and more."
+  description = "Deep dives into game engine architecture and more."
   author      = "thatalloguy"
   github      = "https://github.com/thatalloguy"
 
