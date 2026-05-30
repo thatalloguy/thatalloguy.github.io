@@ -9,6 +9,7 @@ enableEmoji   = true
   [markup.highlight]
     style       = "monokai"
     lineNos     = true
+    lineNumbersInTable = false
     guessSyntax = true
   [markup.goldmark.renderer]
     unsafe = true
