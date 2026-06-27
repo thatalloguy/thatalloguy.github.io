@@ -245,3 +245,34 @@ footer {
   nav { gap: 1rem; }
   .hero h1 { font-size: 1.5rem; }
 }
+
+.code-block {
+  margin: 1.25rem 0;
+  border: 1px solid #2c2c2c;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #272822;
+}
+.code-block__summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 0.45rem 0.8rem;
+  font: 600 0.8rem/1 ui-monospace, Menlo, Consolas, monospace;
+  color: #c9c9c9;
+  background: #1f1f1d;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.code-block__summary::-webkit-details-marker { display: none; }
+.code-block__summary::before {
+  content: "▶";
+  font-size: 0.65em;
+  color: #7f7f7f;
+  transition: transform 0.15s ease;
+}
+.code-block[open] .code-block__summary::before { transform: rotate(90deg); }
+.code-block__summary:hover { color: #fff; }
+.code-block .highlight,
+.code-block pre { margin: 0; border-radius: 0; }

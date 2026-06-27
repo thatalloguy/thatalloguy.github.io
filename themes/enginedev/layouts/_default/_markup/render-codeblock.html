@@ -1,0 +1,7 @@
+{{- $label := or (index .Attributes "title") (or .Type "code") -}}
+{{- $open := ne (printf "%v" (index .Attributes "open")) "false" -}}
+{{- $code := transform.Highlight (trim .Inner "\n") .Type .Options -}}
+<details class="code-block"{{ if $open }} open{{ end }}>
+  <summary class="code-block__summary">{{ $label }}</summary>
+  {{ $code }}
+</details>

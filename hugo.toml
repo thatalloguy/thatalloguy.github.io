@@ -19,8 +19,8 @@ enableEmoji   = true
   category = "categories"
 
 [params]
-  description = "Deep dives into game engine architecture and more."
-  author      = "thatalloguy"
+  description = ""
+  author      = "Sander Meinders"
   github      = "https://github.com/thatalloguy"
 
 [menu]
