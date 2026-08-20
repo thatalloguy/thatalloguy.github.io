@@ -6,6 +6,19 @@ tags: ["entity models", "engines", "the vision"]
 categories: ["general", "engines"]
 ---
 
+<br>
+
+---
+
+## Disclaimer:
+This blog posts hold opinions that do not reflect my current opinions anymore.
+I have decided to keep it this blog post online even if I do not agree with it anymore.
+
+---
+
+<br>
+<br>
+<br>
 
 During the time that I have spent writing game engines (or at least the attempts that I've made at writing engines) I have come across a variation of ways to handle entities. Now I am aware that I simply don't know everything about every entity model (even if I would love to know).
 
